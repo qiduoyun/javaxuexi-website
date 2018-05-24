@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>网页恶意代码的手工处理 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","815","0","attach");
+		Cms.viewCount("","815");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151020/815.html" title="网页恶意代码的手工处理">网页恶意代码的手工处理</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-10-20 14:32:55</span>
+     </h3>
+     <p><img alt="" src="/u/cms/www/201510/191340190imw.png" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table border="0" cellpadding="0" cellspacing="0" height="261" width="100%">
+	<tbody>
+		<tr>
+			<td height="230" valign="top">
+				<div align="left" class="content">
+					<p><br />
+						<!--HTMLBUILERPART0-->[color=Red]1. 清除每次开机时自动弹出的网页[/color]<br />
+						<br />
+						[color=Blue]记住地址栏里出现的网址，然后打开注册表编辑器（方法是在点击&ldquo;开始&rdquo;菜单，之后点击&ldquo;运行&rdquo;，在运行框中输入regedit命令进入注册表编辑器），分别定位到：<br />
+						<br />
+						　　HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run和<br />
+						　　HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Runonce<br />
+						<br />
+						下，看看在该子项下是否有一个以这个网址为值的值项，如果有的话，就将其删除，之后重新启动计算机。这样在下一次开机的时候就不再会有网页弹出来了。<br />
+						<br />
+						　　不过网页恶意代码的编写者有时也是非常的狡猾，他会在注册表的不同键值中多处设有这个值项，这样上面提的方法也未必能完全解决问题。遇到这种情况，你可以在注册表编辑器的选项菜单里选择&ldquo;编辑&rdquo;&rarr;&ldquo;查找&rdquo;，在&ldquo;查找&rdquo;对话框内输入开机时自动打开的网址，然后点击&ldquo;查找下一个&rdquo;，将查找到的值项删除。另外，如果你是使用Windows 98的用户，可在&ldquo;开始&rdquo;菜单中的&ldquo;运行&rdquo;对话框内输入&ldquo;msconfig&rdquo;，点击确定，打开&ldquo;系统配置实用程序&rdquo;并打开&ldquo;启动&rdquo;选项卡，检查其中是否有非常可疑的启动项，如果有的话请将其禁用(在程序前的打上勾)，然后重启机器就可以了。如果你所使用的是Windows NT/2000的用户，可以把Windows 98下的&ldquo;系统配置实用程序&rdquo;复制过来并运行进行查找清除。[/color]<br />
+						<br />
+						[color=Red]2. IE标题栏被修改[/color]<br />
+						<br />
+						[color=Blue]在系统默认状态下，是由应用程序本身来提供标题栏的信息，但也允许用户自行在上述注册表项目中填加信息，而一些恶意的网站正是利用了这一点来得逞的：它们将串值Window Title下的键值改为其网站名或更多的广告信息，从而达到改变浏览者IE标题栏的目的。<br />
+						<br />
+						　　具体说来受到更改的注册表项目为：<br />
+						<br />
+						　　HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\Window Title<br />
+						<br />
+						　　HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\Window Title[/color]<br />
+						[color=Green]解决办法：[/color]<br />
+						<br />
+						[color=Brown]1). 在Windows启动后，点击&ldquo;开始&rdquo;&rarr;&ldquo;运行&rdquo;菜单项，在&ldquo;打开&rdquo;栏中键入regedit，然后按&ldquo;确定&rdquo;键；<br />
+						<br />
+						　　2). 展开注册表到<br />
+						<br />
+						　HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main下，在右半部分窗口中找到串值&ldquo;Window Title&rdquo; ，将该串值删除即可，或将Window Title的键值改为&ldquo;IE浏览器&rdquo;等你喜欢的名字；<br />
+						<br />
+						　　3). 同理，展开注册表到<br />
+						<br />
+						　HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main<br />
+						<br />
+						　　然后按2)中所述方法处理。<br />
+						<br />
+						　　4).退出注册表编辑器，重新启动计算机，运行IE，你会发现困扰你的问题被解决了<br />
+						<br />
+						<br />
+						[续][/color]<br />
+						<br />
+						[color=Red]3. IE默认连接首页被修改[/color]<br />
+						<br />
+						[color=Blue]IE浏览器上方的标题栏被改成&ldquo;欢迎访问&hellip;&hellip;网站&rdquo;的样式，这是最常见的篡改手段，受害者众多。<br />
+						<br />
+						　　受到更改的注册表项目为：<br />
+						<br />
+						　HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\Start Page<br />
+						　HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\Start Page<br />
+						<br />
+						　　通过修改&ldquo;Start Page&rdquo;的键值，来达到修改浏览者IE默认连接首页的目的，如浏览&ldquo;万花谷&rdquo;就会将你的IE默认连接首页修改为&ldquo;[url]http://on888.home.chinaren.com[/url] &rdquo;，即便是出于给自己的主页做广告的目的，也显得太霸道了一些，这也是这类网页惹人厌恶的原因。[/color]<br />
+						<br />
+						[color=Red]解决办法：[/color]<br />
+						[color=Brown]1). 在Windows启动后，点击&ldquo;开始&rdquo;&rarr;&ldquo;运行&rdquo;菜单项，在&ldquo;打开&rdquo;栏中键入regedit，然后按&ldquo;确定&rdquo;键；<br />
+						<br />
+						　　2). 展开注册表到<br />
+						　HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main下，在右半部分窗口中找到串值&ldquo;Start Page&rdquo;双击 ，将Start Page的键值改为&ldquo;about:blank&rdquo;即可；<br />
+						<br />
+						　　3). 同理，展开注册表到<br />
+						　 HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main<br />
+						　　在右半部分窗口中找到串值&ldquo;Start Page&rdquo;，然后按2)中所述方法处理。<br />
+						<br />
+						　　4). 退出注册表编辑器，重新启动计算机，一切OK了！<br />
+						<br />
+						　　特殊例子：当IE的起始页变成了某些网址后，就算你通过选项设置修改好了，重启以后又会变成他们的网址啦，十分的难缠。其实他们是在你机器里加了一个自运行程序，它会在系统启动时将你的IE起始页设成他们的网站。<br />
+						<br />
+						[/color]<br />
+						<br />
+						[color=Red]4. 系统启动时弹出对话框[/color]<br />
+						<br />
+						[color=Blue]受到更改的注册表项目为：<br />
+						<br />
+						HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Winlogon<br />
+						<br />
+						　　在其下被建立了字符串&ldquo;LegalNoticeCaption&rdquo;和&ldquo;LegalNoticeText&rdquo;，其中&ldquo;LegalNoticeCaption&rdquo;是提示框的标题，&ldquo;LegalNoticeText&rdquo;是提示框的文本内容。由于它们的存在，就使得我们每次登陆到Windwos桌面前都出现一个提示窗口，显示那些网页的广告信息！<br />
+						<br />
+						　　解决办法：<br />
+						<br />
+						　　打开注册表编辑器，找到<br />
+						<br />
+						　　HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Winlogon<br />
+						<br />
+						　　这一个主键，然后在右边窗口中找到&ldquo;LegalNoticeCaption&rdquo;和&ldquo;LegalNoticeText&rdquo;这两个字符串，删除这两个字符串就可以解决在登陆时出现提示框的现象了。[/color]<br />
+						<br />
+						[color=Red]5.　修复被锁定的注册表[/color]<br />
+						[color=Blue]注册表被锁定这一招是比较恶毒的，它使普遍用户即使会简单修改注册表使其恢复的条件下，困难又多了一层。症状是在开始菜单中点击&ldquo;运行&rdquo;，在运行框中输入regedit命令时，注册表不能够使用，并发现系统提示你没有权限运行该程序，然后让你联系系统管理员。<br />
+						<br />
+						　　这是由于注册表编辑器：<br />
+						　　HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System下的DWORD值&ldquo;DisableRegistryTools&rdquo;被修改为&ldquo;1&rdquo;的缘故，将其键值恢复为&ldquo;0&rdquo;即可恢复注册表的使用。<br />
+						<br />
+						　　解决办法:<br />
+						<br />
+						　　可以自己动手制作一个解除注册表锁定的工具，就是用记事本编辑一个任意名字的.reg文件，比如recover.reg，内容如下：<br />
+						　　REGEDIT4<br />
+						[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System]<br />
+						&quot;DisableRegistryTools&quot;=dword:00000000<br />
+						　　<br />
+						　　 要特别注意的是：如果你用这个方法制作解除注册表锁定的工具，一定要严格按照上面的书写格式进行，不能遗漏更不能修改（其实你只需将上述内容&ldquo;复制&rdquo;、&ldquo;粘贴&rdquo;到你机器记事本中即可）；完成上述工作后，点击记事本的文件菜单中的&ldquo;另存为&rdquo;项，文件名可以随意，但文件扩展名必须为.reg（切记）,然后点击&ldquo;保存&rdquo;。这样一个注册表解锁工具就制作完成了，之后你只须双击生成的工具图标，其会提示你是否将这个信息添加进注册表，你要点击&ldquo;是&rdquo;，随后系统提示信息已成功输入注册表，再点击&ldquo;确定&rdquo;即可将注册表解锁了 <!--/HTMLBUILERPART0--><br />
+						&nbsp;</p>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151020/816.html">小型局域网故障诊断必读</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151020/811.html">域 名 知 识</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

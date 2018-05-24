@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="263px" height="364px" viewBox="0 0 263 364" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>吊车</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="162" y="231" width="70" height="40"/>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-6" dy="0" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"/>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="160" height="10"/>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"/>
+        </filter>
+        <path d="M68.773233,0 L22.238003,0 C21.1237729,0 19.8181958,0.804012677 19.316724,1.79581258 C19.316724,1.79581258 16.5084288,7.34999637 13.176681,13.9394531 L5.02694874,30.0578125 L0.904422296,38.2112537 C0.402555185,39.2038353 0,40.8942179 0,41.9972916 L0,78.0027084 C0,79.1084602 0.905853333,80 2.02328005,80 L68.7632368,80 L180,80 L180,40 L80.7865169,40 C80.7865169,40 69.885139,0 68.773233,0 Z" id="path-5"/>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="6" dy="0" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"/>
+            <feOffset dx="-6" dy="4" in="SourceAlpha" result="shadowOffsetInner2"/>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"/>
+                <feMergeNode in="shadowMatrixInner2"/>
+            </feMerge>
+        </filter>
+        <polygon id="path-7" points="19.2307692 0 50 0 50 40 0 40"/>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="6" dy="0" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"/>
+        </filter>
+        <path d="M20.555538,1.62651665 C18.5998112,0.588206963 16.3685972,0 14,0 C6.2680135,0 0,6.2680135 0,14 C0,21.7319865 6.2680135,28 14,28 C21.7319865,28 28,21.7319865 28,14 C28,11.8887634 27.5326722,9.886677 26.6958179,8.09154205" id="path-9"/>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="6" dy="0" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"/>
+        </filter>
+        <path d="M60.555538,1.62651665 C58.5998112,0.588206963 56.3685972,0 54,0 C46.2680135,0 40,6.2680135 40,14 C40,21.7319865 46.2680135,28 54,28 C61.7319865,28 68,21.7319865 68,14 C68,11.8887634 67.5326722,9.886677 66.6958179,8.09154205" id="path-11"/>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="6" dy="0" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"/>
+        </filter>
+        <path d="M100.555538,1.62651665 C98.5998112,0.588206963 96.3685972,0 94,0 C86.2680135,0 80,6.2680135 80,14 C80,21.7319865 86.2680135,28 94,28 C101.731986,28 108,21.7319865 108,14 C108,11.8887634 107.532672,9.886677 106.695818,8.09154205" id="path-13"/>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="6" dy="0" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"/>
+        </filter>
+        <path d="M140.555538,1.62651665 C138.599811,0.588206963 136.368597,0 134,0 C126.268014,0 120,6.2680135 120,14 C120,21.7319865 126.268014,28 134,28 C141.731986,28 148,21.7319865 148,14 C148,11.8887634 147.532672,9.886677 146.695818,8.09154205" id="path-15"/>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-16">
+            <feOffset dx="6" dy="0" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"/>
+        </filter>
+        <path d="M180.555538,1.62651665 C178.599811,0.588206963 176.368597,0 174,0 C166.268014,0 160,6.2680135 160,14 C160,21.7319865 166.268014,28 174,28 C181.731986,28 188,21.7319865 188,14 C188,11.8887634 187.532672,9.886677 186.695818,8.09154205" id="path-17"/>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-18">
+            <feOffset dx="6" dy="0" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowInnerInner1"/>
+        </filter>
+    </defs>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-374.000000, -1137.000000)" id="第二屏">
+            <g transform="translate(0.000000, 851.000000)">
+                <g id="画面" transform="translate(146.000000, 287.000000)">
+                    <g id="主体" transform="translate(59.000000, 0.000000)">
+                        <g id="吊车" transform="translate(169.000000, 0.000000)">
+                            <g id="支架填充">
+                                <use fill="#20B573" fill-rule="evenodd" xlink:href="#path-1"/>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"/>
+                            </g>
+                            <path d="M162,271 L162,231 L232,231 L232,242 M232,250 L232,258 M232,266 L232,271" id="支架路径" stroke="#313131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <g id="吊架" transform="translate(2.000000, 1.000000)" stroke="#313131" stroke-width="4">
+                                <path d="M0.206821776,0.307177355 L192.085725,229.10311" id="Shape"/>
+                                <path d="M227.784445,229.10311 L126.648596,180.4155" id="Shape"/>
+                                <path d="M177.319931,177.958081 L98.7793616,140.431247" id="Shape"/>
+                                <path d="M139.988601,140.431247 L78.2523003,110.942221" id="Shape"/>
+                                <path d="M109.12045,109.252746 L61.1377983,86.3168366" id="Shape"/>
+                                <path d="M86.2666441,86.3168366 L48.5733754,68.2957652" id="Shape"/>
+                                <path d="M67.4458625,68.2957652 L39.1629846,54.7799616" id="Shape"/>
+                                <path d="M53.5888035,53.1928786 L30.2696482,42.0321014" id="Shape"/>
+                                <path d="M160.515662,229.10311 L177.319931,178.623632" id="Shape"/>
+                                <path d="M126.648596,180.671481 L139.988601,140.431247" id="Shape"/>
+                                <path d="M98.7793616,140.431247 L109.172156,109.252746" id="Shape"/>
+                                <path d="M78.2523003,110.942221 L86.4217605,86.3168366" id="Shape"/>
+                                <path d="M61.1377983,86.3168366 L67.4975679,67.1694482" id="Shape"/>
+                                <path d="M48.5733754,68.2957652 L53.5888035,53.1928786" id="Shape"/>
+                                <path d="M39.1629846,54.7799616 L43.1960092,42.6464561" id="Shape"/>
+                                <polygon id="Shape" stroke-linejoin="round" points="229.202455 229.106721 161.214477 229.106721 0.206821776 0.102392452"/>
+                            </g>
+                            <g id="中间链接" transform="translate(81.000000, 311.000000)">
+                                <g id="填充">
+                                    <use fill="#128451" fill-rule="evenodd" xlink:href="#path-3"/>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"/>
+                                </g>
+                                <polyline id="路径" stroke="#313131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="160 0 160 10 0 10 0 0 0 0"/>
+                            </g>
+                            <g id="车头" transform="translate(71.000000, 231.000000)">
+                                <g id="填充">
+                                    <use fill="#20B573" fill-rule="evenodd" xlink:href="#path-5"/>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"/>
+                                </g>
+                                <g id="窗户填充">
+                                    <use fill="#FFDB01" fill-rule="evenodd" xlink:href="#path-7"/>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"/>
+                                </g>
+                                <path d="M104,39.5061728 L80.7865169,39.5061728 C80.7865169,39.5061728 69.885139,0 68.773233,0 L22.238003,0 C21.1237729,0 19.8181958,0.794086595 19.316724,1.77364205 C19.316724,1.77364205 16.5084288,7.25925568 13.176681,13.7673611 L5.02694874,29.6867284 L0.904422296,37.7395098 C0.402555185,38.7198373 0,40.389351 0,41.4788065 L0,77.039712 C0,78.1318125 0.905853333,79.0123457 2.02328005,79.0123457 L24,79.0123457 M32,79.0123457 L40,79.0123457 M48,79.0123457 L68.7632368,79.0123457 L180,79.0123457 L180,39.5061728 L128,39.5061728 M120,39.5061728 L112,39.5061728" id="路径" stroke="#313131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.6078431,0 L49.0196078,0 L49.0196078,11 M49.0196078,17 L49.0196078,21 M49.0196078,27 L49.0196078,40 L0,40" id="窗户路径" stroke="#313131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <g id="履带" transform="translate(61.000000, 321.000000)">
+                                <rect id="填充" fill="#616161" x="0" y="0" width="200" height="40" rx="20"/>
+                                <path d="M66,40 L19.9938005,40 C8.9515294,40 0,31.0481236 0,20 L0,20 L0,20 C0,8.954305 8.94946575,0 20.0001277,0 L179.999872,0 C191.045638,0 200,8.95187636 200,20 L200,20 C200,31.045695 191.043425,40 179.999921,40 L90,40 M82,40 L74,40" id="路径" stroke="#313131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <g id="轮子" transform="translate(6.000000, 6.000000)">
+                                    <g id="Oval-71">
+                                        <use fill="#20B573" fill-rule="evenodd" xlink:href="#path-9"/>
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"/>
+                                        <use stroke="#313131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-9"/>
+                                    </g>
+                                    <g id="Oval-71-Copy">
+                                        <use fill="#20B573" fill-rule="evenodd" xlink:href="#path-11"/>
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"/>
+                                        <use stroke="#313131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-11"/>
+                                    </g>
+                                    <g id="Oval-71-Copy-2">
+                                        <use fill="#20B573" fill-rule="evenodd" xlink:href="#path-13"/>
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"/>
+                                        <use stroke="#313131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-13"/>
+                                    </g>
+                                    <g id="Oval-71-Copy-7">
+                                        <use fill="#20B573" fill-rule="evenodd" xlink:href="#path-15"/>
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"/>
+                                        <use stroke="#313131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-15"/>
+                                    </g>
+                                    <g id="Oval-71-Copy-8">
+                                        <use fill="#20B573" fill-rule="evenodd" xlink:href="#path-17"/>
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-18)" xlink:href="#path-17"/>
+                                        <use stroke="#313131" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-17"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <rect id="Rectangle-187" fill="#313131" x="0" y="0" width="4" height="200" rx="2"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,710 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C#的数据类型 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1196","0","attach");
+		Cms.viewCount("","1196");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151119/1196.html" title="C#的数据类型">C#的数据类型</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-19 19:03:16</span>
+     </h3>
+     <h2>
+	C#的数据类型</h2>
+<p>从大的方面来分，C#语言的数据类型可以分为三种：值类型，引用类型，指针类型，指针类型仅用于非安全代码中。本节重点讨论值类型和引用类型。</p>
+<h3>
+	1.4.1值类型和引用类型区别</h3>
+<p>在C#语言中，值类型变量存储的是数据类型所代表的实际数据，值类型变量的值(或实例)存储在栈(Stack)中，赋值语句是传递变量的值。引用类型(例如类就是引用类型)的实例，也叫对象，不存在栈中，而存储在可管理堆(Managed&nbsp;Heap)中，堆实际上是计算机系统中的空闲内存。引用类型变量的值存储在栈(Stack)中，但存储的不是引用类型对象，而是存储引用类型对象的引用，即地址，和指针所代表的地址不同，引用所代表的地址不能被修改，也不能转换为其它类型地址，它是引用型变量，只能引用指定类对象，引用类型变量赋值语句是传递对象的地址。见下例：</p>
+<p>using&nbsp;System;</p>
+<p>class&nbsp;MyClass//类为引用类型</p>
+<p>{ public&nbsp;int&nbsp;a=0;</p>
+<p>}</p>
+<p>class&nbsp;Test</p>
+<p>{ static&nbsp;void&nbsp;Main()</p>
+<p>{ f1();</p>
+<p>}</p>
+<p>static&nbsp;public&nbsp;void&nbsp;f1()</p>
+<p>{ int&nbsp;v1=1;//值类型变量v1，其值1存储在栈(Stack)中</p>
+<p style="margin-left:21.0000pt;">int&nbsp;v2=v1;//将v1的值(为1)传递给v2，v2=1,v1值不变。</p>
+<p style="margin-left:21.0000pt;">v2=2;//v2=2,v1值不变。</p>
+<p style="margin-left:21.0000pt;">MyClass&nbsp;r1=new&nbsp;MyClass();//引用变量r1存储MyClass类对象的地址</p>
+<p style="margin-left:21.0000pt;">MyClass&nbsp;r2=r1;//r1和r2都代表是同一个MyClass类对象</p>
+<p style="margin-left:21.0000pt;">r2.a=2;//和语句r1.a=2等价</p>
+<p>}</p>
+<p>}</p>
+<p>存储在栈中的变量，当其生命周期结束，自动被撤销，例如，v1存储在栈中，v1和函数f1同生命周期，退出函数f1，v1不存在了。但在堆中的对象不能自动被撤销。因此C和C++语言，在堆中建立的对象，不使用时必须用语句释放对象占用的存储空间。.NET系统CLR内建垃圾收集器，当对象的引用变量被撤销，表示对象的生命周期结束，垃圾收集器负责收回不被使用的对象占用的存储空间。例如，上例中引用变量r1及r2是MyClass类对象的引用，存储在栈中，退出函数f1，r1和r2都不存在了，在堆中的MyClass类对象也就被垃圾收集器撤销。也就是说，CLR具有自动内存管理功能。</p>
+<h3>
+	1.4.2值类型变量分类</h3>
+<p>C#语言值类型可以分为以下几种：</p>
+<ul>
+	<li>
+		简单类型(Simple&nbsp;types)</li>
+</ul>
+<p style="margin-left:21.0000pt;">简单类型中包括：数值类型和布尔类型(bool)。数值类型又细分为：整数类型、字符类型(char)、浮点数类型和十进制类型(decimal)。</p>
+<ul>
+	<li>
+		结构类型(Struct&nbsp;types)</li>
+	<li>
+		枚举类型(Enumeration&nbsp;types)</li>
+</ul>
+<p>C#语言值类型变量无论如何定义，总是值类型变量，不会变为引用类型变量。</p>
+<h3>
+	1.4.3结构类型</h3>
+<p>结构类型和类一样，可以声明构造函数、数据成员、方法、属性等。结构和类的最根本的区别是结构是值类型，类是引用类型。和类不同，结构不能从另外一个结构或者类派生，本身也不能被继承，因此不能定义抽象结构，结构成员也不能被访问权限控制字protected修饰，也不能用virtual和abstract修饰结构方法。在结构中不能定义析构函数。虽然结构不能从类和结构派生，可是结构能够继承接口，结构继承接口的方法和类继承接口的方法基本一致。下面例子定义一个点结构point：</p>
+<p>using&nbsp;System;</p>
+<p>struct&nbsp;point//结构定义</p>
+<p>{ public&nbsp;int&nbsp;x,y;//结构中也可以声明构造函数和方法，变量不能赋初值</p>
+<p>}</p>
+<p>class&nbsp;Test</p>
+<p>{ static&nbsp;void&nbsp;Main()</p>
+<p>{ point&nbsp;P1;</p>
+<p style="margin-left:21.0000pt;">P1.x=166;</p>
+<p style="margin-left:21.0000pt;">P1.y=111;</p>
+<p style="margin-left:21.0000pt;">point&nbsp;P2;</p>
+<p style="margin-left:21.0000pt;">P2=P1;//值传递，使P2.x=166,P2.y=111</p>
+<p style="margin-left:21.0000pt;">point&nbsp;P3=new&nbsp;point();//用new生成结构变量P3，P3仍为值类型变量</p>
+<p>}//用new生成结构变量P3仅表示调用默认构造函数，使x=y==0。</p>
+<p>}</p>
+<h3>
+	1.4.4简单类型</h3>
+<p>简单类型也是结构类型，因此有构造函数、数据成员、方法、属性等，因此下列语句int&nbsp;i=int.MaxValue;string&nbsp;s=i.ToString()是正确的。即使一个常量，C#也会生成结构类型的实例，因此也可以使用结构类型的方法，例如：string&nbsp;s=13.ToString()是正确的。简单类型包括：整数类型、字符类型、布尔类型、浮点数类型、十进制类型。见下表：</p>
+<table style="width:539px;">
+	<tbody>
+		<tr>
+			<td style="width:66px;">
+				<p>保留字</p>
+			</td>
+			<td style="width:151px;">
+				<p>System命名空间中的名字</p>
+			</td>
+			<td style="width:57px;">
+				<p>字节数</p>
+			</td>
+			<td style="width:265px;">
+				<p>取值范围</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>sbyte</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.Sbyte</p>
+			</td>
+			<td style="width:57px;">
+				<p>1</p>
+			</td>
+			<td style="width:265px;">
+				<p>-128~127</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>byte</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.Byte</p>
+			</td>
+			<td style="width:57px;">
+				<p>1</p>
+			</td>
+			<td style="width:265px;">
+				<p>0~255</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>short</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.Int16</p>
+			</td>
+			<td style="width:57px;">
+				<p>2</p>
+			</td>
+			<td style="width:265px;">
+				<p>-32768~32767</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>ushort</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.UInt16</p>
+			</td>
+			<td style="width:57px;">
+				<p>2</p>
+			</td>
+			<td style="width:265px;">
+				<p>0~65535</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>int</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.Int32</p>
+			</td>
+			<td style="width:57px;">
+				<p>4</p>
+			</td>
+			<td style="width:265px;">
+				<p>-2147483648~2147483647</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>uint</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.UInt32</p>
+			</td>
+			<td style="width:57px;">
+				<p>4</p>
+			</td>
+			<td style="width:265px;">
+				<p>0~4292967295</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>long</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.Int64</p>
+			</td>
+			<td style="width:57px;">
+				<p>8</p>
+			</td>
+			<td style="width:265px;">
+				<p>-9223372036854775808~9223372036854775808</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>ulong</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.UInt64</p>
+			</td>
+			<td style="width:57px;">
+				<p>8</p>
+			</td>
+			<td style="width:265px;">
+				<p>0~18446744073709551615</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>char</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.Char</p>
+			</td>
+			<td style="width:57px;">
+				<p>2</p>
+			</td>
+			<td style="width:265px;">
+				<p>0~65535</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>float</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.Single</p>
+			</td>
+			<td style="width:57px;">
+				<p>4</p>
+			</td>
+			<td style="width:265px;">
+				<p>3.4E-38~3.4E+38</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>double</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.Double</p>
+			</td>
+			<td style="width:57px;">
+				<p>8</p>
+			</td>
+			<td style="width:265px;">
+				<p>1.7E-308~1.7E+308</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>bool</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.Boolean</p>
+			</td>
+			<td style="width:57px;">
+				<p>&nbsp;</p>
+			</td>
+			<td style="width:265px;">
+				<p>(true,false)</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:66px;">
+				<p>decimal</p>
+			</td>
+			<td style="width:151px;">
+				<p>System.Decimal</p>
+			</td>
+			<td style="width:57px;">
+				<p>16</p>
+			</td>
+			<td style="width:265px;">
+				<p>正负 1.0&times;10-28 到7.9&times;1028之间</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>C#简单类型使用方法和C、C++中相应的数据类型基本一致。需要注意的是：</p>
+<ul>
+	<li>
+		和C语言不同，无论在何种系统中，C#每种数据类型所占字节数是一定的。</li>
+	<li>
+		字符类型采用Unicode字符集，一个Unicode标准字符长度为16位。</li>
+	<li>
+		整数类型不能隐式被转换为字符类型(char)，例如char&nbsp;c1=10是错误的，必须写成：char&nbsp;c1=(char)10，char&nbsp;c=&#39;A&#39;，char&nbsp;c=&#39;\x0032&#39;;char&nbsp;c=&#39;\u0032&#39;。</li>
+	<li>
+		布尔类型有两个值：false,true。不能认为整数0是false，其它值是true。bool&nbsp;x=1是错误的，不存在这种写法，只能写成x=true&nbsp;或x=false。</li>
+	<li>
+		十进制类型(decimal)也是浮点数类型，只是精度比较高，一般用于财政金融计算。</li>
+</ul>
+<h3>
+	1.4.5枚举类型</h3>
+<p>C#枚举类型使用方法和C、C++中的枚举类型基本一致。见下例：</p>
+<p>using&nbsp;System;</p>
+<p>class&nbsp;Class1</p>
+<p>{ enum&nbsp;Days&nbsp;{Sat=1,&nbsp;Sun,&nbsp;Mon,&nbsp;Tue,&nbsp;Wed,&nbsp;Thu,&nbsp;Fri};</p>
+<p>//使用Visual&nbsp;Studio.Net,enum语句添加在[STAThread]前边</p>
+<p>static&nbsp;void&nbsp;Main(string[]&nbsp;args)</p>
+<p>{ Days&nbsp;day=Days.Tue;</p>
+<p>int&nbsp;x=(int)Days.Tue;//x=2</p>
+<p>Console.WriteLine(&quot;day={0},x={1}&quot;,day,x);//显示结果为:day=Tue,x=4</p>
+<p>}</p>
+<p>}</p>
+<p>在此枚举类型Days中，每个元素的默认类型为int，其中Sun=0，Mon=1，Tue=2，依此类推。也可以直接给枚举元素赋值。例如：</p>
+<p>enum&nbsp;Days{Sat=1,Sun,Mon,Tue,Wed,Thu,Fri,Sat};</p>
+<p>在此枚举中，Sun=1，Mon=2，Tue=3，Wed=4，等等。和C、C++中不同，C#枚举元素类型可以是byte、sbyte、short、ushort、int、uint、long和ulong类型，但不能是char类型。见下例：</p>
+<p>enum&nbsp;Days:byte{Sun,Mon,Tue,Wed,Thu,Fri,Sat};//元素为字节类型</p>
+<h3>
+	1.4.6值类型的初值和默认构造函数</h3>
+<p>所有变量都要求必须有初值，如没有赋值，采用默认值。对于简单类型，sbyte、byte、short、ushort、int、uint、long和ulong默认值为0，char类型默认值是(char)0，float为0.0f，double为0.0d，decimal为0.0m，bool为false，枚举类型为0，在结构类型和类中，数据成员的数值类型变量设置为默认值，引用类型变量设置为null。</p>
+<p>可以显示的赋值，例如int&nbsp;i=0。而对于复杂结构类型，其中的每个数据成员都按此种方法赋值，显得过于麻烦。由于数值类型都是结构类型，可用new语句调用其构造函数初始化数值类型变量，例如：int&nbsp;j=new&nbsp;int()。请注意，用new语句并不是把int变量变为引用变量，j仍是值类型变量，这里new仅仅是调用其构造函数。所有的数值类型都有默认的无参数的构造函数，其功能就是为该数值类型赋初值为默认值。对于自定义结构类型，由于已有默认的无参数的构造函数，不能再定义无参数的构造函数，但可以定义有参数的构造函数。</p>
+<h3>
+	1.4.7引用类型分类</h3>
+<p>C#语言中引用类型可以分为以下几种：</p>
+<ul>
+	<li>
+		类：C#语言中预定义了一些类：对象类(object类)、数组类、字符串类等。当然，程序员可以定义其它类。</li>
+	<li>
+		接口。</li>
+	<li>
+		代表。</li>
+</ul>
+<p>C#语言引用类型变量无论如何定义，总是引用类型变量，不会变为值类型变量。C#语言引用类型对象一般用运算符new建立，用引用类型变量引用该对象。本节仅介绍对象类型(object类型)、字符串类型、数组。其它类型在其它节中介绍。</p>
+<h3>
+	1.4.8对象类(object类)</h3>
+<p>C#中的所有类型(包括数值类型)都直接或间接地以object类为基类。对象类(object类)是所有其它类的基类。任何一个类定义，如果不指定基类，默认object为基类。继承和基类的概念见以后章节。C#语言规定，基类的引用变量可以引用派生类的对象(注意，派生类的引用变量不可以引用基类的对象)，因此，对一个object的变量可以赋予任何类型的值：</p>
+<p>int&nbsp;x&nbsp;=25;</p>
+<p>object&nbsp;obj1;</p>
+<p>obj1=x;</p>
+<p>object&nbsp;obj2=&nbsp;&#39;A&#39;;</p>
+<p>object关键字是在命名空间System中定义的，是类System.Object的别名。</p>
+<h3>
+	1.4.9数组类</h3>
+<p>在进行批量处理数据的时候，要用到数组。数组是一组类型相同的有序数据。数组按照数组名、数据元素的类型和维数来进行描述。C#语言中数组是类System.Array类对象，比如声明一个整型数数组：int[]&nbsp;arr=new&nbsp;int[5];实际上生成了一个数组类对象，arr是这个对象的引用(地址)。</p>
+<p>在C#中数组可以是一维的也可以是多维的，同样也支持数组的数组，即数组的元素还是数组。一维数组最为普遍，用的也最多。我们先看一个一维数组的例子：</p>
+<p>using&nbsp;System;</p>
+<p>class&nbsp;Test</p>
+<p>{&nbsp;static&nbsp;void&nbsp;Main()</p>
+<p>{&nbsp;int[]&nbsp;arr=new&nbsp;int[3];//用new运算符建立一个3个元素的一维数组</p>
+<p>for(int&nbsp;i=0;i&lt;arr.Length;i++)//arr.Length是数组类变量，表示数组元素个数</p>
+<p style="margin-left:21.0000pt;">arr[i]=i*i;//数组元素赋初值，arr[i]表示第i个元素的值</p>
+<p>for&nbsp;(int&nbsp;i=0;i&lt;arr.Length;i++)//数组第一个元素的下标为0</p>
+<p style="margin-left:21.0000pt;">Console.WriteLine(&quot;arr[{0}]={1}&quot;,i,arr[i]);&nbsp;</p>
+<p>}</p>
+<p>}</p>
+<p>这个程序创建了一个int类型3个元素的一维数组，初始化后逐项输出。其中arr.Length表示数组元素的个数。注意数组定义不能写为C语言格式：int&nbsp;arr[]。程序的输出为：</p>
+<p>arr[0]&nbsp;=&nbsp;0</p>
+<p>arr[1]&nbsp;=&nbsp;1</p>
+<p>arr[2]&nbsp;=&nbsp;4</p>
+<p>上面的例子中使用的是一维数组，下面介绍多维数组：</p>
+<p>string[]&nbsp;a1;//一维string数组类引用变量a1</p>
+<p>string[,]&nbsp;a2;//二维string数组类引用变量a2</p>
+<p>a2=new&nbsp;string[2,3];</p>
+<p>a2[1,2]=&quot;abc&quot;;</p>
+<p>string[,,]&nbsp;a3;//三维string数组类引用变量a3</p>
+<p>string[][]&nbsp;j2;//数组的数组，即数组的元素还是数组</p>
+<p>string[][][][]&nbsp;j3;</p>
+<p>在数组声明的时候，可以对数组元素进行赋值。看下面的例子：</p>
+<p>int[]&nbsp;a1=new&nbsp;int[]{1,2,3};//一维数组，有3个元素。</p>
+<p>int[]&nbsp;a2=new&nbsp;int[3]{1,2,3};//此格式也正确</p>
+<p>int[]&nbsp;a3={1,2,3};//相当于int[]&nbsp;a3=new&nbsp;int[]{1,2,3};</p>
+<p>int[,]&nbsp;a4=new&nbsp;int[,]{{1,2,3},{4,5,6}};//二维数组，a4[1,1]=5</p>
+<p>int[][]&nbsp;j2=new&nbsp;int[3][];//定义数组j2,有三个元素，每个元素都是一个数组</p>
+<p>j2[0]=new&nbsp;int[]{1,2,3};//定义第一个元素，是一个数组</p>
+<p>j2[1]=new&nbsp;int[]{1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5,&nbsp;6};//每个元素的数组可以不等长</p>
+<p>j2[2]=new&nbsp;int[]{1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5,&nbsp;6,&nbsp;7,&nbsp;8,&nbsp;9};</p>
+<h3>
+	1.4.10字符串类(string类)</h3>
+<p>C#还定义了一个基本的类string，专门用于对字符串的操作。这个类也是在名字空间System中定义的，是类System.String的别名。字符串应用非常广泛，在string类的定义中封装了许多方法，下面的一些语句展示了string类的一些典型用法：</p>
+<ul>
+	<li>
+		字符串定义</li>
+</ul>
+<p>string&nbsp;s;//定义一个字符串引用类型变量s</p>
+<p>s=&quot;Zhang&quot;;//字符串引用类型变量s指向字符串&quot;Zhang&quot;</p>
+<p>string&nbsp;&nbsp;FirstName=&quot;Ming&quot;;</p>
+<p>string&nbsp;&nbsp;LastName=&quot;Zhang&quot;;</p>
+<p>string&nbsp;&nbsp;Name=FirstName+&quot;&nbsp;&nbsp;&quot;+LastName;//运算符+已被重载</p>
+<p>string&nbsp;&nbsp;SameName=Name;</p>
+<p>char[]&nbsp;s2={&#39;计&#39;,&#39;算&#39;,&#39;机&#39;,&#39;科&#39;,&#39;学&#39;};</p>
+<p>string&nbsp;s3=new&nbsp;String(s2);</p>
+<ul>
+	<li>
+		字符串搜索</li>
+</ul>
+<p>string&nbsp;s=&quot;ABC科学&quot;;</p>
+<p>int&nbsp;i=s.IndexOf(&quot;科&quot;);</p>
+<p style="margin-left:21.5000pt;">搜索&quot;科&quot;在字符串中的位置，因第一个字符索引为0，所以&quot;A&quot;索引为0，&quot;科&quot;索引为3，因此这里i=3，如没有此字符串i=-1。注意C#中，ASCII和汉字都用2字节表示。</p>
+<ul>
+	<li>
+		字符串比较函数</li>
+</ul>
+<p>string&nbsp;s1=&quot;abc&quot;;</p>
+<p>string&nbsp;s2=&quot;abc&quot;;</p>
+<p>int&nbsp;n=string.Compare(s1,s2);//n=0</p>
+<p style="margin-left:21.5000pt;">n=0表示两个字符串相同，n小于零，s1&lt;s2，n大于零，s1&gt;s2。此方法区分大小写。也可用如下办法比较字符串：</p>
+<p>string&nbsp;s1=&quot;abc&quot;;</p>
+<p>string&nbsp;s=&quot;abc&quot;;</p>
+<p>string&nbsp;s2=&quot;不相同&quot;;</p>
+<p>if(s==s1)//还可用!=。虽然String是引用类型，但这里比较两个字符串的值</p>
+<p style="margin-left:21.0000pt;">s2=&quot;相同&quot;;</p>
+<ul>
+	<li>
+		判断是否为空字符串</li>
+</ul>
+<p>string&nbsp;s=&quot;&quot;;</p>
+<p>string&nbsp;s1=&quot;不空&quot;;</p>
+<p>if(s.Length==0)</p>
+<p style="margin-left:21.0000pt;">s1=&quot;空&quot;;</p>
+<ul>
+	<li>
+		得到子字符串或字符</li>
+</ul>
+<p>string&nbsp;s=&quot;取子字符串&quot;;</p>
+<p>string&nbsp;sb=s.Substring(2,2);//从索引为2开始取2个字符，Sb=&quot;字符&quot;,s内容不变</p>
+<p>char&nbsp;sb1=s[0];//sb1=&#39;取&#39;</p>
+<p>Console.WriteLine(sb1);//显示：取</p>
+<ul>
+	<li>
+		字符串删除函数</li>
+</ul>
+<p>string&nbsp;s=&quot;取子字符串&quot;;</p>
+<p>string&nbsp;sb=s.Remove(0,2);//从索引为0开始删除2个字符，Sb=&quot;字符串&quot;,s内容不变</p>
+<ul>
+	<li>
+		插入字符串</li>
+</ul>
+<p>string&nbsp;s=&quot;计算机科学&quot;;</p>
+<p>string&nbsp;s1=s.Insert(3,&quot;软件&quot;);//s1=&quot;计算机软件科学&quot;，s内容不变</p>
+<ul>
+	<li>
+		字符串替换函数</li>
+</ul>
+<p>string&nbsp;s=&quot;计算机科学&quot;;</p>
+<p>string&nbsp;s1=s.Replace(&quot;计算机&quot;,&quot;软件&quot;);//s1=&quot;软件科学&quot;，s内容不变</p>
+<ul>
+	<li>
+		把String转换为字符数组</li>
+</ul>
+<p>string&nbsp;S=&quot;计算机科学&quot;;</p>
+<p>char[]&nbsp;s2=S.ToCharArray(0,S.Length);//属性Length为字符类对象的长度</p>
+<ul>
+	<li>
+		其它数据类型转换为字符串</li>
+</ul>
+<p>int&nbsp;i=9;</p>
+<p>string&nbsp;s8=i.ToString();//s8=&quot;9&quot;</p>
+<p>float&nbsp;n=1.9f;</p>
+<p>string&nbsp;s9=n.ToString();//s8=&quot;1.9&quot;</p>
+<p>其它数据类型都可用此方法转换为字符类对象</p>
+<ul>
+	<li>
+		大小写转换</li>
+</ul>
+<p>string&nbsp;s=&quot;AaBbCc&quot;;</p>
+<p>string&nbsp;s1=s.ToLower();//把字符转换为小写，s内容不变</p>
+<p>string&nbsp;s2=s.ToUpper();//把字符转换为大写，s内容不变</p>
+<ul>
+	<li>
+		删除所有的空格</li>
+</ul>
+<p>string&nbsp;s=&quot;A&nbsp;&nbsp;&nbsp;bc&nbsp;&quot;;</p>
+<p>s.Trim();//删除所有的空格</p>
+<p>string类其它方法的使用请用帮助系统查看,方法是打开Visual&nbsp;Studio.Net的代码编辑器，键入string，将光标移到键入的字符串string上，然后按F1键。</p>
+<h3>
+	1.4.11类型转换</h3>
+<p>在编写C#语言程序中，经常会碰到类型转换问题。例如整型数和浮点数相加，C#会进行隐式转换。详细记住那些类型数据可以转换为其它类型数据，是不可能的，也是不必要的。程序员应记住类型转换的一些基本原则，编译器在转换发生问题时，会给出提示。C#语言中类型转换分为：隐式转换、显示转换、加框(boxing)和消框(unboxing)等三种。</p>
+<ul>
+	<li>
+		隐式转换</li>
+</ul>
+<p>隐式转换就是系统默认的、不需要加以声明就可以进行的转换。例如从int类型转换到long类型就是一种隐式转换。在隐式转换过程中，转换一般不会失败，转换过程中也不会导致信息丢失。例如：</p>
+<p>int&nbsp;i=10;</p>
+<p>long&nbsp;l=i;</p>
+<ul>
+	<li>
+		显示转换</li>
+</ul>
+<p>显式类型转换，又叫强制类型转换。与隐式转换正好相反，显式转换需要明确地指定转换类型，显示转换可能导致信息丢失。下面的例子把长整形变量显式转换为整型：</p>
+<p>long&nbsp;l=5000;</p>
+<p>int&nbsp;i=(int)l;//如果超过int取值范围，将产生异常</p>
+<ul>
+	<li>
+		加框(boxing)和消框(unboxing)</li>
+</ul>
+<p>加框(boxing)和消框(unboxing)是C#语言类型系统提出的核心概念，加框是值类型转换为object(对象)类型，消框是object(对象)类型转换为值类型。有了加框和消框的概念，对任何类型的变量来说最终我们都可以看作是object类型。</p>
+<p>1&nbsp;加框操作</p>
+<p>把一个值类型变量加框也就是创建一个object对象，并将这个值类型变量的值复制给这个object对象。例如：</p>
+<p>int&nbsp;i=10;</p>
+<p>object&nbsp;obj=i;//隐式加框操作，obj为创建的object对象的引用。</p>
+<p>我们也可以用显式的方法来进行加框操作，例如：</p>
+<p>int&nbsp;i&nbsp;=10;</p>
+<p>object&nbsp;obj=object(i);//显式加框操作</p>
+<p>值类型的值加框后，值类型变量的值不变，仅将这个值类型变量的值复制给这个object对象。我们看一下下面的程序：</p>
+<p>using&nbsp;System</p>
+<p>class&nbsp;Test</p>
+<p>{ public&nbsp;static&nbsp;void&nbsp;Main()</p>
+<p>{ int&nbsp;n=200;</p>
+<p style="margin-left:21.0000pt;">object&nbsp;o=n;</p>
+<p style="margin-left:21.0000pt;">o=201;//不能改变n</p>
+<p style="margin-left:21.0000pt;">Console.WriteLine(&quot;{0},{1}&quot;,n,o);</p>
+<p>}</p>
+<p>}</p>
+<p>输出结果为：200，201。这就证明了值类型变量n和object类对象o都独立存在着。</p>
+<p>2.&nbsp;消框操作</p>
+<p>和加框操作正好相反，消框操作是指将一个对象类型显式地转换成一个值类型。消框的过程分为两步：首先检查这个object对象，看它是否为给定的值类型的加框值，如是，把这个对象的值拷贝给值类型的变量。我们举个例子来看看一个对象消框的过程：</p>
+<p>int&nbsp;i=10;</p>
+<p>object&nbsp;obj=i;</p>
+<p>int&nbsp;j=(int)obj;//消框操作</p>
+<p>可以看出消框过程正好是加框过程的逆过程，必须注意加框操作和消框操作必须遵循类型兼容的原则。</p>
+<ol>
+	<li value="3">
+		加框和消框的使用</li>
+</ol>
+<p>定义如下函数：</p>
+<p>void&nbsp;Display(Object&nbsp;o)//注意，o为Object类型</p>
+<p>{ int&nbsp;x=(int)o;//消框</p>
+<p>System.Console.WriteLine(&quot;{0},{1}&quot;,x,o);</p>
+<p>}</p>
+<p>调用此函数：int&nbsp;y=20;Display(y);在此利用了加框概念，虚参被实参替换：Object&nbsp;o=y，也就是说，函数的参数是Object类型，可以将任意类型实参传递给函数。</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151119/1197.html">C#运算符</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151119/1195.html">C#零基础入门教程概述</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

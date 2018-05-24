@@ -1,0 +1,524 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>网管人员必备的常用命令 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","810","0","attach");
+		Cms.viewCount("","810");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151020/810.html" title="网管人员必备的常用命令">网管人员必备的常用命令</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-10-20 13:53:36</span>
+     </h3>
+     <p><img alt="" src="/u/cms/www/201510/191340190imw.png" /></p>
+<p>如果你玩过路由器的话，就知道路由器里面那些很好玩的命令缩写。<br />
+	例如，&quot;sh int&quot; 的意思是 &quot;show interface&quot;。<br />
+	<br />
+	现在 Windows 2000 也有了类似界面的工具，叫做 netsh。<br />
+	<br />
+	我们在 Windows 2000 的 cmd shell 下，输入 netsh<br />
+	就出来：netsh&gt; 提示符，<br />
+	输入 int ip 就显示：<br />
+	interface ip&gt;<br />
+	然后输入 dump ，我们就可以看到当前系统的网络配置：<br />
+	<br />
+	&amp;#35; ----------------------------------<br />
+	&amp;#35; Interface IP Configuration<br />
+	&amp;#35; ----------------------------------<br />
+	pushd interface ip<br />
+	<br />
+	<br />
+	&amp;#35; Interface IP Configuration for &quot;Local Area Connection&quot;<br />
+	<br />
+	set address name = &quot;Local Area Connection&quot; source = static addr = 192.168.1.168<br />
+	mask = 255.255.255.0<br />
+	add address name = &quot;Local Area Connection&quot; addr = 192.1.1.111 mask = 255.255.255.0<br />
+	set address name = &quot;Local Area Connection&quot; gateway = 192.168.1.100 gwmetric = 1<br />
+	set dns name = &quot;Local Area Connection&quot; source = static addr = 202.96.209.5<br />
+	set wins name = &quot;Local Area Connection&quot; source = static addr = none<br />
+	<br />
+	<br />
+	popd<br />
+	&amp;#35; End of interface IP configuration<br />
+	<br />
+	上面介绍的是通过交互方式操作的一种办法。<br />
+	我们可以直接输入命令：<br />
+	&quot;netsh interface ip add address &quot;Local Area Connection&quot; 10.0.0.2<br />
+	255.0.0.0&quot;<br />
+	来添加 IP 地址。<br />
+	<br />
+	如果不知道语法，不要紧的哦！<br />
+	在提示符下，输入 ? 就可以找到答案了。方便不方便啊？<br />
+	原来微软的东西里面，也有那么一些让人喜欢的玩意儿。可惜，之至者甚少啊！<br />
+	<br />
+	<br />
+	Windows网络命令行程序<br />
+	这部分包括：<br />
+	<br />
+	使用 ipconfig /all 查看配置<br />
+	使用 ipconfig /renew 刷新配置<br />
+	使用 ipconfig 管理 DNS 和 DHCP 类别 ID<br />
+	使用 Ping 测试连接<br />
+	使用 Arp 解决硬件地址问题<br />
+	使用 nbtstat 解决 NetBIOS 名称问题<br />
+	使用 netstat 显示连接统计<br />
+	使用 tracert 跟踪网络连接<br />
+	使用 pathping 测试路由器<br />
+	使用 ipconfig /all 查看配置<br />
+	发现和解决 TCP/IP 网络问题时，先检查出现问题的计算机上的 TCP/IP 配置。可以<br />
+	使用 ipconfig 命令获得主机配置信息，包括 IP 地址、子网掩码和默认网关。<br />
+	<br />
+	注意<br />
+	<br />
+	对于 Windows 95 和 Windows 98 的客户机，请使用 winipcfg 命令而不是 ipconfi<br />
+	g 命令。<br />
+	使用带 /all 选项的 ipconfig 命令时，将给出所有接口的详细配置报告，包括任何<br />
+	已配置的串行端口。使用 ipconfig /all，可以将命令输出重定向到某个文件，并将<br />
+	输出粘贴到其他文档中。也可以用该输出确认网络上每台计算机的 TCP/IP 配置，或<br />
+	者进一步调查 TCP/IP 网络问题。<br />
+	<br />
+	例如，如果计算机配置的 IP 地址与现有的 IP 地址重复，则子网掩码显示为 0.0.0<br />
+	.0。<br />
+	<br />
+	下面的范例是 ipconfig /all 命令输出，该计算机配置成使用 DHCP 服务器动态配置<br />
+	TCP/IP，并使用 WINS 和 DNS 服务器解析名称。<br />
+	<br />
+	Windows 2000 IP Configuration<br />
+	<br />
+	Node Type.. . . . . . . . : Hybrid<br />
+	IP Routing Enabled.. . . . : No<br />
+	WINS Proxy Enabled.. . . . : No<br />
+	<br />
+	Ethernet adapter Local Area Connection:<br />
+	<br />
+	Host Name.. . . . . . . . : corp1.microsoft.com<br />
+	DNS Servers . . . . . . . : 10.1.0.200<br />
+	Description. . . . . . . : 3Com 3C90x Ethernet Adapter<br />
+	Physical Address. . . . . : 00-60-08-3E-46-07<br />
+	DHCP Enabled.. . . . . . . : Yes<br />
+	Autoconfiguration Enabled.: Yes<br />
+	IP Address. . . . . . . . . : 192.168.0.112<br />
+	Subnet Mask. . . . . . . . : 255.255.0.0<br />
+	Default Gateway. . . . . . : 192.168.0.1<br />
+	DHCP Server. . . . . . . . : 10.1.0.50<br />
+	Primary WINS Server. . . . : 10.1.0.101<br />
+	Secondary WINS Server. . . : 10.1.0.102<br />
+	Lease Obtained.. . . . . . : Wednesday, September 02, 1998 10:32:13 AM<br />
+	Lease Expires.. . . . . . : Friday, September 18, 1998 10:32:13 AM<br />
+	<br />
+	<br />
+	如果 TCP/IP 配置没有问题，下一步测试能够连接到 TCP/IP 网络上的其他主机。<br />
+	<br />
+	使用 ipconfig /renew 刷新配置<br />
+	解决 TCP/IP 网络问题时，先检查遇到问题的计算机上的 TCP/IP 配置。如果计算机<br />
+	启用 DHCP 并使用 DHCP 服务器获得配置，请使用 ipconfig /renew 命令开始刷新租<br />
+	约。<br />
+	<br />
+	使用 ipconfig /renew 时，使用 DHCP 的计算机上的所有网卡（除了那些手动配置的<br />
+	适配器）都尽量连接到 DHCP 服务器，更新现有配置或者获得新配置。<br />
+	<br />
+	也可以使用带 /release 选项的 ipconfig 命令立即释放主机的当前 DHCP 配置。有<br />
+	关 DHCP 和租用过程的详细信息，请参阅客户机如何获得配置。<br />
+	<br />
+	注意<br />
+	<br />
+	对于启用 DHCP 的 Windows 95 和 Windows 98 客户，请使用 winipcfg 命令的 rel<br />
+	ease 和 renew 选项，而不是 ipconfig /release 和 ipconfig /renew 命令，手动<br />
+	释放或更新客户的 IP 配置租约。<br />
+	使用 ipconfig 管理 DNS 和 DHCP 类别 ID<br />
+	也可以使用 ipconfig 命令：<br />
+	<br />
+	显示或重置 DNS 缓存。<br />
+	详细信息，请参阅使用 ipconfig 查看或重置客户解析程序缓存。<br />
+	<br />
+	刷新已注册的 DNS 名称。<br />
+	详细信息，请参阅使用 ipconfig 更新 DNS 客户注册。<br />
+	<br />
+	显示适配器的 DHCP 类别 ID。<br />
+	详细信息，请参阅显示客户机上的 DHCP 类别 ID 信息。<br />
+	<br />
+	设置适配器的 DHCP 类别 ID。<br />
+	详细信息，请参阅设置客户机上的 DHCP 类别 ID 信息。<br />
+	<br />
+	使用 Ping 测试连接<br />
+	Ping 命令有助于验证 IP 级的连通性。发现和解决问题时，可以使用 Ping 向目标主<br />
+	机名或 IP 地址发送 ICMP 回应请求。需要验证主机能否连接到 TCP/IP 网络和网络<br />
+	资源时，请使用 Ping。也可以使用 Ping 隔离网络硬件问题和不兼容配置。<br />
+	<br />
+	通常最好先用 Ping 命令验证本地计算机和网络主机之间的路由是否存在，以及要连<br />
+	接的网络主机的 IP 地址。Ping 目标主机的 IP 地址看它是否响应，如下：<br />
+	<br />
+	ping IP_address<br />
+	<br />
+	使用 Ping 时应该执行以下步骤：<br />
+	<br />
+	Ping 环回地址验证是否在本地计算机上安装 TCP/IP 以及配置是否正确。<br />
+	ping 127.0.0.1<br />
+	<br />
+	Ping 本地计算机的 IP 地址验证是否正确地添加到网络。<br />
+	ping IP_address_of_local_host<br />
+	<br />
+	Ping 默认网关的 IP 地址验证默认网关是否运行以及能否与本地网络上的本地主机通<br />
+	讯。<br />
+	ping IP_address_of_default_gateway<br />
+	<br />
+	Ping 远程主机的 IP 地址验证能否通过路由器通讯。<br />
+	ping IP_address_of_remote_host<br />
+	<br />
+	Ping 命令用 Windows 套接字样式的名称解析将计算机名解析成 IP 地址，所以如果<br />
+	用地址成功，但是用名称 Ping 失败，则问题出在地址或名称解析上，而不是网络连<br />
+	通性的问题。详细信息，请参阅使用 Arp 解决硬件地址问题。<br />
+	<br />
+	如果在任何点上都无法成功地使用 Ping，请确认：<br />
+	<br />
+	安装和配置 TCP/IP 之后重新启动计算机。<br />
+	&ldquo;Internet 协议 (TCP/IP) 属性&rdquo;对话框&ldquo;常规&rdquo;选项卡上的本地计算机的 IP 地址<br />
+	有效而且正确。<br />
+	启用 IP 路由，并且路由器之间的链路是可用的。<br />
+	您可以使用 Ping 命令的不同选项来指定要使用的数据包大小、要发送多少数据包、<br />
+	是否记录用过的路由、要使用的生存时间 (TTL) 值以及是否设置&ldquo;不分段&rdquo;标志。可<br />
+	以键入 ping -? 查看这些选项。<br />
+	<br />
+	下例说明如何向 IP 地址 172.16.48.10 发送两个 Ping，每个都是 1,450 字节：<br />
+	<br />
+	C:&gt;ping -n 2 -l 1450 172.16.48.10<br />
+	Pinging 172.16.48.10 with 1450 bytes of data:<br />
+	<br />
+	Reply from 172.16.48.10:bytes=1450 time&lt;10ms TTL=32<br />
+	Reply from 172.16.48.10:bytes=1450 time&lt;10ms TTL=32<br />
+	<br />
+	Ping statistics for 157.59.8.1:<br />
+	Packets:Sent = 2, Received = 2, Lost = 0 (0% loss),<br />
+	Approximate roundtrip times in milli-seconds:<br />
+	Minimum = 0ms, Maximum = 10ms, Average = 2ms<br />
+	默认情况下，在显示&ldquo;请求超时&rdquo;之前，Ping 等待 1,000 毫秒（1 秒）的时间让每个响应返回。如果通过 Ping 探测的远程系统经过长时间延迟的链路，如卫星链路，则响应可能会花更长的时间才能返回。可以使用 -w （等待）选项指定更长时间的超时。<br />
+	<br />
+	使用 Arp 解决硬件地址问题<br />
+	&ldquo;地址解析协议 (ARP)&rdquo;允许主机查找同一物理网络上的主机的媒体访问控制地址，如果给出后者的 IP 地址。为使 ARP 更加有效，每个计算机缓存 IP 到媒体访问控制地址映射消除重复的 ARP 广播请求。<br />
+	<br />
+	可以使用 arp 命令查看和修改本地计算机上的 ARP 表项。arp 命令对于查看 ARP 缓存和解决地址解析问题非常有用。<br />
+	<br />
+	详细信息，请参阅查看&ldquo;地址解析协议 (ARP)&rdquo;缓存和添加静态 ARP 缓存项目。<br />
+	<br />
+	使用 nbtstat 解决 NetBIOS 名称问题<br />
+	TCP/IP 上的 NetBIOS (NetBT) 将 NetBIOS 名称解析成 IP 地址。TCP/IP 为 NetBIOS 名称解析提供了很多选项，包括本地缓存搜索、WINS 服务器查询、广播、DNS 服务器查询以及 Lmhosts 和主机文件搜索。<br />
+	<br />
+	Nbtstat 是解决 NetBIOS 名称解析问题的有用工具。可以使用nbtstat 命令删除或更正预加载的项目：<br />
+	<br />
+	nbtstat -n 显示由服务器或重定向器之类的程序在系统上本地注册的名称。<br />
+	nbtstat -c 显示 NetBIOS 名称缓存，包含其他计算机的名称对地址映射。<br />
+	nbtstat -R 清除名称缓存，然后从 Lmhosts 文件重新加载。<br />
+	nbtstat -RR 释放在 WINS 服务器上注册的 NetBIOS 名称，然后刷新它们的注册。<br />
+	nbtstat -a name 对 name 指定的计算机执行 NetBIOS 适配器状态命令。适配器状态命令将返回计算机的本地 NetBIOS 名称表，以及适配器的媒体访问控制地址。<br />
+	nbtstat -S 列出当前的 NetBIOS 会话及其状态（包括统计），如下例所示：<br />
+	NetBIOS connection table<br />
+	<br />
+	Local name State In/out Remote Host Input Output<br />
+	------------------------------------------------------------------<br />
+	CORP1 &lt;00&gt; Connected Out CORPSUP1&lt;20&gt; 6MB 5MB<br />
+	CORP1 &lt;00&gt; Connected Out CORPPRINT&lt;20&gt; 108KB 116KB<br />
+	CORP1 &lt;00&gt; Connected Out CORPSRC1&lt;20&gt; 299KB 19KB<br />
+	CORP1 &lt;00&gt; Connected Out CORPEMAIL1&lt;20&gt; 324KB 19KB<br />
+	CORP1 &lt;03&gt; Listening<br />
+	使用 netstat 显示连接统计<br />
+	可以使用 netstat 命令显示协议统计信息和当前的 TCP/IP 连接。netstat -a 命令将显示所有连接，而 netstat -r 显示路由表和活动连接。netstat -e 命令将显示Ethernet 统计信息，而 netstat -s 显示每个协议的统计信息。如果使用 netstat -n，则不能将地址和端口号转换成名称。下面是 netstat 的输出示例：<br />
+	<br />
+	C:&gt;netstat -e<br />
+	Interface Statistics<br />
+	<br />
+	Received Sent<br />
+	Bytes 3995837940 47224622<br />
+	Unicast packets 120099 131015<br />
+	Non-unicast packets 7579544 3823<br />
+	Discards 0 0<br />
+	Errors 0 0<br />
+	Unknown protocols 363054211<br />
+	<br />
+	C:&gt;netstat -a<br />
+	<br />
+	Active Connections<br />
+	<br />
+	Proto Local Address Foreign Address State<br />
+	TCP CORP1:1572 172.16.48.10:nbsession ESTABLISHED<br />
+	TCP CORP1:1589 172.16.48.10:nbsession ESTABLISHED<br />
+	TCP CORP1:1606 172.16.105.245:nbsession ESTABLISHED<br />
+	TCP CORP1:1632 172.16.48.213:nbsession ESTABLISHED<br />
+	TCP CORP1:1659 172.16.48.169:nbsession ESTABLISHED<br />
+	TCP CORP1:1714 172.16.48.203:nbsession ESTABLISHED<br />
+	TCP CORP1:1719 172.16.48.36:nbsession ESTABLISHED<br />
+	TCP CORP1:1241 172.16.48.101:nbsession ESTABLISHED<br />
+	UDP CORP1:1025 *:*<br />
+	UDP CORP1:snmp *:*<br />
+	UDP CORP1:nbname *:*<br />
+	UDP CORP1:nbdatagram *:*<br />
+	UDP CORP1:nbname *:*<br />
+	UDP CORP1:nbdatagram *:*<br />
+	<br />
+	C:&gt;netstat -s<br />
+	IP Statistics<br />
+	<br />
+	Packets Received = 5378528<br />
+	Received Header Errors = 738854<br />
+	Received Address Errors = 23150<br />
+	Datagrams Forwarded = 0<br />
+	Unknown Protocols Received = 0<br />
+	Received Packets Discarded = 0<br />
+	Received Packets Delivered = 4616524<br />
+	Output Requests = 132702<br />
+	Routing Discards = 157<br />
+	Discarded Output Packets = 0<br />
+	Output Packet No Route = 0<br />
+	Reassembly Required = 0<br />
+	Reassembly Successful = 0<br />
+	Reassembly Failures =<br />
+	Datagrams Successfully Fragmented = 0<br />
+	Datagrams Failing Fragmentation = 0<br />
+	Fragments Created = 0<br />
+	<br />
+	ICMP Statistics<br />
+	Received Sent<br />
+	Messages 693 4<br />
+	Errors 0 0<br />
+	Destination Unreachable 685 0<br />
+	Time Exceeded 0 0<br />
+	Parameter Problems 0 0<br />
+	Source Quenches 0 0<br />
+	Redirects 0 0<br />
+	Echoes 4 0<br />
+	Echo Replies 0 4<br />
+	Timestamps 0 0<br />
+	Timestamp Replies 0 0<br />
+	Address Masks 0 0<br />
+	Address Mask Replies 0 0<br />
+	<br />
+	TCP Statistics<br />
+	<br />
+	Active Opens = 597<br />
+	Passive Opens = 135<br />
+	Failed Connection Attempts = 107<br />
+	Reset Connections = 91<br />
+	Current Connections = 8<br />
+	Segments Received = 106770<br />
+	Segments Sent = 118431<br />
+	Segments Retransmitted = 461<br />
+	<br />
+	UDP Statistics<br />
+	<br />
+	Datagrams Received = 4157136<br />
+	No Ports = 351928<br />
+	Receive Errors = 2<br />
+	Datagrams Sent = 13809<br />
+	<br />
+	使用 tracert 跟踪网络连接<br />
+	Tracert（跟踪路由）是路由跟踪实用程序，用于确定 IP 数据报访问目标所采取的路径。Tracert 命令用 IP 生存时间 (TTL) 字段和 ICMP 错误消息来确定从一个主机到网络上其他主机的路由。<br />
+	<br />
+	Tracert 工作原理<br />
+	通过向目标发送不同 IP 生存时间 (TTL) 值的&ldquo;Internet 控制消息协议 (ICMP)&rdquo;回应数据包，Tracert 诊断程序确定到目标所采取的路由。要求路径上的每个路由器在转发数据包之前至少将数据包上的 TTL 递减 1。数据包上的 TTL 减为 0 时，路由器应该将&ldquo;ICMP 已超时&rdquo;的消息发回源系统。<br />
+	<br />
+	Tracert 先发送 TTL 为 1 的回应数据包，并在随后的每次发送过程将 TTL 递增 1，直到目标响应或 TTL 达到最大值，从而确定路由。通过检查中间路由器发回的&ldquo;ICMP 已超时&rdquo;的消息确定路由。某些路由器不经询问直接丢弃 TTL 过期的数据包，这在Tracert 实用程序中看不到。<br />
+	<br />
+	Tracert 命令按顺序打印出返回&ldquo;ICMP 已超时&rdquo;消息的路径中的近端路由器接口列表。如果使用 -d 选项，则 Tracert 实用程序不在每个 IP 地址上查询 DNS。<br />
+	<br />
+	在下例中，数据包必须通过两个路由器（10.0.0.1 和 192.168.0.1）才能到达主机<br />
+	172.16.0.99。主机的默认网关是 10.0.0.1，192.168.0.0 网络上的路由器的 IP 地<br />
+	址是 192.168.0.1。<br />
+	<br />
+	C:&gt;tracert 172.16.0.99 -d <!--/HTMLBUILERPART0--><br />
+	<br />
+	&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151020/811.html">域 名 知 识</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151020/809.html"> 网络名词解释</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

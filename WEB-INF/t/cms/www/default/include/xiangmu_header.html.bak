@@ -1,0 +1,41 @@
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	  <img height="100" src="/${res}/img/javaxuexi_logo.gif"/>
+	</span>
+	<form action="${base}/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="${oldq!}" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="${site.url!}" style="font-weight:600;[#if !channel??] color:#ff8400; [/#if]">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+        [@cms_channel_list]
+        [#list tag_list as c]
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="${c.url}" target="_blank" style="font-weight:600;[#if channel??&&channel.id==c.id] color:#ff8400; [/#if]" >${c.name}</a>
+		   </dt>
+		 </dl>
+	   </li>
+        [/#list]
+        [/@cms_channel_list]
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>

@@ -1,0 +1,570 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>Android调试桥接器 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1024","0","attach");
+		Cms.viewCount("","1024");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151102/1024.html" title="Android调试桥接器">Android调试桥接器</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-02 13:48:58</span>
+     </h3>
+     </p>
+<p><strong>安装应用程序</strong></p>
+<p>可以使用adb从开发用电脑中复制应用程序并且安装到模拟器或手机上，使用install命令即可，在这个命令中，必须指定待安装的.apk文件的路径：</p>
+<div style="margin-left:11.9pt;">
+	<pre>
+adb install &lt;path_to_apk&gt;</pre>
+</div>
+<p>关于创建可安装的应用的更多信息，请参见<a href="http://developer.android.com/guide/developing/tools/aapt.html">Android Asset Packaging Tool</a> (aapt).</p>
+<p>注意，如果使用了安装有ADT插件的Eclipse开发环境，就不需要直接使用adb或aapt命令来安装应用程序了，ADT插件可以自动完成这些操作。</p>
+<p>&nbsp;</p>
+<p><strong>转发端口</strong></p>
+<p>&nbsp;&nbsp;&nbsp; 可以使用forward 命令转发端口 &mdash; 将特定端口上的请求转发到模拟器或手机的不同的端口上。下例是从6100端口转到7100端口：</p>
+<div style="margin-left:12pt;">
+	<pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; adb forward tcp:6100 tcp:7100</pre>
+</div>
+<p>&nbsp;&nbsp;&nbsp; 也可以使用UNIX命名的socket标识：</p>
+<div style="margin-left:12pt;">
+	<pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; adb forward tcp:6100 local:logd </pre>
+</div>
+<p>&nbsp;</p>
+<p><strong>与模拟器或手机传输文件</strong></p>
+<p>可以使用adb的 pull 和 push 命令从模拟器或手机中复制文件，或者将文件复制到模拟器或手机中。与 install 命令不同，它仅能复制.apk文件到特定的位置， pull 和 push 命令可以复制任意文件夹和文件到模拟器或手机的任何位置。</p>
+<p>从模拟器或手机中复制一个文件或文件夹（递归的）使用：</p>
+<div style="margin-left:12pt;">
+	<pre>
+adb pull &lt;remote&gt; &lt;local&gt;</pre>
+</div>
+<p>复制一个文件或文件夹（递归的）到模拟器或手机中使用：</p>
+<div style="margin-left:12pt;">
+	<pre>
+adb push &lt;local&gt; &lt;remote&gt;</pre>
+</div>
+<p>在这个命令中&lt;local&gt;和&lt;remote&gt;引用的是文件或文件夹的路径，在开发用电脑上的是local，在模拟器或手机上的是remote。</p>
+<p>例如：</p>
+<div style="margin-left:12pt;">
+	<pre>
+adb push foo.txt /sdcard/foo.txt</pre>
+</div>
+<p>&nbsp;</p>
+<p><strong>adb</strong><strong>命令列表</strong></p>
+<p>&nbsp;&nbsp;&nbsp; 下表列出了所有adb支持的命令及其说明：</p>
+<table border="1" cellpadding="0" cellspacing="0" width="567">
+	<tbody>
+		<tr>
+			<td style="width:85px;">
+				<p align="center">类别</p>
+			</td>
+			<td style="width:123px;">
+				<p align="center">命令</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">说明</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">备注</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="3" style="width:85px;">
+				<p align="center">可选项</p>
+			</td>
+			<td style="width:123px;">
+				<p align="center">-d</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">命令仅对USB设备有效</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">如果有多个USB设备就会返回错误</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">-e</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">命令仅对运行中的模拟器有效</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">如果有多个运行中的模拟器就会返回错误</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">-s &lt;serialNumber&gt;</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">命令仅对adb关联的特定序列号的模拟器或手机有效(例如 &quot;emulator-5556&quot;).</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">如果不指定设备就会返回错误</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="3" style="width:85px;">
+				<p align="center">一般项</p>
+			</td>
+			<td style="width:123px;">
+				<p align="center">devices</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">输出所有关联的模拟器或手机设备列表</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">参见 <a href="http://developer.android.com/guide/developing/tools/adb.html#devicestatus">Querying for Emulator/Device Instances</a> 以获得更多信息。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">help</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">输出adb支持的命令</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">version</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">输出adb的版本号</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="3" style="width:85px;">
+				<p align="center">调试项</p>
+			</td>
+			<td style="width:123px;">
+				<p align="center">logcat [&lt;option&gt;] [&lt;filter-specs&gt;]</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">在屏幕上输出日志信息</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">bugreport</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">为报告bug，在屏幕上输出dumpsys， dumpstate和 logcat数据</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">jdwp</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">输出有效的JDWP进程信息</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">可以使用 forward jdwp:&lt;pid&gt; 转换端口以连接到指定的 JDWP 进程，例如：</p>
+				<p align="center">adb forward tcp:8000 jdwp:472</p>
+				<p align="center">jdb -attach localhost:8000</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="3" style="width:85px;">
+				<p align="center">数据项</p>
+			</td>
+			<td style="width:123px;">
+				<p align="center">install &lt;path-to-apk&gt;</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">安装应用程序（用完整路径指定.apk文件）</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">pull &lt;remote&gt; &lt;local&gt;</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">从开发机COPY指定的文件到模拟器或手机</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">push &lt;local&gt; &lt;remote&gt;</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">从模拟器或手机COPY文件到开发机</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2" style="width:85px;">
+				<p align="center">端口和网络项</p>
+			</td>
+			<td style="width:123px;">
+				<p align="center">forward &lt;local&gt; &lt;remote&gt;</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">从本地端口转换连接到模拟器或手机的指定端口</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">端口可以使用以下格式表示：</p>
+				<p style="margin-left:42pt;">l&nbsp; tcp:&lt;portnum&gt;</p>
+				<p style="margin-left:42pt;">l&nbsp; local:&lt;UNIX domain socket name&gt;</p>
+				<p style="margin-left:42pt;">l&nbsp; dev:&lt;character device name&gt;</p>
+				<p style="margin-left:42pt;">l&nbsp; jdwp:&lt;pid&gt;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">ppp &lt;tty&gt; [parm]...</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">通过USB运行UPP</p>
+				<p align="center" style="margin-left:21pt;">l&nbsp; &lt;tty&gt; &mdash;PPP流中的tty。例如:/dev/omap_csmi_ttyl。</p>
+				<p style="margin-left:21pt;">l&nbsp; [parm]... &mdash; 0到多个PPP/PPPD 选项, 例如 defaultroute, local, notty等等。</p>
+				<p>注意不用自动启动PPP连接</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="3" style="width:85px;">
+				<p align="center">脚本项</p>
+			</td>
+			<td style="width:123px;">
+				<p align="center">get-serialno</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">输出adb对象的序列号</p>
+			</td>
+			<td rowspan="2" style="width:217px;">
+				<p align="center">参见 <a href="http://developer.android.com/guide/developing/tools/adb.html#devicestatus">Querying for Emulator/Device Instances</a>以获得更多信息。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">get-state</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">输出adb设备的状态</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">wait-for-device</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">阻塞执行直到设备已经连接，即设备状态是 device.</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">可以在其他命令前加上此项，那样的话adb就会等到模拟器或手机设备已经连接才会执行命令，例如:</p>
+				<p align="center">adb wait- for -device shell getprop</p>
+				<p align="center">注意该命令并不等待系统完全启动，因此不能追加需要在系统完全启动才能执行的命令，例如install 命令需要Android包管理器支持，但它必须在系统完全启动后才有效。下面的命令adb wait-for-device install&nbsp; &lt;app&gt;.apk</p>
+				<p align="center">会在模拟器或手机与adb发生连接后就执行install，但系统还没有完全启动，所以会引起错误。</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2" style="width:85px;">
+				<p align="center">服务端项</p>
+			</td>
+			<td style="width:123px;">
+				<p align="center">start-server</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">检测adb服务进程是否启动，如果没启动则启动它。</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">kill-server</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">终止服务端进程</p>
+			</td>
+			<td style="width:217px;">
+				<p align="center">&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2" style="width:85px;">
+				<p align="center">Shell</p>
+			</td>
+			<td style="width:123px;">
+				<p align="center">shell</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">在目标模拟器或手机上启动远程SHELL</p>
+			</td>
+			<td rowspan="2" style="width:217px;">
+				<p align="center">参见 <a href="http://developer.android.com/guide/developing/tools/adb.html#shellcommands">Issuing Shell Commands</a>以获得更多信息。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:123px;">
+				<p align="center">shell [&lt;shellCommand&gt;]</p>
+			</td>
+			<td style="width:142px;">
+				<p align="center">在目标模拟器或手机上执行shellCommand然后退出远程SHELL</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong>执行Shell命令</strong></p>
+<p>&nbsp;&nbsp;&nbsp; Adb提供了shell来在模拟器或手机上运行各种各样的命令，这些命令的二进制形式存在于这个路径中：</p>
+<div style="margin-left:11.95pt;">
+	<pre>
+/system/bin/...</pre>
+</div>
+<p>&nbsp;&nbsp;&nbsp; 无论是否进入adb远程shell，都可以使用 shell 命令来执。</p>
+<p>&nbsp;&nbsp;&nbsp; 在未进入远程shell的情况下可以按下述格式执行单条命令：</p>
+<div style="margin-left:11.95pt;">
+	<pre>
+adb [-d|-e|-s {&lt;serialNumber&gt;}] shell &lt;shellCommand&gt;</pre>
+</div>
+<p>&nbsp;&nbsp;&nbsp; 启动远程shell使用下面的格式：&nbsp;</p>
+<div style="margin-left:11.95pt;">
+	<pre>
+adb [-d|-e|-s {&lt;serialNumber&gt;}] shell</pre>
+</div>
+<p>退出远程shell时使用CTRL+D 或 exit 终止会话。</p>
+<p>以下是可以使用的shell命令的更多信息。</p>
+<p>&nbsp;</p>
+<p><strong>从远程shell检查sqlite3 数据库</strong></p>
+<p>&nbsp;&nbsp;&nbsp; 通过远程shell，可以使用<a href="http://www.sqlite.org/sqlite.html">sqlite3</a>命令行程序来管理由应用程序创建的SQLite数据库。 sqlite3 工具包含很多有用的命令，例如 .dump 用于输出表格的内容，.schema 用于为已经存在的表输出 SQL CREATE 语句。 并且该工具也提供了联机执行SQLite命令的能力。</p>
+<p>&nbsp;&nbsp;&nbsp; 使用 sqlite3时，向前文描述的那样进入模拟器的远程shell，然后使用sqlite3 命令。也可以在调用 sqlite3时指定数据库的全路径。SQLite3数据库存储在/data/data/&lt;package_name&gt;/databases/路径下。</p>
+<p>&nbsp;&nbsp;&nbsp; 示例:</p>
+<div style="margin-left:11.9pt;">
+	<pre>
+$ adb -s emulator-5554 shell</pre>
+	<pre>
+# sqlite3 /data/data/com.example.google.rss.rssexample/databases/rssitems.db</pre>
+	<pre>
+SQLite version 3.3.12</pre>
+	<pre>
+Enter &quot;.help&quot; for instructions</pre>
+	<pre>
+<em>....</em><em> enter commands</em><em>,</em> <em>then</em><em> quit</em><em>...</em></pre>
+	<pre>
+sqlite&gt; .exit </pre>
+</div>
+<p>&nbsp;&nbsp;&nbsp; 一旦运行了 sqlite3，就可以使用 sqlite3 命令，退出并返回远程shell可以使用 exit 或 CTRL+D。</p>
+<p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151105/1039.html">Android应用基础</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151102/1023.html">安卓使用atp</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

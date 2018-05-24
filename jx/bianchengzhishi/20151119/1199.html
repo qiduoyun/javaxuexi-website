@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C#类的继承 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1199","0","attach");
+		Cms.viewCount("","1199");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151119/1199.html" title="C#类的继承">C#类的继承</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-19 19:10:30</span>
+     </h3>
+     <h2>
+	C#类的继承</h2>
+<p>在1.3节，定义了一个描述个人情况的类Person，如果我们需要定义一个雇员类，当然可以从头开始定义雇员类Employee。但这样不能利用Person类中已定义的函数和数据。比较好的方法是，以Person类为基类，派生出一个雇员类Employee，雇员类Employee继承了Person类的数据成员和函数成员，既Person类的数据成员和函数成员成为Employee类的成员。这个Employee类叫以Person类为基类的派生类，这是C#给我们提出的方法。C#用继承的方法，实现代码的重用。</p>
+<h3>
+	1.7.1派生类的声明格式</h3>
+<p>派生类的声明格式如下：</p>
+<p>属性&nbsp;类修饰符&nbsp;class&nbsp;派生类名:基类名&nbsp;{类体}</p>
+<p>雇员类Employee定义如下：</p>
+<p>class&nbsp;Employee:Person//Person类是基类</p>
+<p>{ private&nbsp;string&nbsp;department;//部门，新增数据成员</p>
+<p style="margin-left:21.0000pt;">private&nbsp;decimal&nbsp;salary;//薪金，新增数据成员</p>
+<p style="margin-left:21.0000pt;">public&nbsp;Employee(string&nbsp;Name,int&nbsp;Age,string&nbsp;D,decimal&nbsp;S):base(Name,Age)</p>
+<p style="margin-left:21.0000pt;">{//注意base的第一种用法，根据参数调用指定基类构造函数，注意参数的传递</p>
+<p style="margin-left:21.0000pt;">department=D;</p>
+<p style="margin-left:21.0000pt;">salary=S;</p>
+<p>}</p>
+<p>public&nbsp;new&nbsp;void&nbsp;Display()//覆盖基类Display()方法,注意new,不可用override</p>
+<p>{ base.Display();//访问基类被覆盖的方法，base的第二种用法</p>
+<p>Console.WriteLine(&quot;部门：{0}&nbsp;&nbsp;薪金：{1}&quot;,department,salary);</p>
+<p>}</p>
+<p>}</p>
+<p>修改主函数如下：</p>
+<p>class&nbsp;Class1</p>
+<p>{ static&nbsp;void&nbsp;Main(string[]&nbsp;args)</p>
+<p style="margin-left:21.0000pt;">{ Employee&nbsp;OneEmployee=new&nbsp;Employee(&quot;李四&quot;,30,&quot;计算机系&quot;,2000);</p>
+<p style="margin-left:42.0000pt;">OneEmployee.Display();</p>
+<p style="margin-left:21.0000pt;">}</p>
+<p>}</p>
+<p>Employee类继承了基类Person的方法SetName()、SetAge()，数据成员name和age，即认为基类Person的这些成员也是Employee类的成员，但不能继承构造函数和析构函数。添加了新的数据成员department和salary。覆盖了方法Display()。请注意，虽然Employee类继承了基类Person的name和age，但由于它们是基类的私有成员，Employee类中新增或覆盖的方法不能直接修改name和age，只能通过基类原有的公有方法SetName()和SetAge()修改。如果希望在Employee类中能直接修改name和age，必须在基类中修改它们的属性为protected。</p>
+<h3>
+	1.7.2&nbsp;base&nbsp;关键字</h3>
+<p>base关键字用于从派生类中访问基类成员，它有两种基本用法：</p>
+<ul>
+	<li>
+		在定义派生类的构造函数中，指明要调用的基类构造函数，由于基类可能有多个构造函数，根据base后的参数类型和个数，指明要调用哪一个基类构造函数。参见上节雇员类Employee构造函数定义中的base的第一种用法。</li>
+	<li>
+		在派生类的方法中调用基类中被派生类覆盖的方法。参见上节雇员类Employee的Display()方法定义中的base的第二种用法。</li>
+</ul>
+<h3>
+	1.7.3&nbsp;覆盖基类成员</h3>
+<p>在派生类中，通过声明与基类完全相同新成员，可以覆盖基类的同名成员，完全相同是指函数类型、函数名、参数类型和个数都相同。如上例中的方法Display()。派生类覆盖基类成员不算错误，但会导致编译器发出警告。如果增加new修饰符，表示认可覆盖，编译器不再发出警告。请注意，覆盖基类的同名成员，并不是移走基类成员，只是必须用如下格式访问基类中被派生类覆盖的方法：base.Display()。</p>
+<h3>
+	1.7.4&nbsp;C#语言类继承特点</h3>
+<p>C#语言类继承有如下特点：</p>
+<ul>
+	<li>
+		C#语言只允许单继承，即派生类只能有一个基类。</li>
+	<li>
+		C#语言继承是可以传递的，如果C从B派生，B从A派生，那么C不但继承B的成员，还要继承A中的成员。</li>
+	<li>
+		派生类可以添加新成员，但不能删除基类中的成员。</li>
+	<li>
+		派生类不能继承基类的构造函数、析构函数和事件。但能继承基类的属性。</li>
+	<li>
+		派生类可以覆盖基类的同名成员，如果在派生类中覆盖了基类同名成员，基类该成员在派生类中就不能被直接访问，只能通过base.基类方法名访问。</li>
+	<li>
+		派生类对象也是其基类的对象，但基类对象却不是其派生类的对象。例如，前边定义的雇员类Employee是Person类的派生类，所有雇员都是人类，但很多人并不是雇员，可能是学生，自由职业者，儿童等。因此C#语言规定，基类的引用变量可以引用其派生类对象，但派生类的引用变量不可以引用其基类对象。</li>
+</ul>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151119/1200.html">C#类的成员</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151119/1198.html">C#程序控制语句</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

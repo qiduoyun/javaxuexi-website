@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>三层交换机vlan入门到精通 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","696","0","attach");
+		Cms.viewCount("","696");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151016/696.html" title="三层交换机vlan入门到精通">三层交换机vlan入门到精通</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-10-16 19:57:59</span>
+     </h3>
+     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vlan的资料,从入门到精通<br />
+	<img alt="" src="/u/cms/www/201510/16195734aaml.jpg" style="width: 1024px; height: 768px" />局域网实现VLAN实例&nbsp;<br />
+	局域网实现VLAN实例计算机网络技术的发展犹如戏剧舞台，你方唱罢我登台。从传统的以太网（10Mb/s）发展到快速以太网（100Mb/s）和千兆以太网（1000Mb/s）也不过几年的时间，其迅猛的势头实在令人吃惊。而现在中大型规模网络建设中，以千兆三层交换机为核心的所谓&ldquo;千兆主干跑、百兆到桌面&rdquo;的主流网络模型已不胜枚举。&nbsp;现在，网络业界对&ldquo;三层交换&rdquo;和VLAN这两词已经不感到陌生了。&nbsp;<br />
+	<br />
+	一、什么是三层交换和VLAN要回答这个问题我们还是先看看以太网的工作原理。以太网的工作原理是利用二进制位形成的一个个字节组合成一帧帧的数据（其实是一些电脉冲）在导线中进行传播。&nbsp;<br />
+	<br />
+	首先，以太网网段上需要进行数据传送的节点对导线进行监听，这个过程称为CSMA/CD（Carrier&nbsp;Sense&nbsp;Multiple&nbsp;Access&nbsp;with&nbsp;Collision&nbsp;Detection带有冲突监测的载波侦听多址访问）的载波侦听。如果，这时有另外的节点正在传送数据，监听节点将不得不等待，直到传送节点的传送任务结束。如果某时恰好有两个工作站同时准备传送数据，以太网网段将发出&ldquo;冲突&rdquo;信号。这时，节点上所有的工作站都将检测到冲突信号，因为这时导线上的电压超出了标准电压。这时以太网网段上的任何节点都要等冲突结束后才能够传送数据。也就是说在CSMA/CD方式下，在一个时间段，只有一个节点能够在导线上传送数据。而转发以太网数据帧的联网设备是集线器,它是一层设备，传输效率比较低。冲突的产生降低了以太网的带宽，而且这种情况又是不可避免的。所以，当导线上的节点越来越多后，冲突的数量将会增加。显而易见的解决方法是限制以太网导线上的节点，需要对网络进行物理分段。将网络进行物理分段的网络设备用到了网桥与交换机。网桥和交换机的基本作用是只发送去往其他物理网段的信息。所以，如果所有的信息都只发往本地的物理网段，那么网桥和交换机上就没有信息通过。这样可以有效减少网络上的冲突。网桥和交换机是基于目标MAC（介质访问控制）地址做出转发决定的，它们是二层设备。&nbsp;<br />
+	<br />
+	我们已经知道了以太网的缺点及物理网段中冲突的影响，现在，我们来看看另外一种导致网络降低运行速度的原因：广播。广播存在于所有的网络上，如果不对它们进行适当的控制，它们便会充斥于整个网络，产生大量的网络通信。广播不仅消耗了带宽，而且也降低了用户工作站的处理效率。由于各种各样的原因，网络操作系统（NOS）使用了广播，TCP/IP使用广播从IP地址中解析MAC地址，还使用广播通过RIP和IGRP协议进行宣告，所以，广播也是不可避免的。网桥和交换机将对所有的广播信息进行转发，而路由器不会。所以，为了对广播进行控制，就必须使用路由器。路由器是基于第3层报头、目标IP寻址、目标IPX寻址或目标Appletalk寻址做出转发决定。路由器是3层设备。&nbsp;<br />
+	<br />
+	在这里，我们就容易理解三层交换技术了，通俗地讲，就是将路由与交换合二为一的技术。路由器在对第一个数据流进行路由后，将会产生一个MAC地址与IP地址的映射表，当同样的数据流再次通过时，将根据此映射表直接从二层进行交换而不是再次路由，提供线速性能，从而消除了路由器进行路由选择而造成网络的延迟，提高了数据包转发的效率。采用此技术的交换机我们常称为三层交换机。&nbsp;<br />
+	<br />
+	那么，什么是VLAN呢？VLAN（Virtual&nbsp;Local&nbsp;Area&nbsp;Network）就是虚拟局域网的意思。VLAN可以不考虑用户的物理位置，而根据功能、应用等因素将用户从逻辑上划分为一个个功能相对独立的工作组，每个用户主机都连接在一个支持VLAN的交换机端口上并属于一个VLAN。同一个VLAN中的成员都共享广播，形成一个广播域，而不同VLAN之间广播信息是相互隔离的。这样，将整个网络分割成多个不同的广播域（VLAN）。一般来说，如果一个VLAN里面的工作站发送一个广播，那么这个VLAN里面所有的工作站都接收到这个广播，但是交换机不会将广播发送至其他VLAN上的任何一个端口。如果要将广播发送到其它的VLAN端口，就要用到三层交换机。&nbsp;<br />
+	<br />
+	二、如何配置三层交换机创建VLAN&nbsp;<br />
+	<br />
+	以下的介绍都是基于Cisco交换机的VLAN。Cisco的VLAN实现通常是以端口为中心的,与节点相连的端口将确定它所驻留的VLAN。将端口分配给VLAN的方式有两种，分别是静态的和动态的.&nbsp;<br />
+	形成静态VLAN的过程是将端口强制性地分配给VLAN的过程。即我们先在VTP&nbsp;（VLAN&nbsp;Trunking&nbsp;Protocol）Server上建立VLAN，然后将每个端口分配给相应的VLAN的过程。这是我们创建VLAN最常用的方法。&nbsp;<br />
+	动态VLAN形成很简单，由具体的机器决定自己属于哪个VLAN。即我们先建立一个VMPS（VLAN&nbsp;Membership&nbsp;Policy&nbsp;Server）VLAN管理策略服务器，里面包含一个文本文件，文件中存有与VLAN映射的MAC地址表。交换机根据这个映射表决定将端口分配给何种VLAN。这种方法有很大的优势，但创建数据库是一项非常艰苦而且非常繁琐的工作。&nbsp;<br />
+	<br />
+	下面以实例说明如何在一个典型的快速以太局域网中实现VLAN。&nbsp;<br />
+	<br />
+	所谓典型局域网就是指由一台具备三层交换功能的核心交换机接几台分支交换机（不一定具备三层交换能力）。我们假设核心交换机名称为：COM；分支交换机分别为：PAR1、PAR2、PAR3，分别通过Port&nbsp;1的光线模块与核心交换机相连；并且假设VLAN名称分别为COUNTER、MARKET、MANAGING&hellip;&hellip;&nbsp;<br />
+	<br />
+	需要做的工作：&nbsp;<br />
+	1、设置VTP&nbsp;DOMAIN（核心、分支交换机上都设置）&nbsp;<br />
+	2、配置中继（核心、分支交换机上都设置）&nbsp;<br />
+	3、创建VLAN（在server上设置）&nbsp;<br />
+	4、将交换机端口划入VLAN&nbsp;<br />
+	5、配置三层交换&nbsp;<br />
+	<br />
+	<br />
+	1、设置VTP&nbsp;DOMAIN。&nbsp;VTP&nbsp;DOMAIN&nbsp;称为管理域。&nbsp;<br />
+	<br />
+	交换VTP更新信息的所有交换机必须配置为相同的管理域。如果所有的交换机都以中继线相连，那么只要在核心交换机上设置一个管理域，网络上所有的交换机都加入该域，这样管理域里所有的交换机就能够了解彼此的VLAN列表。&nbsp;<br />
+	<br />
+	COM#vlan&nbsp;database&nbsp;进入VLAN配置模式&nbsp;<br />
+	COM(vlan)#vtp&nbsp;domain&nbsp;COM&nbsp;设置VTP管理域名称&nbsp;COM&nbsp;<br />
+	COM(vlan)#vtp&nbsp;server&nbsp;设置交换机为服务器模式&nbsp;<br />
+	<br />
+	PAR1#vlan&nbsp;database&nbsp;进入VLAN配置模式&nbsp;<br />
+	PAR1(vlan)#vtp&nbsp;domain&nbsp;COM&nbsp;设置VTP管理域名称COM&nbsp;<br />
+	PAR1(vlan)#vtp&nbsp;Client&nbsp;设置交换机为客户端模式&nbsp;<br />
+	<br />
+	PAR2#vlan&nbsp;database&nbsp;进入VLAN配置模式&nbsp;<br />
+	PAR2(vlan)#vtp&nbsp;domain&nbsp;COM&nbsp;设置VTP管理域名称COM&nbsp;<br />
+	PAR2(vlan)#vtp&nbsp;Client&nbsp;设置交换机为客户端模式&nbsp;<br />
+	<br />
+	PAR3#vlan&nbsp;database&nbsp;进入VLAN配置模式&nbsp;<br />
+	PAR3(vlan)#vtp&nbsp;domain&nbsp;COM&nbsp;设置VTP管理域名称COM&nbsp;<br />
+	PAR3(vlan)#vtp&nbsp;Client&nbsp;设置交换机为客户端模式&nbsp;<br />
+	<br />
+	注意：这里设置核心交换机为Server模式是指允许在该交换机上创建、修改、删除VLAN及其他一些对整个VTP域的配置参数，同步本VTP域中其他交换机传递来的最新的VLAN信息；Client模式是指本交换机不能创建、删除、修改VLAN配置，也不能在NVRAM中存储VLAN配置，但可同步由本VTP域中其他交换机传递来的VLAN信息。&nbsp;<br />
+	<br />
+	2、配置中继为了保证管理域能够覆盖所有的分支交换机，必须配置中继。&nbsp;<br />
+	<br />
+	Cisco交换机能够支持任何介质作为中继线，为了实现中继可使用其特有的ISL标签。ISL（Inter－Switch&nbsp;Link）是一个在交换机之间、交换机与路由器之间及交换机与服务器之间传递多个VLAN信息及VLAN数据流的协议，通过在交换机直接相连的端口配置ISL封装，即可跨越交换机进行整个网络的VLAN分配和进行配置。&nbsp;<br />
+	<br />
+	在核心交换机端配置如下：&nbsp;<br />
+	<br />
+	COM(config)#interface&nbsp;gigabitEthernet&nbsp;2/1&nbsp;<br />
+	COM(config-if)#switchport&nbsp;<br />
+	COM(config-if)#switchport&nbsp;trunk&nbsp;encapsulation&nbsp;isl&nbsp;配置中继协议&nbsp;<br />
+	COM(config-if)#switchport&nbsp;mode&nbsp;trunk&nbsp;<br />
+	<br />
+	COM(config)#interface&nbsp;gigabitEthernet&nbsp;2/2&nbsp;<br />
+	COM(config-if)#switchport&nbsp;<br />
+	COM(config-if)#switchport&nbsp;trunk&nbsp;encapsulation&nbsp;isl&nbsp;配置中继协议&nbsp;<br />
+	COM(config-if)#switchport&nbsp;mode&nbsp;trunk&nbsp;<br />
+	<br />
+	COM(config)#interface&nbsp;gigabitEthernet&nbsp;2/3&nbsp;<br />
+	COM(config-if)#switchport&nbsp;<br />
+	COM(config-if)#switchport&nbsp;trunk&nbsp;encapsulation&nbsp;isl&nbsp;配置中继协议&nbsp;<br />
+	COM(config-if)#switchport&nbsp;mode&nbsp;trunk&nbsp;<br />
+	<br />
+	在分支交换机端配置如下：&nbsp;<br />
+	<br />
+	PAR1(config)#interface&nbsp;gigabitEthernet&nbsp;0/1&nbsp;<br />
+	PAR1(config-if)#switchport&nbsp;mode&nbsp;trunk&nbsp;<br />
+	<br />
+	PAR2(config)#interface&nbsp;gigabitEthernet&nbsp;0/1&nbsp;<br />
+	PAR2(config-if)#switchport&nbsp;mode&nbsp;trunk&nbsp;<br />
+	<br />
+	PAR3(config)#interface&nbsp;gigabitEthernet&nbsp;0/1&nbsp;<br />
+	PAR3(config-if)#switchport&nbsp;mode&nbsp;trunk&nbsp;<br />
+	<br />
+	&hellip;&hellip;&nbsp;<br />
+	<br />
+	此时，管理域算是设置完毕了。&nbsp;<br />
+	<br />
+	<br />
+	3、创建VLAN一旦建立了管理域，就可以创建VLAN了。&nbsp;<br />
+	<br />
+	COM(vlan)#Vlan&nbsp;10&nbsp;name&nbsp;COUNTER&nbsp;创建了一个编号为10&nbsp;名字为COUNTER的&nbsp;VLAN&nbsp;<br />
+	COM(vlan)#Vlan&nbsp;11&nbsp;name&nbsp;MARKET&nbsp;创建了一个编号为11&nbsp;名字为MARKET的&nbsp;VLAN&nbsp;<br />
+	COM(vlan)#Vlan&nbsp;12&nbsp;name&nbsp;MANAGING&nbsp;创建了一个编号为12&nbsp;名字为MANAGING的&nbsp;VLAN&nbsp;<br />
+	<br />
+	&hellip;&hellip;&nbsp;<br />
+	<br />
+	注意，这里的VLAN是在核心交换机上建立的，其实，只要是在管理域中的任何一台VTP&nbsp;属性为Server的交换机上建立VLAN，它就会通过VTP通告整个管理域中的所有的交换机。但如果要将具体的交换机端口划入某个VLAN，就必须在该端口所属的交换机上进行设置。&nbsp;<br />
+	<br />
+	<br />
+	4、将交换机端口划入VLAN&nbsp;<br />
+	<br />
+	例如，要将PAR1、PAR2、PAR3&hellip;&hellip;分支交换机的端口1划入COUNTER&nbsp;VLAN，端口2划入MARKET&nbsp;VLAN，端口3划入MANAGING&nbsp;VLAN&hellip;&hellip;&nbsp;<br />
+	<br />
+	PAR1(config)#interface&nbsp;fastEthernet&nbsp;0/1&nbsp;配置端口1&nbsp;<br />
+	PAR1(config-if)#switchport&nbsp;access&nbsp;vlan&nbsp;10&nbsp;归属COUNTER&nbsp;VLAN&nbsp;<br />
+	<br />
+	PAR1(config)#interface&nbsp;fastEthernet&nbsp;0/2&nbsp;配置端口2&nbsp;<br />
+	PAR1(config-if)#switchport&nbsp;access&nbsp;vlan&nbsp;11&nbsp;归属MARKET&nbsp;VLAN&nbsp;<br />
+	<br />
+	PAR1(config)#interface&nbsp;fastEthernet&nbsp;0/3&nbsp;配置端口3&nbsp;<br />
+	PAR1(config-if)#switchport&nbsp;access&nbsp;vlan&nbsp;12&nbsp;归属MANAGING&nbsp;VLAN&nbsp;<br />
+	<br />
+	<br />
+	PAR2(config)#interface&nbsp;fastEthernet&nbsp;0/1&nbsp;配置端口1&nbsp;<br />
+	PAR2(config-if)#switchport&nbsp;access&nbsp;vlan&nbsp;10&nbsp;归属COUNTER&nbsp;VLAN&nbsp;<br />
+	<br />
+	PAR2(config)#interface&nbsp;fastEthernet&nbsp;0/2&nbsp;配置端口2&nbsp;<br />
+	PAR2(config-if)#switchport&nbsp;access&nbsp;vlan&nbsp;11&nbsp;归属MARKET&nbsp;VLAN&nbsp;<br />
+	<br />
+	PAR2(config)#interface&nbsp;fastEthernet&nbsp;0/3&nbsp;配置端口3&nbsp;<br />
+	PAR2(config-if)#switchport&nbsp;access&nbsp;vlan&nbsp;12&nbsp;归属MANAGING&nbsp;VLAN&nbsp;<br />
+	<br />
+	<br />
+	PAR3(config)#interface&nbsp;fastEthernet&nbsp;0/1&nbsp;配置端口1&nbsp;<br />
+	PAR3(config-if)#switchport&nbsp;access&nbsp;vlan&nbsp;10&nbsp;归属COUNTER&nbsp;VLAN&nbsp;<br />
+	<br />
+	PAR3(config)#interface&nbsp;fastEthernet&nbsp;0/2&nbsp;配置端口2&nbsp;<br />
+	PAR3(config-if)#switchport&nbsp;access&nbsp;vlan&nbsp;11&nbsp;归属MARKET&nbsp;VLAN&nbsp;<br />
+	<br />
+	PAR3(config)#interface&nbsp;fastEthernet&nbsp;0/3&nbsp;配置端口3&nbsp;<br />
+	PAR3(config-if)#switchport&nbsp;access&nbsp;vlan&nbsp;12&nbsp;归属MANAGING&nbsp;VLAN&nbsp;<br />
+	<br />
+	&hellip;&hellip;&nbsp;<br />
+	<br />
+	<br />
+	5、配置三层交换&nbsp;<br />
+	<br />
+	到这里，VLAN已经基本划分完毕。但是，VLAN间如何实现三层（网络层）交换呢？这时就要给各VLAN分配网络（IP）地址了。给VLAN分配IP地址分两种情况，其一，给VLAN所有的节点分配静态IP地址；其二，给VLAN所有的节点分配动态IP地址。下面就这两种情况分别介绍。&nbsp;<br />
+	<br />
+	假设给VLAN&nbsp;COUNTER分配的接口Ip地址为172.16.58.1/24，网络地址为：172.16.58.0，&nbsp;<br />
+	VLAN&nbsp;MARKET&nbsp;分配的接口Ip地址为172.16.59.1/24，网络地址为：172.16.59.0，&nbsp;<br />
+	VLAN&nbsp;MANAGING分配接口Ip地址为172.16.60.1/24，&nbsp;网络地址为172.16.60.0&nbsp;<br />
+	&hellip;&hellip;&nbsp;<br />
+	如果动态分配IP地址，则设网络上的DHCP服务器IP地址为172.16.1.11。&nbsp;<br />
+	<br />
+	(1)给VLAN所有的节点分配静态IP地址。&nbsp;<br />
+	<br />
+	首先在核心交换机上分别设置各VLAN的接口IP地址。核心交换机将vlan做为一种接口对待，就象路由器上的一样，如下所示：&nbsp;<br />
+	<br />
+	COM(config)#interface&nbsp;vlan&nbsp;10&nbsp;<br />
+	COM(config-if)#ip&nbsp;address&nbsp;172.16.58.1&nbsp;255.255.255.0&nbsp;VLAN10接口IP&nbsp;<br />
+	<br />
+	COM(config)#interface&nbsp;vlan&nbsp;11&nbsp;<br />
+	COM(config-if)#ip&nbsp;address&nbsp;172.16.59.1&nbsp;255.255.255.0&nbsp;VLAN11接口IP&nbsp;<br />
+	<br />
+	COM(config)#interface&nbsp;vlan&nbsp;12&nbsp;<br />
+	COM(config-if)#ip&nbsp;address&nbsp;172.16.60.1&nbsp;255.255.255.0&nbsp;VLAN12接口IP&nbsp;<br />
+	<br />
+	&hellip;&hellip;&nbsp;<br />
+	<br />
+	再在各接入VLAN的计算机上设置与所属VLAN的网络地址一致的IP地址，并且把默认网关设置为该VLAN的接口地址。这样，所有的VLAN也可以互访了。&nbsp;<br />
+	<br />
+	(2)给VLAN所有的节点分配动态IP地址。&nbsp;<br />
+	<br />
+	首先在核心交换机上分别设置各VLAN的接口IP地址和同样的DHCP服务器的IP地址，如下所示：&nbsp;<br />
+	<br />
+	COM(config)#interface&nbsp;vlan&nbsp;10&nbsp;<br />
+	COM(config-if)#ip&nbsp;address&nbsp;172.16.58.1&nbsp;255.255.255.0&nbsp;VLAN10接口IP&nbsp;<br />
+	COM(config-if)#ip&nbsp;helper-address&nbsp;172.16.1.11&nbsp;DHCP&nbsp;Server&nbsp;IP&nbsp;<br />
+	<br />
+	COM(config)#interface&nbsp;vlan&nbsp;11&nbsp;<br />
+	COM(config-if)#ip&nbsp;address&nbsp;172.16.59.1&nbsp;255.255.255.0&nbsp;VLAN11接口IP&nbsp;<br />
+	COM(config-if)#ip&nbsp;helper-address&nbsp;172.16.1.11&nbsp;DHCP&nbsp;Server&nbsp;IP&nbsp;<br />
+	<br />
+	COM(config)#interface&nbsp;vlan&nbsp;12&nbsp;<br />
+	COM(config-if)#ip&nbsp;address&nbsp;172.16.60.1&nbsp;255.255.255.0&nbsp;VLAN12接口IP&nbsp;<br />
+	COM(config-if)#ip&nbsp;helper-address&nbsp;172.16.1.11&nbsp;DHCP&nbsp;Server&nbsp;IP&nbsp;<br />
+	<br />
+	&hellip;&hellip;&nbsp;<br />
+	<br />
+	再在DHCP服务器上设置网络地址分别为172.16.58.0，172.16.59.0，172.16.60.0的作用域，并将这些作用域的&ldquo;路由器&rdquo;选项设置为对应VLAN的接口IP地址。这样，可以保证所有的VLAN也可以互访了。&nbsp;<br />
+	<br />
+	最后在各接入VLAN的计算机进行网络设置，将IP地址选项设置为自动获得IP地址即可。&nbsp;<br />
+	<br />
+	<br />
+	三、总结&nbsp;<br />
+	<br />
+	本文是笔者在实际工作中的一些总结。笔者力图用通俗易懂的文字来阐述创建VLAN的全过程。并且给出了详细的设置步骤，只要你对Cisco交换机的IOS有所了解，看懂本文并不难。按照本文所示的步骤一步一步地做，你完全可以给一个典型的快速以太网络建立多个VLAN</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151016/697.html">CCNA考试命令集总结 </a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151016/694.html">慎用ie浏览器，谨防浏览网页电脑中毒</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

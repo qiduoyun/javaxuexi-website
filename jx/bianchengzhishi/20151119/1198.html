@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C#程序控制语句 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1198","0","attach");
+		Cms.viewCount("","1198");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151119/1198.html" title="C#程序控制语句">C#程序控制语句</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-19 19:07:56</span>
+     </h3>
+     <h2>
+	C#程序控制语句<img alt="" src="/u/cms/www/201511/19190740siwa.jpg" style="width: 300px; height: 150px;" /></h2>
+<p>C#语言控制语句和C基本相同，使用方法基本一致。C#语言控制语句包括：if语句、swith语句、while语句、do&hellip;while语句、for语句、foreach语句、break语句、continue语句、goto语句、return语句、异常处理语句等，其中foreach语句和异常语句是C#语言新增加控制语句。本节首先介绍一下这些语句和C语言的不同点，然后介绍C#语言新增的控制语句。</p>
+<h3>
+	1.6.1和C语言的不同点</h3>
+<ul>
+	<li>
+		与C不同，if语句、while语句、do&hellip;while语句、for语句中的判断语句，一定要用布尔表达式，不能认为0为false，其它数为true。</li>
+	<li>
+		switch语句不再支持遍历，C和C++语言允许switch语句中case标签后不出现break语句,但C#不允许这样,它要求每个case标签项后使用break语句或goto跳转语句，即不允许从一个case自动遍历到其它case，否则编译时将报错。switch语句的控制类型,即其中控制表达式的数据类型可以是sbyte、byte、short、ushort、uint、long、ulong、char、string或枚举类型。每个case标签中的常量表达式必须属于或能隐式转换成控制类型。如果有两个或两个以上case标签中的常量表达式值相同，编译时将会报错。执行switch语句，首先计算switch表达式，然后与case后的常量表达式的值进行比较，执行第一个与之匹配的case分支下的语句。如果没有case常量表达式的值与之匹配，则执行dafault分支下的语句，如果没有dafault语句，则退出switch语句。switch语句中可以没有dafault语句，但最多只能有一个dafault语句。见下例：</li>
+</ul>
+<p>using&nbsp;System;</p>
+<p>class&nbsp;class1</p>
+<p>{ static&nbsp;void&nbsp;Main()</p>
+<p>{&nbsp; System.Console.WriteLine(&quot;请输入要计算天数的月份&quot;);</p>
+<p style="margin-left:21.0000pt;">string&nbsp;s=System.Console.ReadLine();</p>
+<p style="margin-left:21.0000pt;">string&nbsp;s1=&quot;&quot;;</p>
+<p style="margin-left:21.0000pt;">switch(s)</p>
+<p style="margin-left:21.0000pt;">{ case&nbsp;&quot;1&quot;:&nbsp;case&nbsp;&quot;3&quot;:&nbsp;case&nbsp;&quot;5&quot;:</p>
+<p>case&nbsp;&quot;7&quot;:&nbsp;case&nbsp;&quot;8&quot;:&nbsp;case&nbsp;&quot;10&quot;:</p>
+<p>case&nbsp;&quot;12&quot;://共用一条语句</p>
+<p>s1=&quot;31&quot;;break;</p>
+<p>case&nbsp;&quot;2&quot;:</p>
+<p>s1=&quot;28&quot;;break;</p>
+<p style="margin-left:42.0000pt;">case&nbsp;&quot;4&quot;:&nbsp;case&nbsp;&quot;6&quot;:&nbsp;case&nbsp;&quot;9&quot;:</p>
+<p style="margin-left:21.0000pt;">goto&nbsp;case&nbsp;&quot;11&quot;;//goto语句仅为说明问题，无此必要</p>
+<p>case&nbsp;&quot;11&quot;:</p>
+<p>s1=&quot;30&quot;;break;</p>
+<p style="margin-left:42.0000pt;">default:</p>
+<p style="margin-left:21.0000pt;">s1=&quot;输入错误&quot;;break;</p>
+<p style="margin-left:21.0000pt;">}</p>
+<p style="margin-left:21.0000pt;">System.Console.WriteLine(s1);</p>
+<p>}</p>
+<p>}</p>
+<h3>
+	1.6.2foreach语句</h3>
+<p>foreach语句是C#语言新引入的语句，C和C++中没有这个语句，它借用Visual&nbsp;Basic中的foreach语句。语句的格式为：</p>
+<p>foreach(类型&nbsp;变量名&nbsp;in&nbsp;表达式)&nbsp;循环语句</p>
+<p>其中表达式必须是一个数组或其它集合类型，每一次循环从数组或其它集合中逐一取出数据，赋值给指定类型的变量，该变量可以在循环语句中使用、处理，但不允许修改变量，该变量的指定类型必须和表达式所代表的数组或其它集合中的数据类型一致。例子：</p>
+<p>using&nbsp;System;</p>
+<p>class&nbsp;Test()</p>
+<p>{ public&nbsp;static&nbsp;void&nbsp;Main()</p>
+<p>{ int[]&nbsp;list={10,20,30,40};//数组</p>
+<p style="margin-left:21.0000pt;">foreach(int&nbsp;m&nbsp;in&nbsp;list)</p>
+<p style="margin-left:21.0000pt;">Console.WriteLine(&quot;{0}&quot;,m);</p>
+<p>}</p>
+<p>}</p>
+<p>对于一维数组，foreach语句循环顺序是从下标为0的元素开始一直到数组的最后一个元素。对于多维数组，元素下标的递增是从最右边那一维开始的。同样break和continue可以出现在foreach语句中，功能不变。</p>
+<h3>
+	1.6.3异常语句</h3>
+<p>在编写程序时，不仅要关心程序的正常操作，还应该考虑到程序运行时可能发生的各类不可预期的事件，比如用户输入错误、内存不够、磁盘出错、网络资源不可用、数据库无法使用等，所有这些错误被称作异常，不能因为这些异常使程序运行产生问题。各种程序设计语言经常采用异常处理语句来解决这类异常问题。</p>
+<p>C#提供了一种处理系统级错误和应用程序级错误的结构化的、统一的、类型安全的方法。C#异常语句包含try子句、catch子句和finally子句。try子句中包含可能产生异常的语句，该子句自动捕捉执行这些语句过程中发生的异常。catch子句中包含了对不同异常的处理代码，可以包含多个catch子句，每个catch子句中包含了一个异常类型，这个异常类型必须是System.Exception类或它的派生类引用变量，该语句只扑捉该类型的异常。可以有一个通用异常类型的catch子句，该catch子句一般在事先不能确定会发生什么样的异常的情况下使用，也就是可以扑捉任意类型的异常。一个异常语句中只能有一个通用异常类型的catch子句，而且如果有的话，该catch子句必须排在其它catch子句的后面。无论是否产生异常，子句finally一定被执行，在finally子句中可以增加一些必须执行的语句。</p>
+<p>异常语句捕捉和处理异常的机理是：当try子句中的代码产生异常时，按照catch子句的顺序查找异常类型。如果找到，执行该catch子句中的异常处理语句。如果没有找到，执行通用异常类型的catch子句中的异常处理语句。由于异常的处理是按照catch子句出现的顺序逐一检查catch子句，因此catch子句出现的顺序是很重要的。无论是否产生异常，一定执行finally子句中的语句。异常语句中不必一定包含所有三个子句，因此异常语句可以有以下三种可能的形式：</p>
+<ul>
+	<li>
+		try&nbsp;&ndash;catch语句，可以有多个catch语句</li>
+	<li>
+		try&nbsp;-finally语句</li>
+	<li>
+		try&nbsp;-catch-finally语句，可以有多个catch语句</li>
+</ul>
+<p>请看下边的例子：</p>
+<ol>
+	<li value="NaN">
+		try&ndash;catch-finally语句</li>
+</ol>
+<p>using&nbsp;System</p>
+<p>using&nbsp;System.IO//使用文件必须引用的名字空间</p>
+<p>public&nbsp;class&nbsp;Example</p>
+<p>{&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;void&nbsp;Main()</p>
+<p>{&nbsp;&nbsp;&nbsp;StreamReader&nbsp;sr=null;//必须赋初值null,否则编译不能通过</p>
+<p>try&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;sr=File.OpenText(&quot;d:\\csarp\\test.txt&quot;);//可能产生异常</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;s;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(sr.Peek()!=-1)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;s=sr.ReadLine();//可能产生异常</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(s);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;catch(DirectoryNotFoundException&nbsp;e)//无指定目录异常</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;Console.WriteLine(e.Message);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;catch(FileNotFoundException&nbsp;e)//无指定文件异常</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;Console.WriteLine(&quot;文件&quot;+e.FileName+&quot;未被发现&quot;);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;catch(Exception&nbsp;e)//其它所有异常</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;Console.WriteLine(&quot;处理失败：{0}&quot;,e.Message);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;finally</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;if(sr!=null)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sr.Close();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>}</p>
+<p>}</p>
+<ol>
+	<li value="NaN">
+		try&nbsp;-finally语句</li>
+</ol>
+<p>上例中，其实可以不用catch语句，在finally子句中把文件关闭，提示用户是否正确打开了文件，请读者自己完成。</p>
+<ol>
+	<li value="NaN">
+		try&nbsp;-catch语句</li>
+</ol>
+<p>请读者把上例修改为使用try-catch结构，注意在每个catch语句中都要关闭文件。</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151119/1199.html">C#类的继承</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151119/1197.html">C#运算符</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

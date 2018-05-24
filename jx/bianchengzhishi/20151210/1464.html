@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>网页制作中FRAMESET 元素 ，frameSet 对象 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1464","0","attach");
+		Cms.viewCount("","1464");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151210/1464.html" title="网页制作中FRAMESET 元素 ，frameSet 对象">网页制作中FRAMESET 元素 ，frameSet 对象</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-10 13:13:15</span>
+     </h3>
+     <h1>
+	网页制作中FRAMESET 元素 ，frameSet 对象</h1>
+<hr size="1" />
+<p><br />
+	<br />
+	指定一个框架集，用于组织多个框架和嵌套框架集。<br />
+	<br />
+	成员表<br />
+	<br />
+	下面的表格列出了 frameSet 对象引出的成员<br />
+	<br />
+	&nbsp; 标签属性/属性&nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	ATOMICSELECTION&nbsp; 指定元素及其内容是否可以一不可见单位统一选择。<br />
+	BORDER border 设置或获取框架间的空间，包括 3D 边框。<br />
+	BORDERCOLOR borderColor 设置或获取对象的边框颜色。<br />
+	&nbsp;canHaveChildren 获取表明对象是否可以包含子对象的值。<br />
+	&nbsp;canHaveHTML 获取表明对象是否可以包含丰富的 HTML 标签的值。<br />
+	CLASS className 设置或获取对象的类。<br />
+	COLS cols 设置或获取对象的框架宽度。<br />
+	&nbsp;firstChild 获取对象的 childNodes 集合的第一个子对象的引用。<br />
+	FRAMEBORDER frameBorder 设置或获取是否显示框架的边框。<br />
+	FRAMESPACING frameSpacing 设置或获取框架间附加空间总量。<br />
+	HIDEFOCUS hideFocus 设置或获取表明对象是否显式标明焦点的值。<br />
+	ID id 获取标识对象的字符串。<br />
+	&nbsp;innerHTML 设置或获取位于对象起始和结束标签内的 HTML。<br />
+	&nbsp;isContentEditable 获取表明用户是否可编辑对象内容的值。<br />
+	&nbsp;isDisabled 获取表明用户是否可与该对象交互的值。<br />
+	&nbsp;isMultiLine 获取表明对象的内容是包含一行还是多行的值。<br />
+	&nbsp;isTextEdit 获取是否可使用该对象创建一个 TextRange 对象。<br />
+	LANG lang 设置或获取要使用的语言。<br />
+	LANGUAGE language 设置或获取当前脚本编写用的语言。<br />
+	&nbsp;lastChild 获取该对象 childNodes 集合中最后一个子对象的引用。<br />
+	NAME name 设置或获取框架的名称。<br />
+	&nbsp;nextSibling 获取对此对象的下一个兄弟对象的引用。<br />
+	&nbsp;nodeName 获取特定结点类型的名称。<br />
+	&nbsp;nodeType 获取所需结点的类型。<br />
+	&nbsp;nodeValue 设置或获取结点的值。<br />
+	&nbsp;outerHTML 设置或获取对象及其内容的 HTML 形式。<br />
+	&nbsp;ownerDocument 设置或获取结点关联的 document 对象。<br />
+	&nbsp;parentElement 获取对象层次中的父对象。<br />
+	&nbsp;parentNode 获取文档层次中的父对象。<br />
+	&nbsp;parentTextEdit 获取文档层次中可用于创建包含原始对象的 TextRange 的容器对象。<br />
+	&nbsp;previousSibling 获取对此对象的上一个兄弟对象的引用。<br />
+	&nbsp;readyState 获取对象的当前状态。<br />
+	ROWS rows 设置或获取对象的框架高度。<br />
+	&nbsp;scopeName 获取为该元素定义的命名空间。<br />
+	&nbsp;sourceIndex 获取对象在源序中的依次位置，即对象出现在 document 的 all 集合中的顺序。<br />
+	TABINDEX tabIndex 设置或获取定义对象的 Tab 顺序的索引。<br />
+	&nbsp;tagName 获取对象的标签名称。<br />
+	&nbsp;tagUrn 设置或获取在命名空间声明中指定的统一资源名称(URN)。<br />
+	TITLE title 设置或获取对象的咨询信息(工具提示)。<br />
+	&nbsp;uniqueID 获取为对象自动生成的唯一标识符。<br />
+	UNSELECTABLE&nbsp; 指定该元素不可被选中。<br />
+	WIDTH width 设置或获取对象的宽度。<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	<br />
+	标签属性/属性<br />
+	<br />
+	行为<br />
+	<br />
+	行为 描述<br />
+	clientCaps 提供关于 Internet Explorer 支持的特性的信息，以及提供即用即装的方法。<br />
+	download 下载文件并在下载完成后通知一个指定的回调函数。<br />
+	homePage 包含关于用户主页的信息。<br />
+	<br />
+	集合<br />
+	<br />
+	集合 描述<br />
+	all 返回对象所包含的元素集合的引用。<br />
+	attributes 获取对象标签属性的集合。<br />
+	behaviorUrns 返回标识附加到该元素行为的统一资源名称(URN)字符串的集合。<br />
+	childNodes 获取作为指定对象直接后代的 HTML 元素和 TextNode 对象的集合。<br />
+	children 获取作为对象直接后代的 DHTML 对象的集合。<br />
+	<br />
+	事件<br />
+	<br />
+	事件 描述<br />
+	onactivate 当对象设置为活动元素时触发。<br />
+	onafterprint 对象所关联的文档打印或打印预览后立即在对象上触发。<br />
+	onbeforedeactivate 在 activeElement 从当前对象变为父文档其它对象之前立即触发。<br />
+	onbeforeprint 对象的关联文档打印或打印预览前在对象上触发。<br />
+	onbeforeunload 在页面将要被卸载前触发。<br />
+	onblur 在对象失去输入焦点时触发。<br />
+	oncontrolselect 当用户将要对该对象制作一个控件选中区时触发。<br />
+	ondeactivate 当 activeElement 从当前对象变为父文档其它对象时触发。<br />
+	onfocus 当对象获得焦点时触发。<br />
+	onload 在浏览器完成对象的装载后立即触发。<br />
+	onmove 当对象移动时触发。<br />
+	onmoveend 当对象停止移动时触发。<br />
+	onmovestart 当对象开始移动时触发。<br />
+	onresizeend 当用户更改完控件选中区中对象的尺寸时触发。<br />
+	onresizestart 当用户开始更改控件选中区中对象的尺寸时触发。<br />
+	onunload 在对象卸载前立即触发。<br />
+	<br />
+	滤镜<br />
+	<br />
+	滤镜属性 描述<br />
+	Barn 以开门或关门的运动方式显示对象的新内容。<br />
+	BasicImage 调整对象内容的颜色处理、图像旋转或不透明度。<br />
+	Blinds 以打开或关闭盲点的运动方式显示对象的新内容。<br />
+	Blur 模糊对象的内容以便使其看起来失去焦点。<br />
+	CheckerBoard 以揭开覆盖在原始内容上的棋盘的形式显示对象的新内容。<br />
+	Compositor 以新旧内容逻辑颜色组合的形式显示对象的新内容。每个版本的颜色和 alpha 值都会被计算用来决定输出图像的最终颜色。<br />
+	Emboss 使用灰度值对对象以浮雕纹理显示。<br />
+	Engrave 使用灰度值对对象以雕刻纹理显示。<br />
+	Fade 以渐隐原始内容的形式显示对象的新内容。<br />
+	Gradient 在对象的背景和内容之间显示一个渐变色彩的表面。<br />
+	GradientWipe 以在原有内容上覆盖渐变带的形式显示对象的新内容。<br />
+	ICMFilter 根据图像颜色管理(ICM)配置文件转换对象的彩色内容。这将允许指定内容的显示效果得以改善，或者在打印机或监视器等硬件设备上模拟显示。<br />
+	Inset 以对角线方向显示对象的新内容。<br />
+	Iris 以彩虹效果显示对象的新内容，这与照相机光圈打开相似。<br />
+	Matrix 使用矩阵变换缩放、旋转或显现对象的内容。<br />
+	Pixelate 将对象的内容显示为彩色方块，其颜色取决于该方块所替代区域的平均颜色值。此滤镜显示可用于切换。<br />
+	RadialWipe 以辐射状擦除的形式显现对象的新内容。<br />
+	RandomBars 以随机像素线爆炸的形式显现对象的新内容。<br />
+	RandomDissolve 以随机像素爆炸的形式显现对象的新内容。<br />
+	Slide 以图像滑行的形式显现对象的新内容。<br />
+	Spiral 以螺旋运动的形式显现对象的新内容。<br />
+	Stretch 以拉伸覆盖原始内容的形式显现对象的新内容。有一个选项类似立方体从一个表面转到另外一个表面。<br />
+	Strips 以条形覆盖的形式显现对象的原始内容，好像有一把锯将原始内容锯开。<br />
+	Wheel 以旋转运动的形式显现对象的新内容，好像轮子滚过原始内容。<br />
+	Zigzag 在对象上将对象的新内容进行来回移动以便覆盖原始内容。<br />
+	<br />
+	方法<br />
+	<br />
+	方法 描述<br />
+	addBehavior 给元素附加一个行为。<br />
+	appendChild 给对象追加一个子元素。<br />
+	applyElement 使得元素成为其它元素的子元素或父元素。<br />
+	attachEvent 将指定函数绑定到事件，以便每当该事件在对象上触发时都调用该函数。<br />
+	blur 使元素失去焦点并触发 onblur 事件。<br />
+	clearAttributes 从对象中删除全部标签属性和值。<br />
+	cloneNode 从文档层次中复制对对象的引用。<br />
+	componentFromPoint 通过特定事件返回对象在指定坐标下的位置。<br />
+	contains 检查对象中是否包含给定元素。<br />
+	detachEvent 从事件中取消指定函数的绑定，这样当事件触发时函数就不会收到通知了。<br />
+	fireEvent 触发对象的指定事件。<br />
+	focus 使得元素得到焦点并执行由 onfocus 事件指定的代码。<br />
+	getAdjacentText 返回邻接文本字符串。<br />
+	getAttribute 获取指定标签属性的值。<br />
+	getAttributeNode 获取由 attribute.name 属性引用的 attribute 对象。<br />
+	getElementsByTagName 获取基于指定元素名称的对象集合。<br />
+	hasChildNodes 返回表明对象是否有子对象的值。<br />
+	insertAdjacentElement 在指定位置插入元素。<br />
+	insertAdjacentHTML 在指定位置的元素中插入给定的 HTML 文本。<br />
+	insertAdjacentText 在指定位置插入给定的文本。<br />
+	insertBefore 在文档层次中插入元素。<br />
+	mergeAttributes 复制所有读/写标签属性到指定元素。<br />
+	normalize 合并邻接 TextNode 对象以便生成一个常规的文档对象模型。<br />
+	removeAttribute 删除对象的给定标签属性。<br />
+	removeAttributeNode 从对象中删除删除 attribute 对象。<br />
+	removeBehavior 分离元素的行为。<br />
+	removeChild 从元素上删除子结点。<br />
+	removeNode 从文档层次中删除对象。<br />
+	replaceAdjacentText 替换元素的邻接文本。<br />
+	replaceChild 用新的子元素替换已有的子元素。<br />
+	replaceNode 用其它元素替换对象。<br />
+	setActive 设置对象为当前对象而不将对象置为焦点。<br />
+	setAttribute 设置指定标签属性的值。<br />
+	setAttributeNode 设置 attribute 对象为对象的一部分。<br />
+	swapNode 交换文档层次中两个对象的位置。<br />
+	<br />
+	对象<br />
+	<br />
+	对象 描述<br />
+	runtimeStyle 代表了居于全局样式表、内嵌样式和 HTML 标签属性指定的格式和样式之上的对象的格式和样式。<br />
+	style 代表了给定元素所有可能的内嵌样式的当前设置。<br />
+	<br />
+	样式<br />
+	<br />
+	样式标签属性 样式属性 描述<br />
+	background-position-x backgroundPositionX 设置或获取 backgroundPosition 属性的 x 坐标。<br />
+	background-position-y backgroundPositionY 设置或获取 backgroundPosition 属性的 y 坐标。<br />
+	behavior behavior 设置或获取 DHTML 行为的位置。<br />
+	border-bottom borderBottom 设置或获取对象下边框的属性。<br />
+	border-left borderLeft 设置或获取对象左边框的属性。<br />
+	border-right borderRight 设置或获取对象右边框的属性。<br />
+	border-top borderTop 设置或获取对象上边框的属性。<br />
+	filter filter 设置或获取应用于对象的滤镜或滤镜集合。<br />
+	height height 设置或获取对象的高度。<br />
+	layout-grid layoutGrid 设置或获取指定文本字符版面的组合文档格线属性。<br />
+	layout-grid-mode layoutGridMode 设置或获取文本布局网格是否使用二维。<br />
+	&nbsp;pixelBottom 设置或获取对象的下方位置。<br />
+	&nbsp;pixelHeight 设置或获取对象的高度。<br />
+	&nbsp;pixelLeft 设置或获取对象的左侧位置。<br />
+	&nbsp;pixelRight 设置或获取对象的右侧位置。<br />
+	&nbsp;pixelTop 设置或获取对象的上方位置。<br />
+	&nbsp;pixelWidth 设置或获取对象的宽度。<br />
+	&nbsp;posBottom 设置或获取以 bottom 标签属性指定的单位的对象下方位置。<br />
+	&nbsp;posHeight 设置或获取以 height 标签属性指定的单位的对象高度。<br />
+	&nbsp;posLeft 设置或获取以 left 标签属性指定的单位的对象左侧位置。<br />
+	&nbsp;posRight 设置或获取以 right 标签属性指定的单位的对象右侧位置。<br />
+	&nbsp;posTop 设置或获取以 top 标签属性指定的单位的对象上方位置。<br />
+	&nbsp;posWidth 设置或获取以 width 标签属性指定的单位的对象宽度。<br />
+	text-underline-position textUnderlinePosition 设置或获取对象的 textDecoration 属性中设置的下划线的位置。<br />
+	zoom zoom 设置或获取对象的放大比例。<br />
+	<br />
+	注释<br />
+	<br />
+	FRAMESET 元素是 FRAME 元素的容器。HTML 文档可包含 FRAMESET 元素或 BODY 元素之一，而不能同时包含两者。<br />
+	<br />
+	如果用户在框架中打开了 Web 文件夹后单击了 Web 文件夹中的内容，那么被单击的文件或文件夹将取代整个窗口。例如，假设页面包含两个框架，一个框架指向 http://www.microsoft.com 第二个框架指向网络驱动器。如果用户单击第二个框架中的文件或文件夹，该框架将活动整个窗口的控制，包括第一个框架。对于浏览器不能处理的文件类型，如 *.txt 文件，将会打开对应的应用程序窗口。<br />
+	<br />
+	尽管 Web 文件夹是文件系统层次的一部分，但是该技术并不总是表示文件系统中的实际内容。一个典型的例子就是网络邻居。<br />
+	<br />
+	此元素在 Microsoft&reg; Internet Explorer 3.0 的 HTML 中可用，在 Internet Explorer 4.0 的脚本中可用。<br />
+	<br />
+	此元素是一个内嵌元素。<br />
+	<br />
+	此元素需要关闭标签。<br />
+	<br />
+	示例<br />
+	<br />
+	下面的例子使用了 FRAMESET 元素来定义页面中的三列矩形。<br />
+	<br />
+	&lt;FRAMESET COLS=&quot;25%, 50%, *&quot;&gt;<br />
+	&lt;FRAME SRC=&quot;contents.htm&quot;&gt;<br />
+	&lt;FRAME SRC=&quot;info.htm&quot;&gt;<br />
+	&lt;FRAME SCROLLING=&quot;NO&quot; SRC=&quot;graphic.htm&quot;&gt;<br />
+	&lt;/FRAMESET&gt;<br />
+	<br />
+	&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151210/1465.html">html网页制作中的HEAD 元素，head 对象</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151210/1463.html">网页制作FRAME 元素 ， frame 对象</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

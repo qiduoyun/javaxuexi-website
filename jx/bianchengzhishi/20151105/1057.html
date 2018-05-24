@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>Android API级别 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1057","0","attach");
+		Cms.viewCount("","1057");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151105/1057.html" title="Android API级别">Android API级别</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-05 16:36:12</span>
+     </h3>
+     <p><img alt="" src="/u/cms/www/201511/05134115ec4e.jpg" style="width: 189px; height: 220px;" /></p>
+<p align="left"><strong>Android API Levels</strong></p>
+<p align="left">在本文中</p>
+<p align="left" style="margin-left:21pt;"><a href="27.htm#WhatisAPILevel">API的级别是什么?</a></p>
+<p align="left" style="margin-left:21pt;"><a href="27.htm#UsesofAPILevelinAn">在Android中使用API级别</a></p>
+<p align="left" style="margin-left:21pt;"><a href="27.htm#DevelopmentConsiderations">开发者需要考虑的内容</a></p>
+<p align="left" style="margin-left:42pt;"><a href="27.htm#Applicationbackwardcompatibility">应用程序的向前兼容性</a></p>
+<p align="left" style="margin-left:42pt;"><a href="27.htm#Applicationbackwardcompatibility">应用程序的向后兼容性</a></p>
+<p align="left" style="margin-left:42pt;"><a href="27.htm#SelectingaplatformversionandAPILev">平台版本和API级别的选择</a></p>
+<p align="left" style="margin-left:42pt;"><a href="27.htm#DeclaringaminimumAPILevel">声明最低API级别</a></p>
+<p align="left" style="margin-left:42pt;"><a href="27.htm#TestingagainsthigherAPILevels">针对高版本的API级别测试</a></p>
+<p align="left" style="margin-left:21pt;"><a href="27.htm#UsingaProvisionalAPILevel">使用临时的API级别</a></p>
+<p align="left" style="margin-left:21pt;"><a href="27.htm#FilteringtheReferenceDocumentationby">通过API级别进行文档内容过滤</a></p>
+<p align="left">参见</p>
+<p align="left" style="margin-left:21pt;"><a href="http://developer.android.com/guide/topics/manifest/uses-sdk-element.html">&lt;uses-sdk&gt;</a> manifest element</p>
+<p>当你开发你的Android应用程序时，了解该平台API变更管理的基本方法和概念是很有帮助的。同样的，知道API级别标识以及该标识如何保障你的应用与实际硬件设备相兼容对于开发及后续的发布、维护都是有益的。</p>
+<p>本节内容告诉你API级别的知识，以及它如何影响你开发和使用的应用。</p>
+<p>关于如何使用&ldquo;以API级别进行过滤&rdquo;来使用API参考手册，从本文末尾的<a href="http://developer.android.com/guide/appendix/api-levels.html#filtering">文档过滤(Filtering the documentation)</a>中可以得到更多信息。</p>
+<p align="left">&nbsp;</p>
+<p align="left">&nbsp;</p>
+<p align="center"><strong>API</strong><strong>级别是什么？</strong><strong>(What is API Level?)</strong></p>
+<p>API级别是一个整数值，它唯一标识了一个具体版本的Android平台，及其框架的API的版本。</p>
+<p>Android平台提供了一套框架API，使得应用程序可以与系统底层进行交互。该框架API由以下模块组成：</p>
+<ul>
+	<li>
+		一组核心的包和类</li>
+	<li>
+		清单(manifest)文件的XML元素和属性声明</li>
+	<li>
+		资源文件的XML元素和属性声明及访问形式</li>
+	<li>
+		各类意图(Intents)</li>
+	<li>
+		应用程序可以请求的各类授权，以及系统中包含的授权执行</li>
+</ul>
+<p>每个Android平台的后续版本会包括它提供的更新的Android应用程序框架的API。</p>
+<p>该框架的API的更新设计，使高版本的API与早期版本兼容。也就是说，在新版本API中大多数都是新增功能，和引进新的或替代的功能。作为API的部分升级，老的替换的部分已过时，但不会从新版本中删除，使得已有的应用程序仍然可以使用它们。在极少数情况下，旧版本API的部分可能被修改或删除，通常这种变化是为了保障API的稳定性及应用程序或系统的安全。所有其他早期版本的API将不做修改的保留。</p>
+<p>一个Android平台提供的框架API，被指定一个整数标识符，称为&ldquo;API级别&rdquo;。每一个版本的Android平台只支持有一个API级别，虽然该支持是隐含地包括了所有早期的API级别（一直到API级别1级）。 Android平台的最初版本提供的框架API级别是1级，随后的版本依次递增。</p>
+<p>下表说明了具体平台版本和支持的API级别的对应关系。</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:94px;">
+				<p align="center"><strong>平台版本</strong></p>
+			</td>
+			<td style="width:85px;">
+				<p align="center"><strong>API</strong><strong>级别</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:94px;">
+				<p>Android 3.0</p>
+			</td>
+			<td style="width:85px;">
+				<p>11</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:94px;">
+				<p>Android 2.3.3</p>
+			</td>
+			<td style="width:85px;">
+				<p>10</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:94px;">
+				<p>Android 2.3</p>
+			</td>
+			<td style="width:85px;">
+				<p>9</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:94px;">
+				<p>Android 2.2</p>
+			</td>
+			<td style="width:85px;">
+				<p>8</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:94px;">
+				<p>Android 2.1</p>
+			</td>
+			<td style="width:85px;">
+				<p>7</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:94px;">
+				<p>Android 2.0.1</p>
+			</td>
+			<td style="width:85px;">
+				<p>6</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:94px;">
+				<p>Android 2.0</p>
+			</td>
+			<td style="width:85px;">
+				<p>5</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:94px;">
+				<p>Android 1.6</p>
+			</td>
+			<td style="width:85px;">
+				<p>4</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:94px;">
+				<p>Android 1.5</p>
+			</td>
+			<td style="width:85px;">
+				<p>3</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:94px;">
+				<p>Android 1.1</p>
+			</td>
+			<td style="width:85px;">
+				<p>2</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:94px;">
+				<p>Android 1.0</p>
+			</td>
+			<td style="width:85px;">
+				<p>1</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center"><strong>在</strong><strong>Android</strong><strong>中使用</strong><strong>API</strong><strong>级别</strong><strong>(</strong><strong>Uses of API Level in Android)</strong></p>
+<p>API级别标识为保证用户和应用程序开发者的最佳体验，起了关键作用：</p>
+<ul>
+	<li>
+		它让Android平台可以描述它支持的框架API的最高版本</li>
+	<li>
+		它让应用程序可以描述它需要的框架API版本</li>
+	<li>
+		它使得系统可以在硬件设备上安装应用程序时能够检查版本是否匹配，使得版本不兼容的应用程序不会被错误安装在设备之上.</li>
+</ul>
+<p>每个版本的Android平台都在其内部存储了自己的API级别标识。</p>
+<p>应用程序可以用框架API提供的清单文件元素 &mdash; <code>&lt;uses-sdk&gt;</code> 来描述该应用程序可以运行的最小和最大API级别，以及应用程序开发者设计期望运行的平台版本。三种属性分别描述如下:</p>
+<ul>
+	<li>
+		<code>android:minSdkVersion</code> &mdash; 指明该应用程序可以运行的API最低版本。默认是&ldquo;1&rdquo;。</li>
+	<li>
+		<code>android:targetSdkVersion</code> &mdash; 指明该应用程序设计时期望运行的目标API版本。在某些情况下，这允许应用程序使用目标API级别下定义的清单元素或行为，而不是只限于使用最低API级别定义的内容。(译者注：<a href="http://hi.baidu.com/jenus_hi/blog/item/6d83f7096505b9c560d98664.html">android之targetsdkversion的理解---兼容性问题</a>)</li>
+	<li>
+		<code>android:maxSdkVersion</code> &mdash; 指明该应用程序可以运行的最高API级别。<strong>重要声明</strong><strong>:</strong> 使用该属性之前请阅读<a href="http://developer.android.com/guide/topics/manifest/uses-sdk-element.html">&lt;uses-sdk&gt;</a>文档。</li>
+</ul>
+<p>比如，要指明一个应用程序能够运行的最低API级别，应当在该应用程序的清单文件的&lt;uses-sdk&gt;元素中加入<code>android:minSdkVersion</code><code>属性。</code><code>android:minSdkVersion</code><code>的值是一个正整数，对应的是该应用程序能够运行的最低平台的</code><code>API</code><code>级别标识。</code></p>
+<p>用户尝试安装一个应用程序，或者在系统升级后重验证应用程序的时候，Android系统首先会检查应用程序的清单文件中的&lt;uses-sdk&gt;属性，将其与系统内部API级别对比。系统只有在满足下列情况时才允许进行应用程序安装：</p>
+<ul>
+	<li>
+		如果声明了<code>android:minSdkVersion</code><code>属性，其属性值必须小于或等于该系统的API级别对应的整数值。如果未声明，系统会默认该应用程序运行需要的最低API级别是1。</code></li>
+	<li>
+		如果声明了<code>android:maxSdkVersion</code><code>属性，其属性值必须等于或大于该系统的API级对应的整数值。</code>如果未声明，系统会默认该应用程序没有最高API级别限制。请通过阅读文档<a href="http://developer.android.com/guide/topics/manifest/uses-sdk-element.html">&lt;uses-sdk&gt;</a>以获得系统如何处理该属性的更多信息。</li>
+</ul>
+<p>应用程序清单文件中声明该属性后， <code>&lt;uses-sdk&gt;</code><code>元素看起来应类似于下面的例子：</code></p>
+<p><img border="0" height="91" src="Android中文翻译组——Android开发者指南（1）1.files/image049.png" width="413" /></p>
+<p>这样做的主要原因是，应用程序会通过android:miniSdkVersion声明的API级别来告知系统&mdash;&mdash;该应用程序使用的API是指定引入的API级别。假如没有这种属性声明，一个应用程序如果因为某些不知名的原因被安装在低级别API系统之上，那么该应用程序会在运行时因为尝试访问不存在的API而崩溃。为此，Android系统通过不允许应用程序被安装在不满足其最低API级别要求的目标硬件上来防止此类结果发生。</p>
+<p>例如，<code><a href="http://developer.android.com/reference/android/appwidget/package-summary.html">android.appwidget</a></code><code>类包是在</code><code>API</code><code>级别</code><code>3</code><code>中开始引入的。如果一个应用程序使用了这个</code><code>API</code><code>，就必须通过指明</code><code>android:minSdkVersion</code><code>属性为</code><code>3</code><code>来声明运行的最低要求。于是，该应用程序就可以在</code><code>Android 1.5</code><code>（</code><code>API</code><code>级别</code><code>3</code><code>级）、</code>Android 1.6 (API级别4级)等平台上安装，但是在Android 1.1 (API级别2级)和 Android 1.0 平台(API级别1级)上却是无法安装的。</p>
+<p>欲知关于如何声明应用程序API级别需求的更多信息，请阅读文档中关于清单文件的<a href="http://developer.android.com/guide/topics/manifest/uses-sdk-element.html">&lt;uses-sdk&gt;</a>章节。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center"><strong>开发者需要考虑的内容</strong><strong>(Development Considerations)</strong></p>
+<p>本节属于应用程序开发者需要了解的内容。</p>
+<p><strong>应用程序的向前兼容性</strong><strong>(Application forward compatibility)</strong></p>
+<p>Android应用程序一般向前兼容于Android平台的新版本。</p>
+<p>这是因为几乎所有的框架API变更都是添加性质的，一个以某种版本的API开发的应用程序是向前兼容与后续Android系统及高版本API。应用程序应当可以运行于高版本的平台，除非使用了未来因某种原因移除的API。</p>
+<p>向前兼容性的特性如此重要，是因为很多的Android驱动的设备能够使用OTA远程下载技术进行系统更新。用户开始时能够很好的安装和使用你开发的应用程序，后来进行了OTA升级到新版本的Android平台。一旦升级完毕，你的应用程序将运行在一个新的版本环境下，而这个环境应当包含了你的应用程序所需的API和系统功能。</p>
+<p>某些情况下，API背后的变化，例如系统底层的变化，可能会影响到你的应用程序运行在新的环境下。为此，作为应用程序开发人员，应当了解应用程序在不同系统环境下将会有如何的外观和行为。Android SDK包含了多个平台版本，开发人员可以下载下来，用于测试自己的应用程序在不同版本下的运行情况。每个版本的平台都提供了兼容的系统镜像，你可以将应用程序运行在对应的Android虚拟设备（模拟器）上进行测试。</p>
+<p><strong>应用程序的向后兼容性</strong><strong>(Application backward compatibility)</strong></p>
+<p>Android应用程序不一定向后兼容于那些比这些应用程序开发环境低的平台环境。</p>
+<p>Android平台的每个新版本包含了新的框架API，例如新的平台功能，或者替代部分已有的API。应用程序在新平台上可以访问这些新的API，就像之前提到的，在后续更新的版本中，这些新功能API也是可以继续使用。相反的，因为早期版本的平台不会包含新的API功能，使用了新API的应用程序在那些旧平台上是无法运行的。</p>
+<p>虽然一个Android平台设备不太可能降级到以前的版本，但是需要了解的是：实际生活中可能会有很多设备运行的是较旧的平台版本。即使在设备接收到OTA远程下载升级，有些人仍然可能会滞后甚至可能不会收到更新。</p>
+<p><strong>平台版本和</strong><strong>API</strong><strong>级别的选择</strong><strong>(Selecting a platform version and API Level)</strong></p>
+<p>当你开发应用程序时，你需要选择一个平台用于编译该应用程序。通常，你应该在你的应用程序可以支持的最低版本的平台上进行编译。</p>
+<p>你可以通过寻找最低的可以支持你的应用程序编译的平台方式来决定你将会支持的最低平台版本。一旦你确定了支持的最低版本后，你就可以创建对应版本的AVD模拟器来全面测试你的应用程序。你需要注意的是不要忘记在应用程序清单文件中申明<code>android:minSdkVersion</code><code>属性，并赋上正确的</code><code>API</code><code>级别标识。</code></p>
+<p><strong>声明最低</strong><strong>API</strong><strong>级别</strong><strong>(Declaring a minimum API Level)</strong></p>
+<p>如果你开发的应用程序使用了最新平台上引入的API或平台特性，你就需要将<code>android:minSdkVersion</code><code>属性赋最新平台的</code><code>API</code><code>级别标识。这将保证用户只能在他们的设备与你的应用程序平台版本兼容情况下安装。反过来说，这样能够保证你的应用程序在他们的设备上表现正常。</code></p>
+<p>如果你用了最新的API或平台特性，但是没有申明<code>android:minSdkVersion</code><code>属性，那么你的应用程序在最新平台上运行是没有稳定，但是在早期版本的平台上是会出错的。在后一种情况，应用程序在尝试访问旧平台上不存在的</code><code>API</code><code>时会崩溃。</code></p>
+<p><strong>针对高版本的</strong><strong>API</strong><strong>级别测试</strong><strong>(Testing against higher API Levels)</strong></p>
+<p>编译完你的应用程序，你应当在支持的最低版本平台上详细测试应用程序的表现。可以通过创建对应平台的AVD模拟器进行测试。此外，要保证向前兼容性，你应当在你的应用程序可能运行的更高平台版本上进行运行和测试。</p>
+<p>Android SDK包含了多个平台版本供开发者使用，其中包括了最新的版本，并且提供了升级工具使得开发者可以获取其他的版本。</p>
+<p>要使用升级工具，可以通过Android命令行方式，该工具位于&lt;sdk&gt;/tools路径下。你可以用敲入android指令运行该升级工具，而不用指定任何参数。你也可以简单地通过双击Windows下的android.bat或OS X/Linux下的android文件来启动升级工具。在ADT工具界面，你可以通过菜单的<strong>Window</strong>&nbsp;&gt;&nbsp;<strong>Android SDK and AVD Manager</strong><strong>来访问升级工具。</strong></p>
+<p>要想将你的应用程序在不同平台版本的模拟器上运行，需要创建对应的AVD设备。关于AVD的更多信息，请参见<a>Creating and Managing Virtual Devices</a>。如果你用物理设备进行测试，确保清楚运行的具体平台版本。通过本文开始部分的映射表格可以知道平台版本对应的API级别标识。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center"><strong>使用临时的</strong><strong>API</strong><strong>级别</strong><strong>(Using a Provisional API Level)</strong></p>
+<p>某些情况下，有可能会发布&ldquo;早期预览(Early Look)&rdquo;版的Android 平台SDK。在此平台版本上开发使用的API将不会是最终发布版，平台的API级别标识数字就不会指定。你必须在程序清单文件中使用临时的API级别进行标识，以便建立对应的平台应用。临时API级别不是一个整数，而是一个表示未发布的平台版本的字符串代号。&ldquo;早期预览&rdquo;版本的API级别在发布说明中会申明，该代号是大小写敏感的。</p>
+<p>临时API级别标识的用途是保护开发者和设备使用者免于无意中发布或安装在&ldquo;早期预览&rdquo;平台版本上开发的应用程序，这些应用程序可能在最终的发布系统上运行不稳定。</p>
+<p>临时API级别标识仅仅在使用&ldquo;早期预览&rdquo;版本的SDK下有效，并且只能运行应用程序于模拟器之中。实际的Android设备上是无法安装使用临时API级别标识的应用程序的。在最终版本平台发布后，你必须将程序清单文件中用到的临时API级别标识替换成最终平台的实际API级别整数值。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center"><strong>通过</strong><strong>API</strong><strong>级别进行文档内容过滤</strong></p>
+<p align="center"><strong>(Filtering the Reference Documentation by API Level)</strong></p>
+<p>Android开发者站点上的参考文档的每个页面的右上方提供了&ldquo;Filter by API Level&rdquo;控件。你可以用这个控件来仅仅显示你应用程序相关的那部分API文档，可以通过应用程序清单文件中的<code>android:minSdkVersion</code><code>属性值进行过滤。</code></p>
+<p>要使用过滤功能，可以通过页面搜索框下面的选择框来启用过滤功能。比如设定&ldquo;Filter by API Level&rdquo;控件内容与你应用程序申明的相同。注意：在选定级别之后引入的心API会以灰色显示，并且内容被隐藏，因为你的应用程序是无法访问这些新功能。</p>
+<p>API级别过滤方法不会提供每个API级别中新添加的功能视图，仅仅展现对应API级别的整个内容，其中去除了后续新版本中的内容。</p>
+<p>如果你不想过滤API文档了，只需要关闭该选择框的特性。API级别过滤默认是关闭的，因此你可以看到整个框架API的全貌，而不管具体的API级别。</p>
+<p>还要注意的是个别的API元素申明了该API参考文档在哪一级引入的。这通过在每个文档页面正文部分的右上角的&ldquo;Since &lt;api level&gt;&rdquo;进行声明该包和类的引入信息。类成员的API级别在其详细描述文件头部的右边进行描述。</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151110/1130.html">Android的GUI系统综合概述</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151105/1056.html">Android 样式资源</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

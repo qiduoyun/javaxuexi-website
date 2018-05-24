@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C#接口 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1215","0","attach");
+		Cms.viewCount("","1215");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151120/1215.html" title="C#接口">C#接口</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-20 20:38:07</span>
+     </h3>
+     <h2>
+	接口<img alt="" src="/u/cms/www/201511/20203737swzh.jpg" style="width: 300px; height: 150px;" /></h2>
+<p>与类一样，在接口中可以定义一个和多个方法、属性、索引指示器和事件。但与类不同的是，接口中仅仅是它们的声明，并不提供实现。因此接口是函数成员声明的集合。如果类或结构从一个接口派生，则这个类或结构负责实现该接口中所声明的所有成员。一个接口可以从多个接口继承，而一个类或结构可以实现多个接口。由于C#语言不支持多继承，因此，如果某个类需要继承多个类的行为时，只能使用多个接口加以说明。</p>
+<h3>
+	1.14.1&nbsp;接口声明</h3>
+<p>接口声明是一种类型声明，它定义了一种新的接口类型。接口声明格式如下：</p>
+<p>属性&nbsp;&nbsp;接口修饰符&nbsp;&nbsp;interface&nbsp;&nbsp;接口名：基接口{接口体}</p>
+<p>其中，关键字interface、接口名和接口体时必须的，其它项是可选的。接口修饰符可以是new、public、protected、internal和private。例子：</p>
+<p>public&nbsp;interface&nbsp;IExample</p>
+<p>{//所有接口成员都不能包括实现</p>
+<p>string&nbsp;this[int&nbsp;index]&nbsp;{get;set;}//索引指示器声明</p>
+<p>event&nbsp;EventHandler&nbsp;E;//事件声明</p>
+<p>void&nbsp;F(int&nbsp;value);//方法声明</p>
+<p>string&nbsp;P&nbsp;{&nbsp;get;&nbsp;set;}//属性声明</p>
+<p>}</p>
+<p>声明接口时，需注意以下内容：</p>
+<p style="margin-left:21pt;">l&nbsp;接口成员只能是方法、属性、索引指示器和事件，不能是常量、域、操作符、构造函数或析构函数，不能包含任何静态成员。</p>
+<p style="margin-left:21pt;">l&nbsp;接口成员声明不能包含任何修饰符，接口成员默认访问方式是public。</p>
+<h3>
+	1.14.2&nbsp;接口的继承</h3>
+<p>类似于类的继承性，接口也有继承性。派生接口继承了基接口中的函数成员说明。接口允许多继承，一个派生接口可以没有基接口，也可以有多个基接口。在接口声明的冒号后列出被继承的接口名字，多个接口名之间用分号分割。例子如下：</p>
+<p>using&nbsp;System;</p>
+<p>interface&nbsp;IControl</p>
+<p>{ void&nbsp;Paint();</p>
+<p>}</p>
+<p>interface&nbsp;ITextBox:IControl//继承了接口Icontrol的方法Paint()</p>
+<p>{ void&nbsp;SetText(string&nbsp;text);</p>
+<p>}</p>
+<p>interface&nbsp;IListBox:IControl//继承了接口Icontrol的方法Paint()</p>
+<p>{ void&nbsp;SetItems(string[]&nbsp;items);</p>
+<p>}</p>
+<p>interface&nbsp;IComboBox:ITextBox,IListBox</p>
+<p>{//可以声明新方法</p>
+<p>}</p>
+<p>上面的例子中，接口ITextBox和IListBox都从接口IControl中继承，也就继承了接口IControl的Paint方法。接口IComboBox从接口ITextBox和IListBox中继承，因此它应该继承了接口ITextBox的SetText方法和IListBox的SetItems方法，还有IControl的Paint方法。</p>
+<h3>
+	1.14.3&nbsp;类对接口的实现</h3>
+<p>前面已经说过，接口定义不包括函数成员的实现部分。继承该接口的类或结构应实现这些函数成员。这里主要讲述通过类来实现接口。类实现接口的本质是，用接口规定类应实现那些函数成员。用类来实现接口时，接口的名称必须包含在类声明中的基类列表中。</p>
+<p>在类的基本概念一节中，定义一个描述个人情况的类Person，从类Person可以派生出其它类，例如：工人类、公务员类、医生类等。这些类有一些共有的方法和属性，例如工资属性。一般希望所有派生类访问工资属性时用同样变量名。该属性定义在类Person中不合适，因为有些人无工资，如小孩。如定义一个类作为基类，包含工资属性，但C#不支持多继承。可行的办法是使用接口，在接口中声明工资属性。工人类、公务员类、医生类等都必须实现该接口，也就保证了它们访问工资属性时用同样变量名。例子如下：</p>
+<p>using&nbsp;System;</p>
+<p>public&nbsp;interface&nbsp;I_Salary//接口</p>
+<p>{ decimal&nbsp;Salary//属性声明</p>
+<p>{ get;</p>
+<p>set;</p>
+<p>}</p>
+<p>}</p>
+<p>public&nbsp;class&nbsp;Person</p>
+<p>{&hellip;//见1.9.2属性节Person类定义，这里不重复了。</p>
+<p>}</p>
+<p>public&nbsp;class&nbsp;Employee:Person,I_Salary//Person类是基类,I_Salary是接口</p>
+<p>{//不同程序员完成工人类、医生类等，定义工资变量名称可能不同</p>
+<p>private&nbsp;decimal&nbsp;salary;</p>
+<p>public&nbsp;new&nbsp;void&nbsp;Display()</p>
+<p>{ base.Display();</p>
+<p>Console.WriteLine(&quot;薪金：{0}&nbsp;&quot;,salary);</p>
+<p>}</p>
+<p>//工人类、医生类等都要实现属性Salary，保证使用的工资属性同名</p>
+<p>public&nbsp;decimal&nbsp;Salary</p>
+<p>{ get</p>
+<p>{ return&nbsp;&nbsp;salary;}</p>
+<p>set</p>
+<p>{ salary=value;}</p>
+<p>}</p>
+<p>}</p>
+<p>public&nbsp;class&nbsp;Test</p>
+<p>{ public&nbsp;static&nbsp;void&nbsp;Main()</p>
+<p>{&nbsp;Employee&nbsp;S=new&nbsp;Employee();</p>
+<p>S.Name=&quot;田七&quot;;//修改属性Name</p>
+<p>S.Age=20;//修改属性Age</p>
+<p>S.Salary=2000;//修改属性Salary</p>
+<p>S.Display();</p>
+<p>}</p>
+<p>}</p>
+<p>如果类实现了某个接口，类也隐式地继承了该接口的所有基接口，不管这些基接口有没有在类声明的基类表中列出。因此，如果类从一个接口派生，则这个类负责实现该接口及该接口的所有基接口中所声明的所有成员。</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151120/1216.html">C#代表</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151119/1205.html">C#密封类和密封方法</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

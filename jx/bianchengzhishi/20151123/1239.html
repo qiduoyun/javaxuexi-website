@@ -1,0 +1,615 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C#控件和类，定时器 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1239","0","attach");
+		Cms.viewCount("","1239");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151123/1239.html" title="C#控件和类，定时器">C#控件和类，定时器</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-23 21:16:08</span>
+     </h3>
+     <h2>
+	Convert类</h2>
+<p>Convert类中提供了一些静态方法，用来把一种类型数据转换为另一种类型数据。例如，Convert.ToSingle(textBox1.Text)把字符串textBox1.Text转换为单浮点数。Convert.ToString(3.14)把单浮点数3.14转换为字符串。其它转换函数还有：ToInt、ToInt16等等。</p>
+<h2>
+	单选按钮(RadioButton)和GroupBox控件</h2>
+<p>RadioButton是单选按钮控件，多个RadioButton控件可以为一组，这一组内的RadioButton控件只能有一个被选中。GroupBox控件是一个容器类控件，在其内部可放其它控件，表示其内部的所有控件为一组，其属性Text可用来表示此组控件的标题。例如把RadioButton控件放到GroupBox控件中，表示这些RadioButton控件是一组。有一些特性是互斥的，例如性别，选择这类特性可用RadioButton和GroupBox控件。</p>
+<ol>
+	<li>
+		GroupBox控件常用属性</li>
+</ol>
+<p>GroupBox控件常用属性只有一个，属性Text，指定GroupBox控件顶部的标题。</p>
+<ol>
+	<li value="2">
+		RadioButton控件属性和事件</li>
+</ol>
+<ul>
+	<li>
+		属性Text：单选按钮控件旁边的标题。</li>
+	<li>
+		属性Checked：布尔变量，为true表示按钮被选中，为false表示不被选中。</li>
+	<li>
+		事件CheckedChanged：单选按钮选中或不被选中状态改变时产生的事件。</li>
+	<li>
+		事件Click：单击单选按钮控件时产生的事件。</li>
+</ul>
+<ol>
+	<li value="3">
+		例子e3_8</li>
+</ol>
+<p>该例用RadioButton控件修改Label控件字符串的字体为：宋体、黑体、楷体。具体实现步骤如下：<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAACOCAIAAABv8bsPAAAFJ0lEQVR4nO3bz4tOURgH8LtWFhYWFhaKoigLi1nM4lUURVEkKYqiZvIjRFG8foRMjRKaNKFJomZBkqipUUSUqFHKQikLZeE/uBaX2+mec57znPOe89773Pd7+jbd7nvm3nk/93nPmfe8983mPr1D4qbb7XY6nTzPs3lLRwIyf/nBBSuPLFx9fNGak4uHTi0ZPrNs7bkV6y+u2nhl9eaxNVvHh7ZfH955s7N7Yt3eyQ37724amdpy6MG2o492nJjedfrxnrNP9114fuDyy9GxmcPXXh278frkxNvTkx/O3Pt4/v7nSw+/XJ3+Ov7k2/Vn32+9+HF75uedV7+m3vx+8P5Pw2PAnfVswPXDrRTm7Oxst5sZUztu7tOKJ+nVP+ws3rj6URqC6zv2efUPO0sYbqZGNG5mb2lx9ebErRR1XNzimA3BVfvoe9y43SxTw8dNUbnlBYuOa+zGqVxVs2LNwi0Ne8FVa7nALbY3jUzleb7t6KNKvY+OzZTbfajcYNxK4fsNC/9xs9yzctVhodgoKrfYLnGLVuIWlVtsF5VbbDcZ1zg+hOPS/4rplUvglsOCXNyYlet8EzFQuL2OuZUJLcvySgrWRuHa5v24uL3+t6A3ZYb7V9NOXHpC4+OqB4mLa2vMMZd4fbjfRKgb/3DLsVbDFfcmwospPS45LNSI22W34kl69Q87i9+w4JzQ6sLtJG5hZ7HiYj03VoDbR1zmsI3wA1zgygxwgSszwAWuzAAXuDITB1ddP3b2obuVHYyLh5WFamMf/VHn6QTgMmWNPY0Wxm7Og3NOJwbXVk2luHOP8SLpDxl/y8bNqdzURd0rrkpmRNchjHvopl9FQtZ4YeThqjScJ0aXqg0iDJdTuakTeVjQvTiVa+TQXejOtfDVj8t5getHo89i7ExcoVouQDRcG5yt9AhcW9kSB3ReBttfnlQ8Di4hSFsYS4+G4+CWp6bLVgau08v2DG1XhVmSxAFrGQcS4hoFCT4dQt9pHA1sfPR17b811haAKzPABa7MABe4MgNc4MoMcIErM8AFrswAVz6ubWnKuAZW+1Jh03GNWPR6Lr1TYtJWrroUy1xEb41sKlx9lZouZKK0RScVrnHbaQpcri9dtnP22aw1c1ogLvEVTV3Zpq93sHXmf0E0ReN//Tcabm5pOqKtbPWJzoZrO1cfWm24zm7G6cvWgcCtMQ3FrQypdAfgck+pvuSNs5bRsZnzWONw2xTgAldmgAtcmQEucGUGuMCVGeACV2aAC1yZAS5wZQa4wPWJuqCe4udA4zYnAnB9P8GmP3OjQ9/50MLKLU5DtLlP74wHNN4votulu5tEDC5xe0AFV7ezPcTswHx0IHBtKJwXe9zibSGu+sm8c2SwlXkvA3ebcb3CuQDBaSFu5WXOIVMLljBF5To46D306BwA1DZcr8rFmJuqcn0fDQBqG27AmKv2JP6Sdlaus0/wc0gaAbhEzVbqt0is6UhPCytXblqIi8pF5crEVd8IpPg50LjNCXCBKzPABa7MABe4MiMA1/e+BT2cta64i42ScMPuW7D52pZx6ZXyNuPy13NLILox+wCXqlyiZuMujQPXgGsr6h5lBx2X7gxcN+4ce00r+kLwQONiQotzOxNHCpUbMuaqExdwI+DaXtrG/bHGAZG4zj7BzyFpBOASNVup36ZFAK7cABe4MgNc4MoMcIErM8AFrswAF7gyA9zW4Q5O6zcuc5WrNa2vuAhwgdveABe4MgNc4MoMcIErM8DtB+5fu/JrrEetMZsAAAAASUVORK5CYII=" /></p>
+<ol>
+	<li>
+		建立一个新的项目。</li>
+	<li>
+		放Label控件到窗体,属性Text=&ldquo;不同的字体&rdquo;。字体为宋体。</li>
+	<li>
+		放GroupBox控件到窗体,其属性Text=&ldquo;选择字体&rdquo;。</li>
+	<li>
+		放三个RadioButton控件到GroupBox中,其属性Text分别为：宋体、黑体、楷体。宋体RadioButton控件的属性Checked=true。设计好的界面如右图。</li>
+	<li>
+		为三个RadioButton控件的CheckedChanged事件增加事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;radioButton1_CheckedChanged(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{ if(radioButton1.Checked)</p>
+<p>label1.Font=new&nbsp;Font(&quot;宋体&quot;,label1.Font.Size);</p>
+<p>}//label1显示的字体变为宋体，字体大小不变</p>
+<p>private&nbsp;void&nbsp;radioButton2_CheckedChanged(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{ if(radioButton2.Checked)</p>
+<p>label1.Font=new&nbsp;Font(&quot;黑体&quot;,label1.Font.Size);</p>
+<p>}</p>
+<p>private&nbsp;void&nbsp;radioButton3_CheckedChanged(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{ if(radioButton3.Checked)</p>
+<p>label1.Font=new&nbsp;Font(&quot;楷体_GB2312&quot;,label1.Font.Size);</p>
+<p>}</p>
+<ol>
+	<li value="6">
+		编译，运行，单击RadioGroup1中的三个RadioButton按钮，可以改变字体。注意三个按钮只能选一个，既只能选一种字体。考虑一下，是否可用Click事件。</li>
+</ol>
+<h2>
+	Font类</h2>
+<p>Font类有两个构造函数：第一个是new&nbsp;Font(字体名称,字号)，例如，label1.Font=new&nbsp;Font(&quot;黑体&quot;,9),用法还可参考例e3_8。第二个是new&nbsp;Font(字体名称,字号，字体风格)，其中第三个参数是枚举类型，具体定义如下：</p>
+<p>enum&nbsp;FontStyle{</p>
+<p style="margin-left:21.0000pt;">Regular&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=0,//正常字体</p>
+<p style="margin-left:21.0000pt;">Bold&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=1,//黑体</p>
+<p style="margin-left:21.0000pt;">Italic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=2,//斜体</p>
+<p style="margin-left:21.0000pt;">BoldItalic&nbsp;&nbsp;=3,//黑斜体</p>
+<p style="margin-left:21.0000pt;">Underline&nbsp;&nbsp;&nbsp;=4,//下划线，5=黑体下划线，6=斜体下划线，7=黑斜体下划线</p>
+<p style="margin-left:21.0000pt;">Strikeout&nbsp;&nbsp;&nbsp;=8}//删除线，9=黑体删除线，10=斜体删除线，依此类推。</p>
+<p style="margin-left:21.0000pt;">例如修改标签控件字体为斜体：</p>
+<p>label1.Font=new&nbsp;Font(&quot;黑体&quot;,9,label1.Font.Style|FontStyle.Italic);</p>
+<p>或者：label1.Font=new&nbsp;Font(&quot;黑体&quot;,9,label1.Font.Style|(FontStyle)2);</p>
+<p style="margin-left:21.0000pt;">修改标签控件字体不为斜体：</p>
+<p>label1.Font=new&nbsp;Font(&quot;黑体&quot;,9,label1.Font.Style&amp;~FontStyle.Italic);</p>
+<p>或者：label1.Font=new&nbsp;Font(&quot;黑体&quot;,9,label1.Font.Style&amp;(FontStyle)(~2));</p>
+<p>用法还可参考例e3_11。</p>
+<h2>
+	多选框(CheckBox)控件</h2>
+<p>CheckBox是多选框控件，可将多个CheckBox控件放到GroupBox控件内形成一组，这一组内的CheckBox控件可以多选，不选或都选。可用来选择一些可共存的特性，例如一个人的爱好。</p>
+<ol>
+	<li>
+		CheckBox控件属性和事件</li>
+</ol>
+<ul>
+	<li>
+		属性Text：多选框控件旁边的标题。</li>
+	<li>
+		属性Checked：布尔变量，为true表示多选框被选中，为false不被选中。</li>
+	<li>
+		事件Click：单击多选框控件时产生的事件。</li>
+	<li>
+		事件CheckedChanged：多选框选中或不被选中状态改变时产生的事件。</li>
+</ul>
+<ol>
+	<li value="2">
+		例子e3_10A</li>
+</ol>
+<p>在窗口中增加2个CheckBox控件，分别用来选择是否爱好音乐和是否爱好文学，用鼠标单击CheckBox控件，改变爱好选择，用Label控件显示所选择的爱好。实现步骤如下：</p>
+<ol>
+	<li>
+		建立新项目。放Label控件到窗体，属性Text=&ldquo;你的爱好是：&rdquo;。</li>
+	<li>
+		放GroupBox控件到窗体，属性Text=&ldquo;爱好&rdquo;。放两个CheckBox控件到GroupBox中，属性Text分别为：音乐、文学。设计界面如下图。</li>
+	<li>
+		标题为音乐的多选框控件的CheckedChanged事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;checkBox1_CheckedChanged(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{ String&nbsp;text1=&quot;你的爱好是：&quot;;</p>
+<p>if(checkBox1.Checked)</p>
+<p style="margin-left:21.0000pt;">text1=text1+checkBox1.Text;</p>
+<p>if(checkBox2.Checked)</p>
+<p style="margin-left:21.0000pt;">text1+=checkBox2.Text;</p>
+<p>label1.Text=text1;</p>
+<p>}<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAACVCAIAAAAG4ElXAAAFWUlEQVR4nO3cvWsUQRgG8K0DFhYWFhZCBAUFixQpUpygoKCgoIgICgoKCX6gomAgrh+oGIgQVIIElSDBQApFRBQCJyiGCBLhBMFCECwEC/+Ds5i4DDsz78zuzdzuO/cMD2G5m+ze/va9mWSyl6S1vNhaXuzrH+7rH242m2IjS7PZTNNEG9F51cZTqzefXbP1wtqBS+sGL68fGtuw7eqmHTe27Lq9dc/4wL6JwQOTQ4fuN45MbT82vfPE493DM3tPz+4/N3fw4vzh0edHr7w8fv31yVtvR8YXztx9d/7e+0tTH0enP409+Xzt6Zebz77emf828eL75KsfD978fLjw69G73zMf/swu/Z1d+tsu0hqNRtH+5Y4ivkuoJi646l5qgitevDVpmgrcQv3LHaUcbiKHNW5ibmFx1WbFzRW1X1yxz5rgyn3UR+y4aZLIcccNUbnZBfOOq+3mUrmyZs7aCTcz7ARXrmWBK7Z3D8+02+395+Zy9T4yvpBtd6FyS+PmCr/YsPAfN2kXrFx5WBAbonLFdoYrWoYrKldsi8oV23XG1Y4P5XHpH8XUyiVws2GBL67PyiVaD+J2OubmJrQkaeciWGuFa5r3/eJ2+tOC2qQZbqWmrbj0hOaOK+/EL66puQwL9PvD/kuEvLGCm421Ci67XyIKMYXHJYeFCnFT5yZwC/Uvd5Riw4J1QqsKtxG4lTuKEbdEKsStc4DbLVwkRIALXJ4BLnB5BrjA5RngApdn/ODK68fWPnS3rIN28TC3UK3toz5rPRwDXEdZbU+thbabdecuh2ODa6qmTNz6iPYiqU9pv8vE7VK5oYu6013LZFp0FUL7CN3Uq0jIai8MP1yZxuXE6FI1QZTDdanc0PE8LKheLpWr5VBd6M6V8FWP6/IGV/dGH0XbmbhClVwAb7gmOFPpEbimsiV2aL0MplceVNwPLiFIW2hLj4Zzwc0OTZctD1yrl+kMTVfFsSSJHVYyDgTE1QoSfCqE+qB2NDDx0de1+9Z1nGSjCXCByzPABS7PABe4PANc4PIMcIHLM8AFLs90Cde0NKVdA6t8qbDuuFosej2XfpBjwp6GvBTruIgejWwoXHWVmi5korRZJxSudttqClxXX7psW+bZLJo5reQ5EB/RVJVN+moHU2f3D4iGaO4f//WG2zY0FdFUtupEZ8I1HasLrTJc+95105epA4FbYWqKmxtS6Q7AdT2k/JbXzlpax3rOY7XDjSnABS7PABe4PANc4PIMcIHLM8AFLs8AF7g8A1zg8gxwgVvoZSl3k/j92tO49QkD3KJ/wab/5mY5JfLOhwgrN01T+h8mt5YXtTvU3i+i2oW7m4QNLnF7QA5XtTM95djB8dmewDWhuLzZ/RZvhLjyX+atI4OpzDsZuGPGLXYODhegdCLEzb3NXcjkgiVMUbkWDvoRenQOfaYMcAtVLsbcUJVb9NnQZ8oAt8SYK/ekTjjKyrX2KX0OQcMAl6jZXP2uvKxg95JGWLl8EyEuKheVyxNX/kUgxNeexq1PgAtcngEucHkGuMDlGQa4Re9b0LxQh7Uuv4uNnHDL3bdg8jUt49Ir5THjFl0s167k5lZ1XfoAl6pcomb9Lo0DV4NrKuoOZXsdl+4MXDtuS/fzQBdkex0XE5qf25lcpFC5ZcZceeICrgdc01tb+7ivcYAlrrVP6XMIGga4RM3m6rduYYDLN8AFLs8AF7g8A1zg8gxwgcszwAUuzwA3Otzead3GdVzliqZ1FRcBLnDjDXCByzPABS7PABe4PANc4PIMcIHLM8AFLs8kVa9Ex9wS+oONaJ20pOo1/pgbcAM24AZs/wC/bSubHnVpOwAAAABJRU5ErkJggg==" /></p>
+<ol>
+	<li value="4">
+		将标题为文学的多选框控件的CheckedChanged事件处理函数，设置为标题为音乐的多选框控件的CheckedChanged事件处理函数，具体步骤见3.5节。</li>
+	<li value="5">
+		编译，运行。选中音乐将在标签控件中显示：你的爱好是：音乐，再选中文学显示：你的爱好是：音乐文学，&hellip;。</li>
+</ol>
+<ol>
+	<li value="3">
+		例子e3_10B</li>
+</ol>
+<p>该例同上例，但按选中音乐和文学的顺序在标签中显示爱好，实现步骤如下：</p>
+<ol>
+	<li>
+		建立一个新项目。为Form1类增加私有变量String&nbsp;s=&quot;你的爱好是：&quot;。</li>
+	<li>
+		放Label控件、GroupBox控件、两个CheckBox到窗体，属性设置同上例。</li>
+</ol>
+<p style="margin-left:14.1500pt;">(4)标题为音乐的多选框控件CheckBox1的CheckedChanged事件处理函数如下：</p>
+<p>private&nbsp;void&nbsp;checkBox1_CheckedChanged(object&nbsp;sender,System.EventArgs&nbsp;e)</p>
+<p>{ int&nbsp;n=s.IndexOf(&quot;音乐&quot;);//s中有字符串&quot;音乐&quot;吗?ｎ=-1表示没有</p>
+<p>if(n==-1)//ｎ=-1，表示上次没选此项，此次选中，应增加&quot;音乐&quot;</p>
+<p style="margin-left:21.0000pt;">s+=&quot;音乐&quot;;</p>
+<p>else//否则，表示上次已选此项，此次不选中，应删除&quot;音乐&quot;</p>
+<p style="margin-left:21.0000pt;">s=s.Remove(n,2);</p>
+<p>label1.Text=s;</p>
+<p>}</p>
+<p>(5)标题为文学的多选框控件CheckBox2的CheckedChanged事件处理函数如下：</p>
+<p>private&nbsp;void&nbsp;checkBox2_CheckedChanged(object&nbsp;sender,System.EventArgs&nbsp;e)</p>
+<p>{ int&nbsp;n=s.IndexOf(&quot;文学&quot;);//s中有字符串&quot;文学&quot;吗?=-1表示没有</p>
+<p>if(n==-1)//=-1，表示上次没选此项，此次选中，应增加&quot;文学&quot;</p>
+<p style="margin-left:21.0000pt;">s+=&quot;文学&quot;;</p>
+<p>else//否则，表示上次已选此项，此次不选中，应删除&quot;文学&quot;</p>
+<p style="margin-left:21.0000pt;">s=s.Remove(n,2);</p>
+<p>label1.Text=s;</p>
+<p>}</p>
+<p>(6)编译，运行。选中音乐在标签中显示：你的爱好是：音乐，再选中文学显示：你的爱好是：音乐文学，不选音乐显示：你的爱好是：文学，再选音乐显示：你的爱好是：文学音乐。</p>
+<h2>
+	列表选择控件(ListBox)</h2>
+<p>列表选择控件列出所有供用户选择的选项，用户可从选项中选择一个或多个选项。</p>
+<ol>
+	<li>
+		列表选择控件的常用属性、事件和方法</li>
+</ol>
+<ul>
+	<li>
+		属性Items：存储ListBox中的列表内容，是ArrayList类对象，元素是字符串。</li>
+	<li>
+		属性SelectedIndex：所选择的条目的索引号，第一个条目索引号为0。如允许多选，该属性返回任意一个选择的条目的索引号。如一个也没选，该值为-1。</li>
+	<li>
+		属性SelectedIndices：返回所有被选条目的索引号集合，是一个数组类对象。</li>
+	<li>
+		属性SelectedItem：返回所选择的条目的内容，即列表中选中的字符串。如允许多选，该属性返回选择的索引号最小的条目。如一个也没选，该值为空。</li>
+	<li>
+		属性SelectedItems：返回所有被选条目的内容，是一个字符串数组。</li>
+	<li>
+		属性SelectionMode：确定可选的条目数，以及选择多个条目的方法。属性值可以使：none(可以不选或选一个)、one(必须而且必选一个)、MultiSimple(多选)或MultiExtended(用组合键多选)。</li>
+	<li>
+		属性Sorted：表示条目是否以字母顺序排序，默认值为false，不允许。</li>
+	<li>
+		方法GetSelected()：参数是索引号，如该索引号被选中，返回值为true。</li>
+	<li>
+		事件SelectedIndexChanged：当索引号(即选项)被改变时发生的事件。</li>
+</ul>
+<ol>
+	<li value="2">
+		例子e3_11<img alt="" src="data:image/png;base64,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" /></li>
+</ol>
+<p>根据列表框的选择，为字符串加下划线、删除线、变斜体、变粗体。具体步骤如下：</p>
+<ol>
+	<li>
+		建立一个新项目。放Label控件到窗体,其属性Text=&ldquo;字体风格&rdquo;。</li>
+	<li>
+		放置ListBox控件到窗体中,属性Name=listBox1。选中ListBox控件，在属性窗口中，单击Items属性右侧的三个小点，打开字符串集合编辑器对话框，在其中输入四项：粗体、斜体、下划线、删除线，注意每一项要换行。如上图。</li>
+	<li>
+		设置列表选择控件ListBox1属性SelectionMode为MultiExtended，允许多选。</li>
+	<li>
+		为列表选择控件的事件SelectedIndexChenged增加事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;listBox1_SelectedIndexChanged(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{ int&nbsp;Style=0,k=1;//Style=0正常字体，1=黑体，2=斜体，3=黑斜体等，参见3.9节</p>
+<p>for(int&nbsp;i=0;i&lt;listBox1.Items.Count;i++)//此例Count=4，为什么？</p>
+<p>{if(listBox1.GetSelected(i))//例如此例GetSelected(0)=true表示粗体被选中</p>
+<p>Style=Style|k;//增加指定风格</p>
+<p>&nbsp;else</p>
+<p>Style=Style&amp;(~k);//取消指定风格</p>
+<p>&nbsp; &nbsp;k=k*2;&nbsp;</p>
+<p>}<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAB5CAIAAACfhmlZAAAFmklEQVR4nO2cf6QdRxTH9+9LKf0jlNI/QggpoZWqajcSDa1WS0h5PFIe/RFNJZLWq+j2R3ikGkkkPFKvaSMhqtESolq5hHhaKuEJkVKqlFL6T/+e/rGvY96cOWdn9+7uOTt7vr7WzOzc2ZfPnDkz9937khkVh4qiyPM8M8as3V5V92ylL4n+ZPObzfzAlgMPbj340GOHNm0/8vAT7z7y5OKjTx/b/GyxZdfHW587vu35pe0vnnj85c927D311L4zz8yd2zm/vPu183sWVl5448JLBy6+8s7lvYevvHr067nFq/PHvtv/4bWFT66/vvT9Wyd+fPvk9NDpm0fO3XpvefX9z3/+4ItfPvrqzvHLa0tX7n76zb2T3/56+tpvZ6//vvzDH+dv/Lly868vb/196ad/hJuiP60ppd8yfS+0p9NpUWRBi6VfawPM87xu/2ZPaU4fDiecfq38W7d/s6fMSD9znST9DFdP9KEq6XvLol365ZjC6bt9YEsN+kWWuY6n30Xs2xntjX6wW0zsu7i9yahH30Kehb67Gkr6ZXnn/LIxZs/Cirdi5hav2jJj7Dem7y2dhpnnf/qZqRn7buYpC2Xsl2VLv5SlX8Z+WS5jvywPkX4wBbVAnz5xwtgn6NvMkx79TmK/8t2W0l9rMe97u26WGc8l90HQx04v7dJv7cwD5WzD66uikj6968bTdwfphz6mmMxDr7Aa77bcwjp9m+8B/WTebdXi2CN9MvMIpF9Eq6Rfq3+zpzTMPJW7rjT6ecdq9pRq+vr7/a6t9OXRV/dppa/0x2qlr/THaqWv9Mdqpa/0x+pu6Qc/YGulcxpmpk98EuT1oX9BHzOOQLdPn/hoogGyYDsxFPE4gW6ZfiSs+EkKVoPo6ZmW6Z5in54nomcMWa9xKOg7oR/kiwGFfOkZgsNio7GTFUQ/iAyix+hjfTDu2IDS3EneDwrrBinT3bJQvqp8okx3Ffv0vz8GWWRj5RRKdif0Y9DTnYkRaPRKf1b68S/36MO1Itzt0CcyCa/Y+fZBX630h2elr/TH6lnpx3+BdISqpFrMTr/u10hHorXbqz3Rd7/QaYyxBVfe9z7dFng3AfdNv4RorzRfpd9+7LuRTvB1Z4heIsM1f+ah6WPVNMyQeQi5rIlqMpYY+15SCm4SaXgAeT9YTcMMmcdjim2n2IkopQngpw/5ej1TPfAw0PdA65mHjX7lsUfpd0JfzUwfxjLdorHffuaZkIcZpd8+fcg0eJaP2RuG7r7pe0wh7shqGubP+9jpk6gmY4bYh2kkuAHAanoTwB/7bgu2JcBqGmag78Uytp0GJyOxCeCkPwG53qM/QTJVMmbI+3AOCPpYNQ3z5P1gFCv9nuirGej/e/8scc2yzG0xxgR7uu2wjL1K5rU/+uUj4S6KbarYERPbKoZ4KGLOPAQpSJN+B+AWBjEBDLFfi763IIJHVXgwZccab/7Yh8gwjh79YKaaaOw3iH0iv0emGo39mfI+XAHBDnAFVE6kTAuK/cq5IbhjsyXfgmIf3gqGs1fGUj872UrLjX0s10+Q2LfVYa0AibEfPALZAnaXaJFphtjXq3vtj76NXPsn+l65rLqNtt3e8gQ7BLuJFQ/94BWrwnZvqGDnQUgu/SBNItjdwlAmQDp9LN5jkpV8SadvNpKFjd6wRmOfoB/4/3E2bsImIud4LcHpGYTkxr7Bp8psTDjua01onsRKKH0isdgqbIHdhEsoffdHDPa0t7DU3zaoTiSdPpZYIHdiksSqb/pebjEbwWG7bjC/w1tYi1gxxL7KSulzSulzSulzSulzSulzSulzSulzSulzSulzSulzSulzSulzqif6zV44BndOnze+5Ktb+upZrPSV/lit9JX+WK30lf5YvU6/UDEpz/MsV/FpGN9PSlVKn1P/AdlhpaVjjyFBAAAAAElFTkSuQmCC" /></p>
+<p>FontStyle&nbsp;m=new&nbsp;FontStyle();</p>
+<p>m=(FontStyle)Style;</p>
+<p>label1.Font=new&nbsp;Font(label1.Font.Name,9,m);}</p>
+<ol>
+	<li value="5">
+		编译，运行，单选或用Ctrl键多选，看一下效果。运行效果如上图。</li>
+</ol>
+<h2>
+	下拉列表组合框(ComboBox)控件</h2>
+<p>控件ComboBox中有一个文本框，可以在文本框输入字符，其右侧有一个向下的箭头，单击此箭头可以打开一个列表框，可以从列表框选择希望输入的内容。现介绍该控件用法。</p>
+<ol>
+	<li>
+		ComboBox控件的常用属性、事件和方法</li>
+</ol>
+<ul>
+	<li>
+		属性DropDownStyle：确定下拉列表组合框类型。为Simple表示文本框可编辑，列表部分永远可见。为DropDown是默认值，表示文本框可编辑，必须单击箭头才能看到列表部分。为DropDownList表示文本框不可编辑，必须单击箭头才能看到列表部分。</li>
+	<li>
+		属性Items：存储ComboBox中的列表内容，是ArrayList类对象，元素是字符串。</li>
+	<li>
+		属性MaxDropDownItems：下拉列表能显示的最大条目数(1&mdash;100)，如果实际条目数大于此数，将出现滚动条。</li>
+	<li>
+		属性Sorted：表示下拉列表框中条目是否以字母顺序排序，默认值为false，不允许。</li>
+	<li>
+		属性SelectedItem：所选择条目的内容，即下拉列表中选中的字符串。如一个也没选，该值为空。其实，属性Text也是所选择的条目的内容。</li>
+	<li>
+		属性SelectedIndex：编辑框所选列表条目的索引号，列表条目索引号从0开始。如果编辑框未从列表中选择条目，该值为-1。</li>
+	<li>
+		事件SelectedIndexChanged：被选索引号改变时发生的事件。</li>
+</ul>
+<ol>
+	<li value="2">
+		例子e3_12&nbsp;选择Windows操作系统提供的所有字体</li>
+</ol>
+<p>增加一个ComboBox控件，用来选择字符串使用的字体名。本例提供方法使控件ComboBox的下拉列表中显示Windows操作系统中使用的所有字体名。运行效果如右图。实现步骤如下：<img alt="" src="data:image/png;base64,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" /></p>
+<ol>
+	<li>
+		建立新项目。放Label控件到窗体,其属性Text=&ldquo;选择不同字体&rdquo;。</li>
+	<li>
+		放ComboBox控件到窗体中，属性Name=comboBox1，属性DropDownStyle=DropDownList，不能在编辑框中输入字体名，只能从下拉列表中选取。</li>
+	<li>
+		为窗体Form1的事件Load增加事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;Form1_Load(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{//Families是类FontFamily的一个静态属性，得到操作系统中所使用的所有字体名</p>
+<p>FontFamily[]&nbsp;families=FontFamily.Families;//静态属性没有类的对象也可使用</p>
+<p>foreach&nbsp;(FontFamily&nbsp;family&nbsp;in&nbsp;families)</p>
+<p style="margin-left:21.0000pt;">comboBox1.Items.Add(family.Name);//注意Add方法的使用</p>
+<p>}</p>
+<ol>
+	<li value="4">
+		为comboBox1的事件SelectedIndexChenged增加事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;comboBox1_SelectedIndexChanged(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{label1.Font=new&nbsp;Font(comboBox1.Text,9);}</p>
+<ol>
+	<li value="5">
+		编译，运行，在下拉列表中选择不同字体名，标签的字体变为选择的字体。从下拉列表中可以看到操作系统中的所有字体名称已经在列表中。</li>
+</ol>
+<h2>
+	3.7ToolTip控件</h2>
+<p>在一些Windows应用程序中，例如Word程序，当鼠标在工具条的按钮上停留一段时间后，会在旁边出现提示，ToolTip控件就是为实现此功能的。可以用ToolTip控件为任何控件增加提示，本节介绍该控件的使用方法。</p>
+<p>例子e3_13&nbsp;为Button控件增加提示</p>
+<ol>
+	<li>
+		建立一个新项目。放Button控件到窗体，Name属性为Button1。</li>
+	<li>
+		把toolTip控件放到窗体中，属性Name=ToolTip1。</li>
+	<li>
+		在Form1的构造函数中，增加语句如下：</li>
+</ol>
+<p>toolTip1.SetToolTip(button1,&quot;这是一个按钮&quot;);</p>
+<ol>
+	<li value="4">
+		编译，运行，当鼠标在Button上停留一段时间后，会在旁边出现提示：这是一个按钮。</li>
+</ol>
+<h2>
+	3.8超级链接(LinkLable)控件</h2>
+<p>控件LinkLable是控件Label的派生类，和控件Label不同的是显示的字符有下划线，可以为LinkLable控件的LinkClicked事件增加事件处理函数，当鼠标指向LinkLable控件，鼠标形状变为手形，单击该控件，调用这个事件处理函数，可以打开文件或网页。</p>
+<ol>
+	<li>
+		超级链接控件的属性、方法和事件</li>
+</ol>
+<ul>
+	<li>
+		属性LinkColor：用户未访问过的链接的字符颜色，默认为蓝色。</li>
+	<li>
+		属性VisitedLinkColor：用户访问链接后的字符颜色。</li>
+	<li>
+		属性LinkVisited：如果已经访问过该链接，则为true；否则为false。</li>
+	<li>
+		属性LinkArea:&nbsp;是一个结构，变量LinkArea.Start表示字符串中开始加下划线的字符位置，LinkArea.Length表示字符串中加下划线字符的个数。</li>
+	<li>
+		事件LinkClicked：单击控件LinkLable事件。</li>
+</ul>
+<ol>
+	<li value="2">
+		例子e3_14:用LinkLabel控件超级链接到微软网站。
+		<ol>
+			<li>
+				建立一个新工程。放LinkLabel控件到窗体，属性Text=&ldquo;介绍微软的操作系统&rdquo;。</li>
+			<li>
+				修改LinkLabel控件属性LinkArea.Length=2，LinkArea.Start=2。也可在构造函数用语句修改：linkLabel1.LinkArea=new&nbsp;LinkArea(2,2);<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAABUCAIAAABhmRB2AAAE70lEQVR4nO2d52sUQRjG97MiIiIiIiL2GgkSQpBw9t5LEHvX2GKJEuupMSbGEnsIsYUQK7YQYgs5e0UiRhFFFFFEEfE/WD+sWcaZd2Z2N3v1fV8ejrm92Wm/eWbn7vY4w6TAEUa0G0ARoQBI19c9ISWeYNLhn2EUkQ4p6ajPQZK/ItJYpCHdpFOmNzXtsqxZtxXNe6xq0SurZZ81rfqua52c3abfhrYpOe1SN7ZP29yh/9aO6ds6D9jeddDO7kNyew7L6z0iP2lUQd8xhcnj9vWbsD9lUlHqlENpGYf7TzuaPuN4YFbxwDklg+eVDl1wYviiUyOXnBmdWTZ2efn4lRUTs85OXnN+6rqLGesvTcu5PH3T1Zlbrs/eVjl3e9X8ndULd91YvPvW0oI7ywprVuyrXXXg7uqD99YeeZB97NGG4sc5JU83lT7fcvLF1tMvg2V1O8pf5Va8zjv3Jv/C2z2X3u298n7/tQ9FlR8PVX06Uv352M0vxbe/ltR8K639fvLuj9P3f5Y9/FX++HfFsz8xLqekQy6DSMeaXJDmLBsKhYJBAxRa0q72R4FAwG1+b7X4Q1o8Fzlph5fMYDBokXaV31stPpI2WBFpD6QNeUSBtBha0lyx/pK2ykROms0jHvFIOmgYrJyTDoen7aYmDGkwmxNPs2g58N5J20AbQ5qtyCJtpXsOyzNNM2lUAdeYtIzDdjqBPe2ZNLck+LB6N5A2TJeetqN1craVsDxtpW3SVtikLU9bacvTVppIg7WImH0mrX6XZZXGelpB2l69iXTMeVr7yQmRjgDpsFynuR2ZYZicLMZEuh7aToeDdFj23mIwW7R/bteSVu/InJNmC0kM0rJwsnqrVw6Pn5ywiX+k7euzQJo+OXG4ertiFiXSytUbIemg47BIu8rvrRYfVm/tjgwb6UCYw1st7kjT99NYvrUk0olPmpQwItJYRKSxiEhjEZHGIiKNRUQai4g0FhFpLCLSWESksYhIYxGRxiIijUVEGouINBYRaSzyk7TsvmX7JdmNroZhGIbZkDaZ/GwaOMKcxd/2rGgV9yp4oy6XU9E1bVHqp/FHGhxx7dAzQ2k2UOQf2Qy27INaKlrSCgDaV9UTRSzE4SmxS9q5h8DMMsYsSAgtz16yWkiPiE+9EVJ0XzRAHHvarWnk/hbJAQ6WGNrkGCiGmGMM8mZfUuBRTwKw2KhgbixpbjjEceQGlBvu/9OwfTmcikexGaC9OHhc+7mDzgkpMmineByQBtsN9kHnDP7nINxlW8zDsgfRqj3NuQ00pThvxNmj7b6sEFlR8U1aNAo00HpPQ3SBn5hy4yj6VQHDeadk8LiqwcZEmHGESMvGXcAgvTCLpGVLN9gMNXKFz5yQ5uBpESYyaXUnOU+zvDnSsqUbfKMFNgOcbey6ou6UejbIpjJbRb3LaRFzpNWLoVtPg4//nyLbqUndqaaibZuMinYBUE+LOCOttgKYX+RheVp2ARYuxqYcv2r/JTbAITB1N8GJBU53cRDiibQ/jZDsvd0qkm2OO8UEaVIERKSxiEhjEZHGIiKNRUQai4g0FhFpLCLSWESksYhIYxGRxiIijUVEGouINBYRaSwi0lhEpLGISGMRkcYiIo1FRBqLiDQWEWksItJYRKSxiEhjEUza+T8nUsRLAKTD8Z+MFFEPgDRFQgaRxhJ/ATI+2buqSEuJAAAAAElFTkSuQmCC" /></li>
+			<li>
+				为LinkLabel控件的事件LinkClicked增加事件处理函数：</li>
+		</ol>
+	</li>
+</ol>
+<p>private&nbsp;void&nbsp;linkLabel1_LinkClicked(object&nbsp;sender,&nbsp;System.Windows.Forms.LinkLabelLinkClickedEventArgs&nbsp;e)</p>
+<p>{ linkLabel1.LinkVisited=true;</p>
+<p>System.Diagnostics.Process.Start(&quot;http://www.micosoft.com.cn&quot;);</p>
+<p>}</p>
+<ol>
+	<li value="4">
+		运行，效果如右图，注意只有字符微软带下划线。单击微软，打开浏览器访问微软主页。</li>
+	<li value="5">
+		如果要打开一个窗口，列出C盘根目录下的文件及文件夹，LinkLabel控件事件LinkClicked事件处理函数修改如下：</li>
+</ol>
+<p>linkLabel1.LinkVisited=true;</p>
+<p>System.Diagnostics.Process.Start(&quot;C:/&quot;);</p>
+<ol>
+	<li value="6">
+		如果要打开指定程序，例如打开记事本程序，修改LinkClicked事件处理函数如下：</li>
+</ol>
+<p>linkLabel1.LinkVisited=true;</p>
+<p style="margin-left:15.7500pt;">System.Diagnostics.Process.Start(&quot;notepad&quot;);</p>
+<h2>
+	3.9定时(Timer)控件</h2>
+<p>定时控件(Timer)也叫定时器或计时器控件，是按一定时间间隔周期性地自动触发事件的控件。在程序运行时，定时控件是不可见的。</p>
+<ol>
+	<li value="3">
+		定时控件的属性、方法和事件</li>
+</ol>
+<ul>
+	<li>
+		属性Interval：周期性地自动触发事件的时间间隔，单位为毫秒。</li>
+	<li>
+		属性Enabled：为true,启动定时器。调用方法Start()也可启动定时器。</li>
+	<li>
+		方法Start()和Stop()：启动和停止定时器。设置属性Enabled=false也可停止定时器。</li>
+	<li>
+		事件Tick：每间隔属性Interval指定的时间，产生事件Tick。</li>
+</ul>
+<ol>
+	<li value="4">
+		例子e3_15用标签控件显示当前日期和时间</li>
+</ol>
+<ol>
+	<li>
+		建立一个新项目。放Timer组件到窗体，Name属性为timer1。</li>
+	<li>
+		放Label控件到窗体，Name属性为label1。</li>
+	<li>
+		为窗体Form1的事件Load增加事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;Form1_Load(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{ this.timer1.Interval=100;<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABKCAIAAACzcsieAAAEGElEQVR4nO2Z60sUURTA53MRUUQUEVFYKSL2ELH3IpaJiJVl7xIRxcTUNE1TG9TWRDRN0zQ1sRLFXmIlitViJduDMFqKoiiKoiii/2D7cG2Y5nEf45q7pzP8Ptwd72Pu/c05c52RpvgdEmLq4rRpS9OnBxyeEZg5MyhrVnD27OU5c1bmzg3JmxeaPz+sYMHqwoVrixatP+Fnk5eEl/hHlAZsPBkYaQ+KOhUcXbEspnJFbFXI1urQuJqwHbWr4uvW7Kpft6dhw75G24Gm8ITmiMSWTUmtm5MvRKW0R6d2xKRdjE2/vCWjc1tW1/bs7vijPTtzr+w+dm1vwY39hb0Hi/sS5JuJJbeTyvqT7QMp5YOpFUNplXfSq+5lnHZk1g4fqbufc/ZhbuNI3jlnfvOj4y1PitqeFrc/kztGSy49L+t8Ye9ylXe/rOh5VXn1ddX1N9W9b2v63p259b6+/0PDwMfGwU9NQ5/P3/3S6vjaNvyt/cH3jpEfl5w/Ox//8nJco07XqFOWZckhcqBg3xOsCVCHwyHLkiEoWCPYLXLYbDbR+tZG4RKsb4mCDQWTdWQiyzIRLFTf2ij8giU1KNiDgiXzw/OC9Q9apmBNcHtWMOkTBRsKVtfRnzEWLEt/wS94IiJYuWnACzasxhPBaqMa36aCFY/jEayOaSKYlP0jSt1ud2CkXRP3oXE1Svk/jGDLgjUJgJ2i/wiW3IIRrE7RpEAimJQVweRQBJMIJmUSwaSMgvkFG+ZqMcH0f5P0EUwRrKRoFOwtEcx80YGCfewZrNlkSZJbA1GLgimCzfbDnhVsZRetD1PVrmsstpmC6ZssfsHqTmALNjs4n8GUPGH8ooPII4UxwcqzVycYX3T43pssrWBqikbBytLL3AcRLFTf2ijsFM3cZKFgsoi2CT6sjcJ4F43fg4F/LkTB0ARzPsARXwQFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFA4cmWP/hmnmG8sXbsH/6Xy10wtOKZ17M4YRm6o2CNfO3cIa5UpTK+p55OlGvPn/PPK30w3mzVDWTI5hZmVMwZ036ec5WoneDl8B+BhtOiSKYJ2nrF8ss3QmlaP6caXaFzIFEW006DMFm8WEmmMeNUEpkToB+hTxthXKAYQVvdszYZNGX0ppgF9/tz7lq/0Yw/Zp9UjB9GmZLI7TE47dLGZEZi+O8ZtGbabKgCdbfs/pbmOcMZbEoGjijnGd0/U8LrfTXzD9TbxSMwAAFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFAwcFA0eW5d+vzk5x2Y0T9wAAAABJRU5ErkJggg==" /></p>
+<p>this.timer1.Enabled=true;</p>
+<p>label1.Text=DateTime.Now.ToString();</p>
+<p>}</p>
+<ol>
+	<li value="4">
+		为Timer1的Tick事件增加事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;timer1_Tick(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)&nbsp;</p>
+<p>{ label1.Text=DateTime.Now.ToString();</p>
+<p>}</p>
+<ol>
+	<li value="5">
+		编译，运行，标签控件位置显示日期和时间。运行效果如上图。</li>
+</ol>
+<h2>
+	3.10DateTime类</h2>
+<p>DateTime类中提供了一些静态方法，可以用来得到日期、星期和时间，下面是一些常用的方法。</p>
+<ul>
+	<li>
+		得到日期和时间，并转换为字符串。</li>
+</ul>
+<p>String&nbsp;s=DateTime.Now.ToString();//或DateTime.Today.ToString()</p>
+<ul>
+	<li>
+		得到年、月和日期</li>
+</ul>
+<p>int&nbsp;y=DateTime.Now.Year;//得到年</p>
+<p>int&nbsp;m=DateTime.Now.Month;//得到月</p>
+<p>int&nbsp;d=DateTime.Now.Day;//得到日期</p>
+<p>String&nbsp;s=DateTime.Now.DayOfWeek.ToString();//英文表示的星期</p>
+<ul>
+	<li>
+		得到小时、分和秒</li>
+</ul>
+<p>int&nbsp;h=DateTime.Now.Hour;//得到小时</p>
+<p>int&nbsp;m=DateTime.Now.Minute;//得到分</p>
+<p>int&nbsp;s=DateTime.Now.Second;//得到秒</p>
+<ul>
+	<li>
+		定义一个DateTime类对象，表示1999年1月13日3时57分32.11秒</li>
+</ul>
+<p>System.DateTime&nbsp;moment=new&nbsp;System.DateTime(1999,1,13,3,57,32,11);</p>
+<ul>
+	<li>
+		加法和减法(减法请读者自己完成)</li>
+</ul>
+<p>System.DateTime&nbsp;dTime=new&nbsp;System.DateTime(1980,8,5);//1980年8月5日</p>
+<p>//时间间隔，17天4小时2分1秒</p>
+<p>System.TimeSpan&nbsp;tSpan=new&nbsp;System.TimeSpan(17,4,2,1);</p>
+<p>System.DateTime&nbsp;result=dTime+tSpan;//结果是：1980年8月22日4:2:1&nbsp;AM.</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151123/1240.html">C#的DateTime类</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151122/1225.html">C#语言各种控件</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

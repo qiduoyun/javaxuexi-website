@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>c#学习PrintDocument类 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1274","0","attach");
+		Cms.viewCount("","1274");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151125/1274.html" title="c#学习PrintDocument类">c#学习PrintDocument类</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-11-25 19:17:16</span>
+     </h3>
+     <h3>
+	C#学习PrintDocument类</h3>
+<p>PrintDocument组件是用于完成打印的类，其常用属性、方法和事件如下：</p>
+<ul>
+	<li>
+		属性DocumentName：字符串类型，记录打印文档时显示的文档名（例如，在打印状态对话框或打印机队列中显示）。</li>
+	<li>
+		方法Print：开始文档的打印。</li>
+	<li>
+		事件BeginPrint：在调用Print方法后，在打印文档的第一页之前发生。</li>
+	<li>
+		事件PrintPage：需要打印新的一页时发生。</li>
+	<li>
+		事件EndPrint：在文档的最后一页打印后发生。</li>
+</ul>
+<p>若要打印，首先创建PrintDocument组件的对象。然后使用页面设置对话框PageSetupDialog设置页面打印方式，这些设置作为要打印的所有页的默认设置。使用打印对话框PrintDialog设置对文档进行打印的打印机的参数。在打开两个对话框前，首先设置对话框的属性Document为指定的PrintDocument类对象，修改的设置将保存到PrintDocument组件对象中。第三步是调用PrintDocument.Print方法来实际打印文档。当调用该方法后，引发下列事件：BeginPrint、PrintPage、EndPrint。其中每打印一页都引发PrintPage事件，打印多页，要多次引发PrintPage事件。完成一次打印，可以引发一个或多个PrintPage事件。</p>
+<p>程序员应为这3个事件编写事件处理函数。BeginPrint事件处理函数进行打印初始化，一般设置在打印时所有页的相同属性或共用的资源，例如所有页共同使用的字体、建立要打印的文件流等。PrintPage事件处理函数负责打印一页数据。EndPrint事件处理函数进行打印善后工作。这些处理函数的第2个参数System.Drawing.Printing.PrintEventArgs&nbsp;e提供了一些附加信息，主要有：</p>
+<ul>
+	<li>
+		e.Cancel：布尔变量，设置为true，将取消这次打印作业。</li>
+	<li>
+		e.Graphics：所使用的打印机的设备环境，参见第五章。</li>
+	<li>
+		e.HasMorePages：布尔变量。PrintPage事件处理函数打印一页后，仍有数据未打印，退出事件处理函数前设置HasMorePages=true，退出PrintPage事件处理函数后，将再次引发PrintPage事件，打印下一页。</li>
+	<li>
+		e.MarginBounds：打印区域的大小，是Rectangle结构，元素包括左上角坐标：Left和Top，宽和高：Width和Height。单位为1/100英寸。</li>
+	<li>
+		e.MarginBounds：打印纸的大小，是Rectangle结构。单位为1/100英寸。</li>
+	<li>
+		e.PageSettings：PageSettings类对象，包含用对话框PageSetupDialog设置的页面打印方式的全部信息。可用帮助查看PageSettings类的属性。</li>
+</ul>
+<p>下边为这3个事件编写事件处理函数，具体步骤如下：</p>
+<ol>
+	<li>
+		在最后一个using语句之后增加语句：</li>
+</ol>
+<p>using&nbsp;System.IO;</p>
+<p>using&nbsp;System.Drawing.Printing;</p>
+<ol>
+	<li value="2">
+		本例打印或预览RichTextBox中的内容，增加变量：StringReader&nbsp;streamToPrint=null。如果打印或预览文件，改为：StreamReader&nbsp;streamToPrint，流的概念参见第六章。增加打印使用的字体的变量：Font&nbsp;printFont。</li>
+	<li value="3">
+		放PrintDocument控件到窗体，属性name为printDocument1。</li>
+	<li value="4">
+		为printDocument1增加BeginPrint事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;printDocument1_BeginPrint(object&nbsp;sender,</p>
+<p style="margin-left:147.0000pt;">System.Drawing.Printing.PrintEventArgs&nbsp;e)</p>
+<p>{ printFont=richTextBox1.Font;//打印使用的字体</p>
+<p>streamToPrint=new&nbsp;StringReader(richTextBox1.Text);//打印richTextBox1.Text</p>
+<p>}//如预览文件改为：streamToPrint=new&nbsp;StreamReader(&quot;文件的路径及文件名&quot;);</p>
+<ol>
+	<li value="5">
+		printDocument1的PrintPage事件处理函数如下。streamToPrint.ReadLine()读入一段数据，可能打印多行。本事件处理函数将此段数据打印在一行上，因此方法必须改进。</li>
+</ol>
+<p>private&nbsp;void&nbsp;printDocument1_PrintPage(object&nbsp;sender,</p>
+<p style="margin-left:126.0000pt;">System.Drawing.Printing.PrintPageEventArgs&nbsp;e)</p>
+<p>{ float&nbsp;linesPerPage=0;//记录每页最大行数</p>
+<p>float&nbsp;yPos=0;//记录将要打印的一行数据在垂直方向的位置</p>
+<p>int&nbsp;count=0;//记录每页已打印行数</p>
+<p>float&nbsp;leftMargin=e.MarginBounds.Left;//左边距</p>
+<p>float&nbsp;topMargin=e.MarginBounds.Top;//顶边距</p>
+<p>string&nbsp;line=null;//从RichTextBox中读取一段字符将存到line中</p>
+<p>//每页最大行数=一页纸打印区域的高度/一行字符的高度</p>
+<p>linesPerPage=e.MarginBounds.Height/printFont.GetHeight(e.Graphics);</p>
+<p>//如果当前页已打印行数小于每页最大行数而且读出数据不为null，继续打印</p>
+<p>while(count&lt;linesPerPage&amp;&amp;((line=streamToPrint.ReadLine())!=null))</p>
+<p>{ //yPos为要打印的当前行在垂直方向上的位置</p>
+<p style="margin-left:21.0000pt;">yPos=topMargin+(count*printFont.GetHeight(e.Graphics));</p>
+<p>e.Graphics.DrawString(line,printFont,Brushes.Black,</p>
+<p style="margin-left:63.0000pt;">leftMargin,yPos,new&nbsp;StringFormat());//打印，参见第五章</p>
+<p>count++;//已打印行数加1</p>
+<p>}</p>
+<p>if(line!=null)//是否需要打印下一页</p>
+<p>e.HasMorePages=true;//需要打印下一页</p>
+<p>else</p>
+<p>e.HasMorePages=false;//不需要打印下一页</p>
+<p>}</p>
+<ol>
+	<li value="6">
+		为printDocument1增加EndPrint事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;printDocument1_EndPrint&nbsp;(object&nbsp;sender,</p>
+<p style="margin-left:147.0000pt;">System.Drawing.Printing.PrintEventArgs&nbsp;e)</p>
+<p>{ if(streamToPrint!=null)</p>
+<p>streamToPrint.Close();}//释放不用的资源</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151125/1275.html">C#学习对话框控件PageSetupDialog</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151125/1273.html">C#,.net提示用户保存修改的文件c#教程</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>${channel.title!channel.name} - ${site.name}</title>
+
+    <link rel="stylesheet" href="/${res}/css/xiangmu.css">
+    <script src="/${res}/js/jquery-3.1.0-min.js"></script>
+	
+</head>
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+.disabled{
+color:#888;}
+</style>
+
+<script type="text/javascript">
+$(function(){
+	$('a[disabled="disabled"]').css({'color':'#888'});
+});
+</script>
+
+<body>
+[#include "../include/xiangmu_header.html"/]
+
+<div style="width: 1100px;margin: 18px auto;border: 1px solid #ccc;padding-bottom: 18px;">
+      <span style="display:block;border-bottom: 1px solid #ccc; padding-bottom: 10px; padding-top: 10px;width: 100%;">
+         <span style="margin-left: 20px;font-weight: bold;color: #333;">
+	[@cms_channel id=channel.id]
+        ${tag_bean.name}列表
+	[/@cms_channel]</span>
+      </span>
+      [@cms_content_page count='16' titLen='17' orderBy='4' typeId='5' channelOption='1' channelId=channel.id]
+       [#list tag_pagination.list as a]         
+		<div style="width:250px;margin-left:18px;margin-top:18px;float:left;position: relative;">
+		 <a href="${a.url}" title="${a.title}" target="_blank">
+		 <img width="250" height="200" src="${a.typeImg!defImg}"/>
+		 </a>
+		 <span style="display: block; text-align: center;"><a href="${a.url}" title="${a.title}" target="_blank">[@text_cut s=a.title len=12/]</a></span>
+		 <div style="position:absolute; left:10px; top:140px;">
+			 <a href="${a.url}" title="${a.title}" target="_blank">
+			 <img class="opacity-img"  height="50" src="/${res}/img/bofanganniu.png"/>
+			 </a>
+		 </div>
+		</div>	   		                                
+        [/#list]
+        <div style="width: 1080px;float:left;padding-left: 20px;margin-top: 50px;">
+         [@cms_pagination sysPage='1'/]
+        </div>
+     [/@cms_content_page]
+     
+     <div style="clear: both;"></div>
+</div>
+
+
+[#include "../include/xiangmu_footer.html"/]
+
+
+</body>
+</html>

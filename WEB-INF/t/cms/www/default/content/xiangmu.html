@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>${title} - ${site.name}</title>
+    <link rel="stylesheet" href="/${res}/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/${res}/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	
+</head>
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<script type="text/javascript">
+$(function() {
+	  prettyPrint();
+	});
+</script>
+<body style="margin:0 0;">
+[#include "../include/xiangmu_header.html"/]
+
+<div style="width: 1100px;margin: 20px auto;">
+  <img width="1100" height="200" alt="" src="/${res}/img/meinv.png">
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="${content.url}" title="${content.title}">[@text_cut s=content.title len=22 append='...'/]</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">${content.author}&nbsp;&nbsp;发布于    ${content.releaseDate}</span>
+     </h3>
+     ${txt}
+     
+         <ul>
+            <li><strong>上一篇：</strong>[@cms_content id=content.id next='1' channelId=channel.id][#if tag_bean??]<a href="${tag_bean.url}">${tag_bean.title}</a>[#else]没有了[/#if][/@cms_content]</li>
+            <li><strong>下一篇：</strong>[@cms_content id=content.id next='0' channelId=channel.id][#if tag_bean??]<a href="${tag_bean.url}">${tag_bean.title}</a>[#else]没有了[/#if][/@cms_content]</li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+    [@cms_content_list count='9' titLen='17' orderBy='4' typeId='1,2' channelOption='1' channelId=channel.parentId]
+       [#list tag_list as a]
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="${a.url}" target="_blank" title="${a.title}">[@text_cut s=a.title len=16 append='...'/]</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">[@html_cut s=a.txt len=100 append='...'/]</dt>
+     </dl>	   		                                
+        [/#list]
+     [/@cms_content_list]     
+
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+[#include "../include/xiangmu_footer.html"/]
+</body>
+</html>

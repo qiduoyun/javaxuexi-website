@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>ASP.Net控件数据绑定，基于集合的绑定 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1478","0","attach");
+		Cms.viewCount("","1478");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151210/1478.html" title="ASP.Net控件数据绑定，基于集合的绑定">ASP.Net控件数据绑定，基于集合的绑定</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-10 19:55:17</span>
+     </h3>
+     <p><strong><span style="font-size:26px;">ASP.Net控件数据绑定，<span style="font-family: comic sans ms,cursive;">基于集合的绑定</span></span></strong></p>
+<p>像DataGrid、ListBox、DrowDownList和HTMLSelect这样的列表服务器控件的列表都可以绑定到数据源。例如绑定到公共语言运行库的集合类型，如ArrayList、DataView、Hashtable和DataReader等。下面的示例说明如何将DrowDownList的列表绑定到ArrayList。</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&nbsp;language=&quot;C#&quot;&nbsp;runat=&quot;server&quot;&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void&nbsp;Page_Load(Object&nbsp;Sender,&nbsp;EventArgs&nbsp;E)&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!Page.IsPostBack)&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ArrayList&nbsp;values&nbsp;=&nbsp;new&nbsp;ArrayList();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values.Add&nbsp;(&quot;IN&quot;);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values.Add&nbsp;(&quot;KS&quot;);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values.Add&nbsp;(&quot;MD&quot;);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values.Add&nbsp;(&quot;MI&quot;);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values.Add&nbsp;(&quot;OR&quot;);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values.Add&nbsp;(&quot;TN&quot;);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DropDown1.DataSource&nbsp;=values;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DropDown1.DataBind();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void&nbsp;SubmitBtn_Click(Object&nbsp;sender,&nbsp;EventArgs&nbsp;e)&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Label1.Text&nbsp;=&nbsp;&quot;您选择了：&quot;&nbsp;+&nbsp;DropDown1.SelectedItem.Text;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;&lt;font&nbsp;face=&quot;宋体&quot;&gt;数据绑定&nbsp;DropDownList&lt;/font&gt;&lt;/h3&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&nbsp;runat=server&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;asp:DropDownList&nbsp;id=&quot;DropDown1&quot;&nbsp;runat=&quot;server&quot;&nbsp;/&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;asp:button&nbsp;Text=&quot;提交&quot;&nbsp;OnClick=&quot;SubmitBtn_Click&quot;&nbsp;runat=server/&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;asp:Label&nbsp;id=Label1&nbsp;font-name=&quot;宋体&quot;&nbsp;font-size=&quot;10.5pt&quot;&nbsp;runat=&quot;server&quot;&nbsp;/&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>下面的示例说明如何把数据表绑定到DataGrid。注意使用DataView类要引用命名空间System.Data，即语句&lt;%@&nbsp;Import&nbsp;namespace=&quot;System.Data&quot;&nbsp;%&gt;。具体例子如下：</p>
+<p>&lt;%@&nbsp;Import&nbsp;namespace=&quot;System.Data&quot;&nbsp;%&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;script&nbsp;language=&quot;C#&quot;&nbsp;runat=&quot;server&quot;&gt;</p>
+<p>&nbsp;&nbsp;void&nbsp;Page_Load(Object&nbsp;sender,&nbsp;EventArgs&nbsp;e&nbsp;)&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;if&nbsp;(!Page.IsPostBack)&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DataTable&nbsp;dt&nbsp;=&nbsp;new&nbsp;DataTable();//建立一个数据表</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DataRow&nbsp;dr;//建立一个数据表的记录变量</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt.Columns.Add(new&nbsp;DataColumn(&quot;整数值&quot;,&nbsp;typeof(Int32)));//增加字段</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt.Columns.Add(new&nbsp;DataColumn(&quot;字符串值&quot;,&nbsp;typeof(string)));//包括字段名</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt.Columns.Add(new&nbsp;DataColumn(&quot;日期时间值&quot;,&nbsp;typeof(DateTime)));//及字段类型</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt.Columns.Add(new&nbsp;DataColumn(&quot;布尔值&quot;,&nbsp;typeof(bool)));</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;i&nbsp;=&nbsp;1;&nbsp;i&nbsp;&lt;=&nbsp;9;&nbsp;i++)&nbsp;{//增加10个记录</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dr&nbsp;=&nbsp;dt.NewRow();//建立1个记录对象</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dr[0]&nbsp;=&nbsp;i;//为记录的每个字段赋值</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dr[1]&nbsp;=&nbsp;&quot;项&nbsp;&quot;&nbsp;+&nbsp;i.ToString();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dr[2]&nbsp;=&nbsp;DateTime.Now;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dr[3]&nbsp;=&nbsp;(i&nbsp;%&nbsp;2&nbsp;!=&nbsp;0)&nbsp;?&nbsp;true&nbsp;:&nbsp;false;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt.Rows.Add(dr);//把此记录加到数据表中</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataGrid1.DataSource&nbsp;=&nbsp;new&nbsp;DataView(dt);//为dataGrid指定数据源</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dataGrid1.DataBind();//数据更新</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&lt;/script&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;&lt;font&nbsp;face=&quot;宋体&quot;&gt;到&nbsp;DataView&nbsp;的数据绑定&lt;/font&gt;&lt;/h3&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&nbsp;runat=server&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;asp:DataGrid&nbsp;id=&quot;dataGrid1&quot;&nbsp;runat=&quot;server&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BorderColor=&quot;black&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BorderWidth=&quot;1&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GridLines=&quot;Both&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CellPadding=&quot;3&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CellSpacing=&quot;0&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HeaderStyle-BackColor=&quot;#aaaadd&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>下面的示例说明如何绑定到Hashtable。</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&nbsp;language=&quot;C#&quot;&nbsp;runat=&quot;server&quot;&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;void&nbsp;Page_Load(Object&nbsp;sender,&nbsp;EventArgs&nbsp;e)&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!Page.IsPostBack)&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hashtable&nbsp;h&nbsp;=&nbsp;new&nbsp;Hashtable();//注意哈希表的使用</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h.Add&nbsp;(&quot;键&nbsp;1&quot;,&nbsp;&quot;值&nbsp;1&quot;);//哈希表的每一个元素是一对键和值</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h.Add&nbsp;(&quot;键&nbsp;2&quot;,&nbsp;&quot;值&nbsp;2&quot;);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h.Add&nbsp;(&quot;键&nbsp;3&quot;,&nbsp;&quot;值&nbsp;3&quot;);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyDataList.DataSource=h;//为列表框指定数据源</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MyDataList.DataBind();//数据更新</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;&lt;font&nbsp;face=&quot;宋体&quot;&gt;到哈希表的数据绑定&lt;/font&gt;&lt;/h3&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&nbsp;runat=server&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;asp:DataList&nbsp;id=&quot;MyDataList&quot;&nbsp;runat=&quot;server&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BorderColor=&quot;black&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BorderWidth=&quot;1&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GridLines=&quot;Both&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CellPadding=&quot;4&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CellSpacing=&quot;0&quot;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ItemTemplate&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;%#&nbsp;((DictionaryEntry)Container.DataItem).Key&nbsp;%&gt;&nbsp;:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;%#&nbsp;((DictionaryEntry)Container.DataItem).Value&nbsp;%&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ItemTemplate&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/asp:DataList&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>标记&lt;ItemTemplate&gt;指定显示格式&lt;/ItemTemplate&gt;是按指定显示格式重复显示数据源中的所有数据。本例中应显示3组数据，指定显示格式为：键1：值。</p>
+<p>下面介绍如何将ListBox、DrowDownList和HTMLSelect这样的列表服务器控件的列表绑定到数据表的某一字段上。</p>
+<p>&lt;%@&nbsp;Import&nbsp;namespace=&quot;System.Data&quot;&nbsp;%&gt;</p>
+<p>&lt;html&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;script&nbsp;language=&quot;C#&quot;&nbsp;runat=&quot;server&quot;&gt;</p>
+<p>&nbsp;&nbsp;void&nbsp;Page_Load(Object&nbsp;sender,&nbsp;EventArgs&nbsp;e&nbsp;)&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;if&nbsp;(!Page.IsPostBack)&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DataTable&nbsp;dt&nbsp;=&nbsp;new&nbsp;DataTable();//建立一个数据表</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DataRow&nbsp;dr;//建立一个数据表的记录变量</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt.Columns.Add(new&nbsp;DataColumn(&quot;Itemid&quot;,&nbsp;typeof(Int32)));//增加字段</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt.Columns.Add(new&nbsp;DataColumn(&quot;ItemName&quot;,&nbsp;typeof(string)));//包括字段名</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt.Columns.Add(new&nbsp;DataColumn(&quot;ItemDate&quot;,&nbsp;typeof(DateTime)));//及字段类型</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt.Columns.Add(new&nbsp;DataColumn(&quot;ItemBool&quot;,&nbsp;typeof(bool)));</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;i&nbsp;=&nbsp;1;&nbsp;i&nbsp;&lt;=&nbsp;9;&nbsp;i++)&nbsp;{//增加10个记录</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dr&nbsp;=&nbsp;dt.NewRow();//建立1个记录对象</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dr[0]&nbsp;=&nbsp;i;//为记录的每个字段赋值</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dr[1]&nbsp;=&nbsp;&quot;项&nbsp;&quot;&nbsp;+&nbsp;i.ToString();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dr[2]&nbsp;=&nbsp;DateTime.Now;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dr[3]&nbsp;=&nbsp;(i&nbsp;%&nbsp;2&nbsp;!=&nbsp;0)&nbsp;?&nbsp;true&nbsp;:&nbsp;false;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt.Rows.Add(dr);//把此记录加到数据表中</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StateList.DataSource&nbsp;=&nbsp;new&nbsp;DataView(dt);//为DropDownList指定数据源</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StateList.DataTextField=&quot;ItemName&quot;;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StateList.DataValueField=&quot;Itemid&quot;;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StateList.DataBind();//数据更新</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;void&nbsp;SubmitBtn_Click(Object&nbsp;sender,&nbsp;EventArgs&nbsp;e)&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Label1.Text=&quot;StateList的Text=&quot;+StateList.SelectedItem.Text+&quot;:StateList的Value=&quot;+StateList.SelectedItem.Value;</p>
+<p>&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&lt;/script&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;&lt;font&nbsp;face=&quot;宋体&quot;&gt;到StateList的数据绑定&lt;/font&gt;&lt;/h3&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&nbsp;runat=server&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;asp:DropDownList&nbsp;id=&quot;StateList&quot;&nbsp;runat=&quot;server&quot;/&gt;</p>
+<p>&lt;asp:button&nbsp;Text=&quot;提交&quot;&nbsp;OnClick=&quot;SubmitBtn_Click&quot;&nbsp;runat=server/&gt;</p>
+<p>&lt;br&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;asp:Label&nbsp;id=&quot;Label1&quot;&nbsp;runat=&quot;server&quot;/&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151210/1479.html">ASP.Net控件数据绑定，基于表达式绑定</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151210/1477.html">ASP.Net控件数据绑定，基于变量的数据绑定</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C#Graphics类绘制线段 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1293","0","attach");
+		Cms.viewCount("","1293");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151127/1293.html" title="C#Graphics类绘制线段">C#Graphics类绘制线段</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-27 18:54:02</span>
+     </h3>
+     <p><img alt="" src="/u/cms/www/201511/27185307rsg6.jpg" /></p>
+<h3>
+	5.7.1绘制线段</h3>
+<p>两个绘制线段的函数和一个绘制多条线段的函数定义如下：</p>
+<ul>
+	<li>
+		void&nbsp;DrawLine(Pen&nbsp;pen,int&nbsp;x1,int&nbsp;y1,int&nbsp;x2,int&nbsp;y2);</li>
+</ul>
+<p>其中pen为画笔，(x1,y1)为画线起点坐标，(x2,y2)为画线终点坐标。</p>
+<ul>
+	<li>
+		DrawLine(Pen&nbsp;pen,Point&nbsp;p1,Point&nbsp;p2);</li>
+</ul>
+<p>其中pen为画笔，点p1为画线起点坐标，点p2为画线终点坐标。</p>
+<ul>
+	<li>
+		public&nbsp;void&nbsp;DrawLines(Pen&nbsp;pen,Point[]&nbsp;points);</li>
+</ul>
+<p style="margin-left:14.2000pt;">此方法绘制多条线段。从points[0]到points[1]画第1条线，从points[1]到points[2]画第2条线，依此类推。</p>
+<p>例子e5_7_1A：使用DrawLine()的例子，为主窗体Paint事件增加事件处理函数如下：</p>
+<p>private&nbsp;void&nbsp;Form1_Paint(object&nbsp;sender,System.Windows.Forms.PaintEventArgs&nbsp;e)</p>
+<p>{ Graphics&nbsp;g=e.Graphics;</p>
+<p>Pen&nbsp;pen1=new&nbsp;Pen(Color.Red);</p>
+<p>g.DrawLine(pen1,30,30,100,100);//用笔pen1从点(30,30)到(100,100)画直线</p>
+<p>Point&nbsp;p1=new&nbsp;Point(30,40);</p>
+<p>Point&nbsp;p2=new&nbsp;Point(100,110);</p>
+<p>g.DrawLine(pen1,p1,p2);//用笔pen1从点(30,40)到(100,110)画直线</p>
+<p>}</p>
+<p>例子e5_7_1B：使用绘制线段函数画任意曲线(画正弦曲线，注意如何使用数学函数)。</p>
+<p>private&nbsp;void&nbsp;Form1_Paint(object&nbsp;sender,System.Windows.Forms.PaintEventArgs&nbsp;e)</p>
+<p>{ Graphics&nbsp;g=this.CreateGraphics();//得到窗体的使用的Graphics类对象</p>
+<p>Pen&nbsp;pen1=new&nbsp;Pen(Color.Red);</p>
+<p>float&nbsp;y=50,y1,x1,x2;</p>
+<p>for(int&nbsp;x=0;x&lt;720;x++)//画正弦曲线</p>
+<p>{ x1=(float)x;</p>
+<p style="margin-left:21.0000pt;">x2=(float)(x+1);</p>
+<p style="margin-left:21.0000pt;">y1=(float)(50+50*Math.Sin((3.14159/180.0)*(x+1)));</p>
+<p style="margin-left:21.0000pt;">g.DrawLine(pen1,x1,y,x2,y1);</p>
+<p style="margin-left:21.0000pt;">y=y1;</p>
+<p>}</p>
+<p>}</p>
+<p>运行，在窗体中可以看到一条红色正弦曲线如下图。</p>
+<p><img alt="" src="data:image/png;base64,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" /></p>
+<p>例子e5_7_1C：在画图程序中，可以用鼠标画任意曲线，现实现用拖动鼠标左键在主窗体中画曲线。每条曲线都是由若干很短的线段组成。鼠标左键按下状态下，移动鼠标，每移动很短距离，画出这段线段，所有这些线段组合起来，形成一条曲线。</p>
+<ol>
+	<li>
+		新建项目。增加两个私有变量:</li>
+</ol>
+<p>private&nbsp;bool&nbsp;mark=false;//表示鼠标左键是否按下，如按下鼠标再移动将画曲线</p>
+<p>private&nbsp;Point&nbsp;point;//记录画下一很短线段的起始点。</p>
+<ol>
+	<li value="2">
+		为Form窗体的事件OnMouseDown，OnMouseUp，OnMouseMove增加事件函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;Form11_MouseDown(object&nbsp;sender,//鼠标按下事件处理函数</p>
+<p style="margin-left:168.0000pt;">System.Windows.Forms.MouseEventArgs&nbsp;e)</p>
+<p>{ if(e.Button==MouseButtons.Left)//如果鼠标左键按下</p>
+<p>{ point.X=e.X;//记录曲线的第一个点的坐标</p>
+<p style="margin-left:21.0000pt;">point.Y=e.Y;</p>
+<p style="margin-left:21.0000pt;">mark=true;//表示鼠标左键已按下，鼠标如果再移动，将画曲线</p>
+<p>}</p>
+<p>}</p>
+<p>private&nbsp;void&nbsp;Form1_MouseMove(object&nbsp;sender,//鼠标移动事件处理函数</p>
+<p style="margin-left:147.0000pt;">System.Windows.Forms.MouseEventArgs&nbsp;e)</p>
+<p>{ if(mark)//如果鼠标左键按下</p>
+<p>{ Graphics&nbsp;g=this.CreateGraphics();//得到窗体的使用的Graphics类对象</p>
+<p style="margin-left:21.0000pt;">Pen&nbsp;pen1=new&nbsp;Pen(Color.Black);//黑笔</p>
+<p style="margin-left:21.0000pt;">g.DrawLine(pen1,point.X,point.Y,e.X,e.Y);//画线</p>
+<p style="margin-left:21.0000pt;">point.X=e.X;//记录画下一线段的起始点的坐标</p>
+<p style="margin-left:21.0000pt;">point.Y=e.Y;</p>
+<p>}</p>
+<p>}</p>
+<p>private&nbsp;void&nbsp;Form1_MouseUp(object&nbsp;sender,&nbsp;System.Windows.Forms.MouseEventArgs&nbsp;e)</p>
+<p>{ mark=false;}//停止画线</p>
+<ol>
+	<li value="3">
+		运行，在Form窗体拖动鼠标左键可以画线。但最小化后再最大化后，图形消失。修改上例，使其能克服这个缺点。实现的思路是记录每一条曲线的每一条很短线段的坐标。使用ArrayList类对象记录曲线以及曲线中的点，请注意ArrayList类使用方法。</li>
+	<li value="4">
+		为定义主窗体的Form1类中增加私有变量:</li>
+</ol>
+<p>private&nbsp;ArrayList&nbsp;Point_List;//用来记录1条曲线的所有点。</p>
+<p>private&nbsp;ArrayList&nbsp;Line_List;//用来记录每条曲线，既Point_List对象。</p>
+<p>在Form1类构造函数中增加语句：Line_List=new&nbsp;ArrayList();</p>
+<ol>
+	<li value="5">
+		修改主窗体事件OnMouseDown，OnMouseUp，OnMouseMove事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;Form1_MouseDown(object&nbsp;sender,//阴影部分为修改的内容</p>
+<p style="margin-left:147.0000pt;">System.Windows.Forms.MouseEventArgs&nbsp;e)</p>
+<p>{ if(e.Button==MouseButtons.Left)</p>
+<p>{ Point_List=new&nbsp;ArrayList();//建立数组，记录1条曲线的所有点</p>
+<p style="margin-left:21.0000pt;">point.X=e.X;</p>
+<p style="margin-left:21.0000pt;">point.Y=e.Y;</p>
+<p style="margin-left:21.0000pt;">mark=true;</p>
+<p style="margin-left:21.0000pt;">Point_List.Add(point);//曲线起点的坐标</p>
+<p>}</p>
+<p>}</p>
+<p>private&nbsp;void&nbsp;Form1_MouseMove(object&nbsp;sender,</p>
+<p style="margin-left:147.0000pt;">System.Windows.Forms.MouseEventArgs&nbsp;e)</p>
+<p>{ if(mark)</p>
+<p>{ Graphics&nbsp;g=this.CreateGraphics();</p>
+<p style="margin-left:21.0000pt;">Pen&nbsp;pen1=new&nbsp;Pen(Color.Black);</p>
+<p style="margin-left:21.0000pt;">g.DrawLine(pen1,point.X,point.Y,e.X,e.Y);</p>
+<p style="margin-left:21.0000pt;">point.X=e.X;</p>
+<p style="margin-left:21.0000pt;">point.Y=e.Y;</p>
+<p style="margin-left:21.0000pt;">Point_List.Add(point);//记录曲线中其它点的坐标</p>
+<p>}</p>
+<p>}</p>
+<p>private&nbsp;void&nbsp;Form1_MouseUp(object&nbsp;sender,System.Windows.Forms.MouseEventArgs&nbsp;e)</p>
+<p>{ mark=false;</p>
+<p>Line_List.Add(Point_List);//记录此条线，注意参数是Point_List</p>
+<p>}</p>
+<ol>
+	<li value="6">
+		增加Form窗体的Paint事件函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;Form1_Paint(object&nbsp;sender,&nbsp;System.Windows.Forms.PaintEventArgs&nbsp;e)</p>
+<p>{ Graphics&nbsp;g=e.Graphics;</p>
+<p>Pen&nbsp;pen1=new&nbsp;Pen(Color.Black);</p>
+<p>Point&nbsp;p1,p2;</p>
+<p>foreach(ArrayList&nbsp;l&nbsp;in&nbsp;Line_List)//取出每条线</p>
+<p>{ for(int&nbsp;k=0;k&lt;(l.Count-1);k++)//重画每条线的点</p>
+<p style="margin-left:21.0000pt;">{ p1=(Point)l[k];</p>
+<p style="margin-left:42.0000pt;">p2=(Point)l[k+1];</p>
+<p style="margin-left:42.0000pt;">g.DrawLine(pen1,p1,p2);</p>
+<p style="margin-left:21.0000pt;">}</p>
+<p>}</p>
+<p>}</p>
+<ol>
+	<li value="7">
+		运行，在Form窗体拖动鼠标可以画线。最小化后再最大化后，图形不消失。</li>
+</ol>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151127/1294.html">C#数组类ArrayList类</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151127/1292.html">今年未来最好的股票是什么</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>Android调试桥接器 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1024","0","attach");
+		Cms.viewCount("","1024");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151102/1024.html" title="Android调试桥接器">Android调试桥接器</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-02 13:48:58</span>
+     </h3>
+     <p>&nbsp;</p>
+<p align="left">Android调试桥接器，简称adb，是用于管理模拟器或真机状态的万能工具，采用了客户端-服务器模型，包括三个部分：</p>
+<p align="left" style="margin-left:42pt;">l&nbsp; 客户端部分，运行在开发用的电脑上，可以在命令行中运行adb命令来调用该客户端，像ADB插件和DDMS这样的Android工具也可以调用adb客户端。</p>
+<p align="left" style="margin-left:42pt;">l&nbsp; 服务端部分，是运行在开发用电脑上的后台进程，用于管理客户端与运行在模拟器或真机的守护进程通信。</p>
+<p align="left" style="margin-left:42pt;">l&nbsp; 守护进程部分，运行于模拟器或手机的后台。</p>
+<p align="left">当启动adb客户端时，客户端首先检测adb服务端进程是否运行，如果没有运行，则启动服务端。当服务端启动时，它会绑定到本地的TCP5037端口，并且监听从adb客户端发来的命令&mdash;&mdash;所有的adb客户端都使用5037端口与adb服务端通信。</p>
+<p align="left">接下来服务端与所有正在运行的模拟器或手机连接。它通过扫描5555-5585之间的奇数号端口来搜索模拟器或手机，一旦发现adb守护进程，就通过此端口进行连接。需要说明的是，每一个模拟器或手机使用一对有序的端口，偶数号端口用于控制台连接，奇数号端口用于adb连接，例如：</p>
+<p align="left" style="margin-left:10.5pt;">Emulator 1, console: 5554</p>
+<p align="left" style="margin-left:10.5pt;">Emulator 1, adb: 5555</p>
+<p align="left" style="margin-left:10.5pt;">Emulator 2, console: 5556</p>
+<p align="left" style="margin-left:10.5pt;">Emulator 2, adb: 5557 ...</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 即如果模拟器与adb在5555端口连接，则其与控制台的连接就是5554端口。</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当服务端与所有的模拟器建立连接之后，就可以使用adb命令来控制或者访问了。因为服务端管理着连接并且可以接收到从多个adb客户端的命令，所以可以从任何一个客户端或脚本来控制任何模拟器或手机设备。</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 下文介绍了可以用来管理模拟器或手机的这些adb命令。如果是在Eclipse并且安装了ADT插件的环境下开发Android应用程序，就不需要从命令行使用adb了，ADT插件已经提供了透明的集成。不过，还是可以在调试等需要的时候直接使用adb。</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong>使用</strong><strong>adb</strong><strong>命令</strong></p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 从开发用电脑的命令行或脚本文件中使用adb命令的用法是：</p>
+<div style="margin-left:12pt;">
+	<pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; adb [-d|-e|-s &lt;serialNumber&gt;] &lt;command&gt;</pre>
+</div>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当使用的时候，程序会调用adb客户端。因为adb客户端不需要关联到任何模拟器，所以如果有多个模拟器或手机正在运行，就需要使用-d参数指定要操作的是哪一个，更多关于这些选项参数的使用可以参见<a href="../../../Program/Android/Workspace/cnAndroidSDK/trunk/docs/offline/guide/developing/tools/adb.html#directingcommands">Directing Commands to a Specific Emulator/Device Instance</a>。</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong>查询模拟器或手机状态</strong></p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 了解adb服务端连接的模拟器或手机可以帮助更好的使用adb命令，这可以通过devices命令列举出来：</p>
+<div style="margin-left:12pt;">
+	<pre>
+&nbsp; adb devices</pre>
+</div>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 执行结果是adb为每一个设备输出以下状态信息：</p>
+<p align="left" style="margin-left:42pt;">l&nbsp; 序列号(serialNumber) &mdash; 由adb创建的使用控制台端口号的用于唯一标识一个模拟器或手机设备的字符串，格式是 &lt;设备类型&gt;-&lt;端口号&gt;，例如： emulator-5554</p>
+<p align="left" style="margin-left:42pt;">l&nbsp; 状态(state) &mdash; 连接状态，其值是：</p>
+<p align="left" style="margin-left:63pt;">n&nbsp; offline &mdash; 未连接或未响应</p>
+<p align="left" style="margin-left:63pt;">n&nbsp; device &mdash;已经连接到服务商。注意这个状态并不表示Android系统已经完全启动起来，系统启动的过程中已经可以连接adb，但这个状态是正常的可操作状态。</p>
+<p align="left">每一个设备的输出形如：</p>
+<div style="margin-left:12pt;">
+	<pre>
+&nbsp; [serialNumber] [state]</pre>
+</div>
+<p align="left">下面是 devices 命令和其执行结果：</p>
+<div style="margin-left:12pt;">
+	<pre>
+$ adb devices</pre>
+	<pre>
+List of devices attached </pre>
+	<pre>
+emulator-5554 &nbsp;device</pre>
+	<pre>
+emulator-5556 &nbsp;device</pre>
+	<pre>
+emulator-5558 &nbsp;device</pre>
+</div>
+<p align="left">如果没有模拟器或手机在运行，该状态返回的是no device。</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong>操作指定的模拟器或手机</strong></p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果有多个模拟器或手机正在运行，当使用adb命令的时候就需要指定目标设备，这可以通过使用-s选项参数实现，用法是：</p>
+<div style="margin-left:11.95pt;">
+	<pre>
+adb -s &lt;serialNumber&gt; &lt;command&gt; </pre>
+</div>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 即可以在adb命令中使用序列号指定特定的目标，前文已经提到的devices命令可以实现查询设备的序列号信息。</p>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 例如：</p>
+<div style="margin-left:11.9pt;">
+	<pre>
+adb -s emulator-5556 install helloWorld.apk</pre>
+</div>
+<p>需要注意的是，如果使用了-s而没有指定设备的话，adb会报错。</p>
+<p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151105/1039.html">Android应用基础</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151102/1023.html">安卓使用atp</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>网页制作中event 对象 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1458","0","attach");
+		Cms.viewCount("","1458");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151210/1458.html" title="网页制作中event 对象">网页制作中event 对象</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-10 13:01:04</span>
+     </h3>
+     <p>网页制作中event 对象<br />
+	<br />
+	--------------------------------------------------------------------------------<br />
+	<br />
+	代表事件状态，如事件发生的元素，键盘状态，鼠标位置和鼠标按钮状态。<br />
+	<br />
+	成员表<br />
+	<br />
+	下面的表格列出了 event 对象引出的成员。请单击左侧的标签来选择你想要查看的成员类型。<br />
+	<br />
+	&nbsp; 属性&nbsp;&nbsp;&nbsp; &nbsp;<br />
+	&nbsp;<br />
+	SHOW:<br />
+	属性<br />
+	集合<br />
+	对象<br />
+	&nbsp;属性 描述<br />
+	Abstract 使用 event 对象获取高级流重定向器(ASX)文件中项目横幅的 Abstract 内容。<br />
+	altKey 设置或获取 Alt 键的状态。<br />
+	altLeft 设置或获取左 Alt 键的状态。<br />
+	Banner 使用 event 对象获取高级流重定向器(ASX)文件中项目的 Banner 内容。<br />
+	button 设置或获取用户所按的鼠标按钮。<br />
+	cancelBubble 设置或获取当前事件是否要在事件句柄中向上冒泡。<br />
+	clientX 设置或获取鼠标指针位置相对于窗口客户区域的 x 坐标，其中客户区域不包括窗口自身的控件和滚动条。<br />
+	clientY 设置或获取鼠标指针位置相对于窗口客户区域的 y 坐标，其中客户区域不包括窗口自身的控件和滚动条。<br />
+	contentOverflow 获取表明文档处理当前 LayoutRect 对象后是否包含附加的内容。<br />
+	ctrlKey 设置或获取 Ctrl 键的状态。<br />
+	ctrlLeft 设置或获取左 Ctrl 键的状态。<br />
+	dataFld 设置或获取 oncellchange 事件影响的数据列。<br />
+	fromElement 设置或获取事件发生时激活或鼠标将要离开的对象。<br />
+	keyCode 设置或获取与导致事件的按键关联的 Unicode 按键代码。<br />
+	MoreInfo 通过 event 对象获取高级流重定向器(ASX)文件中项目横幅的 MoreInfo 内容。<br />
+	nextPage 获取打印模板中下页的位置。<br />
+	offsetX 设置或获取鼠标指针位置相对于触发事件的对象的 x 坐标。<br />
+	offsetY 设置或获取鼠标指针位置相对于触发事件的对象的 y 坐标。<br />
+	propertyName 设置或获取对象上发生更改的属性名称。<br />
+	qualifier 设置或获取由数据源对象提供的数据成员的名称。<br />
+	reason 设置或获取数据源对象的数据传输结果。<br />
+	recordset 从数据源对象设置或获取对默认数据集的引用。<br />
+	repeat 获取 onkeydown 事件是否正在重复。<br />
+	returnValue 设置或获取事件的返回值。<br />
+	saveType 当 oncontentsave 触发时获取剪贴板类型。<br />
+	screenX 设置或获取获取鼠标指针位置相对于用户屏幕的 x 坐标。<br />
+	screenY 设置或获取鼠标指针位置相对于用户屏幕的 y 坐标。<br />
+	shiftKey 设置或获取 Shift 键的状态。<br />
+	shiftLeft 设置或获取左 Shift 键的状态。<br />
+	srcElement 设置或获取触发事件的对象。<br />
+	srcFilter 设置或获取触发 onfilterchange 事件的滤镜对象。<br />
+	srcUrn 获取触发事件的行为的统一资源名称(URN)。<br />
+	toElement 设置或获取用户要将鼠标指针移动指向的对象的引用。<br />
+	type 从 event 对象中获取事件名称。<br />
+	wheelDelta 设置或获取滚轮按钮滚动的距离和方向。<br />
+	x 设置或获取鼠标指针位置相对于父文档的 x 像素坐标。<br />
+	y 设置或获取鼠标指针位置相对于父文档的 y 像素坐标。<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	<br />
+	属性<br />
+	<br />
+	集合<br />
+	<br />
+	集合 描述<br />
+	bookmarks 返回捆绑到当前事件所影响的行上的 ActiveX&reg; 数据对象(ADO)书签的集合。<br />
+	boundElements 返回页面上所有绑定到给定数据集的所有元素的集合。<br />
+	<br />
+	对象<br />
+	<br />
+	对象 描述<br />
+	dataTransfer 提供了对于预定义的剪贴板格式的访问，以便在拖曳操作中使用。<br />
+	<br />
+	注释<br />
+	<br />
+	event 对象仅在事件中可用──这意味着，你可以在事件句柄中使用该对象，但不能在其它代码中使用。<br />
+	<br />
+	尽管所有事件属性都可通过所有的 event 对象访问，但是在某些事件中某些属性可能无意义。例如，fromElement 和 toElement 属性仅当处理 onmouseover 和 onmouseout 事件时有意义。<br />
+	<br />
+	在 Microsoft Visual Basic&reg; 脚本版本(VBScript)中，你必须通过 window 对象访问 event 对象。<br />
+	<br />
+	此对象在 Microsoft&reg; Internet Explorer 4.0 的脚本中可用。<br />
+	<br />
+	示例<br />
+	<br />
+	下面的例子使用了 event 对象来决定用户单击的位置是否在链接上，并且避免在 SHIFT 键按下时导航到链接。<br />
+	<br />
+	SHOWExample<br />
+	<br />
+	&lt;HTML&gt;<br />
+	&lt;HEAD&gt;&lt;TITLE&gt;取消链接&lt;/TITLE&gt;<br />
+	&lt;SCRIPT LANGUAGE=&quot;JScript&quot;&gt;<br />
+	function cancelLink() {<br />
+	if (window.event.srcElement.tagName == &quot;A&quot; &amp;&amp; window.event.shiftKey)<br />
+	window.event.returnValue = false;<br />
+	}<br />
+	&lt;/SCRIPT&gt;<br />
+	&lt;BODY onclick=&quot;cancelLink()&quot;&gt;<br />
+	<br />
+	下面的例子将在浏览器的状态窗口上显示当前鼠标位置。<br />
+	<br />
+	&lt;BODY onmousemove=&quot;window.status = &#39;X=&#39; +&nbsp; window.event.x + &#39; Y=&#39;<br />
+	+ window.event.y&quot;&gt;<br />
+	&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151210/1459.html">网页中external 对象</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151210/1457.html">网页制作中EMBED 元素，embed 对象</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>网络应用故障解决 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","676","0","attach");
+		Cms.viewCount("","676");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151015/676.html" title="网络应用故障解决">网络应用故障解决</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-10-15 13:34:16</span>
+     </h3>
+     <p>DNS代理故障<br />
+	<br />
+	　　读者KAIX:公司网络内有一台拨号服务和一台域管理服务器，在拨号时使用ping命令，总是发生丢包现象。取消DNS代理后，情况马上恢复正常。QQ连接使用正常，但网页打不开。请问，这可能是什么原因造成的?<br />
+	<br />
+	　　既然取消DNS代理后问题得以解决，估计是DNS代理或选择的DNS服务器有问题。实际上，不管使用何种代理服务器或防火墙，只要允许DNS端口通讯，就可以直接使用外网的DNS服务器，而无须使用DNS代理。另外，既然QQ可以连接，只是不能访问Web网站，说明Internet连接没有问题，而故障的原因，自然就是DNS解析故障。事实上，QQ可以直接指定服务器的IP地址，而无需经过DNS解析。<br />
+	<br />
+	　　上网导致死机<br />
+	<br />
+	　　读者风光:我的电脑是ADSL上网。不上网时工作正常。只要一上网，电脑很快就会死机。只能按Reset重启。电脑是TCL锐翔K3681。Modem是华为SmartAX MT800。系统是Windows XP，用星空极速2.0客户端，重装系统和网卡驱动也没用。应当如何解决?<br />
+	<br />
+	　　导致电脑死机有很多种原因。建议采用以下方法进行判断:<br />
+	<br />
+	　　第一，先让ADSL拨号连接到ISP，但不打开IE，也不运行QQ之类的Internet应用软件。如果能够稳定运行，而不会死机，说明Internet连接没有问题。<br />
+	　　第二，如果只要ADSL拨号就死机，说明是ADSL与计算机不兼容。可能是网卡或ADSL硬件故障，也有可能是PPPoE协议或驱动程序软件故障。可以采取的措施包括:<br />
+	　　* 卸载星空极速2.0客户端，使用Windows XP内置的ADSL拨号程序。<br />
+	　　* 将ADSL设置为路由方式，而不采用虚拟拨号方式。<br />
+	　　* 更换网卡插槽，或更换新的网卡。<br />
+	　　* 更换ADSL Modem。<br />
+	　　第三，如果在打开Internet Explorer并浏览网页时死机，说明是Internet Explorer或操作系统有问题，建议重新安装或修复系统。<br />
+	　　第四，也有可能是感染了蠕虫病毒，建议安装系统补丁和病毒防火墙。<br />
+	<br />
+	　　无法显示自定义表情<br />
+	<br />
+	　　读者ajksd:我的QQ在发送或接收自定义表情时会出现&ldquo;卡机&rdquo;现象，过几分钟后就好了。不过，自定义表情和图片对方仍然收不到，别人发过来的也打不开。将天网和Windows自带的防火墙关掉以后，再试仍然不行。可能是什么原因?应当如何解决?<br />
+	<br />
+	　　导致该故障的原因可能是Internet连接速度太慢，建议更换Internet接入方式或者Internet共享方式。当经过2级以上的代理服务器或宽带路由共享Internet连接时，将无法收到并显示图片。可以更换ADSL或小区宽带等宽带Internet接入方式，或者取消2级以上代理的连接共享方式，甚至试着直接拨号上网。如果问题解决，说明是上网方式的问题。<br />
+	<br />
+	　　被恶意网站修改主页<br />
+	<br />
+	　　读者diker:有一次通过搜索链接到了某个网站后，该网站就自动成了我的主页，连Internet选项中的主页项也变成了这个网站，并且灰化了。我用QQ聊天时，每次开始和人聊，就会现有这么一段话&ldquo;你为什么要骂我?我哪里惹你了?我希望你对你的留言负责。你自己来给我解释，http://恶意网站的URL&rdquo;。后来，采用手动修改注册表的方法，修改了HKEY_LOCAL_USER\Software\Microsoft\InternetExplorer\Main中的StartPage键值名(用来设置默认首页)，仍然无法解决。应当如何处理?<br />
+	<br />
+	　　导致该故障的原因是感染了脚本漏洞病毒，可以使用新版本的Symantec、KV2005来清除，或者借助3721的上网助手(http://www.3721.com)来解决。由于许多病毒都在自动运行键值中设置了注册表恢复，因此，仅仅修改上述键值是不够的，还必须查看并修改HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run项，删除不必要的应用程序。另外，建议将Internet Explorer升级至6.0+SP1，并且更新系统的补丁。需要注意的是，如果系统是Windows 98，一定要升级到Internet Explorer 6.0+SP1，如果系统是Windows 2000/XP，则一定要及时升级系统补丁。<br />
+	<br />
+	　　作为一个临时解决方案，可以用&ldquo;记事本&rdquo;程序修改c:\WINDOWS\system32\drivers\etc\hosts文件，在里面添加如下一行:<br />
+	<br />
+	　　127.0.0.1 恶意网站的URL<br />
+	<br />
+	　　或者把其中的127.0.0.1换为其他默认主页的IP地址。 <!--/HTMLBUILERPART0--><br />
+	<br />
+	&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151015/677.html">显示器维修攻略</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151015/674.html">局域网故障排出</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

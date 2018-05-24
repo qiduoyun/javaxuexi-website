@@ -1,0 +1,647 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>电脑主板诊断完全进阶，代码解析 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1180","0","attach");
+		Cms.viewCount("","1180");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/yingjianyuweihu/20151116/1180.html" title="电脑主板诊断完全进阶，代码解析">电脑主板诊断完全进阶，代码解析</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-16 19:39:20</span>
+     </h3>
+     <div>RUN灯功能介绍</div>
+<div>该灯只用极少部件，故自身故障率极低，且只需极少的主板插槽信号，故即使插到一个坏的插槽中虽无法走代码，或其它的所有指示灯都不亮，但该灯很有可能照常工作，您可根据：&ldquo;只要此灯闪亮过，则证明主板运行过&rdquo;的关键诊断结果助您分析下列问题：</div>
+<div>1． &nbsp; &nbsp;诊断卡自身的代码部分不良;</div>
+<div>2． &nbsp; &nbsp;您的这块诊断卡不能兼容被测主板；</div>
+<div>3． &nbsp; &nbsp;诊断卡插入的是一个坏的PCI或ISA槽；</div>
+<div>4． &nbsp; &nbsp;诊断卡没有插好或插脚脏或PCI或ISA槽金属弹片生锈等原因造成与诊断卡接触不良；</div>
+<div>5． &nbsp; &nbsp;主板 &ldquo;死机&rdquo;；</div>
+<div>6． &nbsp; &nbsp;主板正在执行与代码无关的程序。</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>目 &nbsp; &nbsp; &nbsp; &nbsp;录</div>
+<div>一、 &nbsp; &nbsp;概述&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.1</div>
+<div>&nbsp;</div>
+<div>二、 &nbsp; &nbsp;用户必读&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.3</div>
+<div>&nbsp;</div>
+<div>三、 &nbsp; &nbsp;十六进制字符表&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.1</div>
+<div>&nbsp;</div>
+<div>四、 &nbsp; &nbsp;诊断卡部件说明图&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.3</div>
+<div>&nbsp;</div>
+<div>五、 &nbsp; &nbsp;指示灯含义速查表&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.4</div>
+<div>&nbsp;</div>
+<div>六、 &nbsp; &nbsp;使用方法流程图&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.5</div>
+<div>&nbsp;</div>
+<div>七、 &nbsp; &nbsp;故障代码含义速查表&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.6</div>
+<div>&nbsp;</div>
+<div>八、 &nbsp; &nbsp;喇叭报警的含义&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;28</div>
+<div>（一） &nbsp; &nbsp;ＡＭＩ　ＢＩＯＳ &hellip;&hellip;&hellip;&hellip;&hellip;..&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;..28</div>
+<div>（二） &nbsp; &nbsp;Ａward &nbsp;BIOS&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip; 29</div>
+<div>（三） &nbsp; &nbsp;Ｐhoenix BIOS致命系统故障&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;30</div>
+<div>（四） &nbsp; &nbsp;Ｐhoenix BIOS非致命系统故障&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;30</div>
+<div>（五） &nbsp; &nbsp;IBM BIOS&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.. &hellip;&hellip;&hellip; 31</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>（2）Aword万能密码&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.35</div>
+<div>（3）其它品牌机万能密码&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.36</div>
+<div>２、 &nbsp; &nbsp;软件放电&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;..37</div>
+<div>３、 &nbsp; &nbsp;硬件放电&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;..38</div>
+<div>４、 &nbsp; &nbsp;其它方法&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;. 39</div>
+<div>（二） &nbsp; &nbsp;修复被ＣＩＨ破坏的主板BIOS芯片&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip; 39</div>
+<div>（三） &nbsp; &nbsp;ＣＭＯＳ　ＳＥＴＵＰ进入的方法（含品牌机）&hellip;&hellip;&hellip;&hellip;40</div>
+<div>&nbsp;</div>
+<div>十、 &nbsp; &nbsp;碰到书中查不到的代码怎么办？&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.41</div>
+<div>&nbsp;</div>
+<div>十一、 &nbsp; &nbsp;常见问题的解决方法..&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;. 42</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>一、概　　　述</div>
+<div>&nbsp;</div>
+<div>诊断卡也叫POST卡（Power On Self Test），其工作原理是利用主板中BIOS内部自检程序的检测结果，通过代码一一显示出来，结合本书的代码含义速查表就能很快地知道电脑故障所在。尤其在ＰＣ机不能引导操作系统、黑屏、喇叭不叫时，使用本卡更能体现其便利，使您事半功倍。</div>
+<div>BIOS在每次开机时，对系统的电路、存储器、键盘、视频部分、硬盘、软驱等各个组件进行严格测试，并分析系统配置，对已配置的基本Ｉ／Ｏ设置进行初始化，一切正常后，再引导操作系统。其显著特点是以是否出现光标为分界线，先对关键性部件进行测试。关键性部件发生故障强制机器转入停机，显示器无光标，则屏幕无任何反应。然后，对非关键性部件进行测试，如有故障机器也继续运行，同时显示器显示出错信息，当机器出现故障，尤其是出现关键性故障，屏幕上无显示时，将本卡插入扩弃槽内。根据卡上显示的代码，表示的故障原因和部位，就可清楚地知道故障所在。</div>
+<div>&nbsp;</div>
+<div>二、用　户　必　读</div>
+<div>&nbsp;</div>
+<div>１、 &nbsp; &nbsp;故障代码含义速查表是按代码值从小到大排序，卡中出码顺序由主板BIOS确定。</div>
+<div>２、 &nbsp; &nbsp;未定义的代码表中未能列出。</div>
+<div>３、 &nbsp; &nbsp;对于不同BIOS（常用的AMI、Award、Phoenix）同一代码所代表的意义不同，因此应弄清您所检测的电脑是属于哪一种类型的BIOS,您可查阅您的电脑使用手册，或从主板上的BIOS芯片上直接查看，也可以在启动的屏幕中直接看到。</div>
+<div>４、 &nbsp; &nbsp;有少数主板的PCI槽只有一部分代码出现，但ISA槽则有完整自检代码输出。且目前已发现有极个别原装机主板的ISA槽无代码输出，而PCI槽则有完整代码输出，故建议您在查看代码不成功时，将本双槽卡换到另一种插槽试一下。另外，同一块主板的不同PCI槽，有的槽有完整代码送出，如 DELL810主板只有靠近CPU的一个PCI槽有完整代码显示，一直变化到&ldquo;00&rdquo;或&ldquo;FF&rdquo;，而其它PCI槽走到&ldquo;38&rdquo;后则不继续变化。</div>
+<div>５、 &nbsp; &nbsp;复位信号所需时间ISA与PCI不一定同步，故有可能ISA开始出代码，但PCI的复位灯还未熄，故PCI代码停在起始代码上。</div>
+<div>６、 &nbsp; &nbsp;由于主板品种和结构的多样性及BIOS　POST代码不断更新，令紧接在代码后面的查找故障部件和范围的准确性受到影响，故《代码含义速查表》中说明的故障部件和范围只能作为参考。</div>
+<div>7、根据经验：两位代码的卡用在PⅡ300 &nbsp; &nbsp;以下的主板中可信，而用在</div>
+<div>PⅡ300以上的板中会死机、不走码或出假码，故建议您购买PI0050</div>
+<div>&nbsp; 型四位代码的卡，该卡到目前为止，还没有收到过用户的不良反映。</div>
+<div>&nbsp;</div>
+<div>三、十六进制字符表</div>
+<div>十进制 &nbsp; &nbsp;0 &nbsp; &nbsp;1 &nbsp; &nbsp;2 &nbsp; &nbsp;3 &nbsp; &nbsp;4 &nbsp; &nbsp;5 &nbsp; &nbsp;6 &nbsp; &nbsp;7 &nbsp; &nbsp;8 &nbsp; &nbsp;9 &nbsp; &nbsp;10 &nbsp; &nbsp;11 &nbsp; &nbsp;12 &nbsp; &nbsp;13 &nbsp; &nbsp;14 &nbsp; &nbsp;15</div>
+<div>十六进制 &nbsp; &nbsp; 0 &nbsp; &nbsp;1 &nbsp; &nbsp;2 &nbsp; &nbsp;3 &nbsp; &nbsp;4 &nbsp; &nbsp;5 &nbsp; &nbsp;6 &nbsp; &nbsp;7 &nbsp; &nbsp;8 &nbsp; &nbsp;9 &nbsp; &nbsp;A &nbsp; &nbsp;B &nbsp; &nbsp;C &nbsp; &nbsp;D &nbsp; &nbsp;E &nbsp; &nbsp;F</div>
+<div>诊断卡显示 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+<div>&nbsp;</div>
+<div>五、指示灯功能速查表</div>
+<div>灯名 &nbsp; &nbsp;信号名称 &nbsp; &nbsp;　　　说　　　　　　　　　　明</div>
+<div>RUN &nbsp; &nbsp;主板运行 &nbsp; &nbsp;若主板运行起来，此灯会不断闪亮，主板没有运行则不亮</div>
+<div>CLK &nbsp; &nbsp;总线时钟 &nbsp; &nbsp;不论ISA或PCI只要一块空板（无CPU等）接通电源就应常亮，否则CLK信号坏。</div>
+<div>BIOS &nbsp; &nbsp;基本输入输出 &nbsp; &nbsp;主板运行时对BIOS有读操作时就闪亮。</div>
+<div>IRDY &nbsp; &nbsp;主设备准备好 &nbsp; &nbsp;有IRDY信号时才闪亮，否则不亮。</div>
+<div>OSC &nbsp; &nbsp;振荡 &nbsp; &nbsp;是ISA槽的主振信号，空板通电则应常亮，否则主板的晶体振荡电路不工作，而无OSC信号。</div>
+<div>FRAME &nbsp; &nbsp;帧周期 &nbsp; &nbsp;PCI槽有循环帧信号时灯才闪亮，平时常亮。</div>
+<div>RST &nbsp; &nbsp;复位RESET &nbsp; &nbsp;开机或按了RESET开关后亮半秒钟熄灭属正常，若不灭常因主板上的复位插针错接到加速开关或错接了短路，或复位电路坏。</div>
+<div>12V &nbsp; &nbsp;电源 &nbsp; &nbsp;空板上电即应常亮，否则无此电压或主板有短路。</div>
+<div>-12V &nbsp; &nbsp;电源 &nbsp; &nbsp;同上。</div>
+<div>5V &nbsp; &nbsp;电源 &nbsp; &nbsp;同上。</div>
+<div>-5V &nbsp; &nbsp;电源 &nbsp; &nbsp;同上（只有ISA槽才有此电压）。</div>
+<div>3V3 &nbsp; &nbsp;电源 &nbsp; &nbsp;这是PCI槽特有的3.3V电压，空板上电即应常亮，有些主板的PCI槽无3V3电压，则不亮。</div>
+<div>&nbsp;</div>
+<div>七、故障代码含义速查表</div>
+<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+<div>00 &nbsp; &nbsp;1． &nbsp; &nbsp;由一系列代码(不含&ldquo;00&rdquo;和&ldquo;FF&rdquo;)到&ldquo;FF&rdquo;或&ldquo;00&rdquo;，则主板自检已通过，OK。</div>
+<div>2． &nbsp; &nbsp;出&ldquo;00&rdquo;，且不变码，则为主板没有运行，查CPU坏否、CPU跳线、或CPU设置正确否、电源正常否、主板电池等处有否发霉？</div>
+<div>3. &nbsp;如果您在CMOS中设置为不提示错，则遇到非致命性故障时，诊断卡不会停下来而接着往后走一直到&ldquo;00&rdquo;，解决方法为更改CMOS设置为提示所有错误再开机，这时若有非致命故障则停住，再根据代码排错。 &nbsp; &nbsp;同左 &nbsp; &nbsp;同左</div>
+<div>01 &nbsp; &nbsp;处理器测试1，处理器状态核实，如果测试失败，循环是无限的。试换CPU，查CPU跳线或CPU设置错否？ &nbsp; &nbsp;处理器寄存器的测试即将开始，非屏蔽中断即将停用。建议排除方法同左 &nbsp; &nbsp;CPU寄存器测试正在进行或者失灵。建议排除方法同左</div>
+<div>02 &nbsp; &nbsp;确定诊断的类型(正常或者制造)。如果键盘缓冲器含有数据就会失效。试查主板中与键盘相关电路及键盘本身。 &nbsp; &nbsp;使用非屏蔽中断；通过延迟开始。查主板和CPU。 &nbsp; &nbsp;CMOS写入/读出正在进行或者失灵。试查主板电池等。</div>
+<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+<div>03 &nbsp; &nbsp;清除8042键盘控制器，发出TEST-KBRD命令(AAH)。查键盘内部电路及软件。 &nbsp; &nbsp;通电延迟已完成 &nbsp; &nbsp;ROM BIOS检查部件正在进行或失灵。查主板BIOS芯片是否已插好或周边电路发霉。</div>
+<div>04 &nbsp; &nbsp;使8042键盘控制器复位，核实TESTKBRD。查主板中键盘接口电路。 &nbsp; &nbsp;键盘控制器软复位／通电测试。查主板中的键盘控制部分的电路。 &nbsp; &nbsp;可编程间隔计时器的测试正在进行或失灵。查主板中与　　　　　　　　　　　　　　　　　　　　　　　　　　　　　定时器相关的电路。</div>
+<div>05 &nbsp; &nbsp;如果不断重复制造测试1至5，可获得8042控制状态。查主板中键盘控制电路。 &nbsp; &nbsp;已确定软复位／通电；即将启动ROM.。查主板ROM芯片及其支持电路。 &nbsp; &nbsp;DMA初始页面寄存器读／写准备正在进行或失灵。查主板中与DMA有关的芯片及其外围电路。</div>
+<div>06 &nbsp; &nbsp;使电路片作初始准备，停用视频、奇偶性、DMA电路片，以及清除DMA电路片，所有页面寄存器和CMOS寄存器的工作。查主板中与DMA相关的电路。 &nbsp; &nbsp; 已启动ROM计算ROM BIOS 检查总和，以及检查键盘缓冲器是否清除。查主板RCM芯片及其支持电路。 &nbsp; &nbsp;DMA初始页面寄存器读/写测试正在进行或失灵。查主板中与DMA有关芯片及其外围电路。</div>
+<div>07 &nbsp; &nbsp;处理器测试2，核实CPU寄存器的工作。查CPU是否插好，或CPU坏，或CPU跳线等设置有错否。 &nbsp; &nbsp;ROM BIOS检查总和正常，键盘缓冲器已清除，向键盘发出BAT(基本保证测试)命令。查主板中键盘接口电路或试更换键盘。 &nbsp; &nbsp;</div>
+<div>08 &nbsp; &nbsp;使CMOS计时器作初始准备，正常地更新计时器的循环。查主板中CMOS电路及芯片。 &nbsp; &nbsp;已向键盘发出BAT命令，即将写入BAT命令。查主板键盘控制电路及键盘本身 &nbsp; &nbsp;RAM更新检验正在进行或失灵。查主板的内存接口电路及内存槽和内存条。</div>
+<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+<div>09 &nbsp; &nbsp;EPROM检查总和且必须等于零才通过。查主板的BIOS电路及芯片。 &nbsp; &nbsp;核实键盘的基本保证测试，接着核实键盘命令字节。查主板的键盘插座及试换键盘。 &nbsp; &nbsp;第一个64K RAM测试正在进行。查找方法同上。</div>
+<div>0A &nbsp; &nbsp;使视频接口作初始准备。查与显卡有关的电路。 &nbsp; &nbsp;发出键盘命令字节代码，即将写入命令字节数据。试换键盘。 &nbsp; &nbsp;第一个64K RAM芯片或数据线失灵，移位。同上。</div>
+<div>0B &nbsp; &nbsp;测试8254芯片的DMA通道0。查主板中键盘控制电路及键盘中的控制电路。 &nbsp; &nbsp;写入键盘控制器命令字节，即将发出引脚23和24的封锁/解锁命令。查键盘控制器电路。 &nbsp; &nbsp;第一个64K RAM的奇／偶逻辑失灵。同上。</div>
+<div>0C &nbsp; &nbsp;测试8254通道1。查键盘中的控制电路。 &nbsp; &nbsp;键盘控制器引脚23，24已屏蔽／解锁；已发出NOP命令。试换键盘。 &nbsp; &nbsp;第一个64K RAM的地址线故障。同上。</div>
+<div>0D &nbsp; &nbsp;1、检查CPU速度是否与系统时钟匹配。查CPU跳级及CMOS中关于CPU参数的设置。2、检查控制芯片已编程值是否符合初设置。3、视频通道测试，如果失败，则鸣喇叭。 &nbsp; &nbsp;已处理NOP命令；接着测试CMOS停开寄存器。查主板中控制CMOS的相关电路。 &nbsp; &nbsp;第一个64K　RAM的寄偶性失灵。同上。</div>
+<div>0E &nbsp; &nbsp;测试CMOS停机字节。查主板中CMOS芯片及电路。 &nbsp; &nbsp;CMOS状态寄存器读／写测试；将计算CMOS检查总和。查主板CMOS芯片及其支持电路和主板电池。 &nbsp; &nbsp;初始化输入输出端口地址。查主板中与I／O相关的芯片及其外围电路，并注意插入的扩展卡等外部设备的I／O地址是否有冲突。</div>
+<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+<div>0F &nbsp; &nbsp;测试扩展的CMOS。 &nbsp; &nbsp;已计算CMOS检查总和写入诊断字节；CMOS开始初始准备。查主板电池及CMOS芯片。 &nbsp; &nbsp;</div>
+<div>10 &nbsp; &nbsp;测试DMA通道0。查主板中DMA芯片及电路。 &nbsp; &nbsp;CMOS已作初始准备，CMOS状态寄存器即将为日期和时间作初始准备。查主板中CMOS控制电路。 &nbsp; &nbsp;第一个64K RAM第0位故障。查主板中内存管理电路及内存槽有否生锈？有杂物否？内存条坏否？</div>
+<div>11 &nbsp; &nbsp;测试DMA通道1。查主板中DMA芯片及该芯片周边电路。 &nbsp; &nbsp;CMOS状态寄存器已作初始准备，即将停用DMA和中断控制器。查主板中与DMA和中断控制器有关芯片及其外围电路。 &nbsp; &nbsp;第一个64K RAM第1位故障。同代码10。</div>
+<div>12 &nbsp; &nbsp;测试DMA页面寄存器。查主板中DMA芯片及该芯片的周边电路。 &nbsp; &nbsp;停用DMA控制器1以及中断控制器1和2；即将视频显示器并使端口B作初始准备。查主板或显卡中视频接口电路。 &nbsp; &nbsp;第一个64K RAM第2位故障。同代码10。</div>
+<div>13 &nbsp; &nbsp;测试8741键盘控制器接口。查主板中键盘接口电路。 &nbsp; &nbsp;视频显示器已停用，端口B已作初始准备；即将开始电路片初始化／存储器自动检测。查显卡中控制芯片、显存芯片及其外围电路。 &nbsp; &nbsp;第一个64K RAM第3位故障。同代码10。</div>
+<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+<div>14 &nbsp; &nbsp;测试8254计时器0。查主板中的计时器电路。 &nbsp; &nbsp;电路片初始化／存储器自动检测结束；8254计时器测试即将开始。查主板中8254或与计时器有关的芯片及其支持电路。 &nbsp; &nbsp;第一个64K RAM第4位故障。同代码10。</div>
+<div>15 &nbsp; &nbsp;测8259中断屏蔽位。查主板中的8259芯片及其周边电路。 &nbsp; &nbsp;第2通道计时器测试了一半；8254第2通道计时器即将完成测试。查主板中计时器电路部分。 &nbsp; &nbsp;第一个64K RAM第5位故障。同代码10。</div>
+<div>16 &nbsp; &nbsp;建立8259所用的中断矢量表。查主板中8259芯片及其周围电路。 &nbsp; &nbsp;第2通道计时器测试结束；8254第1通道计时器即将完成测试。查主板中计时器芯片及其外围。 &nbsp; &nbsp;第一个64K RAM第6位故障。同代码10。</div>
+<div>17 &nbsp; &nbsp;调准视频输入／输出工作，若装有视频BIOS则启用。查显卡及主板中与显卡有关的控制电路。 &nbsp; &nbsp;第1通道计时器测试结束；8254第0通道计时器即将完成测试。查主板中计时器电路。 &nbsp; &nbsp;第一个64K RAM第7位故障。同代码10。</div>
+<div>18 &nbsp; &nbsp;测试视频存储器，如果安装选用的视频BIOS通过本项测试，则可绕过。查显卡中的BIOS芯片及其周围电路。 &nbsp; &nbsp;第0通道计时器测试结束；即将开始更新存储器。查主板中内存管理电路，内存槽及内存条。 &nbsp; &nbsp;第一个64K RAM第8位故障。同代码10。</div>
+<div>19 &nbsp; &nbsp;测试第1通道的中断控制器（8259）屏蔽位。查主板中的8259芯片。 &nbsp; &nbsp;已开始更新存储器。 &nbsp; &nbsp;第一个64K RAM第9位故障。同代码10。</div>
+<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+<div>1A &nbsp; &nbsp;测试第2通道的中断控制器（8259）屏蔽位。查主板中的8259芯片。 &nbsp; &nbsp;正在触发存储器更新线路，即将检查15微秒通／断时间。查主板内存芯片及其接口电路。 &nbsp; &nbsp;第一个64K RAM第10位故障。同代码10。</div>
+<div>1B &nbsp; &nbsp;测试CMOS电池电平。查主板中电池有电否，有些板的电池装在CMOS模块里面，可拆下上盖更换电池。 &nbsp; &nbsp;完成存储器更新时间30微秒测试；即将开始基本的64K存储器测试。查主板内存控制部分及内存槽和内存条。 &nbsp; &nbsp;第一个64K RAM第11位故障。同代码10。</div>
+<div>1C &nbsp; &nbsp;测试CMOS检查总和。查主板中CMOS芯片及其电路。 &nbsp; &nbsp; &nbsp; &nbsp;第一个64K RAM第12位故障。同代码10。</div>
+<div>1D &nbsp; &nbsp;调定CMOS的配置。查主板中CMOS芯片。 &nbsp; &nbsp; &nbsp; &nbsp;第一个64K RAM第13位故障。同代码10。</div>
+<div>1E &nbsp; &nbsp;测定系统存储器的大小，并且把它和CMOS值比较。查主板中的CMOS电路及主板中的内存。 &nbsp; &nbsp; &nbsp; &nbsp;第一个64K RAM第14位故障。同代码10。</div>
+<div>1F &nbsp; &nbsp;测试64K存储器至最高640K。查主板中的内存条或内存芯片。 &nbsp; &nbsp; &nbsp; &nbsp;第一个64K RAM第15位故障。同代码10。</div>
+<div>20 &nbsp; &nbsp;测量固定的8259中断位。查主板中8259芯片及周边电路。 &nbsp; &nbsp;开始基本的64K存储器测试；即将测试地址线。查主板中内存接口及内存槽和内存条。 &nbsp; &nbsp;从属DMA寄存器测试正在进行或失灵。查主板中包含有DMA的芯片及其支持电路。</div>
+<div>21 &nbsp; &nbsp;维持不可屏蔽中断（NMI）位（奇偶性或输入／输出通道的检查）。查主板中中断控制器芯片及其外围电路。 &nbsp; &nbsp;通过地址线测试；即将触发奇偶性。查主板中与内存奇偶位相关的数据线电路。 &nbsp; &nbsp;主DMA寄存器测试正在进行或失灵。同上。</div>
+<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+<div>22 &nbsp; &nbsp;测试8259的中断功能。查主板中8259芯片及其周围电路。 &nbsp; &nbsp;结束触奇偶性；将开始串行数据读／写测试。查主板中与内存控制部份和内存条、槽。 &nbsp; &nbsp;主中断屏蔽寄存器测试正在进行或失灵。查主板中与中断控制器有关的芯片及其外围电路。</div>
+<div>23 &nbsp; &nbsp;测试保护方式；虚拟方式和页面方式。查主板内存芯片及其周围电路。 &nbsp; &nbsp;基本的64K串行数据读／写测试正常；即将开始中断矢量初始化之前的任何调节。查主板中断控制器及与中断矢量有关的存储器部分。 &nbsp; &nbsp;从属中断屏蔽寄存器测试正在进行或失灵。查主板中与中断控制器有关的芯片及其外围电路。</div>
+<div>24 &nbsp; &nbsp;测定1Mb以上的扩展存储器。查内存。 &nbsp; &nbsp;矢量初始化之前的任何调节完成，即将开始中断矢量的初始准备。查主板中断控制器部份。 &nbsp; &nbsp;设置ES段地址寄存器注册表到内存高端。查主板中与内存管理接口电路有关的芯片及其支持电路和内存条。</div>
+<div>25 &nbsp; &nbsp;测试除头一个64K之后的所有存储器。查内存。 &nbsp; &nbsp;完成中断矢量初始准备；将为旋转式继续开始读出8042的输入／输出端口。查主板中8042芯片及其外围。 &nbsp; &nbsp;装入中断矢量正在进行或失灵。查主板的内存控制电路及其内存槽和内存条。</div>
+<div>26 &nbsp; &nbsp;1. &nbsp; &nbsp;测试保护方式的例外情况。查CPU及主板中的内存等。</div>
+<div>2. &nbsp; &nbsp;无致命性故障，VGA显示正常，若有非致命性故障则在VGA显示屏中显示其错误信息，否则引导操作系统，此时&ldquo;26&rdquo;既为&ldquo;OK&rdquo;码，诊断卡再也没有其它代码可显。 &nbsp; &nbsp;1. &nbsp; &nbsp;读写8042的输入／输出端口；即将为旋转式继续开始使全局数据作初始准备。查主板中8042芯片部分。</div>
+<div>2. &nbsp; &nbsp;同左 &nbsp; &nbsp;1. &nbsp; &nbsp;开启A20地址线使之参入寻址。查主板中内存管理芯片A20引脚及其引脚的相关联的电路和内存槽中A20弹片是否接触不上内存条的金手指或内存条A20脚功能坏。</div>
+<div>2. &nbsp; &nbsp;同左</div>
+<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+<div>27 &nbsp; &nbsp;测定超高速缓冲存储器的控制或屏蔽RAM。查主板中的Cache控制电路及内存条。 &nbsp; &nbsp;全1数据初始准备结束；接着将进行中断矢量之后的任何初始准备。查主板中断控制器部分。 &nbsp; &nbsp;键盘控制器测试正在进行或失灵。查主板中键盘接口电路。</div>
+<div>28 &nbsp; &nbsp;测定超高速缓冲存储器的控制或者特别的8242键盘控制器。查主板Cache控制及主板中键盘控制电路。 &nbsp; &nbsp;完成中断矢量之后的初始准备；即将调定单色方式。查显卡接口部分。 &nbsp; &nbsp;CMOS电源故障／检查总和计算正在进行。查主板中CMOS芯片及其关联电路和主板中电流供电通路部份，试更换电源。</div>
+<div>29 &nbsp; &nbsp; &nbsp; &nbsp;已调定单色方式，即将调定彩色方式。查彩显卡。 &nbsp; &nbsp;CMOS配置有效性的检查正在进行。查主板中CMOS写入电路。</div>
+<div>2A &nbsp; &nbsp;使键盘控制器作初始准备。查主板中的键盘控制器电路。 &nbsp; &nbsp;已调定彩色方式，即将进行ROM测试前的触发奇偶性。查显卡BIOS芯片及支持电路。 &nbsp; &nbsp;置空64K基本内存。查主板中内存接口电路和内存槽及内存条。</div>
+<div>2B &nbsp; &nbsp;使软盘驱动器和控制器作初始准备。查主板中的软驱控制电路及软驱本身有否问题和多功能卡等。 &nbsp; &nbsp;触发奇偶性结束；即将控制任选的视频ROM检查前所需的任何调节。查显卡ROM及其周边电路。 &nbsp; &nbsp;屏幕存储器测试正在进行或者失灵。查主板或显卡中的显存接口电路及显存芯片。</div>
+<div>2C &nbsp; &nbsp;检查串行端口，并使之作初始准备。查主板中的串口控制电路和多功能卡的串口电路。 &nbsp; &nbsp;完成视频ROM控制之前的处理；即将杳看任选的视频ROM并加以控制。查显卡ROM芯片及相关电路。 &nbsp; &nbsp;屏幕初始准备正在进行或失灵。查显卡接口电路。</div>
+<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+<div>
+	<div>2D &nbsp; &nbsp;检查并行端口，并使之作初始准备。查主板中或多功能卡中的并行口的控制电路。 &nbsp; &nbsp;已完成任选的视频ROM控制，即将进行视频ROM回复控制之后任何其他处理的控制。查显卡BIOS芯片及外围电路。 &nbsp; &nbsp;屏幕回扫测试正在进行或失灵。查显卡ROM芯片及其控制电路。</div>
+	<div>2E &nbsp; &nbsp;使硬盘驱动器和控制器作初始准备。查主板中或多功能卡中的控制电路或硬盘本身。 &nbsp; &nbsp;从视频ROM控制之后的处理复原；如果没发现EGA／VGA就要进行显示器存储器读／写测试。查显卡中的显存及外围电路。 &nbsp; &nbsp;检查视频ROM正在进行。查显卡ROM芯片及其控制电路。</div>
+	<div>2F &nbsp; &nbsp;检测数学协处理器，并使之作初始准备。查主板中的数学处理器（486DX以上CPU与数学处理器是合为一体的） &nbsp; &nbsp;没发现EGA／VGA；即将开始显示器存储器读／写测试。查显卡中的显存片及周边电路。 &nbsp; &nbsp;</div>
+	<div>30 &nbsp; &nbsp;建立基本内存和扩展内存。查主板中的内存槽及内存控制电路和内存条本身。 &nbsp; &nbsp;通过显示器存储读／写测试；即将进行扫描检查。查显卡视频接口电路。 &nbsp; &nbsp;认为屏幕是可以工作的。</div>
+	<div>31 &nbsp; &nbsp;检测从C800：0至EFFF：0的选用ROM，并使之作初始准备。查主板中的ROM存储器及其控制电路。 &nbsp; &nbsp;显示器存储器读／写测试或扫描检查失败，即将进行另一种显示器存储器读／写测试。查显卡中显存芯片及其外围电路。 &nbsp; &nbsp;单色监视器是可以工作的。</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>32 &nbsp; &nbsp;对主板上COM／LPT／FDD／声音设备等I／O芯片编程使之适合设置值。查主板中类似多功能卡的部份电路，老主板则试换一块多功能卡。 &nbsp; &nbsp;通过另一种显示器存储器读／写测试；即将进行另一种显示器扫描检查。查显卡中视频接口电路。 &nbsp; &nbsp;彩色监视器（40列）是可以工作的。</div>
+	<div>33 &nbsp; &nbsp; &nbsp; &nbsp;视频显示器检查结束；将开始利用调节开关和实际插卡检验显示器的类型。查显卡中视频控制电路。 &nbsp; &nbsp;彩色监视器（80列）是可以工作的。</div>
+	<div>34 &nbsp; &nbsp; &nbsp; &nbsp;已检验显示适配器；接着将调定显示方式。试换显示卡。 &nbsp; &nbsp;计时器滴答声中断测试正在进行或失灵。查主板中中断控制器及计时器电路。</div>
+	<div>35 &nbsp; &nbsp; &nbsp; &nbsp;完成调定显示方式；即将检查BIOS ROM的数据区。查显卡中BIOS芯片及外围。 &nbsp; &nbsp;停机测试正在进行或失灵。查主板中BIOS或试换CPU。</div>
+	<div>36 &nbsp; &nbsp; &nbsp; &nbsp;已检查BIOS　ROM数据区；即将调定通电信息的游标。查显卡或试换显卡。 &nbsp; &nbsp;门电路中A－20失灵。查找方法同代码&ldquo;26&rdquo;（见　　页）</div>
+	<div>37 &nbsp; &nbsp; &nbsp; &nbsp;识别通电信息的游标调定已完成；即将显示通电信息。试换显卡。 &nbsp; &nbsp;保护方式中的意外中断。</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>38 &nbsp; &nbsp; &nbsp; &nbsp;完成显示通电信息；即将读出新的游标位置。试换显卡。 &nbsp; &nbsp;RAM测试正在进行或者地址故障＞FFFFh。查主板中内存接口电路及内存槽和内存条。</div>
+	<div>39 &nbsp; &nbsp; &nbsp; &nbsp;已读出保存游标位置，即将显示引用信息串。试换显卡。 &nbsp; &nbsp;</div>
+	<div>3A &nbsp; &nbsp; &nbsp; &nbsp;引用信息串显示结束；即将显示发现＜ESC＞信息。试换显卡。 &nbsp; &nbsp;间隔计时器通道2测试或失灵。查主板中与定时计数器相关的部份。</div>
+	<div>3B &nbsp; &nbsp;用OPTI电路片（只是486）使辅助超高速缓冲存储器作初始准备。查主板中OPTI及高速缓存芯片及电路。 &nbsp; &nbsp;已显示发现＜ESC＞信息；虚拟方式，存储器测试即将开始。查显卡中ROM部分。 &nbsp; &nbsp;按日计算的日历时钟测试正在进行或失灵。查主板中CMOS及计时电路。</div>
+	<div>3C &nbsp; &nbsp;建立允许进入CMOS设置的标志。查主板中的RAM电路及CMOS电路。 &nbsp; &nbsp; &nbsp; &nbsp;串行端口测试正在进行或失灵。查主板或多功能卡中COM口的接口电源。</div>
+	<div>3D &nbsp; &nbsp;初始化键盘／PS2鼠标／PNP设备及总内存节点。查键盘、鼠标、即插即用部件等。 &nbsp; &nbsp; &nbsp; &nbsp;并行端口测试正在进行或失灵。查主板或多功能卡中LPT口的接口电路。</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>3E &nbsp; &nbsp;尝试打开L2高速缓存。查主板中的Cache及相关控制电路。 &nbsp; &nbsp; &nbsp; &nbsp;数学处理器测试正在进行或失灵。低于486DX则试换数学处理器及查主板中与数学处理器接口电路及插座等，486DX以上则试更换CPU及查主板中CPU座，CPU电源频率跳线等设置。</div>
+	<div>40 &nbsp; &nbsp; &nbsp; &nbsp;已开始准备虚拟方式的测试；即将从视频存储器来检验。查显卡。 &nbsp; &nbsp;调整CPU速度，使之与外围时钟精确匹配。查主板的主频振荡定时计数器部份或试换CPU或试将CPU降频。</div>
+	<div>41 &nbsp; &nbsp;中断已打开，将初始化数据以便于0：0检测内存变换。查中断控制器或内存。 &nbsp; &nbsp;从视频存储器检验之后复原；即将准备描述符表。查显卡。 &nbsp; &nbsp;系统插件板选择失灵。查主板中与该插件板的接口部份。</div>
+	<div>42 &nbsp; &nbsp;显示窗口进入SETUP。 &nbsp; &nbsp;描述符表已准备好；即将进行虚拟方式作存储器测试。查内存部分。 &nbsp; &nbsp;扩展CMOS　RAM故障。查主板中CMOS RAM芯片及其外围电路。</div>
+	<div>43 &nbsp; &nbsp;若是即插即用BIOS，则串口、并口初始化。查主板的串口，并口控制电路。 &nbsp; &nbsp;进入虚拟方式；即将为诊断方式实现中断；查内存部分。 &nbsp; &nbsp;</div>
+	<div>44 &nbsp; &nbsp; &nbsp; &nbsp;已实现中断（如已接通诊断开关）；即将使数据作初始准备以检查存储器在0：0返转。查内存部分。 &nbsp; &nbsp;BIOS中断进行初始化。查主板中断控制器部份。</div>
+	<div>45 &nbsp; &nbsp;初始化数学处理器。是486DX以上则换CPU，否则查数学处理器。 &nbsp; &nbsp;数据已作初始准备；即将检查存储器在0：0返转以及找出系统存储器的规模。查内存部分。 &nbsp; &nbsp;</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>46 &nbsp; &nbsp; &nbsp; &nbsp;测试存储器已返回；存储器大小计算完毕，即半写入页面来测试存储器。查内存部分。 &nbsp; &nbsp;检查只读存储器ROM版本。查主板中BIOS芯片及其支持电路。</div>
+	<div>47 &nbsp; &nbsp; &nbsp; &nbsp;即将在扩展的存储器试写页面；即将基本640K存储器写入页面。查内存部分。 &nbsp; &nbsp;</div>
+	<div>48 &nbsp; &nbsp; &nbsp; &nbsp;已将基本存储器试写入页面；即将确定1Mb以上的存储器。查内存部分。 &nbsp; &nbsp;视频检查，CMOS重新配置。查主板或显卡中的视频接口部件及主板中CMOS芯片及其外围电路。</div>
+	<div>49 &nbsp; &nbsp; &nbsp; &nbsp;找出1Mb以下的存储器并检验，即将确定1Mb以上的存储器。查内存部分。 &nbsp; &nbsp;</div>
+	<div>4A &nbsp; &nbsp; &nbsp; &nbsp;找出1Mb以上的存储器并检验；即将检查BIOS　ROM的数据区。查内存部分。 &nbsp; &nbsp;进行视频的初始化。查主板或显卡中的视频接口部份。</div>
+	<div>4B &nbsp; &nbsp; &nbsp; &nbsp;BIOS　ROM数据区的检验结束，即将检查＜ESC＞和为软复位清除1Mb以上的存储器。查内存部分。 &nbsp; &nbsp;</div>
+	<div>4C &nbsp; &nbsp; &nbsp; &nbsp;清除1Mb以上的存储器（软复位）即将清除1Mb以上的存储器。查内存部分。 &nbsp; &nbsp;屏蔽视频BIOS　ROM。查主板或显卡中BIOS　ROM芯片及其支持电路。</div>
+	<div>4D &nbsp; &nbsp; &nbsp; &nbsp;已清除1Mb以上的存储器（软复位）；将保存存储器的大小。查内存部分。 &nbsp; &nbsp;</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>4E &nbsp; &nbsp;若检测到有错误，在显示器上显示错误信息，并等待客户按（F1）键继续。属非致命性故障，请根据屏幕提示排错。 &nbsp; &nbsp;开始存储器的测试：（无软复位）；即将显示第一个64K存储器的测试。查内存部分。 &nbsp; &nbsp;显示版权信息。查主板或显卡的RAM芯片及支持电路或当&ldquo;死机&rdquo;排查。</div>
+	<div>4F &nbsp; &nbsp;如果没有密码则等待输入密码，请输入正确的密码，如果忘记了密码请参见第　　页《忘了口令怎么办》解决。 &nbsp; &nbsp;开始显示存储器的大小，正在测试存储器将使之更新；将进行串行和随机的存储器测试。查内存部分。 &nbsp; &nbsp;</div>
+	<div>50 &nbsp; &nbsp;将当前BIOS临时区内的CMOS值存到CMOS中。查主板中CMOS芯片及其周边电路。 &nbsp; &nbsp;完成1Mb以下的存储器测试；即将高速存储器的大小以便再定位和掩蔽。查内存部分。 &nbsp; &nbsp;将CPU类型和速度送到屏幕。查找方法同代码&ldquo;4F&rdquo;。</div>
+	<div>51 &nbsp; &nbsp; &nbsp; &nbsp;测试1Mb以上的存储器。查内存部分。 &nbsp; &nbsp;</div>
+	<div>52 &nbsp; &nbsp;所有ISA只读存储器ROM进行初始化，最终给PCI分配IRQ号等初始化工作。查主板或扩展卡中的ROM芯片及其外围电路。 &nbsp; &nbsp;已完成1Mb以上的存储器测试；即将准备回到实址方式。查主板中内存控制电路及内存条。。 &nbsp; &nbsp;进入键盘检测。查主板的键盘接口电路或试更换键盘。</div>
+	<div>53 &nbsp; &nbsp;如果不是即插即用BIOS，则初始化串口、并口和设置时钟值。查主板中的串、并口的接口电路及CMOS的相关部份。 &nbsp; &nbsp;保存CPU寄存器和存储器的大小，将进入实址方式。查内存部分。 &nbsp; &nbsp;</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>54 &nbsp; &nbsp; &nbsp; &nbsp;成功地开启实址方式；即将复原准备停机时保存的寄存器。查内存部分。 &nbsp; &nbsp;扫描&ldquo;打击键&rdquo;。试更换键盘。</div>
+	<div>55 &nbsp; &nbsp; &nbsp; &nbsp;寄存器已复原，将停用门电路A－20的地址线。查与A20有关的电路。。 &nbsp; &nbsp;</div>
+	<div>56 &nbsp; &nbsp; &nbsp; &nbsp;成功地停用A－20的地址线；即将检查BIOS　ROM　数据区。查A20在地址线的逻辑电路。 &nbsp; &nbsp;键盘测试结束。试换键盘。</div>
+	<div>57 &nbsp; &nbsp; &nbsp; &nbsp;BIOS　ROM的数据区检查结束；将清除发现＜ESC＞信息。查主板的BIOS芯片及周边电路。 &nbsp; &nbsp;</div>
+	<div>58 &nbsp; &nbsp; &nbsp; &nbsp;BIOS　ROM的数据区检查了一半；继续进行。查BIOS及相关联电路。 &nbsp; &nbsp;非设置中断测试。查主板中与中断控制器相关电路。</div>
+	<div>59 &nbsp; &nbsp; &nbsp; &nbsp;已清除＜ESC＞信息；信息已显示；即将开始DMA和中断控制器的测试。查主板中DMA部分。 &nbsp; &nbsp;</div>
+	<div>5A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;显示按&ldquo;F2&rdquo;键进行设置。</div>
+	<div>5B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;测试基本内存地址线。查主板中有关内存地址线A0～A19的逻辑部分。</div>
+	<div>5C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;测试640K基本内存。查主板内存控制电路，内存槽及内存条。</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>60 &nbsp; &nbsp;设置硬盘引导扇区病毒保护功能。查硬盘引导扇区正常否？ &nbsp; &nbsp;通过DMA页面寄存器的测试；即将检验视频存储器。查显卡中的显存部份。 &nbsp; &nbsp;测试扩展内存。查主板扩展内存管理电路和内存槽及内存条。</div>
+	<div>61 &nbsp; &nbsp;显示系统配置表。如果停在&ldquo;61&rdquo;不动，　则主板死机。试查主板和CPU的频率，电压等查找死机原因。 &nbsp; &nbsp;视频存储器检验结束；即将进行DMA＃1基本寄存器的测试。查主板中DMA部份。 &nbsp; &nbsp;</div>
+	<div>62 &nbsp; &nbsp;开始用中断19H进行系统引导。若&ldquo;62&rdquo;不变，则主板已死机。查CPU、主板频率、电压的设置等有错否或换CPU内存，扩展卡试试。 &nbsp; &nbsp;通过DMA＃1基本寄存器的测试；即将进行DMA＃2寄存器的测试。查主板中DMA部分。 &nbsp; &nbsp;测试扩展内存地址线。查主板中位于扩展内存范围的地址线的控制逻辑部分。</div>
+	<div>63 &nbsp; &nbsp; &nbsp; &nbsp;通过DMA＃2基本寄存器的测试；即将检查BIOS　ROM数据区。查主板的BIOS芯片及外围电路。 &nbsp; &nbsp;</div>
+	<div>64 &nbsp; &nbsp; &nbsp; &nbsp;BIOS　ROM数据区检查了一半，继续进行。查主板的BIOS芯片及外围电路。 &nbsp; &nbsp;</div>
+	<div>65 &nbsp; &nbsp; &nbsp; &nbsp;BIOS　ROM数据区检查结束；将把DMA装置1和2编程。查主板中DMA部份。 &nbsp; &nbsp;Cache注册表进行优化配置。查主板高速缓存的控制电路及RAM部份。</div>
+	<div>66 &nbsp; &nbsp; &nbsp; &nbsp;DMA装置1和2编程结束；即将使用59号中断控制器作初始准备。查主板中断控制部份。 &nbsp; &nbsp;</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>67 &nbsp; &nbsp; &nbsp; &nbsp;8259初始准备已结束；即将开始键盘测试。查主板键盘接口及键盘本身。 &nbsp; &nbsp;</div>
+	<div>68 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;使外部Cache和CPU内部Cache都工作。查看CMOS设置是否关闭了该项目的设置。</div>
+	<div>6A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;测试显示外部Cache值。查主板中高速缓存芯片及其控制线路。</div>
+	<div>6C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;显示被屏蔽内容。若停在&ldquo;6C&rdquo;不动则可参照&ldquo;死机&rdquo;分析。</div>
+	<div>6E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;显示附属配置信息。参照&ldquo;死机&rdquo;查找原因。</div>
+	<div>70 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;检测到的错误信息送到屏幕显示。根据屏幕提示排错。</div>
+	<div>72 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;检测配置有否错误。重新设置使之符合实际配置后再开机。</div>
+	<div>74 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;测试实时时钟。查主板中定时计数器部份。</div>
+	<div>76 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;扫描键盘错误。查键盘是否有键被压下不弹起，或试更换键盘。</div>
+	<div>7A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;锁键盘。试换键盘。</div>
+	<div>7C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;设置硬件中断矢量。查主板中断控制器芯片及外围电路。</div>
+	<div>7E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;测试有否安装数学处理器。</div>
+	<div>80 &nbsp; &nbsp; &nbsp; &nbsp;键盘测试开始，正在清除和检查有没有键卡住，即将使键盘复原。查主板中键盘接口与键盘。 &nbsp; &nbsp;关闭可编程输入／输出设备。查主板I／O控制电路部分。</div>
+	<div>81 &nbsp; &nbsp; &nbsp; &nbsp;找出键盘复原的错误卡住的键；即将发出键盘控制端口的测试命令。查主板中键盘控制电路及键盘。 &nbsp; &nbsp;</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>82 &nbsp; &nbsp; &nbsp; &nbsp;键盘控制器接口测试结束，即将写入命令字节和使循环缓冲器作初始准备。查主板中键盘接口及键盘。 &nbsp; &nbsp;</div>
+	<div>83 &nbsp; &nbsp; &nbsp; &nbsp;已写入命令字节，已完成全局数据的初始准备；即将检查有没有键锁住。试更换键盘。 &nbsp; &nbsp;</div>
+	<div>84 &nbsp; &nbsp; &nbsp; &nbsp;已检查是否有锁住的键，即将检查存储器是否与CMOS失配。查内存及CMOS部份。 &nbsp; &nbsp;检测和安装固定并行口。查主板或多功能卡的开口控制部份。</div>
+	<div>85 &nbsp; &nbsp; &nbsp; &nbsp;已检查存储器的大小；即将显示软错误和口令或旁通安排。查CMOS设置内容。 &nbsp; &nbsp;</div>
+	<div>86 &nbsp; &nbsp; &nbsp; &nbsp;已检查口令；即将进行旁通安排前的编程。查CMOS设置正确否？ &nbsp; &nbsp;重新打开可编程I／O设备和检测固定I／O是否有冲突。查各种插卡的I／O地址端口是否有重叠的，若有则改变其中一个I／O的地址值再试开机。</div>
+	<div>87 &nbsp; &nbsp; &nbsp; &nbsp;完成安排前的编程，将进行CMOS安排的编程。查CMOS芯片及周边和电池等。 &nbsp; &nbsp;</div>
+	<div>88 &nbsp; &nbsp; &nbsp; &nbsp;从CMOS安排程序复原清除屏幕，即将进行后面的编程。查主板CMOS接口等。 &nbsp; &nbsp;初始化BIOS数据区。查主板RAM控制线路及内存条或BIOS　ROM。</div>
+	<div>89 &nbsp; &nbsp; &nbsp; &nbsp;完成安排后的编程；即将显示通电屏幕信息。试换显卡，可参照&ldquo;死机&rdquo;查找原因。 &nbsp; &nbsp;　</div>
+	<div>8A &nbsp; &nbsp; &nbsp; &nbsp;显示头一个屏幕信息。可参照&ldquo;死机&rdquo;排查。 &nbsp; &nbsp;进行扩展BIOS数据区初始化。</div>
+	<div>8B &nbsp; &nbsp; &nbsp; &nbsp;显示了信息，即将屏蔽主要和视频BIOS。查主板或显卡中视频接口部份。 &nbsp; &nbsp;</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>8C &nbsp; &nbsp; &nbsp; &nbsp;成功地屏蔽主要和视频BIOS，将开始CMOS后的安排任选项的编程。查CMOS及周围电路。 &nbsp; &nbsp;进行软驱控制器初始化。查主板或多功能卡中软驱接口电路。</div>
+	<div>8D &nbsp; &nbsp; &nbsp; &nbsp;已经安排任选项编程，接着检查滑鼠和进行初始准备。查主板或多功能卡中串口部分。 &nbsp; &nbsp;</div>
+	<div>8E &nbsp; &nbsp; &nbsp; &nbsp;检查了滑鼠以及完成初始准备；即将把硬、软磁盘复位。查主板或多功能卡中的软、硬驱接口电路。 &nbsp; &nbsp;</div>
+	<div>8F &nbsp; &nbsp; &nbsp; &nbsp;软磁盘已检查，该磁碟将作初始准备，随后配备软磁碟。查主板或多功能卡中软、硬接口部份。 &nbsp; &nbsp;</div>
+	<div>90 &nbsp; &nbsp; &nbsp; &nbsp;软磁碟配置结束，将测试硬磁碟的存在。试换软驱。 &nbsp; &nbsp;硬盘控制器进行初始化。查主板或多功能卡中控制部分。</div>
+	<div>91 &nbsp; &nbsp; &nbsp; &nbsp;硬磁碟存在测试结束；随后配置硬磁碟。查硬驱部份。 &nbsp; &nbsp;局部总线硬盘控制器初始化。查主板中硬盘接口电路。</div>
+	<div>92 &nbsp; &nbsp; &nbsp; &nbsp;硬磁碟配置完成；即将检查BIOS　ROM的数据区。查主板中ROM及相关联的部份。 &nbsp; &nbsp;跳转到用户路径2。</div>
+	<div>93 &nbsp; &nbsp; &nbsp; &nbsp;BIOS　ROM的数据区已检查一半；继续进行。查主板中相关BIOS部份。 &nbsp; &nbsp;</div>
+	<div>94 &nbsp; &nbsp; &nbsp; &nbsp;BIOS　ROM的数据区检查完毕，即调定基本和扩展存储器的大小。查内存部份。 &nbsp; &nbsp;关闭A20地址线。查主板内存接口电路中的第A20条地址线相关电路。</div>
+	<div>95 &nbsp; &nbsp; &nbsp; &nbsp;因应滑鼠和硬磁碟47型支持而调节好存储器的大小；即将检验显示存储器。查主板中的显存芯片及周边电路。 &nbsp; &nbsp;</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>96 &nbsp; &nbsp; &nbsp; &nbsp;检验显示存储器后复原；即将进行C800：0任选ROM控制之前的初始准备。查主板中内存的ROM部份。 &nbsp; &nbsp;&ldquo;ES段&rdquo;注册表清除。</div>
+	<div>97 &nbsp; &nbsp; &nbsp; &nbsp;C800：0任选ROM控制之前的任何初始准备结束，接着进行任选ROM的检查及控制。查主板的BIOS芯片及周围电路。 &nbsp; &nbsp;</div>
+	<div>98 &nbsp; &nbsp; &nbsp; &nbsp;任选ROM的控制完成；即将进行任选ROM回复控制之后所需的任何处理。查主板BIOS及周边。 &nbsp; &nbsp;查找ROM选择。</div>
+	<div>99 &nbsp; &nbsp; &nbsp; &nbsp;任选ROM测试之后所需的任何初始准备结束；即将建立计时器的数据区或打印机基本地址。查主板的定时计数器和I／O接口部份。 &nbsp; &nbsp;</div>
+	<div>9A &nbsp; &nbsp; &nbsp; &nbsp;调定计时器和打印基本地址后的返回操作；即将调定RS－232基本地址。查主板的COM接口电路。 &nbsp; &nbsp;屏蔽ROM选择。</div>
+	<div>9B &nbsp; &nbsp; &nbsp; &nbsp;在RS－232基本地址之后返回，即将进行协处理器测试之初始准备。查主板的COM接口部份。 &nbsp; &nbsp;</div>
+	<div>9C &nbsp; &nbsp; &nbsp; &nbsp;协处理器测试之前所需初始准备结束；接着使协处理器作初始准备。486DX以上则试换CPU。 &nbsp; &nbsp;建立电源节能管理。</div>
+	<div>9D &nbsp; &nbsp; &nbsp; &nbsp;协处理器作好初始准备，即将进行协处理器测试之后的任何初始准备。486DX以上则试换CPU。 &nbsp; &nbsp;</div>
+	<div>9E &nbsp; &nbsp; &nbsp; &nbsp;完成协处理器之后的初始准备，将检查扩展键盘，键盘识别符，以及数字锁定。查主板中键盘接口及键盘。 &nbsp; &nbsp;开放硬件中断。</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>9F &nbsp; &nbsp; &nbsp; &nbsp;已检查扩展键盘，调定识别标志，数字锁接通或断开，将发出键盘识别命令。查键盘。 &nbsp; &nbsp;</div>
+	<div>A0 &nbsp; &nbsp; &nbsp; &nbsp;发出键盘识别命令；即将使键盘识别标志复原。试更换键盘。 &nbsp; &nbsp;设置时间和中断。查主板中的CMOS及中断控制器部分。</div>
+	<div>A1 &nbsp; &nbsp; &nbsp; &nbsp;键盘识别标志复原；接着进行高速缓冲存储器的测试。查主板的Cache部份。 &nbsp; &nbsp;</div>
+	<div>A2 &nbsp; &nbsp; &nbsp; &nbsp;高速缓冲存储器测试结束；即将显示任何软错误。根据屏幕提示排错。 &nbsp; &nbsp;检查键盘锁。试更换键盘。</div>
+	<div>A3 &nbsp; &nbsp; &nbsp; &nbsp;软错误显示完毕；即将调定键盘打击的速率。通过CMOS设置键盘重复速率使之恰当。 &nbsp; &nbsp;</div>
+	<div>A4 &nbsp; &nbsp; &nbsp; &nbsp;调好键盘的打击速率，即将制订存储器的等待状态。查RAM控制部份。 &nbsp; &nbsp;键盘重复输入速率的初始化。试更换键盘。</div>
+	<div>A5 &nbsp; &nbsp; &nbsp; &nbsp;存储器等候状态制定完毕；接着将清除屏幕。查显卡部份。 &nbsp; &nbsp;</div>
+	<div>A6 &nbsp; &nbsp; &nbsp; &nbsp;屏幕已清除；即将启动奇偶性和不可屏蔽中断。查主板中断控制器部份。 &nbsp; &nbsp;</div>
+	<div>A7 &nbsp; &nbsp; &nbsp; &nbsp;已启用不可屏蔽中断和奇偶性；即将进行控制任选ROM在E000：0之所需的任何初始准备。查主板中BIOS及周边。 &nbsp; &nbsp;</div>
+	<div>A8 &nbsp; &nbsp; &nbsp; &nbsp;控制ROM在E000：0之前的初始准备结束，接着将控制E000：0之所需的任何初始准备。 &nbsp; &nbsp;清除&ldquo;F2&rdquo;键提示。</div>
+	<div>A9 &nbsp; &nbsp; &nbsp; &nbsp;从控制E000：0ROM返回，将进行E000：0可选ROM控制前的初始化。 &nbsp; &nbsp;</div>
+	<div>AA &nbsp; &nbsp; &nbsp; &nbsp;在E000：0控制任选ROM之后的初始准备结束；即将显示系统的配置。 &nbsp; &nbsp;扫描&ldquo;F2&rdquo;键打击。</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>AC &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;进入设置。</div>
+	<div>AE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;清除通电自检标志。</div>
+	<div>B0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;检查非关键性错误。接上显示器，根据屏幕提示排错。</div>
+	<div>B2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;通电自检完成准备进入操作系统引导。查操作系统，软件正常否。</div>
+	<div>B4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;蜂鸣器响一声。</div>
+	<div>B6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;检测密码设置（可选）。</div>
+	<div>B8 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;清除全部描述表。</div>
+	<div>BC &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;清除校验检查值。</div>
+	<div>BE &nbsp; &nbsp;引导程序缺省值进入控制芯片，符合可调制二进制缺省值表。 &nbsp; &nbsp; &nbsp; &nbsp;清除屏幕（可选）</div>
+	<div>BF &nbsp; &nbsp;测试CMOS建立值。查主板中CMOS芯片及其相关电路。 &nbsp; &nbsp; &nbsp; &nbsp;检测病毒，提示做资料备份。</div>
+	<div>C0 &nbsp; &nbsp;初始化高速缓存。查主板的Cache部份电路。 &nbsp; &nbsp; &nbsp; &nbsp;用中断19试引导。</div>
+	<div>C1 &nbsp; &nbsp;内存自检。查主板的内存控制电跨和内存槽及内存条。 &nbsp; &nbsp; &nbsp; &nbsp;查找引导扇区中的&ldquo;55、AA&rdquo;标记。</div>
+	<div>C2 &nbsp; &nbsp;试写内存的开头512K字节。查主板的内存控制电路及内存槽和内存条。 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<div>C3 &nbsp; &nbsp;第一个256K内存测试。查主板的内存控制电路及内存槽和内存条。 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<div>C4 &nbsp; &nbsp;基本内存除前256K以外的测试，查主板的内存控制电路及内存槽和内存条。 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<div>C5 &nbsp; &nbsp;从ROM内复制BIOS进行快速自检。查主板的BIOS　ROM芯片和内存控制电路及内存条。 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<div>C6 &nbsp; &nbsp;高速缓存自检。查主板的Cache、RAM控制电路及内存槽和内存条。 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<div>代码 &nbsp; &nbsp;Award &nbsp; &nbsp;AMI &nbsp; &nbsp;Phoenix/Tandy3000</div>
+	<div>CA &nbsp; &nbsp;检测Micronies超高速缓冲存储器（如果存在），并使之作初始准备。查主板超高速存储器的相关部份。 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<div>CC &nbsp; &nbsp;关断不可屏蔽中断处理器。查主板的非屏蔽中断控制器电路。 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<div>EE &nbsp; &nbsp;处理器意料不到的例外情况。查电源、扩展卡、内存条等部件与主板之间连接接触不良，可参考&ldquo;死机&rdquo;现象排错。　　　　　　　　　　　　　　　　　　　　　 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+	<div>FF &nbsp; &nbsp;1. &nbsp; &nbsp;由一系列其它代码到&ldquo;00&rdquo;，则主板自检已通过，OK。</div>
+	<div>2. &nbsp; &nbsp;出&ldquo;00&rdquo;，且不变码，则为主板没有运行，查CPU坏否、CPU跳线、或CPU设置正确否、电源正常否、主板电池等处有否发霉？</div>
+	<div>3. &nbsp; &nbsp;如果您在CMOS中设置为不提示错，则遇到非致命性故障时，诊断卡不会停下来而接着往后走一直到&ldquo;00&rdquo;，解决方法为更改CMOS设置为提示所有错误再开机，这时若有非致命故障则停住，再根据代码排错。 &nbsp; &nbsp;同左 &nbsp; &nbsp;同左</div>
+	<div>八、喇叭报警的含义</div>
+	<div>（一）ＡＭＩ ＢＩＯＳ音频自检代码</div>
+	<div>声音自检代码 &nbsp; &nbsp;致命错误</div>
+	<div>一短 &nbsp; &nbsp;ＤＭＡ刷新失败</div>
+	<div>二短 &nbsp; &nbsp;奇偶校验电路故障</div>
+	<div>三短 &nbsp; &nbsp;基本６４０Ｋ ＲＡＭ故障</div>
+	<div>四短 &nbsp; &nbsp;系统定时器故障</div>
+	<div>五短 &nbsp; &nbsp;处理器故障</div>
+	<div>六短 &nbsp; &nbsp;键盘控制器门电路Ａ２０故障</div>
+	<div>七短 &nbsp; &nbsp;虚拟模式例外错误</div>
+	<div>八短 &nbsp; &nbsp;显示内存读/写测试失败</div>
+	<div>九短 &nbsp; &nbsp;ＲＯＭ ＢＩＯＳ求和校验失败</div>
+	<div>十短 &nbsp; &nbsp;ＣＭＯＳ掉电读/写失败</div>
+	<div>十一短 &nbsp; &nbsp;高速缓存(cache)故障</div>
+	<div>声音代码 &nbsp; &nbsp;非致命性故障</div>
+	<div>一长三短 &nbsp; &nbsp;常规/扩展内存故障</div>
+	<div>一长八短 &nbsp; &nbsp;显示/回扫测试失败</div>
+	<div>（二）Award BIOS自检鸣响含义</div>
+	<div>声音自检代码 &nbsp; &nbsp;含　　义</div>
+	<div>1短 &nbsp; &nbsp;系统正常boot机。</div>
+	<div>2短 &nbsp; &nbsp;常规错误，请进入CMOS　SETUP重新设置不正确的选项。</div>
+	<div>1长1短 &nbsp; &nbsp;RAM或主板出错。</div>
+	<div>1长2短 &nbsp; &nbsp;显示错误。（显示器或显示卡）</div>
+	<div>1长3短 &nbsp; &nbsp;键盘控制器错误</div>
+	<div>1长9短 &nbsp; &nbsp;主板Flash RAM或EPROM错误（BIOS损坏）</div>
+	<div>不断地响（长声） &nbsp; &nbsp;内存插得不稳或损坏。</div>
+	<div>（三）Ｐhoenix BIOS致命系统故障</div>
+	<div>声音代码 &nbsp; &nbsp;含 &nbsp; &nbsp; &nbsp;义</div>
+	<div>无声 &nbsp; &nbsp;ＣＰＵ寄存器测试正在进行</div>
+	<div>１-１-３ &nbsp; &nbsp;ＣＭＯＳ读/写失败</div>
+	<div>１-１-４ &nbsp; &nbsp;ＲＯＭ ＢＩＯＳ校验失败</div>
+	<div>１-２-１ &nbsp; &nbsp;可编程定时器故障</div>
+	<div>１-２-２ &nbsp; &nbsp;ＤＭＡ页面寄存器读/写失败</div>
+	<div>１-２-３ &nbsp; &nbsp;ＤＡＭ刷新校验失败</div>
+	<div>１-３-１ &nbsp; &nbsp;ＲＡＭ刷新校验失败</div>
+	<div>无声 &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ测试正在进行</div>
+	<div>１-３-３ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ芯片或多位数据线故障</div>
+	<div>１-３-４ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ奇/偶逻辑故障</div>
+	<div>１-４-１ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ地址线故障</div>
+	<div>１-４-２ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ奇偶校检失败</div>
+	<div>２-１-１ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第０位故障</div>
+	<div>２-１-２ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第１位故障</div>
+	<div>２-１-３ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第２位故障</div>
+	<div>２-１-４ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第３位故障</div>
+	<div>２-２-１ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第４位故障</div>
+	<div>２-２-２ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第５位故障</div>
+	<div>２-２-３ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第６位故障</div>
+	<div>２-２-４ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第７位故障</div>
+	<div>２-３-１ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第８位故障</div>
+	<div>２-３-２ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第９位故障</div>
+	<div>２-３-３ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第１０位故障</div>
+	<div>２-３-４ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第１１位故障</div>
+	<div>２-４-１ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第１２位故障</div>
+	<div>２-４-２ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第１３位故障</div>
+	<div>２-４-３ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第１４位故障</div>
+	<div>２-４-４ &nbsp; &nbsp;第一个６４Ｋ ＲＡＭ第１５位故障</div>
+	<div>３-４-１ &nbsp; &nbsp;从属ＤＭＡ寄存器故障</div>
+	<div>３-４-２ &nbsp; &nbsp;主ＤＭＡ寄存器故障</div>
+	<div>３-４-３ &nbsp; &nbsp;主中断屏蔽寄存器故障</div>
+	<div>３-４-４ &nbsp; &nbsp;从属中断屏蔽寄存器故障</div>
+	<div>无声 &nbsp; &nbsp;正在加载中断向量</div>
+	<div>３-２-４ &nbsp; &nbsp;键盘控制器测试失败</div>
+	<div>无声 &nbsp; &nbsp;ＣＭＯＳ供电故障/ＣＭＯＳ求和校验计算正在进行</div>
+	<div>无声 &nbsp; &nbsp;显示屏幕配置确认正在进行</div>
+	<div>３-３-４ &nbsp; &nbsp;显示屏幕初始化失败</div>
+	<div>３-４-１ &nbsp; &nbsp;显示屏回扫失败</div>
+	<div>３-４-２ &nbsp; &nbsp;正在寻找视频ＲＯＭ</div>
+	<div>无声 &nbsp; &nbsp;显示屏以带有视频ＲＯＭ的方式运行</div>
+	<div>无声 &nbsp; &nbsp;可进行屏幕操作</div>
+	<div>无声 &nbsp; &nbsp;彩显(４０列)可运行</div>
+	<div>无声 &nbsp; &nbsp;彩显(８０列)可运行</div>
+	<div>（四）Ｐhoenix BIOS非致命性系统故障</div>
+	<div>声音代码 &nbsp; &nbsp;含 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;义</div>
+	<div>４-２-１ &nbsp; &nbsp;正在进行定时器中断测试/或测试失败</div>
+	<div>４-２-２ &nbsp; &nbsp;掉电测试正在进行/或测试失败</div>
+	<div>４-２-３ &nbsp; &nbsp;门电路Ａ２０故障</div>
+	<div>４-２-４ &nbsp; &nbsp;在保护模式下不期望的中断</div>
+	<div>４-３-１ &nbsp; &nbsp;ＲＡＭ测试正在进行或地址错误(&gt;ＦＦＦＦＨ)</div>
+	<div>４-３-３ &nbsp; &nbsp;定时器２测试或测试失败</div>
+	<div>４-３-４ &nbsp; &nbsp;日期时钟测试或测试失败</div>
+	<div>４-４-１ &nbsp; &nbsp;串行口测试或测试失败</div>
+	<div>４-４-２ &nbsp; &nbsp;并行口测试或测试失败</div>
+	<div>４-４-３ &nbsp; &nbsp;数学协处理器测试或测试失败</div>
+	<div>低音１-１-２ &nbsp; &nbsp;系统板选择失败</div>
+	<div>低音１-１-３ &nbsp; &nbsp;扩展ＣＭＯＳ ＲＡＭ故障</div>
+	<div>（五） ＩＢＭ自检音频故障代码</div>
+	<div>声音代码 &nbsp; &nbsp;含 &nbsp; &nbsp; &nbsp; &nbsp; 义</div>
+	<div>一声短音 &nbsp; &nbsp;系统常规自检通过</div>
+	<div>两声短音 &nbsp; &nbsp;自检错误</div>
+	<div>无声 &nbsp; &nbsp;供电单元,系统板</div>
+	<div>连续蜂鸣声 &nbsp; &nbsp;供电单元,系统板</div>
+	<div>重复的短音 &nbsp; &nbsp;供电单元,系统板</div>
+	<div>一长一短 &nbsp; &nbsp;系统板</div>
+	<div>一长两短 &nbsp; &nbsp;显示适配器(ＭＤＡ,ＣＧＡ)</div>
+	<div>一长三短 &nbsp; &nbsp;ＥＧＡ</div>
+	<div>三声长音 &nbsp; &nbsp;3270键盘卡</div>
+	<div>&nbsp;</div>
+	<div>（二）修复被CIH破坏的主板BIOS芯片</div>
+	<div>1、更换法：找主板厂家要一块相同的BIOS芯片换下损坏的芯片。</div>
+	<div>2、写入法：把主板的BIOS芯片取下，使用兼容Flash Rom的&ldquo;烧录器&rdquo;，重新写一遍BIOS，再装回主板。</div>
+	<div>3、热插拨法：先断开染毒的硬盘，把主板的BIOS\芯片取下，找一块相同的BIOS芯片，装到BIOS　ROM插座上，然后用无毒的DOS盘启动（不要加载任何驱动程序）之后，将好的BIOS芯片拨下，换上损坏的芯片，然后进行像对主板BIOS升级一样的写入工作――此法须专业人员才可使用。</div>
+	<div>（三）常见CMOS　SETUP进入的方法</div>
+	<div>要进入CMOS设置程序的屏幕，不同的BIOS有不同的进入方法，下表列出常见的几种进入CMOS设备程序的方法。</div>
+	<div>常见BIOS　ROM的CMOS　SETUP进入的方法</div>
+	<div>BIOS型号 &nbsp; &nbsp;进入CMOS　SETUP的按键 &nbsp; &nbsp;屏幕提示</div>
+	<div>AMI &nbsp; &nbsp;<del>键或<esc>键 &nbsp; &nbsp;有</esc></del></div>
+	<div>Award &nbsp; &nbsp;<del>键或<ctrl>键+<alt>键+<esc>键 &nbsp; &nbsp;有</esc></alt></ctrl></del></div>
+	<div>MR &nbsp; &nbsp;<del>键或<ctrl>键+<alt>键+<esc>键 &nbsp; &nbsp;无</esc></alt></ctrl></del></div>
+	<div>Quadtel &nbsp; &nbsp;<f2>键 &nbsp; &nbsp;有</f2></div>
+	<div>COMPAQ &nbsp; &nbsp;屏幕右上角出现光标时按<f10>键 &nbsp; &nbsp;无</f10></div>
+	<div>AST &nbsp; &nbsp;<del>键＋<alt>键+<esc>键 &nbsp; &nbsp;无</esc></alt></del></div>
+	<div>Phoenix &nbsp; &nbsp;<del>键＋<alt>键+<s>键 &nbsp; &nbsp;无</s></alt></del></div>
+	<div><s>Hewlett</s></div>
+	<div><s>packard(HP) &nbsp; &nbsp;<f2>键 &nbsp; &nbsp;</f2></s></div>
+	<div><s>&nbsp;</s></div>
+	<div><s>&nbsp;</s></div>
+	<div><s>十、碰到书中查不到的代码怎么办？</s></div>
+	<div><s>由于代码是由主板厂商定义在BIOS中，并且部份代码暂未定义，故电话无法提供代码含义咨询，最好是您直接上网该问主板厂商网址的的最新代码含义，也可在使用诊断卡的实践中收录并记载在下表中。</s></div>
+	<div><s>&nbsp;</s></div>
+	<div><s>十一、常见问题解决方法</s></div>
+	<div><s>注意：1、不能在尚有免费质保的主板上进行违反质保规定的排错操作，</s></div>
+	<div><s>2、所有排错操作均在断电情况下进行。</s></div>
+	<div><s>出错类别 &nbsp; &nbsp;常见原因 &nbsp; &nbsp;排错方法</s></div>
+	<div><s>&nbsp;</s></div>
+	<div><s>内存条</s></div>
+	<div><s>内存条坏 &nbsp; &nbsp;换条试试</s></div>
+	<div><s>&nbsp; &nbsp; 内存条脚脏 &nbsp; &nbsp;用学生橡皮擦擦干净再试</s></div>
+	<div><s>&nbsp; &nbsp; 与其它条不匹配 &nbsp; &nbsp;换用相匹配的条</s></div>
+	<div><s>&nbsp; &nbsp; 插错方向 &nbsp; &nbsp;更正插入方向</s></div>
+	<div><s>内存槽</s></div>
+	<div><s>扩展槽 &nbsp; &nbsp;槽内脏或有异物 &nbsp; &nbsp;细心清除脏、异物</s></div>
+	<div><s>&nbsp; &nbsp; 槽内金属弹片变形或断裂 &nbsp; &nbsp;用医用止血钳等工具细心矫正或在废板中取材更换。</s></div>
+	<div><s>&nbsp; &nbsp; 槽内金属弹片生锈或发霉 &nbsp; &nbsp;用纯酒精清洗，干后将内存条或扩展卡多次插拨，使之改善接触性能。</s></div>
+	<div><s>CPU &nbsp; &nbsp;CPU坏 &nbsp; &nbsp;更换CPU（手摸CPU是否根本不发热或过热）</s></div>
+	<div><s>&nbsp; &nbsp; CPU设定跳线或CMOS设定错 &nbsp; &nbsp;细心核对CPU的工作电压、频率等参数的跳线或CMOS设定。</s></div>
+	<div><s>&nbsp; &nbsp; CPU脚脏 &nbsp; &nbsp;去除脏物并将CPU多插拨几次。</s></div>
+	<div><s>&nbsp; &nbsp; CPU未插到位 &nbsp; &nbsp;整理CPU引脚，将CPU细心地插入并检查是否插到位。</s></div>
+	<div><s>诊断卡自身不良或插卡错误 &nbsp; &nbsp;金手指脏 &nbsp; &nbsp;用学生橡皮擦擦金手指，将诊断卡多插拨几次，这将改善接触性能</s></div>
+	<div><s>&nbsp; &nbsp; 又插卡插错槽 &nbsp; &nbsp;细心辨别PCI与ISA槽</s></div>
+	<div><s>&nbsp; &nbsp; 诊断卡方向插反 &nbsp; &nbsp;更正插入方向（ISA槽的元件面朝向电源）</s></div>
+	<div><s>&nbsp; &nbsp; 诊断卡坏 &nbsp; &nbsp;到购买处进行质保，或P678@163.net（一年内）联系质保</s></div>
+	<div><s>诊断卡加电后代码根本无变化 &nbsp; &nbsp;主板未运行起来 &nbsp; &nbsp;检查电源、CPU跳线等</s></div>
+	<div><s>&nbsp; &nbsp; 主板无代码输出到插有诊断卡的总线插槽中 &nbsp; &nbsp;换一插槽试试，并参见本书第　　页《用户必读》</s></div>
+	<div><s>代码走不到底 &nbsp; &nbsp;主板有故障 &nbsp; &nbsp;这项是本诊断卡的用途所在，根据书中代码排错后再试</s></div>
+	<div><s>&nbsp; &nbsp; 主板将故障代码送往显示器，停止送到总线槽 &nbsp; &nbsp;接上彩显，再根据屏幕提示排错，然后再试</s></div>
+	<div><s>&nbsp;</s></div>
+</div>
+<div><s>&nbsp;</s></div>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/yingjianyuweihu/20151118/1188.html">win10怎么网页打开VPN地址，并连接</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/yingjianyuweihu/20151116/1176.html">在Linux下配置网卡</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

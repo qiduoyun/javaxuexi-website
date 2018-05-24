@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>Windows编程的基础知识 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1220","0","attach");
+		Cms.viewCount("","1220");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/yingjianyuweihu/20151121/1220.html" title="Windows编程的基础知识">Windows编程的基础知识</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-11-21 16:16:18</span>
+     </h3>
+     <h1>
+	Windows编程的基础知识</h1>
+<h2>
+	2.1窗口</h2>
+<p>Windows应用程序一般都有一个窗口，窗口是运行程序与外界交换信息的界面。一个典型的窗口包括标题栏，最小化按钮，最大/还原按钮，关闭按钮，系统菜单图标，菜单，工具条，状态栏，滚动条，客户区等。程序员的工作之一是设计符合自己要求的窗口，C#用控件的方法设计界面。编程另一个工作是在用户区显示数据和图形。</p>
+<h2>
+	2.2Windows的消息系统</h2>
+<h3>
+	2.2.1消息驱动（事件驱动）</h3>
+<p>Windows应用程序和dos程序(控制台程序)的最大区别是事件驱动,也叫消息驱动。dos程序运行时如要读键盘，则要独占键盘等待用户输入，如用户不输入，则CPU一直执行键盘输入程序，等待用户输入，即dos程序独占外设和CPU。</p>
+<p>Windows操作系统是一个多任务的操作系统，允许同时运行多个程序，它不允许任何一个程序独占外设，如键盘，鼠标等，所有运行程序共享外设和CPU，各个运行程序都要随时从外设接受命令，执行命令。</p>
+<p>因此必须由Windows操作系统统一管理各种外设。Windows把用户对外设的动作都看作事件(消息)，如单击鼠标左键，发送单击鼠标左键事件，用户按下键盘，发送键盘被按下的事件等。Windows操作系统统一负责管理所有的事件，把事件发送到各个运行程序，而各个运行程序用一个函数响应事件，这个函数叫事件响应函数。这种方法叫事件驱动。每个事件都有它自己的事件响应函数，当接到Windows事件后，自动执行此事件的事件响应函数。程序员编程的主要工作就是编制这些事件的处理函数，完成相应的工作。</p>
+<h3>
+	2.2.2事件队列</h3>
+<p>Windows把用户的动作都看作事件，Windows操作系统负责管理所有的事件，事件发生后，这些事件被放到系统事件队列中，Windows操作系统从系统事件队列中逐一取出事件，分析各个事件，分送事件到相应运行程序的事件队列中。而每个运行程序，则利用消息循环方法（既循环取得自己事件队列中的事件）得到事件，并把他们送到当前活动窗口，由窗口中的事件函数响应各个事件(消息)。因此，每个运行程序都有自己的事件队列。</p>
+<h3>
+	2.2.3注视窗口</h3>
+<p>Windows操作系统允许多个程序同时运行，每个程序可能拥有多个窗口，但其中只有一个窗口是活动的，我们能从窗口的标题栏的颜色来识别一个活动窗口，这个窗口接收Windows系统发来的大部分的事件。这个应用程序的窗口被称为注视(活动)窗口。</p>
+<h2>
+	2.3Windows编程接口和类库</h2>
+<p>操作系统为了方便应用程序设计，一般都要提供一个程序库，一些设计应用程序的共用代码都包含在这个程序库中。程序员可以调用这些代码，以简化编程。这节介绍一些常用程序库。</p>
+<h3>
+	2.3.1Windows编程接口(API)</h3>
+<p>API(Application&nbsp;Programming&nbsp;Interface)是Windows98、2000和XP操作系统中提供的一组函数，这些函数采用C语言调用格式，是为程序员编制Windows应用程序提供的编程接口。程序员用C语言直接调用API也可以编制Windows应用程序，但大量的程序代码必须由程序员自己编写，而API函数非常庞大，给编程者带来很大的困难。</p>
+<h3>
+	2.3.2MFC类库</h3>
+<p>由于API函数十分庞大复杂，看不到函数之间的关系，使程序员不易使用。用C语言使用API函数编写Windows应用程序是十分困难的。微软的VC++6.0用类对API函数进行了封装，为编程提供了MFC类库。使用MFC类库简化了Windows应用程序的编制。但是，MFC类库的使用还是比较复杂的，因此，VC++一直是一些专业人员的编程工具。</p>
+<h3>
+	2.3.3组件库</h3>
+<p>为了简化Windows应用程序的设计，提出了组件(控件)的概念，组件也是类，按钮、菜单、工具条等都可以封装为组件，组件采用属性、事件、方法来描述，其中属性描述组件的特性，如按钮的标题，标签字体的颜色和大小。方法是组件类提供的函数，通过调用这些方法，可以控制组件的行为。组件通过事件和外界联系，一个组件可以响应若干个事件，可以为事件增加事件处理函数，以后每当发生该事件，将自动调用该事件处理函数处理此事件。很多组件在设计阶段是可见的，支持可视化编程，这些组件又被叫做控件。用控件编制Windows应用程序很象搭积木，将控件放到窗体中，设置好属性，漂亮的界面就设计好了。组件编程的工具有很多，例如：VB6.0、VB.Net、C#、C++Builder、Java、Delphi等快速开发工具(RAD)。这些工具都有自己的组件库。</p>
+<h3>
+	2.3.4.NET框架类库</h3>
+<p>.NET系统为编制Windows应用程序、Web应用程序、Web服务，在.Net框架(.Net&nbsp;FrameWork)中提供了基础类库(Base&nbsp;Class&nbsp;Library)。它是一个统一的、面向对象的、层次化的、可扩展的类库，统一了微软当前各种不同的框架和开发模式，无论开发Windows应用程序，还是开发Web应用程序，采用相同的组件名称，组件具有相同的属性、方法和事件，开发模式也类似，方便程序员学习。.Net框架类库支持控件可视化编程，.Net中的VC++.Net、VB.Net、C#语言都使用这个类库，消除了各种语言开发模式的差别。该类库包括以下功能：基础类库(基本功能，象字符串、数组等)、网络、安全、远程化、诊断和调试、I/O、数据库、XML、Web服务、Web编程、Windows编程接口等等。</p>
+<p>Windows98、2000和XP操作系统并不包含.NET框架类库，为了运行C#程序，必须安装.Net&nbsp;FrameWork。</p>
+<h2>
+	2.4Windows应用程序的基本结构</h2>
+<p>Windows应用程序和控制台应用程序的基本结构基本一样，程序的执行总是从Main()方法开始，主函数Main()必须在一个类中。但Windows应用程序使用图形界面，一般有一个窗口(Form)，采用事件驱动方式工作。本节介绍Windows应用程序的基本结构。</p>
+<h3>
+	2.4.1最简单的Windows应用程序</h3>
+<p>最简单的Windows应用程序如下：</p>
+<p>using&nbsp;System;//引入名字空间</p>
+<p>using&nbsp;System.Windows.Forms;</p>
+<p>public&nbsp;class&nbsp;Form1:Form//类定义</p>
+<p>{ static&nbsp;void&nbsp;Main()//主函数</p>
+<p>{ Application.Run(new&nbsp;Form1());</p>
+<p>}</p>
+<p>}</p>
+<p>自定义类Form1以Form类为基类。Form类是.Net系统中定义的窗体类，Form类对象具有Windows应用程序窗口的最基本功能，有标题栏、系统菜单、最大化按钮、最小化按钮和关闭按钮、用户区。Form类对象还是一个容器，在Form窗体中可以放置其它控件，例如菜单控件，工具条控件等等。System.Application类中的静态方法Run负责完成一个应用程序的初始化，运行，终止等功能，其参数是本程序使用的窗体Form1类对象，Run方法还负责从操作系统接受事件，并把事件送到窗体中响应。窗体关闭，方法Run退出，Windows应用程序结束。假设已经将文件保存在d:\Charp目录下，文件名为：e1.cs。启动命令行提示符，在屏幕上输入一行命令：d:回车，cd&nbsp;&nbsp;Charp回车，键入命令：</p>
+<p>C:\WINNT\Microsoft.NET\Framework\v1.0.3705\csc&nbsp;/t:winexe&nbsp;/r:system.dll,System.Windows.Forms.dll&nbsp;e1.cs</p>
+<p>命令中的/t:winexe表示要建立一个Windows应用程序，/r表示要引入的命名空间。也可以用记事本建立一个批处理文件g.bat，将以上命令内容拷贝到文件中，运行g.bat，和在命令行提示符键入命令效果相同。以上方法在FrameWork&nbsp;SDK&nbsp;2000中实现。如果一切正常e1.cs文件将被编译，编译后生成可执行文件e1.exe。运行可执行文件e1.exe，CRT上出现一个窗口如右图。<img alt="" src="/u/cms/www/201511/21180139jsj4.png" style="width: 137px; height: 91px;" /></p>
+<p>可以在Form1类中定义新的变量，由于主窗体关闭，程序也就结束了，因此定义在主窗体Form1中的变量的生命周期和程序的生命周期是相同的，从这个意义上说，这些变量是全局变量。可以为Form1类定义构造函数，在构造函数中做一些初始化的工作，例如修改Form1标题栏中的标题。还可以在Form1中定义控件类的对象，这些控件将在Form1的用户区显示出来，换句话讲，在Form1中生成控件对象，也就是把控件放到窗体中。如在窗体中增加了一个按钮(Button)控件，单击按钮，将产生单击按钮事件，完成一定功能，下例说明了如何在窗体中增加控件，如何修改控件属性，如何增加控键的事件处理函数。</p>
+<p>using&nbsp;System;</p>
+<p>using&nbsp;System.Windows.Forms;</p>
+<p>public&nbsp;class&nbsp;Form1:Form</p>
+<p>{ Button&nbsp;button1;//生成Button类引用变量，和应用程序有相同生命周期</p>
+<p>public&nbsp;Form1()//构造函数</p>
+<p>{//下句修改主窗体标题，不指明属性(方法)所属对象，默认为Form1类的属性(方法)</p>
+<p style="margin-left:21.0000pt;">Text=&quot;我的第一个程序&quot;;//也可写为：this.Text=&quot;我的第一个程序&quot;;</p>
+<p style="margin-left:21.0000pt;">button1=new&nbsp;Button();//生成Button类对象</p>
+<p style="margin-left:21.0000pt;">button1.Location=new&nbsp;Point(25,25);//修改button1属性location即按钮位置</p>
+<p style="margin-left:21.0000pt;">button1.Text=&quot;确定&quot;;//修改button1属性Text，即按钮的标题</p>
+<p style="margin-left:21.0000pt;">//下句指定button1_Click函数是按钮单击事件的单击事件处理函数</p>
+<p style="margin-left:21.0000pt;">button1.Click+=new&nbsp;System.EventHandler(button1_Click);</p>
+<p style="margin-left:21.0000pt;">this.Controls.Add(button1);//按钮增加到窗体中，将在主窗体用户区显示出来</p>
+<p>}</p>
+<p>static&nbsp;void&nbsp;Main()</p>
+<p>{ Application.Run(new&nbsp;Form1());</p>
+<p>}</p>
+<p>private&nbsp;void&nbsp;button1_Click(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{//事件处理函数</p>
+<p style="margin-left:21.0000pt;">this.button1.Text=&quot;单击了我&quot;;//单击按钮事件执行的语句</p>
+<p>}</p>
+<p>}</p>
+<p>请注意在窗体中增加控件类的对象的步骤，首先生成一个引用变量button1，和主窗体Form1有相同的生命周期，第二步在构造函数中用new生成Button类对象，第三步在构造函数中修改button1的属性，增加button1的事件函数。这些步骤对于定义任何一个控件都是相同的。编译运行结果如右图：</p>
+<p><img alt="" src="/u/cms/www/201511/21180158pp6t.png" style="width: 175px; height: 92px;" /></p>
+<h3>
+	2.4.2用Visual&nbsp;Studio.Net建立Windows应用程序框架</h3>
+<p>以上所做的工作，都是一些固定的工作，可以使用Visual&nbsp;Studio.Net自动建立，下面介绍使用Visual&nbsp;Studio.Net创建Windows应用程序的具体步骤。</p>
+<ol>
+	<li>
+		运行Visual&nbsp;Studio.Net程序，出现如图1.2.2A界面。</li>
+	<li>
+		单击新建项目按钮，出现如图1.2.2B对话框。在项目类型(P)编辑框中选择Visual&nbsp;C#项目，在模板(T)编辑框中选Windows应用程序，在名称(N)编辑框中键入e2，在位置(L)编辑框中键入D:\csarp。也可以单击浏览按钮，在打开文件对话框中选择文件夹。单击确定按钮，创建项目。出现如图2.4.2A界面。生成一个空白窗体(Form1)。</li>
+</ol>
+<p><img alt="" src="/u/cms/www/201511/21180219pif9.png" style="width: 551px; height: 343px;" /></p>
+<p>图2.4.2A</p>
+<p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/yingjianyuweihu/20151124/1248.html">试图计算一个或多个公式时,EXCEL资源不足</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/yingjianyuweihu/20151120/1214.html">蓝屏代码查询器</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

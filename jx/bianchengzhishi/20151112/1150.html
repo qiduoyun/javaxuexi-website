@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>dom4j生成xml文件 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1150","0","attach");
+		Cms.viewCount("","1150");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151112/1150.html" title="dom4j生成xml文件">dom4j生成xml文件</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">炒菜&nbsp;&nbsp;发布于    2015-11-12 22:20:33</span>
+     </h3>
+     <p>
+	&nbsp;&nbsp;&nbsp; 在前面一篇，我们介绍了dom4j怎么解析xml文件，这里我们介绍怎么通过dom4j来生成xml文件。
+</p>
+<p>
+	1、导入需要的jar包：dom4j-1.6.1.jar，这个jar包在前面一篇的例子中有下载。
+</p>
+<p>
+	<a href="http://javaxuexi.net/jx/webjichu/20151112/1148.html">http://javaxuexi.net/jx/webjichu/20151112/1148.html</a>
+</p>
+<p>
+	2、在com.javaxuexi.dom包下创建生成xml文件的类：Create_Xml
+</p>
+<p>
+<pre class="prettyprint lang-java">package com.javaxuexi.dom;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+
+import org.dom4j.Document;
+import org.dom4j.DocumentFactory;
+import org.dom4j.Element;
+import org.dom4j.io.OutputFormat;
+import org.dom4j.io.XMLWriter;
+
+public class Create_Xml {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        DocumentFactory factory=new DocumentFactory();//创建工厂
+        Document document=factory.createDocument();//创建文档
+        //下面都是创建所有的子节点孙节点信息
+        Element books=factory.createElement("books");
+        Element book1=factory.createElement("book");
+        Element name1=factory.createElement("name");
+        Element author1=factory.createElement("author");
+        name1.setText("《西游记》");
+        author1.setText("吴承恩");
+        Element book2=factory.createElement("book");
+        Element name2=factory.createElement("name");
+        Element author2=factory.createElement("author");
+        name2.setText("《三国演义》");
+        author2.setText("罗贯中");
+        Element book3=factory.createElement("book");
+        Element name3=factory.createElement("name");
+        Element author3=factory.createElement("author");
+        name3.setText("《水浒传》");
+        author3.setText("施耐庵");
+        Element book4=factory.createElement("book");
+        Element name4=factory.createElement("name");
+        Element author4=factory.createElement("author");
+        name4.setText("《红楼梦》");
+        author4.setText("曹雪芹");
+        //把孙节点信息加入到子节点下面
+        book1.add(name1);
+        book1.add(author1);
+        book2.add(name2);
+        book2.add(author2);
+        book3.add(name3);
+        book3.add(author3);
+        book4.add(name4);
+        book4.add(author4);
+        //把子节点加入到根节点下面
+        books.add(book1);
+        books.add(book2);
+        books.add(book3);
+        books.add(book4);
+        //把根节点加入到文档中
+        document.add(books);
+        File file=new File("src/com/javaxuexi/dom/mingzhu.xml");//要创建的xml文件
+        OutputStream os=null;
+        XMLWriter writer=null;
+        try {
+            os=new FileOutputStream(file);
+            OutputFormat format=new OutputFormat("  ", true);
+            writer=new XMLWriter(os,format);
+            writer.write(document);//通过xmlwriter生成xml文件
+            writer.flush();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }finally{
+            try {
+                writer.close();
+                os.close();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        System.out.println(file.getName()+"文件创建完成");
+    }
+
+}</pre>
+<br />
+<br />
+3、运行结果：
+</p>
+<p>
+	<img alt="" src="data:image/png;base64,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" />
+</p>
+<p>
+	刷新工程，我们会看到在com.javaxuexi.dom包下生成了新的xml文件：mingzhu.xml
+</p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151113/1153.html">iPhone开发，ios开发笔记</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151112/1149.html">Android 2.3 完全Google编辑 </a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

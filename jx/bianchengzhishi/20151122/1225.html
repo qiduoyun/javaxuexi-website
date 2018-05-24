@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C#语言各种控件 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1225","0","attach");
+		Cms.viewCount("","1225");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151122/1225.html" title="C#语言各种控件">C#语言各种控件</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-22 10:43:28</span>
+     </h3>
+     <h2>
+	Form类</h2>
+<p>Form类是.Net系统中定义的窗体类(WinForm)，它属于System.Windows.Forms名字空间。Form类对象具有Windows应用程序窗口的最基本功能。它可以是对话框、单文档或多文档应用程序窗口的基类。Form类对象还是一个容器，在Form窗体中可以放置其它控件，例如菜单控件，工具条控件等等，还可以放置子窗体。</p>
+<ol>
+	<li>
+		Form类常用属性</li>
+</ol>
+<ul>
+	<li>
+		AutoScroll：布尔变量，表示窗口是否在需要时自动添加滚动条。</li>
+	<li>
+		FormBorderStyle：窗体边界的风格，如有无边界、单线、3D、是否可调整等。</li>
+	<li>
+		Text：字符串类对象，窗体标题栏中显示的标题。</li>
+	<li>
+		AcceptButton：记录用户键入回车时，相当于单击窗体中的那个按钮对象。</li>
+	<li>
+		CanceButton：记录用户键入ESC键时，相当于单击窗体中的那个按钮对象。以上两个属性多用于对话框，例如打开文件对话框，用户键入回车，相当于单击确定按钮。</li>
+	<li>
+		MaxiMizeBox：窗体标题栏右侧最大化按钮是否可用，设置为false，按钮不可用。</li>
+	<li>
+		MiniMizeBox：窗体标题栏右侧最小化按钮是否可用，设置为false，按钮不可用。如果属性MaxiMizeBox和MiniMizeBox都设置为false，将只有关闭按钮。在不希望用户改变窗体大小时，例如对话框，将两者都设置为false。</li>
+</ul>
+<ol>
+	<li value="2">
+		Form类常用方法</li>
+</ol>
+<ul>
+	<li>
+		Close()：窗体关闭，释放所有资源。如窗体为主窗体，执行此方法，程序结束。</li>
+	<li>
+		Hide()：隐藏窗体，但不破坏窗体，也不释放资源，可用方法Show()重新打开。</li>
+	<li>
+		Show()：显示窗体。</li>
+</ul>
+<ol>
+	<li value="3">
+		Form类常用事件</li>
+</ol>
+<ul>
+	<li>
+		Load：在窗体显示之前发生，可以在其事件处理函数中做一些初始化的工作。</li>
+</ul>
+<h2>
+	标签(Label)控件</h2>
+<p>标签控件用来显示一行文本信息，但文本信息不能编辑，常用来输出标题、显示处理结果和标记窗体上的对象。标签一般不用于触发事件。</p>
+<ol>
+	<li>
+		Label控件常用属性</li>
+</ol>
+<ul>
+	<li>
+		Text：显示的字符串</li>
+	<li>
+		AutoSize：控件大小是否随字符串大小自动调整，默认值为false，不调整。</li>
+	<li>
+		ForeColor：Label显示的字符串颜色。</li>
+	<li>
+		Font：字符串所使用的字体，包括所使用的字体名，字体的大小，字体的风格等等，具体修改方法见下边的例子。</li>
+</ul>
+<ol>
+	<li value="2">
+		例子e3_3：我的第一个程序</li>
+</ol>
+<p>下面的例子在窗口中显示一行文本，该例虽然简单，但包括了用Visual&nbsp;Studio.Net建立C#&nbsp;Windows应用程序的基本步骤。具体实现步骤如下：</p>
+<ol>
+	<li>
+		建立一个新项目，生成一个空白窗体(Form1)，见图2.4.2A。可以用属性窗口(图2.4.2B中图)修改窗体的属性，例如修改Form1的属性Text，可以修改窗体的标题。用鼠标拖动窗体的边界小正方形，可以修改窗体打开时的初始大小。</li>
+	<li>
+		双击工具箱窗口(图2.4.2B左图)中Windows窗体类型下的Label条目,在窗体Form1放置一个Label控件。该控件用来显示一行文本。可以用鼠标拖放Label到窗体的任意位置，并可拖动Label边界改变控件的大小。</li>
+	<li>
+		选中Label控件，在属性窗口中找到属性text，把它的值由&ldquo;Label1&rdquo;修改为&ldquo;我的第一个程序&rdquo;。接着在属性窗口中选中Font属性，单击Font属性右侧的标题为&hellip;的按钮，打开对话框，在对话框中可以修改Label控件显示字符串的字体名称和字号等，也可以单击Font属性左边的+号，在出现的子属性中编辑。编辑完成后，单击Font属性左边的-号，隐藏Font的子属性。修改ForeColor属性可以修改Label控件显示字符串的颜色。这是在设计阶段修改属性。</li>
+	<li>
+		编译，运行，可以看到窗口中按指定字体大小和颜色显示：我的第一个程序。运行效果如右图。<img alt="" src="data:image/png;base64,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" /></li>
+	<li>
+		保存项目。生成一个可执行程序需要多个文件，这些文件组成一个项目。一般把一个项目存到一个子目录中。单击文件/存所有文件菜单项，保存所有文件。</li>
+	<li>
+		关掉VS.NET，再启动。用文件/打开项目菜单项打开刚才关闭的项目文件（扩展名为sln）。应能看到刚才关闭的设计界面。必须打开项目，才能完成编译工作。</li>
+</ol>
+<h2>
+	按钮(Button)控件</h2>
+<p>用户单击按钮，触发单击事件，在单击事件处理函数中完成相应的工作。</p>
+<ol>
+	<li>
+		Button&nbsp;控件的常用属性和事件</li>
+</ol>
+<ul>
+	<li>
+		属性Text：按钮表面的标题</li>
+	<li>
+		事件Click：用户单击触发的事件，一般称作单击事件。</li>
+</ul>
+<ol>
+	<li value="2">
+		例子e3_4</li>
+</ol>
+<p>本例说明如何用程序修改属性，如何使用方法，增加事件函数。该例在窗口中显示一行文字，增加2个按纽，单击标题为红色的按纽把显示的文本颜色改为红色，单击标题为黑色的按纽把显示的文本颜色改为黑色。实现步骤如下：</p>
+<ol>
+	<li>
+		继续上例，放三个Button控件到窗体，修改属性Text，使标题分别为红色，黑色，退出。设计好的界面如右图。<img alt="" src="data:image/png;base64,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" /></li>
+	<li>
+		选中标题为红色的按纽，打开事件窗口(见图2.4.2B右图)，显示该控件所能响应的所有事件，其中左侧为事件名称，右侧为事件处理函数名称，如果为空白，表示还没有事件处理函数，选中Click事件，双击右侧空白处，增加单击(Click)标题为红色的按钮的事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;button1_Click(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{ label1.ForeColor=Color.Red;//运行阶段修改属性</p>
+<p>}//注意label1是控件的名字(label的Name属性)，用它来区分不同的控件。</p>
+<ol>
+	<li value="3">
+		单击(Click)标题为黑色的按纽的事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;button2_Click(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{ label1.ForeColor=Color.Black;}</p>
+<ol>
+	<li value="4">
+		单击(Click)标题为退出的按纽的事件处理函数如下：</li>
+</ol>
+<p>private&nbsp;void&nbsp;button3_Click(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{ Close();}</p>
+<p>Close()为窗体(Form)的方法，作用是关闭注窗体。由于关闭了主窗体，程序也就结束了。注意，引用窗体的方法和属性时可不用指定对象名，换句话讲，如不指定属性或方法的对象名，默认为窗体的属性或方法。而使用其它组件的属性及方法要指明所属组件对象，例如label1.ForeColor=Color.Red;</p>
+<ol>
+	<li value="5">
+		编译，运行，单击标题为红色的按纽，窗体显示字符串颜色变为红色，单击标题为黑色的按纽，窗体显示字符串颜色变为黑色，单击标题为退出的按纽，结束程序。</li>
+</ol>
+<h2>
+	事件处理函数的参数</h2>
+<p>事件处理函数一般有两个参数，第一个参数(object&nbsp;sender)为产生该事件的对象的属性Name的值，例如上例单击标题为红色的按钮，第一个参数sender的值为button1。如上例标题为红色的按钮和标题为黑色的按钮使用同一个单击事件处理函数，其事件处理如下：</p>
+<p>private&nbsp;void&nbsp;button1_Click(object&nbsp;sender,System.EventArgs&nbsp;e)</p>
+<p>{ if(sender==button1)</p>
+<p style="margin-left:21.0000pt;">label1.ForeColor=Color.Red;</p>
+<p>else</p>
+<p style="margin-left:21.0000pt;">label1.ForeColor=Color.Black;</p>
+<p>}</p>
+<p>事件处理函数第二个参数(System.EventArgs&nbsp;e)代表事件的一些附加信息，事件不同，所代表的信息也不相同，例如在后边的例子中可以看到，按下鼠标的事件处理函数中，e.X和e.Y分别为发生事件时鼠标位置的x坐标和y坐标，e.Button表示用户单击了鼠标那个键，如为MouseButtons.Left，表示单击了鼠标左键。</p>
+<p>为了使这两个按钮使用相同的单击事件处理函数，首先为标题为红色的按钮增加单击事件处理函数，即是上边的代码，事件函数名称为：button1_Click。选中标题为黑色的按钮，打开事件窗体(见图2.4.2B右图)，选中Click事件，从其右侧下拉列表中选择事件处理函数为button1_Click，这样两个按钮就使用相同的单击事件处理函数了。</p>
+<h2>
+	文本框(TextBox)控件</h2>
+<p>TextBox控件是用户输入文本的区域，也叫文本框。</p>
+<ol>
+	<li>
+		TextBox控件属性和事件</li>
+</ol>
+<ul>
+	<li>
+		属性Text：用户在文本框中键入的字符串</li>
+	<li>
+		属性MaxLength：单行文本框最大输入字符数。</li>
+	<li>
+		属性ReadOnly：布尔变量，为true，文本框不能编辑。</li>
+	<li>
+		属性PasswordChar：字符串类型，允许输入一个字符，如输入一个字符，用户在文本框中输入的所有字符都显示这个字符。一般用来输入密码。</li>
+	<li>
+		属性MultiLine：布尔变量，为true，多行文本框，为false，单行文本框。</li>
+	<li>
+		属性ScrollBars：MultiLine=true时有效，有4种选择：=0，无滚动条，=1，有水平滚动条，=2，有垂直滚动条，=3，有水平和垂直滚动条。</li>
+	<li>
+		属性SelLength：可选中文本框中的部分或全部字符，本属性为所选择的文本的字符数。</li>
+	<li>
+		属性SelStart：所选中文本的开始位置。</li>
+	<li>
+		属性SelText：所选中的文本</li>
+	<li>
+		属性AcceptsReturn：MultiLine=true时有效，布尔变量，为true，键入回车，换行，为false，键入回车键，相当于单击窗体中的默认按钮。</li>
+	<li>
+		事件TextChanged：文本框中的字符发生变化时，发出的事件。</li>
+</ul>
+<ol>
+	<li value="2">
+		例子e3_6</li>
+</ol>
+<p style="margin-left:15.7500pt;">本例要求用户在编辑框中输入两个乘数，单击按钮把相乘的结果在编辑框中显示出来。</p>
+<ol>
+	<li>
+		建立一个新的项目。放四个Label控件到窗体，Text属性分别为：被乘数，乘数，积，*,=。</li>
+	<li>
+		放三个textBox控件到窗体，属性Name从左到右分别为：textBox1、textBox2、textBox3，属性Text都为空。</li>
+	<li>
+		放三个Button控件到窗体，Text属性分别修改为求积，清空，退出。设计的界面如上图。<img alt="" src="data:image/png;base64,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" /></li>
+	<li>
+		标题为求积的按钮的单击事件处理函数如下:</li>
+</ol>
+<p>private&nbsp;void&nbsp;button1_Click(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{ float&nbsp;ss,ee;</p>
+<p>ss=Convert.ToSingle(textBox1.Text);</p>
+<p>ee=Convert.ToSingle(textBox2.Text);</p>
+<p>textBox3.Text=Convert.ToString(ss*ee);</p>
+<p>}</p>
+<ol>
+	<li value="5">
+		标题为清空的按钮的单击事件处理函数如下:</li>
+</ol>
+<p>private&nbsp;void&nbsp;button2_Click(object&nbsp;sender,System.EventArgs&nbsp;e)</p>
+<p>{ textBox1.Text=&quot;&quot;;</p>
+<p>textBox2.Text=&quot;&quot;;</p>
+<p>textBox3.Text=&quot;&quot;;</p>
+<p>}</p>
+<ol>
+	<li value="6">
+		标题为退出的按钮的单击事件处理函数如下:</li>
+</ol>
+<p>private&nbsp;void&nbsp;button3_Click(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</p>
+<p>{ Close();}</p>
+<ol>
+	<li value="7">
+		编译，运行，在文本框textBox1，textBox2分别输入2和3，单击标题为求积的按纽，textBox3中显示6，单击标题为清空的按钮，三个文本框被清空，单击标题为退出的按纽，结束程序。</li>
+</ol>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151123/1239.html">C#控件和类，定时器</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151122/1224.html">VS.NET控件通用属性</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

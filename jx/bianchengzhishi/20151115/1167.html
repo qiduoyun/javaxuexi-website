@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>Blocks和变量  - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1167","0","attach");
+		Cms.viewCount("","1167");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151115/1167.html" title="Blocks和变量 ">Blocks和变量 </a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-15 17:41:05</span>
+     </h3>
+     <div><img alt="" src="/u/cms/www/201511/15174049kr00.png" style="width: 1068px; height: 132px;" /></div>
+<div>&nbsp;Blocks和变量&nbsp;</div>
+<div>本文描述 blocks 和变量之间的交互，包括内存管理。&nbsp;</div>
+<div>4.1 变量类型 &nbsp;</div>
+<div>&nbsp;在 block 的主体代码里面，变量可以被使用五种方法来处理。&nbsp;</div>
+<div>&nbsp;你可以引用三种标准类型的变量，就像你在函数里面引用那样:&nbsp;</div>
+<div>z 全局变量，包括静态局部变量。&nbsp;</div>
+<div>z 全局函数（在技术上而言这不是变量）。&nbsp;</div>
+<div>z 封闭范围内的局部变量和参数。 &nbsp;</div>
+<div>Blocks 同样支持其他两种类型的变量:&nbsp;</div>
+<div>1. 在函数级别是__block 变量。这些在 block 里面是可变的(和封闭范围)，并任何引</div>
+<div>用 block 的都被保存一份副本到堆里面。&nbsp;</div>
+<div>2. 引入 const。&nbsp;</div>
+<div>3. 后，在实现方法里面，blocks 也许会引用 Objective-C 的实例变量。参阅&ldquo;对象</div>
+<div>和 Block 变量&rdquo;部分。&nbsp;</div>
+<div>&nbsp;在 block 里面使用变量遵循以下规则:&nbsp;</div>
+<div>1. 全局变量可访问，包括在相同作用域范围内的静态变量。&nbsp;</div>
+<div>2. 传递给 block 的参数可访问（和函数的参数一样）。&nbsp;</div>
+<div>3. 程序里面属于同一作用域范围的堆（非静态的）变量作为 const 变量(即只读)。</div>
+<div>它们的值在程序里面的 block 表达式内使用。在嵌套 block 里面，该值在近的</div>
+<div>封闭范围内被捕获。&nbsp;</div>
+<div>4. 属于同一作用域范围内并被__block 存储修饰符标识的变量作为引用传递因此是</div>
+<div>可变的。&nbsp;</div>
+<div>5. 属于同一作用域范围内 block 的变量，就和函数的局部变量操作一样。&nbsp;</div>
+<div>&nbsp;每次调用 block 都提供了变量的一个拷贝。这些变量可以作为 const 来使用，或在</div>
+<div>block 封闭范围内作为引用变量。 &nbsp;&nbsp;</div>
+<div>2011-12-09|&copy;2011YouMiMobileCo.Ltd.AllRightsReserved.[10]&nbsp;</div>
+<div>Blocks Programming Topics&nbsp;</div>
+<div>下面的例子演示了使用本地非静态变量:&nbsp;</div>
+<div>int x = 123;&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>void (^printXAndY)(int) = ^(int y) {&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>&nbsp; &nbsp; printf(&quot;%d %d\n&quot;, x, y);&nbsp;</div>
+<div>};&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>printXAndY(456); // prints: 123 456&nbsp;</div>
+<div>&nbsp;正如上面提到的，在 block 内试图给 x 赋一个新值会导致错误发生:&nbsp;</div>
+<div>int x = 123;&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>void (^printXAndY)(int) = ^(int y) {&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>&nbsp; &nbsp; x = x + y; // error&nbsp;</div>
+<div>&nbsp; &nbsp; printf(&quot;%d %d\n&quot;, x, y);&nbsp;</div>
+<div>};&nbsp;</div>
+<div>为了可以在 block 内修改一个变量，你需要使用__block 存储类型修饰符来标识该</div>
+<div>变量。参阅&ldquo;__block 存储类型&rdquo;部分。&nbsp;</div>
+<div>4.2 __block存储类型&nbsp;</div>
+<div>你可以指定引入一个变量为可更改的，即读-写的，通过应用__block 存储类型修</div>
+<div>饰符。局部变量的__block 的存储和 register、auto、static 等存储类型相似，但它们之</div>
+<div>间不兼容。&nbsp;</div>
+<div>&nbsp;__block 变量保存在变量共享的作用域范围内，所有的 blocks 和 block 副本都声明</div>
+<div>或创建在和变量的作用域相同范围内。所以，如果任何 blocks 副本声明在栈内并未超</div>
+<div>出栈的结束时，该存储会让栈帧免于被破坏（比如封装为以后执行）。同一作用域范</div>
+<div>围内给定的多个 block 可以同时使用一个共享变量。&nbsp;</div>
+<div>&nbsp;作为一种优化，block 存储在栈上面，就像 blocks 本身一样。如果使用 Block_copy</div>
+<div>拷贝了 block 的一个副本（或者在 Objective-C 里面给 block 发送了一条 copy 消息），</div>
+<div>变量会被拷贝到堆上面。所以一个__block 变量的地址可以随时间推移而被更改。&nbsp;</div>
+<div>2011-12-09|&copy;2011YouMiMobileCo.Ltd.AllRightsReserved.[11]&nbsp;</div>
+<div>Blocks Programming Topics&nbsp;</div>
+<div>&nbsp;使用__block 的变量有两个限制：它们不能是可变长的数组，并且它们不能是包</div>
+<div>含有 C99 可变长度的数组变量的数据结构。&nbsp;</div>
+<div>&nbsp;以下举例说明了如何使用__block 变量：&nbsp;</div>
+<div>__block int x = 123; // &nbsp;x lives in block storage&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>void (^printXAndY)(int) = ^(int y) {&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>&nbsp; &nbsp; x = x + y;&nbsp;</div>
+<div>&nbsp; &nbsp; printf(&quot;%d %d\n&quot;, x, y);&nbsp;</div>
+<div>};&nbsp;</div>
+<div>printXAndY(456); // prints: 579 456&nbsp;</div>
+<div>// x is now 579 &nbsp;下面的例子显示了 blocks 和其他几个类型变量间的交互:&nbsp;</div>
+<div>extern NSInteger CounterGlobal;&nbsp;</div>
+<div>static NSInteger CounterStatic;&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>{&nbsp;</div>
+<div>&nbsp; &nbsp; NSInteger localCounter = 42;&nbsp;</div>
+<div>&nbsp; &nbsp; __block char localCharacter;&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>&nbsp; &nbsp; void (^aBlock)(void) = ^(void) {&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; ++CounterGlobal;&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; ++CounterStatic;&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; CounterGlobal = localCounter; // localCounter fixed at block creation&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; localCharacter = &#39;a&#39;; // sets localCharacter in enclosing scope&nbsp;</div>
+<div>&nbsp; &nbsp; };&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>&nbsp; &nbsp; ++localCounter; // unseen by the block&nbsp;</div>
+<div>&nbsp; &nbsp; localCharacter = &#39;b&#39;;&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>&nbsp; &nbsp; aBlock(); // execute the block&nbsp;</div>
+<div>2011-12-09|&copy;2011YouMiMobileCo.Ltd.AllRightsReserved.[12]&nbsp;</div>
+<div>Blocks Programming Topics&nbsp;</div>
+<div>&nbsp; &nbsp; // localCharacter now &#39;a&#39;&nbsp;</div>
+<div>}&nbsp;</div>
+<div>4.3 对象(Object)和Block变量&nbsp;</div>
+<div>&nbsp;Block 提供了支持 Objective-C 和 Objective-C++的对象，和其他 blocks 的变量。&nbsp;</div>
+<div>4.3.1 Objective-C对象&nbsp;</div>
+<div>在引用计数的环境里面，默认情况下当你在 block 里面引用一个 Objective-C 对象的时</div>
+<div>候，该对象会被 retain。当你简单的引用了一个对象的实例变量时，它同样被 retain。</div>
+<div>但是被__block 存储类型修饰符标记的对象变量不会被 retain.&nbsp;</div>
+<div>注意: 在 垃 圾 回 收 机 制 里 面 ， 如 果 你 同 时 使 用 _ _ w e a k 和 _ _ b l o c k 来 标 识 一 个 变 量 ， 那 么 该 b l o c k</div>
+<div>将不会保证它是一直是有效的。&nbsp;</div>
+<div>&nbsp;如果你在实现方法的时候使用了 block,对象的内存管理规则更微妙:&nbsp;</div>
+<div>z 如果你通过引用来访问一个实例变量，self 会被 retain。&nbsp;</div>
+<div>z 如果你通过值来访问一个实例变量，那么变量会被 retain。 &nbsp;下面举例说明两个方式的不同:&nbsp;</div>
+<div>dispatch_async(queue, ^{&nbsp;</div>
+<div>&nbsp; &nbsp; // instanceVariable is used by reference, self is retained&nbsp;</div>
+<div>&nbsp; &nbsp; doSomethingWithObject(instanceVariable);&nbsp;</div>
+<div>});&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>id localVariable = instanceVariable;&nbsp;</div>
+<div>dispatch_async(queue, ^{&nbsp;</div>
+<div>&nbsp; &nbsp; // localVariable is used by value, localVariable is retained (not self)&nbsp;</div>
+<div>&nbsp; &nbsp; doSomethingWithObject(localVariable);&nbsp;</div>
+<div>});&nbsp;</div>
+<div>4.3.2 C++对象&nbsp;</div>
+<div>通常你可以在 block 内使用 C++的对象。在成员函数里面，通过隐式的导入 this</div>
+<div>指针引用成员变量和函数，结果会很微妙。有两个条件可以让 block 被拷贝:&nbsp;</div>
+<div>2011-12-09|&copy;2011YouMiMobileCo.Ltd.AllRightsReserved.[13]&nbsp;</div>
+<div>Blocks Programming Topics&nbsp;</div>
+<div>z 如果你拥有__block 存储的类，它本来是一个基于栈的 C++对象，那么通常会使用</div>
+<div>copy 的构造函数。&nbsp;</div>
+<div>z 如果你在 block 里面使用任何其他 C++基于栈的对象，它必须包含一个 const copy</div>
+<div>的构造函数。该 C++对象使用该构造函数来拷贝。&nbsp;</div>
+<div>4.3.3 Blocks&nbsp;</div>
+<div>当你拷贝一个 block 时，任何在该 block 里面对其他 blocks 的引用都会在需要的</div>
+<div>时候被拷贝，即拷贝整个目录树(从顶部开始)。如果你有 block 变量并在该 block 里</div>
+<div>面引用其他的 block，那么那个其他的 block 会被拷贝一份。&nbsp;</div>
+<div>&nbsp;当你拷贝一个基于栈的 block 时，你会获得一个新的 block。但是如果你拷贝一个</div>
+<div>基于堆的 block，你只是简单的递增了该 block 的引用数，并把原始的 block 作为函数</div>
+<div>或方法的返回值。&nbsp;</div>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151115/1168.html">使用Blocks </a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151115/1166.html">声明和创建Blocks </a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

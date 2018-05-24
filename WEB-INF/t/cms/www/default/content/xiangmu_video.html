@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>${title} - ${site.name}</title>
+
+    <link rel="stylesheet" href="/${res}/css/xiangmu.css">
+	
+</head>
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+[#include "../include/xiangmu_header.html"/]
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width:780px;float: left;background-color: #444;">
+
+
+	<embed title="${content.title!}" height="500" width="100%" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" flashvars="vcastr_file=${content.mediaPath!}" allowfullscreen="true" src="/${res}/img/flvplayer.swf">
+	</embed>
+
+	<div style="clear: both;"></div> 
+  </div>
+  <div style="width:300px;height:500px;float: right;border: 1px solid #ccc;">
+		   <div style="width:100%;background-color:#fafbfc; border-bottom:1px solid #ccd3e4;">
+				 <span style="float:left; display:block; padding-top:15px; padding-bottom:15px; padding-left:28px;">视频点播</span>
+			   <div style="clear:both;"></div>
+		   </div>
+		   
+		   [@cms_content id=content.id next='1' channelId=channel.id]
+		   [#if tag_bean??]
+		   <div style="width:240px; height:180px; margin:20px auto; position:relative;">
+		     <img width="240" height="150" src="${tag_bean.typeImg!site.defImg}" alt="${tag_bean.title}"/>
+			 <span style="display:block; font-size:18px; color:#333; padding-top:10px; text-align:center;"><a href="${tag_bean.url}" title="${tag_bean.title}" target="_blank">[@text_cut s=tag_bean.title len=titLen /]</a></span>
+			 <div style="position:absolute; left:10px; top:90px;">
+			   <a href="${tag_bean.url}" title="${tag_bean.title}" target="_blank">
+			    <img class="opacity-img"  height="50" src="/${res}/img/bofanganniu.png"/>
+			   </a>
+			  </div>
+		     <div style="clear:both;"></div>
+		   </div>		   
+		   [#else]
+		   [/#if]
+		   [/@cms_content]
+		   [@cms_content id=content.id next='0' channelId=channel.id]
+		   [#if tag_bean??]
+		   <div style="width:240px; height:180px; margin:20px auto; position:relative;">
+		     <img width="240" height="150" src="${tag_bean.typeImg!site.defImg}" alt="${tag_bean.title}"/>
+			 <span style="display:block; font-size:18px; color:#333; padding-top:10px; text-align:center;"><a href="${tag_bean.url}" title="${tag_bean.title}" target="_blank">[@text_cut s=tag_bean.title len=titLen /]</a></span>
+			 <div style="position:absolute; left:10px; top:90px;">
+			   <a href="${tag_bean.url}" title="${tag_bean.title}" target="_blank">
+			    <img class="opacity-img"  height="50" src="/${res}/img/bofanganniu.png"/>
+			   </a>
+			  </div>
+		     <div style="clear:both;"></div>
+		   </div>		   
+		   [#else]
+		   [/#if]
+		   [/@cms_content]
+  </div>
+  <div style="clear: both;"></div>
+</div>
+<div style="width: 1100px;margin: 0 auto;">
+	<h3><a href="${content.url}" title="${content.title}">${content.title}</a></h3>            
+	<span style="display: block;color: #888;font-size: 14px;">${content.author!'尼罗山'}    发布于    ${content.releaseDate}</span>
+  <div style="clear: both;"></div>	
+</div>
+
+
+[#include "../include/xiangmu_footer.html"/]
+
+
+</body>
+</html>

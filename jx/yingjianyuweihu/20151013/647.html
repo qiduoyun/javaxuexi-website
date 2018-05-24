@@ -1,0 +1,862 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>计算机组成原理 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","647","0","attach");
+		Cms.viewCount("","647");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/yingjianyuweihu/20151013/647.html" title="计算机组成原理">计算机组成原理</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-10-13 12:55:28</span>
+     </h3>
+     <p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">计算机组成原理</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;&nbsp;&nbsp;&nbsp;每个软件工程师都必使用计算机编程，因此了解计算机组成原理是非常必要的，了解计算机组成原理能够让你从硬件机械流程了解程序运行，从而更轻松深刻的学会编程。</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;&nbsp;&nbsp;&nbsp;计算机由运算器、控制器、存储器、输入设备和输出设备五部分组成。[冯&bull;诺依曼]采用存储程序的方式，程序和数据放在同一个存储器中，指令和数据一样可以送到运算器运算，即由指令组成的程序是可以修改的。数据以二进制代码表示。指令由操作码和地址码组成。指令在存储器中按执行顺序存放，由指令计数器指明要执行的指令所在的单元地址，一般按顺序递增，但可按运算结果或外界条件而改变。机器以运算器为中心，输入输出设备与存储器间的数据传送都通过运算器。</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">计算机概述</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">计算机的基本组成:</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">存储器:　　　　　实现记忆功能的部件用来存放计算程序及参与运算的各种数据</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算器:　　　　　负责数据的算术运算和逻辑运算即数据的加工处理</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">控制器:　　　　　负责对程序规定的控制信息进行分析,控制并协调输入,输出操作或内存访问</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">输入设备:　　　　实现计算程序和原始数据的输入</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">输出设备:　　　　实现计算结果输出</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;&nbsp;&nbsp;各部分之间的联系图（图1-1）</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img alt="" src="/u/cms/www/201510/131404112ix2.png" style="width: 475px; height: 250px" /></span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图1-1</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主板上的个结构图（图1-2）</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img src="/u/cms/www/201510/131440246b8n.png" style="width: 396px; height: 322px" /></span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图1-2</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">计算机的工作过程:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">用户打开程序</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">系统把程序代码段和数据段送入计算机的内存</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">控制器从存储器中取指令</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">控制器分析,执行指令,为取下一条指令做准备</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">取下一条指令,分析执行,如此重复操作,直至执行完程序中全部指令,便可获得全部指令</span></li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;<img src="/u/cms/www/201510/13144048vyzp.png" style="width: 512px; height: 158px" /></span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">冯&middot;诺依曼机制:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">程序存储</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">采用2进制</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">计算机系统的体系结构:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">图一:<br />
+		<img src="/u/cms/www/201510/13144154zeqx.png" style="width: 523px; height: 479px" /></span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">图二<br />
+		<img src="/u/cms/www/201510/13144258smeq.png" style="width: 262px; height: 271px" /></span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<h2>
+	<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">数据概述</span></h2>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">数据信息的两种基本方法:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">按值表示:　　要求在选定的进位制中正确表示出数值，包括数字符号，小数点正负号</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">按形表示:　　按一定的编码方法表示数据</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">信息的存储单位:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;1KB=2^10B=1024Byte</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;1MB=2^20B=1024KB</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;1GB=2^30B=1o24MB</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;1TB=2^40B=1024GB</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">浮点表示法:</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">公式:　　N=2^(+-e)*(+-s)</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img src="/u/cms/www/201510/131443312x7u.png" style="width: 526px; height: 131px" /></span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">说明:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">E为阶码　　它是一个二进制正整数</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">阶符（Ef）　　E前的+&mdash;为阶码的符号</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">S称为尾数它是一个二进制正小数</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">尾符（Sf）　　S前的+&mdash;为尾数的符号</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&ldquo;2&rdquo;是阶码E的底线</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">R进制表示法:</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">计算机中常用的进制数的表示:</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">进位制　　　　二进制　　　　八进制　　　　十进制　　　　十六进制　　</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">规则　　　　&nbsp;　&nbsp;逢二进一　　　&nbsp;逢八进一　　&nbsp;&nbsp;&nbsp;&nbsp;逢十进一　　&nbsp;&nbsp;&nbsp;&nbsp;逢十六进一<br />
+	基数　　　　&nbsp;&nbsp;　R=2　　　　　&nbsp;R=8　　　　　&nbsp;R=10　　　　&nbsp;R=16<br />
+	数码　　　　　&nbsp;&nbsp;0、1　　　　&nbsp;&nbsp;&nbsp;0&hellip;7　　　　　&nbsp;0&hellip;9　　　　&nbsp;　0&hellip;F<br />
+	权　　　　　&nbsp;　&nbsp;2^i　　　　　&nbsp;&nbsp;8^i　　　　　&nbsp;&nbsp;10^i　　　　&nbsp;&nbsp;&nbsp;16^i<br />
+	形式表示　　　&nbsp;&nbsp;B　　　　　　&nbsp;&nbsp;Q　　　　　　&nbsp;&nbsp;D　　　　&nbsp;&nbsp;&nbsp;　&nbsp;H</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">不同进制之间的转化:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">十进制与R进制转换:<br />
+		　　十进制转R进制:<br />
+		　　　　整数的转化:　　　　&ldquo;采用除R取余法&rdquo;，从最后一次除得余数读取.<br />
+		　　　　小数部分的转化:　　&ldquo;采用乘R取整数&rdquo;将所得小数从第一次乘得整数读起，就是这个十进制小数所对应的R进制小数<br />
+		　　R进制转十进制:<br />
+		　　　　使用权相加，即将各位进制数码与它对应的权相乘，其积相加，和数即为该R进制数相对应的十进制数</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">二进制，八进制，十六进制转化: </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;（二进制&nbsp;八进制）&ldquo;三位并一位&rdquo;</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">（八进制&nbsp;二进制）&ldquo;一位拆三位&rdquo;</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">（二进制&nbsp;十六进制）&ldquo;四位并一位&rdquo;</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">（十六进制&nbsp;二进制）&ldquo;一位拆四位&rdquo;</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">（十六进制&nbsp;八进制）&ldquo;一位拆两位&rdquo;</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">（八进制&nbsp;十六进制）&ldquo;二位并一位&rdquo;</span></li>
+		</ul>
+	</li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">原码,反码,补码,BCD码:</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">二进制的原码,反码及补码:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">真值:　　一个数的正号用&ldquo;+&rdquo;表示,负号用&ldquo;&mdash;&rdquo;表示,即为该数真值</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">机器数:　　以0表示整数的符号,用1表示负数的符号,并且每一位数值也用0,1表示,这样的数叫机器数也叫机器码</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">原码:　　数的原码表示在机器中用符号位的0和1表示数的正负号,而其余表示其数本身</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">反码: </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">对于正数其反码与原码相同</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">对于负数其反码与原码的符号位不变数值各位取反即0变1,1变0</span></li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">补码: </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">对于正数其补码与原码相同</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">对于负数补码与原码的符号位不变,数值各位取反,末尾加1</span></li>
+		</ul>
+	</li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">原码,反码,补码之间的关系:</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img src="/u/cms/www/201510/13144354i8ju.png" style="width: 407px; height: 220px" /></span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">BCD码:</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">(二&rarr;十进制)&nbsp;用思维二进制代码对一位十进制数进行编码<br />
+	例：(931)10=(1001&nbsp;0011&nbsp;0001)2</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">BCD奇偶校验码:</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">十进制　　　　　　BCD码　　　　　　奇校验码　　　　　　偶校验码　　　　<br />
+	0　　　　　　　　　0000　　　　　　　00001　　　　　　&nbsp;　00000<br />
+	1　　　　　　　　　0001　　　　　　　00010　　　　　　　&nbsp;00011<br />
+	2　　　　　　　　　0010　　　　　　　00100　　　　　　　&nbsp;00101<br />
+	3　　　　　　　　　0011　　　　　　　00111　　　　　　　&nbsp;00110<br />
+	4　　　　　　　　　0100　　　　　　　01000　　　　　　　&nbsp;01001&nbsp;</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">二进制四则运算:</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算规则:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">加法规则:　　0+0=0;　　0+1=1+0=1&nbsp;1+1=1</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">减法规则:　　0-0=0;　　1-0=1;　　1-1=0;　　0-1=1</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">乘法规则:　　0*0=0;　　0*1=1*0=0;　　1*1=1</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">除法规则:　　0∕1=0;　　1∕1=1</span></li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算公式:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">【X】补+【Y】补=【X+Y】补</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">【X-Y】补=【X+(-Y)】补=【X】补+【-Y】补</span></li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">逻辑运算:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">定义:　　实现了逻辑变量之间的运算</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分类: </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">逻辑加法&nbsp;(&lsquo;或&rsquo;运算)</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">逻辑乘法&nbsp;(&lsquo;与&rsquo;运算)</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">逻辑否定&nbsp;(&lsquo;非&rsquo;运算)</span></li>
+		</ul>
+	</li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">逻辑运算:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&lsquo;或&rsquo;: </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算规则:　　0&cup;0=0;　　0&cup;1=1;　　1&cup;0=1;　　1&cup;1=1【1&mdash;真,0&mdash;假】</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算式:　　C=A&cup;B&nbsp;或&nbsp;C=A+B(只有决定某一事件条件中有一个或一个以上成立,这事件才能发生)</span></li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&lsquo;与&rsquo;: </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算规则:　　0&cap;0=0;　　0&cap;1=0;　　&nbsp;1&cap;0=0;　　&nbsp;1&cap;1=1</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算式:　　C=A&cap;B&nbsp;或&nbsp;C=A－B&nbsp;或C=A*B(只有决定某一事件的所有事件全部具备,这事才能发生)</span></li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&lsquo;非&rsquo;: </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算规则:　　ō&nbsp;=&nbsp;1;　　ī&nbsp;=&nbsp;0</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算式:　　C=A(当决定某一事件的条件满足时,事件不发生,反之事件发生)</span></li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&lsquo;异或&rsquo;: </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算规则:　　0异或0=0;　　0异或1=1;　　1异或0=1;　　1异或1=0</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算式:　　C=A异或B【相同为0,不同为1】</span></li>
+		</ul>
+	</li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">逻辑代数常用公式</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">0-1律:　　　&nbsp;&nbsp;&nbsp;&nbsp;　A+0=A;　　A*0=0</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">重叠律:　　　　&nbsp;&nbsp;&nbsp;A+1=1;　　A*1=A;　　A+A=1;　　A*A=A</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">互补律:　　　　&nbsp;&nbsp;&nbsp;A*(!A)=0;　　A+(!A)=1</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">又拾律:　　　&nbsp;&nbsp;&nbsp;　!(!A)=A</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">交换律:　　　　&nbsp;&nbsp;&nbsp;A+B=B+A;　　A*B=B*A</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">结合律:　　　&nbsp;&nbsp;&nbsp;　A+(B+C)=(A+B)+C;　　A*(B*C)=(A*B)*C</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分配率:　　　　&nbsp;&nbsp;&nbsp;A*(B+C)=A*B+A*C;　　A+(B*C)=(A+B)*(A+C)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">摩尔定律:　　　　!(A+B)=(!A)*(!B);　　!(A*B)=(!A)+(!B)</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<h2>
+	<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">总线</span></h2>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">定义:　　连接计算机各部件之间或各计算机直接的一束公共信息线,它是计算机中传送信息代码的公共途径</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">特点:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">同一组总线在同一时刻只能接受一个发送源,否则会发生冲突</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">信息的发送则可同时发送给一个或多个目的地</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分类:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">传送分类 </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">串行总线　　二进制各位在一条线上是一位一位传送的</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">并行总线　　一次能同时传送多个二进制位数的总线</span></li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">信息分类 </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">数据总线　　在中央处理器与内存或I/0设备之间传送数据</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">地址总线　　用来传送单元或I/O设备接口信息</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">控制总线　　负责在中央处理器或内存或外设之间传送信息</span></li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">对象位置分类 </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">片内总线　　指计算机各芯片内部传送信息的通道<i^2c总线,spl总线,sci总线></i^2c总线,spl总线,sci总线></span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">外部总线　　微机和外部设备之间总线用了插件板一级互连<isa总线,eisa总线,pci总线></isa总线,eisa总线,pci总线></span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">系统总线　　微机中各插件与系统板<usb总线,ieee-488总线,rs-485总线,rs-232-c总线></usb总线,ieee-488总线,rs-485总线,rs-232-c总线></span></li>
+		</ul>
+	</li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">总线标准依据:　　物理尺寸,引线数组,信号含义,功能和时序,工作频率,总线协议</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<h2>
+	<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">中央处理器</span></h2>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">运算器组成:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">算术逻辑单元(ALU)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">通用寄存器组(R1&nbsp;~Rn)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">多路选择器(Mn)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">标志寄存器(FR)</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">控制器组成:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">时标发生器(TGU)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">主脉冲振荡器(MF)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">地址形成器(AGU)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">程序计数器(PC)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">指令寄存器(IR)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">指令译码器(ID)</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">总线:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">数据总线(DBUS)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">地址总线(ABUS)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">控制总线(CBUS)</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">CPU运行原理图:</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img src="/u/cms/www/201510/131444468f47.png" style="width: 552px; height: 318px" /></span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">CPU主要性能指标:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">主频:CPU内部工作的时钟频率,是CPU运算时工作频率</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">外频:主板上提供一个基准节拍供各部件使用,主板提供的节拍成为外频</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">信频:CPU作频率以外频的若干倍工作,CPU主频是外频的倍数成为CPU的信频,这CPU工作频率=信频*外频</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">基本字长:CPU一次处理的二进制数的位数</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">地址总线宽度:地址总线宽度(地址总线的位数)决定了CPU可以访问的存储器的容量,不同型号的CPU总线宽度不同,因而使用的内存的最大容量也不一样</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">数据总线宽度:数据总线宽度决定了CPU与内存输入∕输出设备之间一次数据传输的信息量</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<h2>
+	<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">存储器</span></h2>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">定义:　　计算机存储是存放数据和程序的设备</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分类:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">主存储器:　　也称内存,存储直接与CPU交换信息,由半导体存储器组成</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">辅助存储器:　　也称外存,存放当前不立即使用的信息,它与主存储器批量交换信息,由磁带机,磁带盘及光盘组成</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">存储层次:</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img src="/u/cms/www/201510/13144514fsh1.png" style="width: 542px; height: 282px" /></span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">内存与外存的比较:</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">　　　　　　主存　　　　　　　　　&nbsp;　&nbsp;&nbsp;　&nbsp;&nbsp;辅存　　　　　　　　　　　　&nbsp;&nbsp;</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">类型　　　　ROM　　　　RAM　　&nbsp;　　&nbsp;&nbsp;　&nbsp;软盘　　　&nbsp;&nbsp;&nbsp;硬盘　　　&nbsp;&nbsp;光盘　　</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">造价　　　　高　　　　&nbsp;&nbsp;&nbsp;&nbsp;高　　　　　　　&nbsp;&nbsp;低++　　　&nbsp;低　　　　　低+</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">速度　　　　快　　　　　&nbsp;快　　　　　　　&nbsp;&nbsp;慢++　　　&nbsp;慢　　　　&nbsp;&nbsp;&nbsp;慢+</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">容量　　　&nbsp;&nbsp;小+　　　　&nbsp;&nbsp;小　　　　　　　&nbsp;&nbsp;&nbsp;&mdash;　　　　　&mdash;　　　　　&nbsp;&mdash;</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">断电　　　&nbsp;&nbsp;有　　　　　&nbsp;无　　　　　　　&nbsp;&nbsp;&nbsp;有　　　　　有　　　　　有</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">主存:</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">功能:</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">主存储器是能由CPU直接编写程序访问的存储器,它存放需要执行的程序与需要处理的数据,只能临时存放数据,不能长久保存数据</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">组成:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">存储体(MPS):　　由存储单元组成（每个单元包含若干个储存元件,每个元件可存一位二进制数）且每个单元有一个编号,称为存储单元地址（地址）,通常一个存储单元由8个存储元件组成</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">地址寄存器(MAR):　　由若干个触发器组成,用来存放访问寄存器的地址,且地址寄存器长度与寄存器容量相匹配（即容量为1K,长度无2^10=1K）</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">地址译码器和驱动器</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">数据寄存器(MDR):　　数据寄存器由若干个触发器组成,用来存放存储单元中读出的数据,或暂时存放从数据总线来的即将写入存储单元的数据【数据存储器的宽度（w）应与存储单元长度相匹配】</span></li>
+</ul>
+<p><br />
+	<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">　　　　<img src="/u/cms/www/201510/13144538udcb.png" style="width: 424px; height: 226px" /></span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">主要技术指标:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">存储容量:　　一般指存储体所包含的存储单元数量（N）</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">存取时间(TA):　　指存储器从接受命令到读出∕写入数据并稳定在数据寄存器（MDP）输出端</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">存储周期(TMC):　　两次独立的存取操作之间所需的最短时间,通常TMC比TA长</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">存取速率:　　单位时间内主存与外部（如CPU）之间交换信息的总位数</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">可靠性:　　用平均故障间隔时间MTBF来描述,即两次故障之间的平均时间间隔</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">高速缓冲存储器:</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">定义:　　高速缓冲存储器是由存取速率较快的电路组成小容量存储单元,即在内存的基础上,再增加一层称为高速缓冲存储器</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">特点:　　比主存快5&nbsp;~10倍</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">虚拟存储器:　　它是建立在主存-辅存物理结构基础之上,由附加硬件装置及操作系统存储管理软件组成的一种存储体系,它将主存与辅存的地址空间统一编址,形成一个庞大的存储空间,因为实&ldquo;际上CPU只能执行调入主存的程序,所以这样的存储体系成为&ldquo;虚拟存储器&rdquo;</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">ROM与RAM</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">RAM(随机存储器)</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">可读出,也可写入,随机存取,意味着存取任一单元所需的时间相同,当断电后,存储内容立即消失,称为易失性</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">ROM(只读存储器)</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">定义:　　ROM一旦有了信息,不易改变,结构简单,所以密度比可读写存储器高,具有易失性</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分类: </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">固定掩模型ROM（不能再修改）</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">PROM可编程之读存储器（由用户写入,但只允许编程一次）</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">EPROM可擦除可编程只读存储器(可用紫外线照射擦除里面内容)</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">E2PROM电擦除可编程只读存储器（由电便可擦除里面内容）</span></li>
+		</ul>
+	</li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">辅存(硬盘)</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">说明:　　是以铝合金圆盘为基片,上下两面涂有磁性材料而制成的磁盘</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">优点:　　体积小,重量轻,防尘性好,可靠性高,存储量大,存取速度快,但多数它们固定于主机箱内,故不便携带,价格也高于软盘</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">性能指标:　　转速,超频性能,缓存,单碟容量,传输模式,发热量,容量,平均等待时间</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">硬盘组成图:</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img src="/u/cms/www/201510/131446063lyn.png" style="width: 341px; height: 509px" />&nbsp;&nbsp;<img src="/u/cms/www/201510/131452048ruq.png" style="width: 219px; height: 192px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p style="margin-left: 22.5pt">&nbsp;</p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img alt="" src="/u/cms/www/201510/13145305tbz7.png" style="width: 539px; height: 405px" /></span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">注意:</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">在整颗磁碟的第一个磁区特别的重要,因为他记录了整颗磁碟的重要资讯！&nbsp;磁碟的第一个磁区主要记录了两个重要的资讯,分别是：</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">主要启动记录区(Master&nbsp;Boot&nbsp;Record,&nbsp;MBR)：可以安装启动管理程序的地方,有446&nbsp;bytes<br />
+		<mbr是很重要的,因为当系统在启动的时候会主动去读取这个区块的内容,这样系统才会知道你的程序放在哪里且该如何进行启动></mbr是很重要的,因为当系统在启动的时候会主动去读取这个区块的内容,这样系统才会知道你的程序放在哪里且该如何进行启动></span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分割表(partition&nbsp;table)：记录整颗硬盘分割的状态,有64&nbsp;bytes</span></li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">磁盘分区表(partition&nbsp;table):</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">利用参考对照磁柱号码的方式来切割硬盘分区！&nbsp;在分割表所在的64&nbsp;bytes容量中,总共分为四组记录区,每组记录区记录了该区段的启始与结束的磁柱号码.&nbsp;若将硬盘以长条形来看,然后将磁柱以直条图来看,那么那64&nbsp;bytes的记录区段有点像底下的图示：</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img alt="" src="/u/cms/www/201510/131454057nej.png" style="width: 473px; height: 344px" /></span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">上图中我们假设硬盘只有400个磁柱,共分割成为四个分割槽,第四个分割槽所在为第301到400号磁柱的范围.</span></p>
+<p style="margin-left: 45pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">由於分割表就只有64&nbsp;bytes而已,最多只能容纳四笔分割的记录,&nbsp;这四个分割的记录被称为主要(Primary)或延伸(Extended)分割槽.&nbsp;根据上面的图示与说明,我们可以得到几个重点资讯：</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">其实所谓的『分割』只是针对那个64&nbsp;bytes的分割表进行配置而已！</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">硬盘默认的分割表仅能写入四组分割资讯&lt;主要分割与扩展分配最多可以有四条(硬盘的限制)&gt;</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">这四组分割资讯我们称为主要(Primary)或延伸(Extended)分割槽</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">扩展分配最多只能有一个(操作系统的限制)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">逻辑分割是由扩展分配持续切割出来的分割槽,如果扩展分配被破坏,所有逻辑分割将会被删除</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">能够被格式化后,作为数据存取的分割槽为主要分割与逻辑分割.扩展分配无法格式化</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分割槽的最小单位为磁柱(cylinder)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">逻辑分割的数量依操作系统而不同,在Linux系统中,IDE硬盘最多有59个逻辑分割(5号到63号),&nbsp;SATA硬盘则有11个逻辑分割(5号到15号)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">当系统要写入磁碟时,一定会参考磁盘分区表,才能针对某个分割槽进行数据的处理</span></li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">总结:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">扇区(Sector)为最小的物理储存单位，每个扇区为&nbsp;512&nbsp;bytes；</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">将扇区组成一个圆，那就是磁柱(Cylinder)，磁柱是分割槽(partition)的最小单位；</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">第一个扇区最重要，里面有：(1)主要启动区(Master&nbsp;boot&nbsp;record,&nbsp;MBR)及分割表(partition&nbsp;table)，&nbsp;其中&nbsp;MBR&nbsp;占有&nbsp;446&nbsp;bytes，而&nbsp;partition&nbsp;table&nbsp;则占有&nbsp;64&nbsp;bytes。</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<h2>
+	<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">输入/输出设备</span></h2>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">输入设备</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分类:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">字符:　　键盘</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">图形:　　鼠标器&nbsp;,&nbsp;操纵杆&nbsp;,&nbsp;光笔</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">模拟:　　语音&nbsp;,&nbsp;模数转化</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">图像:　　摄影机&nbsp;,&nbsp;扫描仪&nbsp;,&nbsp;传真机</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">光学阅读:　　光学标记阅读机&nbsp;,&nbsp;光学字符阅读机</span></li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">键盘分类(以接口类型):</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;PS∕2接口的</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">USB接口的</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">无线的</span></li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">鼠标分类:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;PS∕2接口&nbsp;,&nbsp;USB接口&nbsp;(&nbsp;以接口类型&nbsp;)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">机械式鼠标&nbsp;,&nbsp;光电式鼠标&nbsp;(&nbsp;以内部构造&nbsp;)</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">两键鼠标&nbsp;,&nbsp;三键鼠标&nbsp;(&nbsp;以按键数&nbsp;)</span></li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">语音输入设备:&nbsp;主要部分:　　输入器&nbsp;,&nbsp;模数转换器&nbsp;,&nbsp;语音识别器</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">输出设备</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">打印机:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分类: </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">击打式打印机 </span>
+				<ul>
+					<li>
+						<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">原理:　　利用机械动作打击&lsquo;字体&rsquo;使色带和打印纸相撞</span></li>
+					<li>
+						<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分类:　　活字式打印&nbsp;,&nbsp;点阵式打印</span></li>
+					<li>
+						<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">特点:　　结构简单，价格便宜</span></li>
+				</ul>
+			</li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">非击打式打印机 </span>
+				<ul>
+					<li>
+						<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">原理:　　用各种物理或化学的方法印刷字符</span></li>
+					<li>
+						<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分类:　　激光打印机&nbsp;,&nbsp;喷墨式打印</span></li>
+					<li>
+						<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">特点:　　速度快，质量高，无噪声，但价格高</span></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">主要性能指标:　　分辨率&nbsp;,&nbsp;接口类型&nbsp;,&nbsp;打印速度</span></li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">显示器:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">显示器分辨率:　　屏幕上光栅的行数和列数</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">分类:　　阴极射线管显示器;&nbsp;&nbsp;液晶显示器;&nbsp;&nbsp;等离子显示器</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">主要技术指标:　　像素&nbsp;,&nbsp;分辨率&nbsp;,&nbsp;屏幕尺寸&nbsp;,&nbsp;刷新频率&nbsp;,&nbsp;点距&nbsp;,&nbsp;像素色彩</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">输入输出设备接口和控制方式</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">输入输出设备接口:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">数据传送:　　串行口;&nbsp;&nbsp;并行口;&nbsp;&nbsp;程序型接口;&nbsp;&nbsp;DMA型接口</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">通用性:　　通用接口;&nbsp;&nbsp;&nbsp;专用接口</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">功能选择:　　可编程接口;&nbsp;&nbsp;不可编程接口</span></li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">输入输出控制方式:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">程序查询方式&nbsp;:</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img alt="" src="/u/cms/www/201510/13145512iuf4.png" style="width: 411px; height: 222px" /></span></li>
+	<br />
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">中断控制方式:</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img alt="" src="/u/cms/www/201510/1314553330qd.png" style="width: 402px; height: 302px" /></span></li>
+	<br />
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">直接存储器存取方式</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">输入输出处理机方式</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<h2>
+	<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">计算机的时标系统</span></h2>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">时序控制方式:</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">同步控制方式:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">定义&nbsp;将操作时间划分为许多时钟周期,周期长度固定,每个时间周期完成一步操作,各页操作应在规定时钟周期内完成</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">优缺点 </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">优点：时序关系比较简单,控制部件在结构上易于集中,设计方便</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">缺点：在时间安排利用上不经济</span></li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">在同步控制方式中,都有统一的时钟信号,各种微操作都是在这一时钟信息的同步下完成的,称这一时钟信号为计算机主频,其周期称为时钟周期,称完成一个基本操作所需要的时间为机器周期</span></li>
+</ul>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">异步控制方式:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">定义&nbsp;各项操作按其需要选择不同的时间,不受统一时钟周期的约束,各步操作间的衔接与各部件之间信息交换,采取应答的方式</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">优缺点: </span>
+		<ul style="list-style-type: circle">
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">优点：时间紧凑,能按不同部件,设备实际需求分配时间</span></li>
+			<li>
+				<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">缺点：是实际异步应答所需控制比较复杂</span></li>
+		</ul>
+	</li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">三级时标系统:</span></p>
+<ul>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">指令周期</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">机器周期</span></li>
+	<li>
+		<span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">时钟周期</span></li>
+</ul>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">图像显示:</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px"><img src="/u/cms/www/201510/13145612tyg8.jpg" style="width: 486px; height: 205px" /></span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">指令周期公式:</span></p>
+<p style="margin-left: 22.5pt"><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">指令周期&nbsp;=&nbsp;时钟周期*组成一个机械周期所需T的个数*组成一个指令周期所需M个数</span></p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><span style="text-transform: none; background-color: rgb(255,255,255); text-indent: 0px; display: inline !important; font: 14px/24px arial, 宋体, sans-serif, tahoma, 'Microsoft YaHei'; white-space: normal; float: none; letter-spacing: normal; color: rgb(69,69,69); word-spacing: 0px; -webkit-text-stroke-width: 0px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 版权所有&nbsp;&nbsp; </span></p>
+<p>&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/yingjianyuweihu/20151013/648.html">windows7激活工具</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/yingjianyuweihu/20151009/637.html">电脑USB快速充电软件</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

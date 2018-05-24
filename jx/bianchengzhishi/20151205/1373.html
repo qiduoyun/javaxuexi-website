@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>数据库DataSet对象 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1373","0","attach");
+		Cms.viewCount("","1373");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151205/1373.html" title="数据库DataSet对象">数据库DataSet对象</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-05 15:51:04</span>
+     </h3>
+     <h2>
+	<span style="color:#000080;">数据库DataSet对象</span></h2>
+<p><span style="color:#000080;">DataSet对象从数据库中取出感兴趣的数据，包括指定表和表中满足条件的记录，DataSet对象被建立在内存中，可以包含若干表，可以认为是数据库在内存中的一个子集。DataSet对象只在获取或更新数据时保持和数据库连接，其它时间都是断开的。</span></p>
+<h3>
+	<span style="color:#000080;">1&nbsp;使用DataSet的优点</span></h3>
+<p><span style="color:#000080;">在传统的数据库应用程序中，必须建立与数据库的连接，并在数据库应用程序运行过程中保持连接状态。出于各种原因，该方法在许多数据库应用程序中是不实用的。</span></p>
+<ul>
+	<li>
+		<span style="color:#000080;">一般情况下，数据库只可以维持少量的并发连接。维持过多并发连接将降低数据库的总体性能，增加数据库应用程序的访问时间。保持四个用户连接的执行也许还可以接受，但连接100个用户时可能就不行了。同时访问Web数据库的访问者可能非常多，例如大型网上商店，所有访问都保持连接是不现实的。</span></li>
+	<li>
+		<span style="color:#000080;">在Web应用程序中，浏览器从服务器请求网页，服务器发送该页后，服务器就不再与浏览器有任何连接，直到下一次请求为止。在这种情况下，维持打开的数据库连接是不可行的，因为没有办法知道数据使用者（客户端）是否还将对数据库访问。</span></li>
+	<li>
+		<span style="color:#000080;">如果数据库应用程序的多个控件需对数据库数据操作，则多个控件都必须和数据库建立连接，或者为这些控件设计一种方式以相互传递数据。这使问题变得复杂。</span></li>
+</ul>
+<p><span style="color:#000080;">出于以上这些原因，ADO.NET数据库访问被设计为以不连接的数据模型为基础，应用程序只在获取或更新数据时保持连接，其它时间都是断开的。由于数据库并未被大部分时间空闲的连接占用，所以它可以为更多用户服务。</span></p>
+<h3>
+	<span style="color:#000080;">2&nbsp;数据集DataSet概念</span></h3>
+<p><span style="color:#000080;">在不连接的数据模型中，每次数据库应用程序需要处理下一条记录时都连接回数据库是不可行的，这样做会大大消除使用不连接数据的优越性。解决方案是临时存储从数据库检索的记录，然后使用该临时集。这便是数据集的概念。数据集DataSet是从数据库检索的记录的缓存。数据集DataSet中包含一个或多个表（这些表基于源数据库中的表），并且还可以包含有关这些表之间的关系，以及对表包含数据的约束信息。数据集DataSet的数据通常是源数据库内容的子集，可以用与操作实际数据库十分类似的方式操作数据集DataSet，但操作时，将保持与源数据库的不连接状态，使数据库可以自由执行其他任务。</span></p>
+<p><span style="color:#000080;">因为数据集DataSet是数据库数据的私有子集，所以它不一定反映源数据库的当前状态，因此，需要经常更新数据集DataSet中的数据。可以修改数据集DataSet中的数据，然后把这些修改写回到源数据库。为了从源数据库获取数据和将修改写回源数据库，请使用数据适配器DataAdapter对象。数据适配器DataAdapter对象包含更新数据集DataSet和将修改写回源数据库的方法。DataAdapter.Fill()方法执行更新数据集DataSet操作。DataAdapter.Update()方法执行将修改写回源数据库操作。</span></p>
+<p><span style="color:#000080;">尽管数据集是作为从数据库获取的数据的缓存，但数据集与数据库之间没有任何实际关系。数据集是容器，它用数据适配器的SQL命令或存储过程填充。</span></p>
+<h3>
+	<span style="color:#000080;">3&nbsp;使用DataSet对象</span></h3>
+<p><span style="color:#000080;">使用DataSet对象例子如下：</span></p>
+<p><span style="color:#000080;">string&nbsp;txtConn=</span></p>
+<p><span style="color:#000080;">&quot;Provider=Microsoft.Jet.OLEDB.4.0;Data&nbsp;Source=D:\\VC#\\studentI.mdb&quot;;</span></p>
+<p><span style="color:#000080;">OleDbConnection&nbsp;conn=new&nbsp;OleDbConnection(txtConn);//建立连接</span></p>
+<p><span style="color:#000080;">string&nbsp;txtCommand=&quot;SELECT&nbsp;*&nbsp;FROM&nbsp;student&quot;;//将表student所有记录从数据库取出</span></p>
+<p><span style="color:#000080;">OleDbDataAdapter&nbsp;da=new&nbsp;OleDbDataAdapter(txtCommand,conn);</span></p>
+<p><span style="color:#000080;">DataSet&nbsp;MyDataSet=new&nbsp;DataSet();//建立DataSet对象MyDataSet</span></p>
+<p><span style="color:#000080;">da.Fill(MyDataSet,&quot;MyTable&quot;);//将数据填充到数据集MyDataSet中，新表名为：MyTable</span></p>
+<p><span style="color:#000080;">下例说明了DataSet的使用方法：</span></p>
+<ul>
+	<li>
+		<span style="color:#000080;">添加记录</span></li>
+</ul>
+<p><span style="color:#000080;">DataRow&nbsp;dr=MyDataSet.Tables[&quot;Student&quot;].NewRow();</span></p>
+<p><span style="color:#000080;">dr[&quot;StudentNum&quot;]=4;</span></p>
+<p><span style="color:#000080;">dr[&quot;StudentName&quot;]=&quot;鲁豫&quot;;</span></p>
+<p><span style="color:#000080;">dr[&quot;StudentSex&quot;]=&quot;女&quot;</span></p>
+<ul>
+	<li>
+		<span style="color:#000080;">修改Student表中第0个记录的&quot;StudentName&quot;字段的值为&quot;田歌&quot;</span></li>
+</ul>
+<p><span style="color:#000080;">MyDataSet.Tables[&quot;Student&quot;].Rows.[0][&quot;StudentName&quot;]=&quot;田歌&quot;;</span></p>
+<ul>
+	<li>
+		<span style="color:#000080;">删除Student表中第0个记录</span></li>
+</ul>
+<p><span style="color:#000080;">MyDataSet.Tables[&quot;Student&quot;].Rows.[0].Delete();</span></p>
+<ul>
+	<li>
+		<span style="color:#000080;">恢复数据</span></li>
+</ul>
+<p><span style="color:#000080;">if(MyDataSet.HasErros)</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#000080;">MyDataSet.RejectChanges();</span></p>
+<ul>
+	<li>
+		<span style="color:#000080;">检查DataSet是否有改动</span></li>
+</ul>
+<p><span style="color:#000080;">if(MyDataSet.HasChanges())</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#000080;">da.Update(MyDataSet);//更新数据库</span></p>
+<h3>
+	<span style="color:#000080;">4&nbsp;为DataSet对象中的表指定主键、建立关系</span></h3>
+<p><span style="color:#000080;">为DataSet对象中的表指定主键、建立关系，可以保证数据的完整性，例如，主键取值不能重复，不能删除主表中的数据(例如某个学生)，而不删除另一个表中和其有关的数据(例如另一个表中的学生成绩)等等。</span></p>
+<ul>
+	<li>
+		<span style="color:#000080;">设置表的主键：</span></li>
+</ul>
+<p><span style="color:#000080;">DataColumn[]&nbsp;pKey=new&nbsp;DataColumn[1];</span></p>
+<p style="margin-left:10.5000pt;"><span style="color:#000080;">pKey[0]=MyDataSet.Tables[&quot;Student&quot;].Columns[&quot;StudentNum&quot;];</span></p>
+<p style="margin-left:10.5000pt;"><span style="color:#000080;">MyDataSet.Tables[&quot;Student&quot;].PrimaryKey=pKey;</span></p>
+<ul>
+	<li>
+		<span style="color:#000080;">建立两个表的联系：</span></li>
+</ul>
+<p style="margin-left:14.2000pt;"><span style="color:#000080;">MyDataSet.Relations.Add(&quot;StudentNum&quot;,</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#000080;">MyDataSet.Tables[&quot;Student&quot;].Columns[&quot;StudentNum&quot;],</span></p>
+<p style="margin-left:63.0000pt;"><span style="color:#000080;">MyDataSet.Tables[&quot;Score&quot;].Columns[&quot;StudentNum&quot;]);</span></p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151205/1374.html">如何用DataGraid控件显示数据和数据绑定</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151205/1372.html">数据库DataAdapter对象</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

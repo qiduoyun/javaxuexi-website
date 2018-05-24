@@ -1,0 +1,1167 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>Java 编码标准 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","692","0","attach");
+		Cms.viewCount("","692");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151015/692.html" title="Java 编码标准">Java 编码标准</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-10-15 22:00:34</span>
+     </h3>
+     <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Java&nbsp;编码标准</p>
+<p>&nbsp;</p>
+<p>(C)&nbsp;Copyright&nbsp;2006-20010&nbsp;江苏省*******科技有限公司</p>
+<p>Author:Bruce</p>
+<p>Create&nbsp;Date:9/22/2006</p>
+<p>Version:1.0.0beta</p>
+<p style="margin-left: 21pt">Last&nbsp;modified&nbsp;date:2/1/2009</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin-left: 84pt"><img height="157" src="file:///C:/Users/dgsy/AppData/Local/Temp/ksohtml/wpsDD5F.tmp.png" width="325" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>1.方针</p>
+<p>此编码标准是在软件开发,&nbsp;提供用java&nbsp;编码时的规则，推荐，以及困惑时的查询。</p>
+<p>&nbsp;</p>
+<p>标准制定的方针是写容易读,容易维护的代码．在实际的编码中，需要项目组成员全体遵守此规则．</p>
+<p>&nbsp;</p>
+<p>2.&nbsp;文件构成</p>
+<ol>
+	<li>
+		文件名</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>public&nbsp;类要当作其类名的1个文件．</p>
+<p>&nbsp;</p>
+<p>例:&nbsp;public&nbsp;class&nbsp;Point&nbsp;要放到Point.java&nbsp;中．</p>
+<p>&nbsp;</p>
+<p>软件包内的非Public类包含在其类被主要使用的Public类的文件中为好(此时,要注意*.java&nbsp;和*.class&nbsp;不对应)．</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="2">
+		文件的位置</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>决定Project的根目录，将软件包名的&ldquo;.&rdquo;放入置换到目录阶层的位置中．</p>
+<p>&nbsp;</p>
+<p>例:&nbsp;myProject.framework&nbsp;软件包配置在&lt;ProjectRoot&gt;/myProject/framework&nbsp;目录中．</p>
+<p>&nbsp;</p>
+<p style="margin-left: 31.5pt">例:&nbsp;com.netmarch.dto软件包配置在&lt;ProjectRoot&gt;/com/netmarch/dto&nbsp;目录中</p>
+<ol>
+	<li value="3">
+		测试类名</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>类ClassName&nbsp;的综合测试类名为ClassNameTest&nbsp;．每个软件包测试为LastPackageNameTest&nbsp;．</p>
+<p>&nbsp;</p>
+<p>例:&nbsp;Point2D&nbsp;类的话，作成Point2DTest.java&nbsp;．</p>
+<p>&nbsp;</p>
+<p>例:&nbsp;com.netmarch.extremedomo软件包的话，作成ExtremeDomoTest.java&nbsp;．</p>
+<p>&nbsp;</p>
+<p>理由:&nbsp;起一个有一贯性的名字．测试代码为使用方法的样品.</p>
+<p>其他方法:&nbsp;将ClassName&nbsp;的综合测试类名作为ClassNameUt&nbsp;(Ut&nbsp;为UnitTest之略)</p>
+<ol>
+	<li value="4">
+		测试类的位置</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>测试类配置在和被测试类相同目录，或者其副目录&ldquo;test&rdquo;&nbsp;中．</p>
+<p>理由:&nbsp;如果不是在物理上相近的位置的话,维护会被忘记．关于和产品代码的分离，可以用其他的工具(makefile,&nbsp;Ant&nbsp;的build.xml&nbsp;等)调整．</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>3.&nbsp;命名规则</p>
+<ol>
+	<li value="5">
+		软件包名</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>用&ldquo;.&rdquo;&nbsp;隔开的文字．</p>
+<p>com.netmarch.domainname.projectname</p>
+<p>junit.framework</p>
+<p>建议在实际的项目中，包的命名由项目经理和开发组长来制定，在整个项目中使用统一的包名及类名。结合本公司的实际，制定一个参考如下(都位于&lt;projectroot&gt;/src目录下)：</p>
+<p>com.netmarch.domain//存放DTO，POJO，JAVABEAN</p>
+<p>com.nemtarch.spring//存放Spring的相关文件</p>
+<p>com.netmarch.struts.actin//存放struts的ACTION类</p>
+<p>com.netmarch.struts.form//存放struts的FORM类</p>
+<p>com.netmarch.filter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//存放过滤器，如session过滤器，字符过滤器等</p>
+<p>com.netmarch.listener&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//存放监听器，如访问流量监听器，</p>
+<p style="margin-left: 126pt">商业软件中的配置文件读取监听器</p>
+<p>com.netmarch.util&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//存放公用的类库，以后完善了我们公司的类库过后，就可以只用导入一个JAR包就可以啦</p>
+<p>com.netmarch.maps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//存放iBATIS的XML配置文件</p>
+<p>com.netmarch.interface&nbsp;&nbsp;//存放接口类</p>
+<p style="margin-left: 147pt">com.netmarch.infaimpl&nbsp;&nbsp;&nbsp;&nbsp;//存放接口实现类(这个可以根据需要，也可以用com.netmarch.dao)</p>
+<p>com.netmarch.dao&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//实体操作类</p>
+<p>com.netmarch.abst&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//存放抽象类</p>
+<p>com.netmarch.hibernate//存放hibernate相关类</p>
+<p>com.netmarch.test&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//存放的测试类</p>
+<p>com.netmarch.service&nbsp;&nbsp;&nbsp;&nbsp;//业务接口外部调用类</p>
+<p>com.netmarch.common&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//基本配置类</p>
+<p>com.netmarch.excel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//生成EXCEL的操作类</p>
+<p>(根据项目的不同，下面可以再添加相关的包，这个可以由PM来决定)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="6">
+		文件名</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>Public类名要根据编译程序的规则，必须是和文件名相同(包含大写小写的区別)．</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="7">
+		类名</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>开头大写．后面将隔开作为大写．</p>
+<p>CapitalizedWithInternalWordsAlsoCapitalized</p>
+<ol>
+	<li value="8">
+		异常类名</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>将最后作为了Exception&nbsp;的类名．</p>
+<p>&nbsp;</p>
+<p>ClassNameEndsWithException</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="9">
+		接口名</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>同类名．但是，如果有和class&nbsp;区別的必要的话，最开始加I&nbsp;．</p>
+<p>&nbsp;</p>
+<p>InameOfInterface</p>
+<ol>
+	<li value="10">
+		实现类名</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>特别是有和interface&nbsp;区別的必要的话，最后加Impl&nbsp;．</p>
+<p>&nbsp;</p>
+<p>ClassNameEndsWithImpl</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="11">
+		抽象类名</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>没有适合抽象类名的名字时，从Abstract&nbsp;开始,起一个联想SubClass名的名字．</p>
+<p>&nbsp;</p>
+<p>AbstractBeforeSubClassName</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="12">
+		常数(static&nbsp;final)</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>将大写用&ldquo;_&rdquo;&nbsp;连接的．</p>
+<p>&nbsp;</p>
+<p>UPPER_CASE_WITH_UNDERSCORES</p>
+<p>（＊注：）static&nbsp;和&nbsp;final&nbsp;的区别</p>
+<p style="margin-left: 22.1pt">final注意要素：<br />
+	1.abstract&nbsp;和final不能同时修饰一个类。<br />
+	2.修饰方法保证该方法不能被子类重载，已经被private修饰的方法以及所有包含在final类中的方法，都被缺省认为是fianl的。<br />
+	3.如果是修饰primitive数据，那么这份数据是不可更改的，如果是修饰对象的话，那么其指向不可更改。但例如一个对象内部有另外一个对象，这另外一个对象可以变更。<br />
+	两者重点不同：<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;static强调只有一份<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final强调是常量</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="13">
+		方法名</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>最开始是小写，后面隔开用大写．</p>
+<p>firstWordLowerCaseButInternalWordsCapitalized()</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="14">
+		Factory方法(new&nbsp;Object的)</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>X&nbsp;newX()</p>
+<p>X&nbsp;createX()</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="15">
+		Converter方法(将Object变换成其他的Object的)</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>X&nbsp;toX()</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="16">
+		属性的取得方法</li>
+</ol>
+<p style="margin-left: 21pt">当然，如果用MYECLIPSE开发的话，属性的取得方法和设定方法都是可以自动生成的</p>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>X&nbsp;x()</p>
+<p>在X&nbsp;getX()&nbsp;//&nbsp;JavaBeans&nbsp;可以作为Proverty来用(推荐)</p>
+<p>在boolean&nbsp;isEnabled()&nbsp;//&nbsp;JavaBeans&nbsp;可以作为Proverty(标准)来用(推荐)</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="17">
+		属性的设定方法</li>
+</ol>
+<p>在void&nbsp;setX(X&nbsp;value)&nbsp;//&nbsp;JavaBeans&nbsp;可以作为Proverty（标准）来用(推荐)</p>
+<ol>
+	<li value="18">
+		返回boolean&nbsp;变量的方法</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p style="margin-left: 1.1pt">is&nbsp;+&nbsp;形容词，can&nbsp;+&nbsp;动詞，has&nbsp;+&nbsp;过去分词，三单元动词，三单元动词+&nbsp;名词．</p>
+<p>&nbsp;</p>
+<p>在boolean&nbsp;isEmpty()&nbsp;//&nbsp;JavaBeans&nbsp;可以作为Proverty（标准）来用(推荐)</p>
+<p>boolean&nbsp;empty()&nbsp;//&nbsp;不行！因为能取&rsquo;空&rsquo;的动词的意思,所以不好．</p>
+<p>boolean&nbsp;canGet()</p>
+<p>boolean&nbsp;hasChanged()</p>
+<p>boolean&nbsp;contains(Object)&nbsp;</p>
+<p>boolean&nbsp;containsKey(Key)</p>
+<p>理由:&nbsp;if,&nbsp;while&nbsp;文等的条件会变为容易读．还有true&nbsp;是哪个意思容易懂．</p>
+<ol>
+	<li value="19">
+		英语和汉语</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>所有的标识符的名字都要以英語为基本，另外作成汉语对应用语辞典,在Project的整个生命周期维护．</p>
+<ol>
+	<li value="20">
+		名字的对称性</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>取类名，方法名时，注意以下英語的对称性．</p>
+<p>add/remove</p>
+<p>insert/delete</p>
+<p>get/set</p>
+<p>start/stop</p>
+<p>begin/end</p>
+<p>send/receive</p>
+<p>first/last</p>
+<p>get/release</p>
+<p>put/get</p>
+<p>up/down</p>
+<p>show/hide</p>
+<p>source/target</p>
+<p>open/close</p>
+<p>source/destination</p>
+<p>increment/decrement</p>
+<p>lock/unlock</p>
+<p>old/new</p>
+<p>next/previous</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="21">
+		Loop&nbsp;Counter</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>范围（通用范围）较小的Loop&nbsp;Counter，重复中将i,&nbsp;j,&nbsp;k&nbsp;的名字按顺序使用．</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="22">
+		范围狭的名字</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>范围狭的变量名使用省略了型名的为好．</p>
+<p>例：&nbsp;ServeletContext&nbsp;sc&nbsp;=&nbsp;getServletContext();</p>
+<ol>
+	<li value="23">
+		无意思的名字</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>叫做Info,&nbsp;Data,&nbsp;Temp,&nbsp;Str,&nbsp;Buf&nbsp;的名字要再考虑．</p>
+<p>&nbsp;</p>
+<p>坏例子:&nbsp;double&nbsp;temp&nbsp;=&nbsp;Math.sqrt(b*b&nbsp;-&nbsp;4*a*c);</p>
+<p>好例子:&nbsp;double&nbsp;determinant&nbsp;=&nbsp;Math.sqrt(b*b&nbsp;-&nbsp;4*a*c);</p>
+<ol>
+	<li value="24">
+		大写小写</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>大写和小写被作为其他的文字来用，但不能取仅用此区別的名字．</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="25">
+		其他</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>其他，因Project不同,有时会用以下的命名规则．</p>
+<p>&nbsp;</p>
+<p>Local变量:</p>
+<p>&nbsp;</p>
+<p>lower_case_with_underscore</p>
+<p>&nbsp;</p>
+<p>private/protected&nbsp;变量:</p>
+<p>&nbsp;</p>
+<p>_prefixUnderscore&nbsp;或suffixUnderscore_</p>
+<p>&nbsp;</p>
+<p>static&nbsp;private/protected&nbsp;变量:</p>
+<p>&nbsp;</p>
+<p>__twoPrefixUnderscores&nbsp;或twoSuffixUnderscores__</p>
+<p>&nbsp;</p>
+<p>4.&nbsp;指南</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="26">
+		编码形式</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>编码形式是以Sun&nbsp;Microsystems,&nbsp;Inc&nbsp;的JDK&nbsp;源程序为准．编排基本上是和K&amp;R&nbsp;的C&nbsp;语言形式相同，但将类及方法的定义开头的&rdquo;{&ldquo;不改行写．</p>
+<p>/*&nbsp;COPYRIGHT&nbsp;...</p>
+<p>*&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文件开头有时有copywrite．这里不是/**&nbsp;，而是/*&nbsp;的注释．</p>
+<p>*/</p>
+<p>package&nbsp;myProject.util;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然后，package，１行空,import&nbsp;的罗列</p>
+<p>import&nbsp;java.util.Stack;</p>
+<p style="margin-left: 209.45pt">在import&nbsp;java.util.Vector;类定义之前从关于类的/**开始的注释．第1行短,明白说明类．用半角句号结束．从下一行开始详细说明．继续行按照第２个*,将*&nbsp;放在开头．&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>/**************************************************</p>
+<p>&nbsp;*&nbsp;FileName:DaoConfig.java</p>
+<p>&nbsp;*&nbsp;Version:&nbsp;1.00</p>
+<p>&nbsp;*&nbsp;Author:&nbsp;Bruce</p>
+<p>&nbsp;*&nbsp;Date:&nbsp;2006-07-27</p>
+<p>&nbsp;*&nbsp;Last&nbsp;modify&nbsp;Date:&nbsp;2006-07-26</p>
+<p>&nbsp;*&nbsp;Function:&nbsp;读取配置文件以获取相关的信息</p>
+<p>&nbsp;*</p>
+<p>&nbsp;*&nbsp;CopyRight&nbsp;(c)&nbsp;Netmarch&nbsp;Company&nbsp;2006</p>
+<p>&nbsp;* All&nbsp;rights&nbsp;reserved</p>
+<p>&nbsp;**************************************************/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>类定义开始的&rdquo;{&ldquo;&nbsp;不改行．</p>
+<p>public&nbsp;class&nbsp;Stack&nbsp;{定义开始的&rdquo;{&ldquo;&nbsp;不改行．</p>
+<p>&nbsp;</p>
+<p>/**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方法的注释也和类同样．&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="margin-left: 210pt">*追加要素.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@param,&nbsp;@return,&nbsp;@exception(如有)为</p>
+<p>&nbsp;</p>
+<p>*&nbsp;@param&nbsp;item&nbsp;追加的要素&nbsp;&nbsp;&nbsp;必须．根据需要@see&nbsp;等．&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>*/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>public&nbsp;void&nbsp;push(Object&nbsp;item)&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;方法定义开始的&rdquo;{&ldquo;&nbsp;也不改行．</p>
+<p>if&nbsp;(itemCapacity&nbsp;&lt;=&nbsp;itemCount)&nbsp;{</p>
+<p>//&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if,&nbsp;while&nbsp;等的关键词和&ldquo;(&ldquo;之间空一格．&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>字朝下&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(方法名后面的&rdquo;(&ldquo;无空格)．&rdquo;(&ldquo;的后面不空，&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>１TAB=4&nbsp;SPACE．&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运算符的两侧空格．&rdquo;(&ldquo;的后面空格,&nbsp;继续&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>//&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ldquo;{&ldquo;．&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注意用if/else&nbsp;的&ldquo;{&ldquo;,&nbsp;&ldquo;}&rdquo;的位置．&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>}</p>
+<p>/**</p>
+<p>*取得开头要素.开头要素被除去.</p>
+<p>*&nbsp;@return&nbsp;开头要素</p>
+<p>*/</p>
+<p>public&nbsp;Object&nbsp;pop()&nbsp;{</p>
+<p>//&nbsp;...</p>
+<p>return&nbsp;top;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不用()包围return&nbsp;值．</p>
+<p>}</p>
+<p>}</p>
+<p>其他方法:&nbsp;关于缩排，{}&nbsp;的位置，为了不破坏各自的创造性，不敢规定．</p>
+<p>&nbsp;</p>
+<p>当然在MyEclipse中开发的时候，先用&ldquo;CTRL＋A&rdquo;全部选中过后,可以使用快捷键&rdquo;CTRL+SHIFT+O&rdquo;来进行自动排版</p>
+<ol>
+	<li value="27">
+		长的行</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>一行最大80&nbsp;个字，超过时要分行．分割的指針是，(1)&nbsp;利用Local变量，(2)用回车键改行，(3)在优先低的运算符的前面改行．</p>
+<p>例:</p>
+<p>double&nbsp;length&nbsp;=&nbsp;Math.sqrt(Math.pow(Math.random(),&nbsp;2.0)&nbsp;+</p>
+<p>Math.pow(Math.random(),&nbsp;2.0));</p>
+<p>&nbsp;</p>
+<p>//&nbsp;方针(1)</p>
+<p>double&nbsp;xSquared&nbsp;=&nbsp;Math.pow(Math.random(),&nbsp;2.0);</p>
+<p>double&nbsp;ySquared&nbsp;=&nbsp;Math.pow(Math.random(),&nbsp;2.0);</p>
+<p>double&nbsp;length&nbsp;=&nbsp;Math.sqrt(xSquared&nbsp;+&nbsp;ySquared);</p>
+<p>&nbsp;</p>
+<p>//&nbsp;方针(2)</p>
+<p>double&nbsp;length&nbsp;=&nbsp;Math.sqrt(Math.pow(Math.random(),&nbsp;2.0,</p>
+<p>Math.pow(Math.random(),&nbsp;2.0);</p>
+<p>&nbsp;</p>
+<p>//&nbsp;方针(3)</p>
+<p>return&nbsp;this&nbsp;==&nbsp;obj</p>
+<p>||&nbsp;(this.obj&nbsp;instanceof&nbsp;MyClass</p>
+<p>&amp;&amp;&nbsp;this.field&nbsp;==&nbsp;obj.field);</p>
+<ol>
+	<li value="28">
+		长的声明行</li>
+</ol>
+<p>类，方法的声明很长时，(1)&nbsp;用extends/implements/throws&nbsp;节改行，(2)&nbsp;用回车键改行．</p>
+<p>例:</p>
+<p>public&nbsp;class&nbsp;LongNameClassImplemenation</p>
+<p>extends&nbsp;AbstractImplementation,</p>
+<p>implements&nbsp;Serializable,&nbsp;Cloneable&nbsp;{</p>
+<p>private&nbsp;void&nbsp;longNameInternalIOMethod(int&nbsp;a,&nbsp;int&nbsp;b)</p>
+<p>throws&nbsp;IOException&nbsp;{</p>
+<p>//&nbsp;&hellip;</p>
+<p>}</p>
+<p>public&nbsp;void&nbsp;longMethodSignature(int&nbsp;a,&nbsp;int&nbsp;b,&nbsp;int&nbsp;c,</p>
+<p>int&nbsp;d,&nbsp;int&nbsp;e,&nbsp;int&nbsp;f)&nbsp;{</p>
+<p>//&nbsp;&hellip;</p>
+<p>}</p>
+<p>//&nbsp;&hellip;</p>
+<p>}</p>
+<ol>
+	<li value="29">
+		import</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>在import&nbsp;尽量不使用*&nbsp;．从同一个软件包import３个以上的类时，使用*&nbsp;．</p>
+<p>&nbsp;</p>
+<p>理由:&nbsp;将依存性明确化．如有使用了多个*的import&nbsp;，读起来辛苦．但是，重复使用某个软件包时等(会用)．</p>
+<ol>
+	<li value="30">
+		abstract&nbsp;class&nbsp;vs.&nbsp;interface</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>抽象类(abstract&nbsp;class)尽量不使用，而多用interface&nbsp;吧．abstract&nbsp;class&nbsp;仅在有一部分安装，一部分是抽象方法时使用．</p>
+<p>&nbsp;</p>
+<p>理由:&nbsp;interface&nbsp;有多少都可以继承，但class&nbsp;只有1&nbsp;个．从1&nbsp;个开始继承的话，就再也不能继承了,没办法．Abstract&nbsp;class&nbsp;means&nbsp;isA&nbsp;,interface&nbsp;means&nbsp;like&nbsp;A&nbsp;;</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="31">
+		初始化</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>不以初始化为目的(参照没有被null初始化)．还有，不２度初始化．</p>
+<p>&nbsp;</p>
+<p>坏例子：</p>
+<p>&nbsp;</p>
+<p>class&nbsp;PoorInitialization&nbsp;{</p>
+<p>private&nbsp;name&nbsp;=&nbsp;&ldquo;initial_name&rdquo;;</p>
+<p>public&nbsp;Sample()&nbsp;{</p>
+<p>name&nbsp;=&nbsp;&ldquo;initial_name&rdquo;;//ERROR</p>
+<p>}</p>
+<p>理由:&nbsp;将关于初始化的BUG最小化．</p>
+<ol>
+	<li value="32">
+		避免static&nbsp;变量</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>static&nbsp;变量(类变量)要极力避免．(static&nbsp;final&nbsp;常数除外)</p>
+<ol>
+	<li value="33">
+		喜欢final&nbsp;吧</li>
+</ol>
+<p>如果实例变量在被作成之后绝对不变化的话，积极使用final&nbsp;．还有，如果不变更方法的自变量的参照地的话，当作final&nbsp;吧．</p>
+<p>&nbsp;</p>
+<p>理由:&nbsp;final&nbsp;，synchronization&nbsp;、编译的効率化等容易被适用．从内部类参照自变量时，有必要是final&nbsp;．</p>
+<ol>
+	<li value="34">
+		private&nbsp;vs.&nbsp;protected</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p style="margin-left: 13.85pt">在对象的生命周期要锁定在一定范围时,&nbsp;尽量用private&nbsp;&nbsp;，使别人不能破坏&nbsp;封装性．</p>
+<p>理由:&nbsp;private&nbsp;确实能够Shut&nbsp;Out从类外来的使用，但客户不能凭subclass&nbsp;化进行细的Chaining．喜欢使用&nbsp;private&nbsp;吧．protected&nbsp;以后，发生了变更时继承了它的全类会产生影响</p>
+<ol>
+	<li value="35">
+		get/set&nbsp;方法</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>要避免过度作成到实例变量的Access方法getX()/setX()&nbsp;后当做public&nbsp;．讨论其必要性，做成更有意思的方法．</p>
+<p>&nbsp;</p>
+<p>理由:&nbsp;实例变量多数依存于其他的实例变量．不能破坏类内部的整合性．</p>
+<ol>
+	<li value="36">
+		变量隐藏</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>使用和超级类的变量名相同的变量名要避免．</p>
+<p>&nbsp;</p>
+<p>理由:&nbsp;一般来说这是BUG．如有意图要注释．</p>
+<p>&nbsp;</p>
+<ol>
+	<li value="37">
+		排列声明</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>排列的声明为Type[]&nbsp;arrayName&nbsp;．</p>
+<p>&nbsp;</p>
+<p>理由:&nbsp;Type&nbsp;arrayName[]&nbsp;不过是作为从C&nbsp;那里剩留下的．</p>
+<p>&nbsp;</p>
+<p>例:</p>
+<p>static&nbsp;void&nbsp;main(String[]&nbsp;args);&nbsp;---&nbsp;○</p>
+<p>static&nbsp;void&nbsp;main(String&nbsp;args[]);&nbsp;---&nbsp;&times;</p>
+<p>当然，上面这种写法也不会错，但是建议还是养成好的编码规范吧！</p>
+<ol>
+	<li value="38">
+		public&nbsp;方法</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>类的public&nbsp;方法以「自动销售机的接口」为目标．设计成容易懂，即使搞错了使用方法,内部的整合性也不会搞坏．还有，如果可能,进行按合同的设计(Design&nbsp;by&nbsp;Contract)，用代码表现类的不变条件和方法的事前事后条件．</p>
+<ol>
+	<li value="43">
+		this&nbsp;的return</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>即使假装考虑了客户的方便，return&nbsp;this&nbsp;也要尽量避免．</p>
+<p>&nbsp;</p>
+<p>理由:叫做&nbsp;a.meth1().meth2().meth3()&nbsp;的连锁一般会成为synchronization上的问题之源</p>
+<ol>
+	<li value="44">
+		方法的多重定义</li>
+</ol>
+<p style="margin-left: 22.1pt">&nbsp;</p>
+<p>因为自变量的类型，要尽量避免方法的OrverLoad&nbsp;(自变量数不同为OK&nbsp;)．特别是和继承一起使用的话较为麻烦．</p>
+<p>&nbsp;</p>
+<p>例:</p>
+<p>&nbsp;</p>
+<p>&times;&nbsp;:&nbsp;draw(Line),&nbsp;draw(Rectangle)</p>
+<p>○&nbsp;:&nbsp;drawLine(Line),&nbsp;drawRectangle(Rectangle)</p>
+<ul>
+	<li>
+		:&nbsp;draw(Shape)</li>
+</ul>
+<p>(45)&nbsp;equals()和hashCode()</p>
+<p>若重载Object.equals()方法，同时hashCode()方法也重载，相反亦然。</p>
+<p>理由:&nbsp;因为对应Container类(Hashtable)等．</p>
+<p>clone()</p>
+<p>如果使用clone()&nbsp;方法，需封装Cloneable并清楚标明。</p>
+<p>例:</p>
+<p>class&nbsp;Foo&nbsp;implements&nbsp;Cloneable&nbsp;{</p>
+<p>//&nbsp;...</p>
+<p>public&nbsp;Object&nbsp;clone()&nbsp;{</p>
+<p style="margin-left: 42pt">try&nbsp;{</p>
+<p style="margin-left: 84pt">Foo&nbsp;foo&nbsp;=&nbsp;(Foo)super.clone();</p>
+<p style="margin-left: 84pt">//&nbsp;Foo&nbsp;类的属性的（Clone）</p>
+<p style="margin-left: 84pt">//&nbsp;...</p>
+<p style="margin-left: 42pt">}&nbsp;catch&nbsp;(CloneNotSupportedException&nbsp;e)&nbsp;{</p>
+<p style="margin-left: 84pt">//&nbsp;因为implements&nbsp;&nbsp;Cloneable&nbsp;所以不能发生</p>
+<p style="margin-left: 84pt">throw&nbsp;new&nbsp;InternalError();</p>
+<p style="margin-left: 42pt">}</p>
+<p>}</p>
+<p>}</p>
+<p>理由:&nbsp;在shallow&nbsp;copy里不好的Case很多．</p>
+<p style="margin-left: 42pt">&nbsp;</p>
+<p>(47)&nbsp;缺省构造方法</p>
+<p>如果可以的话，不管什么时候都准备缺省的构造方法(没有自变量的方法)．</p>
+<p>理由:&nbsp;在Class.newInstance()&nbsp;里从类名字符串可以动态创建该类．</p>
+<p>(48)&nbsp;abstract&nbsp;method&nbsp;in&nbsp;abstract&nbsp;classes</p>
+<p>在abstract&nbsp;类，通过添加no-op方法，并明确声明为abstact&nbsp;方法．并且，如果可以准备可共有的缺省封装，将其做为protected，使SubClass可在1&nbsp;行写处理．</p>
+<p>理由:&nbsp;因为java&nbsp;编译程序在编译时可检出没被封装的abstract&nbsp;方法，所以可以避免所谓忘记单个封装的Bug．</p>
+<p>(49)&nbsp;Object的同值比较</p>
+<p>Object的比较是使用equals()方法，不是使用==&nbsp;．而String&nbsp;的比较必须使用==&nbsp;．</p>
+<p>理由:&nbsp;如果封装者准备了equals()，应该是希望使用使用该方法才封装的．</p>
+<p>equals()的缺省的封装，仅仅是==而已．</p>
+<p>理由:&nbsp;在单体测试里，因为assertEquals&nbsp;使用了equals()，可以简单地写同值测试．</p>
+<p>(50)&nbsp;声明与初始化</p>
+<p>Local变量与初始值一起声明．</p>
+<p>理由:&nbsp;最小化变量的假定值．</p>
+<p>不好的例子:</p>
+<p>void&nbsp;f(int&nbsp;start)&nbsp;{</p>
+<p style="margin-left: 42pt">int&nbsp;i,&nbsp;j;&nbsp;//&nbsp;无初始值声明</p>
+<p style="margin-left: 42pt">//&nbsp;多的代码</p>
+<p style="margin-left: 42pt">//&nbsp;...</p>
+<p style="margin-left: 42pt">i&nbsp;=&nbsp;start&nbsp;+&nbsp;1;</p>
+<p style="margin-left: 42pt">j&nbsp;=&nbsp;i&nbsp;+&nbsp;1;</p>
+<p style="margin-left: 42pt">//&nbsp;使用i,&nbsp;j</p>
+<p>}</p>
+<p>好例子:</p>
+<p>void&nbsp;f(int&nbsp;start)&nbsp;{</p>
+<p>//&nbsp;多的代码</p>
+<p>//&nbsp;...</p>
+<p>//&nbsp;使用前，首先声明与初始化</p>
+<p>int&nbsp;i&nbsp;=&nbsp;start&nbsp;+&nbsp;1;</p>
+<p>int&nbsp;j&nbsp;=&nbsp;i&nbsp;+&nbsp;1;</p>
+<p>//&nbsp;使用i,&nbsp;j&nbsp;</p>
+<p>}</p>
+<p>(51)&nbsp;Local变量的再利用不好</p>
+<p>通过反复使用Local变量，声明新的变量并初始化．</p>
+<p>理由:&nbsp;最小化变量的假定值．</p>
+<p>理由:&nbsp;有助于编译程序的最适化．</p>
+<p>不好的例子:</p>
+<p>void&nbsp;f(int&nbsp;N,&nbsp;int&nbsp;delta)&nbsp;{</p>
+<p>int&nbsp;i;&nbsp;//&nbsp;无初始值声明</p>
+<p>for&nbsp;(i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;N;&nbsp;i++)&nbsp;{</p>
+<p style="margin-left: 42pt">//使用&nbsp;i</p>
+<p>}</p>
+<p>for&nbsp;(i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;N;&nbsp;i++)&nbsp;{//&nbsp;还使用i&nbsp;</p>
+<p style="margin-left: 42pt">if&nbsp;(...)&nbsp;{</p>
+<p style="margin-left: 84pt">break;</p>
+<p style="margin-left: 42pt">}</p>
+<p>}</p>
+<p>if&nbsp;(i&nbsp;!=&nbsp;N)&nbsp;{&nbsp;//&nbsp;判断是否回到最后时使用了i</p>
+<p style="margin-left: 42pt">//&nbsp;...</p>
+<p>}</p>
+<p>i&nbsp;=&nbsp;N&nbsp;&ndash;&nbsp;delta*2;&nbsp;//&nbsp;再利用</p>
+<p>//&nbsp;...</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>好例子:</p>
+<p>void&nbsp;f(int&nbsp;N,&nbsp;int&nbsp;delta)&nbsp;{</p>
+<p>for&nbsp;(int&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;N;&nbsp;i++)&nbsp;{</p>
+<p style="margin-left: 42pt">//&nbsp;使用i&nbsp;</p>
+<p>}</p>
+<p>for&nbsp;(int&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;N;&nbsp;i++)&nbsp;{</p>
+<p style="margin-left: 42pt">//&nbsp;使用其他的i&nbsp;</p>
+<p style="margin-left: 42pt">if&nbsp;(...)&nbsp;{</p>
+<p style="margin-left: 84pt">found&nbsp;=&nbsp;true;</p>
+<p style="margin-left: 84pt">break;</p>
+<p style="margin-left: 42pt">}</p>
+<p>}</p>
+<p>if&nbsp;(found)&nbsp;{</p>
+<p style="margin-left: 42pt">//&nbsp;...</p>
+<p>}</p>
+<p>int&nbsp;total&nbsp;=&nbsp;N&nbsp;&ndash;&nbsp;delta*2;&nbsp;//&nbsp;有其他含义的变量</p>
+<p>//&nbsp;...</p>
+<p>}</p>
+<p>(52)&nbsp;if/while&nbsp;条件中的&ldquo;=&rdquo;</p>
+<p>if,&nbsp;while&nbsp;的条件里，必须使用（代入）&ldquo;=&rdquo;．</p>
+<p>理由:&nbsp;大多情况下，是Bug。只要不是boolean&nbsp;型，java&nbsp;编译程序都可以捕捉该Bug．</p>
+<p>(53)&nbsp;大小比较演算子</p>
+<p>尽量使用&ldquo;&lt;&rdquo;,&nbsp;&ldquo;&lt;=&rdquo;，请尽量避免使用&rdquo;&gt;&rdquo;,&nbsp;&ldquo;&gt;=&rdquo;．</p>
+<p>理由:&nbsp;这样统一了大小的方向，右侧总是大的一方，避免混乱。</p>
+<p>(54)&nbsp;Cast</p>
+<p>Cast尽可能用instanceof&nbsp;的条件来包围．</p>
+<p>C&nbsp;cx&nbsp;=&nbsp;null;</p>
+<p>if&nbsp;(x&nbsp;instanceof&nbsp;C)</p>
+<p>cx&nbsp;=&nbsp;(C)x;</p>
+<p>else</p>
+<p>evasiveAction();</p>
+<p>理由:&nbsp;在这里，经常会习惯性地考虑：「如果Object不是该实例?」．不过，如果可以判断：不可能Cast时是Bug&nbsp;，这种情况就不在此限制内。</p>
+<p>&nbsp;</p>
+<p>(55)&nbsp;异常类</p>
+<p>异常类具有大域性的性格，难以读取多用Program流．</p>
+<p>对于异常类，如果可以利用JDK&nbsp;标准软件包已有的内容的话，最好是加以利用。而不是新创建一个异常类。</p>
+<p>例:&nbsp;IOException,&nbsp;NoSuchFileException,&nbsp;IllegalArgumentException,&nbsp;等是容易使用的标准异常．</p>
+<p>新异常的创建，需做为该软件包全体的接口来研究．</p>
+<p>(56)&nbsp;方法自变量的变更是不好的。</p>
+<p>做为原则，方法的自变量需输入，而不用做输出．即在方法内部不调用变更自变量状态的方法．不在输出自变量里代入新Object(如果可能的话，声明为final)．</p>
+<p>不好的例子:</p>
+<p>void&nbsp;moveX(Point&nbsp;p,&nbsp;int&nbsp;dx)&nbsp;{</p>
+<p>p.setX(p.getX()+dx);&nbsp;//&nbsp;变更自变量(尽量避免)</p>
+<p>}</p>
+<p>void&nbsp;moveX(Point&nbsp;p,&nbsp;int&nbsp;dx)&nbsp;{</p>
+<p>p&nbsp;=&nbsp;new&nbsp;Point(p.getX()+dx,&nbsp;p.getY());</p>
+<p>//&nbsp;这里不传递给调用方</p>
+<p>}</p>
+<p>例外:&nbsp;注意性能的情况下</p>
+<p>(57)&nbsp;方法自变量的名字</p>
+<p>用来使方法的自变量读取容易．特别在与实例变量重复时，活用this，可以使自变量的读取较为容易．</p>
+<p>不好的例子:</p>
+<p>void&nbsp;reset(int&nbsp;x_,&nbsp;int&nbsp;y_)&nbsp;{</p>
+<p>x&nbsp;=&nbsp;x_;</p>
+<p>y&nbsp;=&nbsp;y_;</p>
+<p>}</p>
+<p>好例子:</p>
+<p>void&nbsp;reset(int&nbsp;x,&nbsp;int&nbsp;y)&nbsp;{&nbsp;//&nbsp;不将自变量名取为x_,&nbsp;y_等</p>
+<p>this.x&nbsp;=&nbsp;x;</p>
+<p>this.y&nbsp;=&nbsp;y;</p>
+<p>}</p>
+<p>(58)&nbsp;toString()</p>
+<p>toString()&nbsp;方法如可能要随时封装．</p>
+<p>理由1:&nbsp;用System.out.println(object)可随时打印．</p>
+<p>理由2:&nbsp;单元测试等失败时的显示比较易懂．</p>
+<p>(59)&nbsp;switch,if/else&nbsp;重复了不好</p>
+<p>在表现用switch&nbsp;语法进行分支的処理时，要考虑这是不好的设计的征兆，同时还要考虑用polymorphism能不能実現．特别是有2个以上同样的switch&nbsp;时，一定要用polymorphism，FactoryMethod，Prototype&nbsp;形式等进行Refactoring．连续的if/else&nbsp;也一样．并且，进行null&nbsp;CHECK的同様的if如果很多时，请讨论是不是要用NullObject&nbsp;形式．</p>
+<p>(60)&nbsp;String&nbsp;和基本型的变換</p>
+<p>从int到String或其逆变换，如下(他的基本型也同样)．</p>
+<p>String&nbsp;s&nbsp;=&nbsp;String.valueOf(i);</p>
+<p>int&nbsp;i&nbsp;=&nbsp;Integer.parseInt(s);</p>
+<p>理由:&nbsp;虽有其他的写法，但上述方法最易懂最有效．</p>
+<p>其他方法:&nbsp;(不推荐)</p>
+<p>String&nbsp;s&nbsp;=&nbsp;&ldquo;&rdquo;&nbsp;+&nbsp;i;</p>
+<p>String&nbsp;s&nbsp;=&nbsp;new&nbsp;Integer(i).toString();</p>
+<p>String&nbsp;s&nbsp;=&nbsp;Integer.toString(i);&nbsp;//&nbsp;这样不好</p>
+<p>int&nbsp;i&nbsp;=&nbsp;new&nbsp;Integer(s).intValue();</p>
+<p>int&nbsp;i&nbsp;=&nbsp;Integer.valueOf(s).intValue();</p>
+<p>(61)&nbsp;COLLECTION</p>
+<p>如環境充許，请用JDK1.2&nbsp;以后的COLLECTION类．即，不用Vector,Hashtable,&nbsp;Enumeration而用&nbsp;List&nbsp;(ArrayList),&nbsp;Map(HashMap),Iterator．</p>
+<p>理由1:&nbsp;可更简洁地使用有逻辑，连贯性的方法名．</p>
+<p>理由2:&nbsp;通过List,&nbsp;Set,&nbsp;Map&nbsp;接口，或不变更接口即能替换实现．</p>
+<p>理由3:&nbsp;同步化为OPTION，因此可写出更高速的代码(有可能性)．</p>
+<p>&nbsp;</p>
+<p>5.&nbsp;注释</p>
+<p>(62)&nbsp;javadoc&nbsp;的活用</p>
+<p>就多用/**&nbsp;注释*/&nbsp;．该注释，可用javadoc或同様的变換成HTML&nbsp;形式的文档．</p>
+<p>java&nbsp;的注释有3&nbsp;種．</p>
+<p>/**&nbsp;...&nbsp;*/&nbsp;javadoc&nbsp;注释．可以html&nbsp;形式输出文档．</p>
+<p>/*&nbsp;*/&nbsp;通常的注释,内部的</p>
+<p>//&nbsp;通常的注释,内部的</p>
+<p>public&nbsp;类，方法，域必须要加/**&nbsp;*/&nbsp;注释．</p>
+<p>(63)&nbsp;长注释</p>
+<p>注释跨多行时，应在最初用一句概括，然后后面加长注释．</p>
+<p>(64)&nbsp;javadoc&nbsp;TAG</p>
+<p>/**&nbsp;*/注释中，举从@&nbsp;开始的关键字(javadoc&nbsp;TAG)．</p>
+<p>@author&nbsp;author-name</p>
+<p>@param&nbsp;paramName&nbsp;description</p>
+<p>@return&nbsp;description&nbsp;of&nbsp;return&nbsp;value</p>
+<p>@exception&nbsp;exceptionName&nbsp;description</p>
+<p>@see&nbsp;string</p>
+<p>@see&nbsp;URL</p>
+<p>@see&nbsp;classname#methodname</p>
+<p>param,&nbsp;return&nbsp;中有特別要注意之处，要进行主旨注释．例如，自变量为输出用，被变更时．</p>
+<p>例1:</p>
+<p>/**</p>
+<p>*&nbsp;取得边界框.</p>
+<p>*</p>
+<p>*&nbsp;@param&nbsp;b&nbsp;边界框&nbsp;(内存与速度効率用，输出自变量)</p>
+<p>*/</p>
+<p>void&nbsp;getBBox(BBox&nbsp;b)&nbsp;{&nbsp;b.min&nbsp;=&nbsp;this.min;&nbsp;b.max&nbsp;=&nbsp;this.max;&nbsp;}</p>
+<p>(65)&nbsp;类注释</p>
+<p>/**&nbsp;*/&nbsp;注释，用于机能概要，即外部的规格描述，写在类及方法的定义开始前．该注释的第1&nbsp;行有特別处理．即，被html&nbsp;的Method&nbsp;Index使用．因此，最初的1&nbsp;行应是注释対象的外部的机能的简短説明．该行以，半角(.)，或&lt;br&gt;&nbsp;HTML&nbsp;TAG结束．接该第1&nbsp;行，进行机能説明．</p>
+<p>注释中，，写使用例等时，也可用&lt;pre&gt;&nbsp;&lt;/pre&gt;&nbsp;围住自動缩排，而避免改行．</p>
+<p>(66)&nbsp;//&nbsp;vs.&nbsp;/*&nbsp;*/</p>
+<p>方法或类的内部注释要使用/*&nbsp;*/&nbsp;或//&nbsp;，可根据长度判断．</p>
+<p>1&nbsp;行注释最好用//．</p>
+<p>例1:</p>
+<p>/*</p>
+<p>*&nbsp;作用:</p>
+<p>*&nbsp;1.&nbsp;do&nbsp;something</p>
+<p>*&nbsp;2.&nbsp;do&nbsp;something</p>
+<p>*&nbsp;3.&nbsp;do&nbsp;somethng</p>
+<p>*/</p>
+<p>例2:</p>
+<p>int&nbsp;index&nbsp;=&nbsp;-1;&nbsp;//&nbsp;-1&nbsp;验证值的意思</p>
+<p>参考:&nbsp;这个方法最好．</p>
+<p>static&nbsp;final&nbsp;int&nbsp;INVALID=&nbsp;-1;</p>
+<p>int&nbsp;index&nbsp;=&nbsp;INVALID;</p>
+<p>(67)&nbsp;Design&nbsp;by&nbsp;Contract(合同设计)</p>
+<p>因为要按合同进行设计，所以请在Project设置Assert&nbsp;类．用Assert&nbsp;类来表现，合同．</p>
+<p>例:</p>
+<p>class&nbsp;Stack&nbsp;{</p>
+<p>private&nbsp;int&nbsp;capacity;</p>
+<p>private&nbsp;int&nbsp;itemCount;</p>
+<p>public&nbsp;void&nbsp;push(Object&nbsp;o)&nbsp;{</p>
+<p style="margin-left: 42pt">Assert.require(o&nbsp;!=&nbsp;null);&nbsp;//&nbsp;事前条件</p>
+<p style="margin-left: 42pt">//&nbsp;...</p>
+<p style="margin-left: 42pt">//&nbsp;...</p>
+<p style="margin-left: 42pt">Assert.ensure(this.contains(o));&nbsp;//&nbsp;事后条件</p>
+<p>}</p>
+<p>public&nbsp;boolean&nbsp;invariant()&nbsp;{&nbsp;//&nbsp;不变条件</p>
+<p style="margin-left: 42pt">Assert.invariant(0&nbsp;&lt;=&nbsp;capacity);</p>
+<p style="margin-left: 42pt">Assert.invariant(0&nbsp;&lt;=&nbsp;itemCount);</p>
+<p style="margin-left: 42pt">Assert.invariant(itemCount&nbsp;&lt;=&nbsp;capacity);</p>
+<p style="margin-left: 42pt">return&nbsp;true;</p>
+<p>}</p>
+<p>}</p>
+<p>注意:&nbsp;用户输入CHECK等不能assert．为捕捉BUG请用assert．</p>
+<p>补充:&nbsp;J2SE1.4&nbsp;以后，请利用assert关键字．</p>
+<p>6.&nbsp;性能</p>
+<p>(68)&nbsp;首先检测</p>
+<p>性能改善首先要从检测开始．不能随意．</p>
+<p>(69)&nbsp;new</p>
+<p>java&nbsp;中，new费时间．heavyweight中调用new时，如需要要用输出自变量．</p>
+<p>X&nbsp;getX()&nbsp;{</p>
+<p>return&nbsp;new&nbsp;X(this.value);</p>
+<p>}</p>
+<p>比较慢时，让调用方new，如</p>
+<p>void&nbsp;getX(X&nbsp;x)&nbsp;{</p>
+<p>x.setValue(this.value);</p>
+<p>}</p>
+<p>(70)&nbsp;synchronized</p>
+<p>synchronized&nbsp;较费時間．请不要同步全部类，而请仅对必要部分进行synchronized．另，Vector,&nbsp;Hashtable有默认同步化的重载．请自愿地使用ArrayList,&nbsp;HashMap，并仅对必要部分进行同步化</p>
+<p>(用Collections.synchronizedCollection进行外部同步)．</p>
+<p>(71)&nbsp;向变量赋null</p>
+<p>在出现大量不使用变量时，请主动给其赋null．特别，对数组元素(性能要求较严时)．</p>
+<p>理由:&nbsp;有助于Garbage&nbsp;Collection</p>
+<p>&nbsp;</p>
+<p>7.&nbsp;其他</p>
+<p>(72)&nbsp;在自已重新编制前商谈</p>
+<p>对其他人作成的类如需新的操作，若要自已extends该类来作成新类，或将该类作为实例变量作成类时，首先要与该类的作成者商谈．如通用形式满足其要求，则可将全体作成COMPACT．</p>
+<p>(73)&nbsp;复杂的设计不好</p>
+<p>设计有迷惑时，多数情况是重视&lsquo;Simplicity&rsquo;(简单)&nbsp;者，与java&nbsp;言語的特性良好一致．Java语言的设计原理是KISS(Keep&nbsp;It&nbsp;Small&nbsp;and&nbsp;Simple)．同时，随后的实现维护中&lsquo;Simplicity&rsquo;很重要．</p>
+<p>(74)&nbsp;性能调整应在测定后</p>
+<p>编码不能一开头就注重性能．要优先保证易读，易维护．性能应在测定后改善．</p>
+<p>(75)&nbsp;过于精巧的代码不好</p>
+<p>要写一般的Java的程序员都能理解的代码．要假定对于运算符的順序，初始化等有关的规则等，誰不能肯定有自信，要用()明确运算符順序，进行明确的初始化这样才易读．</p>
+<p>坏例子:&nbsp;return&nbsp;cond&nbsp;==&nbsp;0&nbsp;?&nbsp;a&nbsp;&lt;&nbsp;b&nbsp;&amp;&amp;&nbsp;b&nbsp;&lt;&nbsp;c&nbsp;:&nbsp;d&nbsp;==&nbsp;1;</p>
+<p>好例子:&nbsp;return&nbsp;(cond&nbsp;==&nbsp;0)&nbsp;?&nbsp;((a&nbsp;&lt;&nbsp;b)&nbsp;&amp;&amp;&nbsp;(b&nbsp;&lt;&nbsp;c))&nbsp;:&nbsp;(d&nbsp;==&nbsp;1);</p>
+<p>坏例子:</p>
+<p>//&nbsp;作成单位行列，但费时间，谁也不好说．</p>
+<p>for&nbsp;(int&nbsp;i&nbsp;=&nbsp;1;&nbsp;i&nbsp;&lt;=&nbsp;N;&nbsp;i++)</p>
+<p>for&nbsp;(int&nbsp;j&nbsp;=&nbsp;1;&nbsp;j&nbsp;&lt;=&nbsp;N;&nbsp;j++)</p>
+<p>M[i-1][j-1]&nbsp;=&nbsp;(i/j)*&nbsp;(j/i);</p>
+<p>(76)&nbsp;并非100%正确</p>
+<p>这里所写的，并非100%要做为标准，如有困惑要整理思绪，商谈．常会有充分理由不用RULE的情况．本编码标准的目是希望能对团结协作的团队有所帮助．</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin-left: 68.25pt">附（1）：Struts编码标准</p>
+<p>结合本公司的实际，中间层，也就是业务控制层，我们公司在以后的项目都将采用ibatis(hiberante)+spring+struts+jstl(jsp)这样的框架，鉴于此，特制定标准如下:</p>
+<p>(1)开发包的放置</p>
+<p>com.netmarch.struts.actin//存放struts的ACTION类</p>
+<p>com.netmarch.struts.form//存放struts的FORM类</p>
+<p>ApplicationResources资源文件放在对应的com.netmarch.struts目录下</p>
+<p>(2)国际化应用</p>
+<p>如果是要做国际化的应用，还要有对应的支持国际化的资源文件</p>
+<p>用法如下</p>
+<p>native2ascii&nbsp;-encoding&nbsp;gb2312&nbsp;&nbsp;ApplicationResources_temp.properties&nbsp;ApplicationResources_zh_CN.properties</p>
+<p>如中文对应ApplicationResources_zh_CN.properties</p>
+<p>英文对应ApplicationResources_EN.properties</p>
+<p>支持国际化应用就不允许在页面中出现中文字符，所以的字符都应该定义在资源文件当中，如页面中的按钮等等相关的字符，在资源文件中定义好啦只用在页面用STRUTS的标签就可以引用资源文件中的内容，如果在页面中设置了LOCAL属性，则会根据操作系统语言的不同，自动显示相应的语言种类,STRUTS的国际化应用支持是非常出色的</p>
+<p>举例：</p>
+<p>&lt;bean:message&nbsp;key=&quot;title&quot;/&gt;&nbsp;&nbsp;&nbsp;资源文件中配置如下：</p>
+<p>title=\u7f51\u8fdb\u79d1\u6280(这是title=网进科技，转码后的内容)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>一般情况来说我们的struts-config.xml文件不允许改名，除非是在一个大的应用中又分为啦几个应用，那样就建议一个小应用对应一个xml文件。</p>
+<p>(3)ACTION的编写</p>
+<p>结合本公司实际，所有的ACTION都必须继承BaseAction或者是BaseDispatchAction,&nbsp;BaseAction和BaseDispatchAction是我们自定义的一个ACTION，BaseAction又继承于action,&nbsp;BaseDispatchAction继承于DispatchAction，在实际开发中，如有不明白的地方应及时向项目经理或开发组长反应,一般情况下我推荐使用BaseDispatchAction,至于为什么选用BaseDispatchActin，不在我们这个标准的范畴，在此不再讨论。不明白的也可问我，也可以查阅参书籍。举例：</p>
+<p>abstract&nbsp;class&nbsp;BaseAction&nbsp;extends&nbsp;Action&nbsp;{</p>
+<p>&nbsp;</p>
+<p>private&nbsp;IStudentsInterface&nbsp;studentsService;</p>
+<p>&nbsp;</p>
+<p>private&nbsp;ITeachersInterface&nbsp;teachersSerivce;</p>
+<p>&nbsp;</p>
+<p>private&nbsp;IAdminInterface&nbsp;adminService;</p>
+<p>&nbsp;</p>
+<p>public&nbsp;void&nbsp;setServlet(ActionServlet&nbsp;actionServlet)&nbsp;{</p>
+<p>super.setServlet(actionServlet);</p>
+<p>//注意这里我们用了SPRING</p>
+<p>ServletContext&nbsp;servletContext&nbsp;=&nbsp;actionServlet.getServletContext();</p>
+<p>WebApplicationContext&nbsp;wac&nbsp;=&nbsp;WebApplicationContextUtils</p>
+<p>.getRequiredWebApplicationContext(servletContext);</p>
+<p>//这里就是所谓的IOC，注入type2</p>
+<p>this.studentsService&nbsp;=&nbsp;(IStudentsInterface)&nbsp;wac.getBean(&quot;studentManager&quot;);</p>
+<p>this.adminService&nbsp;=&nbsp;(IAdminInterface)&nbsp;wac.getBean(&quot;adminManager&quot;);</p>
+<p>this.teachersSerivce&nbsp;=&nbsp;(ITeachersInterface)&nbsp;wac.getBean(&quot;teacherManager&quot;);</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>public&nbsp;IAdminInterface&nbsp;getAdminService()&nbsp;{</p>
+<p>return&nbsp;adminService;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>public&nbsp;void&nbsp;setAdminService(IAdminInterface&nbsp;adminService)&nbsp;{</p>
+<p>this.adminService&nbsp;=&nbsp;adminService;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>//其它get/set方法&nbsp;&hellip;.&nbsp;&nbsp;&nbsp;&hellip;.略</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>BaseDispatchAction代码如下：</p>
+<p>&nbsp;</p>
+<p>abstract&nbsp;class&nbsp;BaseDispatchAction&nbsp;extends&nbsp;DispatchAction&nbsp;{</p>
+<p>&nbsp;</p>
+<p>private&nbsp;IstudentsInterface&nbsp;studentsService;</p>
+<p>&nbsp;</p>
+<p>private&nbsp;ITeachersInterface&nbsp;teachersSerivce;</p>
+<p>&nbsp;</p>
+<p>private&nbsp;IAdminInterface&nbsp;adminService;</p>
+<p>&nbsp;</p>
+<p>public&nbsp;void&nbsp;setServlet(ActionServlet&nbsp;actionServlet)&nbsp;{</p>
+<p>super.setServlet(actionServlet);</p>
+<p>ServletContext&nbsp;servletContext&nbsp;=&nbsp;actionServlet.getServletContext();</p>
+<p>WebApplicationContext&nbsp;wac&nbsp;=&nbsp;WebApplicationContextUtils</p>
+<p>.getRequiredWebApplicationContext(servletContext);</p>
+<p>&nbsp;</p>
+<p>this.studentsService&nbsp;=&nbsp;(IStudentsInterface)&nbsp;wac.getBean(&quot;studentManager&quot;);</p>
+<p>this.adminService&nbsp;=&nbsp;(IAdminInterface)&nbsp;wac.getBean(&quot;adminManager&quot;);</p>
+<p>this.teachersSerivce&nbsp;=&nbsp;(ITeachersInterface)&nbsp;wac.getBean(&quot;teacherManager&quot;);</p>
+<p>&nbsp;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>public&nbsp;IStudentsService&nbsp;getStudentsService()&nbsp;{</p>
+<p>return&nbsp;studentsService;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>public&nbsp;ITeachersService&nbsp;getTeachersSerivce()&nbsp;{</p>
+<p>return&nbsp;teachersSerivce;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>//其它get/set&nbsp;方法。。。。略</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>IstudentsService代码如下：</p>
+<p>public&nbsp;interface&nbsp;IStudentsService&nbsp;{</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;&nbsp;boolean&nbsp;validate(String&nbsp;username,String&nbsp;pasword);&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;&nbsp;Department&nbsp;getDepFromID(Integer&nbsp;id);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;&nbsp;&nbsp;Courses&nbsp;getCourseFromID(Integer&nbsp;id);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;&nbsp;&nbsp;Classes&nbsp;getClassFromID(Integer&nbsp;id);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;&nbsp;Students&nbsp;getStudetFromName(String&nbsp;name);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;&nbsp;boolean&nbsp;ifEnrolSameCourse(Classes&nbsp;clazz,Students&nbsp;stu);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;&nbsp;void&nbsp;selectClasses(Students&nbsp;stu,&nbsp;Classes&nbsp;clazz,Date&nbsp;date);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;&nbsp;boolean&nbsp;ifMoreThanCap(Classes&nbsp;clazz);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;updateSudent(Students&nbsp;stu,Contact&nbsp;contact);</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;HashMap&nbsp;getCourse(PageInfo&nbsp;pageinfo)&nbsp;throws&nbsp;Exception;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;HashMap&nbsp;getStudentHistory(PageInfo&nbsp;pageinfo,String&nbsp;stu_name)&nbsp;throws&nbsp;Exception;</p>
+<p>&nbsp;</p>
+<p>}</p>
+<p>Spring的配置等下会在spring编码标准中说明</p>
+<p>(3)FORM的编写</p>
+<p>FORM的编写相对就更简单了，就是提供一些属性的GET/SET方法，如果需要进行常规的有效性验证的话，在validate方法里面进行验证就可以啦，举例：</p>
+<p>public&nbsp;ActionErrors&nbsp;validate(</p>
+<p>ActionMapping&nbsp;mapping,</p>
+<p>HttpServletRequest&nbsp;request)&nbsp;{</p>
+<p>ActionErrors&nbsp;errors&nbsp;=&nbsp;new&nbsp;ActionErrors();</p>
+<p>//这里只是举例，实际项目中验证要比这复杂多啦</p>
+<p>&nbsp;if&nbsp;(groupname=null)&nbsp;{</p>
+<p>&nbsp;errors.add(&quot;nameError&quot;,new&nbsp;ActionError(&quot;nameError&quot;));</p>
+<p>&nbsp;}</p>
+<p>//我就要在这里面判断。groupname是否和数据库里面的相同发果相同，则返回//一个错误</p>
+<p>&nbsp;return&nbsp;errors;</p>
+<p>&nbsp;</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>当然，如果你愿意用动态表单也是可以的，这样就简化了开发。</p>
+<p>&nbsp;</p>
+<p>使用DynaValidatorForm</p>
+<p>举例如下：</p>
+<p>public&nbsp;class&nbsp;LoginAction&nbsp;extends&nbsp;BaseAction&nbsp;{</p>
+<p>&nbsp;</p>
+<p>public&nbsp;ActionForward&nbsp;execute(ActionMapping&nbsp;mapping,&nbsp;ActionForm&nbsp;form,</p>
+<p>HttpServletRequest&nbsp;request,&nbsp;HttpServletResponse&nbsp;response)</p>
+<p>throws&nbsp;Exception&nbsp;{</p>
+<p>&nbsp;</p>
+<p>HttpSession&nbsp;session&nbsp;=&nbsp;request.getSession();</p>
+<p>String&nbsp;username&nbsp;=&nbsp;null;</p>
+<p>String&nbsp;password&nbsp;=&nbsp;null;</p>
+<p>String&nbsp;kind&nbsp;=&nbsp;null;</p>
+<p>&nbsp;</p>
+<p>username&nbsp;=&nbsp;(String)&nbsp;((DynaValidatorForm)&nbsp;form).get(&quot;username&quot;);</p>
+<p>password&nbsp;=&nbsp;(String)&nbsp;((DynaValidatorForm)&nbsp;form).get(&quot;password&quot;);</p>
+<p>kind&nbsp;=&nbsp;(String)&nbsp;((DynaValidatorForm)&nbsp;form).get(&quot;kind&quot;);</p>
+<p>&nbsp;</p>
+<p>if&nbsp;(kind.equals(&quot;student&quot;)</p>
+<p>&amp;&amp;&nbsp;super.getStudentsService().validate(username,&nbsp;password))&nbsp;{</p>
+<p>session.setAttribute(&quot;username&quot;,&nbsp;username);</p>
+<p>return&nbsp;mapping.findForward(&quot;student&quot;);</p>
+<p>}&nbsp;else&nbsp;if&nbsp;(kind.equals(&quot;teacher&quot;)</p>
+<p>&amp;&amp;&nbsp;super.getTeachersSerivce().validate(username,&nbsp;password))&nbsp;{</p>
+<p>session.setAttribute(&quot;username&quot;,&nbsp;username);</p>
+<p>return&nbsp;mapping.findForward(&quot;teacher&quot;);</p>
+<p>&nbsp;</p>
+<p>}&nbsp;else&nbsp;if&nbsp;(kind.equals(&quot;admin&quot;)</p>
+<p>&amp;&amp;&nbsp;super.getAdminService().validate(username,&nbsp;password))&nbsp;{</p>
+<p>session.setAttribute(&quot;username&quot;,&nbsp;username);</p>
+<p>return&nbsp;mapping.findForward(&quot;admin&quot;);</p>
+<p>&nbsp;</p>
+<p>}</p>
+<p>ActionMessages&nbsp;errors&nbsp;=&nbsp;new&nbsp;ActionMessages();</p>
+<p>errors.add(&quot;username&quot;,&nbsp;new&nbsp;ActionMessage(&quot;errors.password.mismatch&quot;));</p>
+<p>&nbsp;</p>
+<p>saveErrors(request,&nbsp;errors);</p>
+<p>&nbsp;</p>
+<p>return&nbsp;(new&nbsp;ActionForward(mapping.getInput()));</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>}</p>
+<p>需要说明的是，在返回的时候，这个名字是在Struts-config.xml文件里面配置的，比如：</p>
+<p>return&nbsp;mapping.findforward(&ldquo;userloginsuccess&rdquo;);//这里的userloginsuccess最好是取的容易理解好些。尽量用英文表达。</p>
+<p>当然最好的方法是用一个布局管理器，也就是Tiles,相关信息请查阅相关资料</p>
+<p>&nbsp;</p>
+<p style="margin-left: 68.25pt">附（2）：Spring编码标准</p>
+<p>Spring的精髓在于它的BeanFactory+IoC+AOP，当然，在这里我们不讨论这些。</p>
+<p>在Project中，一般情况下，只要由一个人来配置applications.xml就够啦，所有的关系都配置好啦过后，程序员只要照着以前的习惯写代码就行啦。由于本人也是没有在实际的项目中用过Spring,所以不敢贸然下笔，这里暂且留空。。。</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151015/693.html">bios中英文对照表</a></li>
+            <li><strong>下一篇：</strong>没有了</li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

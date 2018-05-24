@@ -1,0 +1,1056 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>网页制作入门DHTML对象 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1194","0","attach");
+		Cms.viewCount("","1194");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151119/1194.html" title="网页制作入门DHTML对象">网页制作入门DHTML对象</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-19 13:50:31</span>
+     </h3>
+     <p>
+	网页制作入门，由动态 HTML 定义的对象。点击链接即可前往对象的定义，其中包含了该对象的所有成员集</p>
+<table class="clsSTD">
+	<tbody>
+		<tr>
+			<td>
+				<a href="objects/DOCTYPE.html">!DOCTYPE</a></td>
+			<td>
+				指定了 HTML 文档遵循的文档类型定义(DTD)。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/A.html">a</a></td>
+			<td>
+				标明超链接的起始或目的位置。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/ACRONYM.html">acronym</a></td>
+			<td>
+				标明缩写词。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/ADDRESS.html">address</a></td>
+			<td>
+				特定信息，如地址、签名、作者、此文档的原创者。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/APPLET.html">applet</a></td>
+			<td>
+				在页面上放置可执行内容。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/AREA.html">area</a></td>
+			<td>
+				定义一个客户端图像<a href="objects/MAP.html">映射</a>中一个超级链接区域的形状、坐标和关联 URL。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/attribute.html">attribute</a></td>
+			<td>
+				以对象的形式代表了 HTML 元素的标签属性或属性。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/B.html">b</a></td>
+			<td>
+				指定文本应以粗体渲染。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/BASE.html">base</a></td>
+			<td>
+				指定一个显示 URL 用于解析对于外部源的链接和引用，如图像和样式表。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/BASEFONT.html">baseFont</a></td>
+			<td>
+				设置渲染文本时作为缺省字体的基础字体值。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/BDO.html">bdo</a></td>
+			<td>
+				允许作者为选定文本片断禁用双向法则。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/BGSOUND.html">bgSound</a></td>
+			<td>
+				允许页面带有背景声音或创建音轨。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/BIG.html">big</a></td>
+			<td>
+				指定内含文本要以比当前字体稍大的字体显示。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/BLOCKQUOTE.html">blockQuote</a></td>
+			<td>
+				设置文本中的一段引语。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/BODY.html">body</a></td>
+			<td>
+				指定文档主体的开始和结束。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/BR.html">br</a></td>
+			<td>
+				插入一个换行符。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/BUTTON.html">button</a></td>
+			<td>
+				指定其中所含的 HTML 要被渲染为一个按钮。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/CAPTION.html">caption</a></td>
+			<td>
+				指定<a href="objects/TABLE.html">表格</a>的简要描述。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/CENTER.html">center</a></td>
+			<td>
+				将后面的文本和图像居中显示。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/CITE.html">cite</a></td>
+			<td>
+				用斜体显示标明引言。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_clientInformation.html">clientInformation</a></td>
+			<td>
+				包含关于 Web 浏览器的信息。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/clipboardData.html">clipboardData</a></td>
+			<td>
+				提供了对于预定义的剪贴板格式的访问，以便在编辑操作中使用。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/CODE.html">code</a></td>
+			<td>
+				指定代码范例。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/COL.html">col</a></td>
+			<td>
+				指定基于列的表格缺省属性。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/COLGROUP.html">colGroup</a></td>
+			<td>
+				指定表格中一列或一组列的缺省属性。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/COMMENT.html">comment</a></td>
+			<td>
+				标明不可见的注释。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/currentStyle.html">currentStyle</a></td>
+			<td>
+				代表了在全局样式表、内嵌样式和 HTML 标签属性中指定的对象格式和样式。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/custom.html">custom</a></td>
+			<td>
+				代表了一个用户自定义元素。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_dataTransfer.html">dataTransfer</a></td>
+			<td>
+				提供了对于预定义的剪贴板格式的访问，以便在拖曳操作中使用。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/DD.html">dd</a></td>
+			<td>
+				在定义列表中表明定义。定义通常在定义列表中缩进。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/defaults.html">defaults</a></td>
+			<td>
+				编程设定元素行为的缺省属性。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/DEL.html">del</a></td>
+			<td>
+				表明文本已经从文档中删除。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/DFN.html">dfn</a></td>
+			<td>
+				表明术语的定义实例。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/dialoghelper.html">对话框帮助协助程序</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="common/new.gif" width="21" /></td>
+			<td>
+				提供对颜色对话框及块格式化和字体集合的访问。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/DIR.html">dir</a></td>
+			<td>
+				引起目录列表。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/DIV.html">div</a></td>
+			<td>
+				指定渲染 HTML 的容器。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/DL.html">dl</a></td>
+			<td>
+				引起定义列表。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_document.html">document</a></td>
+			<td>
+				代表给定浏览器窗口中的 HTML 文档。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/DT.html">dt</a></td>
+			<td>
+				在定义列表中表明定义术语。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/EM.html">em</a></td>
+			<td>
+				强调文本，通常以斜体渲染。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/EMBED.html">embed</a></td>
+			<td>
+				允许嵌入任何文档。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_event.html">event</a></td>
+			<td>
+				代表事件状态，如事件发生的元素，键盘状态，鼠标位置和鼠标按钮状态。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/external.html">external</a></td>
+			<td>
+				允许访问由 Microsoft<sup>&reg;</sup> Internet Explorer 浏览器组件宿主应用程序提供的附加对象模型。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/FIELDSET.html">fieldSet</a></td>
+			<td>
+				在字段集包含的文本和其它元素外面绘制一个方框。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/FONT.html">font</a></td>
+			<td>
+				指定用于渲染所包含文本的新字体、大小和颜色。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/FORM.html">form</a></td>
+			<td>
+				指定所包含控件在表单中起作用。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/FRAME.html">frame</a></td>
+			<td>
+				在 <a href="objects/FRAMESET.html">FRAMESET</a> 元素内指定单个框架。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/FRAMESET.html">frameSet</a></td>
+			<td>
+				指定一个框架集，用于组织多个框架和嵌套框架集。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/HEAD.html">head</a></td>
+			<td>
+				提供了关于文档的无序信息集合。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_history.html">history</a></td>
+			<td>
+				包含了用户已浏览的 URL 的信息。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/Hn.html">hn</a></td>
+			<td>
+				以标题样式渲染文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/HR.html">hr</a></td>
+			<td>
+				绘制水平线。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/HTML.html">html</a></td>
+			<td>
+				表明文档包含 HTML 元素。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/htmlcomment.html">HTML 注释</a></td>
+			<td>
+				避免任何内含文本或 HTML 源代码被处理并在浏览器窗口中显示。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/I.html">i</a></td>
+			<td>
+				指定文本应以斜体渲染，若可用的话。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/IFRAME.html">iframe</a></td>
+			<td>
+				创建内嵌浮动框架。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/IMG.html">img</a></td>
+			<td>
+				在文档中嵌入图像或视频剪辑。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_implementation.html">implementation</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="common/new.gif" width="21" /></td>
+			<td>
+				包含了关于<span>对象</span>支持的模块信息。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="pi/IMPORT.html">IMPORT</a></td>
+			<td>
+				从元素行为中导入标签定义。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INPUT.html">input</a></td>
+			<td>
+				创建各种表单输入控件。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INPUT_button.html">input type=button</a></td>
+			<td>
+				创建按钮控件。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INPUT_checkbox.html">input type=checkbox</a></td>
+			<td>
+				创建复选框控件。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INPUT_file.html">input type=file</a></td>
+			<td>
+				创建文件上载控件，该控件带有一个文本框和一个浏览按钮。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INPUT_hidden.html">input type=hidden</a></td>
+			<td>
+				传输关于客户/服务器交互的状态信息。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INPUT_image.html">input type=image</a></td>
+			<td>
+				创建一个图像控件，该控件单击后将导致表单立即被提交。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INPUT_password.html">input type=password</a></td>
+			<td>
+				创建与 <a href="objects/INPUT_text.html">INPUT type=text</a> 控件类似的单行文本输入控件，不过其中并不显示用户输入的内容。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INPUT_radio.html">input type=radio</a></td>
+			<td>
+				创建单选钮控件。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INPUT_reset.html">input type=reset</a></td>
+			<td>
+				创建一个按钮，该按钮单击后将重置表单控件为其缺省值。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INPUT_submit.html">input type=submit</a></td>
+			<td>
+				创建一个按钮，该按钮单击后将提交表单。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INPUT_text.html">input type=text</a></td>
+			<td>
+				创建一个单行的文本输入控件。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/INS.html">ins</a></td>
+			<td>
+				指定被插入到文档中的文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/ISINDEX.html">isIndex</a></td>
+			<td>
+				使浏览器显示一个对话框，提示用户输入单行文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/KBD.html">kbd</a></td>
+			<td>
+				以固定宽度字体渲染文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/LABEL.html">label</a></td>
+			<td>
+				为页面上的其它元素指定标签。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/LEGEND.html">legend</a></td>
+			<td>
+				在 <a href="objects/FIELDSET.html">fieldSet</a> 对象绘制的方框内插入一个标题。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/LI.html">li</a></td>
+			<td>
+				引起列表中的一个项目。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/LINK.html">link</a></td>
+			<td>
+				允许当前文档和外部文档之间建立连接。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/LISTING.html">listing</a></td>
+			<td>
+				以固定字体渲染文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_location.html">location</a></td>
+			<td>
+				包含关于当前 URL 的信息。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/MAP.html">map</a></td>
+			<td>
+				包含客户端图像映射的坐标数据。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/MARQUEE.html">marquee</a></td>
+			<td>
+				创建一个滚动的文本字幕。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/MENU.html">menu</a></td>
+			<td>
+				创建一个项目的无序列表。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/META.html">meta</a></td>
+			<td>
+				向服务器和客户端传达关于文档的隐藏信息。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/namespace.html">namespace</a></td>
+			<td>
+				向文档中动态导入一个元素行为。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_navigator.html">navigator</a></td>
+			<td>
+				包含关于 Web 浏览器的信息。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/NEXTID.html">nextID</a></td>
+			<td>
+				创建编辑软件可以读取的唯一标识符。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/NOBR.html">noBR</a></td>
+			<td>
+				不换行渲染文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/NOFRAMES.html">noFrames</a></td>
+			<td>
+				包含对于那些不支持 <b>FRAMESET</b> 元素的浏览器使用的 HTML。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/NOSCRIPT.html">noScript</a></td>
+			<td>
+				指定要在不支持脚本的浏览器显示的 HTML。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/OBJECT.html">object</a></td>
+			<td>
+				向 HTML 页面中插入对象。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/OL.html">ol</a></td>
+			<td>
+				绘制文本的编号列表。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/OPTGROUP.html">optGroup</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="common/new.gif" width="21" /></td>
+			<td>
+				允许作者对 <a href="objects/SELECT.html">select</a> 元素中的选项进行逻辑分组。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/OPTION.html">option</a></td>
+			<td>
+				引起 <a href="objects/SELECT.html">SELECT</a> 元素中的一个选项。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/P.html">p</a></td>
+			<td>
+				引起一段。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/page.html">page</a></td>
+			<td>
+				代表 <a href="objects/obj_styleSheet.html">styleSheet</a> 中的一条 <a href="properties/page.html">@page</a> 规则。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/PARAM.html">param</a></td>
+			<td>
+				设置 <a href="objects/APPLET.html">APPLET</a>、<a href="objects/EMBED.html">EMBED</a> 或 <a href="objects/OBJECT.html">OBJECT</a> 元素的属性初始值。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/plainText.html">plainText</a></td>
+			<td>
+				以固定宽度字体渲染文本，不处理标签。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/popup.html">popup</a></td>
+			<td>
+				一种特殊的顶层窗口，主要用于出现在应用程序主窗口之外的对话框、消息框和其它临时窗口。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/PRE.html">pre</a></td>
+			<td>
+				以固定宽度字体渲染文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/Q.html">q</a></td>
+			<td>
+				分离文本中的引语。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/RT.html">rt</a></td>
+			<td>
+				指明 <a href="objects/RUBY.html">RUBY</a> 元素的注音文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/RUBY.html">ruby</a></td>
+			<td>
+				指明要放置在文本串之上或内嵌的注解或发音指南。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/rule.html">rule</a></td>
+			<td>
+				代表了层叠样式表(CSS)中由选择符和一个或多个声明组成的的样式。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/runtimeStyle.html">runtimeStyle</a></td>
+			<td>
+				代表了居于全局样式表、内嵌样式和 HTML 标签属性指定的格式和样式之上的对象的格式和样式。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/S.html">s</a></td>
+			<td>
+				以删除线字体渲染文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/SAMP.html">samp</a></td>
+			<td>
+				指定代码范例。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_screen.html">screen</a></td>
+			<td>
+				包含关于客户屏幕和渲染能力的信息。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/SCRIPT.html">script</a></td>
+			<td>
+				为脚本指定由脚本引擎解释的脚本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/SELECT.html">select</a></td>
+			<td>
+				引起列表框或下拉框。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_selection.html">selection</a></td>
+			<td>
+				代表了当前激活选中区，即高亮文本块，和/或文档中用户可执行某些操作的其它元素。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/SMALL.html">small</a></td>
+			<td>
+				指定内含文本要以比当前字体稍小的字体显示。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/SPAN.html">span</a></td>
+			<td>
+				指定内嵌文本容器。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/STRIKE.html">strike</a></td>
+			<td>
+				以删除线字体渲染文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/STRONG.html">strong</a></td>
+			<td>
+				以粗体渲染文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_style.html">style</a></td>
+			<td>
+				代表了给定元素所有可能的内嵌样式的当前设置。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/STYLE.html">style</a></td>
+			<td>
+				指定页面的样式表。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_styleSheet.html">styleSheet</a></td>
+			<td>
+				代表了文档中单一的样式表。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/SUB.html">sub</a></td>
+			<td>
+				指定内含文本要以下标的形式显示，通常比当前字体稍小。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/SUP.html">sup</a></td>
+			<td>
+				指定内含文本要以上标的形式显示，通常比当前字体稍小。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/TABLE.html">table</a></td>
+			<td>
+				指定所含内容要组织成行列的表格。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/TBODY.html">tBody</a></td>
+			<td>
+				指明行作为表格主体。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/TD.html">td</a></td>
+			<td>
+				指定表格中的单元格。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/TEXTAREA.html">textArea</a></td>
+			<td>
+				指定多行文本输入控件。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/TextNode.html">TextNode</a></td>
+			<td>
+				将文本字符串代表为文档层次中的结点。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_TextRange.html">TextRange</a></td>
+			<td>
+				代表 HTML 元素中的文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/TextRectangle.html">TextRectangle</a></td>
+			<td>
+				指定包含元素或 <a href="objects/obj_TextRange.html">TextRange</a> 对象中一行文本的矩形。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/TFOOT.html">tFoot</a></td>
+			<td>
+				指明行作为表尾。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/TH.html">th</a></td>
+			<td>
+				指定标题列。标题列将在单元格中居中并以粗体显示。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/THEAD.html">tHead</a></td>
+			<td>
+				指明行作为表头。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/TITLE.html">title</a></td>
+			<td>
+				包含文档的标题。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/TR.html">tr</a></td>
+			<td>
+				指定表格中的一行。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/TT.html">tt</a></td>
+			<td>
+				以固定宽度字体渲染文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/U.html">u</a></td>
+			<td>
+				带下划线渲染文本。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/UL.html">ul</a></td>
+			<td>
+				绘制文本的项目符号列表。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/userProfile.html">userProfile</a></td>
+			<td>
+				提供了允许脚本对用户配置信息请求读取访问并执行读取操作的方法。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/VAR.html">var</a></td>
+			<td>
+				定义编程变量。通常以斜体渲染。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/WBR.html">wbr</a></td>
+			<td>
+				向一块 <a href="objects/NOBR.html">NOBR</a> 文本中插入软换行。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/obj_window.html">window</a></td>
+			<td>
+				代表浏览器中一个打开的窗口。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/XML.html">xml</a></td>
+			<td>
+				在 HTML 页面上定义一个 <a href="/xml/xmlguide/dataIslandHowTo.html">XML 数据岛</a>。</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="objects/XMP.html">xmp</a></td>
+			<td>
+				以固定宽度字体渲染作为示例的字体。</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151119/1195.html">C#零基础入门教程概述</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151119/1193.html">Object Pascal入门知识，下载</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

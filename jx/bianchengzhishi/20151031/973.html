@@ -1,0 +1,2991 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>java基础知识总结笔记 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","973","0","attach");
+		Cms.viewCount("","973");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151031/973.html" title="java基础知识总结笔记">java基础知识总结笔记</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-10-31 16:32:10</span>
+     </h3>
+     <p>Java基础知识总结</p>
+<p>写代码：</p>
+<p>1，明确需求。我要做什么？</p>
+<p>2，分析思路。我要怎么做？1,2,3。</p>
+<p>3，确定步骤。每一个思路部分用到哪些语句，方法，和对象。</p>
+<p>4，代码实现。用具体的java语言代码把思路体现出来。</p>
+<p>&nbsp;</p>
+<p>学习新技术的四点：</p>
+<p>1，该技术是什么？</p>
+<p>2，该技术有什么特点(使用注意)：</p>
+<p>3，该技术怎么使用。demo</p>
+<p>4，该技术什么时候用？test。</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>一：java概述：</p>
+<p>1991&nbsp;年Sun公司的James&nbsp;Gosling等人开始开发名称为&nbsp;Oak&nbsp;的语言，希望用于控制嵌入在有线电视交换盒、PDA等的微处理器；</p>
+<p>1994年将Oak语言更名为Java；</p>
+<p>&nbsp;</p>
+<p>Java的三种技术架构(其实三大架构应该是String，Struts，Hibernate才对，个人感觉这里应该叫java平台的三个版本):</p>
+<p>JAVAEE：Java&nbsp;Platform&nbsp;Enterprise&nbsp;Edition，开发企业环境下的应用程序，主要针对web程序开发；</p>
+<p>JAVASE：Java&nbsp;Platform&nbsp;Standard&nbsp;Edition，完成桌面应用程序的开发，是其它两者的基础；</p>
+<p>JAVAME：Java&nbsp;Platform&nbsp;Micro&nbsp;Edition，开发电子消费产品和嵌入式设备，如手机中的程序；</p>
+<p>&nbsp;</p>
+<p>1，JDK：Java&nbsp;Development&nbsp;Kit，java的开发和运行环境，java的开发工具和jre。</p>
+<p>2，JRE：Java&nbsp;Runtime&nbsp;Environment，java程序的运行环境，java运行的所需的类库+JVM(java虚拟机)。</p>
+<p>3，配置环境变量：让java&nbsp;jdk\bin目录下的工具，可以在任意目录下运行，原因是，将该工具所在目录告诉了系统，当使用该工具时，由系统帮我们去找指定的目录。</p>
+<p>环境变量的配置：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;1）：永久配置方式：JAVA_HOME=%安装路径%\Java\jdk</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;path=%JAVA_HOME%\bin</p>
+<p>2）：临时配置方式：set&nbsp;path=%path%;C:\Program&nbsp;Files\Java\jdk\bin</p>
+<p>特点：系统默认先去当前路径下找要执行的程序，如果没有，再去path中设置的路径下找。</p>
+<p>classpath的配置:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;1）：永久配置方式：classpath=.;c:\;e:\</p>
+<p>2）：临时配置方式：set&nbsp;classpath=.;c:\;e:\</p>
+<p>&nbsp;</p>
+<p>注意：在定义classpath环境变量时，需要注意的情况</p>
+<p>如果没有定义环境变量classpath，java启动jvm后，会在当前目录下查找要运行的类文件；</p>
+<p>如果指定了classpath，那么会在指定的目录下查找要运行的类文件。</p>
+<p>还会在当前目录找吗？两种情况：</p>
+<p>1）：如果classpath的值结尾处有分号，在具体路径中没有找到运行的类，会默认在当前目录再找一次。</p>
+<p>2）：如果classpath的值结果出没有分号，在具体的路径中没有找到运行的类，不会再当前目录找。</p>
+<p>一般不指定分号，如果没有在指定目录下找到要运行的类文件，就报错，这样可以调试程序。</p>
+<p>&nbsp;</p>
+<p>4，javac命令和java命令做什么事情呢？</p>
+<p>要知道java是分两部分的：一个是编译，一个是运行。</p>
+<p>javac：负责的是编译的部分，当执行javac时，会启动java的编译器程序。对指定扩展名的.java文件进行编译。&nbsp;生成了jvm可以识别的字节码文件。也就是class文件，也就是java的运行程序。</p>
+<p>java：负责运行的部分.会启动jvm.加载运行时所需的类库,并对class文件进行执行.</p>
+<p>一个文件要被执行,必须要有一个执行的起始点,这个起始点就是main函数.</p>
+<p>----------------------------------------------------------------------------------------------</p>
+<p>二：java语法基础：</p>
+<p>&nbsp;</p>
+<p>1，关键字：其实就是某种语言赋予了特殊含义的单词。</p>
+<p>保留字：其实就是还没有赋予特殊含义，但是准备日后要使用过的单词。&nbsp;</p>
+<p>2，标示符：其实就是在程序中自定义的名词。比如类名，变量名，函数名。包含&nbsp;0-9、a-z、$、_&nbsp;；</p>
+<p>注意：</p>
+<p>1），数字不可以开头。</p>
+<p>2），不可以使用关键字。</p>
+<p>3，常量：是在程序中的不会变化的数据。</p>
+<p>4，变量：其实就是内存中的一个存储空间，用于存储常量数据。</p>
+<p>作用：方便于运算。因为有些数据不确定。所以确定该数据的名词和存储空间。</p>
+<p>特点：变量空间可以重复使用。&nbsp;</p>
+<p>什么时候定义变量？只要是数据不确定的时候，就定义变量。</p>
+<p>&nbsp;</p>
+<p>变量空间的开辟需要什么要素呢？</p>
+<p>1，这个空间要存储什么数据？数据类型。</p>
+<p>2，这个空间叫什么名字啊？变量名称。</p>
+<p>3，这个空间的第一次的数据是什么？&nbsp;变量的初始化值。</p>
+<p>&nbsp;</p>
+<p>变量的作用域和生存期:</p>
+<p style="margin-left: 21pt">变量的作用域：</p>
+<p style="margin-left: 21pt">&nbsp;&nbsp;&nbsp;&nbsp;作用域从变量定义的位置开始，到该变量所在的那对大括号结束；</p>
+<p style="margin-left: 21pt">生命周期：</p>
+<p style="margin-left: 21pt">&nbsp;&nbsp;&nbsp;&nbsp;变量从定义的位置开始就在内存中活了；</p>
+<p style="margin-left: 21pt">&nbsp;&nbsp;&nbsp;&nbsp;变量到达它所在的作用域的时候就在内存中消失了；</p>
+<p style="margin-left: 21pt">&nbsp;</p>
+<p>数据类型：</p>
+<p>1）：基本数据类型：byte、short、int、long、float、double、char、boolean&nbsp;</p>
+<p>2）：引用数据类型:&nbsp;数组、类、接口。</p>
+<p style="margin-left: 21pt">级别从低到高为：byte,char,short(这三个平级)--&gt;int--&gt;float--&gt;long--&gt;double</p>
+<p style="margin-left: 21pt">自动类型转换：从低级别到高级别，系统自动转的；</p>
+<p style="margin-left: 21pt">强制类型转换：什么情况下使用?把一个高级别的数赋给一个别该数的级别低的变量；</p>
+<p>&nbsp;</p>
+<p>运算符号：</p>
+<p>1）、算术运算符。</p>
+<p>+&nbsp;-&nbsp;*&nbsp;/&nbsp;%&nbsp;&nbsp;&nbsp;%:任何整数模2不是0就是1，所以只要改变被模数就可以实现开关运算。</p>
+<p>+:连接符。</p>
+<p>++,--</p>
+<p>2）、赋值运算符。</p>
+<p>=&nbsp;&nbsp;+=&nbsp;-=&nbsp;*=&nbsp;/=&nbsp;%=</p>
+<p>3）、比较运算符。</p>
+<p>特点：该运算符的特点是：运算完的结果，要么是true，要么是false。&nbsp;</p>
+<p>4）、逻辑运算符。</p>
+<p>&amp;&nbsp;&nbsp;|&nbsp;&nbsp;^&nbsp;&nbsp;!&nbsp;&nbsp;&nbsp;&amp;&amp;&nbsp;&nbsp;&nbsp;||</p>
+<p>逻辑运算符除了&nbsp;!&nbsp;&nbsp;外都是用于连接两个boolean类型表达式。</p>
+<p>&amp;:&nbsp;只有两边都为true结果是true。否则就是false。</p>
+<p>|:只要两边都为false结果是false，否则就是true</p>
+<p>^:异或：和或有点不一样。</p>
+<p>&nbsp;两边结果一样，就为false。</p>
+<p>&nbsp;两边结果不一样，就为true.</p>
+<p>&amp;&nbsp;和&nbsp;&amp;&amp;区别：&nbsp;&amp;&nbsp;：无论左边结果是什么，右边都参与运算。</p>
+<p>&nbsp;&nbsp;&amp;&amp;:短路与，如果左边为false，那么右边不参数与运算。</p>
+<p>|&nbsp;和||&nbsp;区别：|：两边都运算。</p>
+<p>||：短路或，如果左边为true，那么右边不参与运算。</p>
+<p>5）、位运算符:用于操作二进制位的运算符。</p>
+<p>&amp;&nbsp;&nbsp;|&nbsp;&nbsp;^&nbsp;</p>
+<p>&lt;&lt;&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;(无符号右移)</p>
+<p>练习：对两个变量的数据进行互换。不需要第三方变量。</p>
+<p>int&nbsp;a&nbsp;&nbsp;=&nbsp;3,b&nbsp;=&nbsp;5;--&gt;b&nbsp;=&nbsp;3,a&nbsp;=&nbsp;5;</p>
+<p>a&nbsp;=&nbsp;a&nbsp;+&nbsp;b;&nbsp;a&nbsp;=&nbsp;8;</p>
+<p>b&nbsp;=&nbsp;a&nbsp;-&nbsp;b;&nbsp;b&nbsp;=&nbsp;3;</p>
+<p>a&nbsp;=&nbsp;a&nbsp;-&nbsp;b;&nbsp;a&nbsp;=&nbsp;5;</p>
+<p>a&nbsp;=&nbsp;a&nbsp;^&nbsp;b;//</p>
+<p>b&nbsp;=&nbsp;a&nbsp;^&nbsp;b;//b&nbsp;=&nbsp;a&nbsp;^&nbsp;b&nbsp;^&nbsp;b&nbsp;=&nbsp;a</p>
+<p>a&nbsp;=&nbsp;a&nbsp;^&nbsp;b;//a&nbsp;=&nbsp;a&nbsp;^&nbsp;b&nbsp;^&nbsp;a&nbsp;=&nbsp;b;</p>
+<p>练习：高效的算出&nbsp;2*8&nbsp;=&nbsp;2&lt;&lt;3;</p>
+<p>5，语句。</p>
+<p>If&nbsp;&nbsp;switch&nbsp;&nbsp;do&nbsp;while&nbsp;&nbsp;&nbsp;while&nbsp;&nbsp;for&nbsp;</p>
+<p>这些语句什么时候用？</p>
+<p>1）、当判断固定个数的值的时候，可以使用if，也可以使用switch。</p>
+<p>但是建议使用switch，效率相对较高。</p>
+<p style="margin-left: 31.5pt">switch(变量){</p>
+<p style="margin-left: 31.5pt">&nbsp;case&nbsp;值:要执行的语句;break;</p>
+<p style="margin-left: 31.5pt">&nbsp;&hellip;</p>
+<p style="margin-left: 31.5pt">&nbsp;default:要执行的语句;</p>
+<p style="margin-left: 31.5pt">}</p>
+<p>&nbsp;工作原理：用小括号中的变量的值依次和case后面的值进行对比，和哪个case后面的值相同了</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;就执行哪个case后面的语句，如果没有相同的则执行default后面的语句；</p>
+<p>&nbsp;细节：1）：break是可以省略的，如果省略了就一直执行到遇到break为止；</p>
+<p>&nbsp;&nbsp;&nbsp;2）：switch&nbsp;后面的小括号中的变量应该是byte,char,short,int四种类型中的一种；</p>
+<p>&nbsp;&nbsp;&nbsp;3）：default可以写在switch结构中的任意位置；如果将default语句放在了第一行，则不管expression与case中的value是否匹配，程序会从default开始执行直到第一个break出现。</p>
+<p>2）、当判断数据范围，获取判断运算结果boolean类型时，需要使用if。</p>
+<p>3）、当某些语句需要执行很多次时，就用循环结构。</p>
+<p>while和for可以进行互换。</p>
+<p>区别在于：如果需要定义变量控制循环次数。建议使用for。因为for循环完毕，变量在内存中释放。</p>
+<p>&nbsp;</p>
+<p>break:作用于switch&nbsp;，和循环语句，用于跳出，或者称为结束。</p>
+<p>break语句单独存在时，下面不要定义其他语句，因为执行不到，编译会失败。当循环嵌套时，break只跳出当前所在循环。要跳出嵌套中的外部循环，只要给循环起名字即可，这个名字称之为标号。</p>
+<p>&nbsp;</p>
+<p>continue:只作用于循环结构，继续循环用的。</p>
+<p>作用：结束本次循环，继续下次循环。该语句单独存在时，下面不可以定义语句，执行不到。</p>
+<p>&nbsp;</p>
+<p>6，函&nbsp;数：为了提高代码的复用性，可以将其定义成一个单独的功能，该功能的体现就是java中的函数。函数就是体现之一。</p>
+<p>java中的函数的定义格式：</p>
+<p>修饰符&nbsp;返回值类型&nbsp;函数名(参数类型&nbsp;形式参数1，参数类型&nbsp;形式参数1，&hellip;){</p>
+<p>执行语句；</p>
+<p>return&nbsp;返回值；</p>
+<p>}</p>
+<p>当函数没有具体的返回值时，返回的返回值类型用void关键字表示。</p>
+<p>如果函数的返回值类型是void时，return语句可以省略不写的，系统会帮你自动加上。</p>
+<p>return的作用：结束函数。结束功能。</p>
+<p>&nbsp;</p>
+<p>如何定义一个函数？</p>
+<p>函数其实就是一个功能，定义函数就是实现功能，通过两个明确来完成：</p>
+<p>1）、明确该功能的运算完的结果，其实是在明确这个函数的返回值类型。</p>
+<p>2）、在实现该功能的过程中是否有未知内容参与了运算，其实就是在明确这个函数的参数列表(参数类型&amp;参数个数)。</p>
+<p>函数的作用：</p>
+<p>1）、用于定义功能。</p>
+<p>2）、用于封装代码提高代码的复用性。</p>
+<p>注意：函数中只能调用函数，不能定义函数。</p>
+<p>主函数：</p>
+<p>1）、保证该类的独立运行。</p>
+<p>2）、因为它是程序的入口。</p>
+<p>3）、因为它在被jvm调用。</p>
+<p>&nbsp;</p>
+<p>函数定义名称是为什么呢？</p>
+<p>答：1）、为了对该功能进行标示，方便于调用。</p>
+<p>2）、为了通过名称就可以明确函数的功能，为了增加代码的阅读性。</p>
+<p>&nbsp;</p>
+<p>重载的定义是：在一个类中，如果出现了两个或者两个以上的同名函数，只要它们的参数的个数，或者参数的类型不同，即可称之为该函数重载了。</p>
+<p>如何区分重载：当函数同名时，只看参数列表。和返回值类型没关系。</p>
+<p>&nbsp;</p>
+<p>7，数&nbsp;组：用于存储同一类型数据的一个容器。好处：可以对该容器中的数据进行编号，从0开始。数组用于封装数据，就是一个具体的实体。</p>
+<p>如何在java中表现一个数组呢？两种表现形式。</p>
+<p>1）、元素类型[]&nbsp;变量名&nbsp;=&nbsp;new&nbsp;元素类型[元素的个数]；</p>
+<p>2）、元素类型[]&nbsp;变量名&nbsp;=&nbsp;{元素1，元素2...}；</p>
+<p>元素类型[]&nbsp;变量名&nbsp;=&nbsp;new&nbsp;元素类型[]{元素1，元素2...}；</p>
+<p>---------------------------------------------------------</p>
+<p>//二分查找法。必须有前提：数组中的元素要有序。&nbsp;</p>
+<p>public&nbsp;static&nbsp;int&nbsp;halfSeach_2(int[]&nbsp;arr,int&nbsp;key){</p>
+<p>int&nbsp;min,max,mid;</p>
+<p>min&nbsp;=&nbsp;0;</p>
+<p>max&nbsp;=&nbsp;arr.length-1;</p>
+<p>mid&nbsp;=&nbsp;(max+min)&gt;&gt;1;&nbsp;//(max+min)/2;</p>
+<p>while(arr[mid]!=key){</p>
+<p>if(key&gt;arr[mid]){</p>
+<p>min&nbsp;=&nbsp;mid&nbsp;+&nbsp;1;</p>
+<p>}</p>
+<p>else&nbsp;if(key&lt;arr[mid])</p>
+<p>max&nbsp;=&nbsp;mid&nbsp;-&nbsp;1;</p>
+<p>if(max&lt;min)</p>
+<p>return&nbsp;-1;</p>
+<p>mid&nbsp;=&nbsp;(max+min)&gt;&gt;1;</p>
+<p>}</p>
+<p>return&nbsp;mid;</p>
+<p>}</p>
+<p>---------------------------------------------------------</p>
+<p>java分了5片内存。</p>
+<p style="margin-left: 21pt">1：寄存器。2：本地方法区。3：方法区。4：栈。5：堆。</p>
+<p>栈：存储的都是局部变量&nbsp;(&nbsp;函数中定义的变量，函数上的参数，语句中的变量&nbsp;)；</p>
+<p>只要数据运算完成所在的区域结束，该数据就会被释放。</p>
+<p>堆：用于存储数组和对象，也就是实体。啥是实体啊？就是用于封装多个数据的。</p>
+<p style="margin-left: 21pt">1：每一个实体都有内存首地址值。</p>
+<p style="margin-left: 21pt">2：堆内存中的变量都有默认初始化值。因为数据类型不同，值也不一样。&nbsp;</p>
+<p style="margin-left: 21pt">3：垃圾回收机制。</p>
+<p>----------------------------------------------------------------------------------------------</p>
+<p>三：面向对象：★★★★★</p>
+<p>特点：1：将复杂的事情简单化。</p>
+<p>2：面向对象将以前的过程中的执行者，变成了指挥者。</p>
+<p>3：面向对象这种思想是符合现在人们思考习惯的一种思想。</p>
+<p>&nbsp;</p>
+<p>过程和对象在我们的程序中是如何体现的呢？过程其实就是函数；对象是将函数等一些内容进行了封装。</p>
+<p>&nbsp;</p>
+<p>匿名对象使用场景：</p>
+<p>1：当对方法只进行一次调用的时候，可以使用匿名对象。</p>
+<p>2：当对象对成员进行多次调用时，不能使用匿名对象。必须给对象起名字。</p>
+<p>&nbsp;</p>
+<p>在类中定义其实都称之为成员。成员有两种：</p>
+<p>1：成员变量：其实对应的就是事物的属性。</p>
+<p>2：成员函数：其实对应的就是事物的行为。</p>
+<p>&nbsp;</p>
+<p>所以，其实定义类，就是在定义成员变量和成员函数。但是在定义前，必须先要对事物进行属性和行为的分析，才可以用代码来体现。</p>
+<p>&nbsp;</p>
+<p>private&nbsp;int&nbsp;age;//私有的访问权限最低，只有在本类中的访问有效。</p>
+<p>注意：私有仅仅是封装的一种体现形式而已。</p>
+<p>&nbsp;</p>
+<p>私有的成员：其他类不能直接创建对象访问，所以只有通过本类对外提供具体的访问方式来完成对私有的访问，可以通过对外提供函数的形式对其进行访问。</p>
+<p>好处：可以在函数中加入逻辑判断等操作，对数据进行判断等操作。</p>
+<p>&nbsp;</p>
+<p>总结：开发时，记住，属性是用于存储数据的，直接被访问，容易出现安全隐患，所以，类中的属性通常被私有化，并对外提供公共的访问方法。</p>
+<p>这个方法一般有两个，规范写法：对于属性&nbsp;xxx，可以使用setXXX(),getXXX()对其进行操作。</p>
+<p>&nbsp;</p>
+<p>类中怎么没有定义主函数呢？</p>
+<p>注意：主函数的存在，仅为该类是否需要独立运行，如果不需要，主函数是不用定义的。</p>
+<p>主函数的解释：保证所在类的独立运行，是程序的入口，被jvm调用。</p>
+<p>&nbsp;</p>
+<p>成员变量和局部变量的区别：</p>
+<p style="margin-left: 21pt">1：成员变量直接定义在类中。</p>
+<p style="margin-left: 21pt">&nbsp;&nbsp;&nbsp;局部变量定义在方法中，参数上，语句中。</p>
+<p style="margin-left: 21pt">2：成员变量在这个类中有效。</p>
+<p style="margin-left: 21pt">局部变量只在自己所属的大括号内有效，大括号结束，局部变量失去作用域。</p>
+<p style="margin-left: 21pt">3：成员变量存在于堆内存中，随着对象的产生而存在，消失而消失。</p>
+<p style="margin-left: 21pt">局部变量存在于栈内存中，随着所属区域的运行而存在，结束而释放。</p>
+<p>&nbsp;</p>
+<p>构造函数：用于给对象进行初始化，是给与之对应的对象进行初始化，它具有针对性，函数中的一种。</p>
+<p>特点：</p>
+<p style="margin-left: 10.5pt">1：该函数的名称和所在类的名称相同。</p>
+<p style="margin-left: 10.5pt">2：不需要定义返回值类型。</p>
+<p style="margin-left: 10.5pt">3：该函数没有具体的返回值。</p>
+<p>记住：所有对象创建时，都需要初始化才可以使用。</p>
+<p>&nbsp;</p>
+<p>注意事项：一个类在定义时，如果没有定义过构造函数，那么该类中会自动生成一个空参数的构造函数，为了方便该类创建对象，完成初始化。如果在类中自定义了构造函数，那么默认的构造函数就没有了。</p>
+<p>&nbsp;</p>
+<p>一个类中，可以有多个构造函数，因为它们的函数名称都相同，所以只能通过参数列表来区分。所以，一个类中如果出现多个构造函数。它们的存在是以重载体现的。</p>
+<p>&nbsp;</p>
+<p>构造函数和一般函数有什么区别呢？</p>
+<p>1：两个函数定义格式不同。</p>
+<p>2：构造函数是在对象创建时，就被调用，用于初始化，而且初始化动作只执行一次。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;一般函数，是对象创建后，需要调用才执行，可以被调用多次。</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p>什么时候使用构造函数呢？</p>
+<p>分析事物时，发现具体事物一出现，就具备了一些特征，那就将这些特征定义到构造函数内。</p>
+<p>&nbsp;</p>
+<p>构造代码块和构造函数有什么区别？</p>
+<p>构造代码块：是给所有的对象进行初始化，也就是说，所有的对象都会调用一个代码块。只要对象一建立。就会调用这个代码块。</p>
+<p>构造函数：是给与之对应的对象进行初始化。它具有针对性。</p>
+<p>&nbsp;</p>
+<p>Person&nbsp;p&nbsp;=&nbsp;new&nbsp;Person();</p>
+<p>创建一个对象都在内存中做了什么事情？</p>
+<p style="margin-left: 21pt">1：先将硬盘上指定位置的Person.class文件加载进内存。</p>
+<p style="margin-left: 21pt">2：执行main方法时，在栈内存中开辟了main方法的空间(压栈-进栈)，然后在main方法的栈区分配了一个变量p。</p>
+<p style="margin-left: 21pt">3：在堆内存中开辟一个实体空间，分配了一个内存首地址值。new</p>
+<p style="margin-left: 21pt">4：在该实体空间中进行属性的空间分配，并进行了默认初始化。</p>
+<p style="margin-left: 21pt">5：对空间中的属性进行显示初始化。</p>
+<p style="margin-left: 21pt">6：进行实体的构造代码块初始化。</p>
+<p style="margin-left: 21pt">7：调用该实体对应的构造函数，进行构造函数初始化。（）</p>
+<p style="margin-left: 21pt">8：将首地址赋值给p&nbsp;，p变量就引用了该实体。(指向了该对象)</p>
+<p>--------------------------------------------------------------------------------------------</p>
+<p>封&nbsp;装（面向对象特征之一）：是指隐藏对象的属性和实现细节，仅对外提供公共访问方式。</p>
+<p>好处：将变化隔离；便于使用；提高重用性；安全性。</p>
+<p>封装原则：将不需要对外提供的内容都隐藏起来，把属性都隐藏，提供公共方法对其访问。</p>
+<p>&nbsp;</p>
+<p>this:代表对象。就是所在函数所属对象的引用。</p>
+<p>this到底代表什么呢？哪个对象调用了this所在的函数，this就代表哪个对象，就是哪个对象的引用。</p>
+<p>开发时，什么时候使用this呢？</p>
+<p>在定义功能时，如果该功能内部使用到了调用该功能的对象，这时就用this来表示这个对象。</p>
+<p>&nbsp;</p>
+<p>this&nbsp;还可以用于构造函数间的调用。</p>
+<p>调用格式：this(实际参数)；</p>
+<p>this对象后面跟上&nbsp;.&nbsp;&nbsp;调用的是成员属性和成员方法(一般方法)；</p>
+<p>this对象后面跟上&nbsp;()&nbsp;调用的是本类中的对应参数的构造函数。</p>
+<p>&nbsp;</p>
+<p>注意：用this调用构造函数，必须定义在构造函数的第一行。因为构造函数是用于初始化的，所以初始化动作一定要执行。否则编译失败。</p>
+<p>&nbsp;</p>
+<p>static：★★★&nbsp;关键字，是一个修饰符，用于修饰成员(成员变量和成员函数)。</p>
+<p>特点：</p>
+<p style="margin-left: 10.5pt">1，想要实现对象中的共性数据的对象共享。可以将这个数据进行静态修饰。</p>
+<p style="margin-left: 10.5pt">2，被静态修饰的成员，可以直接被类名所调用。也就是说，静态的成员多了一种调用方式。类名.静态方式。</p>
+<p style="margin-left: 10.5pt">3，静态随着类的加载而加载。而且优先于对象存在。</p>
+<p>&nbsp;</p>
+<p>弊端：</p>
+<p style="margin-left: 10.5pt">1，有些数据是对象特有的数据，是不可以被静态修饰的。因为那样的话，特有数据会变成对象的共享数据。这样对事物的描述就出了问题。所以，在定义静态时，必须要明确，这个数据是否是被对象所共享的。</p>
+<p style="margin-left: 10.5pt">2，静态方法只能访问静态成员，不可以访问非静态成员。</p>
+<p style="margin-left: 10.5pt">因为静态方法加载时，优先于对象存在，所以没有办法访问对象中的成员。</p>
+<p style="margin-left: 10.5pt">3，静态方法中不能使用this，super关键字。</p>
+<p style="margin-left: 10.5pt">因为this代表对象，而静态在时，有可能没有对象，所以this无法使用。</p>
+<p style="margin-left: 10.5pt">4，主函数是静态的。</p>
+<p>&nbsp;</p>
+<p>什么时候定义静态成员呢？或者说：定义成员时，到底需不需要被静态修饰呢？</p>
+<p>成员分两种：</p>
+<p>1，成员变量。（数据共享时静态化）</p>
+<p style="margin-left: 21pt">该成员变量的数据是否是所有对象都一样：</p>
+<p style="margin-left: 21pt">如果是，那么该变量需要被静态修饰，因为是共享的数据。&nbsp;</p>
+<p style="margin-left: 21pt">如果不是，那么就说这是对象的特有数据，要存储到对象中。&nbsp;</p>
+<p>2，成员函数。（方法中没有调用特有数据时就定义成静态）</p>
+<p>如果判断成员函数是否需要被静态修饰呢？</p>
+<p>只要参考，该函数内是否访问了对象中的特有数据：</p>
+<p>如果有访问特有数据，那方法不能被静态修饰。</p>
+<p>如果没有访问过特有数据，那么这个方法需要被静态修饰。</p>
+<p>&nbsp;</p>
+<p>成员变量和静态变量的区别：</p>
+<p style="margin-left: 10.5pt">1，成员变量所属于对象。所以也称为实例变量。</p>
+<p style="margin-left: 10.5pt">静态变量所属于类。所以也称为类变量。</p>
+<p style="margin-left: 10.5pt">2，成员变量存在于堆内存中。</p>
+<p style="margin-left: 10.5pt">静态变量存在于方法区中。</p>
+<p style="margin-left: 10.5pt">3，成员变量随着对象创建而存在。随着对象被回收而消失。</p>
+<p style="margin-left: 10.5pt">静态变量随着类的加载而存在。随着类的消失而消失。</p>
+<p style="margin-left: 10.5pt">4，成员变量只能被对象所调用&nbsp;。</p>
+<p style="margin-left: 10.5pt">静态变量可以被对象调用，也可以被类名调用。</p>
+<p style="margin-left: 10.5pt">所以，成员变量可以称为对象的特有数据，静态变量称为对象的共享数据。</p>
+<p>&nbsp;</p>
+<p>静态的注意：静态的生命周期很长。</p>
+<p>静态代码块：就是一个有静态关键字标示的一个代码块区域。定义在类中。</p>
+<p>作用：可以完成类的初始化。静态代码块随着类的加载而执行，而且只执行一次（new&nbsp;多个对象就只执行一次）。如果和主函数在同一类中，优先于主函数执行。</p>
+<p>&nbsp;</p>
+<p>Public：访问权限最大。</p>
+<p>static：不需要对象，直接类名即可。</p>
+<p>void：主函数没有返回值。</p>
+<p>Main：主函数特定的名称。</p>
+<p>(String[]&nbsp;args)：主函数的参数，是一个字符串数组类型的参数，jvm调用main方法时，传递的实际参数是&nbsp;new&nbsp;String[0]。</p>
+<p>&nbsp;</p>
+<p>jvm默认传递的是长度为0的字符串数组，我们在运行该类时，也可以指定具体的参数进行传递。可以在控制台，运行该类时，在后面加入参数。参数之间通过空格隔开。jvm会自动将这些字符串参数作为args数组中的元素，进行存储。</p>
+<p>&nbsp;</p>
+<p>静态代码块、构造代码块、构造函数同时存在时的执行顺序：静态代码块&nbsp;&agrave;&nbsp;构造代码块&nbsp;&agrave;&nbsp;构造函数；</p>
+<p>&nbsp;</p>
+<p>生成Java帮助文档：命令格式：javadoc&nbsp;&ndash;d&nbsp;文件夹名&nbsp;&ndash;auther&nbsp;&ndash;version&nbsp;*.java</p>
+<p style="margin-left: 21pt">/**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//格式</p>
+<p style="margin-left: 21pt">*类描述</p>
+<p style="margin-left: 21pt">*@author&nbsp;作者名</p>
+<p style="margin-left: 21pt">*@version&nbsp;版本号</p>
+<p style="margin-left: 21pt">*/</p>
+<p style="margin-left: 21pt">/**</p>
+<p style="margin-left: 21pt">*方法描述</p>
+<p style="margin-left: 21pt">*@param&nbsp;&nbsp;参数描述</p>
+<p style="margin-left: 21pt">*@return&nbsp;&nbsp;返回值描述</p>
+<p style="margin-left: 21pt">*/</p>
+<p>---------------------------------------------------------------------------------------------</p>
+<p>设计模式：解决问题最行之有效的思想。是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。使用设计模式是为了可重用代码、让代码更容易被他人理解、保证代码可靠性。</p>
+<p>&nbsp;</p>
+<p>java中有23种设计模式：</p>
+<p>单例设计模式：★★★★★</p>
+<p>解决的问题：保证一个类在内存中的对象唯一性。</p>
+<p>比如：多程序读取一个配置文件时，建议配置文件封装成对象。会方便操作其中数据，又要保证多个程序读到的是同一个配置文件对象，就需要该配置文件对象在内存中是唯一的。</p>
+<p>&nbsp;</p>
+<p>Runtime()方法就是单例设计模式进行设计的。</p>
+<p>&nbsp;</p>
+<p>如何保证对象唯一性呢？</p>
+<p>思想：</p>
+<p style="margin-left: 10.5pt">1，不让其他程序创建该类对象。</p>
+<p style="margin-left: 10.5pt">2，在本类中创建一个本类对象。</p>
+<p style="margin-left: 10.5pt">3，对外提供方法，让其他程序获取这个对象。</p>
+<p>&nbsp;</p>
+<p>步骤：</p>
+<p style="margin-left: 10.5pt">1，因为创建对象都需要构造函数初始化，只要将本类中的构造函数私有化，其他程序就无法再创建该类对象；</p>
+<p style="margin-left: 10.5pt">2，就在类中创建一个本类的对象；</p>
+<p style="margin-left: 10.5pt">3，定义一个方法，返回该对象，让其他程序可以通过方法就得到本类对象。（作用：可控）</p>
+<p>&nbsp;</p>
+<p>代码体现：</p>
+<p style="margin-left: 10.5pt">1，私有化构造函数；</p>
+<p style="margin-left: 10.5pt">2，创建私有并静态的本类对象；</p>
+<p style="margin-left: 10.5pt">3，定义公有并静态的方法，返回该对象。</p>
+<p>---------------------------------------------</p>
+<p>//饿汉式</p>
+<p>class&nbsp;Single{</p>
+<p>private&nbsp;Single(){}&nbsp;//私有化构造函数。</p>
+<p>private&nbsp;static&nbsp;Single&nbsp;s&nbsp;=&nbsp;new&nbsp;Single();&nbsp;//创建私有并静态的本类对象。</p>
+<p>public&nbsp;static&nbsp;Single&nbsp;getInstance(){&nbsp;//定义公有并静态的方法，返回该对象。</p>
+<p>return&nbsp;s;</p>
+<p>}</p>
+<p>}</p>
+<p>---------------------------------------------</p>
+<p>//懒汉式:延迟加载方式。</p>
+<p>class&nbsp;Single2{</p>
+<p>private&nbsp;Single2(){}</p>
+<p>private&nbsp;static&nbsp;Single2&nbsp;s&nbsp;=&nbsp;null;</p>
+<p>public&nbsp;static&nbsp;Single2&nbsp;getInstance(){</p>
+<p>if(s==null)</p>
+<p>s&nbsp;=&nbsp;new&nbsp;Single2();</p>
+<p>return&nbsp;s;</p>
+<p>}</p>
+<p>}</p>
+<p>-------------------------------------------------------------------------------------------------</p>
+<p>继&nbsp;承（面向对象特征之一）</p>
+<p>好处：</p>
+<p>1：提高了代码的复用性。</p>
+<p>2：让类与类之间产生了关系，提供了另一个特征多态的前提。</p>
+<p>&nbsp;</p>
+<p>父类的由来：其实是由多个类不断向上抽取共性内容而来的。</p>
+<p>java中对于继承，java只支持单继承。java虽然不直接支持多继承，但是保留了这种多继承机制，进行改良。</p>
+<p>&nbsp;</p>
+<p>单继承：一个类只能有一个父类。</p>
+<p>多继承：一个类可以有多个父类。</p>
+<p>&nbsp;</p>
+<p>为什么不支持多继承呢？</p>
+<p>因为当一个类同时继承两个父类时，两个父类中有相同的功能，那么子类对象调用该功能时，运行哪一个呢？因为父类中的方法中存在方法体。</p>
+<p>但是java支持多重继承。A继承B&nbsp;&nbsp;B继承C&nbsp;&nbsp;C继承D。</p>
+<p>多重继承的出现，就有了继承体系。体系中的顶层父类是通过不断向上抽取而来的。它里面定义的该体系最基本最共性内容的功能。</p>
+<p>所以，一个体系要想被使用，直接查阅该系统中的父类的功能即可知道该体系的基本用法。那么想要使用一个体系时，需要建立对象。建议建立最子类对象，因为最子类不仅可以使用父类中的功能。还可以使用子类特有的一些功能。</p>
+<p>&nbsp;</p>
+<p>简单说：对于一个继承体系的使用，查阅顶层父类中的内容，创建最底层子类的对象。&nbsp;</p>
+<p>&nbsp;</p>
+<p>子父类出现后，类中的成员都有了哪些特点：</p>
+<p>1：成员变量。</p>
+<p>&nbsp;当子父类中出现一样的属性时，子类类型的对象，调用该属性，值是子类的属性值。</p>
+<p>&nbsp;如果想要调用父类中的属性值，需要使用一个关键字：super&nbsp;</p>
+<p>&nbsp;This：代表是本类类型的对象引用。</p>
+<p>&nbsp;Super：代表是子类所属的父类中的内存空间引用。</p>
+<p>&nbsp;注意：子父类中通常是不会出现同名成员变量的，因为父类中只要定义了，子类就不用在定义了，直接继承过来用就可以了。</p>
+<p>2：成员函数。</p>
+<p>当子父类中出现了一模一样的方法时，建立子类对象会运行子类中的方法。好像父类中的方法被覆盖掉一样。所以这种情况，是函数的另一个特性：覆盖(复写，重写)</p>
+<p>什么时候使用覆盖呢？当一个类的功能内容需要修改时，可以通过覆盖来实现。</p>
+<p>3：构造函数。</p>
+<p>发现子类构造函数运行时，先运行了父类的构造函数。为什么呢?</p>
+<p>原因：子类的所有构造函数中的第一行，其实都有一条隐身的语句super();</p>
+<p>super():&nbsp;表示父类的构造函数，并会调用于参数相对应的父类中的构造函数。而super():是在调用父类中空参数的构造函数。</p>
+<p>为什么子类对象初始化时，都需要调用父类中的函数？(为什么要在子类构造函数的第一行加入这个super()?)</p>
+<p>因为子类继承父类，会继承到父类中的数据，所以必须要看父类是如何对自己的数据进行初始化的。所以子类在进行对象初始化时，先调用父类的构造函数，这就是子类的实例化过程。</p>
+<p>&nbsp;</p>
+<p>注意：子类中所有的构造函数都会默认访问父类中的空参数的构造函数，因为每一个子类构造内第一行都有默认的语句super();</p>
+<p>如果父类中没有空参数的构造函数，那么子类的构造函数内，必须通过super语句指定要访问的父类中的构造函数。</p>
+<p>如果子类构造函数中用this来指定调用子类自己的构造函数，那么被调用的构造函数也一样会访问父类中的构造函数。</p>
+<p>&nbsp;</p>
+<p>问题：super()和this()是否可以同时出现的构造函数中。</p>
+<p>两个语句只能有一个定义在第一行，所以只能出现其中一个。</p>
+<p>&nbsp;</p>
+<p>super()或者this():为什么一定要定义在第一行？</p>
+<p>因为super()或者this()都是调用构造函数，构造函数用于初始化，所以初始化的动作要先完成。</p>
+<p>&nbsp;</p>
+<p>继承的细节：</p>
+<p>什么时候使用继承呢？</p>
+<p>当类与类之间存在着所属关系时，才具备了继承的前提。a是b中的一种。a继承b。狼是犬科中的一种。</p>
+<p>英文书中，所属关系：&quot;&nbsp;is&nbsp;a&nbsp;&quot;</p>
+<p>注意：不要仅仅为了获取其他类中的已有成员进行继承。</p>
+<p>&nbsp;</p>
+<p>所以判断所属关系，可以简单看，如果继承后，被继承的类中的功能，都可以被该子类所具备，那么继承成立。如果不是，不可以继承。</p>
+<p>&nbsp;</p>
+<p>细节二：</p>
+<p>在方法覆盖时，注意两点：</p>
+<p>1：子类覆盖父类时，必须要保证，子类方法的权限必须大于等于父类方法权限可以实现继承。否则，编译失败。</p>
+<p>2：覆盖时，要么都静态，要么都不静态。&nbsp;(静态只能覆盖静态，或者被静态覆盖)</p>
+<p>&nbsp;</p>
+<p>继承的一个弊端：打破了封装性。对于一些类，或者类中功能，是需要被继承，或者复写的。</p>
+<p>这时如何解决问题呢？介绍一个关键字，final:最终。</p>
+<p>&nbsp;</p>
+<p>final特点：</p>
+<p style="margin-left: 21pt">1：这个关键字是一个修饰符，可以修饰类，方法，变量。</p>
+<p style="margin-left: 21pt">2：被final修饰的类是一个最终类，不可以被继承。</p>
+<p style="margin-left: 21pt">3：被final修饰的方法是一个最终方法，不可以被覆盖。</p>
+<p style="margin-left: 21pt">4：被final修饰的变量是一个常量，只能赋值一次。</p>
+<p style="margin-left: 21pt">&nbsp;</p>
+<p>其实这样的原因的就是给一些固定的数据起个阅读性较强的名称。</p>
+<p>不加final修饰不是也可以使用吗？那么这个值是一个变量，是可以更改的。加了final，程序更为严谨。常量名称定义时，有规范，所有字母都大写，如果由多个单词组成，中间用&nbsp;_&nbsp;连接。</p>
+<p>&nbsp;</p>
+<p>抽象类:&nbsp;abstract</p>
+<p>抽象：不具体，看不明白。抽象类表象体现。</p>
+<p>在不断抽取过程中，将共性内容中的方法声明抽取，但是方法不一样，没有抽取，这时抽取到的方法，并不具体，需要被指定关键字abstract所标示，声明为抽象方法。</p>
+<p>抽象方法所在类一定要标示为抽象类，也就是说该类需要被abstract关键字所修饰。</p>
+<p>&nbsp;</p>
+<p>抽象类的特点：</p>
+<p>1：抽象方法只能定义在抽象类中，抽象类和抽象方法必须由abstract关键字修饰（可以描述类和方法，不可以描述变量）。</p>
+<p>2：抽象方法只定义方法声明，并不定义方法实现。</p>
+<p>3：抽象类不可以被创建对象(实例化)。</p>
+<p>4：只有通过子类继承抽象类并覆盖了抽象类中的所有抽象方法后，该子类才可以实例化。否则，该子类还是一个抽象类。</p>
+<p>&nbsp;</p>
+<p>抽象类的细节：</p>
+<p style="margin-left: 21pt">1：抽象类中是否有构造函数？有，用于给子类对象进行初始化。</p>
+<p style="margin-left: 21pt">2：抽象类中是否可以定义非抽象方法？</p>
+<p>可以。其实，抽象类和一般类没有太大的区别，都是在描述事物，只不过抽象类在描述事物时，有些功能不具体。所以抽象类和一般类在定义上，都是需要定义属性和行为的。只不过，比一般类多了一个抽象函数。而且比一般类少了一个创建对象的部分。</p>
+<p style="margin-left: 21pt">3：抽象关键字abstract和哪些不可以共存？final&nbsp;, private&nbsp;,&nbsp;static&nbsp;</p>
+<p style="margin-left: 21pt">4：抽象类中可不可以不定义抽象方法？可以。抽象方法目的仅仅为了不让该类创建对象。</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>模板方法设计模式：</p>
+<p>解决的问题：当功能内部一部分实现时确定，一部分实现是不确定的。这时可以把不确定的部分暴露出去，让子类去实现。</p>
+<p>abstract&nbsp;class&nbsp;GetTime{</p>
+<p>public&nbsp;final&nbsp;void&nbsp;getTime(){&nbsp;//此功能如果不需要复写，可加final限定</p>
+<p>long&nbsp;start&nbsp;=&nbsp;System.currentTimeMillis();</p>
+<p>code();&nbsp;//不确定的功能部分，提取出来，通过抽象方法实现</p>
+<p>long&nbsp;end&nbsp;=&nbsp;System.currentTimeMillis();</p>
+<p>System.out.println(&quot;毫秒是：&quot;+(end-start));</p>
+<p>}</p>
+<p>public&nbsp;abstract&nbsp;void&nbsp;code();&nbsp;//抽象不确定的功能，让子类复写实现</p>
+<p>}</p>
+<p>class&nbsp;SubDemo&nbsp;extends&nbsp;GetTime{</p>
+<p>public&nbsp;void&nbsp;code(){&nbsp;//子类复写功能方法</p>
+<p>for(int&nbsp;y=0;&nbsp;y&lt;1000;&nbsp;y++){</p>
+<p>System.out.println(&quot;y&quot;);</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>---------------------------------------------------------------------------------------------</p>
+<p>接&nbsp;口：★★★★★</p>
+<p>1：是用关键字interface定义的。</p>
+<p>2：接口中包含的成员，最常见的有全局常量、抽象方法。</p>
+<p>注意：接口中的成员都有固定的修饰符。</p>
+<p>成员变量：public&nbsp;static&nbsp;final&nbsp;</p>
+<p>成员方法：public&nbsp;abstract&nbsp;</p>
+<p style="margin-left: 21pt">interface&nbsp;Inter{</p>
+<p style="margin-left: 21pt">public&nbsp;static&nbsp;final&nbsp;int&nbsp;x&nbsp;=&nbsp;3;</p>
+<p style="margin-left: 21pt">public&nbsp;abstract&nbsp;void&nbsp;show();</p>
+<p style="margin-left: 21pt">}</p>
+<p>3：接口中有抽象方法，说明接口不可以实例化。接口的子类必须实现了接口中所有的抽象方法后，该子类才可以实例化。否则，该子类还是一个抽象类。</p>
+<p>4：类与类之间存在着继承关系，类与接口中间存在的是实现关系。</p>
+<p>继承用extends&nbsp;&nbsp;；实现用implements&nbsp;；</p>
+<p>5：接口和类不一样的地方，就是，接口可以被多实现，这就是多继承改良后的结果。java将多继承机制通过多现实来体现。&nbsp;</p>
+<p>6：一个类在继承另一个类的同时，还可以实现多个接口。所以接口的出现避免了单继承的局限性。还可以将类进行功能的扩展。</p>
+<p>7：其实java中是有多继承的。接口与接口之间存在着继承关系，接口可以多继承接口。</p>
+<p>&nbsp;</p>
+<p>接口都用于设计上，设计上的特点：（可以理解主板上提供的接口）</p>
+<p style="margin-left: 21pt">1：接口是对外提供的规则。</p>
+<p style="margin-left: 21pt">2：接口是功能的扩展。</p>
+<p style="margin-left: 21pt">3：接口的出现降低了耦合性。</p>
+<p>&nbsp;</p>
+<p>抽象类与接口：</p>
+<p>抽象类：一般用于描述一个体系单元，将一组共性内容进行抽取，特点：可以在类中定义抽象内容让子类实现，可以定义非抽象内容让子类直接使用。它里面定义的都是一些体系中的基本内容。</p>
+<p>接口：一般用于定义对象的扩展功能，是在继承之外还需这个对象具备的一些功能。</p>
+<p>&nbsp;</p>
+<p>抽象类和接口的共性：都是不断向上抽取的结果。</p>
+<p>&nbsp;</p>
+<p>抽象类和接口的区别：</p>
+<p style="margin-left: 10.5pt">1：抽象类只能被继承，而且只能单继承。</p>
+<p>接口需要被实现，而且可以多实现。&nbsp;</p>
+<p style="margin-left: 10.5pt">2：抽象类中可以定义非抽象方法，子类可以直接继承使用。</p>
+<p style="margin-left: 10.5pt">接口中都有抽象方法，需要子类去实现。</p>
+<p style="margin-left: 10.5pt">3：抽象类使用的是&nbsp;&nbsp;is&nbsp;a&nbsp;关系。</p>
+<p style="margin-left: 10.5pt">接口使用的&nbsp;like&nbsp;a&nbsp;关系。&nbsp;</p>
+<p style="margin-left: 10.5pt">4：抽象类的成员修饰符可以自定义。</p>
+<p style="margin-left: 10.5pt">接口中的成员修饰符是固定的。全都是public的。</p>
+<p>&nbsp;</p>
+<p>在开发之前，先定义规则，A和B分别开发，A负责实现这个规则，B负责使用这个规则。至于A是如何对规则具体实现的，B是不需要知道的。这样这个接口的出现就降低了A和B直接耦合性。&nbsp;</p>
+<p>&nbsp;</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>多&nbsp;态★★★★★（面向对象特征之一）：函数本身就具备多态性，某一种事物有不同的具体的体现。</p>
+<p>&nbsp;</p>
+<p>体现：父类引用或者接口的引用指向了自己的子类对象。//Animal&nbsp;a&nbsp;=&nbsp;new&nbsp;Cat();</p>
+<p>多态的好处：提高了程序的扩展性。</p>
+<p>多态的弊端：当父类引用指向子类对象时，虽然提高了扩展性，但是只能访问父类中具备的方法，不可以访问子类中特有的方法。(前期不能使用后期产生的功能，即访问的局限性)</p>
+<p>多态的前提：</p>
+<p>1：必须要有关系，比如继承、或者实现。</p>
+<p>2：通常会有覆盖操作。</p>
+<p>&nbsp;</p>
+<p>多态的出现思想上也做着变化：以前是创建对象并指挥对象做事情。有了多态以后，我们可以找到对象的共性类型，直接操作共性类型做事情即可，这样可以指挥一批对象做事情，即通过操作父类或接口实现。</p>
+<p>--------------------------------------------------------------</p>
+<p>class&nbsp;毕姥爷{</p>
+<p>void&nbsp;讲课(){</p>
+<p>System.out.println(&quot;企业管理&quot;);</p>
+<p>}</p>
+<p>void&nbsp;钓鱼(){</p>
+<p>System.out.println(&quot;钓鱼&quot;);</p>
+<p>}</p>
+<p>}</p>
+<p>class&nbsp;毕老师&nbsp;extends&nbsp;毕姥爷{</p>
+<p>void&nbsp;讲课(){</p>
+<p>System.out.println(&quot;JAVA&quot;);</p>
+<p>}</p>
+<p>void&nbsp;看电影(){</p>
+<p>System.out.println(&quot;看电影&quot;);</p>
+<p>}</p>
+<p>}</p>
+<p>class&nbsp;{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;{</p>
+<p>毕姥爷&nbsp;x&nbsp;=&nbsp;new&nbsp;毕老师();&nbsp;//毕老师对象被提升为了毕姥爷类型。</p>
+<p>// x.讲课();</p>
+<p>// x.看电影();&nbsp;&nbsp;//错误.</p>
+<p>毕老师&nbsp;y&nbsp;=&nbsp;(毕老师)x;&nbsp;//将毕姥爷类型强制转换成毕老师类型。</p>
+<p>y.看电影();//在多态中，自始自终都是子类对象在做着类型的变化。</p>
+<p>}</p>
+<p>}</p>
+<p>---------------------------------------------------------------</p>
+<p>如果想用子类对象的特有方法，如何判断对象是哪个具体的子类类型呢？</p>
+<p>可以可以通过一个关键字&nbsp;instanceof&nbsp;;//判断对象是否实现了指定的接口或继承了指定的类</p>
+<p>&nbsp;</p>
+<p>格式：&lt;对象&nbsp;instanceof&nbsp;类型&gt;&nbsp;，判断一个对象是否所属于指定的类型。</p>
+<p>Student&nbsp;instanceof&nbsp;Person&nbsp;=&nbsp;true;//student继承了person类</p>
+<p>&nbsp;</p>
+<p>多态在子父类中的成员上的体现的特点：</p>
+<p>1，成员变量：在多态中，子父类成员变量同名。</p>
+<p>在编译时期：参考的是引用型变量所属的类中是否有调用的成员。（编译时不产生对象，只检查语法错误）</p>
+<p>运行时期：也是参考引用型变量所属的类中是否有调用的成员。</p>
+<p>简单一句话：无论编译和运行，成员变量参考的都是引用变量所属的类中的成员变量。</p>
+<p>再说的更容易记忆一些：成员变量&nbsp;---&nbsp;编译运行都看&nbsp;=&nbsp;左边。</p>
+<p>2，成员函数。</p>
+<p>编译时期：参考引用型变量所属的类中是否有调用的方法。</p>
+<p>运行事情：参考的是对象所属的类中是否有调用的方法。</p>
+<p>为什么是这样的呢？因为在子父类中，对于一模一样的成员函数，有一个特性：覆盖。</p>
+<p>简单一句：成员函数，编译看引用型变量所属的类，运行看对象所属的类。</p>
+<p>更简单：成员函数&nbsp;---&nbsp;编译看&nbsp;=&nbsp;左边，运行看&nbsp;=&nbsp;右边。</p>
+<p>3，静态函数。&nbsp;</p>
+<p>编译时期：参考的是引用型变量所属的类中是否有调用的成员。</p>
+<p>运行时期：也是参考引用型变量所属的类中是否有调用的成员。</p>
+<p>为什么是这样的呢？因为静态方法，其实不所属于对象，而是所属于该方法所在的类。</p>
+<p>调用静态的方法引用是哪个类的引用调用的就是哪个类中的静态方法。</p>
+<p>简单说：静态函数&nbsp;---&nbsp;编译运行都看&nbsp;=&nbsp;左边。</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>------java.lang.Object</p>
+<p>Object：所有类的直接或者间接父类，Java认为所有的对象都具备一些基本的共性内容，这些内容可以不断的向上抽取，最终就抽取到了一个最顶层的类中的，该类中定义的就是所有对象都具备的功能。</p>
+<p>&nbsp;</p>
+<p>具体方法：</p>
+<p style="margin-left: 10.5pt">1，boolean&nbsp;equals(Object&nbsp;obj)：用于比较两个对象是否相等，其实内部比较的就是两个对象地址。</p>
+<p style="margin-left: 10.5pt">而根据对象的属性不同，判断对象是否相同的具体内容也不一样。所以在定义类时，一般都会复写equals方法，建立本类特有的判断对象是否相同的依据。</p>
+<p style="margin-left: 10.5pt">public&nbsp;boolean&nbsp;equals(Object&nbsp;obj){</p>
+<p style="margin-left: 10.5pt">if(!(obj&nbsp;instanceof&nbsp;Person))</p>
+<p style="margin-left: 10.5pt">return&nbsp;false;</p>
+<p style="margin-left: 10.5pt">Person&nbsp;p&nbsp;=&nbsp;(Person)obj;</p>
+<p style="margin-left: 10.5pt">return&nbsp;this.age&nbsp;==&nbsp;p.age;</p>
+<p style="margin-left: 10.5pt">}</p>
+<p style="margin-left: 10.5pt">2，String&nbsp;toString()：将对象变成字符串；默认返回的格式：类名@哈希值&nbsp;=&nbsp;getClass().getName()&nbsp;+&nbsp;&#39;@&#39;&nbsp;+&nbsp;Integer.toHexString(hashCode())</p>
+<p style="margin-left: 10.5pt">为了对象对应的字符串内容有意义，可以通过复写，建立该类对象自己特有的字符串表现形式。&nbsp;</p>
+<p style="margin-left: 10.5pt">public&nbsp;String&nbsp;toString(){</p>
+<p style="margin-left: 10.5pt">return&nbsp;&quot;person&nbsp;:&nbsp;&quot;+age;</p>
+<p style="margin-left: 10.5pt">}</p>
+<p style="margin-left: 10.5pt">3，Class&nbsp;getClass()：获取任意对象运行时的所属字节码文件对象。</p>
+<p style="margin-left: 10.5pt">4，int&nbsp;hashCode()：返回该对象的哈希码值。支持此方法是为了提高哈希表的性能。</p>
+<p style="margin-left: 10.5pt">&nbsp;</p>
+<p>通常equals，toString，hashCode，在应用中都会被复写，建立具体对象的特有的内容。</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>内部类：如果A类需要直接访问B类中的成员，而B类又需要建立A类的对象。这时,为了方便设计和访问，直接将A类定义在B类中。就可以了。A类就称为内部类。内部类可以直接访问外部类中的成员。而外部类想要访问内部类，必须要建立内部类的对象。</p>
+<p>-----------------------------------------------------</p>
+<p>class&nbsp;Outer{</p>
+<p>int&nbsp;num&nbsp;=&nbsp;4;</p>
+<p>class&nbsp;&nbsp;Inner&nbsp;{</p>
+<p>void&nbsp;show(){</p>
+<p>System.out.println(&quot;inner&nbsp;show&nbsp;run&nbsp;&quot;+num);</p>
+<p>}</p>
+<p>}</p>
+<p>public&nbsp;void&nbsp;method(){</p>
+<p>Inner&nbsp;in&nbsp;=&nbsp;new&nbsp;Inner();//创建内部类的对象。</p>
+<p>in.show();//调用内部类的方法。&nbsp;</p>
+<p>}</p>
+<p>}</p>
+<p>-------------------------------------------------------</p>
+<p>当内部类定义在外部类中的成员位置上，可以使用一些成员修饰符修饰&nbsp;private、static。</p>
+<p style="margin-left: 10.5pt">1：默认修饰符。</p>
+<p>直接访问内部类格式：外部类名.内部类名&nbsp;变量名&nbsp;=&nbsp;&nbsp;外部类对象.内部类对象;</p>
+<p>Outer.Inner&nbsp;in&nbsp;=&nbsp;new&nbsp;Outer.new&nbsp;Inner();//这种形式很少用。</p>
+<p style="margin-left: 10.5pt">但是这种应用不多见，因为内部类之所以定义在内部就是为了封装。想要获取内部类对象通常都通过外部类的方法来获取。这样可以对内部类对象进行控制。</p>
+<p style="margin-left: 10.5pt">2：私有修饰符。</p>
+<p style="margin-left: 10.5pt">通常内部类被封装，都会被私有化，因为封装性不让其他程序直接访问。&nbsp;</p>
+<p style="margin-left: 10.5pt">3：静态修饰符。</p>
+<p style="margin-left: 10.5pt">如果内部类被静态修饰，相当于外部类，会出现访问局限性，只能访问外部类中的静态成员。</p>
+<p style="margin-left: 10.5pt">注意；如果内部类中定义了静态成员，那么该内部类必须是静态的。</p>
+<p style="margin-left: 10.5pt">&nbsp;</p>
+<p>内部类编译后的文件名为：&ldquo;外部类名$内部类名.java&rdquo;；</p>
+<p>&nbsp;</p>
+<p>为什么内部类可以直接访问外部类中的成员呢？</p>
+<p>那是因为内部中都持有一个外部类的引用。这个是引用是&nbsp;外部类名.this&nbsp;</p>
+<p>内部类可以定义在外部类中的成员位置上，也可以定义在外部类中的局部位置上。</p>
+<p>当内部类被定义在局部位置上，只能访问局部中被final修饰的局部变量。</p>
+<p>&nbsp;</p>
+<p>匿名内部类：没有名字的内部类。就是内部类的简化形式。一般只用一次就可以用这种形式。匿名内部类其实就是一个匿名子类对象。想要定义匿名内部类：需要前提，内部类必须继承一个类或者实现接口。</p>
+<p>&nbsp;</p>
+<p>匿名内部类的格式：new&nbsp;父类名&amp;接口名(){&nbsp;定义子类成员或者覆盖父类方法&nbsp;}.方法。</p>
+<p>&nbsp;</p>
+<p>匿名内部类的使用场景：</p>
+<p>当函数的参数是接口类型引用时，如果接口中的方法不超过3个。可以通过匿名内部类来完成参数的传递。</p>
+<p>其实就是在创建匿名内部类时，该类中的封装的方法不要过多，最好两个或者两个以内。</p>
+<p>--------------------------------------------------------</p>
+<p>//面试</p>
+<p>//1</p>
+<p>new&nbsp;Object(){</p>
+<p>void&nbsp;show(){</p>
+<p>System.out.println(&quot;show&nbsp;run&quot;);</p>
+<p>}</p>
+<p>}.show();</p>
+<p>//2</p>
+<p>Object&nbsp;obj&nbsp;=&nbsp;new&nbsp;Object(){</p>
+<p>void&nbsp;show(){</p>
+<p>System.out.println(&quot;show&nbsp;run&quot;);</p>
+<p>}</p>
+<p>};</p>
+<p>obj.show();</p>
+<p>&nbsp;</p>
+<p>1和2的写法正确吗？有区别吗？说出原因。</p>
+<p>写法是正确，1和2都是在通过匿名内部类建立一个Object类的子类对象。</p>
+<p>区别：</p>
+<p>第一个可是编译通过，并运行。</p>
+<p>第二个编译失败，因为匿名内部类是一个子类对象，当用Object的obj引用指向时，就被提升为了</p>
+<p>Object类型，而编译时检查Object类中是否有show方法，所以编译失败。</p>
+<p>-------------------------------------------------------</p>
+<p>class&nbsp;InnerClassDemo6&nbsp;{</p>
+<p>+（static）class&nbsp;Inner{</p>
+<p>void&nbsp;show(){}</p>
+<p>}</p>
+<p>public&nbsp;void&nbsp;method(){</p>
+<p>this.new&nbsp;Inner().show();//可以</p>
+<p>}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;{//static不允许this</p>
+<p>This.new&nbsp;Inner().show();//错误，Inner类需要定义成static</p>
+<p>}</p>
+<p>}</p>
+<p>------------------------------------------------------</p>
+<p>interface&nbsp;Inter{</p>
+<p>void&nbsp;show();</p>
+<p>}</p>
+<p>class&nbsp;Outer{//通过匿名内部类补足Outer类中的代码。</p>
+<p>public&nbsp;static&nbsp;Inter&nbsp;method(){</p>
+<p>return&nbsp;new&nbsp;Inter(){</p>
+<p>public&nbsp;void&nbsp;show(){}</p>
+<p>};</p>
+<p>}</p>
+<p>}</p>
+<p>class&nbsp;InnerClassDemo7&nbsp;{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;{</p>
+<p>Outer.method().show();</p>
+<p>/*</p>
+<p>Outer.method():意思是：Outer中有一个名称为method的方法，而且这个方法是静态的。</p>
+<p>Outer.method().show():当Outer类调用静态的method方法运算结束后的结果又调用了show方法，意味着：method()方法运算完一个是对象，而且这个对象是Inter类型的。</p>
+<p>*/</p>
+<p>function&nbsp;(new&nbsp;Inter(){</p>
+<p>public&nbsp;void&nbsp;show(){}</p>
+<p>});&nbsp;//匿名内部类作为方法的参数进行传递。</p>
+<p>}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;function(Inter&nbsp;in){</p>
+<p>in.show();</p>
+<p>}</p>
+<p>}</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>异&nbsp;常：★★★★</p>
+<p>异常：就是不正常。程序在运行时出现的不正常情况。其实就是程序中出现的问题。这个问题按照面向对象思想进行描述，并封装成了对象。因为问题的产生有产生的原因、有问题的名称、有问题的描述等多个属性信息存在。当出现多属性信息最方便的方式就是将这些信息进行封装。异常就是java按照面向对象的思想将问题进行对象封装。这样就方便于操作问题以及处理问题。</p>
+<p>&nbsp;</p>
+<p>出现的问题有很多种，比如角标越界，空指针等都是。就对这些问题进行分类。而且这些问题都有共性内容比如：每一个问题都有名称，同时还有问题描述的信息，问题出现的位置，所以可以不断的向上抽取。形成了异常体系。&nbsp;</p>
+<p>&nbsp;</p>
+<p>--------java.lang.Throwable：</p>
+<p>Throwable：可抛出的。&nbsp;</p>
+<p>|--Error：错误，一般情况下，不编写针对性的代码进行处理，通常是jvm发生的，需要对程序进行修正。</p>
+<p>|--Exception：异常，可以有针对性的处理方式</p>
+<p>&nbsp;</p>
+<p>无论是错误还是异常，它们都有具体的子类体现每一个问题，它们的子类都有一个共性，就是都以父类名才作为子类的后缀名。</p>
+<p>&nbsp;</p>
+<p>这个体系中的所有类和对象都具备一个独有的特点；就是可抛性。</p>
+<p>可抛性的体现：就是这个体系中的类和对象都可以被throws和throw两个关键字所操作。</p>
+<p>------------------------------------------------------</p>
+<p>class&nbsp;&nbsp;ExceptionDemo{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;{</p>
+<p>// byte[]&nbsp;buf&nbsp;=&nbsp;new&nbsp;byte[1024*1024*700];//java.lang.OutOfMemoryError内存溢出错误</p>
+<p>}</p>
+<p>}</p>
+<p>------------------------------------------------------</p>
+<p>在开发时，如果定义功能时，发现该功能会出现一些问题，应该将问题在定义功能时标示出来，这样调用者就可以在使用这个功能的时候，预先给出处理方式。</p>
+<p>&nbsp;</p>
+<p>如何标示呢？通过throws关键字完成，格式：throws&nbsp;异常类名,异常类名...</p>
+<p>这样标示后，调用者，在使用该功能时，就必须要处理，否则编译失败。</p>
+<p>&nbsp;</p>
+<p>处理方式有两种：1、捕捉；2、抛出。</p>
+<p>对于捕捉：java有针对性的语句块进行处理。</p>
+<p style="margin-left: 21pt">try&nbsp;{</p>
+<p style="margin-left: 21pt">需要被检测的代码；</p>
+<p style="margin-left: 21pt">}</p>
+<p style="margin-left: 21pt">catch(异常类&nbsp;变量名){</p>
+<p style="margin-left: 21pt">异常处理代码；</p>
+<p style="margin-left: 21pt">}</p>
+<p style="margin-left: 21pt">fianlly{</p>
+<p style="margin-left: 21pt">一定会执行的代码；</p>
+<p style="margin-left: 21pt">}</p>
+<p>--------------------------------------------------------</p>
+<p>catch&nbsp;(Exception&nbsp;e)&nbsp;{&nbsp;//e用于接收try检测到的异常对象。</p>
+<p>System.out.println(&quot;message:&quot;+e.getMessage());//获取的是异常的信息。</p>
+<p>System.out.println(&quot;toString:&quot;+e.toString());//获取的是异常的名字+异常的信息。</p>
+<p>e.printStackTrace();//打印异常在堆栈中信息；异常名称+异常信息+异常的位置。</p>
+<p>}</p>
+<p>---------------------------------------------------------</p>
+<p>异常处理原则：功能抛出几个异常，功能调用如果进行try处理，需要与之对应的catch处理代码块，这样的处理有针对性，抛几个就处理几个。</p>
+<p>&nbsp;</p>
+<p>特殊情况：try对应多个catch时，如果有父类的catch语句块，一定要放在下面。</p>
+<p>&nbsp;</p>
+<p>throw&nbsp;和throws关键字的区别：</p>
+<p style="margin-left: 10.5pt">throw用于抛出异常对象，后面跟的是异常对象；throw用在函数内。</p>
+<p style="margin-left: 10.5pt">throws用于抛出异常类，后面跟的异常类名，可以跟多个，用逗号隔开。throws用在函数上。</p>
+<p>&nbsp;</p>
+<p>通常情况：函数内容如果有throw，抛出异常对象，并没有进行处理，那么函数上一定要声明，否则编译失败。但是也有特殊情况。</p>
+<p>&nbsp;</p>
+<p>异常分两种：</p>
+<p>1：编译时被检查的异常，只要是Exception及其子类都是编译时被检测的异常。</p>
+<p>2：运行时异常，其中Exception有一个特殊的子类RuntimeException，以及RuntimeException的子类是运行异常，也就说这个异常是编译时不被检查的异常。</p>
+<p>&nbsp;</p>
+<p>编译时被检查的异常和运行时异常的区别：</p>
+<p>编译被检查的异常在函数内被抛出，函数必须要声明，否编译失败。</p>
+<p>声明的原因：是需要调用者对该异常进行处理。</p>
+<p>运行时异常如果在函数内被抛出，在函数上不需要声明。</p>
+<p>不声明的原因：不需要调用者处理，运行时异常发生，已经无法再让程序继续运行，所以，不让调用处理的，直接让程序停止，由调用者对代码进行修正。</p>
+<p>&nbsp;</p>
+<p>定义异常处理时，什么时候定义try，什么时候定义throws呢？</p>
+<p>功能内部如果出现异常，如果内部可以处理，就用try；</p>
+<p>如果功能内部处理不了，就必须声明出来，让调用者处理。</p>
+<p>&nbsp;</p>
+<p>自定义异常：当开发时，项目中出现了java中没有定义过的问题时，这时就需要我们按照java异常建立思想，将项目的中的特有问题也进行对象的封装。这个异常，称为自定义异常。</p>
+<p>&nbsp;</p>
+<p>对于除法运算，0作为除数是不可以的。java中对这种问题用ArithmeticException类进行描述。对于这个功能，在我们项目中，除数除了不可以为0外，还不可以为负数。可是负数的部分java并没有针对描述。所以我们就需要自定义这个异常。</p>
+<p>&nbsp;</p>
+<p>自定义异常的步骤：</p>
+<p>1：定义一个子类继承Exception或RuntimeException，让该类具备可抛性。</p>
+<p>2：通过throw&nbsp;或者throws进行操作。</p>
+<p>&nbsp;</p>
+<p>异常的转换思想：当出现的异常是调用者处理不了的，就需要将此异常转换为一个调用者可以处理的异常抛出。</p>
+<p>&nbsp;</p>
+<p>try&nbsp;&nbsp;catch&nbsp;&nbsp;finally的几种结合方式：</p>
+<p style="margin-left: 21pt"><img height="73" src="file:///C:/Users/dgsy/AppData/Local/Temp/ksohtml/wpsA6D9.tmp.png" width="75" /><img height="73" src="file:///C:/Users/dgsy/AppData/Local/Temp/ksohtml/wpsA6DA.tmp.png" width="96" />1，</p>
+<p style="margin-left: 21pt">try&nbsp;</p>
+<p style="margin-left: 21pt">catch</p>
+<p style="margin-left: 21pt">finally</p>
+<p>&nbsp;</p>
+<p>这种情况，如果出现异常，并不处理，但是资源一定关闭，所以try&nbsp;&nbsp;finally集合只为关闭资源。</p>
+<p>记住：finally很有用，主要用户关闭资源。无论是否发生异常，资源都必须进行关闭。</p>
+<p>System.exit(0);&nbsp;//退出jvm，只有这种情况finally不执行。</p>
+<p>&nbsp;</p>
+<p>当异常出现后，在子父类进行覆盖时，有了一些新的特点：</p>
+<p>1：当子类覆盖父类的方法时，如果父类的方法抛出了异常，那么子类的方法要么不抛出异常要么抛出父类异常或者该异常的子类，不能抛出其他异常。</p>
+<p>2：如果父类抛出了多个异常，那么子类在覆盖时只能抛出父类的异常的子集。</p>
+<p>&nbsp;</p>
+<p>注意：</p>
+<p>如果父类或者接口中的方法没有抛出过异常，那么子类是不可以抛出异常的，如果子类的覆盖的方法中出现了异常，只能try不能throws。</p>
+<p>如果这个异常子类无法处理，已经影响了子类方法的具体运算，这时可以在子类方法中，通过throw抛出RuntimeException异常或者其子类，这样，子类的方法上是不需要throws声明的。</p>
+<p>&nbsp;</p>
+<p>常见异常：</p>
+<p style="margin-left: 21pt">1、脚标越界异常（IndexOutOfBoundsException）包括数组、字符串；</p>
+<p style="margin-left: 21pt">空指针异常（NullPointerException）</p>
+<p style="margin-left: 21pt">2、类型转换异常：ClassCastException</p>
+<p style="margin-left: 21pt">3、没有这个元素异常：NullPointerException</p>
+<p style="margin-left: 21pt">4、不支持操作异常；</p>
+<p>异常要尽量避免，如果避免不了，需要预先给出处理方式。比如家庭备药，比如灭火器。</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>包：定义包用package关键字。</p>
+<p style="margin-left: 21pt">1：对类文件进行分类管理。</p>
+<p style="margin-left: 21pt">2：给类文件提供多层名称空间。</p>
+<p>&nbsp;</p>
+<p>如果生成的包不在当前目录下，需要最好执行classpath，将包所在父目录定义到classpath变量中即可。</p>
+<p>一般在定义包名时，因为包的出现是为了区分重名的类。所以包名要尽量唯一。怎么保证唯一性呢？可以使用url域名来进行包名称的定义。</p>
+<p>package&nbsp;pack;//定义了一个包，名称为pack。&nbsp;注意：包名的写法规范：所有字母都小写。</p>
+<p>//package&nbsp;cn.itcast.pack.demo;</p>
+<p>&nbsp;</p>
+<p>类的全名称是&nbsp;包名.类名</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;编译命令：javac&nbsp;&ndash;d&nbsp;位置（.当前路径）&nbsp;java源文件&nbsp;（就可以自动生成包）</p>
+<p>&nbsp;</p>
+<p>包是一种封装形式，用于封装类，想要被包以外的程序访问，该类必须public；</p>
+<p>类中的成员，如果被包以外访问，也必须public；</p>
+<p>&nbsp;</p>
+<p>包与包之间访问可以使用的权限有两种：</p>
+<p style="margin-left: 21pt">1：public&nbsp;</p>
+<p style="margin-left: 21pt">2：protected：只能是不同包中的子类可以使用的权限。</p>
+<p>&nbsp;</p>
+<p>总结java中的四种权限：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;范围&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public protected default private&nbsp;</p>
+<p>同一个类中&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok ok ok ok</p>
+<p>同一包中 &nbsp;ok ok ok</p>
+<p>子类 &nbsp;ok</p>
+<p>不同包中&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ok</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>Import&nbsp;-&nbsp;导入：类名称变长，写起来很麻烦。为了简化，使用了一个关键字：import，可以使用这个关键字导入指定包中的类。记住：实际开发时,到的哪个类就导入哪个类，不建议使用*.</p>
+<p style="margin-left: 10.5pt">import&nbsp;packa.*;//这个仅仅是导入了packa当前目录下的所有的类。不包含子包。</p>
+<p style="margin-left: 10.5pt">import&nbsp;packa.abc.*;//导入了packa包中的子包abc下的当前的所有类。</p>
+<p>&nbsp;</p>
+<p>如果导入的两个包中存在着相同名称的类。这时如果用到该类，必须在代码中指定包名。</p>
+<p>&nbsp;</p>
+<p>常见的软件包:</p>
+<p>java.lang&nbsp;:&nbsp;language&nbsp;java的核心包，Object&nbsp;System&nbsp;&nbsp;String&nbsp;Throwable&nbsp;jdk1.2版本后，该包中的类自动被导入。</p>
+<p>java.awt&nbsp;:&nbsp;定义的都是用于java图形界面开发的对象。</p>
+<p>javax.swing:&nbsp;提供所有的windows桌面应用程序包括的控件,比如：Frame&nbsp;,&nbsp;Dialog,&nbsp;Table,&nbsp;List&nbsp;等等,就是java的图形界面库。</p>
+<p>java.net&nbsp;:&nbsp;用于java网络编程方面的对象都在该包中。</p>
+<p>java.io&nbsp;:&nbsp;input&nbsp;&nbsp;output&nbsp;用于操作设备上数据的对象都在该包中。比如：读取硬盘数据，往硬盘写入数据。</p>
+<p>java.util&nbsp;:&nbsp;java的工具包，时间对象，集合框架。</p>
+<p>java.applet:&nbsp;application+let&nbsp;客户端java小程序。server+let&nbsp;&nbsp;--&gt;&nbsp;&nbsp;servlet&nbsp;服务端java小程序。</p>
+<p>&nbsp;</p>
+<p>jar&nbsp;：java的压缩包，主要用于存储类文件，或者配置文件等。</p>
+<p>命令格式：jar&nbsp;&ndash;cf&nbsp;包名.jar&nbsp;包目录</p>
+<p>&nbsp;&nbsp;&nbsp;解压缩：jar&nbsp;&ndash;xvf&nbsp;包名.jar&nbsp;</p>
+<p>&nbsp;将jar包目录列表重定向到一个文件中：jar&nbsp;&ndash;tf&nbsp;包名.jar&nbsp;&gt;c:\1.txt</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>多线程：★★★★</p>
+<p>进程：正在进行中的程序。其实进程就是一个应用程序运行时的内存分配空间。</p>
+<p>线程：其实就是进程中一个程序执行控制单元，一条执行路径。进程负责的是应用程序的空间的标示。线程负责的是应用程序的执行顺序。</p>
+<p>&nbsp;</p>
+<p>一个进程至少有一个线程在运行，当一个进程中出现多个线程时，就称这个应用程序是多线程应用程序，每个线程在栈区中都有自己的执行空间，自己的方法区、自己的变量。</p>
+<p>jvm在启动的时，首先有一个主线程，负责程序的执行，调用的是main函数。主线程执行的代码都在main方法中。</p>
+<p>当产生垃圾时，收垃圾的动作，是不需要主线程来完成，因为这样，会出现主线程中的代码执行会停止，会去运行垃圾回收器代码，效率较低，所以由单独一个线程来负责垃圾回收。&nbsp;</p>
+<p>&nbsp;</p>
+<p>随机性的原理：因为cpu的快速切换造成，哪个线程获取到了cpu的执行权，哪个线程就执行。</p>
+<p>&nbsp;</p>
+<p>返回当前线程的名称：Thread.currentThread().getName()</p>
+<p>线程的名称是由：Thread-编号定义的。编号从0开始。</p>
+<p>线程要运行的代码都统一存放在了run方法中。</p>
+<p>&nbsp;</p>
+<p>线程要运行必须要通过类中指定的方法开启。start方法。（启动后，就多了一条执行路径）</p>
+<p>start方法：1）、启动了线程；2）、让jvm调用了run方法。</p>
+<p>&nbsp;</p>
+<p>创建线程的第一种方式：继承Thread&nbsp;，由子类复写run方法。</p>
+<p>步骤：</p>
+<p style="margin-left: 21pt">1，定义类继承Thread类；</p>
+<p style="margin-left: 21pt">2，目的是复写run方法，将要让线程运行的代码都存储到run方法中；</p>
+<p style="margin-left: 21pt">3，通过创建Thread类的子类对象，创建线程对象；</p>
+<p style="margin-left: 21pt">4，调用线程的start方法，开启线程，并执行run方法。</p>
+<p>&nbsp;</p>
+<p>线程状态：</p>
+<p style="margin-left: 21pt">被创建：start()</p>
+<p style="margin-left: 21pt">运行：具备执行资格，同时具备执行权；</p>
+<p style="margin-left: 21pt">冻结：sleep(time),wait()&mdash;notify()唤醒；线程释放了执行权，同时释放执行资格；</p>
+<p style="margin-left: 21pt">临时阻塞状态：线程具备cpu的执行资格，没有cpu的执行权；</p>
+<p style="margin-left: 21pt">消亡：stop()</p>
+<p><img height="292" src="file:///C:/Users/dgsy/AppData/Local/Temp/ksohtml/wpsA70A.tmp.jpg" width="612" /></p>
+<p>创建线程的第二种方式：实现一个接口Runnable。</p>
+<p>步骤：</p>
+<p style="margin-left: 21pt">1，定义类实现Runnable接口。</p>
+<p style="margin-left: 21pt">2，覆盖接口中的run方法（用于封装线程要运行的代码）。</p>
+<p style="margin-left: 21pt">3，通过Thread类创建线程对象；</p>
+<p style="margin-left: 21pt">4，将实现了Runnable接口的子类对象作为实际参数传递给Thread类中的构造函数。</p>
+<p style="margin-left: 21pt">为什么要传递呢？因为要让线程对象明确要运行的run方法所属的对象。</p>
+<p style="margin-left: 21pt">5，调用Thread对象的start方法。开启线程，并运行Runnable接口子类中的run方法。</p>
+<p style="margin-left: 21pt">Ticket&nbsp;t&nbsp;=&nbsp;new&nbsp;Ticket();</p>
+<p>/*</p>
+<p>直接创建Ticket对象，并不是创建线程对象。</p>
+<p>因为创建对象只能通过new&nbsp;Thread类，或者new&nbsp;Thread类的子类才可以。</p>
+<p>所以最终想要创建线程。既然没有了Thread类的子类，就只能用Thread类。</p>
+<p>*/</p>
+<p>Thread&nbsp;t1&nbsp;=&nbsp;new&nbsp;Thread(t);&nbsp;//创建线程。</p>
+<p>/*</p>
+<p>只要将t作为Thread类的构造函数的实际参数传入即可完成线程对象和t之间的关联</p>
+<p>为什么要将t传给Thread类的构造函数呢？其实就是为了明确线程要运行的代码run方法。</p>
+<p>*/</p>
+<p>t1.start();</p>
+<p>&nbsp;</p>
+<p>为什么要有Runnable接口的出现？</p>
+<p>1：通过继承Thread类的方式，可以完成多线程的建立。但是这种方式有一个局限性，如果一个类已经有了自己的父类，就不可以继承Thread类，因为java单继承的局限性。</p>
+<p>可是该类中的还有部分代码需要被多个线程同时执行。这时怎么办呢？</p>
+<p>只有对该类进行额外的功能扩展，java就提供了一个接口Runnable。这个接口中定义了run方法，其实run方法的定义就是为了存储多线程要运行的代码。</p>
+<p>所以，通常创建线程都用第二种方式。</p>
+<p>因为实现Runnable接口可以避免单继承的局限性。</p>
+<p>&nbsp;</p>
+<p>2：其实是将不同类中需要被多线程执行的代码进行抽取。将多线程要运行的代码的位置单独定义到接口中。为其他类进行功能扩展提供了前提。</p>
+<p>所以Thread类在描述线程时，内部定义的run方法，也来自于Runnable接口。</p>
+<p>&nbsp;</p>
+<p>实现Runnable接口可以避免单继承的局限性。而且，继承Thread，是可以对Thread类中的方法，进行子类复写的。但是不需要做这个复写动作的话，只为定义线程代码存放位置，实现Runnable接口更方便一些。所以Runnable接口将线程要执行的任务封装成了对象。</p>
+<p>-------------------------------------------------------</p>
+<p style="margin-left: 21pt">//面试</p>
+<p>new&nbsp;Thread(new&nbsp;Runnable(){&nbsp;&nbsp;//匿名</p>
+<p>public&nbsp;void&nbsp;run(){</p>
+<p>System.out.println(&quot;runnable&nbsp;run&quot;);</p>
+<p>}</p>
+<p>})</p>
+<p>{</p>
+<p>public&nbsp;void&nbsp;run(){</p>
+<p>System.out.println(&quot;subthread&nbsp;run&quot;);</p>
+<p>}</p>
+<p>}.start();&nbsp;&nbsp;//结果：subthread&nbsp;run</p>
+<p>---------------------------------------------------------</p>
+<p>Try&nbsp;{</p>
+<p>Thread.sleep(10);</p>
+<p>}catch(InterruptedException&nbsp;e){}//&nbsp;当刻意让线程稍微停一下，模拟cpu 切换情况。</p>
+<p>&nbsp;</p>
+<p>多线程安全问题的原因：</p>
+<p>通过图解：发现一个线程在执行多条语句时，并运算同一个数据时，在执行过程中，其他线程参与进来，并操作了这个数据。导致到了错误数据的产生。</p>
+<p>&nbsp;</p>
+<p>涉及到两个因素：</p>
+<p>1，多个线程在操作共享数据。</p>
+<p>2，有多条语句对共享数据进行运算。</p>
+<p>原因：这多条语句，在某一个时刻被一个线程执行时，还没有执行完，就被其他线程执行了。</p>
+<p>&nbsp;</p>
+<p>解决安全问题的原理：</p>
+<p>只要将操作共享数据的语句在某一时段让一个线程执行完，在执行过程中，其他线程不能进来执行就可以解决这个问题。</p>
+<p>&nbsp;</p>
+<p>如何进行多句操作共享数据代码的封装呢？</p>
+<p>java中提供了一个解决方式：就是同步代码块。</p>
+<p style="margin-left: 21pt">格式：</p>
+<p style="margin-left: 21pt">synchronized(对象)&nbsp;{&nbsp;&nbsp;//&nbsp;任意对象都可以。这个对象就是锁。</p>
+<p style="margin-left: 21pt">需要被同步的代码；</p>
+<p style="margin-left: 21pt">}</p>
+<p>---------------------------------------------------------------</p>
+<p>同步：★★★★★</p>
+<p>好处：解决了线程安全问题。</p>
+<p>弊端：相对降低性能，因为判断锁需要消耗资源，产生了死锁。</p>
+<p>&nbsp;</p>
+<p>定义同步是有前提的：</p>
+<p>1，必须要有两个或者两个以上的线程，才需要同步。</p>
+<p>2，多个线程必须保证使用的是同一个锁。</p>
+<p>&nbsp;</p>
+<p>同步的第二种表现形式：</p>
+<p>同步函数：其实就是将同步关键字定义在函数上，让函数具备了同步性。</p>
+<p>&nbsp;</p>
+<p>同步函数是用的哪个锁呢？</p>
+<p>通过验证，函数都有自己所属的对象this，所以同步函数所使用的锁就是this锁。</p>
+<p>&nbsp;</p>
+<p>当同步函数被static修饰时，这时的同步用的是哪个锁呢？</p>
+<p>静态函数在加载时所属于类，这时有可能还没有该类产生的对象，但是该类的字节码文件加载进内存就已经被封装成了对象，这个对象就是该类的字节码文件对象。</p>
+<p>所以静态加载时，只有一个对象存在，那么静态同步函数就使用的这个对象。</p>
+<p>这个对象就是&nbsp;类名.class</p>
+<p>&nbsp;</p>
+<p>同步代码块和同步函数的区别？</p>
+<p style="margin-left: 21pt">同步代码块使用的锁可以是任意对象。</p>
+<p style="margin-left: 21pt">同步函数使用的锁是this，静态同步函数的锁是该类的字节码文件对象。</p>
+<p>&nbsp;</p>
+<p>在一个类中只有一个同步，可以使用同步函数。如果有多同步，必须使用同步代码块，来确定不同的锁。所以同步代码块相对灵活一些。</p>
+<p>-------------------------------------------------------</p>
+<p>★考点问题：请写一个延迟加载的单例模式？写懒汉式；当出现多线程访问时怎么解决？加同步，解决安全问题；效率高吗？不高；怎样解决？通过双重判断的形式解决。</p>
+<p>//懒汉式：延迟加载方式。</p>
+<p>当多线程访问懒汉式时，因为懒汉式的方法内对共性数据进行多条语句的操作。所以容易出现线程安全问题。为了解决，加入同步机制，解决安全问题。但是却带来了效率降低。</p>
+<p>为了效率问题，通过双重判断的形式解决。</p>
+<p>class&nbsp;Single{</p>
+<p>private&nbsp;static&nbsp;Single&nbsp;s&nbsp;=&nbsp;null;</p>
+<p>private&nbsp;Single(){}</p>
+<p>public&nbsp;static&nbsp;Single&nbsp;getInstance(){&nbsp;//锁是谁？字节码文件对象；</p>
+<p>if(s&nbsp;==&nbsp;null){</p>
+<p>synchronized(Single.class){</p>
+<p>if(s&nbsp;==&nbsp;null)</p>
+<p>s&nbsp;=&nbsp;new&nbsp;Single();</p>
+<p>}</p>
+<p>}</p>
+<p>return&nbsp;s;</p>
+<p>}</p>
+<p>}</p>
+<p>---------------------------------------------------------</p>
+<p>同步死锁：通常只要将同步进行嵌套，就可以看到现象。同步函数中有同步代码块，同步代码块中还有同步函数。</p>
+<p>&nbsp;</p>
+<p>线程间通信：思路：多个线程在操作同一个资源，但是操作的动作却不一样。</p>
+<p style="margin-left: 10.5pt">1：将资源封装成对象。</p>
+<p style="margin-left: 10.5pt">2：将线程执行的任务(任务其实就是run方法。)也封装成对象。</p>
+<p>&nbsp;</p>
+<p>等待唤醒机制：涉及的方法：</p>
+<p style="margin-left: 10.5pt">wait:将同步中的线程处于冻结状态。释放了执行权，释放了资格。同时将线程对象存储到线程池中。</p>
+<p style="margin-left: 10.5pt">notify：唤醒线程池中某一个等待线程。</p>
+<p style="margin-left: 10.5pt">notifyAll:唤醒的是线程池中的所有线程。</p>
+<p>&nbsp;</p>
+<p>注意：</p>
+<p>1：这些方法都需要定义在同步中。&nbsp;</p>
+<p>2：因为这些方法必须要标示所属的锁。</p>
+<p>你要知道&nbsp;A锁上的线程被wait了,那这个线程就相当于处于A锁的线程池中，只能A锁的notify唤醒。</p>
+<p>3：这三个方法都定义在Object类中。为什么操作线程的方法定义在Object类中？</p>
+<p>因为这三个方法都需要定义同步内，并标示所属的同步锁，既然被锁调用，而锁又可以是任意对象，那么能被任意对象调用的方法一定定义在Object类中。</p>
+<p>&nbsp;</p>
+<p>wait和sleep区别：&nbsp;分析这两个方法：从执行权和锁上来分析：</p>
+<p style="margin-left: 10.5pt">wait：可以指定时间也可以不指定时间。不指定时间，只能由对应的notify或者notifyAll来唤醒。</p>
+<p style="margin-left: 10.5pt">sleep：必须指定时间，时间到自动从冻结状态转成运行状态(临时阻塞状态)。</p>
+<p style="margin-left: 10.5pt">wait：线程会释放执行权，而且线程会释放锁。</p>
+<p style="margin-left: 10.5pt">Sleep：线程会释放执行权，但不是不释放锁。</p>
+<p>&nbsp;</p>
+<p>线程的停止：通过stop方法就可以停止线程。但是这个方式过时了。</p>
+<p>停止线程：原理就是：让线程运行的代码结束，也就是结束run方法。</p>
+<p>怎么结束run方法？一般run方法里肯定定义循环。所以只要结束循环即可。</p>
+<p>第一种方式：定义循环的结束标记。</p>
+<p>第二种方式：如果线程处于了冻结状态，是不可能读到标记的，这时就需要通过Thread类中的interrupt方法，将其冻结状态强制清除。让线程恢复具备执行资格的状态，让线程可以读到标记，并结束。</p>
+<p>&nbsp;</p>
+<p>---------&lt;&nbsp;java.lang.Thread&nbsp;&gt;----------</p>
+<p>interrupt()：中断线程。</p>
+<p>setPriority(int&nbsp;newPriority)：更改线程的优先级。</p>
+<p>getPriority()：返回线程的优先级。</p>
+<p>toString()：返回该线程的字符串表示形式，包括线程名称、优先级和线程组。</p>
+<p>Thread.yield()：暂停当前正在执行的线程对象，并执行其他线程。</p>
+<p>setDaemon(true)：将该线程标记为守护线程或用户线程。将该线程标记为守护线程或用户线程。当正在运行的线程都是守护线程时，Java&nbsp;虚拟机退出。该方法必须在启动线程前调用。</p>
+<p>join：临时加入一个线程的时候可以使用join方法。</p>
+<p>当A线程执行到了B线程的join方式。A线程处于冻结状态，释放了执行权，B开始执行。A什么时候执行呢？只有当B线程运行结束后，A才从冻结状态恢复运行状态执行。</p>
+<p>-----------------------------------------------------------</p>
+<p>Lock接口：多线程在JDK1.5版本升级时，推出一个接口Lock接口。</p>
+<p>解决线程安全问题使用同步的形式，(同步代码块，要么同步函数)其实最终使用的都是锁机制。</p>
+<p>&nbsp;</p>
+<p>到了后期版本，直接将锁封装成了对象。线程进入同步就是具备了锁，执行完，离开同步，就是释放了锁。</p>
+<p>在后期对锁的分析过程中，发现，获取锁，或者释放锁的动作应该是锁这个事物更清楚。所以将这些动作定义在了锁当中，并把锁定义成对象。</p>
+<p>&nbsp;</p>
+<p>所以同步是隐示的锁操作，而Lock对象是显示的锁操作，它的出现就替代了同步。</p>
+<p>&nbsp;</p>
+<p>在之前的版本中使用Object类中wait、notify、notifyAll的方式来完成的。那是因为同步中的锁是任意对象，所以操作锁的等待唤醒的方法都定义在Object类中。</p>
+<p>&nbsp;</p>
+<p>而现在锁是指定对象Lock。所以查找等待唤醒机制方式需要通过Lock接口来完成。而Lock接口中并没有直接操作等待唤醒的方法，而是将这些方式又单独封装到了一个对象中。这个对象就是Condition，将Object中的三个方法进行单独的封装。并提供了功能一致的方法&nbsp;await()、signal()、signalAll()体现新版本对象的好处。</p>
+<p>&lt;&nbsp;java.util.concurrent.locks&nbsp;&gt;&nbsp;Condition接口：await()、signal()、signalAll()；</p>
+<p>--------------------------------------------------------</p>
+<p>class&nbsp;BoundedBuffer&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;final&nbsp;Lock&nbsp;lock&nbsp;=&nbsp;new&nbsp;ReentrantLock();</p>
+<p>&nbsp;&nbsp;&nbsp;final&nbsp;Condition&nbsp;notFull&nbsp;&nbsp;=&nbsp;lock.newCondition();&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;final&nbsp;Condition&nbsp;notEmpty&nbsp;=&nbsp;lock.newCondition();&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;final&nbsp;Object[]&nbsp;items&nbsp;=&nbsp;new&nbsp;Object[100];</p>
+<p>&nbsp;&nbsp;&nbsp;int&nbsp;putptr,&nbsp;takeptr,&nbsp;count;</p>
+<p>&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;put(Object&nbsp;x)&nbsp;throws&nbsp;InterruptedException&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lock.lock();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;(count&nbsp;==&nbsp;items.length)&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notFull.await();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;items[putptr]&nbsp;=&nbsp;x;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(++putptr&nbsp;==&nbsp;items.length)&nbsp;putptr&nbsp;=&nbsp;0;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++count;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notEmpty.signal();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;</p>
+<p>finally&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lock.unlock();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;public&nbsp;Object&nbsp;take()&nbsp;throws&nbsp;InterruptedException&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lock.lock();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;(count&nbsp;==&nbsp;0)&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notEmpty.await();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Object&nbsp;x&nbsp;=&nbsp;items[takeptr];&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(++takeptr&nbsp;==&nbsp;items.length)&nbsp;takeptr&nbsp;=&nbsp;0;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--count;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notFull.signal();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;x;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;</p>
+<p>finally&nbsp;{</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lock.unlock();</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+<p>&nbsp;&nbsp;&nbsp;}&nbsp;</p>
+<p>&nbsp;}</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>API：（Application&nbsp;Programming&nbsp;Interface,<a href="http://baike.baidu.com/view/330120.htm">应用程序</a>编程接口）是一些预先定义的<a href="http://baike.baidu.com/view/15061.htm">函数</a>，目的是提供应用程序与开发人员基于某<a href="http://baike.baidu.com/view/37.htm">软件</a>或硬件的以访问一组<a href="http://baike.baidu.com/view/1582587.htm">例程</a>的能力，而又无需访问源码，或理解内部工作机制的细节。</p>
+<p>&nbsp;</p>
+<p>--&lt;&nbsp;java.lang&nbsp;&gt;--&nbsp;String字符串：★★★☆</p>
+<p>java中用String类进行描述。对字符串进行了对象的封装。这样的好处是可以对字符串这种常见数据进行方便的操作。对象封装后，可以定义N多属性和行为。</p>
+<p>&nbsp;</p>
+<p>如何定义字符串对象呢？String&nbsp;s&nbsp;=&nbsp;&quot;abc&quot;;只要是双引号引起的数据都是字符串对象。</p>
+<p>&nbsp;</p>
+<p>特点：字符串一旦被初始化，就不可以被改变，存放在方法区中的常量池中。</p>
+<p>------------------------------------------------------</p>
+<p style="margin-left: 21pt">String&nbsp;s1&nbsp;=&nbsp;&quot;abc&quot;;&nbsp;//&nbsp;s1指向的内存中只有一个对象abc。</p>
+<p style="margin-left: 21pt">String&nbsp;s2&nbsp;=&nbsp;new&nbsp;String(&quot;abc&quot;);&nbsp;//&nbsp;s2指向的内容中有两个对象abc、new&nbsp;。</p>
+<p style="margin-left: 21pt">&nbsp;</p>
+<p style="margin-left: 21pt">System.out.println(s1==s2);//false</p>
+<p style="margin-left: 21pt">System.out.println(s1.equals(s2));//true&nbsp;，字符串中equals比较的是字符串内容是否相同。</p>
+<p>-------------------------------------------------------</p>
+<p>字符串的方法：</p>
+<p>&nbsp;</p>
+<p>1：构造方法：将字节数组或者字符数组转成字符串。</p>
+<p>String&nbsp;s1&nbsp;=&nbsp;new&nbsp;String();//创建了一个空内容的字符串。&nbsp;</p>
+<p style="margin-left: 31.5pt">String&nbsp;s2&nbsp;=&nbsp;null;//s2没有任何对象指向，是一个null常量值。</p>
+<p style="margin-left: 31.5pt">String&nbsp;s3&nbsp;=&nbsp;&quot;&quot;;//s3指向一个具体的字符串对象，只不过这个字符串中没有内容。</p>
+<p style="margin-left: 31.5pt">//一般在定义字符串时，不用new。</p>
+<p style="margin-left: 31.5pt">String&nbsp;s4&nbsp;=&nbsp;new&nbsp;String(&quot;abc&quot;);</p>
+<p style="margin-left: 31.5pt">String&nbsp;s5&nbsp;=&nbsp;&quot;abc&quot;;&nbsp;一般用此写法</p>
+<p style="margin-left: 31.5pt">new&nbsp;String(char[]);//将字符数组转成字符串。</p>
+<p style="margin-left: 31.5pt">new&nbsp;String(char[],offset,count);//将字符数组中的一部分转成字符串。</p>
+<p style="margin-left: 31.5pt">&nbsp;</p>
+<p>2：一般方法：</p>
+<p>按照面向对象的思想：</p>
+<p>2.1&nbsp;获取：</p>
+<p>2.1.1：获取字符串的长度。length();</p>
+<p>2.1.2：指定位置的字符。char&nbsp;charAt(int&nbsp;index);</p>
+<p>2.1.3：获取指定字符的位置。如果不存在返回-1，所以可以通过返回值-1来判断某一个字符不存在的情况。</p>
+<p>int&nbsp;indexOf(int&nbsp;ch);//返回第一次找到的字符角标</p>
+<p>int&nbsp;indexOf(int&nbsp;ch,int&nbsp;fromIndex);&nbsp;//返回从指定位置开始第一次找到的角标</p>
+<p>int&nbsp;indexOf(String&nbsp;str);&nbsp;//返回第一次找到的字符串角标</p>
+<p>int&nbsp;indexOf(String&nbsp;str,int&nbsp;fromIndex);</p>
+<p>&nbsp;</p>
+<p>int&nbsp;lastIndexOf(int&nbsp;ch);</p>
+<p>int&nbsp;lastIndexOf(int&nbsp;ch,int&nbsp;fromIndex);</p>
+<p>int&nbsp;lastIndexOf(String&nbsp;str);</p>
+<p>int&nbsp;lastIndexOf(String&nbsp;str,int&nbsp;fromIndex);</p>
+<p>2.1.4：获取子串。</p>
+<p>String&nbsp;substring(int&nbsp;start);//从start位开始，到length()-1为止.</p>
+<p>String&nbsp;substring(int&nbsp;start,int&nbsp;end);//从start开始到end为止。//包含start位，不包含end位。</p>
+<p>substring(0,str.length());//获取整串</p>
+<p>2.2&nbsp;判断：</p>
+<p>2.2.1：字符串中包含指定的字符串吗？</p>
+<p>boolean&nbsp;contains(String&nbsp;substring);</p>
+<p>2.2.2：字符串是否以指定字符串开头啊？</p>
+<p>boolean&nbsp;startsWith(string);</p>
+<p>2.2.3：字符串是否以指定字符串结尾啊？</p>
+<p>boolean&nbsp;endsWith(string);</p>
+<p>2.2.4：判断字符串是否相同</p>
+<p>boolean&nbsp;equals(string);//覆盖了Object中的方法，判断字符串内容是否相同。</p>
+<p>2.2.5：判断字符串内容是否相同，忽略大小写。</p>
+<p>boolean&nbsp;equalsIgnoreCase(string)&nbsp;;</p>
+<p>&nbsp;</p>
+<p>2.3&nbsp;转换：</p>
+<p>2.3.1：通过构造函数可以将字符数组或者字节数组转成字符串。</p>
+<p>2.3.2：可以通过字符串中的静态方法，将字符数组转成字符串。</p>
+<p>static&nbsp;String&nbsp;copyValueOf(char[]&nbsp;);</p>
+<p>static&nbsp;String&nbsp;copyValueOf(char[],int&nbsp;offset,int&nbsp;count);</p>
+<p>static&nbsp;String&nbsp;valueOf(char[]);</p>
+<p>static&nbsp;String&nbsp;valueOf(char[],int&nbsp;offset,int&nbsp;count);</p>
+<p>2.3.3：将基本数据类型或者对象转成字符串。</p>
+<p>static&nbsp;String&nbsp;valueOf(char);</p>
+<p>static&nbsp;String&nbsp;valueOf(boolean);</p>
+<p>static&nbsp;String&nbsp;valueOf(double);</p>
+<p>static&nbsp;String&nbsp;valueOf(float);</p>
+<p>static&nbsp;String&nbsp;valueOf(int);</p>
+<p>static&nbsp;String&nbsp;valueOf(long);</p>
+<p>static&nbsp;String&nbsp;valueOf(Object);</p>
+<p>2.3.4：将字符串转成大小写。</p>
+<p>String&nbsp;toLowerCase();</p>
+<p>String&nbsp;toUpperCase();</p>
+<p>2.3.5：将字符串转成数组。</p>
+<p>char[]&nbsp;toCharArray();//转成字符数组。</p>
+<p>byte[]&nbsp;getBytes();//可以加入编码表。转成字节数组。</p>
+<p>2.3.6：将字符串转成字符串数组。切割方法。</p>
+<p>String[]&nbsp;split(分割的规则-字符串);</p>
+<p>2.3.7：将字符串进行内容替换。注意：修改后变成新字符串，并不是将原字符串直接修改。</p>
+<p>String&nbsp;replace(oldChar,newChar);</p>
+<p>String&nbsp;replace(oldstring,newstring);</p>
+<p>2.3.8：&nbsp;String&nbsp;concat(string);&nbsp;//对字符串进行追加。</p>
+<p>String&nbsp;trim();//去除字符串两端的空格</p>
+<p style="margin-left: 36pt">int&nbsp;compareTo();//如果参数字符串等于此字符串，则返回值&nbsp;0；如果此字符串按字典顺序小于字符串参数，则返回一个小于&nbsp;0&nbsp;的值；如果此字符串按字典顺序大于字符串参数，则返回一个大于&nbsp;0&nbsp;的值。</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>--&lt;&nbsp;java.lang&nbsp;&gt;--&nbsp;StringBuffer字符串缓冲区：★★★☆</p>
+<p>构造一个其中不带字符的字符串缓冲区，初始容量为&nbsp;16&nbsp;个字符。</p>
+<p>特点：</p>
+<p style="margin-left: 21pt">1：可以对字符串内容进行修改。</p>
+<p style="margin-left: 21pt">2：是一个容器。</p>
+<p style="margin-left: 21pt">3：是可变长度的。</p>
+<p style="margin-left: 21pt">4：缓冲区中可以存储任意类型的数据。</p>
+<p style="margin-left: 21pt">5：最终需要变成字符串。</p>
+<p>&nbsp;</p>
+<p>容器通常具备一些固定的方法：</p>
+<p>1，添加。</p>
+<p>StringBuffer&nbsp;append(data):在缓冲区中追加数据。追加到尾部。</p>
+<p>StringBuffer&nbsp;insert(index,data):在指定位置插入数据。</p>
+<p>2，删除。</p>
+<p>StringBuffer&nbsp;delete(start,end);删除从start至end-1范围的元素</p>
+<p>StringBuffer&nbsp;deleteCharAt(index);删除指定位置的元素</p>
+<p>//sb.delete(0,sb.length());//清空缓冲区。</p>
+<p>3，修改。</p>
+<p>StringBuffer&nbsp;replace(start,end,string);将start至end-1替换成string</p>
+<p>void&nbsp;setCharAt(index,char);替换指定位置的字符</p>
+<p>void&nbsp;setLength(len);将原字符串置为指定长度的字符串</p>
+<p>4，查找。（查不到返回-1）</p>
+<p>int&nbsp;indexOf(string);&nbsp;返回指定子字符串在此字符串中第一次出现处的索引。</p>
+<p>int&nbsp;indexOf(string,int&nbsp;fromIndex);从指定位置开始查找字符串</p>
+<p>int&nbsp;lastIndexOf(string);&nbsp;返回指定子字符串在此字符串中最右边出现处的索引。</p>
+<p>int&nbsp;lastIndexOf(string,int&nbsp;fromIndex);&nbsp;从指定的索引开始反向搜索</p>
+<p>5，获取子串。</p>
+<p>string&nbsp;substring(start);&nbsp;返回start到结尾的子串</p>
+<p>string&nbsp;substring(start,end);&nbsp;返回start至end-1的子串</p>
+<p>6，反转。</p>
+<p>StringBuffer&nbsp;reverse();字符串反转</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>--&lt;&nbsp;java.lang&nbsp;&gt;--&nbsp;StringBuilder字符串缓冲区：★★★☆</p>
+<p>JDK1.5出现StringBuiler；构造一个其中不带字符的字符串生成器，初始容量为&nbsp;16&nbsp;个字符。该类被设计用作&nbsp;StringBuffer&nbsp;的一个简易替换，用在字符串缓冲区被单个线程使用的时候（这种情况很普遍）。</p>
+<p>方法和StringBuffer一样；</p>
+<p>&nbsp;</p>
+<p>StringBuffer&nbsp;和&nbsp;StringBuilder&nbsp;的区别：</p>
+<p style="margin-left: 21pt">StringBuffer线程安全。</p>
+<p style="margin-left: 21pt">StringBuilder线程不安全。</p>
+<p style="margin-left: 21pt">&nbsp;</p>
+<p style="margin-left: 21pt">单线程操作，使用StringBuilder&nbsp;效率高。</p>
+<p style="margin-left: 21pt">多线程操作，使用StringBuffer&nbsp;安全。</p>
+<p>---------------------------------------------------------</p>
+<p>StringBuilder&nbsp;sb&nbsp;=&nbsp;new&nbsp;StringBuilder(&quot;abcdefg&quot;);</p>
+<p>sb.append(&quot;ak&quot;);&nbsp;&nbsp;//abcdefgak</p>
+<p>sb.insert(1,&quot;et&quot;);//aetbcdefg</p>
+<p>sb.deleteCharAt(2);//abdefg</p>
+<p>sb.delete(2,4);//abefg</p>
+<p>sb.setLength(4);//abcd</p>
+<p>sb.setCharAt(0,&#39;k&#39;);//kbcdefg</p>
+<p>sb.replace(0,2,&quot;hhhh&quot;);//hhhhcdefg</p>
+<p>&nbsp;</p>
+<p style="margin-left: 21pt">//想要使用缓冲区，先要建立对象。</p>
+<p>StringBuffer&nbsp;sb&nbsp;=&nbsp;new&nbsp;StringBuffer();</p>
+<p>sb.append(12).append(&quot;haha&quot;);//方法调用链。</p>
+<p>String&nbsp;s&nbsp;=&nbsp;&quot;abc&quot;+4+&#39;q&#39;;</p>
+<p>s&nbsp;=&nbsp;new&nbsp;StringBuffer().append(&quot;abc&quot;).append(4).append(&#39;q&#39;).toString();</p>
+<p>---------------------------------------------------------</p>
+<p>class&nbsp;&nbsp;Test{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;{</p>
+<p>String&nbsp;s1&nbsp;=&nbsp;&quot;java&quot;;</p>
+<p>String&nbsp;s2&nbsp;=&nbsp;&quot;hello&quot;;</p>
+<p>method_1(s1,s2);</p>
+<p>System.out.println(s1+&quot;....&quot;+s2);&nbsp;//java....hello</p>
+<p>&nbsp;</p>
+<p>StringBuilder&nbsp;s11&nbsp;=&nbsp;new&nbsp;StringBuilder(&quot;java&quot;);</p>
+<p>StringBuilder&nbsp;s22&nbsp;=&nbsp;new&nbsp;StringBuilder(&quot;hello&quot;);</p>
+<p>method_2(s11,s22);</p>
+<p>System.out.println(s11+&quot;-----&quot;+s22);&nbsp;//javahello-----hello</p>
+<p>}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;method_1(String&nbsp;s1,String&nbsp;s2){</p>
+<p>s1.replace(&#39;a&#39;,&#39;k&#39;);</p>
+<p>s1&nbsp;=&nbsp;s2;</p>
+<p>}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;method_2(StringBuilder&nbsp;s1,StringBuilder&nbsp;s2){</p>
+<p>s1.append(s2);</p>
+<p>s1&nbsp;=&nbsp;s2;</p>
+<p>}</p>
+<p>}</p>
+<p>---------------------------------------------------------</p>
+<p>基本数据类型对象包装类：是按照面向对象思想将基本数据类型封装成了对象。</p>
+<p style="margin-left: 10.5pt">好处：</p>
+<p style="margin-left: 21pt">1：可以通过对象中的属性和行为操作基本数据。</p>
+<p style="margin-left: 21pt">2：可以实现基本数据类型和字符串之间的转换。</p>
+<p style="margin-left: 21pt">&nbsp;</p>
+<p>关键字&nbsp;&nbsp;&nbsp;对应的类名</p>
+<p style="margin-left: 10.5pt">byte &nbsp;&nbsp;Byte</p>
+<p style="margin-left: 10.5pt">short &nbsp;&nbsp;Short&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paserShort(numstring);</p>
+<p style="margin-left: 10.5pt">int &nbsp;&nbsp;Integer&nbsp;&nbsp;&nbsp;静态方法：parseInt(numstring)</p>
+<p style="margin-left: 10.5pt">long &nbsp;&nbsp;Long</p>
+<p style="margin-left: 10.5pt">float &nbsp;&nbsp;Float</p>
+<p style="margin-left: 10.5pt">double&nbsp;&nbsp;&nbsp;&nbsp;Double</p>
+<p style="margin-left: 10.5pt">char &nbsp;&nbsp;Character</p>
+<p style="margin-left: 10.5pt">Boolean&nbsp;&nbsp;&nbsp;Boolean</p>
+<p style="margin-left: 10.5pt">&nbsp;</p>
+<p>基本数据类型对象包装类：都有&nbsp;XXX&nbsp;parseXXX&nbsp;方法</p>
+<p>只有一个类型没有parse方法：Character&nbsp;；</p>
+<p>--------------------------------------------------------</p>
+<p>Integer对象：&nbsp;★★★☆</p>
+<p>数字格式的字符串转成基本数据类型的方法：</p>
+<p style="margin-left: 10.5pt">1：将该字符串封装成了Integer对象，并调用对象的方法intValue();</p>
+<p style="margin-left: 10.5pt">2：使用Integer.parseInt(numstring):不用建立对象，直接类名调用；</p>
+<p>&nbsp;</p>
+<p>将基本类型转成字符串：</p>
+<p style="margin-left: 10.5pt">1：Integer中的静态方法&nbsp;String&nbsp;toString(int);</p>
+<p style="margin-left: 10.5pt">2：int+&quot;&quot;;</p>
+<p>&nbsp;</p>
+<p>将一个十进制整数转成其他进制：</p>
+<p>转成二进制：toBinaryString</p>
+<p>转成八进制：toOctalString</p>
+<p>转成十六进制：toHexString</p>
+<p>toString(int&nbsp;num,int&nbsp;radix);</p>
+<p>&nbsp;</p>
+<p>将其他进制转换十进制：</p>
+<p>parseInt(string,radix);&nbsp;//将给定的数转成指定的基数进制；</p>
+<p>&nbsp;</p>
+<p>在jdk1.5版本后，对基本数据类型对象包装类进行升级。在升级中，使用基本数据类型对象包装类可以像使用基本数据类型一样，进行运算。</p>
+<p>Integer&nbsp;i&nbsp;=&nbsp;new&nbsp;Integer(4);&nbsp;//1.5版本之前的写法；</p>
+<p>Integer&nbsp;i&nbsp;=&nbsp;4;&nbsp;//自动装箱，1.5版本后的写法；</p>
+<p>i&nbsp;=&nbsp;i&nbsp;+&nbsp;5;</p>
+<p>//i对象是不能直接和5相加的，其实底层先将i转成int类型，在和5相加。而转成int类型的操作是隐式的。自动拆箱：拆箱的原理就是i.intValue();i+5运算完是一个int整数。如何赋值给引用类型i呢？其实有对结果进行装箱。</p>
+<p>Integer&nbsp;c&nbsp;=&nbsp;127;</p>
+<p>Integer&nbsp;d&nbsp;=&nbsp;127;</p>
+<p>System.out.println(c&nbsp;=&nbsp;=&nbsp;d);&nbsp;//true</p>
+<p>//在装箱时，如果数值在byte范围之内，那么数值相同，不会产生新的对象，也就是说多个数值相同的引用指向的是同一个对象。</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>集合框架：★★★★★，用于存储数据的容器。</p>
+<p>特点：</p>
+<p style="margin-left: 10.5pt">1：对象封装数据，对象多了也需要存储。集合用于存储对象。</p>
+<p style="margin-left: 10.5pt">2：对象的个数确定可以使用数组，但是不确定怎么办？可以用集合。因为集合是可变长度的。</p>
+<p>&nbsp;</p>
+<p>集合和数组的区别：</p>
+<p style="margin-left: 10.5pt">1：数组是固定长度的；集合可变长度的。</p>
+<p style="margin-left: 10.5pt">2：数组可以存储基本数据类型，也可以存储引用数据类型；集合只能存储引用数据类型。</p>
+<p style="margin-left: 10.5pt">3：数组存储的元素必须是同一个数据类型；集合存储的对象可以是不同数据类型。</p>
+<p>&nbsp;</p>
+<p>数据结构：就是容器中存储数据的方式。</p>
+<p>&nbsp;</p>
+<p>对于集合容器，有很多种。因为每一个容器的自身特点不同，其实原理在于每个容器的内部数据结构不同。</p>
+<p>集合容器在不断向上抽取过程中。出现了集合体系。</p>
+<p>在使用一个体系时，原则：参阅顶层内容。建立底层对象。</p>
+<p>&nbsp;</p>
+<p><img height="326" src="file:///C:/Users/dgsy/AppData/Local/Temp/ksohtml/wpsA749.tmp.jpg" width="590" /></p>
+<p>------------------------------------------------------------</p>
+<p>--&lt;&nbsp;java.util&nbsp;&gt;--&nbsp;Collection接口：</p>
+<p>Collection：</p>
+<p>|--List：有序(元素存入集合的顺序和取出的顺序一致)，元素都有索引。元素可以重复。</p>
+<p>|--Set：无序(存入和取出顺序有可能不一致)，不可以存储重复元素。必须保证元素唯一性。</p>
+<p>&nbsp;</p>
+<p>1，添加：</p>
+<p>add(object)：添加一个元素</p>
+<p>addAll(Collection)&nbsp;：添加一个集合中的所有元素。</p>
+<p>2，删除：</p>
+<p>clear()：将集合中的元素全删除，清空集合。</p>
+<p>remove(obj)&nbsp;：删除集合中指定的对象。注意：删除成功，集合的长度会改变。</p>
+<p>removeAll(collection)&nbsp;：删除部分元素。部分元素和传入Collection一致。</p>
+<p>3，判断：</p>
+<p>boolean&nbsp;contains(obj)&nbsp;：集合中是否包含指定元素&nbsp;。</p>
+<p>boolean&nbsp;containsAll(Collection)&nbsp;：集合中是否包含指定的多个元素。</p>
+<p>boolean&nbsp;isEmpty()：集合中是否有元素。&nbsp;</p>
+<p>4，获取：</p>
+<p>int&nbsp;size()：集合中有几个元素。</p>
+<p>5，取交集：</p>
+<p>boolean&nbsp;&nbsp;retainAll(Collection)&nbsp;：对当前集合中保留和指定集合中的相同的元素。如果两个集合元素相同，返回flase；如果retainAll修改了当前集合，返回true。</p>
+<p>6，获取集合中所有元素：</p>
+<p>Iterator&nbsp;&nbsp;iterator()：迭代器</p>
+<p>7，将集合变成数组：</p>
+<p>toArray();</p>
+<p>------------------------------------------------------------</p>
+<p>--&lt;&nbsp;java.util&nbsp;&gt;--&nbsp;Iterator接口：</p>
+<p>迭代器：是一个接口。作用：用于取集合中的元素。</p>
+<table style="width: 688px">
+	<tbody>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;boolean</p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#hasNext()">hasNext</a>()&nbsp;&nbsp;如果仍有元素可以迭代，则返回&nbsp;true。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;<a href="mk:@MSITStore:E:\java学习资料\手册\JDK_API_1_6_zh_CN.CHM::/java/util/Iterator.html" title="Iterator 中的类型参数">E</a></p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#next()">next</a>()&nbsp;&nbsp;&nbsp;返回迭代的下一个元素。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;void</p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#remove()">remove</a>()&nbsp;&nbsp;从迭代器指向的&nbsp;collection&nbsp;中移除迭代器返回的最后一个元素（可选操作）。</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;</p>
+<p>每一个集合都有自己的数据结构，都有特定的取出自己内部元素的方式。为了便于操作所有的容器，取出元素。将容器内部的取出方式按照一个统一的规则向外提供，这个规则就是Iterator接口。</p>
+<p>也就说，只要通过该接口就可以取出Collection集合中的元素，至于每一个具体的容器依据自己的数据结构，如何实现的具体取出细节，这个不用关心，这样就降低了取出元素和具体集合的耦合性。</p>
+<p>&nbsp;</p>
+<p>Iterator&nbsp;it&nbsp;=&nbsp;coll.iterator();//获取容器中的迭代器对象，至于这个对象是是什么不重要。这对象肯定符合一个规则Iterator接口。</p>
+<p>-----------------------------------------------------------------------------</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;{</p>
+<p>Collection&nbsp;coll&nbsp;=&nbsp;new&nbsp;ArrayList();</p>
+<p>coll.add(&quot;abc0&quot;);</p>
+<p>coll.add(&quot;abc1&quot;);</p>
+<p>coll.add(&quot;abc2&quot;);</p>
+<p>//--------------方式1----------------------</p>
+<p>Iterator&nbsp;it&nbsp;=&nbsp;coll.iterator();</p>
+<p>while(it.hasNext()){</p>
+<p>System.out.println(it.next());</p>
+<p>}</p>
+<p>//---------------方式2用此种----------------------</p>
+<p>for(Iterator&nbsp;it&nbsp;=&nbsp;coll.iterator();it.hasNext();&nbsp;){</p>
+<p>System.out.println(it.next());</p>
+<p>}</p>
+<p>}</p>
+<p>-----------------------------------------------------------------------------</p>
+<p>--&lt;&nbsp;java.util&nbsp;&gt;--&nbsp;List接口：</p>
+<p>List本身是Collection接口的子接口，具备了Collection的所有方法。现在学习List体系特有的共性方法，查阅方法发现List的特有方法都有索引，这是该集合最大的特点。</p>
+<p>&nbsp;</p>
+<p>List：有序(元素存入集合的顺序和取出的顺序一致)，元素都有索引。元素可以重复。</p>
+<p>|--ArrayList：底层的数据结构是数组,线程不同步，ArrayList替代了Vector，查询元素的速度非常快。</p>
+<p>|--LinkedList：底层的数据结构是链表，线程不同步，增删元素的速度非常快。</p>
+<p>|--Vector：底层的数据结构就是数组，线程同步的，Vector无论查询和增删都巨慢。</p>
+<p>&nbsp;</p>
+<p>1，添加：</p>
+<p>add(index,element)&nbsp;：在指定的索引位插入元素。</p>
+<p>addAll(index,collection)&nbsp;：在指定的索引位插入一堆元素。</p>
+<p>2，删除：</p>
+<p>remove(index)&nbsp;：删除指定索引位的元素。&nbsp;返回被删的元素。</p>
+<p>3，获取：</p>
+<p>Object&nbsp;get(index)&nbsp;：通过索引获取指定元素。</p>
+<p>int&nbsp;indexOf(obj)&nbsp;：获取指定元素第一次出现的索引位，如果该元素不存在返回-1；</p>
+<p>&nbsp;&nbsp;所以，通过-1，可以判断一个元素是否存在。</p>
+<p>int&nbsp;lastIndexOf(Object&nbsp;o)&nbsp;：反向索引指定元素的位置。</p>
+<p>List&nbsp;subList(start,end)&nbsp;：获取子列表。</p>
+<p>4，修改：</p>
+<p>Object&nbsp;set(index,element)&nbsp;：对指定索引位进行元素的修改。</p>
+<p>5，获取所有元素：</p>
+<p>ListIterator&nbsp;listIterator()：list集合特有的迭代器。</p>
+<p>&nbsp;</p>
+<p>List集合支持对元素的增、删、改、查。</p>
+<p>&nbsp;</p>
+<p>List集合因为角标有了自己的获取元素的方式：&nbsp;遍历。</p>
+<p style="margin-left: 10.5pt">for(int&nbsp;x=0;&nbsp;x&lt;list.size();&nbsp;x++){</p>
+<p style="margin-left: 10.5pt">sop(&quot;get:&quot;+list.get(x));</p>
+<p style="margin-left: 10.5pt">}</p>
+<p>在进行list列表元素迭代的时候，如果想要在迭代过程中，想要对元素进行操作的时候，比如满足条件添加新元素。会发生.ConcurrentModificationException并发修改异常。</p>
+<p>导致的原因是：</p>
+<p>集合引用和迭代器引用在同时操作元素，通过集合获取到对应的迭代器后，在迭代中，进行集合引用的元素添加，迭代器并不知道，所以会出现异常情况。</p>
+<p>如何解决呢？</p>
+<p>既然是在迭代中对元素进行操作,找迭代器的方法最为合适.可是Iterator中只有hasNext,next,remove方法.通过查阅的它的子接口,ListIterator,发现该列表迭代器接口具备了对元素的增、删、改、查的动作。</p>
+<p>&nbsp;</p>
+<p style="margin-left: 21pt">ListIterator是List集合特有的迭代器。</p>
+<p style="margin-left: 21pt">ListIterator&nbsp;it&nbsp;=&nbsp;list.listIterator;//取代Iterator&nbsp;it&nbsp;=&nbsp;list.iterator;</p>
+<table style="width: 688px">
+	<tbody>
+		<tr>
+			<td colspan="2" style="width: 688px">
+				<p>方法摘要</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;void</p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#add(E)">add</a>(<a href="mk:@MSITStore:E:\java学习资料\手册\JDK_API_1_6_zh_CN.CHM::/java/util/ListIterator.html" title="ListIterator 中的类型参数">E</a>&nbsp;e)&nbsp;将指定的元素插入列表（可选操作）。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;boolean</p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#hasNext()">hasNext</a>()&nbsp;以正向遍历列表时，如果列表迭代器有多个元素，则返回&nbsp;true（换句话说，如果&nbsp;next&nbsp;返回一个元素而不是抛出异常，则返回&nbsp;true）。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;boolean</p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#hasPrevious()">hasPrevious</a>()&nbsp;如果以逆向遍历列表，列表迭代器有多个元素，则返回&nbsp;true。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;<a href="mk:@MSITStore:E:\java学习资料\手册\JDK_API_1_6_zh_CN.CHM::/java/util/ListIterator.html" title="ListIterator 中的类型参数">E</a></p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#next()">next</a>()&nbsp;返回列表中的下一个元素。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;int</p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#nextIndex()">nextIndex</a>()&nbsp;返回对&nbsp;next&nbsp;的后续调用所返回元素的索引。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;<a href="mk:@MSITStore:E:\java学习资料\手册\JDK_API_1_6_zh_CN.CHM::/java/util/ListIterator.html" title="ListIterator 中的类型参数">E</a></p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#previous()">previous</a>()&nbsp;返回列表中的前一个元素。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;int</p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#previousIndex()">previousIndex</a>()&nbsp;返回对&nbsp;previous&nbsp;的后续调用所返回元素的索引。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;void</p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#remove()">remove</a>()&nbsp;从列表中移除由&nbsp;next&nbsp;或&nbsp;previous&nbsp;返回的最后一个元素（可选操作）。</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 71px">
+				<p>&nbsp;void</p>
+			</td>
+			<td style="width: 617px">
+				<p><a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#set(E)">set</a>(<a href="mk:@MSITStore:E:\java学习资料\手册\JDK_API_1_6_zh_CN.CHM::/java/util/ListIterator.html" title="ListIterator 中的类型参数">E</a>&nbsp;e)&nbsp;用指定元素替换&nbsp;next&nbsp;或&nbsp;previous&nbsp;返回的最后一个元素（可选操作）。</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;</p>
+<p>可变长度数组的原理：</p>
+<p>当元素超出数组长度，会产生一个新数组，将原数组的数据复制到新数组中，再将新的元素添加到新数组中。</p>
+<p>ArrayList：是按照原数组的50%延长。构造一个初始容量为&nbsp;10&nbsp;的空列表。</p>
+<p>Vector：是按照原数组的100%延长。</p>
+<p>&nbsp;</p>
+<p>注意：对于list集合，底层判断元素是否相同，其实用的是元素自身的equals方法完成的。所以建议元素都要复写equals方法，建立元素对象自己的比较相同的条件依据。</p>
+<p>&nbsp;</p>
+<p>LinkedList：的特有方法。</p>
+<p>addFirst();</p>
+<p>addLast();</p>
+<p>在jdk1.6以后。</p>
+<p>offerFirst();</p>
+<p>offerLast();</p>
+<p>&nbsp;</p>
+<p>getFirst():获取链表中的第一个元素。如果链表为空，抛出NoSuchElementException;</p>
+<p>getLast();</p>
+<p>在jdk1.6以后。</p>
+<p>peekFirst();获取链表中的第一个元素。如果链表为空，返回null。</p>
+<p>peekLast();</p>
+<p>&nbsp;</p>
+<p>removeFirst()：获取链表中的第一个元素，但是会删除链表中的第一个元素。如果链表为空，抛出NoSuchElementException</p>
+<p>removeLast();</p>
+<p>在jdk1.6以后。</p>
+<p>pollFirst();获取链表中的第一个元素，但是会删除链表中的第一个元素。如果链表为空，返回null。</p>
+<p>pollLast();</p>
+<p>------------------------------------------------------------</p>
+<p>--&lt;&nbsp;java.util&nbsp;&gt;--&nbsp;Set接口：</p>
+<p>Set接口中的方法和Collection中方法一致的。Set接口取出方式只有一种，迭代器。</p>
+<p>|--HashSet：底层数据结构是哈希表，线程是不同步的。无序，高效；</p>
+<p>HashSet集合保证元素唯一性：通过元素的hashCode方法，和equals方法完成的。</p>
+<p>当元素的hashCode值相同时，才继续判断元素的equals是否为true。</p>
+<p>如果为true，那么视为相同元素，不存。如果为false，那么存储。</p>
+<p>如果hashCode值不同，那么不判断equals，从而提高对象比较的速度。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--LinkedHashSet：有序，hashset的子类。</p>
+<p>|--TreeSet：对Set集合中的元素的进行指定顺序的排序。不同步。TreeSet底层的数据结构就是二叉树。</p>
+<p>&nbsp;</p>
+<p>哈希表的原理：</p>
+<p>1，对对象元素中的关键字(对象中的特有数据)，进行哈希算法的运算，并得出一个具体的算法值，这个值&nbsp;称为哈希值。</p>
+<p>2，哈希值就是这个元素的位置。</p>
+<p>3，如果哈希值出现冲突，再次判断这个关键字对应的对象是否相同。如果对象相同，就不存储，因为元素重复。如果对象不同，就存储，在原来对象的哈希值基础&nbsp;+1顺延。</p>
+<p>4，存储哈希值的结构，我们称为哈希表。</p>
+<p>5，既然哈希表是根据哈希值存储的，为了提高效率，最好保证对象的关键字是唯一的。</p>
+<p>这样可以尽量少的判断关键字对应的对象是否相同，提高了哈希表的操作效率。</p>
+<p>&nbsp;</p>
+<p>对于ArrayList集合，判断元素是否存在，或者删元素底层依据都是equals方法。</p>
+<p>对于HashSet集合，判断元素是否存在，或者删除元素，底层依据的是hashCode方法和equals方法。</p>
+<p>&nbsp;</p>
+<p>TreeSet:</p>
+<p>用于对Set集合进行元素的指定顺序排序，排序需要依据元素自身具备的比较性。</p>
+<p>如果元素不具备比较性，在运行时会发生ClassCastException异常。</p>
+<p>所以需要元素实现Comparable接口，强制让元素具备比较性，复写compareTo方法。</p>
+<p>依据compareTo方法的返回值，确定元素在TreeSet数据结构中的位置。</p>
+<p>TreeSet方法保证元素唯一性的方式：就是参考比较方法的结果是否为0，如果return&nbsp;0，视为两个对象重复，不存。</p>
+<p>&nbsp;</p>
+<p>注意：在进行比较时，如果判断元素不唯一，比如，同姓名，同年龄，才视为同一个人。</p>
+<p>在判断时，需要分主要条件和次要条件，当主要条件相同时，再判断次要条件，按照次要条件排序。</p>
+<p>&nbsp;</p>
+<p>TreeSet集合排序有两种方式，Comparable和Comparator区别：</p>
+<p>1：让元素自身具备比较性，需要元素对象实现Comparable接口，覆盖compareTo方法。</p>
+<p>2：让集合自身具备比较性，需要定义一个实现了Comparator接口的比较器，并覆盖compare方法，并将该类对象作为实际参数传递给TreeSet集合的构造函数。</p>
+<p>第二种方式较为灵活。</p>
+<p>&nbsp;</p>
+<p>------------------------------------------------------------</p>
+<p>Map集合：</p>
+<p>|--Hashtable：底层是哈希表数据结构，是线程同步的。不可以存储null键，null值。</p>
+<p>|--HashMap：底层是哈希表数据结构，是线程不同步的。可以存储null键，null值。替代了Hashtable.</p>
+<p>|--TreeMap：底层是二叉树结构，可以对map集合中的键进行指定顺序的排序。</p>
+<p>&nbsp;</p>
+<p>Map集合存储和Collection有着很大不同：</p>
+<p>Collection一次存一个元素；Map一次存一对元素。</p>
+<p>Collection是单列集合；Map是双列集合。</p>
+<p>Map中的存储的一对元素：一个是键，一个是值，键与值之间有对应(映射)关系。</p>
+<p>特点：要保证map集合中键的唯一性。</p>
+<p>&nbsp;</p>
+<p>1，添加。</p>
+<p>&nbsp;put(key,value)：当存储的键相同时，新的值会替换老的值，并将老值返回。如果键没有重复，返回null。</p>
+<p>void&nbsp;putAll(Map);</p>
+<p>2，删除。</p>
+<p>void&nbsp;clear()：清空</p>
+<p>value&nbsp;remove(key)&nbsp;：删除指定键。</p>
+<p>3，判断。</p>
+<p>boolean&nbsp;isEmpty()：</p>
+<p>boolean&nbsp;containsKey(key)：是否包含key</p>
+<p>boolean&nbsp;containsValue(value)&nbsp;：是否包含value</p>
+<p>4，取出。</p>
+<p>int&nbsp;size()：返回长度</p>
+<p>value&nbsp;get(key)&nbsp;：通过指定键获取对应的值。如果返回null，可以判断该键不存在。当然有特殊情况，就是在hashmap集合中，是可以存储null键null值的。</p>
+<p>Collection&nbsp;values()：获取map集合中的所有的值。</p>
+<p>5，想要获取map中的所有元素：</p>
+<p>原理：map中是没有迭代器的，collection具备迭代器，只要将map集合转成Set集合，可以使用迭代器了。之所以转成set，是因为map集合具备着键的唯一性，其实set集合就来自于map，set集合底层其实用的就是map的方法。</p>
+<ul>
+	<li>
+		把map集合转成set的方法：</li>
+</ul>
+<p>Set&nbsp;keySet();</p>
+<p>Set&nbsp;entrySet();//取的是键和值的映射关系。</p>
+<p>Entry就是Map接口中的内部接口；</p>
+<p>为什么要定义在map内部呢？entry是访问键值关系的入口，是map的入口，访问的是map中的键值对。</p>
+<p>---------------------------------------------------------</p>
+<p>取出map集合中所有元素的方式一：keySet()方法。</p>
+<p>可以将map集合中的键都取出存放到set集合中。对set集合进行迭代。迭代完成，再通过get方法对获取到的键进行值的获取。</p>
+<p>Set&nbsp;keySet&nbsp;=&nbsp;map.keySet();</p>
+<p>Iterator&nbsp;it&nbsp;=&nbsp;keySet.iterator();</p>
+<p>while(it.hasNext())&nbsp;{</p>
+<p>Object&nbsp;key&nbsp;=&nbsp;it.next();</p>
+<p>Object&nbsp;value&nbsp;=&nbsp;map.get(key);</p>
+<p>System.out.println(key+&quot;:&quot;+value);</p>
+<p>}</p>
+<p>--------------------------------------------------------</p>
+<p>取出map集合中所有元素的方式二：entrySet()方法。</p>
+<p style="margin-left: 21pt">Set&nbsp;entrySet&nbsp;=&nbsp;map.entrySet();</p>
+<p>Iterator&nbsp;it&nbsp;=&nbsp;entrySet.iterator();</p>
+<p>while(it.hasNext())&nbsp;{</p>
+<p>Map.Entry&nbsp;&nbsp;me&nbsp;=&nbsp;(Map.Entry)it.next();</p>
+<p>System.out.println(me.getKey()+&quot;::::&quot;+me.getValue());</p>
+<p>}</p>
+<p>--------------------------------------------------------</p>
+<p>使用集合的技巧：</p>
+<p>看到Array就是数组结构，有角标，查询速度很快。</p>
+<p>看到link就是链表结构：增删速度快，而且有特有方法。addFirst；&nbsp;addLast；&nbsp;removeFirst()；&nbsp;removeLast()；&nbsp;getFirst()；getLast()；</p>
+<p>看到hash就是哈希表，就要想要哈希值，就要想到唯一性，就要想到存入到该结构的中的元素必须覆盖hashCode，equals方法。</p>
+<p>看到tree就是二叉树，就要想到排序，就想要用到比较。</p>
+<p>比较的两种方式：</p>
+<p style="margin-left: 10.5pt">一个是Comparable：覆盖compareTo方法；</p>
+<p style="margin-left: 10.5pt">一个是Comparator：覆盖compare方法。</p>
+<p>LinkedHashSet，LinkedHashMap:这两个集合可以保证哈希表有存入顺序和取出顺序一致，保证哈希表有序。</p>
+<p>&nbsp;</p>
+<p>集合什么时候用？</p>
+<p>当存储的是一个元素时，就用Collection。当存储对象之间存在着映射关系时，就使用Map集合。</p>
+<p>&nbsp;</p>
+<p>保证唯一，就用Set。不保证唯一，就用List。</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>Collections：它的出现给集合操作提供了更多的功能。这个类不需要创建对象，内部提供的都是静态方法。</p>
+<p>静态方法：</p>
+<p style="margin-left: 10.5pt">Collections.sort(list);//list集合进行元素的自然顺序排序。</p>
+<p style="margin-left: 10.5pt">Collections.sort(list,new&nbsp;ComparatorByLen());//按指定的比较器方法排序。</p>
+<p style="margin-left: 10.5pt">class&nbsp;ComparatorByLen&nbsp;implements&nbsp;Comparator&lt;String&gt;{</p>
+<p style="margin-left: 10.5pt">public&nbsp;int&nbsp;compare(String&nbsp;s1,String&nbsp;s2){</p>
+<p style="margin-left: 10.5pt">int&nbsp;temp&nbsp;=&nbsp;s1.length()-s2.length();</p>
+<p style="margin-left: 10.5pt">return&nbsp;temp==0?s1.compareTo(s2):temp;</p>
+<p style="margin-left: 10.5pt">}</p>
+<p style="margin-left: 10.5pt">}</p>
+<p style="margin-left: 10.5pt">Collections.max(list);&nbsp;//返回list中字典顺序最大的元素。</p>
+<p style="margin-left: 10.5pt">int&nbsp;index&nbsp;=&nbsp;Collections.binarySearch(list,&quot;zz&quot;);//二分查找，返回角标。</p>
+<p style="margin-left: 10.5pt">Collections.reverseOrder();//逆向反转排序。</p>
+<p style="margin-left: 10.5pt">Collections.shuffle(list);//随机对list中的元素进行位置的置换。</p>
+<p>&nbsp;</p>
+<p>将非同步集合转成同步集合的方法：Collections中的&nbsp;&nbsp;XXX&nbsp;synchronizedXXX(XXX);</p>
+<p>List&nbsp;synchronizedList(list);</p>
+<p>Map&nbsp;synchronizedMap(map);</p>
+<p>原理：定义一个类，将集合所有的方法加同一把锁后返回。</p>
+<p>&nbsp;</p>
+<p>Collection&nbsp;和&nbsp;Collections的区别：</p>
+<p>Collections是个java.util下的类，是针对集合类的一个工具类,提供一系列静态方法,实现对集合的查找、排序、替换、线程安全化（将非同步的集合转换成同步的）等操作。</p>
+<p>Collection是个java.util下的接口，它是各种集合结构的父接口，继承于它的接口主要有Set和List,提供了关于集合的一些操作,如插入、删除、判断一个元素是否其成员、遍历等。</p>
+<p>-------------------------------------------------------</p>
+<p>Arrays：</p>
+<p>用于操作数组对象的工具类，里面都是静态方法。</p>
+<p>asList方法：将数组转换成list集合。</p>
+<p>String[]&nbsp;arr&nbsp;=&nbsp;{&quot;abc&quot;,&quot;kk&quot;,&quot;qq&quot;};</p>
+<p>List&lt;String&gt;&nbsp;list&nbsp;=&nbsp;Arrays.asList(arr);//将arr数组转成list集合。</p>
+<p>将数组转换成集合，有什么好处呢？用aslist方法，将数组变成集合；</p>
+<p>可以通过list集合中的方法来操作数组中的元素：isEmpty()、contains、indexOf、set；</p>
+<p>注意（局限性）：数组是固定长度，不可以使用集合对象增加或者删除等，会改变数组长度的功能方法。比如add、remove、clear。（会报不支持操作异常UnsupportedOperationException）；</p>
+<p>如果数组中存储的引用数据类型，直接作为集合的元素可以直接用集合方法操作。</p>
+<p>如果数组中存储的是基本数据类型，asList会将数组实体作为集合元素存在。</p>
+<p>&nbsp;</p>
+<p>集合变数组：用的是Collection接口中的方法：toArray();</p>
+<p>如果给toArray传递的指定类型的数据长度小于了集合的size，那么toArray方法，会自定再创建一个该类型的数据，长度为集合的size。</p>
+<p>如果传递的指定的类型的数组的长度大于了集合的size，那么toArray方法，就不会创建新数组，直接使用该数组即可，并将集合中的元素存储到数组中，其他为存储元素的位置默认值null。</p>
+<p>所以，在传递指定类型数组时，最好的方式就是指定的长度和size相等的数组。</p>
+<p>将集合变成数组后有什么好处？限定了对集合中的元素进行增删操作，只要获取这些元素即可。</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>Jdk5.0新特性：</p>
+<p>Collection在jdk1.5以后，有了一个父接口Iterable，这个接口的出现的将iterator方法进行抽取，提高了扩展性。</p>
+<p>--------------------------------------------------</p>
+<p>增强for循环：foreach语句，foreach简化了迭代器。</p>
+<p>格式：//&nbsp;增强for循环括号里写两个参数，第一个是声明一个变量，第二个就是需要迭代的容器</p>
+<p style="margin-left: 10.5pt">for(&nbsp;元素类型&nbsp;变量名&nbsp;:&nbsp;Collection集合&nbsp;&amp;&nbsp;数组&nbsp;)&nbsp;{</p>
+<p style="margin-left: 10.5pt">&hellip;</p>
+<p style="margin-left: 10.5pt">}</p>
+<p>高级for循环和传统for循环的区别：</p>
+<p>高级for循环在使用时，必须要明确被遍历的目标。这个目标，可以是Collection集合或者数组，如果遍历Collection集合，在遍历过程中还需要对元素进行操作，比如删除，需要使用迭代器。</p>
+<p>如果遍历数组，还需要对数组元素进行操作，建议用传统for循环因为可以定义角标通过角标操作元素。如果只为遍历获取，可以简化成高级for循环，它的出现为了简化书写。</p>
+<p>&nbsp;</p>
+<p>高级for循环可以遍历map集合吗？不可以。但是可以将map转成set后再使用foreach语句。</p>
+<p>&nbsp;</p>
+<p>1)、作用：对存储对象的容器进行迭代：&nbsp;数组&nbsp;&nbsp;collection&nbsp;&nbsp;&nbsp;map</p>
+<p>2)、增强for循环迭代数组：</p>
+<p style="margin-left: 10.5pt">String&nbsp;[]&nbsp;arr&nbsp;=&nbsp;{&quot;a&quot;,&nbsp;&quot;b&quot;,&nbsp;&quot;c&quot;};//数组的静态定义方式，只试用于数组首次定义的时候</p>
+<p style="margin-left: 10.5pt">for(String&nbsp;s&nbsp;:&nbsp;arr)&nbsp;{</p>
+<p style="margin-left: 10.5pt">System.out.println(s);</p>
+<p style="margin-left: 10.5pt">}</p>
+<p>3)、单列集合&nbsp;Collection：</p>
+<p style="margin-left: 10.5pt">List&nbsp;list&nbsp;=&nbsp;new&nbsp;ArrayList();</p>
+<p style="margin-left: 10.5pt">list.add(&quot;aaa&quot;);</p>
+<p style="margin-left: 10.5pt">//&nbsp;增强for循环,&nbsp;没有使用泛型的集合能不能使用增强for循环迭代？能</p>
+<p style="margin-left: 10.5pt">for(Object&nbsp;obj&nbsp;:&nbsp;list)&nbsp;{</p>
+<p style="margin-left: 10.5pt">String&nbsp;s&nbsp;=&nbsp;(String)&nbsp;obj;</p>
+<p style="margin-left: 10.5pt">System.out.println(s);</p>
+<p style="margin-left: 10.5pt">}</p>
+<p>4)、双列集合&nbsp;Map：</p>
+<p style="margin-left: 10.5pt">Map&nbsp;map&nbsp;=&nbsp;new&nbsp;HashMap();</p>
+<p style="margin-left: 10.5pt">map.put(&quot;a&quot;,&nbsp;&quot;aaa&quot;);</p>
+<p style="margin-left: 10.5pt">//&nbsp;传统方式：必须掌握这种方式</p>
+<p style="margin-left: 10.5pt">Set&nbsp;entrys&nbsp;=&nbsp;map.entrySet();&nbsp;//&nbsp;1.获得所有的键值对Entry对象</p>
+<p style="margin-left: 10.5pt">iter&nbsp;=&nbsp;entrys.iterator();&nbsp;//&nbsp;2.迭代出所有的entry</p>
+<p style="margin-left: 10.5pt">while(iter.hasNext())&nbsp;{</p>
+<p style="margin-left: 10.5pt">Map.Entry&nbsp;entry&nbsp;=&nbsp;(Entry)&nbsp;iter.next();</p>
+<p style="margin-left: 10.5pt">String&nbsp;key&nbsp;=&nbsp;(String)&nbsp;entry.getKey();&nbsp;//&nbsp;分别获得key和value</p>
+<p style="margin-left: 10.5pt">String&nbsp;value&nbsp;=&nbsp;(String)&nbsp;entry.getValue();</p>
+<p style="margin-left: 10.5pt">System.out.println(key&nbsp;+&nbsp;&quot;=&quot;&nbsp;+&nbsp;value);</p>
+<p style="margin-left: 10.5pt">}</p>
+<p style="margin-left: 10.5pt">//&nbsp;增强for循环迭代：原则上map集合是无法使用增强for循环来迭代的，因为增强for循环只能针对实现了Iterable接口的集合进行迭代；Iterable是jdk5中新定义的接口，就一个方法iterator方法，只有实现了Iterable接口的类，才能保证一定有iterator方法，java有这样的限定是因为增强for循环内部还是用迭代器实现的，而实际上，我们可以通过某种方式来使用增强for循环。</p>
+<p style="margin-left: 10.5pt">for(Object&nbsp;obj&nbsp;:&nbsp;map.entrySet())&nbsp;{</p>
+<p style="margin-left: 10.5pt">Map.Entry&nbsp;entry&nbsp;=&nbsp;(Entry)&nbsp;obj;&nbsp;&nbsp;//&nbsp;obj&nbsp;依次表示Entry</p>
+<p style="margin-left: 10.5pt">System.out.println(entry.getKey()&nbsp;+&nbsp;&quot;=&quot;&nbsp;+&nbsp;entry.getValue());</p>
+<p style="margin-left: 10.5pt">}</p>
+<p>5）、集合迭代注意问题：在迭代集合的过程中，不能对集合进行增删操作（会报并发访问异常）；可以用迭代器的方法进行操作（子类listIterator：有增删的方法）。</p>
+<p>6)、增强for循环注意问题：在使用增强for循环时，不能对元素进行赋值；</p>
+<p style="margin-left: 10.5pt">int[]&nbsp;arr&nbsp;=&nbsp;{1,2,3};</p>
+<p style="margin-left: 10.5pt">for(int&nbsp;num&nbsp;:&nbsp;arr)&nbsp;{</p>
+<p style="margin-left: 10.5pt">num&nbsp;=&nbsp;0;&nbsp;//不能改变数组的值</p>
+<p style="margin-left: 10.5pt">}</p>
+<p style="margin-left: 10.5pt">System.out.println(arr[1]);&nbsp;//2</p>
+<p>--------------------------------------------------</p>
+<p>可变参数（...）：用到函数的参数上，当要操作的同一个类型元素个数不确定的时候，可是用这个方式，这个参数可以接受任意个数的同一类型的数据。</p>
+<p>&nbsp;</p>
+<p>和以前接收数组不一样的是：</p>
+<p>以前定义数组类型，需要先创建一个数组对象，再将这个数组对象作为参数传递给函数。现在，直接将数组中的元素作为参数传递即可。底层其实是将这些元素进行数组的封装，而这个封装动作，是在底层完成的，被隐藏了。所以简化了用户的书写，少了调用者定义数组的动作。</p>
+<p>如果在参数列表中使用了可变参数，可变参数必须定义在参数列表结尾(也就是必须是最后一个参数，否则编译会失败。)。</p>
+<p>如果要获取多个int数的和呢？可以使用将多个int数封装到数组中，直接对数组求和即可。</p>
+<p>---------------------------------------------------</p>
+<p>静态导入：导入了类中的所有静态成员，简化静态成员的书写。</p>
+<p>import&nbsp;static&nbsp;java.util.Collections.*;&nbsp;&nbsp;//导入了Collections类中的所有静态成员</p>
+<p>---------------------------------------------------</p>
+<p>枚举：关键字&nbsp;enum</p>
+<p>问题：对象的某个属性的值不能是任意的，必须为固定的一组取值其中的某一个；</p>
+<p>解决办法：</p>
+<p>1）、在setGrade方法中做判断，不符合格式要求就抛出异常；</p>
+<p>2）、直接限定用户的选择，通过自定义类模拟枚举的方式来限定用户的输入，写一个Grade类，私有构造函数，对外提供5个静态的常量表示类的实例；</p>
+<p>3)、jdk5中新定义了枚举类型，专门用于解决此类问题；</p>
+<p>4)、枚举就是一个特殊的java类，可以定义属性、方法、构造函数、实现接口、继承类；</p>
+<p>------------------------------------------------------------------------------</p>
+<p>自动拆装箱：java中数据类型分为两种&nbsp;：&nbsp;基本数据类型&nbsp;&nbsp;&nbsp;引用数据类型(对象)</p>
+<p>在&nbsp;java程序中所有的数据都需要当做对象来处理，针对8种基本数据类型提供了包装类，如下：</p>
+<p>int&nbsp;--&gt;&nbsp;Integer</p>
+<p>byte&nbsp;--&gt;&nbsp;Byte</p>
+<p>short&nbsp;--&gt;&nbsp;Short</p>
+<p>long&nbsp;--&gt;&nbsp;Long</p>
+<p>char&nbsp;--&gt;&nbsp;Character</p>
+<p>double&nbsp;--&gt;&nbsp;Double</p>
+<p>float&nbsp;--&gt;&nbsp;Float</p>
+<p>boolean&nbsp;--&gt;&nbsp;Boolean</p>
+<p>&nbsp;</p>
+<p>jdk5以前基本数据类型和包装类之间需要互转：</p>
+<p>基本---引用&nbsp;&nbsp;&nbsp;Integer&nbsp;x&nbsp;=&nbsp;new&nbsp;Integer(x);</p>
+<p>引用---基本&nbsp;&nbsp;&nbsp;int&nbsp;num&nbsp;=&nbsp;x.intValue();</p>
+<p>1)、Integer&nbsp;x&nbsp;=&nbsp;1;&nbsp;x&nbsp;=&nbsp;x&nbsp;+&nbsp;1;&nbsp;&nbsp;经历了什么过程？装箱&nbsp;&agrave;&nbsp;拆箱&nbsp;&agrave;&nbsp;装箱；</p>
+<p>2)、为了优化，虚拟机为包装类提供了缓冲池，Integer池的大小&nbsp;-128~127&nbsp;一个字节的大小；</p>
+<p>3)、String池：Java为了优化字符串操作&nbsp;提供了一个缓冲池；</p>
+<p>----------------------------------------------------------</p>
+<p>泛型：jdk1.5版本以后出现的一个安全机制。表现格式：&lt;&nbsp;&gt;</p>
+<p>好处：</p>
+<p>1：将运行时期的问题ClassCastException问题转换成了编译失败，体现在编译时期，程序员就可以解决问题。</p>
+<p>2：避免了强制转换的麻烦。</p>
+<p>&nbsp;</p>
+<p>只要带有&lt;&gt;的类或者接口，都属于带有类型参数的类或者接口，在使用这些类或者接口时，必须给&lt;&gt;中传递一个具体的引用数据类型。</p>
+<p>&nbsp;</p>
+<p>泛型技术：其实应用在编译时期，是给编译器使用的技术，到了运行时期，泛型就不存在了。</p>
+<p>为什么?&nbsp;因为泛型的擦除：也就是说，编辑器检查了泛型的类型正确后，在生成的类文件中是没有泛型的。</p>
+<p>在运行时，如何知道获取的元素类型而不用强转呢？</p>
+<p>泛型的补偿：因为存储的时候，类型已经确定了是同一个类型的元素，所以在运行时，只要获取到该元素的类型，在内部进行一次转换即可，所以使用者不用再做转换动作了。</p>
+<p>&nbsp;</p>
+<p>什么时候用泛型类呢？</p>
+<p>当类中的操作的引用数据类型不确定的时候，以前用的Object来进行扩展的，现在可以用泛型来表示。这样可以避免强转的麻烦，而且将运行问题转移到的编译时期。</p>
+<p>----------------------------------------------------------</p>
+<p>泛型在程序定义上的体现：</p>
+<p>//泛型类：将泛型定义在类上。</p>
+<p>class&nbsp;Tool&lt;Q&gt;&nbsp;{</p>
+<p>private&nbsp;Q&nbsp;obj;</p>
+<p>public&nbsp;&nbsp;void&nbsp;setObject(Q&nbsp;obj)&nbsp;{</p>
+<p>this.obj&nbsp;=&nbsp;obj;</p>
+<p>}</p>
+<p>public&nbsp;Q&nbsp;getObject()&nbsp;{</p>
+<p>return&nbsp;obj;</p>
+<p>}</p>
+<p>}</p>
+<p>//当方法操作的引用数据类型不确定的时候，可以将泛型定义在方法上。</p>
+<p>public&nbsp;&lt;W&gt;&nbsp;void&nbsp;method(W&nbsp;w)&nbsp;{</p>
+<p>System.out.println(&quot;method:&quot;+w);</p>
+<p>}</p>
+<p>//静态方法上的泛型：静态方法无法访问类上定义的泛型。如果静态方法操作的引用数据类型不确定的时候，必须要将泛型定义在方法上。</p>
+<p>public&nbsp;static&nbsp;&lt;Q&gt;&nbsp;void&nbsp;function(Q&nbsp;t)&nbsp;{</p>
+<p>System.out.println(&quot;function:&quot;+t);</p>
+<p>}</p>
+<p>//泛型接口.</p>
+<p>interface&nbsp;Inter&lt;T&gt;&nbsp;{</p>
+<p>void&nbsp;show(T&nbsp;t);</p>
+<p>}</p>
+<p>class&nbsp;InterImpl&lt;R&gt;&nbsp;implements&nbsp;Inter&lt;R&gt;&nbsp;{</p>
+<p>public&nbsp;void&nbsp;show(R&nbsp;r)&nbsp;{</p>
+<p>System.out.println(&quot;show:&quot;+r);</p>
+<p>}</p>
+<p>}</p>
+<p>------------------------------------------------------------</p>
+<p>泛型中的通配符：可以解决当具体类型不确定的时候，这个通配符就是&nbsp;?&nbsp;&nbsp;；当操作类型时，不需要使用类型的具体功能时，只使用Object类中的功能。那么可以用&nbsp;?&nbsp;通配符来表未知类型。</p>
+<p>&nbsp;</p>
+<p>泛型限定：</p>
+<p>上限：？extends&nbsp;E：可以接收E类型或者E的子类型对象。</p>
+<p>下限：？super&nbsp;E：可以接收E类型或者E的父类型对象。</p>
+<p>&nbsp;</p>
+<p>上限什么时候用：往集合中添加元素时，既可以添加E类型对象，又可以添加E的子类型对象。为什么？因为取的时候，E类型既可以接收E类对象，又可以接收E的子类型对象。</p>
+<p>&nbsp;</p>
+<p>下限什么时候用：当从集合中获取元素进行操作的时候，可以用当前元素的类型接收，也可以用当前元素的父类型接收。</p>
+<p>&nbsp;</p>
+<p>泛型的细节：</p>
+<p>1）、泛型到底代表什么类型取决于调用者传入的类型，如果没传，默认是Object类型；</p>
+<p>2）、使用带泛型的类创建对象时，等式两边指定的泛型必须一致；</p>
+<p>原因：编译器检查对象调用方法时只看变量，然而程序运行期间调用方法时就要考虑对象具体类型了；</p>
+<p>3）、等式两边可以在任意一边使用泛型，在另一边不使用(考虑向后兼容)；</p>
+<p style="margin-left: 10.5pt">ArrayList&lt;String&gt;&nbsp;al&nbsp;=&nbsp;new&nbsp;ArrayList&lt;Object&gt;();&nbsp;&nbsp;//错</p>
+<p style="margin-left: 10.5pt">//要保证左右两边的泛型具体类型一致就可以了，这样不容易出错。</p>
+<p style="margin-left: 10.5pt">ArrayList&lt;?&nbsp;extends&nbsp;Object&gt;&nbsp;al&nbsp;=&nbsp;new&nbsp;ArrayList&lt;String&gt;();</p>
+<p style="margin-left: 10.5pt">al.add(&quot;aa&quot;);&nbsp;&nbsp;//错</p>
+<p style="margin-left: 10.5pt">//因为集合具体对象中既可存储String，也可以存储Object的其他子类，所以添加具体的类型对象不合适，类型检查会出现安全问题。&nbsp;？extends&nbsp;Object&nbsp;代表Object的子类型不确定，怎么能添加具体类型的对象呢？</p>
+<p style="margin-left: 10.5pt">public&nbsp;static&nbsp;void&nbsp;method(ArrayList&lt;?&nbsp;extends&nbsp;Object&gt;&nbsp;al)&nbsp;{</p>
+<p style="margin-left: 10.5pt">al.add(&quot;abc&quot;);&nbsp;&nbsp;//错</p>
+<p style="margin-left: 10.5pt">//只能对al集合中的元素调用Object类中的方法，具体子类型的方法都不能用，因为子类型不确定。</p>
+<p style="margin-left: 10.5pt">}</p>
+<p>------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<p>API---&nbsp;java.lang.System:&nbsp;属性和行为都是静态的。</p>
+<p>long&nbsp;currentTimeMillis();&nbsp;//&nbsp;返回当前时间毫秒值</p>
+<p>exit();&nbsp;&nbsp;//&nbsp;退出虚拟机</p>
+<p>Properties&nbsp;getProperties()&nbsp;;&nbsp;&nbsp;//&nbsp;获取当前系统的属性信息</p>
+<p>&nbsp;</p>
+<p>Properties&nbsp;prop&nbsp;=&nbsp;System.getProperties();&nbsp;//获取系统的属性信息，并将这些信息存储到Properties集合中。&nbsp;</p>
+<p>&nbsp;</p>
+<p>System.setProperty(&quot;myname&quot;,&quot;毕老师&quot;);&nbsp;//给系统属性信息集添加具体的属性信息</p>
+<p>//临时设置方式：运行jvm时，可以通过jvm的参数进行系统属性的临时设置，可以在java命令的后面加入&nbsp;&ndash;D&lt;name&gt;=&lt;value&gt;&nbsp;&nbsp;用法：java&nbsp;&ndash;Dmyname=小明&nbsp;类名。</p>
+<p>&nbsp;</p>
+<p>String&nbsp;name&nbsp;=&nbsp;System.getProperty(&quot;os.name&quot;);//获取指定属性的信息</p>
+<p>&nbsp;</p>
+<p>//想要知道该系统是否是该软件所支持的系统中的一个。</p>
+<p style="margin-left: 10.5pt">Set&lt;String&gt;&nbsp;hs&nbsp;=&nbsp;new&nbsp;HashSet&lt;String&gt;();</p>
+<p style="margin-left: 10.5pt">hs.add(&quot;Windows&nbsp;XP&quot;);</p>
+<p style="margin-left: 10.5pt">hs.add(&quot;Windows&nbsp;7&quot;);</p>
+<p style="margin-left: 10.5pt">if(hs.contains(name))</p>
+<p style="margin-left: 10.5pt">System.out.println(&quot;可以支持&quot;);</p>
+<p style="margin-left: 10.5pt">else</p>
+<p style="margin-left: 10.5pt">System.out.println(&quot;不支持&quot;);</p>
+<p>--------------------------------------------------------------------------------------------------------------------</p>
+<p>API---&nbsp;java.lang.Runtime:&nbsp;类中没有构造方法，不能创建对象。</p>
+<p>但是有非静态方法。说明该类中应该定义好了对象，并可以通过一个static方法获取这个对象。用这个对象来调用非静态方法。这个方法就是&nbsp;static&nbsp;Runtime&nbsp;getRuntime();</p>
+<p>&nbsp;</p>
+<p>这个Runtime其实使用单例设计模式进行设计。</p>
+<p>&nbsp;</p>
+<p>class&nbsp;&nbsp;RuntimeDemo&nbsp;{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;Exception&nbsp;{</p>
+<p>Runtime&nbsp;r&nbsp;=&nbsp;Runtime.getRuntime();</p>
+<p>Process&nbsp;p&nbsp;=&nbsp;r.exec(&quot;notepad.exe&nbsp;SystemDemo.java&quot;); //运行指定的程序</p>
+<p>Thread.sleep(4000);</p>
+<p>p.destroy();&nbsp;&nbsp;//杀掉进程</p>
+<p>}</p>
+<p>}</p>
+<p>--------------------------------------------------------------------------------------------------------------------</p>
+<p>API---&nbsp;java.util.Math:&nbsp;用于数学运算的工具类，属性和行为都是静态的。该类是final不允许继承。</p>
+<p>&nbsp;</p>
+<p>static&nbsp;double&nbsp;ceil(double&nbsp;a)&nbsp;;&nbsp;//返回大于指定数值的最小整数</p>
+<p>static&nbsp;double&nbsp;floor(double&nbsp;a)&nbsp;;&nbsp;//返回小于指定数值的最大整数</p>
+<p>static&nbsp;long&nbsp;round(double&nbsp;a)&nbsp;;&nbsp;//四舍五入成整数</p>
+<p>static&nbsp;double&nbsp;pow(double&nbsp;a,&nbsp;double&nbsp;b)&nbsp;;&nbsp;//a的b次幂</p>
+<p>static&nbsp;double&nbsp;random();&nbsp;//返回0~1的伪随机数</p>
+<p>&nbsp;</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;{</p>
+<p>Random&nbsp;r&nbsp;=&nbsp;new&nbsp;Random();</p>
+<p>for(int&nbsp;x=0;&nbsp;x&lt;10;&nbsp;x++)&nbsp;{</p>
+<p>//double&nbsp;d&nbsp;=&nbsp;Math.floor(Math.random()*10+1);</p>
+<p>//int&nbsp;d&nbsp;&nbsp;=&nbsp;(int)(Math.random()*10+1);</p>
+<p>int&nbsp;d&nbsp;=&nbsp;r.nextInt(10)+1;</p>
+<p>System.out.println(d);</p>
+<p>}</p>
+<p>}</p>
+<p>--------------------------------------------------------------------------------------------------------------------</p>
+<p>API---&nbsp;java.util.Date：日期类，月份从0-11；</p>
+<p>/*</p>
+<p>日期对象和毫秒值之间的转换。</p>
+<p>1，日期对象转成毫秒值。Date类中的getTime方法。</p>
+<p>2，如何将获取到的毫秒值转成具体的日期呢？</p>
+<p>Date类中的setTime方法。也可以通过构造函数。&nbsp;</p>
+<p>*/</p>
+<p>//日期对象转成毫秒值</p>
+<p>Date&nbsp;d&nbsp;=&nbsp;new&nbsp;Date();</p>
+<p>long&nbsp;time1&nbsp;=&nbsp;d.getTime();</p>
+<p>long&nbsp;time2&nbsp;=&nbsp;System.currentTimeMillis();&nbsp;/&nbsp;/毫秒值。</p>
+<p>&nbsp;</p>
+<p>//毫秒值转成具体的日期</p>
+<p>long&nbsp;time&nbsp;=&nbsp;1322709921312l;</p>
+<p>Date&nbsp;d&nbsp;=&nbsp;new&nbsp;Date();</p>
+<p>d.setTime(time);</p>
+<p>/*</p>
+<p>将日期字符串转换成日期对象：使用的就是DateFormat方法中的&nbsp;&nbsp;Date&nbsp;parse(String&nbsp;source)&nbsp;；</p>
+<p>*/</p>
+<p>public&nbsp;static&nbsp;void&nbsp;method()&nbsp;throws&nbsp;Exception&nbsp;{</p>
+<p>String&nbsp;str_time&nbsp;=&nbsp;&quot;2011/10/25&quot;;</p>
+<p>DateFormat&nbsp;df&nbsp;=&nbsp;new&nbsp;SimpleDateFormat(&quot;yyyy/MM/dd&quot;);&nbsp;//SimpleDateFormat作为可以指定用户自定义的格式来完成格式化。</p>
+<p>Date&nbsp;d&nbsp;=&nbsp;df.parse(str_time);</p>
+<p>}</p>
+<p>/*</p>
+<p>如果不需要使用特定的格式化风格，完全可以使用DateFormat类中的静态工厂方法获取具体的已经封装好风格的对象。getDateInstance();getDateTimeInstance();</p>
+<p>*/</p>
+<p>Date&nbsp;d&nbsp;=&nbsp;new&nbsp;Date();</p>
+<p>DateFormat&nbsp;df&nbsp;=&nbsp;DateFormat.getDateInstance(DateFormat.LONG);</p>
+<p>df&nbsp;=&nbsp;DateFormat.getDateTimeInstance(DateFormat.LONG,DateFormat.LONG);</p>
+<p>String&nbsp;str_time&nbsp;=&nbsp;df.format(d);</p>
+<p>&nbsp;</p>
+<p>//将日期对象转换成字符串的方式：DateFormat类中的format方法。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;//创建日期格式对象。&nbsp;</p>
+<p>DateFormat&nbsp;df&nbsp;=&nbsp;new&nbsp;SimpleDateFormat();&nbsp;//该对象的建立内部会封装一个默认的日期格式。11-12-1&nbsp;下午1:48</p>
+<p>//如果想要自定义日期格式的话。可使用SimpleDateFormat的构造函数。将具体的格式作为参数传入到构造函数中。如何表示日期中年的部分呢？可以必须要参与格式对象文档。&nbsp;</p>
+<p>df&nbsp;=&nbsp;new&nbsp;SimpleDateFormat(&quot;yyyy年MM月dd日&nbsp;HH:mm:ss&quot;);</p>
+<p>//调用DateFormat中的format方法。对已有的日期对象进行格式化。</p>
+<p>String&nbsp;str_time&nbsp;=&nbsp;df.format(d);</p>
+<p>--------------------------------------------------------------------------------------------------------------------</p>
+<p>API---&nbsp;java.util.&nbsp;Calendar：日历类</p>
+<p>public&nbsp;static&nbsp;void&nbsp;method(){</p>
+<p>Calendar&nbsp;c&nbsp;=&nbsp;Calendar.getInstance();</p>
+<p>System.out.println(c.get(Calendar.YEAR)+&quot;年&quot;+(c.get(Calendar.MONTH)+1)+&quot;月&quot;</p>
+<p>+getNum(c.get(Calendar.DAY_OF_MONTH))+&quot;日&quot;</p>
+<p>+&quot;星期&quot;+getWeek(c.get(Calendar.DAY_OF_WEEK)));</p>
+<p>}</p>
+<p>public&nbsp;static&nbsp;String&nbsp;getNum(int&nbsp;num){</p>
+<p>return&nbsp;num&gt;9&nbsp;?&nbsp;num+&quot;&quot;&nbsp;:&nbsp;&quot;0&quot;+num;</p>
+<p>}</p>
+<p>public&nbsp;static&nbsp;String&nbsp;getWeek(int&nbsp;index){</p>
+<p>/*</p>
+<p>查表法：建立数据的对应关系.</p>
+<p>最好：数据个数是确定的，而且有对应关系。如果对应关系的一方，是数字，而且可以作为角标，那么可以通过数组来作为表。</p>
+<p>*/</p>
+<p>String[]&nbsp;weeks&nbsp;=&nbsp;{&quot;&quot;,&quot;日&quot;,&quot;一&quot;,&quot;二&quot;,&quot;三&quot;,&quot;四&quot;,&quot;五&quot;,&quot;六&quot;};</p>
+<p>return&nbsp;weeks[index];</p>
+<p>}</p>
+<p>------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<p>IO流：★★★★★，用于处理设备上数据。</p>
+<p>流：可以理解数据的流动，就是一个数据流。IO流最终要以对象来体现，对象都存在IO包中。</p>
+<p>流也进行分类：</p>
+<p>1：输入流（读）和输出流（写）。</p>
+<p>2：因为处理的数据不同，分为字节流和字符流。&nbsp;</p>
+<p>&nbsp;</p>
+<p>字节流：处理字节数据的流对象。设备上的数据无论是图片或者dvd，文字，它们都以二进制存储的。二进制的最终都是以一个8位为数据单元进行体现，所以计算机中的最小数据单元就是字节。意味着，字节流可以处理设备上的所有数据，所以字节流一样可以处理字符数据。</p>
+<p>&nbsp;</p>
+<p>那么为什么要有字符流呢？因为字符每个国家都不一样，所以涉及到了字符编码问题，那么GBK编码的中文用unicode编码解析是有问题的，所以需要获取中文字节数据的同时+&nbsp;指定的编码表才可以解析正确数据。为了方便于文字的解析，所以将字节流和编码表封装成对象，这个对象就是字符流。只要操作字符数据，优先考虑使用字符流体系。</p>
+<p>&nbsp;</p>
+<p>注意：流的操作只有两种：读和写。</p>
+<p>&nbsp;</p>
+<p>流的体系因为功能不同，但是有共性内容，不断抽取，形成继承体系。该体系一共有四个基类，而且都是抽象类。</p>
+<p>&nbsp;</p>
+<p>字节流：InputStream&nbsp;&nbsp;OutputStream</p>
+<p>字符流：Reader&nbsp;&nbsp;Writer</p>
+<p>&nbsp;</p>
+<p>在这四个系统中，它们的子类，都有一个共性特点：子类名后缀都是父类名，前缀名都是这个子类的功能名称。</p>
+<p>--------------------------------------------------------------------------------------------------------------------</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;IOException&nbsp;{&nbsp;//读、写都会发生IO异常</p>
+<p>/*</p>
+<p>1：创建一个字符输出流对象，用于操作文件。该对象一建立，就必须明确数据存储位置，是一个文件。</p>
+<p>2：对象产生后，会在堆内存中有一个实体，同时也调用了系统底层资源，在指定的位置创建了一个存储数据的文件。</p>
+<p>3：如果指定位置，出现了同名文件，文件会被覆盖。</p>
+<p>*/</p>
+<p>FileWriter&nbsp;fw&nbsp;=&nbsp;new&nbsp;FileWriter(&quot;demo.txt&quot;);&nbsp;//&nbsp;FileNotFoundException</p>
+<p>/*</p>
+<p>调用Writer类中的write方法写入字符串。字符串并未直接写入到目的地中，而是写入到了流中，(其实是写入到内存缓冲区中)。怎么把数据弄到文件中？</p>
+<p>*/</p>
+<p>fw.write(&quot;abcde&quot;);</p>
+<p>fw.flush();&nbsp;//&nbsp;刷新缓冲区，将缓冲区中的数据刷到目的地文件中。</p>
+<p>fw.close();&nbsp;//&nbsp;关闭流，其实关闭的就是java调用的系统底层资源。在关闭前，会先刷新该流。</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>close()和flush()的区别：</p>
+<p>flush()：将缓冲区的数据刷到目的地中后，流可以使用。</p>
+<p>close()：将缓冲区的数据刷到目的地中后，流就关闭了，该方法主要用于结束调用的底层资源。这个动作一定做。</p>
+<p>--------------------------------------------------------------------------------------------------------------------</p>
+<p>io异常的处理方式：io一定要写finally；</p>
+<p>&nbsp;</p>
+<p>FileWriter写入数据的细节：</p>
+<p>1：window中的换行符：\r\n两个符号组成。&nbsp;linux：\n。</p>
+<p>2：续写数据，只要在构造函数中传入新的参数true。</p>
+<p>3：目录分割符：window&nbsp;\\&nbsp;&nbsp;/</p>
+<p>&nbsp;</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;{</p>
+<p>FileWriter&nbsp;fw&nbsp;=&nbsp;null;</p>
+<p>try&nbsp;{</p>
+<p>fw&nbsp;=&nbsp;new&nbsp;FileWriter(&quot;demo.txt&quot;,true);</p>
+<p>fw.write(&quot;abcde&quot;);</p>
+<p>}</p>
+<p>catch&nbsp;(IOException&nbsp;e&nbsp;){</p>
+<p>System.out.println(e.toString()+&quot;....&quot;);</p>
+<p>}</p>
+<p>finally{</p>
+<p>if(fw!=null)</p>
+<p>try{</p>
+<p>fw.close();</p>
+<p>}</p>
+<p>catch&nbsp;(IOException&nbsp;e){</p>
+<p>System.out.println(&quot;close:&quot;+e.toString());</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>--------------------------------------------------------------------------------------------------------------------</p>
+<p>FileReader：使用Reader体系，读取一个文本文件中的数据。返回&nbsp;-1&nbsp;，标志读到结尾。</p>
+<p>import&nbsp;java.io.*;</p>
+<p>class&nbsp;&nbsp;FileReaderDemo&nbsp;{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;IOException&nbsp;{</p>
+<p>/*</p>
+<p>创建可以读取文本文件的流对象，FileReader让创建好的流对象和指定的文件相关联。</p>
+<p>*/</p>
+<p>FileReader&nbsp;fr&nbsp;=&nbsp;new&nbsp;FileReader(&quot;demo.txt&quot;);</p>
+<p>int&nbsp;ch&nbsp;=&nbsp;0;</p>
+<p>while((ch&nbsp;=&nbsp;fr.read())!=&nbsp;-1)&nbsp;{&nbsp;//条件是没有读到结尾</p>
+<p>System.out.println((char)ch);&nbsp;//调用读取流的read方法，读取一个字符。</p>
+<p>}</p>
+<p>fr.close();</p>
+<p>}</p>
+<p>}</p>
+<p>--------------------------------------------------------------------------------------------------------------------</p>
+<p>读取数据的第二种方式：第二种方式较为高效，自定义缓冲区。</p>
+<p>import&nbsp;java.io.*;</p>
+<p>class&nbsp;FileReaderDemo2&nbsp;{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;IOException&nbsp;{</p>
+<p>FileReader&nbsp;fr&nbsp;=&nbsp;new&nbsp;FileReader(&quot;demo.txt&quot;);&nbsp;//创建读取流对象和指定文件关联。</p>
+<p>//因为要使用read(char[])方法，将读取到字符存入数组。所以要创建一个字符数组，一般数组的长度都是1024的整数倍。</p>
+<p>char[]&nbsp;buf&nbsp;=&nbsp;new&nbsp;char[1024];</p>
+<p>int&nbsp;len&nbsp;=&nbsp;0;</p>
+<p>while((&nbsp;len=fr.read(buf))&nbsp;!=&nbsp;-1)&nbsp;{</p>
+<p>System.out.println(new&nbsp;String(buf,0,len));</p>
+<p>}</p>
+<p>fr.close();</p>
+<p>}</p>
+<p>}</p>
+<p>--------------------------------------------------------------------------------------------------------------------</p>
+<p>IO中的使用到了一个设计模式：装饰设计模式。</p>
+<p>装饰设计模式解决：对一组类进行功能的增强。</p>
+<p>包装：写一个类(包装类)对被包装对象进行包装；</p>
+<p>&nbsp;*&nbsp;1、包装类和被包装对象要实现同样的接口；</p>
+<p>&nbsp;*&nbsp;2、包装类要持有一个被包装对象；</p>
+<p>&nbsp;*&nbsp;3、包装类在实现接口时，大部分方法是靠调用被包装对象来实现的，对于需要修改的方法我们自己实现；</p>
+<p>--------------------------------------------------------------------------------------------------------------------</p>
+<p>字符流：</p>
+<p>Reader：用于读取字符流的抽象类。子类必须实现的方法只有&nbsp;read(char[],&nbsp;int,&nbsp;int)&nbsp;和&nbsp;close()。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---BufferedReader：从字符输入流中读取文本，缓冲各个字符，从而实现字符、数组和行的高效读取。&nbsp;可以指定缓冲区的大小，或者可使用默认的大小。大多数情况下，默认值就足够大了。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---LineNumberReader：跟踪行号的缓冲字符输入流。此类定义了方法&nbsp;<a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#setLineNumber(int)">setLineNumber(int)</a>&nbsp;和&nbsp;<a href="http://101.200.209.183/jeeadmin/jeecms/content/v_add.do?modelId=106&amp;cid=#getLineNumber()">getLineNumber()</a>，它们可分别用于设置和获取当前行号。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---InputStreamReader：是字节流通向字符流的桥梁：它使用指定的&nbsp;<a href="mk:@MSITStore:D:\shi\java学习资料\JDK_API_1_6_zh_CN.CHM::/java/nio/charset/Charset.html" title="java.nio.charset 中的类">charset</a>&nbsp;读取字节并将其解码为字符。它使用的字符集可以由名称指定或显式给定，或者可以接受平台默认的字符集。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---FileReader：用来读取字符文件的便捷类。此类的构造方法假定默认字符编码和默认字节缓冲区大小都是适当的。要自己指定这些值，可以先在&nbsp;FileInputStream&nbsp;上构造一个&nbsp;InputStreamReader。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---CharArrayReader：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---StringReader：</p>
+<p>-------------------------------------------------</p>
+<p>Writer：写入字符流的抽象类。子类必须实现的方法仅有&nbsp;write(char[],&nbsp;int,&nbsp;int)、flush()&nbsp;和&nbsp;close()。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---BufferedWriter：将文本写入字符输出流，缓冲各个字符，从而提供单个字符、数组和字符串的高效写入。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---OutputStreamWriter：是字符流通向字节流的桥梁：可使用指定的&nbsp;<a href="mk:@MSITStore:D:\shi\java学习资料\JDK_API_1_6_zh_CN.CHM::/java/nio/charset/Charset.html" title="java.nio.charset 中的类">charset</a>&nbsp;将要写入流中的字符编码成字节。它使用的字符集可以由名称指定或显式给定，否则将接受平台默认的字符集。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---FileWriter：用来写入字符文件的便捷类。此类的构造方法假定默认字符编码和默认字节缓冲区大小都是可接受的。要自己指定这些值，可以先在&nbsp;FileOutputStream&nbsp;上构造一个&nbsp;OutputStreamWriter。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---PrintWriter：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---CharArrayWriter：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---StringWriter：</p>
+<p>---------------------------------</p>
+<p>字节流：</p>
+<p>InputStream：是表示字节输入流的所有类的超类。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;FileInputStream：从文件系统中的某个文件中获得输入字节。哪些文件可用取决于主机环境。FileInputStream&nbsp;用于读取诸如图像数据之类的原始字节流。要读取字符流，请考虑使用&nbsp;FileReader。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;FilterInputStream：包含其他一些输入流，它将这些流用作其基本数据源，它可以直接传输数据或提供一些额外的功能。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;BufferedInputStream：该类实现缓冲的输入流。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;Stream：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;ObjectInputStream：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;PipedInputStream：</p>
+<p>-----------------------------------------------</p>
+<p>OutputStream：此抽象类是表示输出字节流的所有类的超类。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;FileOutputStream：文件输出流是用于将数据写入&nbsp;File&nbsp;或&nbsp;FileDescriptor&nbsp;的输出流。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;FilterOutputStream：此类是过滤输出流的所有类的超类。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;BufferedOutputStream：该类实现缓冲的输出流。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;PrintStream：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;DataOutputStream：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;ObjectOutputStream：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---&nbsp;PipedOutputStream：</p>
+<p>--------------------------------</p>
+<p>缓冲区是提高效率用的，给谁提高呢？</p>
+<p>BufferedWriter：是给字符输出流提高效率用的，那就意味着，缓冲区对象建立时，必须要先有流对象。明确要提高具体的流对象的效率。</p>
+<p>FileWriter&nbsp;fw&nbsp;=&nbsp;new&nbsp;FileWriter(&quot;bufdemo.txt&quot;);</p>
+<p>BufferedWriter&nbsp;bufw&nbsp;=&nbsp;new&nbsp;BufferedWriter(fw);//让缓冲区和指定流相关联。</p>
+<p>for(int&nbsp;x=0;&nbsp;x&lt;4;&nbsp;x++){</p>
+<p>bufw.write(x+&quot;abc&quot;);</p>
+<p>bufw.newLine();&nbsp;//写入一个换行符，这个换行符可以依据平台的不同写入不同的换行符。</p>
+<p>bufw.flush();//对缓冲区进行刷新，可以让数据到目的地中。</p>
+<p>}</p>
+<p>bufw.close();//关闭缓冲区，其实就是在关闭具体的流。</p>
+<p>-----------------------------</p>
+<p>BufferedReader：</p>
+<p>FileReader&nbsp;fr&nbsp;=&nbsp;new&nbsp;FileReader(&quot;bufdemo.txt&quot;);</p>
+<p>BufferedReader&nbsp;bufr&nbsp;&nbsp;=&nbsp;new&nbsp;BufferedReader(fr);</p>
+<p>String&nbsp;line&nbsp;=&nbsp;null;</p>
+<p>while((line=bufr.readLine())!=null){&nbsp;&nbsp;//readLine方法返回的时候是不带换行符的。</p>
+<p>System.out.println(line);</p>
+<p>}</p>
+<p>bufr.close();</p>
+<p>-----------------------------</p>
+<p>//记住，只要一读取键盘录入，就用这句话。</p>
+<p>BufferedReader&nbsp;bufr&nbsp;=&nbsp;new&nbsp;BufferedReader(new&nbsp;InputStreamReader(System.in));</p>
+<p>BufferedWriter&nbsp;bufw&nbsp;=&nbsp;new&nbsp;BufferedWriter(new&nbsp;OutputStreamWriter(System.out));//输出到控制台</p>
+<p>String&nbsp;line&nbsp;=&nbsp;null;</p>
+<p>while((line=bufr.readLine())!=null){</p>
+<p>if(&quot;over&quot;.equals(line))</p>
+<p>break;</p>
+<p>bufw.write(line.toUpperCase());//将输入的字符转成大写字符输出</p>
+<p>bufw.newLine();</p>
+<p>bufw.flush();</p>
+<p>}</p>
+<p>bufw.close();</p>
+<p>bufr.close();</p>
+<p>------------------------------</p>
+<p>流对象：其实很简单，就是读取和写入。但是因为功能的不同，流的体系中提供N多的对象。那么开始时，到底该用哪个对象更为合适呢？这就需要明确流的操作规律。</p>
+<p>&nbsp;</p>
+<p>流的操作规律：</p>
+<p>1，明确源和目的。</p>
+<p>数据源：就是需要读取，可以使用两个体系：InputStream、Reader；</p>
+<p>数据汇：就是需要写入，可以使用两个体系：OutputStream、Writer；</p>
+<p>2，操作的数据是否是纯文本数据？</p>
+<p>如果是：数据源：Reader</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;数据汇：Writer&nbsp;</p>
+<p>如果不是：数据源：InputStream</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据汇：OutputStream</p>
+<p>3，虽然确定了一个体系，但是该体系中有太多的对象，到底用哪个呢？</p>
+<p>明确操作的数据设备。</p>
+<p>数据源对应的设备：硬盘(File)，内存(数组)，键盘(System.in)</p>
+<p>数据汇对应的设备：硬盘(File)，内存(数组)，控制台(System.out)。</p>
+<p>4，需要在基本操作上附加其他功能吗？比如缓冲。</p>
+<p>如果需要就进行装饰。</p>
+<p>&nbsp;</p>
+<p>转换流特有功能：转换流可以将字节转成字符，原因在于，将获取到的字节通过查编码表获取到指定对应字符。</p>
+<p>&nbsp;</p>
+<p>转换流的最强功能就是基于&nbsp;字节流&nbsp;+&nbsp;编码表&nbsp;。没有转换，没有字符流。</p>
+<p>&nbsp;</p>
+<p>发现转换流有一个子类就是操作文件的字符流对象：</p>
+<p>InputStreamReader</p>
+<p>|--FileReader</p>
+<p>OutputStreamWriter</p>
+<p>|--FileWrier</p>
+<p>&nbsp;</p>
+<p>想要操作文本文件，必须要进行编码转换，而编码转换动作转换流都完成了。所以操作文件的流对象只要继承自转换流就可以读取一个字符了。</p>
+<p>&nbsp;</p>
+<p>但是子类有一个局限性，就是子类中使用的编码是固定的，是本机默认的编码表，对于简体中文版的系统默认码表是GBK。</p>
+<p>FileReader&nbsp;fr&nbsp;=&nbsp;new&nbsp;FileReader(&quot;a.txt&quot;);</p>
+<p>InputStreamReader&nbsp;isr&nbsp;=&nbsp;new&nbsp;InputStreamReader(new&nbsp;FileInputStream(&quot;a.txt&quot;),&quot;gbk&quot;);</p>
+<p>以上两句代码功能一致，</p>
+<p>如果仅仅使用平台默认码表，就使用FileReader&nbsp;fr&nbsp;=&nbsp;new&nbsp;FileReader(&quot;a.txt&quot;);&nbsp;//因为简化。</p>
+<p>&nbsp;</p>
+<p>如果需要制定码表，必须用转换流。</p>
+<p>转换流&nbsp;=&nbsp;字节流+编码表。</p>
+<p>转换流的子类File&nbsp;=&nbsp;字节流&nbsp;+&nbsp;默认编码表。</p>
+<p>&nbsp;</p>
+<p>凡是操作设备上的文本数据，涉及编码转换，必须使用转换流。</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>File类：将文件系统中的文件和文件夹封装成了对象。提供了更多的属性和行为可以对这些文件和文件夹进行操作。这些是流对象办不到的，因为流只操作数据。</p>
+<p>&nbsp;</p>
+<p>File类常见方法：</p>
+<p>1：创建。</p>
+<p>boolean&nbsp;createNewFile()：在指定目录下创建文件，如果该文件已存在，则不创建。而对操作文件的输出流而言，输出流对象已建立，就会创建文件，如果文件已存在，会覆盖。除非续写。</p>
+<p>boolean&nbsp;mkdir()：创建此抽象路径名指定的目录。</p>
+<p>boolean&nbsp;mkdirs()：创建多级目录。&nbsp;</p>
+<p>2：删除。</p>
+<p>boolean&nbsp;delete()：删除此抽象路径名表示的文件或目录。</p>
+<p>void&nbsp;deleteOnExit()：在虚拟机退出时删除。</p>
+<p>注意：在删除文件夹时，必须保证这个文件夹中没有任何内容，才可以将该文件夹用delete删除。</p>
+<p>window的删除动作，是从里往外删。注意：java删除文件不走回收站。要慎用。</p>
+<p>3：获取.</p>
+<p>long&nbsp;length()：获取文件大小。</p>
+<p>String&nbsp;getName()：返回由此抽象路径名表示的文件或目录的名称。</p>
+<p>String&nbsp;getPath()：将此抽象路径名转换为一个路径名字符串。</p>
+<p>String&nbsp;getAbsolutePath()：返回此抽象路径名的绝对路径名字符串。</p>
+<p>String&nbsp;getParent()：返回此抽象路径名父目录的抽象路径名，如果此路径名没有指定父目录，则返回&nbsp;null。</p>
+<p>long&nbsp;lastModified()：返回此抽象路径名表示的文件最后一次被修改的时间。</p>
+<p>File.pathSeparator：返回当前系统默认的路径分隔符，windows默认为&nbsp;&ldquo;；&rdquo;。</p>
+<p>File.Separator：返回当前系统默认的目录分隔符，windows默认为&nbsp;&ldquo;\&rdquo;。</p>
+<p>4：判断：</p>
+<p>boolean&nbsp;exists()：判断文件或者文件夹是否存在。</p>
+<p>boolean&nbsp;isDirectory()：测试此抽象路径名表示的文件是否是一个目录。</p>
+<p>boolean&nbsp;isFile()：测试此抽象路径名表示的文件是否是一个标准文件。</p>
+<p>boolean&nbsp;isHidden()：测试此抽象路径名指定的文件是否是一个隐藏文件。</p>
+<p>boolean&nbsp;isAbsolute()：测试此抽象路径名是否为绝对路径名。</p>
+<p>5：重命名。</p>
+<p>&nbsp;boolean&nbsp;renameTo(File&nbsp;dest)：可以实现移动的效果。剪切+重命名。</p>
+<p>&nbsp;</p>
+<p>String[]&nbsp;list()：列出指定目录下的当前的文件和文件夹的名称。包含隐藏文件。</p>
+<p>如果调用list方法的File&nbsp;对象中封装的是一个文件，那么list方法返回数组为null。如果封装的对象不存在也会返回null。只有封装的对象存在并且是文件夹时，这个方法才有效。</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>递归：就是函数自身调用自身。</p>
+<p>什么时候用递归呢？</p>
+<p>当一个功能被重复使用，而每一次使用该功能时的参数不确定，都由上次的功能元素结果来确定。</p>
+<p>简单说：功能内部又用到该功能，但是传递的参数值不确定。(每次功能参与运算的未知内容不确定)。</p>
+<p>&nbsp;</p>
+<p>递归的注意事项：</p>
+<p>1：一定要定义递归的条件。</p>
+<p>2：递归的次数不要过多。容易出现&nbsp;StackOverflowError&nbsp;栈内存溢出错误。</p>
+<p>其实递归就是在栈内存中不断的加载同一个函数。</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>Java.util.Properties：一个可以将键值进行持久化存储的对象。Map--Hashtable的子类。</p>
+<p>Map</p>
+<p>|--Hashtable</p>
+<p>|--Properties：用于属性配置文件，键和值都是字符串类型。</p>
+<p>特点：1：可以持久化存储数据。2：键值都是字符串。3：一般用于配置文件。</p>
+<p>&nbsp;</p>
+<p>|--&nbsp;load()：将流中的数据加载进集合。</p>
+<p>原理：其实就是将读取流和指定文件相关联，并读取一行数据，因为数据是规则的key=value，所以获取一行后，通过&nbsp;=&nbsp;对该行数据进行切割，左边就是键，右边就是值，将键、值存储到properties集合中。</p>
+<p>|--&nbsp;store()：写入各个项后，刷新输出流。</p>
+<p>|--&nbsp;list()：将集合的键值数据列出到指定的目的地。</p>
+<p>-------------------------------------------------------------------------------------------------</p>
+<p>以下介绍IO包中扩展功能的流对象：基本都是装饰设计模式。</p>
+<p>Java.io.outputstream.PrintStream：打印流</p>
+<p>1：提供了更多的功能，比如打印方法。可以直接打印任意类型的数据。</p>
+<p>2：它有一个自动刷新机制，创建该对象，指定参数，对于指定方法可以自动刷新。</p>
+<p>3：它使用的本机默认的字符编码.&nbsp;</p>
+<p>4：该流的print方法不抛出IOException。</p>
+<p>&nbsp;</p>
+<p>该对象的构造函数。</p>
+<p>PrintStream(File&nbsp;file)&nbsp;&nbsp;：创建具有指定文件且不带自动行刷新的新打印流。&nbsp;</p>
+<p>PrintStream(File&nbsp;file,&nbsp;String&nbsp;csn)&nbsp;：创建具有指定文件名称和字符集且不带自动行刷新的新打印流。&nbsp;</p>
+<p>PrintStream(OutputStream&nbsp;out)&nbsp;：创建新的打印流。&nbsp;</p>
+<p>PrintStream(OutputStream&nbsp;out,&nbsp;boolean&nbsp;autoFlush)&nbsp;：创建新的打印流。&nbsp;</p>
+<p>PrintStream(OutputStream&nbsp;out,&nbsp;boolean&nbsp;autoFlush,&nbsp;String&nbsp;encoding)&nbsp;：创建新的打印流。&nbsp;</p>
+<p>PrintStream(String&nbsp;fileName)&nbsp;：创建具有指定文件名称且不带自动行刷新的新打印流。&nbsp;</p>
+<p>PrintStream(String&nbsp;fileName,&nbsp;String&nbsp;csn)&nbsp;</p>
+<p>&nbsp;</p>
+<p>PrintStream可以操作目的：1：File对象。2：字符串路径。3：字节输出流。</p>
+<p>前两个都JDK1.5版本才出现。而且在操作文本文件时，可指定字符编码了。</p>
+<p>&nbsp;</p>
+<p>当目的是一个字节输出流时，如果使用的println方法，可以在printStream对象上加入一个true参数。这样对于println方法可以进行自动的刷新，而不是等待缓冲区满了再刷新。最终print方法都将具体的数据转成字符串，而且都对IO异常进行了内部处理。</p>
+<p>&nbsp;</p>
+<p>既然操作的数据都转成了字符串，那么使用PrintWriter更好一些。因为PrintWrite是字符流的子类，可以直接操作字符数据，同时也可以指定具体的编码。</p>
+<p>--------------------------------------------------------</p>
+<p>PrintWriter：具备了PrintStream的特点同时，还有自身特点：</p>
+<p>该对象的目的地有四个：1：File对象。2：字符串路径。3：字节输出流。4：字符输出流。</p>
+<p>&nbsp;</p>
+<p>开发时尽量使用PrintWriter。</p>
+<p>&nbsp;</p>
+<p>方法中直接操作文件的第二参数是编码表。</p>
+<p>直接操作输出流的，第二参数是自动刷新。</p>
+<p>&nbsp;</p>
+<p>//读取键盘录入将数据转成大写显示在控制台.</p>
+<p>BufferedReader&nbsp;bufr&nbsp;=&nbsp;new&nbsp;BufferedReader(new&nbsp;InputStreamReader(System.in));//源：键盘输入</p>
+<p>//目的：把数据写到文件中，还想自动刷新。</p>
+<p>PrintWriter&nbsp;out&nbsp;=&nbsp;new&nbsp;PrintWriter(new&nbsp;FileWriter(&quot;out.txt&quot;),true);//设置true后自动刷新</p>
+<p>String&nbsp;line&nbsp;=&nbsp;null;</p>
+<p>while((line=bufr.readLine())!=null){</p>
+<p>if(&quot;over&quot;.equals(line))</p>
+<p>break;</p>
+<p>out.println(line.toUpperCase());//转大写输出</p>
+<p>}</p>
+<p>//注意：System.in，System.out这两个标准的输入输出流，在jvm启动时已经存在了。随时可以使用。当jvm结束了，这两个流就结束了。但是，当使用了显示的close方法关闭时，这两个流在提前结束了。</p>
+<p>out.close();</p>
+<p>bufr.close();</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>SequenceInputStream：序列流，作用就是将多个读取流合并成一个读取流。实现数据合并。</p>
+<p>表示其他输入流的逻辑串联。它从输入流的有序集合开始，并从第一个输入流开始读取，直到到达文件末尾，接着从第二个输入流读取，依次类推，直到到达包含的最后一个输入流的文件末尾为止。</p>
+<p>这样做，可以更方便的操作多个读取流，其实这个序列流内部会有一个有序的集合容器，用于存储多个读取流对象。</p>
+<p>该对象的构造函数参数是枚举，想要获取枚举，需要有Vector集合，但不高效。需用ArrayList，但ArrayList中没有枚举，只有自己去创建枚举对象。</p>
+<p>但是方法怎么实现呢？因为枚举操作的是具体集合中的元素，所以无法具体实现，但是枚举和迭代器是功能一样的，所以，可以用迭代替代枚举。</p>
+<p>&nbsp;</p>
+<p>合并原理：多个读取流对应一个输出流。</p>
+<p>切割原理：一个读取流对应多个输出流。</p>
+<p>&nbsp;</p>
+<p>import&nbsp;java.io.*;</p>
+<p>import&nbsp;java.util.*;</p>
+<p>class&nbsp;&nbsp;SplitFileDemo{</p>
+<p>private&nbsp;static&nbsp;final&nbsp;String&nbsp;CFG&nbsp;=&nbsp;&quot;.properties&quot;;</p>
+<p>private&nbsp;static&nbsp;final&nbsp;String&nbsp;SP&nbsp;=&nbsp;&quot;.part&quot;;</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;IOException{</p>
+<p>File&nbsp;file&nbsp;=&nbsp;new&nbsp;File(&quot;c:\\0.bmp&quot;);</p>
+<p>File&nbsp;dir&nbsp;=&nbsp;new&nbsp;File(&quot;c:\\partfiles&quot;);</p>
+<p>meger(dir);</p>
+<p>}</p>
+<p>//数据的合并。</p>
+<p>public&nbsp;static&nbsp;void&nbsp;meger(File&nbsp;dir)throws&nbsp;IOException{</p>
+<p>if(!(dir.exists()&nbsp;&amp;&amp;&nbsp;dir.isDirectory()))</p>
+<p>throw&nbsp;new&nbsp;RuntimeException(&quot;指定的目录不存在，或者不是正确的目录&quot;);</p>
+<p>File[]&nbsp;files&nbsp;=&nbsp;dir.listFiles(new&nbsp;SuffixFilter(CFG));</p>
+<p>if(files.length==0)</p>
+<p>throw&nbsp;new&nbsp;RuntimeException(&quot;扩展名.proerpties的文件不存在&quot;);</p>
+<p>//获取到配置文件</p>
+<p>File&nbsp;config&nbsp;=&nbsp;files[0];</p>
+<p>//获取配置文件的信息。</p>
+<p>Properties&nbsp;prop&nbsp;=&nbsp;new&nbsp;Properties();</p>
+<p>FileInputStream&nbsp;fis&nbsp;=&nbsp;new&nbsp;FileInputStream(config);</p>
+<p>prop.load(fis);</p>
+<p>String&nbsp;fileName&nbsp;=&nbsp;prop.getProperty(&quot;filename&quot;);</p>
+<p>int&nbsp;partcount&nbsp;=&nbsp;Integer.parseInt(prop.getProperty(&quot;partcount&quot;));</p>
+<p>//--------------------------</p>
+<p>File[]&nbsp;partFiles&nbsp;=&nbsp;dir.listFiles(new&nbsp;SuffixFilter(SP));</p>
+<p>if(partFiles.length!=partcount)</p>
+<p>throw&nbsp;new&nbsp;RuntimeException(&quot;缺少碎片文件&quot;);</p>
+<p>//---------------------</p>
+<p>ArrayList&lt;FileInputStream&gt;&nbsp;al&nbsp;=&nbsp;new&nbsp;ArrayList&lt;FileInputStream&gt;();</p>
+<p>for(int&nbsp;x=0;&nbsp;x&lt;partcount;&nbsp;x++){</p>
+<p>al.add(new&nbsp;FileInputStream(new&nbsp;File(dir,x+SP)));</p>
+<p>}</p>
+<p>Enumeration&lt;FileInputStream&gt;&nbsp;en&nbsp;=&nbsp;Collections.enumeration(al);</p>
+<p>SequenceInputStream&nbsp;sis&nbsp;=&nbsp;new&nbsp;SequenceInputStream(en);</p>
+<p>File&nbsp;file&nbsp;=&nbsp;new&nbsp;File(dir,fileName);</p>
+<p>FileOutputStream&nbsp;fos&nbsp;=&nbsp;new&nbsp;FileOutputStream(file);</p>
+<p>byte[]&nbsp;buf&nbsp;=&nbsp;new&nbsp;byte[1024];</p>
+<p>int&nbsp;len&nbsp;=&nbsp;0;</p>
+<p>while((len=sis.read(buf))!=-1){</p>
+<p>fos.write(buf,0,len);</p>
+<p>}</p>
+<p>fos.close();</p>
+<p>sis.close();</p>
+<p>}</p>
+<p>//带有配置信息的数据切割。</p>
+<p>public&nbsp;static&nbsp;void&nbsp;splitFile(File&nbsp;file)throws&nbsp;IOException{</p>
+<p>//用一个读取流和文件关联。</p>
+<p>FileInputStream&nbsp;fis&nbsp;=&nbsp;new&nbsp;FileInputStream(file);</p>
+<p>//创建目的地。因为有多个。所以先创建引用。</p>
+<p>FileOutputStream&nbsp;fos&nbsp;=&nbsp;null;</p>
+<p>//指定碎片的位置。</p>
+<p>File&nbsp;dir&nbsp;=&nbsp;new&nbsp;File(&quot;c:\\partfiles&quot;);</p>
+<p>if(!dir.exists())</p>
+<p>dir.mkdir();</p>
+<p>//碎片文件大小引用。</p>
+<p>File&nbsp;f&nbsp;=&nbsp;null;</p>
+<p>byte[]&nbsp;buf&nbsp;=&nbsp;new&nbsp;byte[1024*1024];</p>
+<p>//因为切割完的文件通常都有规律的。为了简单标记规律使用计数器。</p>
+<p>int&nbsp;count&nbsp;=&nbsp;0;</p>
+<p>int&nbsp;len&nbsp;=&nbsp;0;</p>
+<p>while((len=fis.read(buf))!=-1){</p>
+<p>f&nbsp;=&nbsp;new&nbsp;File(dir,(count++)+&quot;.part&quot;);</p>
+<p>fos&nbsp;=&nbsp;new&nbsp;FileOutputStream(f);</p>
+<p>fos.write(buf,0,len);</p>
+<p>fos.close();</p>
+<p>}</p>
+<p>//碎片文件生成后，还需要定义配置文件记录生成的碎片文件个数。以及被切割文件的名称。</p>
+<p>//定义简单的键值信息，可是用Properties。</p>
+<p>String&nbsp;filename&nbsp;=&nbsp;file.getName();</p>
+<p>Properties&nbsp;prop&nbsp;=&nbsp;new&nbsp;Properties();</p>
+<p>prop.setProperty(&quot;filename&quot;,filename);</p>
+<p>prop.setProperty(&quot;partcount&quot;,count+&quot;&quot;);</p>
+<p>File&nbsp;config&nbsp;=&nbsp;new&nbsp;File(dir,count+&quot;.properties&quot;);</p>
+<p>fos&nbsp;=&nbsp;new&nbsp;FileOutputStream(config);</p>
+<p>prop.store(fos,&quot;&quot;);</p>
+<p>fos.close();</p>
+<p>fis.close();</p>
+<p>}</p>
+<p>}</p>
+<p>class&nbsp;SuffixFilter&nbsp;implements&nbsp;FileFilter{</p>
+<p>private&nbsp;String&nbsp;suffix;</p>
+<p>SuffixFilter(String&nbsp;suffix){</p>
+<p>this.suffix&nbsp;&nbsp;=&nbsp;suffix;</p>
+<p>}</p>
+<p>public&nbsp;boolean&nbsp;accept(File&nbsp;file){</p>
+<p>return&nbsp;&nbsp;file.getName().endsWith(suffix);</p>
+<p>}</p>
+<p>}</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>RandomAccessFile:</p>
+<p>特点：</p>
+<p style="margin-left: 10.5pt">1：该对象即可读取，又可写入。</p>
+<p style="margin-left: 10.5pt">2：该对象中的定义了一个大型的byte数组，通过定义指针来操作这个数组。</p>
+<p style="margin-left: 10.5pt">3：可以通过该对象的getFilePointer()获取指针的位置，通过seek()方法设置指针的位置。</p>
+<p style="margin-left: 10.5pt">4：该对象操作的源和目的必须是文件。&nbsp;</p>
+<p style="margin-left: 10.5pt">5：其实该对象内部封装了字节读取流和字节写入流。</p>
+<p>注意：实现随机访问，最好是数据有规律。</p>
+<p>&nbsp;</p>
+<p>class&nbsp;RandomAccessFileDemo{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;IOException{</p>
+<p>write();</p>
+<p>read();</p>
+<p>randomWrite();</p>
+<p>}</p>
+<p>//随机写入数据，可以实现已有数据的修改。</p>
+<p>public&nbsp;static&nbsp;void&nbsp;randomWrite()throws&nbsp;IOException{</p>
+<p>RandomAccessFile&nbsp;raf&nbsp;=&nbsp;new&nbsp;RandomAccessFile(&quot;random.txt&quot;,&quot;rw&quot;);</p>
+<p>raf.seek(8*4);</p>
+<p>System.out.println(&quot;pos&nbsp;:&quot;+raf.getFilePointer());</p>
+<p>raf.write(&quot;王武&quot;.getBytes());</p>
+<p>raf.writeInt(102);</p>
+<p>raf.close();</p>
+<p>}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;read()throws&nbsp;IOException{</p>
+<p>RandomAccessFile&nbsp;raf&nbsp;=&nbsp;new&nbsp;RandomAccessFile(&quot;random.txt&quot;,&quot;r&quot;);//只读模式。</p>
+<p>//指定指针的位置。</p>
+<p>raf.seek(8*1);//实现随机读取文件中的数据。注意：数据最好有规律。</p>
+<p>System.out.println(&quot;pos1&nbsp;:&quot;+raf.getFilePointer());</p>
+<p>byte[]&nbsp;buf&nbsp;=&nbsp;new&nbsp;byte[4];</p>
+<p>raf.read(buf);</p>
+<p>String&nbsp;name&nbsp;=&nbsp;new&nbsp;String(buf);</p>
+<p>int&nbsp;age&nbsp;=&nbsp;raf.readInt();</p>
+<p>System.out.println(name+&quot;::&quot;+age);</p>
+<p>System.out.println(&quot;pos2&nbsp;:&quot;+raf.getFilePointer());</p>
+<p>raf.close();</p>
+<p>}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;write()throws&nbsp;IOException{</p>
+<p>//rw：当这个文件不存在，会创建该文件。当文件已存在，不会创建。所以不会像输出流一样覆盖。</p>
+<p>RandomAccessFile&nbsp;raf&nbsp;=&nbsp;new&nbsp;RandomAccessFile(&quot;random.txt&quot;,&quot;rw&quot;);//rw读写模式</p>
+<p>//往文件中写入人的基本信息，姓名，年龄。</p>
+<p>raf.write(&quot;张三&quot;.getBytes());</p>
+<p>raf.writeInt(97);</p>
+<p>raf.close();</p>
+<p>}</p>
+<p>}</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>管道流：管道读取流和管道写入流可以像管道一样对接上，管道读取流就可以读取管道写入流写入的数据。</p>
+<p>注意：需要加入多线程技术，因为单线程，先执行read，会发生死锁，因为read方法是阻塞式的，没有数据的read方法会让线程等待。</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;IOException{</p>
+<p>PipedInputStream&nbsp;pipin&nbsp;=&nbsp;new&nbsp;PipedInputStream();</p>
+<p>PipedOutputStream&nbsp;pipout&nbsp;=&nbsp;new&nbsp;PipedOutputStream();</p>
+<p>pipin.connect(pipout);</p>
+<p>new&nbsp;Thread(new&nbsp;Input(pipin)).start();</p>
+<p>new&nbsp;Thread(new&nbsp;Output(pipout)).start();</p>
+<p>}</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>对象的序列化：目的：将一个具体的对象进行持久化，写入到硬盘上。</p>
+<p>注意：静态数据不能被序列化，因为静态数据不在堆内存中，是存储在静态方法区中。</p>
+<p>&nbsp;</p>
+<p>如何将非静态的数据不进行序列化？用transient&nbsp;关键字修饰此变量即可。</p>
+<p>&nbsp;</p>
+<p>Serializable：用于启动对象的序列化功能，可以强制让指定类具备序列化功能，该接口中没有成员，这是一个标记接口。这个标记接口用于给序列化类提供UID。这个uid是依据类中的成员的数字签名进行运行获取的。如果不需要自动获取一个uid，可以在类中，手动指定一个名称为serialVersionUID&nbsp;id号。依据编译器的不同，或者对信息的高度敏感性。最好每一个序列化的类都进行手动显示的UID的指定。</p>
+<p>&nbsp;</p>
+<p>import&nbsp;java.io.*;</p>
+<p>class&nbsp;ObjectStreamDemo&nbsp;{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;Exception{</p>
+<p>writeObj();</p>
+<p>readObj();</p>
+<p>}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;readObj()throws&nbsp;Exception{</p>
+<p>ObjectInputStream&nbsp;ois&nbsp;=&nbsp;new&nbsp;ObjectInputStream(new&nbsp;FileInputStream(&quot;obj.txt&quot;));</p>
+<p>Object&nbsp;obj&nbsp;=&nbsp;ois.readObject();//读取一个对象。</p>
+<p>System.out.println(obj.toString());</p>
+<p>}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;writeObj()throws&nbsp;IOException{</p>
+<p>ObjectOutputStream&nbsp;oos&nbsp;=&nbsp;new&nbsp;ObjectOutputStream(new&nbsp;FileOutputStream(&quot;obj.txt&quot;));</p>
+<p>oos.writeObject(new&nbsp;Person(&quot;lisi&quot;,25));&nbsp;//写入一个对象。</p>
+<p>oos.close();</p>
+<p>}</p>
+<p>}</p>
+<p>class&nbsp;Person&nbsp;implements&nbsp;Serializable{</p>
+<p>private&nbsp;static&nbsp;final&nbsp;long&nbsp;serialVersionUID&nbsp;=&nbsp;42L;</p>
+<p>private&nbsp;transient&nbsp;String&nbsp;name;//用transient修饰后name将不会进行序列化</p>
+<p>public&nbsp;int&nbsp;age;</p>
+<p>Person(String&nbsp;name,int&nbsp;age){</p>
+<p>this.name&nbsp;=&nbsp;name;</p>
+<p>this.age&nbsp;=&nbsp;age;</p>
+<p>}</p>
+<p>public&nbsp;String&nbsp;toString(){</p>
+<p>return&nbsp;name+&quot;::&quot;+age;</p>
+<p>}</p>
+<p>}</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>DataOutputStream、DataInputStream：专门用于操作基本数据类型数据的对象。</p>
+<p>DataOutputStream&nbsp;dos&nbsp;=&nbsp;&nbsp;new&nbsp;DataOutputStream(new&nbsp;FileOutputStream(&quot;data.txt&quot;));</p>
+<p>dos.writeInt(256);</p>
+<p>dos.close();</p>
+<p>&nbsp;</p>
+<p>DataInputStream&nbsp;dis&nbsp;=&nbsp;new&nbsp;DataInputStream(new&nbsp;FileInputStream(&quot;data.txt&quot;));</p>
+<p>int&nbsp;num&nbsp;=&nbsp;dis.readInt();</p>
+<p>System.out.println(num);</p>
+<p>dis.close();</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>ByteArrayInputStream：源：内存&nbsp;</p>
+<p>ByteArrayOutputStream：目的：内存。&nbsp;</p>
+<p>这两个流对象不涉及底层资源调用，操作的都是内存中数组，所以不需要关闭。</p>
+<p>直接操作字节数组就可以了，为什么还要把数组封装到流对象中呢？因为数组本身没有方法，只有一个length属性。为了便于数组的操作，将数组进行封装，对外提供方法操作数组中的元素。</p>
+<p>&nbsp;</p>
+<p>对于数组元素操作无非两种操作：设置（写）和获取（读），而这两操作正好对应流的读写操作。这两个对象就是使用了流的读写思想来操作数组。</p>
+<p>//创建源：</p>
+<p>ByteArrayInputStream&nbsp;bis&nbsp;=&nbsp;new&nbsp;ByteArrayInputStream(&quot;abcdef&quot;.getBytes());</p>
+<p>//创建目的：</p>
+<p>ByteArrayOutputStream&nbsp;bos&nbsp;=&nbsp;new&nbsp;ByteArrayOutputStream();</p>
+<p>int&nbsp;ch&nbsp;=&nbsp;0;</p>
+<p>while((ch=bis.read())!=-1){</p>
+<p>bos.write(ch);</p>
+<p>}</p>
+<p>System.out.println(bos.toString());</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>网络编程：</p>
+<p>端口：</p>
+<p>物理端口：</p>
+<p>逻辑端口：用于标识进程的逻辑地址，不同进程的标识；有效端口：0~65535，其中0~1024系统使用或保留端口。</p>
+<p>&nbsp;</p>
+<p>java&nbsp;中ip对象：InetAddress.</p>
+<p>import&nbsp;java.net.*;</p>
+<p>class&nbsp;&nbsp;IPDemo{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;UnknownHostException{</p>
+<p>//通过名称(ip字符串or主机名)来获取一个ip对象。</p>
+<p>InetAddress&nbsp;ip&nbsp;=&nbsp;InetAddress.getByName(&quot;www.baidu.com&quot;);//java.net.UnknownHostException</p>
+<p>System.out.println(&quot;addr:&quot;+ip.getHostAddress());</p>
+<p>System.out.println(&quot;name:&quot;+ip.getHostName());</p>
+<p>}</p>
+<p>}</p>
+<p>Socket：★★★★，套接字，通信的端点。</p>
+<p>就是为网络服务提供的一种机制，通信的两端都有Socket，网络通信其实就是Socket间的通信，数据在两个Socket间通过IO传输。</p>
+<p>&nbsp;</p>
+<p>UDP传输：</p>
+<p style="margin-left: 10.5pt">1，只要是网络传输，必须有socket&nbsp;。</p>
+<p style="margin-left: 10.5pt">2，数据一定要封装到数据包中，数据包中包括目的地址、端口、数据等信息。</p>
+<p>&nbsp;</p>
+<p>直接操作udp不可能，对于java语言应该将udp封装成对象，易于我们的使用，这个对象就是DatagramSocket.&nbsp;封装了udp传输协议的socket对象。</p>
+<p>&nbsp;</p>
+<p>因为数据包中包含的信息较多，为了操作这些信息方便，也一样会将其封装成对象。这个数据包对象就是：DatagramPacket.通过这个对象中的方法，就可以获取到数据包中的各种信息。</p>
+<p>&nbsp;</p>
+<p>DatagramSocket具备发送和接受功能，在进行udp传输时，需要明确一个是发送端，一个是接收端。</p>
+<p>&nbsp;</p>
+<p>udp的发送端：</p>
+<p style="margin-left: 10.5pt">1，建立udp的socket服务，创建对象时如果没有明确端口，系统会自动分配一个未被使用的端口。</p>
+<p style="margin-left: 10.5pt">2，明确要发送的具体数据。</p>
+<p style="margin-left: 10.5pt">3，将数据封装成了数据包。</p>
+<p style="margin-left: 10.5pt">4，用socket服务的send方法将数据包发送出去。</p>
+<p style="margin-left: 10.5pt">5，关闭资源。</p>
+<p>--------------------------------------------------------------</p>
+<p>import&nbsp;java.net.*;</p>
+<p>class&nbsp;&nbsp;UdpSend{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)throws&nbsp;Exception&nbsp;{</p>
+<p>// 1，建立udp的socket服务。</p>
+<p>DatagramSocket&nbsp;ds&nbsp;=&nbsp;new&nbsp;DatagramSocket(8888);//指定发送端口，不指定系统会随机分配。</p>
+<p>// 2，明确要发送的具体数据。</p>
+<p>String&nbsp;text&nbsp;=&nbsp;&quot;udp传输演示&nbsp;哥们来了&quot;;</p>
+<p>byte[]&nbsp;buf&nbsp;=&nbsp;text.getBytes();</p>
+<p>// 3，将数据封装成了数据包。</p>
+<p>DatagramPacket&nbsp;dp&nbsp;=&nbsp;new&nbsp;DatagramPacket(buf,</p>
+<p>buf.length,InetAddress.getByName(&quot;10.1.31.127&quot;),10000);</p>
+<p>// 4，用socket服务的send方法将数据包发送出去。</p>
+<p>ds.send(dp);</p>
+<p>// 5，关闭资源。</p>
+<p>ds.close();</p>
+<p>}</p>
+<p>}</p>
+<p>-------------------------------------------------------------</p>
+<p>udp的接收端：</p>
+<p style="margin-left: 10.5pt">1，创建udp的socket服务，必须要明确一个端口，作用在于，只有发送到这个端口的数据才是这个接收端可以处理的数据。</p>
+<p style="margin-left: 10.5pt">2，定义数据包，用于存储接收到数据。</p>
+<p style="margin-left: 10.5pt">3，通过socket服务的接收方法将收到的数据存储到数据包中。</p>
+<p style="margin-left: 10.5pt">4，通过数据包的方法获取数据包中的具体数据内容，比如ip、端口、数据等等。</p>
+<p style="margin-left: 10.5pt">5，关闭资源。</p>
+<p>-------------------------------------------------------------</p>
+<p>class&nbsp;UdpRece&nbsp;{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;Exception{</p>
+<p>// 1，创建udp的socket服务。</p>
+<p>DatagramSocket&nbsp;ds&nbsp;=&nbsp;new&nbsp;DatagramSocket(10000);</p>
+<p>// 2，定义数据包，用于存储接收到数据。先定义字节数组，数据包会把数据存储到字节数组中。</p>
+<p>byte[]&nbsp;buf&nbsp;=&nbsp;new&nbsp;byte[1024];</p>
+<p>DatagramPacket&nbsp;dp&nbsp;=&nbsp;new&nbsp;DatagramPacket(buf,buf.length);</p>
+<p>// 3，通过socket服务的接收方法将收到的数据存储到数据包中。</p>
+<p>ds.receive(dp);//该方法是阻塞式方法。</p>
+<p>// 4，通过数据包的方法获取数据包中的具体数据内容，比如ip，端口，数据等等。</p>
+<p>String&nbsp;ip&nbsp;=&nbsp;dp.getAddress().getHostAddress();</p>
+<p>int&nbsp;port&nbsp;=&nbsp;dp.getPort();</p>
+<p>String&nbsp;text&nbsp;=&nbsp;new&nbsp;String(dp.getData(),0,dp.getLength());//将字节数组中的有效部分转成字符串。</p>
+<p>System.out.println(ip+&quot;:&quot;+port+&quot;--&quot;+text);</p>
+<p>// 5，关闭资源。</p>
+<p>ds.close();</p>
+<p>}</p>
+<p>}</p>
+<p>-------------------------------------------------------------</p>
+<p>TCP传输：两个端点的建立连接后会有一个传输数据的通道，这通道称为流，而且是建立在网络基础上的流，称之为socket流。该流中既有读取，也有写入。</p>
+<p>&nbsp;</p>
+<p>tcp的两个端点：一个是客户端，一个是服务端。</p>
+<p>客户端：对应的对象，Socket</p>
+<p>服务端：对应的对象，ServerSocket</p>
+<p>&nbsp;</p>
+<p>TCP客户端：</p>
+<p style="margin-left: 10.5pt">1，建立tcp的socket服务，最好明确具体的地址和端口。这个对象在创建时，就已经可以对指定ip和端口进行连接(三次握手)。</p>
+<p style="margin-left: 10.5pt">2，如果连接成功，就意味着通道建立了，socket流就已经产生了。只要获取到socket流中的读取流和写入流即可，只要通过getInputStream和getOutputStream就可以获取两个流对象。</p>
+<p style="margin-left: 10.5pt">3，关闭资源。</p>
+<p>--------------------------------------------------------------</p>
+<p>import&nbsp;java.net.*;</p>
+<p>import&nbsp;java.io.*;</p>
+<p>//需求：客户端给服务器端发送一个数据。</p>
+<p>class&nbsp;&nbsp;TcpClient{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;Exception{</p>
+<p>Socket&nbsp;s&nbsp;=&nbsp;new&nbsp;Socket(&quot;10.1.31.69&quot;,10002);</p>
+<p>OutputStream&nbsp;out&nbsp;=&nbsp;s.getOutputStream();//获取了socket流中的输出流对象。</p>
+<p>out.write(&quot;tcp演示，哥们又来了!&quot;.getBytes());</p>
+<p>s.close();</p>
+<p>}</p>
+<p>}</p>
+<p>--------------------------------------------------------------</p>
+<p>TCP服务端：</p>
+<p style="margin-left: 10.5pt">1，创建服务端socket服务，并监听一个端口。</p>
+<p style="margin-left: 10.5pt">2，服务端为了给客户端提供服务，获取客户端的内容，可以通过accept方法获取连接过来的客户端对象。</p>
+<p style="margin-left: 10.5pt">3，可以通过获取到的socket对象中的socket流和具体的客户端进行通讯。</p>
+<p style="margin-left: 10.5pt">4，如果通讯结束，关闭资源。注意：要先关客户端，再关服务端。</p>
+<p>--------------------------------------------------------------</p>
+<p>class&nbsp;&nbsp;TcpServer{</p>
+<p>public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;Exception{</p>
+<p>ServerSocket&nbsp;ss&nbsp;=&nbsp;new&nbsp;ServerSocket(10002);//建立服务端的socket服务</p>
+<p>Socket&nbsp;s&nbsp;=&nbsp;ss.accept();//获取客户端对象</p>
+<p>String&nbsp;ip&nbsp;=&nbsp;s.getInetAddress().getHostAddress();</p>
+<p>System.out.println(ip+&quot;.....connected&quot;);</p>
+<p>// 可以通过获取到的socket对象中的socket流和具体的客户端进行通讯。</p>
+<p>InputStream&nbsp;in&nbsp;=&nbsp;s.getInputStream();//读取客户端的数据，使用客户端对象的socket读取流</p>
+<p>byte[]&nbsp;buf&nbsp;=&nbsp;new&nbsp;byte[1024];</p>
+<p>int&nbsp;len&nbsp;=&nbsp;in.read(buf);</p>
+<p>String&nbsp;text&nbsp;=&nbsp;new&nbsp;String(buf,0,len);</p>
+<p>System.out.println(text);</p>
+<p>// 如果通讯结束，关闭资源。注意：要先关客户端，在关服务端。</p>
+<p>s.close();</p>
+<p>ss.close();</p>
+<p>}</p>
+<p>}</p>
+<p>-----------------------------------------------------------------------------------------------</p>
+<p>反射技术：其实就是动态加载一个指定的类，并获取该类中的所有的内容。而且将字节码文件封装成对象，并将字节码文件中的内容都封装成对象，这样便于操作这些成员。简单说：反射技术可以对一个类进行解剖。</p>
+<p>&nbsp;</p>
+<p>反射的好处：大大的增强了程序的扩展性。</p>
+<p>&nbsp;</p>
+<p>反射的基本步骤：</p>
+<p>1、获得Class对象，就是获取到指定的名称的字节码文件对象。</p>
+<p>2、实例化对象，获得类的属性、方法或构造函数。</p>
+<p>3、访问属性、调用方法、调用构造函数创建对象。</p>
+<p>&nbsp;</p>
+<p>获取这个Class对象，有三种方式：</p>
+<p>1：通过每个对象都具备的方法getClass来获取。弊端：必须要创建该类对象，才可以调用getClass方法。</p>
+<p>2：每一个数据类型(基本数据类型和引用数据类型)都有一个静态的属性class。弊端：必须要先明确该类。</p>
+<p>&nbsp;前两种方式不利于程序的扩展，因为都需要在程序使用具体的类来完成。</p>
+<p>3：使用的Class类中的方法，静态的forName方法。</p>
+<p>&nbsp;指定什么类名，就获取什么类字节码文件对象，这种方式的扩展性最强，只要将类名的字符串传入即可。</p>
+<p style="margin-left: 10.5pt">//&nbsp;1.&nbsp;根据给定的类名来获得&nbsp;&nbsp;用于类加载</p>
+<p style="margin-left: 10.5pt">String&nbsp;classname&nbsp;=&nbsp;&quot;cn.itcast.reflect.Person&quot;;//&nbsp;来自配置文件</p>
+<p style="margin-left: 10.5pt">Class&nbsp;clazz&nbsp;=&nbsp;Class.forName(classname);//&nbsp;此对象代表Person.class</p>
+<p style="margin-left: 10.5pt">//&nbsp;2.&nbsp;如果拿到了对象，不知道是什么类型&nbsp;&nbsp;&nbsp;用于获得对象的类型</p>
+<p style="margin-left: 10.5pt">Object&nbsp;obj&nbsp;=&nbsp;new&nbsp;Person();</p>
+<p style="margin-left: 10.5pt">Class&nbsp;clazz1&nbsp;=&nbsp;obj.getClass();//&nbsp;获得对象具体的类型</p>
+<p style="margin-left: 10.5pt">//&nbsp;3.&nbsp;如果是明确地获得某个类的Class对象&nbsp;&nbsp;主要用于传参</p>
+<p style="margin-left: 10.5pt">Class&nbsp;clazz2&nbsp;=&nbsp;Person.class;</p>
+<p>&nbsp;</p>
+<p>反射的用法：</p>
+<p>1）、需要获得java类的各个组成部分，首先需要获得类的Class对象，获得Class对象的三种方式：</p>
+<p>Class.forName(classname) 用于做类加载</p>
+<p>obj.getClass() 用于获得对象的类型</p>
+<p>类名.class &nbsp;&nbsp;&nbsp;&nbsp;用于获得指定的类型，传参用</p>
+<p>&nbsp;</p>
+<p>2)、反射类的成员方法：</p>
+<p>Class&nbsp;clazz&nbsp;=&nbsp;Person.class;</p>
+<p>Method&nbsp;method&nbsp;=&nbsp;clazz.getMethod(methodName,&nbsp;new&nbsp;Class[]{paramClazz1,&nbsp;paramClazz2});</p>
+<p>method.invoke();</p>
+<p>&nbsp;</p>
+<p>3)、反射类的构造函数：</p>
+<p>Constructor&nbsp;con&nbsp;=&nbsp;clazz.getConstructor(new&nbsp;Class[]{paramClazz1,&nbsp;paramClazz2,...})</p>
+<p>con.newInstance(params...)</p>
+<p>&nbsp;</p>
+<p>4)、反射类的属性：</p>
+<p>Field&nbsp;field&nbsp;=&nbsp;clazz.getField(fieldName);</p>
+<p>field.setAccessible(true);</p>
+<p>field.setObject(value);</p>
+<p>&nbsp;</p>
+<p>获取了字节码文件对象后，最终都需要创建指定类的对象：</p>
+<p>创建对象的两种方式(其实就是对象在进行实例化时的初始化方式)：</p>
+<p>1，调用空参数的构造函数：使用了Class类中的newInstance()方法。</p>
+<p>2，调用带参数的构造函数：先要获取指定参数列表的构造函数对象，然后通过该构造函数的对象的newInstance(实际参数)&nbsp;进行对象的初始化。</p>
+<p>&nbsp;</p>
+<p>综上所述，第二种方式，必须要先明确具体的构造函数的参数类型，不便于扩展。所以一般情况下，被反射的类，内部通常都会提供一个公有的空参数的构造函数。</p>
+<p>------------------------------------------------------</p>
+<p>//&nbsp;如何生成获取到字节码文件对象的实例对象。</p>
+<p>Class&nbsp;clazz&nbsp;=&nbsp;Class.forName(&quot;cn.itcast.bean.Person&quot;);//类加载</p>
+<p>//&nbsp;直接获得指定的类型</p>
+<p>clazz&nbsp;=&nbsp;Person.class;</p>
+<p>//&nbsp;根据对象获得类型</p>
+<p>Object&nbsp;obj&nbsp;=&nbsp;new&nbsp;Person(&quot;zhangsan&quot;,&nbsp;19);</p>
+<p>clazz&nbsp;=&nbsp;obj.getClass();</p>
+<p>&nbsp;</p>
+<p>Object&nbsp;obj&nbsp;=&nbsp;clazz.newInstance();//该实例化对象的方法调用就是指定类中的空参数构造函数，给创建对象进行初始化。当指定类中没有空参数构造函数时，该如何创建该类对象呢？请看method_2();</p>
+<p>public&nbsp;static&nbsp;void&nbsp;method_2()&nbsp;throws&nbsp;Exception&nbsp;{</p>
+<p>Class&nbsp;clazz&nbsp;=&nbsp;Class.forName(&quot;cn.itcast.bean.Person&quot;);</p>
+<p>//既然类中没有空参数的构造函数,那么只有获取指定参数的构造函数,用该函数来进行实例化。</p>
+<p>//获取一个带参数的构造器。</p>
+<p>Constructor&nbsp;constructor&nbsp;=&nbsp;clazz.getConstructor(String.class,int.class);</p>
+<p>//想要对对象进行初始化，使用构造器的方法newInstance();</p>
+<p>Object&nbsp;obj&nbsp;=&nbsp;constructor.newInstance(&quot;zhagnsan&quot;,30);</p>
+<p>//获取所有构造器。</p>
+<p>Constructor[]&nbsp;constructors&nbsp;=&nbsp;clazz.getConstructors();//只包含公共的</p>
+<p>constructors&nbsp;=&nbsp;clazz.getDeclaredConstructors();//包含私有的</p>
+<p>for(Constructor&nbsp;con&nbsp;:&nbsp;constructors)&nbsp;{</p>
+<p>System.out.println(con);</p>
+<p>}</p>
+<p>}</p>
+<p>------------------------------------------------------</p>
+<p>反射指定类中的方法：</p>
+<p>//获取类中所有的方法。</p>
+<p>public&nbsp;static&nbsp;void&nbsp;method_1()&nbsp;throws&nbsp;Exception&nbsp;{</p>
+<p>Class&nbsp;clazz&nbsp;=&nbsp;Class.forName(&quot;cn.itcast.bean.Person&quot;);</p>
+<p>Method[]&nbsp;methods&nbsp;=&nbsp;clazz.getMethods();//获取的是该类中的公有方法和父类中的公有方法。</p>
+<p>methods&nbsp;=&nbsp;clazz.getDeclaredMethods();//获取本类中的方法，包含私有方法。</p>
+<p>for(Method&nbsp;method&nbsp;:&nbsp;methods)&nbsp;{</p>
+<p>System.out.println(method);</p>
+<p>}</p>
+<p>}</p>
+<p>//获取指定方法；</p>
+<p>public&nbsp;static&nbsp;void&nbsp;method_2()&nbsp;throws&nbsp;Exception&nbsp;{</p>
+<p>Class&nbsp;clazz&nbsp;=&nbsp;Class.forName(&quot;cn.itcast.bean.Person&quot;);</p>
+<p>//获取指定名称的方法。</p>
+<p>Method&nbsp;method&nbsp;=&nbsp;clazz.getMethod(&quot;show&quot;,&nbsp;int.class,String.class);</p>
+<p>//想要运行指定方法，当然是方法对象最清楚，为了让方法运行，调用方法对象的invoke方法即可，但是方法运行必须要明确所属的对象和具体的实际参数。</p>
+<p>Object&nbsp;obj&nbsp;=&nbsp;clazz.newInstance();</p>
+<p>method.invoke(obj,&nbsp;39,&quot;hehehe&quot;);//执行一个方法</p>
+<p>}</p>
+<p>//想要运行私有方法。</p>
+<p>public&nbsp;static&nbsp;void&nbsp;method_3()&nbsp;throws&nbsp;Exception&nbsp;{</p>
+<p>Class&nbsp;clazz&nbsp;=&nbsp;Class.forName(&quot;cn.itcast.bean.Person&quot;);</p>
+<p>//想要获取私有方法。必须用getDeclearMethod();</p>
+<p>Method&nbsp;method&nbsp;=&nbsp;clazz.getDeclaredMethod(&quot;method&quot;,&nbsp;null);</p>
+<p>//&nbsp;私有方法不能直接访问，因为权限不够。非要访问，可以通过暴力的方式。</p>
+<p>method.setAccessible(true);//一般很少用，因为私有就是隐藏起来，所以尽量不要访问。</p>
+<p>}</p>
+<p>//反射静态方法。</p>
+<p>public&nbsp;static&nbsp;void&nbsp;method_4()&nbsp;throws&nbsp;Exception&nbsp;{</p>
+<p>Class&nbsp;clazz&nbsp;=&nbsp;Class.forName(&quot;cn.itcast.bean.Person&quot;);</p>
+<p>Method&nbsp;method&nbsp;=&nbsp;clazz.getMethod(&quot;function&quot;,null);</p>
+<p>method.invoke(null,null);</p>
+<p>}</p>
+<p>------------------------------------------------------------------------------------------------</p>
+<p>正则表达式：★★★☆，其实是用来操作字符串的一些规则。</p>
+<p>好处：正则的出现，对字符串的复杂操作变得更为简单。</p>
+<p>特点：将对字符串操作的代码用一些符号来表示。只要使用了指定符号，就可以调用底层的代码对字符串进行操作。符号的出现，简化了代码的书写。</p>
+<p>弊端：符号的出现虽然简化了书写，但是却降低了阅读性。</p>
+<p>其实更多是用正则解决字符串操作的问题。</p>
+<p>&nbsp;</p>
+<p>组：用小括号标示，每定义一个小括号，就是一个组，而且有自动编号，从1开始。</p>
+<p>只要使用组，对应的数字就是使用该组的内容。别忘了，数组要加\\。</p>
+<p>(aaa(wwww(ccc))(eee))技巧，从左括号开始数即可。有几个左括号就是几组。</p>
+<p>&nbsp;</p>
+<p>常见操作：</p>
+<p>1，匹配：其实用的就是String类中的matches方法。</p>
+<p>String&nbsp;reg&nbsp;=&nbsp;&quot;[1-9][0-9]{4,14}&quot;;</p>
+<p>boolean&nbsp;b&nbsp;=&nbsp;qq.matches(reg);//将正则和字符串关联对字符串进行匹配。</p>
+<p>2，切割：其实用的就是String类中的split方法。</p>
+<p>3，替换：其实用的就是String类中的replaceAll();</p>
+<p>4，获取：</p>
+<p>&nbsp;&nbsp;&nbsp;1），先要将正则表达式编译成正则对象。使用的是Pattern中静态方法&nbsp;compile(regex);</p>
+<p>2），通过Pattern对象获取Matcher对象。</p>
+<p>Pattern用于描述正则表达式，可以对正则表达式进行解析。</p>
+<p>而将规则操作字符串，需要从新封装到匹配器对象Matcher中。</p>
+<p>然后使用Matcher对象的方法来操作字符串。</p>
+<p>如何获取匹配器对象呢？</p>
+<p>通过Pattern对象中的matcher方法。该方法可以正则规则和字符串想关联。并返回匹配器对象。</p>
+<p>3），使用Matcher对象中的方法即可对字符串进行各种正则操作。</p>
+<p>想要获取更多的学习资料的请登录：<a href="http://dwz.cn/EcUxA">www.javxuexi.net</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151102/1022.html">什么是安卓</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151031/970.html">Java编程思想</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

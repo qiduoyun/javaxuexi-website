@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C语言例子大全一 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","831","0","attach");
+		Cms.viewCount("","831");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151020/831.html" title="C语言例子大全一">C语言例子大全一</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-10-20 19:17:45</span>
+     </h3>
+     </p>
+<p><strong><font color="#3300cc" size="5">经典c程序100例==11--20</font></strong></p>
+<p><font color="#990000">【程序11】</font><br />
+	题目：古典问题：有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到第三个月<br />
+	　　　后每个月又生一对兔子，假如兔子都不死，问每个月的兔子总数为多少？<br />
+	1.程序分析：　兔子的规律为数列1,1,2,3,5,8,13,21....<br />
+	2.程序源代码：<br />
+	main()<br />
+	{<br />
+	long f1,f2;<br />
+	int i;<br />
+	f1=f2=1;<br />
+	for(i=1;i&lt;=20;i++)<br />
+	　{ printf(&quot;%12ld %12ld&quot;,f1,f2);<br />
+	　　　if(i%2==0) printf(&quot;\n&quot;);/*控制输出，每行四个*/<br />
+	　　　f1=f1+f2; /*前两个月加起来赋值给第三个月*/<br />
+	　　　f2=f1+f2; /*前两个月加起来赋值给第三个月*/<br />
+	　}<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序12】</font><br />
+	题目：判断101-200之间有多少个素数，并输出所有素数。<br />
+	1.程序分析：判断素数的方法：用一个数分别去除2到sqrt(这个数)，如果能被整除，<br />
+	　　　　　　则表明此数不是素数，反之是素数。 　　　　　　<br />
+	2.程序源代码：<br />
+	#include &quot;math.h&quot;<br />
+	main()<br />
+	{<br />
+	　int m,i,k,h=0,leap=1;<br />
+	　printf(&quot;\n&quot;);<br />
+	　for(m=101;m&lt;=200;m++)<br />
+	　　{ k=sqrt(m+1);<br />
+	　　　for(i=2;i&lt;=k;i++)<br />
+	　　　　　if(m%i==0)<br />
+	　　　　　　{leap=0;break;}<br />
+	　　　if(leap) {printf(&quot;%-4d&quot;,m);h++;<br />
+	　　　　　　　　if(h%10==0)<br />
+	　　　　　　　　printf(&quot;\n&quot;);<br />
+	　　　　　　　 }<br />
+	　　　leap=1;<br />
+	　　}<br />
+	　printf(&quot;\nThe total is %d&quot;,h);<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序13】</font><br />
+	题目：打印出所有的&ldquo;水仙花数&rdquo;，所谓&ldquo;水仙花数&rdquo;是指一个三位数，其各位数字立方和等于该数<br />
+	　　　本身。例如：153是一个&ldquo;水仙花数&rdquo;，因为153=1的三次方＋5的三次方＋3的三次方。<br />
+	1.程序分析：利用for循环控制100-999个数，每个数分解出个位，十位，百位。<br />
+	2.程序源代码：<br />
+	main()<br />
+	{<br />
+	int i,j,k,n;<br />
+	printf(&quot;&#39;water flower&#39;number is:&quot;);<br />
+	　for(n=100;n&lt;1000;n++)<br />
+	　{<br />
+	　　i=n/100;/*分解出百位*/<br />
+	　　j=n/10%10;/*分解出十位*/<br />
+	　　k=n%10;/*分解出个位*/<br />
+	　　if(i*100+j*10+k==i*i*i+j*j*j+k*k*k)<br />
+	　　　{<br />
+	　　　printf(&quot;%-5d&quot;,n);<br />
+	　　　}<br />
+	　}<br />
+	printf(&quot;\n&quot;);<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序14】</font><br />
+	题目：将一个正整数分解质因数。例如：输入90,打印出90=2*3*3*5。</p>
+<p>程序分析：对n进行分解质因数，应先找到一个最小的质数k，然后按下述步骤完成：<br />
+	(1)如果这个质数恰等于n，则说明分解质因数的过程已经结束，打印出即可。<br />
+	(2)如果n&lt;&gt;k，但n能被k整除，则应打印出k的值，并用n除以k的商,作为新的正整数你n,<br />
+	　重复执行第一步。<br />
+	(3)如果n不能被k整除，则用k+1作为k的值,重复执行第一步。</p>
+<p>2.程序源代码：<br />
+	/* zheng int is divided yinshu*/<br />
+	main()<br />
+	{<br />
+	int n,i;<br />
+	printf(&quot;\nplease input a number:\n&quot;);<br />
+	scanf(&quot;%d&quot;,&amp;n);<br />
+	printf(&quot;%d=&quot;,n);<br />
+	for(i=2;i&lt;=n;i++)<br />
+	　{<br />
+	　　while(n!=i)<br />
+	　　{<br />
+	　　　if(n%i==0)<br />
+	　　　{ printf(&quot;%d*&quot;,i);<br />
+	　　　　n=n/i;<br />
+	　　　}<br />
+	　　　else<br />
+	　　　　break;<br />
+	　　}<br />
+	}<br />
+	printf(&quot;%d&quot;,n);}<br />
+	==============================================================<br />
+	<font color="#990000">【程序15】</font><br />
+	题目：利用条件运算符的嵌套来完成此题：学习成绩&gt;=90分的同学用A表示，60-89分之间的用B表示，<br />
+	　　　60分以下的用C表示。<br />
+	1.程序分析：(a&gt;b)?a:b这是条件运算符的基本例子。<br />
+	2.程序源代码：<br />
+	main()<br />
+	{<br />
+	　int score;<br />
+	　char grade;<br />
+	　printf(&quot;please input a score\n&quot;);<br />
+	　scanf(&quot;%d&quot;,&amp;score);<br />
+	　grade=score&gt;=90?&#39;A&#39;:(score&gt;=60?&#39;B&#39;:&#39;C&#39;);<br />
+	　printf(&quot;%d belongs to %c&quot;,score,grade);<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序16】</font><br />
+	题目：输入两个正整数m和n，求其最大公约数和最小公倍数。<br />
+	1.程序分析：利用辗除法。</p>
+<p>2.程序源代码：<br />
+	main()<br />
+	{<br />
+	　int a,b,num1,num2,temp;<br />
+	　printf(&quot;please input two numbers:\n&quot;);<br />
+	　scanf(&quot;%d,%d&quot;,&amp;num1,&amp;num2);<br />
+	　if(num1<num2) br="" /> 　{ temp=num1;<br />
+	　　num1=num2;　<br />
+	　　num2=temp;<br />
+	　}<br />
+	a=num1;b=num2;<br />
+	while(b!=0)/*利用辗除法，直到b为0为止*/<br />
+	　{<br />
+	　　temp=a%b;<br />
+	　　a=b;<br />
+	　　b=temp;<br />
+	　}<br />
+	printf(&quot;gongyueshu:%d\n&quot;,a);<br />
+	printf(&quot;gongbeishu:%d\n&quot;,num1*num2/a);<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序17】</font><br />
+	题目：输入一行字符，分别统计出其中英文字母、空格、数字和其它字符的个数。<br />
+	1.程序分析：利用while语句,条件为输入的字符不为&#39;\n&#39;.<br />
+	　　　　　　<br />
+	2.程序源代码：<br />
+	#include &quot;stdio.h&quot;<br />
+	main()<br />
+	{char c;<br />
+	　int letters=0,space=0,digit=0,others=0;<br />
+	　printf(&quot;please input some characters\n&quot;);<br />
+	　while((c=getchar())!=&#39;\n&#39;)<br />
+	　{<br />
+	　if(c&gt;=&#39;a&#39;&amp;&amp;c&lt;=&#39;z&#39;||c&gt;=&#39;A&#39;&amp;&amp;c&lt;=&#39;Z&#39;)<br />
+	　　letters++;<br />
+	　else if(c==&#39; &#39;)<br />
+	　　space++;<br />
+	　　　else if(c&gt;=&#39;0&#39;&amp;&amp;c&lt;=&#39;9&#39;)<br />
+	　　　　　　　digit++;<br />
+	　　　　　else<br />
+	　　　　　　　others++;<br />
+	}<br />
+	printf(&quot;all in all:char=%d space=%d digit=%d others=%d\n&quot;,letters,<br />
+	space,digit,others);<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序18】</font><br />
+	题目：求s=a+aa+aaa+aaaa+aa...a的值，其中a是一个数字。例如2+22+222+2222+22222(此时<br />
+	　　　共有5个数相加)，几个数相加有键盘控制。<br />
+	1.程序分析：关键是计算出每一项的值。<br />
+	2.程序源代码：<br />
+	main()<br />
+	{<br />
+	　int a,n,count=1;<br />
+	　long int sn=0,tn=0;<br />
+	　printf(&quot;please input a and n\n&quot;);<br />
+	　scanf(&quot;%d,%d&quot;,&amp;a,&amp;n);<br />
+	　printf(&quot;a=%d,n=%d\n&quot;,a,n);<br />
+	　while(count&lt;=n)<br />
+	　{<br />
+	　　tn=tn+a;<br />
+	　　sn=sn+tn;<br />
+	　　a=a*10;<br />
+	　　++count;<br />
+	　}<br />
+	printf(&quot;a+aa+...=%ld\n&quot;,sn);<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序19】</font><br />
+	题目：一个数如果恰好等于它的因子之和，这个数就称为&ldquo;完数&rdquo;。例如6=1＋2＋3.编程<br />
+	　　　找出1000以内的所有完数。<br />
+	1. 程序分析：请参照程序&lt;--上页程序14.<br />
+	2.程序源代码：<br />
+	main()<br />
+	{<br />
+	static int k[10];<br />
+	int i,j,n,s;<br />
+	for(j=2;j&lt;1000;j++)<br />
+	　{<br />
+	　n=-1;<br />
+	　s=j;<br />
+	　　for(i=1;i<j;i++)><br /> 　　{<br />
+	　　　if((j%i)==0)<br />
+	　　　{　n++;<br />
+	　　　　s=s-i;<br />
+	　　　　k[n]=i;<br />
+	　　　}<br />
+	　　}<br />
+	　if(s==0)<br />
+	　{<br />
+	　printf(&quot;%d is a wanshu&quot;,j);<br />
+	　for(i=0;i<n;i++)><br /> 　printf(&quot;%d,&quot;,k[i]);<br />
+	　printf(&quot;%d\n&quot;,k[n]);<br />
+	　}<br />
+	}<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序20】</font><br />
+	题目：一球从100米高度自由落下，每次落地后反跳回原高度的一半；再落下，求它在<br />
+	　　　第10次落地时，共经过多少米？第10次反弹多高？<br />
+	1.程序分析：见下面注释<br />
+	2.程序源代码：<br />
+	main()<br />
+	{<br />
+	float sn=100.0,hn=sn/2;<br />
+	int n;<br />
+	for(n=2;n&lt;=10;n++)<br />
+	　{<br />
+	　　sn=sn+2*hn;/*第n次落地时共经过的米数*/<br />
+	　　hn=hn/2; /*第n次反跳高度*/<br />
+	　}<br />
+	printf(&quot;the total of road is %f\n&quot;,sn);<br />
+	printf(&quot;the tenth is %f meter\n&quot;,hn);<br />
+	}</p>
+<p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151020/832.html">C语言例子大全二</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151020/830.html">C语言预处理和文件</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

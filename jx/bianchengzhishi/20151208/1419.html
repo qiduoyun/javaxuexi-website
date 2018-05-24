@@ -1,0 +1,1901 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>html中的APPLET 元素 | applet 对象 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1419","0","attach");
+		Cms.viewCount("","1419");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151208/1419.html" title="html中的APPLET 元素 | applet 对象">html中的APPLET 元素 | applet 对象</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-08 13:32:32</span>
+     </h3>
+     <h1>
+	APPLET 元素 | applet 对象</h1>
+<hr size="1" />
+<p>在页面上放置可执行内容。</p>
+<p class="clsRef">成员表</p>
+<blockquote>
+	<div id="oMTExplanation" style="DISPLAY: block">
+		<p>下面的表格列出了 <b>applet</b> 对象引出的成员。请单击左侧的标签来选择你想要查看的成员类型。</p>
+	</div>
+	<style type="text/css">
+.oMembersTable	{}		TD				{}		.oMTab			{background:#eeeeee; width:100%; height:20px; border-top=1px solid #6699cc; padding:7px; padding-left:7px; cursor:hand;}		.oMTabOn		{background:#999999; width:100%; height:20px; color:#ffffff; border-top:1px groove white; padding:7px; padding-left:7px; cursor:hand;}		.oMTabHover		{background:#dddddd; width:100%; height:20px; border-top=1px solid #6699cc; padding:7px; padding-left:7px; cursor:hand;}	</style>
+	<table border="0" cellpadding="0" cellspacing="0" class="oMembersTable" style="border-colapse: collapse" width="90%">
+		<tbody>
+			<tr>
+				<td bgcolor="#6699cc" width="100%">
+					<table border="0" cellpadding="0" cellspacing="0" id="AutoNumber4" style="BORDER-COLLAPSE: collapse" width="100%">
+						<tbody>
+							<tr>
+								<td height="25" style="BACKGROUND-IMAGE: url(../common/UI_OM_top_left_corner.gif); BACKGROUND-REPEAT: no-repeat" width="4">
+									&nbsp;</td>
+								<td height="25" width="*">
+									<div id="oMTitle" style="FONT-FAMILY: arial; COLOR: white; FONT-SIZE: 11pt; FONT-WEIGHT: bold">标签属性/属性</div>
+								</td>
+								<td height="25" style="PADDING-TOP: 2px" width="25">
+									<img id="oCollapso" src="mk:@MSITStore:D:\Tencent\1186293003\FileRecv\网页制作完全手册.chm::/DHTMLref/common/UI_OM_expand.gif" style="CURSOR: hand" title="展开" width="21" /></td>
+								<td height="25" style="BACKGROUND-IMAGE: url(../common/UI_OM_top_right_corner.gif); BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right top" width="4">
+									&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%">
+					<table border="0" cellpadding="0" cellspacing="0" style="BORDER-COLLAPSE: collapse" width="100%">
+						<tbody>
+							<tr>
+								<td style="BORDER-BOTTOM: #6699cc 1px solid; BORDER-LEFT: #6699cc 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #eeeeee; BORDER-TOP: white 1px solid; BORDER-RIGHT: #6699cc 4px solid; PADDING-TOP: 0px" valign="top" width="95">
+									<table border="0" cellpadding="0" cellspacing="0" style="BORDER-COLLAPSE: collapse" width="100%">
+										<tbody id="oMTabberList">
+											<tr>
+												<td bgcolor="#eeeeee" height="20" style="PADDING-LEFT: 2px" width="100%">
+													<b>SHOW:</b></td>
+											</tr>
+											<tr>
+												<td class="oMTabOn" tabindex="0" title="标签属性/属性">
+													标签属性/属性</td>
+											</tr>
+											<tr>
+												<td class="oMTab" tabindex="0" title="行为">
+													行为</td>
+											</tr>
+											<tr>
+												<td class="oMTab" tabindex="0" title="集合">
+													集合</td>
+											</tr>
+											<tr>
+												<td class="oMTab" tabindex="0" title="事件">
+													事件</td>
+											</tr>
+											<tr>
+												<td class="oMTab" tabindex="0" title="方法">
+													方法</td>
+											</tr>
+											<tr>
+												<td class="oMTab" tabindex="0" title="对象">
+													对象</td>
+											</tr>
+											<tr>
+												<td class="oMTab" tabindex="0" title="样式">
+													样式</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td id="oMTabberContent" style="BORDER-BOTTOM: #6699cc 1px solid; BORDER-RIGHT: #6699cc 1px solid" valign="top" width="*">
+									<table bgcolor="#dddddd" border="0" cellpadding="0" cellspacing="0" height="100%" style="BORDER-COLLAPSE: collapse" width="100%">
+										<tbody>
+										</tbody>
+									</table>
+									<table border="0" cellpadding="0" style="BORDER-COLLAPSE: collapse" width="100%">
+										<tbody>
+											<tr>
+												<td height="*" width="100%">
+													<div id="oMTData" style="OVERFLOW-X: hidden; HEIGHT: 255px; OVERFLOW: auto">
+														<div style="DISPLAY: block; VISIBILITY: visible">
+															<table class="clsStd" style="BACKGROUND: #ffffff" width="100%">
+																<tbody>
+																	<tr>
+																		<th width="52">
+																			标签属性</th>
+																		<th>
+																			属性</th>
+																		<th>
+																			描述</th>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/accessKey.html">ACCESSKEY</a></td>
+																		<td>
+																			<a href="../properties/accessKey.html">accessKey</a></td>
+																		<td>
+																			设置或获取<span>对象</span>的快捷键。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/align_0.html">ALIGN</a></td>
+																		<td>
+																			<a href="../properties/align_0.html">align</a></td>
+																		<td>
+																			设置或获取<span>对象</span>针对其邻接文本如何排列。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/alt.html">ALT</a></td>
+																		<td>
+																			<a href="../properties/alt.html">alt</a></td>
+																		<td>
+																			设置或获取用于替代<span>图像</span>的文本。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/altHTML.html">altHTML</a></td>
+																		<td>
+																			设置可选的若对象装载失败时要执行的替换 HTML 脚本。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/archive.html">ARCHIVE</a><img src="../common/new.gif" title="Internet Explorer 6 新增" /></td>
+																		<td>
+																			<a href="../properties/archive.html">archive</a></td>
+																		<td>
+																			设置或获取可用于实现<span>对象</span>的你自己的 <a href="../properties/archive.html">ch</a> 功能的字符串。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/canHaveHTML.html">canHaveHTML</a></td>
+																		<td>
+																			获取表明<span>对象</span>是否可以包含丰富的 HTML 标签的值。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/className.html">CLASS</a></td>
+																		<td>
+																			<a href="../properties/className.html">className</a></td>
+																		<td>
+																			设置或获取<span>对象</span>的类。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/clientHeight.html">clientHeight</a></td>
+																		<td>
+																			获取<span>对象</span>的高度，不计算任何边距、边框、滚动条或可能应用到该<span>对象</span>的补白。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/clientLeft.html">clientLeft</a></td>
+																		<td>
+																			获取 <a href="../properties/offsetLeft.html">offsetLeft</a> 属性和客户区域的实际左边之间的距离。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/clientTop.html">clientTop</a></td>
+																		<td>
+																			获取 <a href="../properties/offsetTop.html">offsetTop</a> 属性和客户区域的实际顶端之间的距离。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/clientWidth.html">clientWidth</a></td>
+																		<td>
+																			获取<span>对象</span>的宽度，不计算任何边距、边框、滚动条或可能应用到该<span>对象</span>的补白。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/code.html">CODE</a></td>
+																		<td>
+																			<a href="../properties/code.html">code</a></td>
+																		<td>
+																			设置或获取包含已编译的 Java 类的文件的 URL。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/codebase.html">CODEBASE</a></td>
+																		<td>
+																			<a href="../properties/codebase.html">codeBase</a></td>
+																		<td>
+																			设置或获取组件的 URL。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/dataFld.html">DATAFLD</a></td>
+																		<td>
+																			<a href="../properties/dataFld.html">dataFld</a></td>
+																		<td>
+																			设置或获取由 <a href="../properties/dataSrc.html">dataSrc</a> 属性指定的绑定到指定对象的给定数据源的字段。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/dataSrc.html">DATASRC</a></td>
+																		<td>
+																			<a href="../properties/dataSrc.html">dataSrc</a></td>
+																		<td>
+																			设置或获取用于数据绑定的数据源。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/firstChild.html">firstChild</a></td>
+																		<td>
+																			获取<span>对象</span>的 <a href="../collections/childNodes.html">childNodes</a> 集合的第一个子对象的引用。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/hideFocus.html">HIDEFOCUS</a></td>
+																		<td>
+																			<a href="../properties/hideFocus.html">hideFocus</a></td>
+																		<td>
+																			设置或获取表明<span>对象</span>是否显式标明焦点的值。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/hspace.html">HSPACE</a></td>
+																		<td>
+																			<a href="../properties/hspace.html">hspace</a></td>
+																		<td>
+																			设置或获取<span>对象</span>的水平边距。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/id.html">ID</a></td>
+																		<td>
+																			<a href="../properties/id.html">id</a></td>
+																		<td>
+																			获取标识<span>对象</span>的字符串。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/isContentEditable.html">isContentEditable</a></td>
+																		<td>
+																			获取表明用户是否可编辑<span>对象</span>内容的值。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/isDisabled.html">isDisabled</a></td>
+																		<td>
+																			获取表明用户是否可与该<span>对象</span>交互的值。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/ismultiline.html">isMultiLine</a></td>
+																		<td>
+																			获取表明<span>对象</span>的内容是包含一行还是多行的值。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/isTextEdit.html">isTextEdit</a></td>
+																		<td>
+																			获取是否可使用该对象创建一个 <a href="obj_TextRange.html">TextRange</a> <span>对象</span>。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/lang.html">LANG</a></td>
+																		<td>
+																			<a href="../properties/lang.html">lang</a></td>
+																		<td>
+																			设置或获取要使用的语言。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/language.html">LANGUAGE</a></td>
+																		<td>
+																			<a href="../properties/language.html">language</a></td>
+																		<td>
+																			设置或获取当前脚本编写用的语言。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/lastChild.html">lastChild</a></td>
+																		<td>
+																			获取该对象 <b>childNodes</b> 集合中最后一个子对象的引用。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/name_2.html">NAME</a></td>
+																		<td>
+																			<a href="../properties/name_2.html">name</a></td>
+																		<td>
+																			设置或获取对象的名称。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/nextSibling.html">nextSibling</a></td>
+																		<td>
+																			获取对此对象的下一个兄弟对象的引用。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/nodeName.html">nodeName</a></td>
+																		<td>
+																			获取特定结点类型的名称。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/nodeType.html">nodeType</a></td>
+																		<td>
+																			获取所需结点的类型。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/nodeValue.html">nodeValue</a></td>
+																		<td>
+																			设置或获取结点的值。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/object.html">object</a></td>
+																		<td>
+																			返回包含的对象。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/offsetHeight.html">offsetHeight</a></td>
+																		<td>
+																			获取<span>对象</span>相对于版面或由父坐标 <a href="../properties/offsetParent.html">offsetParent</a> 属性指定的父坐标的高度。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/offsetLeft.html">offsetLeft</a></td>
+																		<td>
+																			获取<span>对象</span>相对于版面或由 <b>offsetParent</b> 属性指定的父坐标的计算左侧位置。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/offsetParent.html">offsetParent</a></td>
+																		<td>
+																			获取定义对象 <b>offsetTop</b> 和 <b>offsetLeft</b> 属性的容器对象的引用。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/offsetTop.html">offsetTop</a></td>
+																		<td>
+																			获取<span>对象</span>相对于版面或由 <b>offsetTop</b> 属性指定的父坐标的计算顶端位置。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/offsetWidth.html">offsetWidth</a></td>
+																		<td>
+																			获取<span>对象</span>相对于版面或由父坐标 <b>offsetParent</b> 属性指定的父坐标的宽度。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/outerHTML.html">outerHTML</a></td>
+																		<td>
+																			设置或获取<span>对象</span>及其内容的 HTML 形式。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/outerText.html">outerText</a></td>
+																		<td>
+																			设置或获取<span>对象</span>的文本。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/ownerDocument.html">ownerDocument</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="../common/new.gif" width="21" /></td>
+																		<td>
+																			设置或获取<span>结点</span>关联的 <a href="obj_document.html">document</a> 对象。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/parentElement.html">parentElement</a></td>
+																		<td>
+																			获取对象层次中的父对象。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/parentNode.html">parentNode</a></td>
+																		<td>
+																			获取文档层次中的父对象。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/parentTextEdit.html">parentTextEdit</a></td>
+																		<td>
+																			获取文档层次中可用于创建包含原始<span>对象</span>的 <b>TextRange</b> 的容器对象。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/previousSibling.html">previousSibling</a></td>
+																		<td>
+																			获取对此对象的上一个兄弟对象的引用。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/readystate.html">readyState</a></td>
+																		<td>
+																			获取<span>对象</span>的当前状态。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/scopeName.html">scopeName</a></td>
+																		<td>
+																			获取为该元素定义的<a href="/library/en-us/xmlsdk30/htm/xmtuttut5usingnamespaces.html">命名空间</a>。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/scrollHeight.html">scrollHeight</a></td>
+																		<td>
+																			获取<span>对象</span>的滚动高度。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/scrollLeft.html">scrollLeft</a></td>
+																		<td>
+																			设置或获取位于<span>对象</span>左边界和窗口中目前可见内容的最左端之间的距离。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/scrollTop.html">scrollTop</a></td>
+																		<td>
+																			设置或获取位于<span>对象</span>最顶端和窗口中可见内容的最顶端之间的距离。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/scrollWidth.html">scrollWidth</a></td>
+																		<td>
+																			获取<span>对象</span>的滚动宽度。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/sourceIndex.html">sourceIndex</a></td>
+																		<td>
+																			获取<span>对象</span>在源序中的依次位置，即<span>对象</span>出现在 document 的 <a href="../collections/all.html">all</a> 集合中的顺序。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/src_2.html">SRC</a></td>
+																		<td>
+																			<a href="../properties/src_2.html">src</a></td>
+																		<td>
+																			设置或获取要由<span>对象</span>装入的 URL。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/style.html">STYLE</a></td>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			为该设置<span>元素</span>设置内嵌样式。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/tabIndex.html">TABINDEX</a></td>
+																		<td>
+																			<a href="../properties/tabIndex.html">tabIndex</a></td>
+																		<td>
+																			设置或获取定义<span>对象</span>的 Tab 顺序的索引。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/tagName.html">tagName</a></td>
+																		<td>
+																			获取<span>对象</span>的标签名称。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/tagUrn.html">tagUrn</a></td>
+																		<td>
+																			设置或获取在命名空间声明中指定的统一资源名称(URN)。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/title_1.html">TITLE</a></td>
+																		<td>
+																			<a href="../properties/title_1.html">title</a></td>
+																		<td>
+																			设置或获取<span>对象</span>的咨询信息(工具提示)。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			<a href="../properties/uniqueID.html">uniqueID</a></td>
+																		<td>
+																			获取为<span>对象</span>自动生成的唯一标识符。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/unselectable.html">UNSELECTABLE</a></td>
+																		<td>
+																			&nbsp;</td>
+																		<td>
+																			指定该元素不可被选中。</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<a href="../properties/vspace.html">VSPACE</a></td>
+																		<td>
+																			<a href="../properties/vspace.html">vspace</a></td>
+																		<td>
+																			设置或获取<span>对象</span>的垂直边距。</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div id="oMT">
+		<p class="clsRef" style="DISPLAY: none">标签属性/属性</p>
+		<p class="clsRef" style="DISPLAY: none">行为</p>
+		<div style="DISPLAY: none; VISIBILITY: visible">
+			<table class="clsStd" style="BACKGROUND: #ffffff" width="100%">
+				<tbody>
+					<tr>
+						<th>
+							行为</th>
+						<th>
+							描述</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../behaviors/clientcaps.html">clientCaps</a></td>
+						<td>
+							提供关于 Internet Explorer 支持的特性的信息，以及提供即用即装的方法。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../behaviors/download.html">download</a></td>
+						<td>
+							下载文件并在下载完成后通知一个指定的回调函数。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../behaviors/homepage.html">homePage</a></td>
+						<td>
+							包含关于用户主页的信息。</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="clsRef" style="DISPLAY: none">集合</p>
+		<div style="DISPLAY: none; VISIBILITY: visible">
+			<table class="clsStd" style="BACKGROUND: #ffffff" width="100%">
+				<tbody>
+					<tr>
+						<th>
+							集合</th>
+						<th>
+							描述</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../collections/all.html">all</a></td>
+						<td>
+							返回<span>对象</span>所包含的元素集合的引用。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../collections/attributes.html">attributes</a></td>
+						<td>
+							获取对象标签属性的集合。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../collections/behaviorUrns.html">behaviorUrns</a></td>
+						<td>
+							返回标识附加到该<span>元素</span>行为的统一资源名称(URN)字符串的集合。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../collections/childNodes.html">childNodes</a></td>
+						<td>
+							获取作为指定对象直接后代的 <a href="../elements.html">HTML 元素</a>和 <a href="TextNode.html">TextNode</a> 对象的集合。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../collections/children.html">children</a></td>
+						<td>
+							获取作为<span>对象</span>直接后代的 <a href="../objects.html">DHTML 对象</a>的集合。</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="clsRef" style="DISPLAY: none">事件</p>
+		<div style="DISPLAY: none; VISIBILITY: visible">
+			<table class="clsStd" style="BACKGROUND: #ffffff" width="100%">
+				<tbody>
+					<tr>
+						<th>
+							事件</th>
+						<th>
+							描述</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onactivate.html">onactivate</a></td>
+						<td>
+							当<span>对象</span>设置为<a href="../properties/activeElement.html">活动元素</a>时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onbeforeactivate.html">onbeforeactivate</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="../common/new.gif" width="21" /></td>
+						<td>
+							<span>对象</span>要被设置为<b>当前元素</b>前立即触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onbeforecut.html">onbeforecut</a></td>
+						<td>
+							当选中区从文档中删除之前在源对象触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onbeforedeactivate.html">onbeforedeactivate</a></td>
+						<td>
+							在 <a href="../properties/activeElement.html">activeElement</a> 从当前<span>对象</span>变为父文档其它对象之前立即触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onbeforeeditfocus.html">onbeforeeditfocus</a></td>
+						<td>
+							在包含于可编辑元素内的对象进入<span class="clsGLossary" title="被用户或方法所选中的显示的内容，以便可输入文本。激活区域通常被虚线包围。当用户按 Enter 键、单击拥有焦点的对象或双击对象时可导致对象进入用户界面(UI)激活状态。要以用户界面激活状态放置对象，文档或包含该对象的元素必须处于编辑模式。用户界面激活的对象也是当前对象。">用户界面激活</span>状态前或可编辑容器变成<span class="clsGlossary" title="显示用户选中的内容和缩放句柄。可使用对象的方法获取并修改选中区的 HTML 文本。元素的例子为选中包括图像、表格和任意绝对定位的元素中的控件。">控件选中区</span>前触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onbeforepaste.html">onbeforepaste</a></td>
+						<td>
+							在选中区从系统剪贴板粘贴到文档前在目标对象上触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onblur.html">onblur</a></td>
+						<td>
+							在<span>对象</span>失去输入焦点时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/oncellchange.html">oncellchange</a></td>
+						<td>
+							在数据供应者中的数据变更时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onclick.html">onclick</a></td>
+						<td>
+							在用户用鼠标左键单击<span>对象</span>时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/oncontextmenu.html">oncontextmenu</a></td>
+						<td>
+							在用户使用鼠标右键单击客户区打开上下文菜单时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/oncontrolselect.html">oncontrolselect</a></td>
+						<td>
+							当用户将要对该<span>对象</span>制作一个<span class="clsGlossary" title="显示用户选中的内容和缩放句柄。可使用对象的方法获取并修改选中区的 HTML 文本。元素的例子为选中包括图像、表格和任意绝对定位的元素中的控件。">控件选中区</span>时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/oncut.html">oncut</a></td>
+						<td>
+							当<span>对象</span>或选中区从文档中删除并添加到系统剪贴板上时在源元素上触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/ondataavailable.html">ondataavailable</a></td>
+						<td>
+							每当异步传输数据的数据源对象的数据到达时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/ondatasetchanged.html">ondatasetchanged</a></td>
+						<td>
+							当数据源对象对应的数据集发生变更时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/ondatasetcomplete.html">ondatasetcomplete</a></td>
+						<td>
+							触发就表明数据源对象所有数据都可用。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/ondblclick.html">ondblclick</a></td>
+						<td>
+							当用户双击<span>对象</span>时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/ondeactivate.html">ondeactivate</a></td>
+						<td>
+							当 <b>activeElement</b> 从当前<span>对象</span>变为父文档其它对象时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onfocus.html">onfocus</a></td>
+						<td>
+							当<span>对象</span>获得焦点时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onfocusin.html">onfocusin</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="../common/new.gif" width="21" /></td>
+						<td>
+							当元素将要被设置为焦点之前触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onfocusout.html">onfocusout</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="../common/new.gif" width="21" /></td>
+						<td>
+							在移动焦点到其它元素之后立即触发于当前拥有焦点的元素上触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onhelp.html">onhelp</a></td>
+						<td>
+							当用户在浏览器为当前窗口时按 F1 键时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onkeydown.html">onkeydown</a></td>
+						<td>
+							当用户按下键盘按键时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onkeypress.html">onkeypress</a></td>
+						<td>
+							当用户按下字面键时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onkeyup.html">onkeyup</a></td>
+						<td>
+							当用户释放键盘按键时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onload.html">onload</a></td>
+						<td>
+							在浏览器完成对象的装载后立即触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onlosecapture.html">onlosecapture</a></td>
+						<td>
+							当<span>对象</span>失去鼠标捕捉时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onmousedown.html">onmousedown</a></td>
+						<td>
+							当用户用任何鼠标按钮单击<span>对象</span>时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onmouseenter.html">onmouseenter</a></td>
+						<td>
+							当用户将鼠标指针移动到对象内时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onmouseleave.html">onmouseleave</a></td>
+						<td>
+							当用户将鼠标指针移出<span>对象</span>边界时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onmousemove.html">onmousemove</a></td>
+						<td>
+							当用户将鼠标划过<span>对象</span>时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onmouseout.html">onmouseout</a></td>
+						<td>
+							当用户将鼠标指针移出<span>对象</span>边界时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onmouseover.html">onmouseover</a></td>
+						<td>
+							当用户将鼠标指针移动到<span>对象</span>内时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onmouseup.html">onmouseup</a></td>
+						<td>
+							当用户在鼠标位于<span>对象</span>之上时释放鼠标按钮时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onmousewheel.html">onmousewheel</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="../common/new.gif" width="21" /></td>
+						<td>
+							当鼠标滚轮按钮旋转时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onmove.html">onmove</a></td>
+						<td>
+							当<span>对象</span>移动时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onmoveend.html">onmoveend</a></td>
+						<td>
+							当<span>对象</span>停止移动时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onmovestart.html">onmovestart</a></td>
+						<td>
+							当<span>对象</span>开始移动时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onpaste.html">onpaste</a></td>
+						<td>
+							当用户粘贴数据以便从系统剪贴板向文档传送数据时在目标对象上触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onpropertychange.html">onpropertychange</a></td>
+						<td>
+							当在对象上发生<span>对象</span>上发生属性更改时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onreadystatechange.html">onreadystatechange</a></td>
+						<td>
+							当<span>对象</span>状态变更时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onresize.html">onresize</a></td>
+						<td>
+							当<span>对象</span>的大小将要改变时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onresizeend.html">onresizeend</a></td>
+						<td>
+							当用户更改完控件选中区中<span>对象</span>的尺寸时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onresizestart.html">onresizestart</a></td>
+						<td>
+							当用户开始更改控件选中区中<span>对象</span>的尺寸时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onrowenter.html">onrowenter</a></td>
+						<td>
+							触发就表明当前行已经在数据源中更改，对象上有可用的新数据值。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onrowexit.html">onrowexit</a></td>
+						<td>
+							当数据源控件更改<span>对象</span>当前行前触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onrowsdelete.html">onrowsdelete</a></td>
+						<td>
+							当行将要从记录集中被删除时触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onrowsinserted.html">onrowsinserted</a></td>
+						<td>
+							当在当前记录集中插入新行后触发。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../events/onscroll.html">onscroll</a></td>
+						<td>
+							当用户滚动<span>对象</span>的滚动条时触发。</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="clsRef" style="DISPLAY: none">方法</p>
+		<div style="DISPLAY: none; VISIBILITY: visible">
+			<table class="clsStd" style="BACKGROUND: #ffffff" width="100%">
+				<tbody>
+					<tr>
+						<th>
+							方法</th>
+						<th>
+							描述</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/addBehavior.html">addBehavior</a></td>
+						<td>
+							给<span>元素</span>附加一个<a href="../../../behaviors/overview.html">行为</a>。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/applyElement.html">applyElement</a></td>
+						<td>
+							使得<span>元素</span>成为其它元素的子元素或父元素。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/attachEvent.html">attachEvent</a></td>
+						<td>
+							将指定函数绑定到事件，以便每当该事件在对象上触发时都调用该函数。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/blur.html">blur</a></td>
+						<td>
+							使<span>元素</span>失去焦点并触发 <a href="../events/onblur.html">onblur</a> 事件。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/clearAttributes.html">clearAttributes</a></td>
+						<td>
+							从<span>对象</span>中删除全部标签属性和值。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/click.html">click</a></td>
+						<td>
+							触发 <a href="../events/onclick.html">onclick</a> 事件来模拟单击。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/cloneNode.html">cloneNode</a></td>
+						<td>
+							从文档层次中复制对<span>对象</span>的引用。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/componentFromPoint.html">componentFromPoint</a></td>
+						<td>
+							通过特定事件返回对象在指定坐标下的位置。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/contains.html">contains</a></td>
+						<td>
+							检查<span>对象</span>中是否包含给定元素。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/detachEvent.html">detachEvent</a></td>
+						<td>
+							从事件中取消指定函数的绑定，这样当事件触发时函数就不会收到通知了。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/fireEvent.html">fireEvent</a></td>
+						<td>
+							触发<span>对象</span>的指定事件。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/focus.html">focus</a></td>
+						<td>
+							使得元素得到焦点并执行由 <a href="../events/onfocus.html">onfocus</a> 事件指定的代码。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/getAdjacentText.html">getAdjacentText</a></td>
+						<td>
+							返回邻接文本字符串。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/getAttribute.html">getAttribute</a></td>
+						<td>
+							获取指定标签属性的值。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/getAttributeNode.html">getAttributeNode</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="../common/new.gif" width="21" /></td>
+						<td>
+							获取由 <b>attribute</b>.<a href="../properties/name_2.html">name</a> 属性引用的 <a href="attribute.html">attribute</a> 对象。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/getBoundingClientRect.html">getBoundingClientRect</a></td>
+						<td>
+							获取指定 <a href="TextRectangle.html">TextRectangle</a> 对象集合绑定的对象。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/getClientRects.html">getClientRects</a></td>
+						<td>
+							获取描述对象内容或客户区内布局的矩形集合。每个矩形都描述了一条直线。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/getElementsByTagName.html">getElementsByTagName</a></td>
+						<td>
+							获取基于指定元素名称的对象集合。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/hasChildNodes.html">hasChildNodes</a></td>
+						<td>
+							返回表明<span>对象</span>是否有子对象的值。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/insertAdjacentElement.html">insertAdjacentElement</a></td>
+						<td>
+							在指定位置插入元素。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/mergeAttributes.html">mergeAttributes</a></td>
+						<td>
+							复制所有读/写标签属性到指定元素。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/namedRecordset.html">namedRecordset</a></td>
+						<td>
+							根据来自于数据源对象(DSO)命名数据成员获取记录集。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/normalize.html">normalize</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="../common/new.gif" width="21" /></td>
+						<td>
+							合并邻接 <b>TextNode</b> 对象以便生成一个常规的文档对象模型。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/releaseCapture.html">releaseCapture</a></td>
+						<td>
+							释放当前文档中<span>对象</span>的鼠标捕捉。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/removeAttribute.html">removeAttribute</a></td>
+						<td>
+							删除<span>对象</span>的给定标签属性。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/removeAttributeNode.html">removeAttributeNode</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="../common/new.gif" width="21" /></td>
+						<td>
+							从对象中删除删除 <b>attribute</b> 对象。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/removeBehavior.html">removeBehavior</a></td>
+						<td>
+							分离<span>元素</span>的<b>行为</b>。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/removeExpression.html">removeExpression</a></td>
+						<td>
+							从指定属性中删除表达式。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/replaceAdjacentText.html">replaceAdjacentText</a></td>
+						<td>
+							替换元素的邻接文本。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/scrollIntoView.html">scrollIntoView</a></td>
+						<td>
+							将<span>对象</span>滚动到可见范围内，将其排列到窗口顶部或底部。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/setActive.html">setActive</a></td>
+						<td>
+							设置<span>对象</span>为当前对象而不将对象置为焦点。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/setAttribute.html">setAttribute</a></td>
+						<td>
+							设置指定标签属性的值。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/setAttributeNode.html">setAttributeNode</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="../common/new.gif" width="21" /></td>
+						<td>
+							设置 <b>attribute</b> 对象为对象的一部分。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/setCapture.html">setCapture</a></td>
+						<td>
+							设置属于当前文档的<span>对象</span>的鼠标捕捉。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/setExpression.html">setExpression</a></td>
+						<td>
+							设置指定对象的表达式。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../methods/swapNode.html">swapNode</a></td>
+						<td>
+							交换文档层次中两个对象的位置。</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="clsRef" style="DISPLAY: none">对象</p>
+		<div style="DISPLAY: none; VISIBILITY: visible">
+			<table class="clsStd" style="BACKGROUND: #ffffff" width="100%">
+				<tbody>
+					<tr>
+						<th>
+							对象</th>
+						<th>
+							描述</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="currentStyle.html">currentStyle</a></td>
+						<td>
+							代表了在全局样式表、内嵌样式和 HTML 标签属性中指定的<span>对象</span>格式和样式。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="runtimeStyle.html">runtimeStyle</a></td>
+						<td>
+							代表了居于全局样式表、内嵌样式和 HTML 标签属性指定的格式和样式之上的<span>对象</span>的格式和样式。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="obj_style.html">style</a></td>
+						<td>
+							代表了给定元素所有可能的内嵌样式的当前设置。</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="clsRef" style="DISPLAY: none">样式</p>
+		<div style="DISPLAY: none; VISIBILITY: visible">
+			<table class="clsStd" style="BACKGROUND: #ffffff" width="100%">
+				<tbody>
+					<tr>
+						<th>
+							样式标签属性</th>
+						<th>
+							样式属性</th>
+						<th>
+							描述</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/accelerator.html">ACCELERATOR</a></td>
+						<td>
+							<a href="../properties/accelerator.html">accelerator</a></td>
+						<td>
+							设置或获取表明<span>对象</span>是否包含快捷键的字符串。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/backgroundPositionX.html">background-position-x</a></td>
+						<td>
+							<a href="../properties/backgroundPositionX.html">backgroundPositionX</a></td>
+						<td>
+							设置或获取 <a href="../properties/backgroundposition.html">backgroundPosition</a> 属性的 x 坐标。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/backgroundPositionY.html">background-position-y</a></td>
+						<td>
+							<a href="../properties/backgroundPositionY.html">backgroundPositionY</a></td>
+						<td>
+							设置或获取 <b>backgroundPosition</b> 属性的 y 坐标。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/behavior_1.html">behavior</a></td>
+						<td>
+							<a href="../properties/behavior_1.html">behavior</a></td>
+						<td>
+							设置或获取 <b>DHTML 行为</b>的位置。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/bottom_1.html">bottom</a></td>
+						<td>
+							<a href="../properties/bottom_1.html">bottom</a></td>
+						<td>
+							设置或获取<span>对象</span>相对于文档层次中下个定位对象的底部的位置。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/clear_0.html">clear</a></td>
+						<td>
+							<a href="../properties/clear_0.html">clear</a></td>
+						<td>
+							设置或获取<span>对象</span>是否允许在其左侧、右侧或两边放置浮动对象，以防下段文本显示在浮动对象上。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/clip.html">clip</a></td>
+						<td>
+							<a href="../properties/clip.html">clip</a></td>
+						<td>
+							设置或获取定位<span>对象</span>的哪个部分可见。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/color_1.html">color</a></td>
+						<td>
+							<a href="../properties/color_1.html">color</a></td>
+						<td>
+							设置或获取<span>对象</span>文本的颜色。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/cursor.html">cursor</a></td>
+						<td>
+							<a href="../properties/cursor.html">cursor</a></td>
+						<td>
+							设置或获取当鼠标指针指向<span>对象</span>时所使用的鼠标指针。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/display.html">display</a></td>
+						<td>
+							<a href="../properties/display.html">display</a></td>
+						<td>
+							设置或获取<span>对象</span>是否要渲染。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/fontSize.html">font-size</a></td>
+						<td>
+							<a href="../properties/fontSize.html">fontSize</a></td>
+						<td>
+							设置或获取<span>对象</span>文本使用的字体大小。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/hasLayout.html">hasLayout</a></td>
+						<td>
+							获取表明<span>对象</span>是否有布局的值。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/height_1.html">height</a></td>
+						<td>
+							<a href="../properties/height_1.html">height</a></td>
+						<td>
+							设置或获取<span>对象</span>的高度。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/layoutgrid.html">layout-grid</a></td>
+						<td>
+							<a href="../properties/layoutgrid.html">layoutGrid</a></td>
+						<td>
+							设置或获取指定文本字符版面的组合文档格线属性。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/layoutGridMode.html">layout-grid-mode</a></td>
+						<td>
+							<a href="../properties/layoutGridMode.html">layoutGridMode</a></td>
+						<td>
+							设置或获取文本布局网格是否使用二维。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/left.html">left</a></td>
+						<td>
+							<a href="../properties/left.html">left</a></td>
+						<td>
+							设置或获取<span>对象</span>相对于文档层次中下个定位对象的左边界的位置。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/overflow.html">overflow</a></td>
+						<td>
+							<a href="../properties/overflow.html">overflow</a></td>
+						<td>
+							设置或获取表明当内容超出<span>对象</span>高度或宽度时如何管理<span>对象</span>内容的值。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/overflowX.html">overflow-x</a></td>
+						<td>
+							<a href="../properties/overflowX.html">overflowX</a></td>
+						<td>
+							设置或获取当内容超出<span>对象</span>宽度时如何管理<span>对象</span>内容。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/overflowY.html">overflow-y</a></td>
+						<td>
+							<a href="../properties/overflowY.html">overflowY</a></td>
+						<td>
+							设置或获取当内容超出<span>对象</span>高度时如何管理<span>对象</span>内容。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/padding.html">padding</a></td>
+						<td>
+							<a href="../properties/padding.html">padding</a></td>
+						<td>
+							设置或获取要在<span>对象</span>和其边距或若存在的边框的话就是<span>对象</span>和其边框之间要插入的全部空间。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/paddingBottom.html">padding-bottom</a></td>
+						<td>
+							<a href="../properties/paddingBottom.html">paddingBottom</a></td>
+						<td>
+							设置或获取要在<span>对象</span>下边框和内容之间插入的空间总量。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/paddingLeft.html">padding-left</a></td>
+						<td>
+							<a href="../properties/paddingLeft.html">paddingLeft</a></td>
+						<td>
+							设置或获取要在<span>对象</span>左边框和内容之间插入的空间总量。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/paddingRight.html">padding-right</a></td>
+						<td>
+							<a href="../properties/paddingRight.html">paddingRight</a></td>
+						<td>
+							设置或获取要在<span>对象</span>右边框和内容之间插入的空间总量。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/paddingTop.html">padding-top</a></td>
+						<td>
+							<a href="../properties/paddingTop.html">paddingTop</a></td>
+						<td>
+							设置或获取<span>对象</span>上边框和内容之间插入的空间总量。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/pixelBottom.html">pixelBottom</a></td>
+						<td>
+							设置或获取<span>对象</span>的下方位置。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/pixelHeight.html">pixelHeight</a></td>
+						<td>
+							设置或获取<span>对象</span>的高度。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/pixelLeft.html">pixelLeft</a></td>
+						<td>
+							设置或获取<span>对象</span>的左侧位置。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/pixelRight.html">pixelRight</a></td>
+						<td>
+							设置或获取<span>对象</span>的右侧位置。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/pixelTop.html">pixelTop</a></td>
+						<td>
+							设置或获取<span>对象</span>的上方位置。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/pixelWidth.html">pixelWidth</a></td>
+						<td>
+							设置或获取<span>对象</span>的宽度。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/posBottom.html">posBottom</a></td>
+						<td>
+							设置或获取以 <a href="../properties/bottom_1.html">bottom</a> 标签属性指定的单位的<span>对象</span>下方位置。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/posHeight.html">posHeight</a></td>
+						<td>
+							设置或获取以 <a href="../properties/height_1.html">height</a> 标签属性指定的单位的<span>对象</span>高度。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/position.html">position</a></td>
+						<td>
+							<a href="../properties/position.html">position</a></td>
+						<td>
+							设置或获取<span>对象</span>所使用的定位方式。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/posLeft.html">posLeft</a></td>
+						<td>
+							设置或获取以 <a href="../properties/left.html">left</a> 标签属性指定的单位的<span>对象</span>左侧位置。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/posRight.html">posRight</a></td>
+						<td>
+							设置或获取以 <a href="../properties/right_1.html">right</a> 标签属性指定的单位的<span>对象</span>右侧位置。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/posTop.html">posTop</a></td>
+						<td>
+							设置或获取以 <a href="../properties/top_0.html">top</a> 标签属性指定的单位的<span>对象</span>上方位置。</td>
+					</tr>
+					<tr>
+						<td>
+							&nbsp;</td>
+						<td>
+							<a href="../properties/posWidth.html">posWidth</a></td>
+						<td>
+							设置或获取以 <a href="../properties/width_2.html">width</a> 标签属性指定的单位的<span>对象</span>宽度。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/right_1.html">right</a></td>
+						<td>
+							<a href="../properties/right_1.html">right</a></td>
+						<td>
+							设置或获取<span>对象</span>相对于文档层次中下个已定位的对象的右边界的位置。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/scrollbar3dLightColor.html">scrollbar-3dlight-color</a></td>
+						<td>
+							<a href="../properties/scrollbar3dLightColor.html">scrollbar3dLightColor</a></td>
+						<td>
+							设置或获取滚动条上滚动按钮和滚动滑块的左上颜色。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/scrollbarArrowColor.html">scrollbar-arrow-color</a></td>
+						<td>
+							<a href="../properties/scrollbarArrowColor.html">scrollbarArrowColor</a></td>
+						<td>
+							设置或获取滚动箭头标识的颜色。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/scrollbarBaseColor.html">scrollbar-base-color</a></td>
+						<td>
+							<a href="../properties/scrollbarBaseColor.html">scrollbarBaseColor</a></td>
+						<td>
+							设置或获取滚动条的主要颜色，其中包含滚动按钮和滚动滑块。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/scrollbarDarkShadowColor.html">scrollbar-darkshadow-color</a></td>
+						<td>
+							<a href="../properties/scrollbarDarkShadowColor.html">scrollbarDarkShadowColor</a></td>
+						<td>
+							设置或获取滚动条上滑槽的颜色。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/scrollbarFaceColor.html">scrollbar-face-color</a></td>
+						<td>
+							<a href="../properties/scrollbarFaceColor.html">scrollbarFaceColor</a></td>
+						<td>
+							设置或获取滚动条和滚动条的滚动箭头的颜色。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/scrollbarHighlightColor.html">scrollbar-highlight-color</a></td>
+						<td>
+							<a href="../properties/scrollbarHighlightColor.html">scrollbarHighlightColor</a></td>
+						<td>
+							设置或获取滚动框和滚动条滚动箭头的左上边缘颜色。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/scrollbarShadowColor.html">scrollbar-shadow-color</a></td>
+						<td>
+							<a href="../properties/scrollbarShadowColor.html">scrollbarShadowColor</a></td>
+						<td>
+							设置或获取滚动框和滚动条滚动箭头的右下边缘颜色。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/scrollbarTrackColor.html">scrollbar-track-color</a></td>
+						<td>
+							<a href="../properties/scrollbarTrackColor.html">scrollbarTrackColor</a></td>
+						<td>
+							设置或获取滚动条轨迹元素的颜色。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/float.html">float</a></td>
+						<td>
+							<a href="../properties/float.html">styleFloat</a></td>
+						<td>
+							设置或获取文本要绕排到<span>对象</span>的哪一侧。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/textAutospace.html">text-autospace</a></td>
+						<td>
+							<a href="../properties/textAutospace.html">textAutospace</a></td>
+						<td>
+							设置或获取自动留空和文本的窄空间宽度调整。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/textUnderlinePosition.html">text-underline-position</a></td>
+						<td>
+							<a href="../properties/textUnderlinePosition.html">textUnderlinePosition</a></td>
+						<td>
+							设置或获取<span>对象</span>的 <a href="../properties/textDecoration.html">textDecoration</a> 属性中设置的下划线的位置。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/top_0.html">top</a></td>
+						<td>
+							<a href="../properties/top_0.html">top</a></td>
+						<td>
+							设置或获取<span>对象</span>相对于文档层次中下个定位对象的上边界的位置。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/visibility.html">visibility</a></td>
+						<td>
+							<a href="../properties/visibility.html">visibility</a></td>
+						<td>
+							设置或获取<span>对象</span>的内容是否显示。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/width_2.html">width</a></td>
+						<td>
+							<a href="../properties/width_2.html">width</a></td>
+						<td>
+							设置或获取<span>对象</span>的宽度。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/wordWrap.html">word-wrap</a></td>
+						<td>
+							<a href="../properties/wordWrap.html">wordWrap</a></td>
+						<td>
+							设置或获取当内容超过其容器边界时是否断词。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/zIndex.html">z-index</a></td>
+						<td>
+							<a href="../properties/zIndex.html">zIndex</a></td>
+						<td>
+							设置或获取定位<span>对象</span>的堆叠次序。</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../properties/zoom.html">zoom</a></td>
+						<td>
+							<a href="../properties/zoom.html">zoom</a></td>
+						<td>
+							设置或获取<span>对象</span>的放大比例。</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</blockquote>
+<p class="clsRef">注释</p>
+<blockquote>
+	<p>要使用由 <b>APPLET</b> 元素指定的可执行内容，用户的计算机上必须安装 Microsoft 虚拟机。</p>
+	<p>此元素在 Microsoft<sup>&reg;</sup> Internet Explorer 3.0 的 HTML 中可用，在 Internet Explorer 4.0 的脚本中可用。</p>
+	<p>此元素是一个内嵌元素。</p>
+	<p>此元素需要关闭标签。</p>
+</blockquote>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151208/1420.html">html中AREA 元素 | area 对象</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151208/1418.html">html中ADDRESS 元素 | address 对象</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

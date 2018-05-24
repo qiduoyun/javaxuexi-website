@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>怎么建立主从关系表 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1378","0","attach");
+		Cms.viewCount("","1378");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151205/1378.html" title="怎么建立主从关系表">怎么建立主从关系表</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-05 16:18:43</span>
+     </h3>
+     <h2>
+	<span style="color:#008080;">怎么建立主从关系表</span></h2>
+<p><span style="color:#008080;">在数据库StudentI中，在显示表Student和Score时，希望选中某个学生时，表Score只显示此学生的成绩，两个表的这种关系叫做主从关系。现在实现这两个表的主从关系。具体步骤如下：</span></p>
+<ol>
+	<li>
+		<span style="color:#008080;">新建项目。</span></li>
+	<li>
+		<span style="color:#008080;">从&ldquo;工具箱&rdquo;的&ldquo;数据&rdquo;选项卡中，将&nbsp;OleDbDataAdapter&nbsp;对象拖到窗体上。&ldquo;数据适配器配置向导&rdquo;启动，它将帮助您创建连接和适配器。</span></li>
+	<li>
+		<span style="color:#008080;">在该向导中，执行下列操作：</span>
+		<ul>
+			<li>
+				<span style="color:#008080;">在第二个窗格中，创建或选择一个指向数据库StudentI的连接。</span></li>
+			<li>
+				<span style="color:#008080;">在第三个窗格中，指定您要使用&nbsp;SQL&nbsp;语句来访问数据库。</span></li>
+			<li>
+				<span style="color:#008080;">在第四个窗格中创建以下&nbsp;SQL&nbsp;语句：SELECT&nbsp;*&nbsp;FROM&nbsp;Student</span></li>
+			<li>
+				<span style="color:#008080;">单击&ldquo;完成&rdquo;完成该向导。</span></li>
+		</ul>
+	</li>
+	<li>
+		<span style="color:#008080;">将第二个&nbsp;OleDbDataAdapter&nbsp;对象拖到窗体上。&ldquo;数据适配器配置向导&rdquo;再次启动。</span></li>
+	<li>
+		<span style="color:#008080;">重复第(3)步，其中有以下差异：</span>
+		<ul>
+			<li>
+				<span style="color:#008080;">在第二个窗格中，选择上次所使用或创建的同一连接。</span></li>
+			<li>
+				<span style="color:#008080;">创建下列&nbsp;SQL&nbsp;语句来访问Score表：SELECT&nbsp;Score.*&nbsp;FROM&nbsp;Score</span></li>
+		</ul>
+	</li>
+	<li>
+		<span style="color:#008080;">从&ldquo;数据&rdquo;菜单中选择&ldquo;生成数据集&rdquo;。&nbsp;如果看不到&ldquo;数据&rdquo;菜单，请在窗体中单击；该窗体必须具有焦点，该菜单才会出现。</span></li>
+	<li>
+		<span style="color:#008080;">选择&ldquo;新建&rdquo;选项，将该数据集命名为&nbsp;DataSet1。在&ldquo;选择要添加到数据集中的表&rdquo;下面的列表中，确保选择了&ldquo;Student&rdquo;和&ldquo;Score&rdquo;。&nbsp;选中&ldquo;将此数据集添加到设计器&rdquo;，然后单击&ldquo;确定&rdquo;。从&ldquo;文件&rdquo;菜单中选择&ldquo;全部保存&rdquo;，存所有文件。</span></li>
+	<li>
+		<span style="color:#008080;">Visual&nbsp;Studio&nbsp;生成某类型化数据集类&nbsp;(DataSet1)&nbsp;和定义该数据集的架构。将在&ldquo;解决方案资源管理器&rdquo;中看到新架构&nbsp;(DataSet1.xsd)。</span></li>
+	<li>
+		<span style="color:#008080;">在&ldquo;解决方案资源管理器&rdquo;中，双击刚创建的数据集的架构（名为&nbsp;DataSet1.xsd）。&ldquo;XML&nbsp;设计器&rdquo;在&ldquo;架构&rdquo;视图中打开，显示数据集内的两个表。</span></li>
+	<li>
+		<span style="color:#008080;">从&ldquo;工具箱&rdquo;的&ldquo;XML&nbsp;架构&rdquo;选项卡中，将&nbsp;Relation&nbsp;对象拖到Score表（子表）上。&ldquo;编辑关系&rdquo;对话框打开，其中带有从这两个表中派生的默认值。父元素为Student表，子元素为Score表，键字段和外键字段都为StudentNum。其它不修改选默认值。单击&ldquo;确定&rdquo;按钮，关闭&ldquo;编辑关系&rdquo;对话框。在&ldquo;XML&nbsp;设计器&rdquo;中，这两个表之间显示一个关系图标。如果需要更改关系设置，则可以右击相应的关系，选择&ldquo;编辑关系&rdquo;。</span></li>
+	<li>
+		<span style="color:#008080;">保存该架构并关闭XML设计器。此刻，为执行从数据库获取信息并转移到数据集的操作所需的全部设置均已完成。可以向窗体添加显示数据的控件了。</span></li>
+	<li>
+		<span style="color:#008080;">返回到创建该项目时已打开的默认窗体&nbsp;(Form1)。从&ldquo;工具箱&rdquo;的&ldquo;Windows&nbsp;窗体&rdquo;选项卡中，将&nbsp;DataGrid&nbsp;控件拖到窗体上，Name=dataGrid1。RowHeadersVisable=false。在&ldquo;属性&rdquo;窗口中，将&nbsp;DataSource&nbsp;属性设置为&nbsp;dataSet11，将&nbsp;DataMember属性设置为Student。</span></li>
+	<li>
+		<span style="color:#008080;">从&ldquo;工具箱&rdquo;的&ldquo;Windows&nbsp;窗体&rdquo;选项卡中，将&nbsp;DataGrid&nbsp;控件拖到窗体上，Name=dataGrid2。在&ldquo;属性&rdquo;窗口中，将&nbsp;DataSource&nbsp;属性设置为&nbsp;dataSet11，将&nbsp;DataMember属性设置为Student.StudentScore，设置这两个属性将网格绑定到关系对象，以便网格只包含dataGrid1表中选择的学生成绩。</span></li>
+	<li>
+		<span style="color:#008080;">增加主窗体Form1的Load事件函数如下：</span></li>
+</ol>
+<p><span style="color:#008080;">private&nbsp;void&nbsp;Form1_Load(object&nbsp;sender,&nbsp;System.EventArgs&nbsp;e)</span></p>
+<p><span style="color:#008080;">{ dataSet11.Clear();</span></p>
+<p><span style="color:#008080;">oleDbDataAdapter1.Fill(dataSet11);</span></p>
+<p><span style="color:#008080;">oleDbDataAdapter2.Fill(dataSet11);</span></p>
+<p><span style="color:#008080;">}</span></p>
+<ol>
+	<li value="15">
+		<span style="color:#008080;">运行，可以看到两个DataGrid&nbsp;控件，dataGrid1显示学生情况表，dataGrid2显示dataGrid1表中选中的学生的成绩。在dataGrid1表中选择不同学生，dataGrid2显示相应学生的成绩。</span></li>
+</ol>
+<p>&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151206/1384.html">HTML，HTTP和网页的定义</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151205/1377.html">数据绑定控件有哪些</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

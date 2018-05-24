@@ -1,0 +1,55 @@
+/* CSS Document */
+body{
+	margin: 0;
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background: #555;
+  margin: 0 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #13c58d;
+}
+.xiangmu-list{
+}
+.xiangmu-list:hover{
+background-color:#f0f0f0;}
+.xm-s-bt:hover{
+cursor:pointer;
+background-color:#20b573;}
+.xm-more-bt:hover{
+cursor:pointer;
+background-color:#888;}
+
+a{
+color:#333;
+text-decoration:none;}
+a:hover{
+color:#ff8400;}
+
+.arrow-left{
+position:absolute;
+z-index:20;
+}
+.arrow-right{
+position:absolute;
+z-index:20;
+}
+
+.opacity-img{
+}
+.opacity-img:hover{
+opacity:0.8;cursor: pointer;}

@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>log4j使用入门教程 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1162","0","attach");
+		Cms.viewCount("","1162");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151113/1162.html" title="log4j使用入门教程">log4j使用入门教程</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">炒菜&nbsp;&nbsp;发布于    2015-11-13 23:21:56</span>
+     </h3>
+     <p>
+	&nbsp;&nbsp;&nbsp; log4j用于输出各种不同级别的日志信息。常用的级别有：调试日志（debug）、正常信息日志（info）、警告日志（warn）、错误日志（error）。
+</p>
+<p>
+	&nbsp;&nbsp;&nbsp; 我们的程序运行过程中，通常会出现不同级别的错误、警告信息。特别是对于错误的信息，这些信息对于修复程序的漏洞有着很大指导性作用，所以我们有必要将这些我们需要的信息写入到日志中。
+</p>
+<p>
+	&nbsp;&nbsp;&nbsp; 下面以一个简单的例子来说明log4j的使用。
+</p>
+<p>
+	1、创建工程，导入log4j-1.2.17.jar包，在本例子的源码中含有这个jar包。
+</p>
+<p>
+	2、在src目录下创建properties文件：log4j.properties
+</p>
+<p>
+	&nbsp;&nbsp;&nbsp;
+</p>
+<p>
+<pre class="prettyprint">log4j.rootLogger=debug,info, log, error
+      
+    ###Console ###  
+    log4j.appender.info = org.apache.log4j.ConsoleAppender  
+    log4j.appender.info.Target = System.out  
+    log4j.appender.info.layout = org.apache.log4j.PatternLayout  
+    log4j.appender.info.layout.ConversionPattern =  %d{ABSOLUTE} [ %t ] [ %p ]:%L - %m%n  
+      
+    ### Log ###    
+    log4j.appender.log = org.apache.log4j.DailyRollingFileAppender  
+    log4j.appender.log.File = log/log.log  
+    log4j.appender.log.Append = true  
+    log4j.appender.log.Threshold = debug  
+    log4j.appender.log.DatePattern='.'yyyy-MM-dd  
+    log4j.appender.log.layout = org.apache.log4j.PatternLayout  
+    log4j.appender.log.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss} [ %t ] %m%n  
+      
+    ### Error ###  
+    log4j.appender.error = org.apache.log4j.DailyRollingFileAppender  
+    log4j.appender.error.File = log/errorlog.log  
+    log4j.appender.error.Append = true  
+    log4j.appender.error.Threshold = ERROR   
+    log4j.appender.error.DatePattern='.'yyyy-MM-dd  
+    log4j.appender.error.layout = org.apache.log4j.PatternLayout  
+    log4j.appender.error.layout.ConversionPattern =%-d{yyyy-MM-dd HH:mm:ss} [ %t ] %m%n</pre>
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	这里简单介绍一下：
+</p>
+<p>
+	Target，表示输出的目的，System.out是控制台输出。
+</p>
+<p>
+	File，表示日志保存的文件。
+</p>
+<p>
+	Threshold，表示日志写入的最低级别，如果日志级别在设置的最低级别及以上级别，都会写入日志。
+</p>
+<p>
+	ConversionPattern，日志格式。
+</p>
+<p>
+	&nbsp;
+</p>
+<p>
+	3、在com.javaxuexi.log包下创建类：Log_Demo
+</p>
+<p>
+<pre class="prettyprint lang-java">package com.javaxuexi.log;
+
+import org.apache.log4j.Logger;
+
+public class Log_Demo {
+private static Logger logger=Logger.getLogger(Log_Demo.class);//创建log对象
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        logger.debug("debug log message...");//调试日志
+        logger.info("info log message...");//信息日志
+        logger.warn("warn log message...");//警告日志
+        logger.error("error log message...");//错误日志
+    }
+
+}</pre>
+<br />
+&nbsp;
+</p>
+<p>
+	4、运行结果：
+</p>
+<p>
+	<img alt="" src="data:image/png;base64,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" />
+</p>
+<p>
+	刷新工程，会看到多了个log目录和两个日志文件，打开就可以看到写入的日志信息了。
+</p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151114/1163.html">json使用入门教程</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151113/1160.html">iphone调用系统电话、浏览器、地图、邮件等</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

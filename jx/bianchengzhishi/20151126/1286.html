@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C#学习图形设备环境接口(GDI) - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1286","0","attach");
+		Cms.viewCount("","1286");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151126/1286.html" title="C#学习图形设备环境接口(GDI)">C#学习图形设备环境接口(GDI)</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-26 19:19:47</span>
+     </h3>
+     <h2>
+	C#学习图形设备环境接口(GDI)</h2>
+<p>为了在Windows窗口输出数据(字符或图形)，Windows操作系统提供了一些工具和函数，例如提供笔用来定义图形外轮廓线的颜色及粗细，提供刷子定义添充封闭图形内部的颜色和格式，提供不同输出字体，提供函数用来输出字符或绘制图形等等。所有这些工具和函数被放在图形设备接口函数库中(GDI32.DLL)，它负责CRT显示及打印。根据设备不同，可以构造不同的设备环境(GDI)，使输出图形或字符与设备无关，既无论是在CRT显示还是在打印机上打印同一个图形或字符，都用相同的函数。GDI所扮演的角色如下图所示：</p>
+<table cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td height="0">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				<img alt="" src="data:image/png;base64,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" /></td>
+		</tr>
+	</tbody>
+</table>
+<p>&nbsp;</p>
+<p>用户应用程序根据是在CRT显示还是在打印机打印，首先选择CRT显示设备环境或打印设备环境，然后调用GDI中的同名函数实现在CRT显示或在打印机上打印。而GDI设备环境根据选择的不同设备，调用不同的设备驱动程序，在CRT上显示或在打印机上打印。而这些驱动程序都是各个设备制造厂商提供的。这样做的最大好处是应用程序和设备无关，应用程序不必为不同的设备编制不同的程序。为使用不同的设备，无论是不同的显卡，还是不同的打印机，只要安装该设备的驱动程序，应用程序就可以使用该设备，微软的Word程序可以使用不同的打印机就是使用了这个原理。</p>
+<p>.NET系统的基础类库(.Net&nbsp;FrameWork)对Windows操作系统的图形设备接口函数库(GDI32.DLL)进行了扩充，并用类进行了封装，一般叫做GDI+。使用GDI+绘图更加方便快捷。为了使用GDI+图形功能，必须引入以下命名空间：System.Drawing，System.Drawing.Priniting，System.Drawing.Imaging，System.Drawing.Drawing2D，System.Drawing.Design，System.Drawing.Text。</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151126/1287.html">Graphics类，C#学习教程</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151126/1284.html">ios,iphone app开发学习</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

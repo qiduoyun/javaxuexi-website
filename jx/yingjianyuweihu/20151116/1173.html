@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>Linux环境下Oracle的安装与配置 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1173","0","attach");
+		Cms.viewCount("","1173");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/yingjianyuweihu/20151116/1173.html" title="Linux环境下Oracle的安装与配置">Linux环境下Oracle的安装与配置</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-16 19:09:53</span>
+     </h3>
+     <div align="center" class="title_page">&nbsp;</div>
+<div class="title_page">Linux RedHat 6.0环境下Oracle 8.0.5的安装。<br />
+	一、Linux核心与环境的调整<br />
+	<br />
+	----在安装Oracle之前，要对RedHat 6.0的Linux内核与环境进行调整。<br />
+	<br />
+	1.在完成RedHat 6.0 Linux的缺省安装后，需要安装以下软件包：<br />
+	<br />
+	kernel－source－2.2.5－15.i386.rpm<br />
+	<br />
+	Linux 2.2.5内核源码，主要用于修改核心参数后重生成内核。<br />
+	<br />
+	tcl－8.0.4－29.i386.rpm<br />
+	<br />
+	该软件包是安装Oracle Intelligent Agent包所必需的。<br />
+	<br />
+	Compat－binutils－5.2－2.9.0.23.1.i386.rpm<br />
+	<br />
+	Compat－glibc－5.2－2.0.7.2.i386.rpm<br />
+	<br />
+	Compat－egcs－5.2－1.0.3a.1.i381.rpm<br />
+	<br />
+	Compat－egcs－C＋＋－5.2－1/0/3a.1.i386.rpm<br />
+	<br />
+	Compat－libs－5.2－1.i386.rpm<br />
+	<br />
+	2.调整Linux核心参数<br />
+	<br />
+	----根据Oracle 8.0.5对Linux核心内存参数的要求，可对Linux核心参数进行调整。编辑修改/usr/src/linux/include/asm/shmparam.h文件，修改SHMMAX选项。Oracle 推荐使用4294967295，这意味着系统的共享内存达到4G，这是不合适的。一般，SHMMAX的设置可略大于本机内存配置。<br />
+	<br />
+	----事实上，缺省安装的RedHat 6.0核心运行Oracle 8.0.5是没有问题的。一般情况下可不对这些参数作出调整。<br />
+	<br />
+	----如确需调整，在完成修改后，要按文档要求重生成核心，并用lilo命令指定用新的核心进行引导。<br />
+	<br />
+	3.增加用户、创建安装目录<br />
+	<br />
+	----Oracle安装与运行需要创建一个属于dba组的Oracle用户，同时要创建一个属主为Oracle用户的安装点目录，例如/u0/oracle ，并指定该目录为Oracle用户的缺省主目录。<br />
+	<br />
+	----为了设置Oracle用户的运行环境，在Oracle用户的主目录下要建立一个脚本文件，用于在以Oracle用户登录时自动设置环境变量。该脚本文件的命名与用户所使用的shell有关（在/etc/passwd文件中定义）。如采用bash，则脚本文件是.bash_profile；如采用sh，则脚本文件名为.profile。以bash为例，在脚本文件.bash_profile中输入以下内容：<br />
+	<br />
+	＃ ORACLE_HOME指定Oracle的安装目录<br />
+	<br />
+	ORACLE_HOME=/u0/oracle; export ORACLE_HOME<br />
+	<br />
+	＃ LD_LIBRARY_PATH指定Oracle的共享库目录<br />
+	<br />
+	LD_LIBRARY_PATH= ＄ORACLE_HOME /lib; export LD_LIBRARY_PATH<br />
+	<br />
+	ORACLE_BASE=＄ORACLE_HOME; export ORACLE_BASE<br />
+	<br />
+	＃ ORACLE_SID指定Oracle数据库实例名，Oracle建议小于或等于4个字符<br />
+	<br />
+	ORACLE_SID=BROS; export ORACLE_SID<br />
+	<br />
+	＃ ORACLE_TERM Oracle用户的终端类型<br />
+	<br />
+	ORACLE_TERM=ansi; export ORACLE_TERM<br />
+	<br />
+	PATH=＄PATH: ＄ORACLE_HOME /bin; export PATH<br />
+	<br />
+	＃TMPDIR指定临时目录，Oracle要求至少20M的空间<br />
+	<br />
+	TMPDIR=/var/tmp; export TMPDIR<br />
+	<br />
+	umask 022<br />
+	<br />
+	----退出登录后，再以Oracle用户登录，测试环境变量是否符合要求。<br />
+	<br />
+	二、 Oracle安装<br />
+	<br />
+	----Oracle的安装可采用光盘或指定原始安装路径的方式。<br />
+	<br />
+	----对用Oracle for linux光盘来安装的，应执行以下命令：<br />
+	<br />
+	mount －t iso9660 /dev/CDROM /home/Oracle<br />
+	<br />
+	----安装光盘介质。正常情况下，CDROM应安装在/home/CDROM目录下。<br />
+	<br />
+	----对指定原始安装路径安装的，应事先将压缩档案文件805ship.tgz解压缩到一个临时目录，如/home/Oracle ,使用命令：<br />
+	<br />
+	gunzip－c 805ship.tgz| tar xvf －<br />
+	<br />
+	----假设使用指定原始安装路径/home/Oracle。在该目录执行：<br />
+	<br />
+	cd orainst<br />
+	<br />
+	sh oratab.sh<br />
+	<br />
+	oratab.sh命令的主要目的是创建 /etc/oratab。<br />
+	<br />
+	----由于RedHat 6.0使用的是glibc 2.0，因此在RedHat 6.0环境下安装Oracle 8.0.5需打补丁。方法是：卸载位于ftp.Oracle.com站点的/pub/www/otn/linux/glibcpatch.tgz文件，在完成Oracle基本系统安装后，对＄ORACLE_HOME/bin目录下的执行程序进行修正。<br />
+	<br />
+	----做完上述工作后，即可以开始Oracle基本系统的安装：<br />
+	<br />
+	1.进入/home/Oracle目录<br />
+	<br />
+	2.执行./orainst /c<br />
+	<br />
+	3.选择Custom安装<br />
+	<br />
+	根据提示进行以下选择：<br />
+	<br />
+	Install, Upgrade or De－install software<br />
+	<br />
+	----Install new product －DO NOT CREAT DB Objects。 这一步非常重要。由于原安装包中的执行程序与glibc2.0不兼容，因此，在打补丁前，无法启动Oracle引擎来创建数据库对象。<br />
+	<br />
+	----按照上述步骤执行完退出后，系统应提示：<br />
+	<br />
+	Result:Success.<br />
+	<br />
+	4.对Oracle执行程序进行glibc修正。步骤如下：<br />
+	<br />
+	＊ 建立＄ORACLE_HOME/orapatch目录<br />
+	<br />
+	＊ 将glibcpatch.tgz拷贝至主目录<br />
+	<br />
+	＊ 执行tar －xvzf glibcpatch.tgz<br />
+	<br />
+	＊ 执行sh glibcpatch.sh<br />
+	<br />
+	----完成补丁程序安装后，要重新运行Oracle的安装程序，步骤如下：<br />
+	<br />
+	＊ cd orainst<br />
+	<br />
+	＊ 执行 orainst /c<br />
+	<br />
+	＊ 进行custom安装<br />
+	<br />
+	----根据提示进行以下选择：<br />
+	<br />
+	Create /upgrade Database objects<br />
+	<br />
+	Create Database objects<br />
+	<br />
+	Oracle 8 Standard RDBMS 8.0.5.0.0<br />
+	<br />
+	Create product DB Objects<br />
+	<br />
+	Filesystem－bases Database<br />
+	<br />
+	直至提示：Rusult:Success<br />
+	<br />
+	5.执行后安装处理：<br />
+	<br />
+	＊ 以Oracle用户登录<br />
+	<br />
+	＊ 执行 su －p root , 输入root用户密码<br />
+	<br />
+	＊ cd orainst<br />
+	<br />
+	＊ 执行sh root.sh<br />
+	<br />
+	＊ 编辑修改 /etc/oratab文件:<br />
+	<br />
+	找到Oracle－SID指示行如：<br />
+	<br />
+	＄BROS:/u0/Oracle:N<br />
+	<br />
+	----修改为：<br />
+	<br />
+	＄BROS:/u0/Oracle:Y<br />
+	<br />
+	----以允许Oracle服务器自启动。<br />
+	<br />
+	＊ 修改TNS相关的文件权限：<br />
+	<br />
+	chown oracle.dba ＄ORACLE_HOME/bin/tnslsnr<br />
+	<br />
+	chmod 750 ＄ORACLE_HOME/bin/tnslsnr<br />
+	<br />
+	chown oracle.dba ＄ORACLE_HOME/network/log<br />
+	<br />
+	chmod 775 ＄ORACLE_HOME/network/log<br />
+	<br />
+	chown root.dba ＄ORACLE_HOME/network/log/listener.log<br />
+	<br />
+	chmod 664 ＄ORACLE_HOME/network/log/listener.log<br />
+	<br />
+	----至此，安装基本完成。<br />
+	<br />
+	三、 测试与调整<br />
+	<br />
+	----以Oracle用户登录，执行dbstart，Oracle引擎应正常启动。<br />
+	<br />
+	----执行lsnrctl start启动Oracle网络服务，则从Windows的sql＊net、sql plus环境可登录Oracle服务器。<br />
+	<br />
+	----取决于服务器硬件资源配置，为改善性能可以对Oracle的系统全局缓冲区(System Global Area)等参数进行重新配置，以改善性能。<br />
+	&nbsp;</div>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/yingjianyuweihu/20151116/1174.html">在Linux中共享Windows系统资源</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/yingjianyuweihu/20151116/1172.html">Linux各个发行版本的特点</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

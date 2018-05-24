@@ -1,0 +1,502 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>网络管理员nbtstat命令 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1564","0","attach");
+		Cms.viewCount("","1564");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151221/1564.html" title="网络管理员nbtstat命令">网络管理员nbtstat命令</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-21 10:39:11</span>
+     </h3>
+     <p class="MsoNormal" style="text-indent:21.0000pt;">
+	<span style="font-family:宋体;font-size:10.5000pt;"><strong><span style="font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 网络管理员nbtstat命令</span></strong><br />
+</span>
+</p>
+<p class="MsoNormal" style="text-indent:21.0000pt;">
+	<span style="font-family:宋体;font-size:10.5000pt;"><span style="color:#000000;">NBTSTAT</span><span style="color:#000000;">命令可以</span></span><span style="font-family:宋体;color:#FF0000;font-size:10.5000pt;"><span style="color:#000000;">用来查询网络机器的</span><span style="color:#000000;">NetBIOS</span><span style="color:#000000;">信息及机器的</span><span style="color:#000000;">MAC</span><span style="color:#000000;">地址</span></span><span style="font-family:宋体;font-size:10.5pt;color:#000000;">。另外，它还可以用来</span><span style="font-family:宋体;color:#FF0000;font-size:10.5000pt;"><span style="color:#000000;">消除</span><span style="color:#000000;">NetBIOS</span><span style="color:#000000;">高速缓存器和预加载</span><span style="color:#000000;">LMHOSTS</span><span style="color:#000000;">文件</span></span><span style="font-family:宋体;font-size:10.5pt;color:#000000;">。这个命令在进行安全检查时非常有用。</span>
+</p>
+<p class="MsoNormal" style="text-indent:21.0000pt;">
+	<span style="font-family:宋体;font-size:10.5pt;color:#000000;">
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;">用法：<span>nbtstat&nbsp;[-a&nbsp;RemoteName]&nbsp;[-A&nbsp;IP_address]&nbsp;[-c]&nbsp;[-n]&nbsp;[-R]&nbsp;[-r]&nbsp;[-S]</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>[-s]</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>[interval]</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 参数<span>-a</span><span>列出为其</span></span><span style="font-family:宋体;color:#FF0000;font-size:10.5000pt;">主机名</span><span style="font-family:宋体;font-size:10.5000pt;">提供的远程计算机名字表。</span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>-A</span><span>列出为其</span></span><span style="font-family:宋体;color:#FF0000;font-size:10.5000pt;">IP<span>地址</span></span><span style="font-family:宋体;font-size:10.5000pt;">提供的远程计算机名字表。</span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>-c</span><span>列出包括了</span><span>IP</span><span>地址的远程名字高速缓存器。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>-n</span><span>列出本地</span><span>NetBIOS</span><span>名字。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>-r</span><span>列出通过广播和</span><span>WINS</span><span>解析的名字。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>-R</span><span>消除和重新加载远程高速缓存器名字表。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>-S</span><span>列出有目的地</span><span>IP</span><span>地址的会话表。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>-s</span><span>列出会话表对话。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>NBTSTAT</span><span>生成的列标题具有以下含义：</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Input</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 接收到的字节数。</span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Output</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 发出的字节数。</span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>In/Out</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 无论是从计算机（出站）还是从另一个系统连接到本地计算机（入站）。</span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Life</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 在计算机消除名字表高速缓存表目前“度过”的时间。</span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Local&nbsp;Name</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 为连接提供的本地<span>NetBIOS</span><span>名字。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Remote&nbsp;Host</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 远程主机的名字或<span>IP</span><span>地址。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Type</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 一个名字可以具备两个类型之一：<span>unique&nbsp;or&nbsp;group</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 在<span>16</span><span>个字符的</span><span>NetBIOS</span><span>名中，最后一个字节往往有具体含义，因为同一个名可以在同一台计算机上出现多次。这表明该名字的最后一个字节被转换成了</span><span>16</span><span>进制。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>State</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>NetBIOS</span><span>连接将在下列“状态”（任何一个）中显示：</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 状态含义：</span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Accepting:&nbsp;</span><span>进入连接正在进行中。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Associated:&nbsp;</span><span>连接的端点已经建立，计算机已经与</span><span>IP</span><span>地址联系起来。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Connected:&nbsp;</span><span>这是一个好的状态！它表明您被连接到远程资源上。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Connecting:&nbsp;</span><span>您的会话试着解析目的地资源的名字</span><span>-IP</span><span>地址映射。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Disconnected:&nbsp;</span><span>您的计算机请求断开，并等待远程计算机作出这样的反应。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Disconnecting:&nbsp;</span><span>您的连接正在结束。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Idle:&nbsp;</span><span>远程计算机在当前会话中已经打开，但现在没有接受连接。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Inbound:&nbsp;</span><span>入站会话试着连接。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Listening:&nbsp;</span><span>远程计算机可用。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Outbound:&nbsp;</span><span>您的会话正在建立</span><span>TCP</span><span>连接。</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Reconnecting:&nbsp;</span><span>如果第一次连接失败，就会显示这个状态，表示试着重新连接</span><span>.</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 下面是一台机器的<span>NBTSTAT</span><span>反应样本：</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>C:\&gt;nbtstat&nbsp;CA&nbsp;x.x.x.x</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>NetBIOS&nbsp;Remote&nbsp;Machine&nbsp;Name&nbsp;Table</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Name&nbsp;Type&nbsp;Status</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>DATARAT&nbsp;&lt;00&gt;&nbsp;UNIQUE&nbsp;Registered</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>R9LABS&nbsp;&lt;00&gt;&nbsp;GROUP&nbsp;Registered</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>DATARAT&nbsp;&lt;20&gt;&nbsp;UNIQUE&nbsp;Registered</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>DATARAT&nbsp;&lt;03&gt;&nbsp;UNIQUE&nbsp;Registered</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>GHOST&nbsp;&lt;03&gt;&nbsp;UNIFQUE&nbsp;Registered</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>DATARAT&nbsp;&lt;01&gt;&nbsp;UNIQUE&nbsp;Registered</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>MAC&nbsp;Address&nbsp;=&nbsp;00-00-00-00-00-00</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 您通过下表能掌握有关该机器的哪些知识呢？</span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> 名称编号类型的使用：</span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>00&nbsp;U&nbsp;</span><span>工作站服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>01&nbsp;U&nbsp;</span><span>邮件服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>\_M</span><span>好好学习</span><span>ROWSE_&nbsp;01&nbsp;G&nbsp;</span><span>主浏览器</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>03&nbsp;U&nbsp;</span><span>邮件服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>06&nbsp;U&nbsp;RAS</span><span>服务器服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>1F&nbsp;U&nbsp;NetDDE</span><span>服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>20&nbsp;U&nbsp;</span><span>文件服务器服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>21&nbsp;U&nbsp;RAS</span><span>客户机服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>22&nbsp;U&nbsp;Exchange&nbsp;Interchange</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>23&nbsp;U&nbsp;Exchange&nbsp;Store</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>24&nbsp;U&nbsp;Exchange&nbsp;Directory</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>30&nbsp;U&nbsp;</span><span>调制解调器共享服务器服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>31&nbsp;U&nbsp;</span><span>调制解调器共享客户机服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>43&nbsp;U&nbsp;SMS</span><span>客户机远程控制</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>44&nbsp;U&nbsp;SMS</span><span>管理远程控制工具</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>45&nbsp;U&nbsp;SMS</span><span>客户机远程聊天</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>46&nbsp;U&nbsp;SMS</span><span>客户机远程传输</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>4C&nbsp;U&nbsp;DEC&nbsp;Pathworks&nbsp;TCP/IP</span><span>服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>52&nbsp;U&nbsp;DEC&nbsp;Pathworks&nbsp;TCP/IP</span><span>服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>87&nbsp;U&nbsp;Exchange&nbsp;MTA</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>6A&nbsp;U&nbsp;Exchange&nbsp;IMC</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>BE&nbsp;U</span><span>网络监控代理</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>BF&nbsp;U</span><span>网络监控应用</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>03&nbsp;U</span><span>邮件服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>00&nbsp;G</span><span>域名</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>1B&nbsp;U</span><span>域主浏览器</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>1C&nbsp;G</span><span>域控制器</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>1D&nbsp;U</span><span>主浏览器</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>1E&nbsp;G</span><span>浏览器服务选择</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>1C&nbsp;G&nbsp;Internet</span><span>信息服务器</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>00&nbsp;U&nbsp;Internet</span><span>信息服务器</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>[2B]&nbsp;U&nbsp;Lotus&nbsp;Notes</span><span>服务器</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>IRISMULTICAST&nbsp;[2F]&nbsp;G&nbsp;Lotus&nbsp;Notes</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>IRISNAMESERVER&nbsp;[33]&nbsp;G&nbsp;Lotus&nbsp;Notes</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Forte_$ND800ZA&nbsp;[20]&nbsp;U&nbsp;DCA&nbsp;Irmalan</span><span>网关服务</span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:宋体;font-size:10.5000pt;"> <span>Unique&nbsp;(U):&nbsp;</span><span>该名字可能只有一个分配给它的</span><span>IP</span><span>地址。在网络设备上，一个要注册的名字 </span></span><span style="font-family:宋体;font-size:10.5000pt;"></span>
+	</p>
+	<p class="MsoNormal">
+		<span style="font-family:Calibri;font-size:10.5000pt;">该命令使用<span>TCP/IP</span><span>上的</span><span>NetBIOS</span><span>显示协议统计和当前</span><span>TCP/IP</span><span>连接，使用这个命令你可以得到远程主机的</span><span>NETBIOS</span><span>信息，比如用户名、所属的工作组、网卡的</span><span>MAC</span><span>地址等。在此我们就有必要了解几个基本的参数。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> <span>-a&nbsp;</span><span>使用这个参数，只要你知道了远程主机的机器名称，就可以得到它的</span><span>NETBIOS</span><span>信息（下同）。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> <span>-A&nbsp;</span><span>这个参数也可以得到远程主机的</span><span>NETBIOS</span><span>信息，但需要你知道它的</span><span>IP</span><span>。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> <span>-n&nbsp;</span><span>列出本地机器的</span><span>NETBIOS</span><span>信息。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> 当得到了对方的<span>IP</span><span>或者机器名的时候，就可以使用</span><span>nbtstat</span><span>命令来进一步得到对方的信息了，这又增加了我们入侵的保险系数。&nbsp;　　&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span>
+	</p>
+<br />
+</span>
+</p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151221/1565.html">cisco常用的任务命令</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151218/1560.html">ping命令-t,-l,-n</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

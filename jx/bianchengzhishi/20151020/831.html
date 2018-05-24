@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C语言例子大全一 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","831","0","attach");
+		Cms.viewCount("","831");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151020/831.html" title="C语言例子大全一">C语言例子大全一</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-10-20 19:17:45</span>
+     </h3>
+     <p><img alt="" src="/u/cms/www/201510/20184832skd6.jpg" style="height: 220px; width: 330px" /></p>
+<p><font color="#990000">【程序1】</font><br />
+	题目：有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？<br />
+	1.程序分析：可填在百位、十位、个位的数字都是1、2、3、4。组成所有的排列后再去<br />
+	　　　　　　掉不满足条件的排列。<br />
+	2.程序源代码：<br />
+	main()<br />
+	{<br />
+	int i,j,k;<br />
+	printf(&quot;\n&quot;);<br />
+	for(i=1;i&lt;5;i++)　　　　／*以下为三重循环*/<br />
+	　for(j=1;j&lt;5;j++)　<br />
+	　　for (k=1;k&lt;5;k++)<br />
+	　　　{<br />
+	　　　　if (i!=k&amp;&amp;i!=j&amp;&amp;j!=k) 　　　/*确保i、j、k三位互不相同*/<br />
+	　　　　printf(&quot;%d,%d,%d\n&quot;,i,j,k);<br />
+	　　　}<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序2】</font><br />
+	题目：企业发放的奖金根据利润提成。利润(I)低于或等于10万元时，奖金可提10%；利润高<br />
+	　　　于10万元，低于20万元时，低于10万元的部分按10%提成，高于10万元的部分，可可提<br />
+	　　　成7.5%；20万到40万之间时，高于20万元的部分，可提成5%；40万到60万之间时高于<br />
+	　　　40万元的部分，可提成3%；60万到100万之间时，高于60万元的部分，可提成1.5%，高于<br />
+	　　　100万元时，超过100万元的部分按1%提成，从键盘输入当月利润I，求应发放奖金总数？<br />
+	1.程序分析：请利用数轴来分界，定位。注意定义时需把奖金定义成长整型。　　　　　　<br />
+	2.程序源代码：<br />
+	main()<br />
+	{<br />
+	long int i;<br />
+	int bonus1,bonus2,bonus4,bonus6,bonus10,bonus;<br />
+	scanf(&quot;%ld&quot;,&amp;i);<br />
+	bonus1=100000*0.1;bonus2=bonus1+100000*0.75;<br />
+	bonus4=bonus2+200000*0.5;<br />
+	bonus6=bonus4+200000*0.3;<br />
+	bonus10=bonus6+400000*0.15;<br />
+	　if(i&lt;=100000)<br />
+	　　bonus=i*0.1;<br />
+	　else if(i&lt;=200000)<br />
+	　　　　　bonus=bonus1+(i-100000)*0.075;<br />
+	　　　　else if(i&lt;=400000)<br />
+	　　　　　　　　bonus=bonus2+(i-200000)*0.05;<br />
+	　　　　　　　else if(i&lt;=600000)<br />
+	　　　　　　　　　　　bonus=bonus4+(i-400000)*0.03;<br />
+	　　　　　　　　　　else if(i&lt;=1000000)<br />
+	　　　　　　　　　　　　　　bonus=bonus6+(i-600000)*0.015;<br />
+	　　　　　　　　　　　　　else<br />
+	　　　　　　　　　　　　　　bonus=bonus10+(i-1000000)*0.01;<br />
+	printf(&quot;bonus=%d&quot;,bonus);<br />
+	}<br />
+	<br />
+	==============================================================<br />
+	<font color="#990000">【程序3】</font><br />
+	题目：一个整数，它加上100后是一个完全平方数，再加上168又是一个完全平方数，请问该数是多少？<br />
+	1.程序分析：在10万以内判断，先将该数加上100后再开方，再将该数加上268后再开方，如果开方后<br />
+	　　　　　　的结果满足如下条件，即是结果。请看具体分析：<br />
+	2.程序源代码：<br />
+	#include &quot;math.h&quot;<br />
+	main()<br />
+	{<br />
+	long int i,x,y,z;<br />
+	for (i=1;i&lt;100000;i++)<br />
+	　{ x=sqrt(i+100); 　　/*x为加上100后开方后的结果*/<br />
+	　　y=sqrt(i+268); 　　/*y为再加上168后开方后的结果*/<br />
+	　　　if(x*x==i+100&amp;&amp;y*y==i+268)/*如果一个数的平方根的平方等于该数，这说明此数是完全平方数*/<br />
+	　　　　printf(&quot;\n%ld\n&quot;,i);<br />
+	　}<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序4】</font><br />
+	题目：输入某年某月某日，判断这一天是这一年的第几天？<br />
+	1.程序分析：以3月5日为例，应该先把前两个月的加起来，然后再加上5天即本年的第几天，特殊<br />
+	　　　　　　情况，闰年且输入月份大于3时需考虑多加一天。<br />
+	2.程序源代码：<br />
+	main()<br />
+	{<br />
+	int day,month,year,sum,leap;<br />
+	printf(&quot;\nplease input year,month,day\n&quot;);<br />
+	scanf(&quot;%d,%d,%d&quot;,&amp;year,&amp;month,&amp;day);<br />
+	switch(month)/*先计算某月以前月份的总天数*/<br />
+	{<br />
+	　case 1:sum=0;break;<br />
+	　case 2:sum=31;break;<br />
+	　case 3:sum=59;break;<br />
+	　case 4:sum=90;break;<br />
+	　case 5:sum=120;break;<br />
+	　case 6:sum=151;break;<br />
+	　case 7:sum=181;break;<br />
+	　case 8:sum=212;break;<br />
+	　case 9:sum=243;break;<br />
+	　case 10:sum=273;break;<br />
+	　case 11:sum=304;break;<br />
+	　case 12:sum=334;break;<br />
+	　default:printf(&quot;data error&quot;);break;<br />
+	}<br />
+	sum=sum+day; 　/*再加上某天的天数*/<br />
+	　if(year%400==0||(year%4==0&amp;&amp;year%100!=0))/*判断是不是闰年*/<br />
+	　　leap=1;<br />
+	　else<br />
+	　　leap=0;<br />
+	if(leap==1&amp;&amp;month&gt;2)/*如果是闰年且月份大于2,总天数应该加一天*/<br />
+	sum++;<br />
+	printf(&quot;It is the %dth day.&quot;,sum);}<br />
+	==============================================================<br />
+	<font color="#990000">【程序5】</font><br />
+	题目：输入三个整数x,y,z，请把这三个数由小到大输出。<br />
+	1.程序分析：我们想办法把最小的数放到x上，先将x与y进行比较，如果x&gt;y则将x与y的值进行交换，<br />
+	　　　　　　然后再用x与z进行比较，如果x&gt;z则将x与z的值进行交换，这样能使x最小。<br />
+	2.程序源代码：<br />
+	main()<br />
+	{<br />
+	int x,y,z,t;<br />
+	scanf(&quot;%d%d%d&quot;,&amp;x,&amp;y,&amp;z);<br />
+	if (x&gt;y)<br />
+	{t=x;x=y;y=t;} /*交换x,y的值*/<br />
+	if(x&gt;z)<br />
+	{t=z;z=x;x=t;}/*交换x,z的值*/<br />
+	if(y&gt;z)<br />
+	{t=y;y=z;z=t;}/*交换z,y的值*/<br />
+	printf(&quot;small to big: %d %d %d\n&quot;,x,y,z);<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序6】</font><br />
+	题目：用*号输出字母C的图案。<br />
+	1.程序分析：可先用&#39;*&#39;号在纸上写出字母C，再分行输出。<br />
+	2.程序源代码：<br />
+	#include &quot;stdio.h&quot;<br />
+	main()<br />
+	{<br />
+	printf(&quot;Hello C-world!\n&quot;);<br />
+	printf(&quot; ****\n&quot;);<br />
+	printf(&quot; *\n&quot;);<br />
+	printf(&quot; * \n&quot;);<br />
+	printf(&quot; ****\n&quot;);<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序7】</font><br />
+	题目：输出特殊图案，请在c环境中运行，看一看，Very Beautiful!<br />
+	1.程序分析：字符共有256个。不同字符，图形不一样。　　　　　　<br />
+	2.程序源代码：<br />
+	#include &quot;stdio.h&quot;<br />
+	main()<br />
+	{<br />
+	char a=176,b=219;<br />
+	printf(&quot;%c%c%c%c%c\n&quot;,b,a,a,a,b);<br />
+	printf(&quot;%c%c%c%c%c\n&quot;,a,b,a,b,a);<br />
+	printf(&quot;%c%c%c%c%c\n&quot;,a,a,b,a,a);<br />
+	printf(&quot;%c%c%c%c%c\n&quot;,a,b,a,b,a);<br />
+	printf(&quot;%c%c%c%c%c\n&quot;,b,a,a,a,b);}<br />
+	==============================================================<br />
+	<font color="#990000">【程序8】</font><br />
+	题目：输出9*9口诀。<br />
+	1.程序分析：分行与列考虑，共9行9列，i控制行，j控制列。<br />
+	2.程序源代码：<br />
+	#include &quot;stdio.h&quot;<br />
+	main()<br />
+	{<br />
+	　int i,j,result;<br />
+	　printf(&quot;\n&quot;);<br />
+	　for (i=1;i&lt;10;i++)<br />
+	　　{ for(j=1;j&lt;10;j++)<br />
+	　　　　{<br />
+	　　　　　result=i*j;<br />
+	　　　　　printf(&quot;%d*%d=%-3d&quot;,i,j,result);/*-3d表示左对齐，占3位*/<br />
+	　　　　}<br />
+	　　　printf(&quot;\n&quot;);/*每一行后换行*/<br />
+	　　}<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序9】</font><br />
+	题目：要求输出国际象棋棋盘。<br />
+	1.程序分析：用i控制行，j来控制列，根据i+j的和的变化来控制输出黑方格，还是白方格。<br />
+	2.程序源代码：<br />
+	#include &quot;stdio.h&quot;<br />
+	main()<br />
+	{<br />
+	int i,j;<br />
+	for(i=0;i&lt;8;i++)<br />
+	　{<br />
+	　　for(j=0;j&lt;8;j++)<br />
+	　　　if((i+j)%2==0)<br />
+	　　　　printf(&quot;%c%c&quot;,219,219);<br />
+	　　　else<br />
+	　　　　printf(&quot; &quot;);<br />
+	　　　printf(&quot;\n&quot;);<br />
+	　}<br />
+	}<br />
+	==============================================================<br />
+	<font color="#990000">【程序10】</font><br />
+	题目：打印楼梯，同时在楼梯上方打印两个笑脸。<br />
+	1.程序分析：用i控制行，j来控制列，j根据i的变化来控制输出黑方格的个数。<br />
+	2.程序源代码：<br />
+	#include &quot;stdio.h&quot;<br />
+	main()<br />
+	{<br />
+	int i,j;<br />
+	printf(&quot;\1\1\n&quot;);/*输出两个笑脸*/<br />
+	for(i=1;i&lt;11;i++)<br />
+	　{<br />
+	　for(j=1;j&lt;=i;j++)<br />
+	　 　printf(&quot;%c%c&quot;,219,219);<br />
+	　printf(&quot;\n&quot;);<br />
+	　}<br />
+	}</p>
+<p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151020/832.html">C语言例子大全二</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151020/830.html">C语言预处理和文件</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

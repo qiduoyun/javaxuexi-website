@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C++求解斐波那契( Fibonacci)数列的前10项为1，1，2，3，5， - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1576","0","attach");
+		Cms.viewCount("","1576");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151221/1576.html" title="C++求解斐波那契( Fibonacci)数列的前10项为1，1，2，3，5，">C++求解斐波那契( Fibonacci)数列的前10项为1...</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-21 22:16:08</span>
+     </h3>
+     <p>
+	<span style="font-size:16px;"><strong>C++求解斐波那契( Fibonacci)数列的前10项为1，1，2，3，5，8，13，21，34，55。试求解斐波那契（Fibonacci）数列的第n项</strong></span>
+</p>
+<p>
+	①用递归方法实现Fibonacci数列，递归方程是：
+</p>
+<p>
+	<img src="data:image/png;base64,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" alt="" /><br />
+&nbsp;②用非递归方法实现Fibonacci数列<br />
+<pre class="prettyprint lang-cpp">    int Fibonacci(int n)
+    {
+    iiu Fib[100];
+    Fib[1]=1；
+    Fib[2]=1；
+    for (inti=3：i&lt;=n；i++)
+    Fib[i]= Fib[i-1]+ Fib[i一2]：
+    retum Fib[n];
+    }</pre>
+<br />
+&nbsp;&nbsp;&nbsp; 注释：数蛆Fib用以存放Fibon acci数列的前两项，数组大小应该保证能取到Fibonacci<br />
+&nbsp;&nbsp;&nbsp; 数列的第n项。
+</p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151221/1577.html">C++实现有4个人坐在一起，......。请问第 4个人有多大</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151221/1574.html">The request sent by the client was syntactically incorrect</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

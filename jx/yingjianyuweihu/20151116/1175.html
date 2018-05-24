@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>构建DNS服务器 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1175","0","attach");
+		Cms.viewCount("","1175");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/yingjianyuweihu/20151116/1175.html" title="构建DNS服务器">构建DNS服务器</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-16 19:17:01</span>
+     </h3>
+     <p>在用TCP/IP协议族架设的网络中，每一个节点都有一个唯一的IP地址，用来作为它们唯一的标志。然而，如果让使用者来记住这些毫无记忆规律的IP地址将是不可想象的。人们就需要一种有记忆规律的字符串来作为唯一标记节点的名字。<br />
+	然而，虽然符号名对于人来说是极为方便的，但是在计算机上实现却不是那么方便的。为了解决这个需求，应运而生了一个域名服务系统DNS，它运行在TCP协议之上，负责将字符名&mdash;&mdash;域名转换成实际相对应的IP地址。这个过程就是域名解析，负责域名解析的机器就叫域名服务器。<br />
+	<br />
+	8.1 域名解析的方法<br />
+	<br />
+	8.1.1 最早的域名解析方法<br />
+	最简单的主机名解析方法是，在一个文件中记录所有主机名及与其对应的IP地址，并保证该文件中主机名的唯一性，通过检索文件中的便可以完成主机名的解析。采用这种最简单的解决方法有其历史原因：<br />
+	在整个70年代，APRANET只是一个小规模的，由类似的数百台主机组成的团体。于是为了解决主机名解析的问题，将连接到ARPANET上每台主机的名字与对应的地址都保存在HOSTS.TXT文件中。这样每增加一台机器，就必须修改HOSTS.TXT文件一次。随着网络的不断发展，网络中的主机数量爆炸性地增加，这种域名解析的方法已经无法适应新的解析需要。<br />
+	<br />
+	8.1.2 分布式的域名服务器<br />
+	这种方法，我们已经在基础篇的第六章中有了详细的叙述，在此就不再重复了。在这种分布式的域名服务器体系中，每一台域名服务器（DNS）负责解析属于自己的这一部分主机的域名。<br />
+	一般说来，如果你所处在公司或组织所拥有的主机并不多，一般是将域名的解析工作交给自己的ISP的域名服务器来完成。而如果你所在组织拥有的主机比较多，我们就可以组建自己的域名服务器负责解析你所在组织的主机。<br />
+	<br />
+	8.2 域名服务器建立实例<br />
+	<br />
+	8.2.1 实例环境<br />
+	假设我们需要建立一台应用于以下情况的一个企业主域名服务器。<br />
+	1． 拥有一个C类网段地址，为202.101.55.0<br />
+	2． 企业域名注册为company.com。<br />
+	3． 域名服务器的IP定为202.101.55.55，主机名为dns.company.com。它同时充当Proxy.<br />
+	4． 企业网通过路由器与Internet连接。<br />
+	5． 要解析的服务器有：<br />
+	www.company.com (202.101.55.1) Web服务器<br />
+	mail.company.com (202.101.55.2) E-Mail服务器<br />
+	<br />
+	8.2.2 安装前的准备工作<br />
+	首先要保证在作为系中统有/etc/resolv.conf和/etc/hosts.conf这两个文件。/etc/resolv.conf文件中内容如下所示：<br />
+	domain compay.com<br />
+	nameserver 202.101.55.55<br />
+	其中第一行指出对于任何希望连到它上面的主机应该搜寻的域。而第二行指出了在哪个地址可以找到需要的域名服务大。/etc/hosts.conf的内容如下所示：<br />
+	order hosts,bind<br />
+	multi on<br />
+	这里的设置告诉主机名称先在/etc/hosts文件中搜索，然后再查询域名服务器。<br />
+	<br />
+	8.2.3 定义文件/etc/named.boot<br />
+	要使LINUX系统完成域名服务器的功能，则需要运行一个named的服务进程。这个服务进程可以在安装LINUX时选中。<br />
+	named启动时需要读取一个初始化文件&mdash;&mdash;/etc/named.boot，这个文件是named的基本配置文件。它并不包含任何DNS数据，针对前面的假定环境，我们要在这个文件中写入：<br />
+	diretory /etc/named<br />
+	primary company.com db.company<br />
+	primary 0.0.127.IN-ADDR.ARPA db.127.0.0<br />
+	primary 55.101.202.IN-ADDR.ARPA db.202.101.55<br />
+	cache . db.cache<br />
+	下面我们逐行讲解这个文件中的内容：<br />
+	1) 在第一行中我们指定named从/etc/named目录下读取DNS数据文件。这个目录可以自行指定并创建，指定后将所有的DNS数据文件均存放在这个目录下；<br />
+	2) 第二行指定named作为company.com的主域名服务器，db.company文件中包含了所有*.my.com形式的域名的解析数据。<br />
+	3) 第三行则指定named作为127.0.0网段（本地loopback）地址的转换主服务器。其中db.127.0.0文件中包含了所有127.0.0.*形式的地址到域名的转换数据。<br />
+	4) 第四行指定named作为202.101.55网段地址转换主服务器，db.202.101.55文件中包含了所有以202.101.55.*形式的地址到域名的转换数据。<br />
+	5) 最后一行指定named从db.cache文件中获得Internet的顶层&ldquo;根&rdquo;服务器地址。<br />
+	要说明的是，这些数据文件的名称均是自行决定的。<br />
+	<br />
+	8.2.3 建立正向域名转换数据文件db.company<br />
+	根据/etc/named.boot文件中的定义，我们在/etc/named目录下建立文件db.company，并且在其中写入所有在company.com域内的主机节点。根据前面假定的环境，可以写入：<br />
+	<br />
+	@ IN SOA dns.company.com. root.dns.company.com.(<br />
+	200002011 ；文件版本号<br />
+	28800 ；刷新时间（秒）<br />
+	7200 ；重试时间（秒）<br />
+	3600000 ；终止时间（秒）<br />
+	86400） ；TTL生存时间（秒）<br />
+	IN NS dns.company.com<br />
+	www IN A 202.101.55.1<br />
+	email IN A 202.101.55.2<br />
+	proxy IN CNAME dns<br />
+	<br />
+	下面我们就逐句地理解这里的配置。<br />
+	1． SOA是主服务器设定文件中一定要设定的命令，我们通常将它放在文件的第一行。<br />
+	1） 最前面的符号&ldquo;@&rdquo;代表目前所管辖的域。<br />
+	2） 接着的&ldquo;IN&rdquo;代表地址类别，这里就是固定使用&ldquo;IN&rdquo;的。<br />
+	3） 接下来就是命令SOA。<br />
+	4） 接下来填入域名服务器，记住由于DNS数据文件的特殊格式规定，在最后一定要加上&ldquo;&middot;&rdquo;，在这个例子中，我们填入域名服务器：&ldquo;dns.company.com.&rdquo;<br />
+	5） 接下来是域名服务器管理员的E-MAIL地址，但要注意的是，E-Mail地址中的分隔符&ldquo;@&rdquo;在这里用&ldquo;&middot;&rdquo;来代替，在最后也要加上&ldquo;。&rdquo;，在这里，我们相应写入：&ldquo;root.dns.company.com.&rdquo;<br />
+	6） 接下来在括号内填上各种选项：<br />
+	文件版本号：当你修改这个文件的内容时，也要修改这个版本序列号。以此来区分是否有更新。<br />
+	更新时间：指定二级服务器向主服务器拷贝数据的更新时间周期。<br />
+	重试时间：指定二级服务器在更新出现通信故障时的重试时间。<br />
+	终止时间：指定二级服务器重新执行更新动作后仍然无法完成更新任务而终止更新的时间。<br />
+	生存时间：指定当域名服务器询问某个域名和其IP地址后，在域名服务器上放置的时间。<br />
+	注：二级服务器所设定的域名服务器是主服务器的备份主机。<br />
+	2． 在第二行中，我们用NS命令指定这个域的域名服务器。在这里我们指出这个域的域名服务器是&ldquo;dns.company.com&rdquo;。<br />
+	3． 接下来的两行我们使用A命令来指定域名与IP地址的对应关系。我们将Web服务器的域名www.company.com与其IP地址202.101.55.1对应起来；将E-Mail服务器的域名mail.company.com与其IP地址202.101.55.2对应起来。<br />
+	4． 最后一行，我们使用了CNAME命令为dns.company.com指定了另一个域名以供使用：proxy.company.com。<br />
+	<br />
+	8.2.3 建立反向域名转换数据文件db.127.0.0和db.202.101.55<br />
+	反向域名转换数据文件用来提供IP地址查询相应的DNS主机名，每个网段分别有一个数据文件。<br />
+	1． 网段127.0.0通常只有一个地址，那就是127.0.0.1 loopback地址。所以我们在db.127.0.0中写入的内容是：<br />
+	<br />
+	@ IN SOA dns.company.com. root.dns.company.com.(<br />
+	200002011 ；文件版本号<br />
+	28800 ；刷新时间（秒）<br />
+	7200 ；重试时间（秒）<br />
+	3600000 ；终止时间（秒）<br />
+	86400） ；TTL生存时间（秒）<br />
+	IN NS dns.company.com<br />
+	1 IN PTR localhost<br />
+	<br />
+	前面两名相信读者已经不会陌生，最后一句我们使用PTR命令让配置文件中的主机可以使用IP地址来知道所对应的域名。<br />
+	最前面的1代表127.0.0.1，对应的域名就是localhost。<br />
+	2．网段202.101.55就可能会存在更多的记录，前面假定环境下的设置应是：<br />
+	<br />
+	@ IN SOA dns.company.com. root.dns.company.com.(<br />
+	200002011 ；文件版本号<br />
+	28800 ；刷新时间（秒）<br />
+	7200 ；重试时间（秒）<br />
+	3600000 ；终止时间（秒）<br />
+	86400） ；TTL生存时间（秒）<br />
+	IN NS dns.company.com<br />
+	1 IN PTR www<br />
+	2 IN PTR email<br />
+	55 IN PTR dns<br />
+	55 IN PTR proxy<br />
+	<br />
+	8.2.4 获得db.cache文件<br />
+	在LINUX系统中通常在提供了一个named.ca的文件，该文件中Internet的顶层域名服务器，但是这个文件通常会发生变化，所以建议最好从Internet上下载最新的版本。该文件可以通过匿名FTP从ftp.rs.internic.net/domain下载，文件名是named.boot。将它拷贝一份为db.cache就可以了。<br />
+	<br />
+	8.3 测试域名服务器<br />
+	<br />
+	8.3.1 使用nslookup测试<br />
+	nslookup命令的功能是查询域名服务器中的数据资料。下例就是使用它来测试域名服务器是否架设成功，其中斜体字代表要输入的内容。<br />
+	<br />
+	# nslookup<br />
+	Default server:dns.company.com<br />
+	Address:202.101.55.55 ；能出现这些信息代表成功<br />
+	&gt; www<br />
+	server:dns.company.com<br />
+	Address:202.101.55.1<br />
+	<br />
+	8.3.2 使用ping测试<br />
+	还有一种更简单的测试方法，那就是用ping命令，如果成功将显示：<br />
+	<br />
+	# ping www.company.com<br />
+	<br />
+	Ping www.company.com(202.101.55.1);56 data bytes<br />
+	64 bytes from 202.101.55.1:icmp_seq=0 ttl=255 time=1.3ms<br />
+	64 bytes from 202.101.55.1:icmp_seq=1 ttl=255 time=0.6ms<br />
+	64 bytes from 202.101.55.1:icmp_seq=2 ttl=255 time=0.6ms<br />
+	&hellip;&hellip;<br />
+	<br />
+	8.4 小技巧<br />
+	安装好域名服务器后，在内部使用域名进行远程连接时，会发现速度非常慢。其实只要/etc/hosts中加上所有内部的机器的域名就可以了。<br />
+	&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/yingjianyuweihu/20151116/1176.html">在Linux下配置网卡</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/yingjianyuweihu/20151116/1174.html">在Linux中共享Windows系统资源</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

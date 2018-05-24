@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>华为路由配置下 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","808","0","attach");
+		Cms.viewCount("","808");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151020/808.html" title="华为路由配置下">华为路由配置下</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-10-20 13:48:02</span>
+     </h3>
+     </p>
+<p># 使用ping命令验证连通性。<br />
+	[SwitchA] ping 1.1.3.1<br />
+	PING 1.1.3.1: 56 data bytes, press CTRL_C to break<br />
+	Reply from 1.1.3.1: bytes=56 Sequence=1 ttl=254 time=62 ms<br />
+	Reply from 1.1.3.1: bytes=56 Sequence=2 ttl=254 time=63 ms<br />
+	Reply from 1.1.3.1: bytes=56 Sequence=3 ttl=254 time=63 ms<br />
+	Reply from 1.1.3.1: bytes=56 Sequence=4 ttl=254 time=62 ms<br />
+	Reply from 1.1.3.1: bytes=56 Sequence=5 ttl=254 time=62 ms<br />
+	--- 1.1.3.1 ping statistics ---<br />
+	5 packet(s) transmitted<br />
+	5 packet(s) received<br />
+	0.00% packet loss<br />
+	round-trip min/avg/max = 62/62/63 ms<br />
+	# 使用Tracert命令验证连通性。<br />
+	[SwitchA] tracert 1.1.3.1<br />
+	traceroute to 1.1.3.1(1.1.3.1), max hops: 30 ,packet length: 40,press CTRL_C to break<br />
+	1 1.1.4.2 31 ms 32 ms 31 ms<br />
+	2 1.1.4.6 62 ms 63 ms 62 ms<br />
+	&nbsp;</p>
+<p>&nbsp;</p>
+<p>Ospf+vrrp组网实验</p>
+<p>配置思路<br />
+	采用VRRP主备备份实现网关冗余备份，配置思路如下：<br />
+	1. 配置各设备接口IP地址及路由协议（ospf），使各设备间网络层连通。<br />
+	2. 在SwitchA和SwitchB上配置VRRP备份组。其中，SwitchA上配置较高优先级和20秒抢占延时，作为Master设备承担流量转发；SwitchB上配置较低优先级，作为备用交换机，实现网关冗余备份。<br />
+	3. 在SwitchA、SwitchB和Switch上配置破环协议，防止环路的产生（此处以配置STP为例）。<br />
+	操作步骤<br />
+	步骤1 配置设备间的网络互连<br />
+	# 配置设备各接口的IP地址，以SwitchA为例。SwitchB和SwitchC的配置与之类似，<br />
+	这里不再赘述。<br />
+	&lt;HUAWEI&gt; system-view<br />
+	[HUAWEI] sysname SwitchA<br />
+	[SwitchA] vlan batch 100 300<br />
+	[SwitchA] interface gigabitethernet 0/0/1<br />
+	[SwitchA-GigabitEthernet0/0/1] port link-type access<br />
+	[SwitchA-GigabitEthernet0/0/1] port default vlan 300<br />
+	[SwitchA-GigabitEthernet0/0/1] quit<br />
+	&nbsp;</p>
+<p>[SwitchA] interface gigabitethernet 0/0/2<br />
+	[SwitchA-GigabitEthernet0/0/2] ] port link-type trunk<br />
+	[SwitchA-GigabitEthernet0/0/2] port trunk allow-pass vlan all<br />
+	[SwitchA-GigabitEthernet0/0/2] quit<br />
+	[SwitchA] interface gigabitethernet 0/0/5<br />
+	[SwitchA-GigabitEthernet0/0/5] port link-type trunk<br />
+	[SwitchA-GigabitEthernet0/0/5] port trunk allow-pass vlan all<br />
+	[SwitchA-GigabitEthernet0/0/5]quit<br />
+	[SwitchA] interface vlanif 100<br />
+	[SwitchA-Vlanif100] ip address 10.1.1.1 24<br />
+	[SwitchA-Vlanif100] quit<br />
+	[SwitchA] interface vlanif 300<br />
+	[SwitchA-Vlanif300] ip address 192.168.1.1 24<br />
+	[SwitchA-Vlanif300] quit</p>
+<p># 配置Switch。<br />
+	&lt;HUAWEI&gt; system-view<br />
+	[HUAWEI] sysname Switch<br />
+	[Switch] vlan 100<br />
+	[Switch-vlan10] quit<br />
+	[Switch] interface gigabitethernet 0/0/1<br />
+	[Switch-GigabitEthernet0/0/1] port link-type trunk<br />
+	[Switch-GigabitEthernet0/0/1] port trunk allow-pass vlan all<br />
+	[Switch-GigabitEthernet0/0/1] quit<br />
+	[Switch] interface gigabitethernet 0/0/2<br />
+	[Switch-GigabitEthernet0/0/2] port link-type trunk<br />
+	[Switch-GigabitEthernet0/0/2] port trunk allow-pass vlan all<br />
+	[Switch-GigabitEthernet0/0/2] quit<br />
+	Switch] interface gigabitethernet 0/0/3<br />
+	[Switch-GigabitEthernet0/0/2] port link-type access<br />
+	[Switch-GigabitEthernet0/0/2] port default vlan 100<br />
+	[Switch-GigabitEthernet0/0/2] quit<br />
+	配置SwitchA、SwitchB和SwitchC间采用OSPF协议进行互连。SwitchA为例，SwitchB和SwitchC的配置与之类似，这里不再赘述。<br />
+	[SwitchA] ospf 1<br />
+	[SwitchA-ospf-1] area 0<br />
+	[SwitchA-ospf-1-area-0.0.0.0] network 10.1.1.0 0.0.0.255<br />
+	[SwitchA-ospf-1-area-0.0.0.0] network 192.168.1.0 0.0.0.255<br />
+	[SwitchA-ospf-1-area-0.0.0.0] quit<br />
+	[SwitchA-ospf-1] quit<br />
+	&nbsp;</p>
+<p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151020/809.html"> 网络名词解释</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151020/807.html">华为路由器配置上</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

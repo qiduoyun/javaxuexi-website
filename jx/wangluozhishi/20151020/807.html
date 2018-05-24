@@ -1,0 +1,485 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>华为路由器配置上 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","807","0","attach");
+		Cms.viewCount("","807");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151020/807.html" title="华为路由器配置上">华为路由器配置上</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-10-20 13:39:51</span>
+     </h3>
+     <p><img alt="" src="/u/cms/www/201510/191340190imw.png" /></p>
+<p>华为是目前主流路由之一，企业，网吧，商场，工厂由于网络接入架构复杂，所以需要可以配置的路由作为架构支撑，下面减少如何配置华为路由器</p>
+<p>以hr1220为例</p>
+<p>1、使用配置电缆将路由器的Console 口与终端COM 口进行物理连接<br />
+	2、通过Console 口从PC 登录路由器，实现对第一次上电的路由器进行配置和管理。</p>
+<p>&nbsp;设置端口通信参数，与路由器的缺省值保持一致<br />
+	在用户登录到路由器出现命令行提示符后，即进入命令行接口CLI（Command Line Interface）,命令行接口是用户与路由器进行交互的常用工具。当用户在输入命令行或进行配置业务时，可以使用在线帮助以获取在配置手册之外的实时帮助。<br />
+	在线帮助有完全帮助、部分帮助和命令行错误信息提示</p>
+<p>当用户输入命令时，如果不记得此命令的关键字或参数，可以使用命令行的完全帮助获取全部关键字或参数的提示。命令行的完全帮助可以通过以下三种方式获取。<br />
+	&ndash; 在任一命令视图下，键入&ldquo;?&rdquo;获取该命令视图下所有的命令及其简单描述。<br />
+	&lt;Huawei&gt; ?<br />
+	User view commands:<br />
+	arp-ping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARP-ping<br />
+	autosave&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Group&gt; autosave command group<br />
+	backup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Backup information<br />
+	cd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Change current directory<br />
+	Clock&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Specify the system clock<br />
+	...<br />
+	&ndash; 键入一命令，后接以空格分隔的&ldquo;?&rdquo;，如果该位置为关键字，则列出全部关键<br />
+	字及其简单描述。举例如下：<br />
+	[Huawei] interface ?<br />
+	Bridge-if&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bridge-if interface<br />
+	Cellular&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cellular interface<br />
+	其中&ldquo;Bridge-if&rdquo;、&ldquo;Cellular&rdquo;是关键字，&ldquo;Bridge-if interface&rdquo;和&ldquo;Cellular&nbsp;&nbsp; interface&rdquo;是对关键字的分别描述。<br />
+	&nbsp;</p>
+<p>键入一命令，后接以空格分隔的&ldquo;?&rdquo;，如果该位置为参数，则列出参数取值的说明和参数作用的描述。举例如下：</p>
+<p>[Huawei] ftp timeout ?<br />
+	integer&lt;U&gt;&lt;1-35791&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The value of FTP timeout (in minutes)<br />
+	[Huawei] ftp timeout 35 ?<br />
+	&lt;cr&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Please press ENTER to execute command<br />
+	[Huawei] ftp timeout 35</p>
+<p>其中，&ldquo;integer&lt;1-35791&gt;&rdquo;是参数取值的说明，&ldquo;The value of FTP timeout (in<br />
+	minutes)&rdquo;是对参数作用的简单描述，&lt;cr&gt;表示该位置无参数，在紧接着的下一<br />
+	个命令行该命令被复述，直接键入回车即可执行。当用户输入命令时，如果只记得此命令关键字的开头一个或几个字符，可以使用命令行的部分帮助获取以该字符串开头的所有关键字的提示。命令行的部分帮助可以通过以下三种方式获取。<br />
+	&ndash; 键入一字符串，其后紧接&ldquo;?&rdquo;，列出以该字符串开头的所有关键字。<br />
+	&lt;Huawei&gt; d?<br />
+	debugging &lt;Group&gt; debugging command group<br />
+	delete Delete a file<br />
+	dialer Dialer<br />
+	dir List files on a filesystem<br />
+	display Display information<br />
+	&ndash; 键入一命令，后接一字符串紧接&ldquo;?&rdquo;，列出命令以该字符串开头的所有关键字。<br />
+	&lt;Huawei&gt; display b?<br />
+	bfd Specify BFD(Bidirectional Forwarding Detection<br />
+	) configuration information<br />
+	bgp BGP information<br />
+	binding Display binding relation of profile<br />
+	bootp Bootstrap Protocol<br />
+	bridge &lt;Group&gt; bridge command group<br />
+	&ndash; 输入命令的某个关键字的前几个字母，按下&lt;tab&gt;键，可以显示出完整的关键字，前提是这几个字母可以唯一标示出该关键字，否则，连续按下&lt;tab&gt;键，可出现不同的关键字，用户可以从中选择所需要的关键字。<br />
+	这杯加电后检查① 检查软件版本<br />
+	&nbsp;display version<br />
+	&nbsp;display startup<br />
+	② 检查设备健康状态，显示CPU、内存利用率<br />
+	&nbsp;display health<br />
+	③ 检查单板状态 display device<br />
+	③ 检查风扇状态 display fan<br />
+	④ 检查电源状态 display power<br />
+	配置需求<br />
+	PC机的COM口与路由器的Console口相连。<br />
+	配置VTY0的优先级为3，对从VTY0登录的用户进行AAA验证，用户登录时需要输入用户名huawei&rdquo;，密码&ldquo;huawei&rdquo;。<br />
+	登录后，如果用户超过30分钟未对路由器进行操作，将断开与路由器的连接<br />
+	配置步骤<br />
+	1、路由器上配置VTY0的优先级为3，验证方式为aaa，断开连接时间为30分钟。<br />
+	&lt;HUAWEI&gt; system-view<br />
+	[HUAWEI] user-interface vty0<br />
+	[HUAWEI-ui-vty0] user privilege level 3<br />
+	[HUAWEI-ui-vty0] authentication-mode aaa<br />
+	[HUAWEI-ui-vty0] idle-timeout 30<br />
+	[HUAWEI-ui-vty0] quit<br />
+	2、配置用户名、密码和用户等级<br />
+	[HUAWEI] aaa<br />
+	[HUAWEI-aaa] local-user huawei password cipher huawei<br />
+	[HUAWEI-aaa] local-user huawei level 3<br />
+	3、配置本地用户的断开连接时间为30分钟。<br />
+	[HUAWEI-aaa] local-user huawei idle-time 30<br />
+	&nbsp;</p>
+<p>ssh配置方法</p>
+<p>配置思路：创建RSA本地密钥-创建用户名密码-开启SSH(stelnet)服务-配置VTY 远程登陆协议<br />
+	步骤1创建RSA如下：<br />
+	rsa local-key-pair create<br />
+	The key name will be: SSH Server_Host<br />
+	The range of public key size is (512 ~ 2048).<br />
+	NOTES: If the key modulus is greater than 512,<br />
+	it will take a few minutes.<br />
+	Input the bits in the modulus[default = 2048]:1024<br />
+	Generating keys...<br />
+	......................++++++++<br />
+	........................................................++++++++<br />
+	........+++++++++<br />
+	.....+++++++++<br />
+	步骤2 在服务器端创建SSH用户<br />
+	aaa<br />
+	local-user client password cipher hbhfadmin2011<br />
+	&nbsp;local-user client privilege level 15<br />
+	&nbsp;local-user client service-type telnet terminal ssh we<br />
+	&nbsp;</p>
+<p>配置思路：创建RSA本地密钥-创建用户名密码-开启SSH(stelnet)服务-配置VTY 远程登陆协议<br />
+	步骤3开启SSH(stelnet)服务<br />
+	stelnet server enable<br />
+	ssh user client<br />
+	ssh user client authentication-type password<br />
+	ssh user client service-type stelnet<br />
+	步骤4配置VTY 远程登陆协议<br />
+	user-interface vty 0 4<br />
+	&nbsp;authentication-mode aaa<br />
+	&nbsp;user privilege level 15<br />
+	&nbsp;protocol inbound ssh</p>
+<p>&nbsp;</p>
+<p>配置SwitchA上与SwitchB连接的端口类型及通过的VLAN。SwitchB配置与SwitchA类似，不再赘述。<br />
+	[SwitchA] interface gigabitethernet 0/0/3<br />
+	[SwitchA-GigabitEthernet0/0/3] port link-type trunk<br />
+	[SwitchA-GigabitEthernet0/0/3] port trunk allow-pass vlan 2 3<br />
+	<br />
+	完成！客户端可以用CRT 或其它 SSH 工具登陆</p>
+<p>&nbsp;配置SwitchA上与SwitchB连接的端口类型及通过的VLAN。SwitchB配置与SwitchA类似，不再赘述。<br />
+	[SwitchA] interface gigabitethernet 0/0/3<br />
+	[SwitchA-GigabitEthernet0/0/3] port link-type trunk<br />
+	[SwitchA-GigabitEthernet0/0/3] port trunk allow-pass vlan 2 3<br />
+	&nbsp;</p>
+<p>配置思路<br />
+	采用如下的思路配置GVRP：<br />
+	1. 使能GVRP功能，实现VLAN的动态注册。<br />
+	2. 公司A的所有交换机配置GVRP功能。<br />
+	3. 公司B的所有交换机配置GVRP功能并将与公司A相连的接口的注册模式配置。</p>
+<p>操作步骤<br />
+	步骤1 配置交换机SwitchA<br />
+	# 全局使能GVRP功能。<br />
+	&lt;HUAWEI&gt; system-view<br />
+	[HUAWEI] sysname SwitchA<br />
+	[SwitchA] gvrp<br />
+	# 配置接口为Trunk类型，并允许所有VLAN通过。<br />
+	[SwitchA] interface gigabitethernet 0/0/1<br />
+	[SwitchA-GigabitEthernet0/0/1] port link-type trunk<br />
+	[SwitchA-GigabitEthernet0/0/1] port trunk allow-pass vlan all<br />
+	[SwitchA-GigabitEthernet0/0/1] quit<br />
+	[SwitchA] interface gigabitethernet 0/0/2<br />
+	[SwitchA-GigabitEthernet0/0/2] port link-type trunk<br />
+	[SwitchA-GigabitEthernet0/0/2] port trunk allow-pass vlan all<br />
+	[SwitchA-GigabitEthernet0/0/2] quit<br />
+	使能接口的GVRP功能。<br />
+	[SwitchA] interface gigabitethernet 0/0/1<br />
+	[SwitchA-GigabitEthernet0/0/1] gvrp<br />
+	[SwitchA-GigabitEthernet0/0/1] quit<br />
+	[SwitchA] interface gigabitethernet 0/0/2<br />
+	[SwitchA-GigabitEthernet0/0/2] gvrp<br />
+	[SwitchA-GigabitEthernet0/0/2] quit<br />
+	SwitchB配置与SwitchA配置类似，这里不再赘述</p>
+<p>步骤2 配置交换机SwitchC<br />
+	# 创建VLAN101～VLAN200。<br />
+	&lt;HUAWEI&gt; system-view<br />
+	[HUAWEI] sysname SwitchC<br />
+	[SwitchC] vlan batch 101 to 200<br />
+	# 全局使能GVRP功能。<br />
+	[SwitchC] gvrp<br />
+	# 配置接口为Trunk类型，并允许所有VLAN通过。<br />
+	[SwitchC] interface gigabitethernet 0/0/1<br />
+	[SwitchC-GigabitEthernet0/0/1] port link-type trunk<br />
+	[SwitchC-GigabitEthernet0/0/1] port trunk allow-pass vlan all<br />
+	[SwitchC-GigabitEthernet0/0/1] quit<br />
+	&nbsp;</p>
+<p>[SwitchC] interface gigabitethernet 0/0/2<br />
+	[SwitchC-GigabitEthernet0/0/2] port link-type trunk<br />
+	[SwitchC-GigabitEthernet0/0/2] port trunk allow-pass vlan all<br />
+	[SwitchC-GigabitEthernet0/0/2] quit<br />
+	# 使能接口的GVRP功能。<br />
+	[SwitchC] interface gigabitethernet 0/0/1<br />
+	[SwitchC-GigabitEthernet0/0/1] gvrp<br />
+	[SwitchC-GigabitEthernet0/0/1] quit<br />
+	[SwitchC] interface gigabitethernet 0/0/2<br />
+	[SwitchC-GigabitEthernet0/0/2] gvrp<br />
+	[SwitchC-GigabitEthernet0/0/2] quit</p>
+<p>&nbsp;在SwitchA上使用命令display gvrp status，查看全局GVRP的使能情况，结果如下：<br />
+	&lt;SwitchA&gt; display gvrp statusInfo:GVRP is enabled<br />
+	在SwitchA上使用命令display gvrp statistics，查看接口的GVRP统计信息，其中包括：GVRP状态、GVRP注册失败次数、上一个GVRP数据单元源MAC地址和接口GVRP注册类型，结果如下：<br />
+	&lt;SwitchA&gt; display gvrp statistics<br />
+	GVRP statistics on port GigabitEthernet0/0/1<br />
+	GVRP status : Enabled<br />
+	GVRP registrations failed : 0<br />
+	GVRP last PDU origin : 0000-0000-0000<br />
+	GVRP registration type : Normal<br />
+	GVRP statistics on port GigabitEthernet0/0/2<br />
+	GVRP status : Enabled<br />
+	GVRP registrations failed : 0<br />
+	GVRP last PDU origin : 0000-0000-0000<br />
+	GVRP registration type : Normal<br />
+	SwitchB和SwitchC的查看方法与SwitchA类似，这里不再赘述。</p>
+<p>STP配置</p>
+<p>组网需求<br />
+	在一个复杂的网络中，网络规划者由于冗余备份的需要，一般都倾向于在设备之间部署多条物理链路，其中一条作主用链路，其他链路作备份。这样就难免会形成环形网络，若网络中存在环路，可能会引起广播风暴和MAC表项被破坏。网络规划者规划好网络后，可以在网络中部署STP协议预防环路。当网络中存在环路，STP通过阻塞某个端口以达到破除环路的目的。如图所示，当前网络中存在环路，SwitchA、SwitchB、SwitchC和SwitchD都运行STP，通过彼此交互信息发现网络中的环路，并有选择的对某个端口进行阻塞，最终将环形网络结构修剪成无环路的树形网络结构，从而防止报文在环形网络中不断循环，避免设备由于重复接收相同的报文造成处理能力下降。<br />
+	配置思路<br />
+	采用以下思路配置STP功能：<br />
+	1. 在处于环形网络中的交换设备上配置STP基本功能，包括：<br />
+	a. 配置环网中的设备生成树协议工作在STP模式。<br />
+	b. 配置根桥和备份根桥设备。<br />
+	c. 配置端口的路径开销值，实现将该端口阻塞。<br />
+	d. 使能STP，实现破除环路。<br />
+	说明<br />
+	与PC机相连的端口不用参与STP计算，建议将其去使能STP。</p>
+<p>操作步骤<br />
+	步骤1 配置STP基本功能<br />
+	1. 配置环网中的设备生成树协议工作在STP模式<br />
+	# 配置交换设备SwitchA的STP工作模式。<br />
+	&lt;HUAWEI&gt; system-view<br />
+	[HUAWEI] sysname SwitchA<br />
+	[SwitchA] stp mode stp<br />
+	# 配置交换设备SwitchB的STP工作模式。<br />
+	&lt;HUAWEI&gt; system-view<br />
+	[HUAWEI] sysname SwitchB<br />
+	[SwitchB] stp mode stp<br />
+	# 配置交换设备SwitchC的STP工作模式。<br />
+	&lt;HUAWEI&gt; system-view<br />
+	[HUAWEI] sysname SwitchC<br />
+	[SwitchC] stp mode stp<br />
+	# 配置交换设备SwitchD的STP工作模式。<br />
+	&lt;HUAWEI&gt; system-view<br />
+	[HUAWEI] sysname SwitchD<br />
+	[SwitchD] stp mode stp<br />
+	2. 配置根桥和备份根桥设备<br />
+	# 配置SwitchA为根桥。<br />
+	[SwitchA] stp root primary<br />
+	# 配置SwitchD为备份根桥。<br />
+	[SwitchD] stp root secondary<br />
+	3. 配置端口的路径开销值，实现将该端口阻塞<br />
+	说明l 端口路径开销值取值范围由路径开销计算方法决定，这里选择使用华为私有计算方法为例，配置将被阻塞端口的路径开销值为20000。<br />
+	l 同一网络内所有交换设备的端口路径开销应使用相同的计算方法。<br />
+	# 配置SwitchA的端口路径开销缺省值的计算方法为华为私有计算方法。<br />
+	[SwitchA] stp pathcost-standard legacy<br />
+	# 配置SwitchB的端口路径开销缺省值的计算方法为华为的私有计算方法。<br />
+	[SwitchB] stp pathcost-standard legacy<br />
+	# 配置SwitchC端口GigabitEthernet0/0/1端口路径开销值为20000。<br />
+	[SwitchC] stp pathcost-standard legacy<br />
+	[SwitchC] interface gigabitethernet 0/0/1<br />
+	[SwitchC-GigabitEthernet0/0/1] stp cost 20000<br />
+	[SwitchC-GigabitEthernet0/0/1] quit<br />
+	# 配置SwitchD的端口路径开销缺省值的计算方法为华为的私有计算方法。<br />
+	[SwitchD] stp pathcost-standard legacy<br />
+	&nbsp;</p>
+<p>&nbsp;使能STP，实现破除环路<br />
+	l 将与PC机相连的端口去使能STP<br />
+	# 配置SwitchB端口GigabitEthernet0/0/2的STP去使能。<br />
+	[SwitchB] interface gigabitethernet 0/0/2<br />
+	[SwitchB-GigabitEthernet0/0/2] stp disable<br />
+	[SwitchB-GigabitEthernet0/0/2] quit<br />
+	# 配置SwitchC端口GigabitEthernet0/0/2的STP去使能。<br />
+	[SwitchC] interface gigabitethernet 0/0/2<br />
+	[SwitchC-GigabitEthernet0/0/2] stp disable<br />
+	[SwitchC-GigabitEthernet0/0/2] quit<br />
+	l 设备全局使能STP<br />
+	# 设备SwitchA全局使能STP。<br />
+	[SwitchA] stp enable<br />
+	# 设备SwitchB全局使能STP。<br />
+	[SwitchB] stp enable<br />
+	# 设备SwitchC全局使能STP。<br />
+	[SwitchC] stp enable<br />
+	# 设备SwitchD全局使能STP。<br />
+	[SwitchD] stp enable<br />
+	步骤2 验证配置结果经过以上配置，在网络计算稳定后，执行以下操作，验证配置结果。# 在SwitchA上执行display stp brief命令，查看端口状态和端口的保护类型，结果如下：<br />
+	[SwitchA] display stp brief<br />
+	MSTID Port Role STP State Protection<br />
+	0 GigabitEthernet0/0/1 DESI FORWARDING NONE<br />
+	0 GigabitEthernet0/0/2 DESI FORWARDING NONE<br />
+	将SwitchA配置为根桥后，与SwitchB、SwitchD相连的端口GigabitEthernet0/0/2和GigabitEthernet0/0/1在生成树计算中被选举为指定端口。<br />
+	# 在SwitchB上执行display stp interface gigabitethernet 0/0/1 brief命令，查看端口GigabitEthernet0/0/1状态，结果如下：<br />
+	[SwitchB] display stp interface gigabitethernet 0/0/1 brief<br />
+	MSTID Port Role STP State Protection0 GigabitEthernet0/0/1 DESIFORWARDING NONE端口GigabitEthernet0/0/1在生成树选举中成为指定端口，处于Forwarding状态。<br />
+	# 在SwitchC上执行display stp brief命令，查看端口状态，结果如下：<br />
+	[SwitchC] display stp brief<br />
+	MSTID Port Role STP State Protection<br />
+	0 GigabitEthernet0/0/1 ALTE DISCARDING NONE<br />
+	0 GigabitEthernet0/0/3 ROOT FORWARDING NONE<br />
+	端口GigabitEthernet0/0/3在生成树选举中成为根端口，处于FORWARDING状态。<br />
+	端口GigabitEthernet0/0/1在生成树选举中成为Alternate端口，处于DISCARDING<br />
+	&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151020/808.html">华为路由配置下</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151020/805.html">路由器ipv4,ipv6</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>${title} - ${site.name}</title>
+	<link rel="stylesheet" href="/${res}/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/${res}/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="${resSys}/front.js" type="text/javascript"></script>
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("${base}","${content.id}","${content.attachments?size}","attach");
+		Cms.viewCount("${base}","${content.id}");
+		Cms.siteFlow("${base}", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+[#include "../include/xiangmu_header.html"/]
+
+<div style="width: 1100px;margin: 20px auto;border:1px solid #ccc;">
+
+	<div style="float:left;">
+		  <script type="text/javascript">
+				/*500*200 创建于 ‎2016‎年‎10‎月‎17‎日*/
+				var cpro_id = "u2790596";
+			</script>
+			<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+	  </div>
+	  <div style="float:right;">
+		<div>
+		<script type="text/javascript">
+		/*580*90 创建于 ‎2016‎年‎10‎月‎17‎日*/
+		var cpro_id = "u2790595";
+	</script>
+	<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+		</div>
+		<div style="margin-top:10px;">
+		<script type="text/javascript">
+		/*580*90 创建于 ‎2016‎年‎10‎月‎17‎日*/
+		var cpro_id = "u2790595";
+	</script>
+	<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+		</div>
+	  </div>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width:780px;float: left;background-color: #444;">
+
+
+	<embed title="${content.title!}" height="500" width="100%" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" flashvars="vcastr_file=${content.mediaPath!}" allowfullscreen="true" src="/${res}/img/flvplayer.swf">
+	</embed>
+
+	<div style="clear: both;"></div> 
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>    
+     <p></p>
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+
+  </div>
+  <div style="clear: both;"></div>
+</div>
+<div style="width: 1100px;margin: 0 auto;">
+	<h3><a href="${content.url}" title="${content.title}">${content.title}</a></h3>            
+	<span style="display: block;color: #888;font-size: 14px;">${content.author!'尼罗山'}    发布于    ${content.releaseDate}</span>
+  <div style="clear: both;"></div>	
+</div>
+
+
+[#include "../include/xiangmu_footer.html"/]
+
+
+</body>
+</html>

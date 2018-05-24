@@ -1,0 +1,684 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>动态 HTML(DHTML) 对象模型定义的事件 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1362","0","attach");
+		Cms.viewCount("","1362");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151203/1362.html" title="动态 HTML(DHTML) 对象模型定义的事件">动态 HTML(DHTML) 对象模型定义的事件</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-03 13:32:46</span>
+     </h3>
+     <p>动态 HTML(DHTML) 对象模型定义的事件</p>
+<blockquote>
+	<table class="clsStd">
+		<tbody>
+			<tr>
+				<td>
+					<a href="events/onabort.html">onabort</a></td>
+				<td>
+					当用户中断下载<span>图像</span>时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onactivate.html">onactivate</a></td>
+				<td>
+					当<span>对象</span>设置为<a href="properties/activeElement.html">活动元素</a>时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onafterprint.html">onafterprint</a></td>
+				<td>
+					<span>对象</span>所关联的文档打印或打印预览后立即在对象上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onafterupdate.html">onafterupdate</a></td>
+				<td>
+					当成功更新数据源对象中的关联对象后在数据绑定对象上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onbeforeactivate.html">onbeforeactivate</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="common/new.gif" width="21" /></td>
+				<td>
+					<span>对象</span>要被设置为<b>当前元素</b>前立即触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onbeforecopy.html">onbeforecopy</a></td>
+				<td>
+					当选中区复制到系统剪贴板之前在源对象触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onbeforecut.html">onbeforecut</a></td>
+				<td>
+					当选中区从文档中删除之前在源对象触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onbeforedeactivate.html">onbeforedeactivate</a></td>
+				<td>
+					在 <a href="properties/activeElement.html">activeElement</a> 从当前<span>对象</span>变为父文档其它对象之前立即触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onbeforeeditfocus.html">onbeforeeditfocus</a></td>
+				<td>
+					在包含于可编辑元素内的对象进入<span class="clsGLossary" title="被用户或方法所选中的显示的内容，以便可输入文本。激活区域通常被虚线包围。当用户按 Enter 键、单击拥有焦点的对象或双击对象时可导致对象进入用户界面(UI)激活状态。要以用户界面激活状态放置对象，文档或包含该对象的元素必须处于编辑模式。用户界面激活的对象也是当前对象。">用户界面激活</span>状态前或可编辑容器变成<span class="clsGlossary" title="显示用户选中的内容和缩放句柄。可使用对象的方法获取并修改选中区的 HTML 文本。元素的例子为选中包括图像、表格和任意绝对定位的元素中的控件。">控件选中区</span>前触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onbeforepaste.html">onbeforepaste</a></td>
+				<td>
+					在选中区从系统剪贴板粘贴到文档前在目标对象上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onbeforeprint.html">onbeforeprint</a></td>
+				<td>
+					<span>对象</span>的关联文档打印或打印预览前在对象上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onbeforeunload.html">onbeforeunload</a></td>
+				<td>
+					在页面将要被卸载前触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onbeforeupdate.html">onbeforeupdate</a></td>
+				<td>
+					当成功更新数据源对象中的关联对象前在数据绑定对象上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onblur.html">onblur</a></td>
+				<td>
+					在<span>对象</span>失去输入焦点时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onbounce.html">onbounce</a></td>
+				<td>
+					当 <a href="objects/MARQUEE.html">marquee</a> 对象的 <a href="properties/behavior.html">behavior</a> 属性设置为&ldquo;alternate&rdquo;且字幕的内容到达窗口一边时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/oncellchange.html">oncellchange</a></td>
+				<td>
+					在数据供应者中的数据变更时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onchange.html">onchange</a></td>
+				<td>
+					当对象或选中区的内容改变时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onclick.html">onclick</a></td>
+				<td>
+					在用户用鼠标左键单击<span>对象</span>时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/oncontextmenu.html">oncontextmenu</a></td>
+				<td>
+					在用户使用鼠标右键单击客户区打开上下文菜单时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/oncontrolselect.html">oncontrolselect</a></td>
+				<td>
+					当用户将要对该<span>对象</span>制作一个<span class="clsGlossary" title="显示用户选中的内容和缩放句柄。可使用对象的方法获取并修改选中区的 HTML 文本。元素的例子为选中包括图像、表格和任意绝对定位的元素中的控件。">控件选中区</span>时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/oncopy.html">oncopy</a></td>
+				<td>
+					当用户复制<span>对象</span>或选中区，将其添加到系统剪贴板上时在源元素上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/oncut.html">oncut</a></td>
+				<td>
+					当<span>对象</span>或选中区从文档中删除并添加到系统剪贴板上时在源元素上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondataavailable.html">ondataavailable</a></td>
+				<td>
+					每当异步传输数据的数据源对象的数据到达时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondatasetchanged.html">ondatasetchanged</a></td>
+				<td>
+					当数据源对象对应的数据集发生变更时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondatasetcomplete.html">ondatasetcomplete</a></td>
+				<td>
+					触发就表明数据源对象所有数据都可用。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondblclick.html">ondblclick</a></td>
+				<td>
+					当用户双击<span>对象</span>时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondeactivate.html">ondeactivate</a></td>
+				<td>
+					当 <b>activeElement</b> 从当前<span>对象</span>变为父文档其它对象时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondrag.html">ondrag</a></td>
+				<td>
+					当进行拖曳操作时在源对象上持续触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondragend.html">ondragend</a></td>
+				<td>
+					当用户在拖曳操作结束后释放鼠标时在源对象上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondragenter.html">ondragenter</a></td>
+				<td>
+					当用户拖曳<span>对象</span>到一个合法拖曳目标时在目标元素上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondragleave.html">ondragleave</a></td>
+				<td>
+					当用户在拖曳操作过程中将鼠标移出合法拖曳目标时在目标对象上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondragover.html">ondragover</a></td>
+				<td>
+					当用户拖曳<span>对象</span>划过合法拖曳目标时持续在目标元素上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondragstart.html">ondragstart</a></td>
+				<td>
+					当用户开始拖曳文本选中区或选中对象时在源对象上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/ondrop.html">ondrop</a></td>
+				<td>
+					当鼠标按钮在拖曳操作过程中释放时在目标对象上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onerror.html">onerror</a></td>
+				<td>
+					当<span>对象</span>装载过程中发生错误时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onerrorupdate.html">onerrorupdate</a></td>
+				<td>
+					更新数据源对象中的关联数据出错时在数据绑定对象上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onfilterchange.html">onfilterchange</a></td>
+				<td>
+					当可视滤镜更改状态或完成转换时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onfinish.html">onfinish</a></td>
+				<td>
+					当字幕循环完成后触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onfocus.html">onfocus</a></td>
+				<td>
+					当<span>对象</span>获得焦点时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onfocusin.html">onfocusin</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="common/new.gif" width="21" /></td>
+				<td>
+					当元素将要被设置为焦点之前触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onfocusout.html">onfocusout</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="common/new.gif" width="21" /></td>
+				<td>
+					在移动焦点到其它元素之后立即触发于当前拥有焦点的元素上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onhelp.html">onhelp</a></td>
+				<td>
+					当用户在浏览器为当前窗口时按 F1 键时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onkeydown.html">onkeydown</a></td>
+				<td>
+					当用户按下键盘按键时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onkeypress.html">onkeypress</a></td>
+				<td>
+					当用户按下字面键时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onkeyup.html">onkeyup</a></td>
+				<td>
+					当用户释放键盘按键时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onlayoutcomplete.html">onlayoutcomplete</a></td>
+				<td>
+					当打印或打印预览版面处理完成用来自于源文档的内容填充当前 <a href="/workshop/browser/hosting/printpreview/reference/behaviors/LayoutRect.html">LayoutRect</a> 对象时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onload.html">onload</a></td>
+				<td>
+					在浏览器完成对象的装载后立即触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onlosecapture.html">onlosecapture</a></td>
+				<td>
+					当<span>对象</span>失去鼠标捕捉时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onmousedown.html">onmousedown</a></td>
+				<td>
+					当用户用任何鼠标按钮单击<span>对象</span>时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onmouseenter.html">onmouseenter</a></td>
+				<td>
+					当用户将鼠标指针移动到对象内时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onmouseleave.html">onmouseleave</a></td>
+				<td>
+					当用户将鼠标指针移出<span>对象</span>边界时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onmousemove.html">onmousemove</a></td>
+				<td>
+					当用户将鼠标划过<span>对象</span>时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onmouseout.html">onmouseout</a></td>
+				<td>
+					当用户将鼠标指针移出<span>对象</span>边界时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onmouseover.html">onmouseover</a></td>
+				<td>
+					当用户将鼠标指针移动到<span>对象</span>内时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onmouseup.html">onmouseup</a></td>
+				<td>
+					当用户在鼠标位于<span>对象</span>之上时释放鼠标按钮时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onmousewheel.html">onmousewheel</a><img alt="Microsoft® Internet Explorer 6 新增" border="0" height="11" src="common/new.gif" width="21" /></td>
+				<td>
+					当鼠标滚轮按钮旋转时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onmove.html">onmove</a></td>
+				<td>
+					当<span>对象</span>移动时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onmoveend.html">onmoveend</a></td>
+				<td>
+					当<span>对象</span>停止移动时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onmovestart.html">onmovestart</a></td>
+				<td>
+					当<span>对象</span>开始移动时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onpaste.html">onpaste</a></td>
+				<td>
+					当用户粘贴数据以便从系统剪贴板向文档传送数据时在目标对象上触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onpropertychange.html">onpropertychange</a></td>
+				<td>
+					当在对象上发生<span>对象</span>上发生属性更改时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onreadystatechange.html">onreadystatechange</a></td>
+				<td>
+					当<span>对象</span>状态变更时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onreset.html">onreset</a></td>
+				<td>
+					当用户重置表单时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onresize.html">onresize</a></td>
+				<td>
+					当<span>对象</span>的大小将要改变时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onresizeend.html">onresizeend</a></td>
+				<td>
+					当用户更改完<a href="objects/obj_selection.html">控件选中区</a>中<span>对象</span>的尺寸时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onresizestart.html">onresizestart</a></td>
+				<td>
+					当用户开始更改控件选中区中<span>对象</span>的尺寸时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onrowenter.html">onrowenter</a></td>
+				<td>
+					触发就表明当前行已经在数据源中更改，对象上有可用的新数据值。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onrowexit.html">onrowexit</a></td>
+				<td>
+					当数据源控件更改<span>对象</span>当前行前触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onrowsdelete.html">onrowsdelete</a></td>
+				<td>
+					当行将要从记录集中被删除时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onrowsinserted.html">onrowsinserted</a></td>
+				<td>
+					当在当前记录集中插入新行后触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onscroll.html">onscroll</a></td>
+				<td>
+					当用户滚动<span>对象</span>的滚动条时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onselect.html">onselect</a></td>
+				<td>
+					当当前选中区改变时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onselectionchange.html">onselectionchange</a></td>
+				<td>
+					当文档的选中状态改变时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onselectstart.html">onselectstart</a></td>
+				<td>
+					<span>对象</span>将要被选中时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onstart.html">onstart</a></td>
+				<td>
+					在 <b>marquee</b> 对象的每次循环开始时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onstop.html">onstop</a></td>
+				<td>
+					当用户单击<b>停止</b>按钮或离开 Web 页面时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onsubmit.html">onsubmit</a></td>
+				<td>
+					当<a href="objects/FORM.html">表单</a>将要被提交时触发。</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="events/onunload.html">onunload</a></td>
+				<td>
+					在<span>对象</span>卸载前立即触发。</td>
+			</tr>
+		</tbody>
+	</table>
+</blockquote>
+<p>&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151203/1363.html">动态 HTML(DHTML) 对象模型中的属性</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151203/1361.html">动态 HTML(DHTML) 对象模型定义的集合</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

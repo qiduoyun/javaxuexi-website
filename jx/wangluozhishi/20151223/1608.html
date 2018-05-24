@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>tracert路由器追踪命令 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1608","0","attach");
+		Cms.viewCount("","1608");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151223/1608.html" title="tracert路由器追踪命令">tracert路由器追踪命令</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-23 16:46:37</span>
+     </h3>
+     <p class="p">
+	<span style="font-family:宋体;color:#000000;font-size:18px;"><strong>tracert路由器</strong></span><span style="font-family:宋体;font-size:12.0000pt;"><strong><span style="font-size:18px;color:#000000;">追踪命令</span></strong><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> Tracert（跟踪路由）是</span><span style="font-family:宋体;color:#FF0000;font-size:12.0000pt;">路由跟踪实用程序</span><span style="font-family:宋体;font-size:12.0000pt;">，</span><span style="font-family:宋体;color:#FF0000;font-size:12.0000pt;">用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。</span><span style="font-family:宋体;color:#FF0000;font-size:12.0000pt;"></span> 
+</p>
+<p class="p">
+	<span style="font-family:宋体;font-size:12.0000pt;">该命令用&nbsp;</span><span style="font-family:宋体;color:#FF0000;font-size:12.0000pt;">IP&nbsp;生存时间&nbsp;(TTL)&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;">字段和&nbsp;</span><span style="font-family:宋体;color:#FF0000;font-size:12.0000pt;">ICMP&nbsp;错误消息</span><span style="font-family:宋体;font-size:12.0000pt;">来确定从一个主机到网络上其他主机的路由。&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-weight:bold;font-size:12.0000pt;"><br />
+</span><span class="15" style="font-family:Calibri;font-weight:bold;">Tracert&nbsp;<span>工作原理&nbsp;</span></span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> </span><span style="font-family:宋体;color:#FF0000;font-size:12.0000pt;">通过向目标发送不同&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;值的“Internet&nbsp;控制消息协议&nbsp;(ICMP)”回应数据包，</span><span style="font-family:宋体;font-size:12.0000pt;">Tracert&nbsp;诊断程序确定到目标所采取的路由。要求路径上的每个路由器在转发数据包之前至少将数据包上的&nbsp;TTL&nbsp;递减&nbsp;1。数据包上的&nbsp;TTL&nbsp;减为&nbsp;0&nbsp;时，路由器应该将“ICMP&nbsp;已超时”的消息发回源系统。&nbsp;</span> 
+</p>
+<p class="p">
+	<span style="font-family:宋体;font-size:12.0000pt;"><img src="data:image/png;base64,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" alt="" /><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> Tracert&nbsp;先发送&nbsp;TTL&nbsp;为&nbsp;1&nbsp;的回应数据包，并在随后的每次发送过程将&nbsp;TTL&nbsp;递增&nbsp;1，直到目标响应或&nbsp;TTL&nbsp;达到最大值，从而确定路由。通过检查中间路由器发回的“ICMP&nbsp;已超时”的消息确定路由。某些路由器不经询问直接丢弃&nbsp;TTL&nbsp;过期的数据包，这在&nbsp;Tracert&nbsp;实用程序中看不到。&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> Tracert&nbsp;命令按顺序打印出返回“ICMP&nbsp;已超时”消息的路径中的近端路由器接口列表。如果使用&nbsp;-d&nbsp;选项，则&nbsp;Tracert&nbsp;实用程序不在每个&nbsp;IP&nbsp;地址上查询&nbsp;DNS。&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span class="15" style="font-family:Calibri;font-weight:bold;">例<span>:</span></span><span style="font-family:宋体;font-size:12.0000pt;">&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"></span> 
+</p>
+<p class="p">
+	<span style="font-family:宋体;font-size:12.0000pt;">数据包必须通过两个路由器（10.0.0.1&nbsp;和&nbsp;192.168.0.1）才能到达主机&nbsp;172.16.0.99。</span><span style="font-family:宋体;font-size:12.0000pt;"></span> 
+</p>
+<p class="p">
+	<span style="font-family:宋体;font-size:12.0000pt;">主机的默认网关是&nbsp;10.0.0.1，192.168.0.0&nbsp;网络上的路由器的&nbsp;IP&nbsp;地址是&nbsp;192.168.0.1。&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> C:\&gt;tracert&nbsp;172.16.0.99&nbsp;-d&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> Tracing&nbsp;route&nbsp;to&nbsp;172.16.0.99&nbsp;over&nbsp;a&nbsp;maximum&nbsp;of&nbsp;30&nbsp;hops&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> 1&nbsp;2s&nbsp;3s&nbsp;2s&nbsp;10,0.0,1&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> 2&nbsp;75&nbsp;ms&nbsp;83&nbsp;ms&nbsp;88&nbsp;ms&nbsp;192.168.0.1&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> 3&nbsp;73&nbsp;ms&nbsp;79&nbsp;ms&nbsp;93&nbsp;ms&nbsp;172.16.0.99&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> Trace&nbsp;complete.&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span class="15" style="font-family:Calibri;font-weight:bold;">用&nbsp;<span>tracert&nbsp;</span><span>解决问题&nbsp;</span></span><span style="font-family:宋体;font-weight:bold;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以使用&nbsp;tracert&nbsp;命令确定数据包在网络上的停止位置。</span><span style="font-family:宋体;font-size:12.0000pt;"></span> 
+</p>
+<p class="p">
+	<span style="font-family:宋体;font-size:12.0000pt;">&nbsp;例：</span><span style="font-family:宋体;font-size:12.0000pt;"></span> 
+</p>
+<p class="p">
+	<span style="font-family:宋体;font-size:12.0000pt;">默认网关确定&nbsp;192.168.10.99&nbsp;主机没有有效路径。这可能是路由器配置的问题，或者是&nbsp;192.168.10.0&nbsp;网络不存在（错误的&nbsp;IP&nbsp;地址）。&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> C:\&gt;tracert&nbsp;192.168.10.99&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> Tracing&nbsp;route&nbsp;to&nbsp;192.168.10.99&nbsp;over&nbsp;a&nbsp;maximum&nbsp;of&nbsp;30&nbsp;hops&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> 1&nbsp;10.0.0.1&nbsp;reports:Destination&nbsp;net&nbsp;unreachable.&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> Trace&nbsp;complete.&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;">Tracert&nbsp;实用程序对于解决大网络问题非常有用，此时可以采取几条路径到达同一个点。&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> Tracert&nbsp;命令行选项&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> Tracert&nbsp;命令支持多种选项，如下表所示。&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> tracert&nbsp;[-d]&nbsp;[-h&nbsp;maximum_hops]&nbsp;[-j&nbsp;host-list]&nbsp;[-w&nbsp;timeout]&nbsp;target_name&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"></span> 
+</p>
+<p class="p">
+	<span class="15" style="font-family:Calibri;font-weight:bold;">-d</span><span style="font-family:宋体;font-size:12.0000pt;">&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> 指定不将&nbsp;IP&nbsp;地址解析到主机名称。</span><span style="font-family:宋体;font-size:12.0000pt;"></span> 
+</p>
+<p class="p">
+	<span class="15" style="font-family:Calibri;font-weight:bold;">-h&nbsp;maximum_hops</span><span style="font-family:宋体;font-size:12.0000pt;">&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> 指定跃点数以跟踪到称为&nbsp;target_name&nbsp;的主机的路由。</span><span style="font-family:宋体;font-size:12.0000pt;"></span> 
+</p>
+<p class="p">
+	<span class="15" style="font-family:Calibri;font-weight:bold;">-j&nbsp;host-list</span><span style="font-family:宋体;font-size:12.0000pt;">&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> 指定&nbsp;Tracert&nbsp;实用程序数据包所采用路径中的路由器接口列表。</span><span style="font-family:宋体;font-size:12.0000pt;"></span> 
+</p>
+<p class="p">
+	<span class="15" style="font-family:Calibri;font-weight:bold;">-w&nbsp;timeout</span><span style="font-family:宋体;font-size:12.0000pt;">&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> 等待&nbsp;timeout&nbsp;为每次回复所指定的毫秒数。</span><span style="font-family:宋体;font-size:12.0000pt;"></span> 
+</p>
+<p class="p">
+	<span class="15" style="font-family:Calibri;font-weight:bold;">target_name</span><span style="font-family:宋体;font-size:12.0000pt;">&nbsp;</span><span style="font-family:宋体;font-size:12.0000pt;"><br />
+</span><span style="font-family:宋体;font-size:12.0000pt;"> 目标主机的名称或&nbsp;IP&nbsp;地址。</span><span style="font-family:宋体;font-size:12.0000pt;"></span> 
+</p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151223/1609.html"> 网络net 命令</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151223/1607.html">Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

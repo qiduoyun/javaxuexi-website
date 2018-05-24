@@ -1,0 +1,893 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C语言入门认识 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","826","0","attach");
+		Cms.viewCount("","826");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151020/826.html" title="C语言入门认识">C语言入门认识</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-10-20 19:01:51</span>
+     </h3>
+     </p>
+<p align="center"><font color="#0000ff" size="3"><b>第二章: 数据类型、运算符、表达式</b></font></p>
+<p align="left"><font color="#cc0000"><b>Ｃ语言的数据类型</b></font><br />
+	<br />
+	　　在第一课中，我们已经看到程序中使用的各种变量都应预先加以说明，即先说明，后使用。对变量的说明可以包括三个方面：<br />
+	&middot;数据类型<br />
+	&middot;存储类型<br />
+	&middot;作用域<br />
+	　　在本课中，我们只介绍数据类型说明。其它说明在以后各章中陆续介绍。所谓数据类型是按被说明量的性质，表示形式，占据存储空间的多少，构造特点来划分的。在Ｃ语言中，数据类型可分为：基本数据类型，构造数据类型，指针类型，空类型四大类。<br />
+	<br />
+	<font color="#ff0000">1.基本数据类型</font><br />
+	<br />
+	　　基本数据类型最主要的特点是，其值不可以再分解为其它类型。也就是说，基本数据类型是自我说明的。<br />
+	<br />
+	<font color="#ff0000">2.构造数据类型构造数据类型</font><br />
+	<br />
+	　　是根据已定义的一个或多个数据类型用构造的方法来定义的。也就是说，一个构造类型的值可以分解成若干个&ldquo;成员&rdquo;或&ldquo;元素&rdquo;。每个&ldquo;成员&rdquo;都是一个基本数据类型或又是一个构造类型。在C语言中，构造类型有以下几种：<br />
+	&middot;数组类型<br />
+	&middot;结构类型<br />
+	&middot;联合类型<br />
+	<br />
+	<font color="#ff0000">3.指针类型</font><br />
+	<br />
+	　　指针是一种特殊的，同时又是具有重要作用的数据类型。其值用来表示某个量在内存储器中的地址。虽然指针变量的取值类似于整型量，但这是两个类型完全不同的量，因此不能混为一谈。4.空类型在调用函数值时，通常应向调用者返回一个函数值。这个返回的函数值是具有一定的数据类型的，应在函数定义及函数说明中给以说明，例如在例题中给出的max函数定义中，函数头为： int max(int a,int b);其中&ldquo;int &rdquo;类型说明符即表示该函数的返回值为整型量。又如在例题中，使用了库函数 sin，由于系统规定其函数返回值为双精度浮点型，因此在赋值语句s=sin (x);中，s 也必须是双精度浮点型，以便与sin函数的返回值一致。所以在说明部分，把s说明为双精度浮点型。但是，也有一类函数，调用后并不需要向调用者返回函数值， 这种函数可以定义为&ldquo;空类型&rdquo;。其类型说明符为void。在第五章函数中还要详细介绍。在本章中，我们先介绍基本数据类型中的整型、浮点型和字符型。其余类型在以后各章中陆续介绍。<br />
+	<br />
+	　　对于基本数据类型量，按其取值是否可改变又分为常量和变量两种。在程序执行过程中，其值不发生改变的量称为常量，取值可变的量称为变量。它们可与数据类型结合起来分类。例如，可分为整型常量、整型变量、浮点常量、浮点变量、字符常量、字符变量、枚举常量、枚举变量。在程序中，常量是可以不经说明而直接引用的，而变量则必须先说明后使用。</p>
+<p><font color="#cc0000"><b>整型量</b></font><br />
+	<br />
+	整型量包括整型常量、整型变量。整型常量就是整常数。在Ｃ语言中，使用的整常数有八进制、十六进制和十进制三种。<br />
+	<br />
+	<font color="#ff0000">整型常量</font><br />
+	<br />
+	1.八进制整常数八进制整常数必须以0开头，即以0作为八进制数的前缀。数码取值为0～7。八进制数通常是无符号数。<br />
+	以下各数是合法的八进制数：<br />
+	015(十进制为13)　0101(十进制为65)　0177777(十进制为65535)<br />
+	以下各数不是合法的八进制数：<br />
+	256(无前缀0) 03A2(包含了非八进制数码)　-0127(出现了负号)<br />
+	<br />
+	2.十六进制整常数<br />
+	十六进制整常数的前缀为0X或0x。其数码取值为0~9，A~F或a~f。<br />
+	以下各数是合法的十六进制整常数：<br />
+	0X2A(十进制为42)　　0XA0 (十进制为160)　　0XFFFF (十进制为65535)<br />
+	以下各数不是合法的十六进制整常数：<br />
+	5A (无前缀0X)　　0X3H (含有非十六进制数码)<br />
+	<br />
+	3.十进制整常数<br />
+	十进制整常数没有前缀。其数码为0～9。<br />
+	以下各数是合法的十进制整常数：<br />
+	237 -568 65535 1627<br />
+	以下各数不是合法的十进制整常数：<br />
+	023 (不能有前导0)　23D (含有非十进制数码)<br />
+	<br />
+	　　在程序中是根据前缀来区分各种进制数的。因此在书写常数时不要把前缀弄错造成结果不正确。4.整型常数的后缀在16位字长的机器上，基本整型的长度也为16位，因此表示的数的范围也是有限定的。十进制无符号整常数的范围为0～65535，有符号数为-32768～+32767。八进制无符号数的表示范围为0～0177777。十六进制无符号数的表示范围为0X0～0XFFFF或0x0～0xFFFF。如果使用的数超过了上述范围，就必须用长整型数来表示。长整型数是用后缀&ldquo;L&rdquo;或&ldquo;l&rdquo;来表示的。例如：<br />
+	十进制长整常数 158L (十进制为158) 358000L (十进制为-358000)<br />
+	八进制长整常数 012L (十进制为10) 077L (十进制为63)　0200000L (十进制为65536)<br />
+	十六进制长整常数 0X15L (十进制为21) 0XA5L (十进制为165)　0X10000L (十进制为65536)<br />
+	　　<br />
+	　　长整数158L和基本整常数158 在数值上并无区别。但对158L，因为是长整型量，Ｃ编译系统将为它分配4个字节存储空间。而对158，因为是基本整型，只分配2 个字节的存储空间。因此在运算和输出格式上要予以注意，避免出错。无符号数也可用后缀表示，整型常数的无符号数的后缀为&ldquo;U&rdquo;或&ldquo;u&rdquo;。例如： 358u,0x38Au,235Lu 均为无符号数。前缀，后缀可同时使用以表示各种类型的数。如0XA5Lu表示十六进制无符号长整数A5，其十进制为165。<br />
+	<br />
+	<font color="#ff0000">整型变量</font><br />
+	<br />
+	整型变量可分为以下几类：<br />
+	1.基本型<br />
+	类型说明符为int，在内存中占2个字节，其取值为基本整常数。<br />
+	2.短整量<br />
+	类型说明符为short int或short&#39;C110F1。所占字节和取值范围均与基本型相同。<br />
+	3.长整型<br />
+	类型说明符为long int或long ，在内存中占4个字节，其取值为长整常数。<br />
+	4.无符号型<br />
+	类型说明符为unsigned。<br />
+	无符号型又可与上述三种类型匹配而构成：<br />
+	(1)无符号基本型 类型说明符为unsigned int或unsigned。<br />
+	(2)无符号短整型 类型说明符为unsigned short<br />
+	(3)无符号长整型 类型说明符为unsigned long<br />
+	各种无符号类型量所占的内存空间字节数与相应的有符号类型量相同。但由于省去了符号位，故不能表示负数。 下表列出了Turbo C中各类整型量所分配的内存字节数及数的表示范围。<br />
+	类型说明符　　　　数的范围 　　　　分配字节数<br />
+	int 　　　　　　-32768~32767 　　　　■■<br />
+	short int 　　　-32768~32767 　　　　■■<br />
+	signed int 　　 -32768~32767 　　　　■■<br />
+	unsigned int 　 0~65535 　　　　　　 ■■<br />
+	long int 　-2147483648~2147483647　　■■■■<br />
+	unsigned long 　0~4294967295 　　　　■■■■<br />
+	整型变量的说明<br />
+	变量说明的一般形式为： 类型说明符 变量名标识符，变量名标识符，...; 例如：<br />
+	int a,b,c; (a,b,c为整型变量)<br />
+	long x,y; (x,y为长整型变量)<br />
+	unsigned p,q; (p,q为无符号整型变量)</p>
+<p>在书写变量说明时，应注意以下几点：<br />
+	1.允许在一个类型说明符后，说明多个相同类型的变量。各变量名之间用逗号间隔。类型说明符与变量名之间至少用一个空格间隔。<br />
+	2.最后一个变量名之后必须以&ldquo;；&rdquo;号结尾。<br />
+	3.变量说明必须放在变量使用之前。一般放在函数体的开头部分。<br />
+	<font color="#009900">[Practice] //1int a,b;<br />
+	short int c;<br />
+	short d=100;<br />
+	a=d-20;<br />
+	b=a+d;<br />
+	c=a+b+d;<br />
+	d=d-a+c-b;&#39;Vtable<br />
+	a,2,0<br />
+	b,2,0<br />
+	c,2,0<br />
+	d,2,100<br />
+	of Vtable<br />
+	&#39;Vupdate<br />
+	1,0;2,0<br />
+	3,0<br />
+	4,100<br />
+	1,80<br />
+	2,180<br />
+	3,360<br />
+	4,200<br />
+	of Vupdate<br />
+	of Practice<br />
+	[Practice] //2int a=5;<br />
+	int b=9;<br />
+	long int c;<br />
+	long d;<br />
+	c=a+b-7;<br />
+	d=a*b*c;<br />
+	c=d*d*d;<br />
+	a=c-d;&#39;Vtable<br />
+	a,2,5<br />
+	b,2,9<br />
+	c,4,0<br />
+	d,4,0<br />
+	of Vtable<br />
+	&#39;Vupdate<br />
+	1,5<br />
+	2,9<br />
+	3,0<br />
+	4,0<br />
+	3,7<br />
+	4,315<br />
+	3,31255875<br />
+	1,-5112<br />
+	of Vupdate<br />
+	of Practice<br />
+	[Practice] //3int a=6,b=19;<br />
+	unsigned int c;<br />
+	int d;<br />
+	c=a-b+7;<br />
+	d=b*c;<br />
+	a=b+c+d;<br />
+	b=-a;&#39;Vtable<br />
+	a,2,6<br />
+	b,2,19<br />
+	c,2,0<br />
+	d,2,0<br />
+	of Vtable<br />
+	&#39;Vupdate<br />
+	1,6;2,19<br />
+	3,0<br />
+	4,0<br />
+	3,65530<br />
+	4,-114<br />
+	1,-101<br />
+	2,101<br />
+	of Vupdate<br />
+	of Practice<br />
+	void main(){<br />
+	long x,y;<br />
+	int a,b,c,d;<br />
+	x=5;<br />
+	y=6;<br />
+	a=7;<br />
+	b=8;<br />
+	c=x+a;<br />
+	d=y+b;<br />
+	printf(&quot;c=x+a=%d,d=y+b=%d\n&quot;,c,d);<br />
+	}</font><br />
+	将main说明为返回void,即不返回任何类型的值<br />
+	x,y被定义为long型<br />
+	a,b,c,d被定义为int型<br />
+	5-&gt;x<br />
+	6-&gt;y<br />
+	7-&gt;a<br />
+	8-&gt;b<br />
+	x+a-&gt;c<br />
+	y+b-&gt;d<br />
+	显示程序运行结果 of long x,y;<br />
+	int a,b,c,d;<br />
+	c=x+a;<br />
+	d=y+b;<br />
+	　　从程序中可以看到：x, y是长整型变量，a, b是基本整型变量。它们之间允许进行运算，运算结果为长整型。但c，d被定义为基本整型，因此最后结果为基本整型。本例说明，不同类型的量可以参与运算并相互赋值。其中的类型转换是由编译系统自动完成的。有关类型转换的规则将在以后介绍。<br />
+	<br />
+	<font color="#cc0000"><b>实型量</b></font><br />
+	<br />
+	<font color="#ff0000">实型常量</font><br />
+	<br />
+	实型也称为浮点型。实型常量也称为实数或者浮点数。在Ｃ语言中，实数只采用十进制。它有二种形式： 十进制数形式指数形式<br />
+	1.十进制数形式<br />
+	由数码0~ 9和小数点组成。例如：0.0，.25，5.789，0.13，5.0，300.，-267.8230等均为合法的实数。<br />
+	2.指数形式<br />
+	由十进制数，加阶码标志&ldquo;e&rdquo;或&ldquo;E&rdquo;以及阶码（只能为整数，可以带符号）组成。其一般形式为a E n （a为十进制数，n为十进制整数）其值为 a*10,n　如： 2.1E5 (等于2.1*10,5), 3.7E-2 (等于3.7*10,)-2*)　0.5E7 (等于0.5*10,7), -2.8E-2 (等于-2.8*10,)-2*)以下不是合法的实数 345 (无小数点)　E7 (阶码标志E之前无数字)　 -5 (无阶码标志)　53.-E3 (负号位置不对)　2.7E (无阶码)<br />
+	标准Ｃ允许浮点数使用后缀。后缀为&ldquo;f&rdquo;或&ldquo;F&rdquo;即表示该数为浮点数。如356f和356.是等价的。例2.2说明了这种情况：<br />
+	<font color="#009900">void main()<br />
+	{<br />
+	&nbsp;printf(&quot;%f\n%f\n&quot;,356.,356f);<br />
+	}</font><br />
+	void 指明main不返回任何值　利用printf显示结果　结束<br />
+	<br />
+	<font color="#ff0000">实型变量</font><br />
+	<br />
+	实型变量分为两类：单精度型和双精度型，<br />
+	其类型说明符为float 单精度说明符，double 双精度说明符。在Turbo C中单精度型占4个字节（32位）内存空间，其数值范围为3.4E-38～3.4E+38，只能提供七位有效数字。双精度型占8 个字节（64位）内存空间，其数值范围为1.7E-308～1.7E+308，可提供16位有效数字。<br />
+	实型变量说明的格式和书写规则与整型相同。<br />
+	例如： float x,y; (x,y为单精度实型量)<br />
+	　　　 double a,b,c; (a,b,c为双精度实型量)<br />
+	实型常数不分单、双精度，都按双精度double型处理。<br />
+	<font color="#009900">void main()<br />
+	{<br />
+	&nbsp;&nbsp;float a;<br />
+	&nbsp;&nbsp;double b;<br />
+	&nbsp;&nbsp;a=33333.33333;<br />
+	&nbsp;&nbsp;b=33333.33333333333333;<br />
+	&nbsp;&nbsp;printf(&quot;%f\n%f\n&quot;,a,b);<br />
+	}</font><br />
+	此程序说明float、double的不同<br />
+	a ■■■■<br />
+	b ■■■■■■■■<br />
+	a&lt;---33333.33333<br />
+	b&lt;---33333.33333333333;;<br />
+	显示程序结果<br />
+	此程序说明float、double的不同<br />
+	float a;<br />
+	double b;<br />
+	a=33333.33333;<br />
+	b=33333.33333333333333; 从本例可以看出，由于a 是单精度浮点型，有效位数只有七位。而整数已占五位，故小数二位后之后均为无效数字。b 是双精度型，有效位为十六位。但Turbo C 规定小数后最多保留六位，其余部分四舍五入。<br />
+	<font color="#009900">[Practice] //floatint a=32;<br />
+	float b;<br />
+	double d;<br />
+	b=12345678;<br />
+	d=b*100;<br />
+	d=d+a;<br />
+	d=d+58.123456;&#39;Vtable<br />
+	a,2,32<br />
+	b,4,0.0<br />
+	d,8,0.0<br />
+	of Vtable<br />
+	&#39;Vupdate<br />
+	1,32<br />
+	2,0<br />
+	3,0<br />
+	2,12345678.00000<br />
+	3,1234567800<br />
+	3,1234567832<br />
+	3,1234567890.123456<br />
+	of Vupdate<br />
+	of Practice<br />
+	[Practice] //1int a=543;<br />
+	float b;<br />
+	b=123.123962+a;<br />
+	b=b-100;<br />
+	a=b;&#39;Vtable<br />
+	a,2,543<br />
+	b,4,0.0<br />
+	of Vtable<br />
+	&#39;Vupdate<br />
+	1,543<br />
+	2,0.0<br />
+	2,123.123962<br />
+	2,23.123962<br />
+	1,23<br />
+	of Vupdate<br />
+	of Practice</font><br />
+	<br />
+	<font color="#cc0000"><b>字符型量</b></font></p>
+<p>字符型量包括字符常量和字符变量。<br />
+	<br />
+	<font color="#ff0000">字符常量</font><br />
+	字符常量是用单引号括起来的一个字符。例如&#39;a&#39;,&#39;b&#39;,&#39;=&#39;,&#39;+&#39;,&#39;?&#39;都是合法字符常量。在Ｃ语言中，字符常量有以下特点：<br />
+	1.字符常量只能用单引号括起来，不能用双引号或其它括号。<br />
+	2.字符常量只能是单个字符，不能是字符串。<br />
+	3.字符可以是字符集中任意字符。但数字被定义为字符型之后就<br />
+	不能参与数值运算。如&#39;5&#39;和5 是不同的。&#39;5&#39;是字符常量，不能参与运算。<br />
+	<br />
+	<font color="#ff0000">转义字符</font><br />
+	转义字符是一种特殊的字符常量。转义字符以反斜线&quot;\&quot;开头，后跟一个或几个字符。转义字符具有特定的含义，不同于字符原有的意义，故称&ldquo;转义&rdquo;字符。例如，在前面各例题printf函数的格式串中用到的&ldquo;\n&rdquo;就是一个转义字符，其意义是&ldquo;回车换行&rdquo;。转义字符主要用来表示那些用一般字符不便于表示的控制代码。<br />
+	常用的转义字符及其含义<br />
+	转义字符 　转义字符的意义<br />
+	\n 　　　　　回车换行<br />
+	\t 　　　　　横向跳到下一制表位置<br />
+	\v 　　　　　竖向跳格<br />
+	\b 　　　　　退格<br />
+	\r 　　　　　回车<br />
+	\f　　　　 　走纸换页<br />
+	\\ 　　　　　反斜线符&quot;\&quot;<br />
+	\&#39; 　　　　　单引号符<br />
+	\a 　　　　　鸣铃<br />
+	\ddd 　　　　1～3位八进制数所代表的字符<br />
+	\xhh 　　　　1～2位十六进制数所代表的字符<br />
+	广义地讲，Ｃ语言字符集中的任何一个字符均可用转义字符来表示。表2.2中的\ddd和\xhh正是为此而提出的。ddd和hh分别为八进制和十六进制的ASCII代码。如\101表示字?quot;A&quot; ，\102表示字母&quot;B&quot;，\134表示反斜线，\XOA表示换行等。转义字符的使用<br />
+	<font color="#009900">void main()<br />
+	{<br />
+	int a,b,c;<br />
+	a=5; b=6; c=7;<br />
+	printf(&quot;%d\n\t%d %d\n %d %d\t\b%d\n&quot;,a,b,c,a,b,c);<br />
+	}</font><br />
+	此程序练习转义字符的使用<br />
+	a、b、c为整数　5-&gt;a,6-&gt;b,7-&gt;c<br />
+	调用printf显示程序运行结果<br />
+	<font color="#009900">printf(&quot;%d\n\t%d %d\n %d %d\t\b%d\n&quot;,a,b,c,a,b,c);</font><br />
+	程序在第一列输出a值5之后就是&ldquo;\n&rdquo;，故回车换行；接着又是&ldquo;\t&rdquo;，于是跳到下一制表位置（设制表位置间隔为8），再输出b值6；空二格再输出c 值7后又是&quot;\n&quot;，因此再回车换行；再空二格之后又输出a值5；再空三格又输出b的值6；再次后&quot;\t&quot;跳到下一制表位置（与上一行的6 对齐），但下一转义字符&ldquo;\b&rdquo;又使退回一格，故紧挨着6再输出c值7。<br />
+	<br />
+	<font color="#ff0000">字符变量</font><br />
+	字符变量的取值是字符常量，即单个字符。字符变量的类型说明符是char。字符变量类型说明的格式和书写规则都与整型变量相同。<br />
+	例如：<br />
+	char a,b; 每个字符变量被分配一个字节的内存空间，因此只能存放一个字符。字符值是以ASCII码的形式存放在变量的内存单元之中的。如x的<br />
+	十进制ASCII码是120，y的十进制ASCII码是121。对字符变量a,b赋予&#39;x&#39;和&#39;y&#39;值： a=&#39;x&#39;;b=&#39;y&#39;;实际上是在a,b两个单元内存放120和121的二进制代码： a　0 1 1 1 1 0 0 0<br />
+	　　　　 b　0 1 1 1 1 0 0 1<br />
+	所以也可以把它们看成是整型量。 Ｃ语言允许对整型变量赋以字符值，也允许对字符变量赋以整型值。在输出时， 允许把字符变量按整型量输出，也允许把整型量按字符量输出。 整型量为二字节量，字符量为单字节量，当整型量按字符型量处理时， 只有低八位字节参与处理。<br />
+	<font color="#009900">main()<br />
+	{<br />
+	&nbsp;&nbsp;char a,b;<br />
+	&nbsp;&nbsp;a=120;<br />
+	&nbsp;&nbsp;b=121;<br />
+	&nbsp;&nbsp;printf(&quot;%c,%c\n%d,%d\n&quot;,a,b,a,b);<br />
+	}</font><br />
+	a ■ b ■<br />
+	a &lt;-- 120<br />
+	b &lt;--- 121<br />
+	显示程序结果<br />
+	<br />
+	本程序中说明a，b为字符型，但在赋值语句中赋以整型值。从结果看，a，b值的输出形式取决于printf函数格式串中的格式符，当格式符为&quot;c&quot;时，对应输出的变量值为字符，当格式符为&quot;d&quot;时，对应输出的变量值为整数。<br />
+	<font color="#009900">void main()<br />
+	{<br />
+	&nbsp;&nbsp;char a,b;<br />
+	&nbsp;&nbsp;a=&#39;x&#39;;<br />
+	&nbsp;&nbsp;b=&#39;y&#39;;<br />
+	&nbsp;&nbsp;a=a-32;<br />
+	&nbsp;&nbsp;b=b-32;<br />
+	&nbsp;&nbsp;printf(&quot;%c,%c\n%d,%d\n&quot;,a,b,a,b);<br />
+	}</font><br />
+	a，b被说明为字符变量并赋予字符值<br />
+	把小写字母换成大写字母<br />
+	以整型和字符型输出<br />
+	本例中，a，b被说明为字符变量并赋予字符值，Ｃ语言允许字符变量参与数值运算，即用字符的ASCII 码参与运算。由于大小写字母的ASCII 码相差32，因此运算后把小写字母换成大写字母。然后分别以整型和字符型输出。<br />
+	<font color="#009900">[Practice] //charint a=49;<br />
+	char b;<br />
+	char d;<br />
+	b=a+10;<br />
+	d=a+b;&#39;Vtable<br />
+	a,2,49<br />
+	b,1,随机<br />
+	d,1,随机<br />
+	of Vtable<br />
+	&#39;Vupdate<br />
+	1,49<br />
+	2,随机<br />
+	3,随机<br />
+	2,&#39;;&#39;<br />
+	3,&#39;l&#39;<br />
+	of Vupdate<br />
+	of Practice<br />
+	[Practice] //char c1,c2;<br />
+	c1=&#39;a&#39;;c2=&#39;b&#39;;<br />
+	c1=c1-32;c2=c2-32;&#39;Vtable<br />
+	c1,1,随机<br />
+	c2,1,随机<br />
+	of Vtable<br />
+	&#39;Vupdate<br />
+	1,随机;2,随机<br />
+	1,&#39;a&#39;;2,&#39;b&#39;<br />
+	1,&#39;A&#39;;2,&#39;B&#39;<br />
+	of Vupdate<br />
+	of Practice</font><br />
+	<br />
+	<font color="#ff0000">字符串常量</font><br />
+	字符串常量是由一对双引号括起的字符序列。例如： &quot;CHINA&quot; ，&quot;C program:&quot; ， &quot;$12.5&quot; 等都是合法的字符串常量。字符串常量和字符常量是不同的量。它们之间主要有以下区别：<br />
+	1.字符常量由单引号括起来，字符串常量由双引号括起来。<br />
+	2.字符常量只能是单个字符，字符串常量则可以含一个或多个字符。<br />
+	3.可以把一个字符常量赋予一个字符变量，但不能把一个字符串常量赋予一个字符变量。在Ｃ语言中没有相应的字符串变量。<br />
+	这是与BASIC 语言不同的。但是可以用一个字符数组来存放一个字符串常量。在数组一章内予以介绍。<br />
+	4.字符常量占一个字节的内存空间。字符串常量占的内存字节数等于字符串中字节数加1。增加的一个字节中存放字符&quot;\0&quot;(ASCII码为0)。这是字符串结束的标志。例如，字符串 &quot;C program&quot;在内存中所占的字节为：C program\0。字符常量&#39;a&#39;和字符串常量&quot;a&quot;虽然都只有一个字符，但在内存中的情况是不同的。<br />
+	&#39;a&#39;在内存中占一个字节，可表示为：a<br />
+	&quot;a&quot;在内存中占二个字节，可表示为：a\0符号常量<br />
+	<br />
+	<font color="#ff0000">符号常量 </font><br />
+	在Ｃ语言中，可以用一个标识符来表示一个常量，称之为符号常量。符号常量在使用之前必须先定义，其一般形式为：<br />
+	#define 标识符 常量<br />
+	其中#define也是一条预处理命令（预处理命令都?quot;#&quot;开头），称为宏定义命令（在第九章预处理程序中将进一步介绍），其功能是把该标识符定义为其后的常量值。一经定义，以后在程序中所有出现该标识符的地方均代之以该常量值。习惯上符号常量的标识符用大写字母，变量标识符用小写字母，以示区别。<br />
+	<font color="#009900">#define PI 3.14159<br />
+	void main()<br />
+	{<br />
+	&nbsp;&nbsp;float s,r;<br />
+	&nbsp;&nbsp;r=5;<br />
+	&nbsp;&nbsp;s=PI*r*r;<br />
+	&nbsp;&nbsp;printf(&quot;s=%f\n&quot;,s);<br />
+	}</font><br />
+	由宏定义命令定义PI 为3.14159 s,r定义为实数　5-&gt;r　PI*r*r-&gt;s<br />
+	显示程序结果 float s,r;　r=5;　s=PI*r*r; 本程序在主函数之前由宏定义命令定义PI 为3.14159，在程序中即以该值代替PI 。s=PI*r*r等效于s=3.14159*r*r。应该注意的是，符号常量不是变量，它所代表的值在整个作用域内不能再改变。也就是说，在程序中，不能再用赋值语句对它重新赋值。<br />
+	<br />
+	<b><font color="#cc0000">变量的初值和类型转换</font></b><br />
+	<br />
+	<font color="#ff0000">变量赋初值</font><br />
+	在程序中常常需要对变量赋初值，以便使用变量。语言程序中可有多种方法，在定义时赋以初值的方法，这种方法称为初始化。在变量说明中赋初值的一般形式为：<br />
+	类型说明符 变量1= 值1，变量2= 值2，&hellip;&hellip;； 例如：<br />
+	int a=b=c=5;<br />
+	float x=3.2,y=3f,z=0.75;<br />
+	char ch1=&#39;K&#39;,ch2=&#39;P&#39;;<br />
+	应注意，在说明中不允许连续赋值，如a=b=c=5是不合法的。<br />
+	<font color="#009900">void main()<br />
+	{<br />
+	&nbsp;&nbsp;int a=3,b,c=5;<br />
+	&nbsp;&nbsp;b=a+c;<br />
+	&nbsp;&nbsp;printf(&quot;a=%d,b=%d,c=%d\n&quot;,a,b,c);<br />
+	}<br />
+	a&lt;---3,b&lt;--0,c&lt;---5<br />
+	b&lt;--a+c</font><br />
+	显示程序运行结果<br />
+	<br />
+	<font color="#ff0000">变量类型的转换</font><br />
+	变量的数据类型是可以转换的。转换的方法有两种， 一种是自动转换，一种是强制转换。<br />
+	<br />
+	<font color="#ff0000">自动转换 </font><br />
+	自动转换发生在不同数据类型的量混合运算时，由编译系统自动完成。自动转换遵循以下规则：<br />
+	1.若参与运算量的类型不同，则先转换成同一类型，然后进行运算。<br />
+	2.转换按数据长度增加的方向进行，以保证精度不降低。如int型和long型运算时，先把int量转成long型后再进行运算。<br />
+	3.所有的浮点运算都是以双精度进行的，即使仅含float单精度量运算的表达式，也要先转换成double型，再作运算。<br />
+	4.char型和short型参与运算时，必须先转换成int型。<br />
+	5.在赋值运算中，赋值号两边量的数据类型不同时， 赋值号右边量的类型将转换为左边量的类型。 如果右边量的数据类型长度左边长时，将丢失一部分数据，这样会降低精度， 丢失的部分按四舍五入向前舍入。图21表示了类型自动转换的规则。<br />
+	<font color="#009900">void main()<br />
+	{<br />
+	&nbsp;&nbsp;float PI=3.14159;<br />
+	&nbsp;&nbsp;int s,r=5;<br />
+	&nbsp;&nbsp;s=r*r*PI;<br />
+	&nbsp;&nbsp;printf(&quot;s=%d\n&quot;,s);<br />
+	}<br />
+	PI&lt;--3.14159<br />
+	s&lt;--0,r&lt;--5<br />
+	s&lt;--r*r*PI</font><br />
+	显示程序运行结果<br />
+	float PI=3.14159;<br />
+	int s,r=5;<br />
+	s=r*r*PI;<br />
+	本例程序中，PI为实型；s，r为整型。在执行s=r*r*PI语句时，r和PI都转换成double型计算，结果也为double型。但由于s为整型，故赋值结果仍为整型，舍去了小数部分。</p>
+<p><font color="#ff0000">强制类型转换</font><br />
+	强制类型转换是通过类型转换运算来实现的。其一般形式为： (类型说明符) (表达式) 其功能是把表达式的运算结果强制转换成类型说明符所表示的类型。例如： (float) a 把a转换为实型(int)(x+y) 把x+y的结果转换为整型在使用强制转换时应注意以下问题：<br />
+	1.类型说明符和表达式都必须加括号(单个变量可以不加括号)，如把(int)(x+y)写成(int)x+y则成了把x转换成int型之后再与y相加了。<br />
+	2.无论是强制转换或是自动转换，都只是为了本次运算的需要而对变量的数据长度进行的临时性转换，而不改变数据说明时对该变量定义的类型。<br />
+	<font color="#009900">main()<br />
+	{<br />
+	&nbsp;&nbsp;float f=5.75;<br />
+	&nbsp;&nbsp;printf(&quot;(int)f=%d,f=%f\n&quot;,(int)f,f);<br />
+	}<br />
+	f&lt;--5.75</font><br />
+	将float f强制转换成int f float f=5.75;printf(&quot;(int)f=%d,f=%f\n&quot;,(int)f,f); 本例表明，f虽强制转为int型，但只在运算中起作用， 是临时的，而f本身的类型并不改变。因此，(int)f的值为 5(删去了小数)而f的值仍为5.75。<br />
+	<br />
+	<font color="#cc0000"><b>基本运算符和表达式</b></font><br />
+	<br />
+	运算符的种类、优先级和结合性<br />
+	Ｃ语言中运算符和表达式数量之多， 在高级语言中是少见的。正是丰富的运算符和表达式使Ｃ语言功能十分完善。 这也是Ｃ语言的主要特点之一。<br />
+	Ｃ语言的运算符不仅具有不同的优先级， 而且还有一个特点，就是它的结合性。在表达式中， 各运算量参与运算的先后顺序不仅要遵守运算符优先级别的规定，还要受运算符结合性的制约， 以便确定是自左向右进行运算还是自右向左进行运算。 这种结合性是其它高级语言的运算符所没有的，因此也增加了Ｃ语言的复杂性。<br />
+	<br />
+	<font color="#ff0000">运算符的种类Ｃ语言的运算符可分为以下几类</font>：<br />
+	1.算术运算符<br />
+	用于各类数值运算。包括加(+)、减(-)、乘(*)、除(/)、求余(或称模运算，%)、自增(++)、自减(--)共七种。<br />
+	2.关系运算符<br />
+	用于比较运算。包括大于(&gt;)、小于(&lt;)、等于(==)、 大于等于(&gt;=)、小于等于(&lt;=)和不等于(!=)六种。<br />
+	3.逻辑运算符<br />
+	用于逻辑运算。包括与(&amp;&amp;)、或(||)、非(!)三种。<br />
+	4.位操作运算符<br />
+	参与运算的量，按二进制位进行运算。包括位与(&amp;)、位或(|)、位非(~)、位异或(^)、左移(&lt;&lt;)、右移(&gt;&gt;)六种。<br />
+	5.赋值运算符<br />
+	用于赋值运算，分为简单赋值(=)、复合算术赋值(+=,-=,*=,/=,%=)和复合位运算赋值(&amp;=,|=,^=,&gt;&gt;=,&lt;&lt;=)三类共十一种。<br />
+	6.条件运算符<br />
+	这是一个三目运算符，用于条件求值(?:)。<br />
+	7.逗号运算符<br />
+	用于把若干表达式组合成一个表达式(，)。<br />
+	8.指针运算符<br />
+	用于取内容(*)和取地址(&amp;)二种运算。<br />
+	9.求字节数运算符<br />
+	用于计算数据类型所占的字节数(sizeof)。<br />
+	10.特殊运算符<br />
+	有括号()，下标[]，成员(&rarr;，.)等几种。<br />
+	<br />
+	<font color="#ff0000">优先级和结合性</font><br />
+	Ｃ语言中，运算符的运算优先级共分为15级。1级最高，15级最低。在表达式中，优先级较高的先于优先级较低的进行运算。 而在一个运算量两侧的运算符优先级相同时， 则按运算符的结合性所规定的结合方向处理。 Ｃ语言中各运算符的结合性分为两种，即左结合性(自左至右)和右结合性(自右至左)。例如算术运算符的结合性是自左至右，即先左后右。如有表达式x-y+z则y应先与&ldquo;-&rdquo;号结合， 执行x-y运算，然后再执行+z的运算。这种自左至右的结合方向就称为&ldquo;左结合性&rdquo;。而自右至左的结合方向称为&ldquo;右结合性&rdquo;。 最典型的右结合性运算符是赋值运算符。如x=y=z,由于&ldquo;=&rdquo;的右结合性，应先执行y=z再执行x=(y=z)运算。 Ｃ语言运算符中有不少为右结合性，应注意区别，以避免理解错误。<br />
+	<br />
+	<font color="#ff0000">算术运算符和算术表达式基本的算术运算符</font><br />
+	1.加法运算符&ldquo;+&rdquo;加法运算符为双目运算符，即应有两个量参与加法运算。如a+b,4+8等。具有右结合性。<br />
+	2.减法运算符&ldquo;-&rdquo;减法运算符为双目运算符。但&ldquo;-&rdquo;也可作负值运算符，此时为单目运算，如-x,-5等具有左结合性。<br />
+	3.乘法运算符&ldquo;*&rdquo;双目运算，具有左结合性。<br />
+	4.除法运算符&ldquo;/&rdquo;双目运算具有左结合性。参与运算量均为整型时， 结果也为整型，舍去小数。如果运算量中有一个是实型，则结果为双精度实型。<br />
+	<font color="#009900">void main(){<br />
+	printf(&quot;\n\n%d,%d\n&quot;,20/7,-20/7);<br />
+	printf(&quot;%f,%f\n&quot;,20.0/7,-20.0/7);<br />
+	}</font><br />
+	双目运算具有左结合性。参与运算量均为整型时， 结果也为整型，舍去小数。如果运算量中有一个是实型，则结果为双精度实型。 printf(&quot;\n\n%d,%d\n&quot;,20/7,-20/7);<br />
+	printf(&quot;%f,%f\n&quot;,20.0/7,-20.0/7);<br />
+	本例中，20/7，-20/7的结果均为整型，小数全部舍去。而20.0/7和-20.0/7由于有实数参与运算，因此结果也为实型。<br />
+	5.求余运算符(模运算符)&ldquo;%&rdquo;双目运算，具有左结合性。要求参与运算的量均为整型。 求余运算的结果等于两数相除后的余数。<br />
+	<font color="#009900">void main(){<br />
+	printf(&quot;%d\n&quot;,100%3);<br />
+	}</font><br />
+	双目运算，具有左结合性。求余运算符% 要求参与运算的量均为整型。本例输出100除以3所得的余数1。<br />
+	<br />
+	<font color="#ff0000">自增１，自减１运算符</font><br />
+	自增1运算符记为&ldquo;++&rdquo;，其功能是使变量的值自增1。自减1运算符记为&ldquo;--&rdquo;，其功能是使变量值自减1。自增1，自减1运算符均为单目运算，都具有右结合性。可有以下几种形式： ++i i自增1后再参与其它运算。--i i自减1后再参与其它运算。<br />
+	i++ 　i参与运算后，i的值再自增1。<br />
+	i-- 　i参与运算后，i的值再自减1。<br />
+	在理解和使用上容易出错的是i++和i--。 特别是当它们出在较复杂的表达式或语句中时，常常难于弄清，因此应仔细分析。<br />
+	<font color="#009900">void main(){<br />
+	int i=8;<br />
+	printf(&quot;%d\n&quot;,++i);<br />
+	printf(&quot;%d\n&quot;,--i);<br />
+	printf(&quot;%d\n&quot;,i++);<br />
+	printf(&quot;%d\n&quot;,i--);<br />
+	printf(&quot;%d\n&quot;,-i++);<br />
+	printf(&quot;%d\n&quot;,-i--);<br />
+	} i&lt;--8<br />
+	i&lt;--i+1<br />
+	i&lt;--i-1<br />
+	i&lt;--i+1<br />
+	i&lt;--i-1<br />
+	i&lt;--i+1<br />
+	i&lt;--i-1 int i=8;<br />
+	printf(&quot;%d\n&quot;,++i);<br />
+	printf(&quot;%d\n&quot;,--i);<br />
+	printf(&quot;%d\n&quot;,i++);<br />
+	printf(&quot;%d\n&quot;,i--);<br />
+	printf(&quot;%d\n&quot;,-i++);<br />
+	printf(&quot;%d\n&quot;,-i--);</font><br />
+	i的初值为8<br />
+	第2行i加1后输出故为9；<br />
+	第3行减1后输出故为8；<br />
+	第4行输出i为8之后再加1(为9)；<br />
+	第5行输出i为9之后再减1(为8) ；<br />
+	第6行输出-8之后再加1(为9)；<br />
+	第7行输出-9之后再减1(为8)<br />
+	<font color="#009900">void main(){<br />
+	int i=5,j=5,p,q;<br />
+	p=(i++)+(i++)+(i++);<br />
+	q=(++j)+(++j)+(++j);<br />
+	printf(&quot;%d,%d,%d,%d&quot;,p,q,i,j);<br />
+	}</font><br />
+	i&lt;--5,j&lt;--5,p&lt;--0,q&lt;--0<br />
+	i+i+i---&gt;p,i+1--&gt;i,i+1--&gt;i,i+1--&gt;i<br />
+	j+1-&gt;j,j+1-&gt;j,j+1-&gt;j,j+j+j-&gt;q int i=5,j=5,p,q;<br />
+	p=(i++)+(i++)+(i++);<br />
+	q=(++j)+(++j)+(++j);<br />
+	这个程序中，对P=(i++)+(i++)+(i++)应理解为三个i相加，故P值为15。然后i再自增1三次相当于加3故i的最后值为8。而对于q 的值则不然，q=(++j)+(++j)+(++j)应理解为q先自增1，再参与运算，由于q自增1三次后值为8，三个8相加的和为24，j的最后值仍为8。算术表达式表达式是由常量、变量、函数和运算符组合起来的式子。 一个表达式有一个值及其类型， 它们等于计算表达式所得结果的值和类型。表达式求值按运算符的优先级和结合性规定的顺序进行。 单个的常量、变量、函数可以看作是表达式的特例。<br />
+	<br />
+	<font color="#ff0000">算术表达式</font><br />
+	是由算术运算符和括号连接起来的式子， 以下是算术表达式的例子：<br />
+	a+b 　(a*2)／c　(x+r)*8-(a+b)／7　　++i　sin(x)+sin(y) 　(++i)-(j++)+(k--)<br />
+	<br />
+	<font color="#ff0000">赋值运算符和赋值表达式</font><br />
+	简单赋值运算符和表达式，简单赋值运算符记为&ldquo;=&rdquo;。由&ldquo;= &rdquo;连接的式子称为赋值表达式。其一般形式为： 变量=表达式 例如：<br />
+	x=a+b<br />
+	w=sin(a)+sin(b)<br />
+	y=i+++--j 赋值表达式的功能是计算表达式的值再赋予左边的变量。赋值运算符具有右结合性。因此<br />
+	a=b=c=5<br />
+	可理解为<br />
+	a=(b=(c=5))<br />
+	在其它高级语言中，赋值构成了一个语句，称为赋值语句。 而在C中，把&ldquo;=&rdquo;定义为运算符，从而组成赋值表达式。 凡是表达式可以出现的地方均可出现赋值表达式。例如，式子x=(a=5)+(b=8)是合法的。它的意义是把5赋予a，8赋予b，再把a,b相加，和赋予x ，故x应等于13。<br />
+	在Ｃ语言中也可以组成赋值语句，按照Ｃ语言规定， 任何表达式在其未尾加上分号就构成为语句。因此如x=8;a=b=c=5；都是赋值语句，在前面各例中我们已大量使用过了。<br />
+	如果赋值运算符两边的数据类型不相同， 系统将自动进行类型转换，即把赋值号右边的类型换成左边的类型。具体规定如下：<br />
+	1.实型赋予整型，舍去小数部分。前面的例2.9已经说明了这种情况。<br />
+	2.整型赋予实型，数值不变，但将以浮点形式存放， 即增加小数部分(小数部分的值为0)。<br />
+	3.字符型赋予整型，由于字符型为一个字节， 而整型为二个字节，故将字符的ASCII码值放到整型量的低八位中，高八位为0。<br />
+	4.整型赋予字符型，只把低八位赋予字符量。<br />
+	<font color="#009900">void main(){<br />
+	int a,b=322;<br />
+	float x,y=8.88;<br />
+	char c1=&#39;k&#39;,c2;<br />
+	a=y;<br />
+	x=b;<br />
+	a=c1;<br />
+	c2=b;<br />
+	printf(&quot;%d,%f,%d,%c&quot;,a,x,a,c2);<br />
+	}</font><br />
+	int a,b=322;<br />
+	float x,y=8.88;<br />
+	char c1=&#39;k&#39;,c2;<br />
+	printf(&quot;%d,%f,%d,%c&quot;,a=y,x=b,a=c1,c2=b);<br />
+	本例表明了上述赋值运算中类型转换的规则。a为整型，赋予实型量y值888后只取整数8。x为实型，赋予整型量b值322， 后增加了小数部分。字符型量c1赋予a变为整型，整型量b赋予c2 后取其低八位成为字符型(b的低八位为01000010，即十进制66，按ASCII码对应于字符B)。<br />
+	<br />
+	<font color="#ff0000">复合赋值符及表达式</font><br />
+	在赋值符&ldquo;=&rdquo;之前加上其它二目运算符可构成复合赋值符。如<br />
+	+=,-=,*=,／=,%=,&lt;&lt;=,&gt;&gt;=,&amp;=,^=,|=。 构成复合赋值表达式的一般形式为： 变量 双目运算符=表达式 它等效于 变量=变量 运算符 表达式 例如： a+=5 等价于a=a+5　　x*=y+7 等价于x=x*(y+7)　　r%=p 等价于r=r%p<br />
+	复合赋值符这种写法，对初学者可能不习惯， 但十分有利于编译处理，能提高编译效率并产生质量较高的目标代码。逗号运算符和逗号表达式在<br />
+	<br />
+	<font color="#ff0000">逗号运算符</font><br />
+	Ｃ语言中逗号&ldquo;，&rdquo;也是一种运算符，称为逗号运算符。 其功能是把两个表达式连接起来组成一个表达式， 称为逗号表达式。<br />
+	其一般形式为： 表达式1，表达式2 其求值过程是分别求两个表达式的值，并以表达式2的值作为整个逗号表达式的值。<br />
+	<font color="#009900">void main(){<br />
+	int a=2,b=4,c=6,x,y;<br />
+	x=a+b,y=b+c;<br />
+	printf(&quot;y=%d,x=%d&quot;,y,x);<br />
+	}</font><br />
+	a&lt;--2,b&lt;--4,c&lt;--6,x&lt;--0,y&lt;--0<br />
+	x&lt;--a+b,y&lt;---b+c<br />
+	本例中，y等于整个逗号表达式的值，也就是表达式2的值，x是第一个表达式的值。对于逗号表达式还要说明两点：<br />
+	1.逗号表达式一般形式中的表达式1和表达式2 也可以又是逗号表达式。例如： 表达式1，(表达式2，表达式3) 形成了嵌套情形。因此可以把逗号表达式扩展为以下形式： 表达式1，表达式2，&hellip;表达式n 整个逗号表达式的值等于表达式n的值。<br />
+	2.程序中使用逗号表达式，通常是要分别求逗号表达式内各表达式的值，并不一定要求整个逗号表达式的值。<br />
+	3.并不是在所有出现逗号的地方都组成逗号表达式，如在变量说明中，函数参数表中逗号只是用作各变量之间的间隔符。<br />
+	<font color="#009900">[Practice] //arithmeticint a,b,c;<br />
+	float d;<br />
+	a=11;<br />
+	b=235;<br />
+	c=a+b-a*b;<br />
+	d=(float)c/(float)a;<br />
+	a=c/a;&#39;Vtable<br />
+	a,2,0<br />
+	b,2,0<br />
+	c,2,0<br />
+	d,4,0.0<br />
+	of Vtable<br />
+	&#39;Vupdate<br />
+	1,0;2,0;3,0<br />
+	4,0.0<br />
+	1,11<br />
+	2,235<br />
+	3,-2339<br />
+	4,-212.636368<br />
+	1,-212<br />
+	of Vupdate<br />
+	of Practice<br />
+	[Practice] //1int a,b,c1,c2;<br />
+	a=25;<br />
+	b=3243;<br />
+	c1=b/a;<br />
+	c2=b%a;&#39;Vtable<br />
+	a,2,0<br />
+	b,2,0<br />
+	c1,2,0<br />
+	c2,2,0<br />
+	of Vtable<br />
+	&#39;Vupdate<br />
+	1,0;2,0;3,0;4,0<br />
+	1,25<br />
+	2,3243<br />
+	3,129<br />
+	4,18<br />
+	of Vupdate<br />
+	of Practice<br />
+	[Practice] //1int a,b,c;<br />
+	a=25;<br />
+	b=40;<br />
+	c=a+b,c+35;&#39;Vtable<br />
+	a,2,0<br />
+	b,2,0<br />
+	c,2,0<br />
+	of Vtable<br />
+	&#39;Vupdate<br />
+	1,0;2,0;3,0<br />
+	1,25<br />
+	2,40<br />
+	3,65<br />
+	of Vupdate<br />
+	of Practice</font><br />
+	<br />
+	<font color="#cc0000"><b>小结</b></font><br />
+	<br />
+	1.Ｃ的数据类型<br />
+	基本类型，构造类型，指针类型，空类型<br />
+	2.基本类型的分类及特点<br />
+	类型说明符 　　　　　字节 　　　　　　数值范围<br />
+	字符型char 　　　　 　 1 　　　　　　　C字符集<br />
+	基本整型int 　　　　　 2 　　　　　　　-32768～32767<br />
+	短整型short int 　　　 2 　 　　　　 　-32768～32767<br />
+	长整型 long int 　　　 4　　　　　　-214783648～214783647<br />
+	无符号型 unsigned 　　 2　　　　　　　　0～65535<br />
+	无符号长整型 unsigned long 4 　　　　　0～4294967295<br />
+	单精度实型 float 　　　4　　　　　　　3/4E-38～3/4E+38<br />
+	双精度实型 double　　　8　　　　　　　1/7E-308～1/7E+308<br />
+	3.常量后缀<br />
+	L或l 长整型<br />
+	U或u 无符号数<br />
+	F或f 浮点数<br />
+	4.常量类型<br />
+	整数，长整数，无符号数，浮点数，字符，字符串，符号常数，转义字符。<br />
+	5.数据类型转换<br />
+	&middot;自动转换<br />
+	在不同类型数据的混合运算中，由系统自动实现转换， 由少字节类型向多字节类型转换。 不同类型的量相互赋值时也由系统自动进行转换，把赋值号右边的类型转换为左边的类型。<br />
+	&middot;强制转换<br />
+	由强制转换运算符完成转换。<br />
+	6.运算符优先级和结合性<br />
+	一般而言，单目运算符优先级较高，赋值运算符优先级低。 算术运算符优先级较高，关系和逻辑运算符优先级较低。 多数运算符具有左结合性，单目运算符、三目运算符、 赋值<br />
+	7.表达式一个值和类型。 表达式求值按运算符的优先级和结合性所规定的顺序进行。<br />
+	一个值和类型。 表达式求值按运算符的优先级和结合性所规定的顺序进行。<br />
+	<br />
+	&nbsp;</p>
+<p>&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151020/827.html">C语言程序设计初步，数组</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151016/698.html">怎样学习c语言</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

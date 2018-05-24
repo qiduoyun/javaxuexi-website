@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>json使用入门教程 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1163","0","attach");
+		Cms.viewCount("","1163");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151114/1163.html" title="json使用入门教程">json使用入门教程</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">炒菜&nbsp;&nbsp;发布于    2015-11-14 18:41:09</span>
+     </h3>
+     <p>
+	json作为一种数据结构，被广泛用于各种数据交换的数据格式。使用json需要导入相应的jar包，在本例子的源码中有提供。
+</p>
+<p>
+	这里通过一个例子来介绍json的使用，将map数据转换成json对象，将json对象转换成字符串，然后输出。
+</p>
+<p>
+	1、导入jar包。
+</p>
+<p>
+	<img alt="" src="data:image/png;base64,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" />
+</p>
+<p>
+	2、具体类：Json_Demo
+</p>
+<p>
+<pre class="prettyprint lang-java">package com.javaxuexi.json;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import net.sf.json.JSONObject;
+
+public class Json_Demo {
+/**
+ * @param map
+ * @return 将map集合转换成json
+ */
+public JSONObject mapToJson(Map map){
+    JSONObject jsonObject=new JSONObject();//创建json对象
+    jsonObject.putAll(map);//将map转换成json对象
+    return jsonObject;
+}
+
+/**
+ * @param jsonObject
+ * @return 将json对象转换成字符串
+ */
+public String jsonToString(JSONObject jsonObject){
+    return jsonObject.toString();
+}
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Json_Demo json_Demo=new Json_Demo();
+        Map map=new HashMap();//创建map对象，并添加数据
+        map.put("no-1", "张三");
+        map.put("no-2", "李四");
+        map.put("no-3", "王五");
+        JSONObject jsonObject=json_Demo.mapToJson(map);//将map转换json
+        String string=json_Demo.jsonToString(jsonObject);//json转string
+        System.out.println(string);//输出json字符串
+    }
+
+}</pre>
+<br />
+&nbsp;
+</p>
+<p>
+	3、运行查看结果：
+</p>
+<p>
+	<img alt="" src="data:image/png;base64,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" />
+</p>
+<p>
+	我们可以看到，json数据结果和map非常相似，数据都是以键值对（key、value）进行存储的。
+</p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151115/1164.html">Blocks编程 Blocks入门 </a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151113/1162.html">log4j使用入门教程</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

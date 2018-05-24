@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C#类的方法 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1202","0","attach");
+		Cms.viewCount("","1202");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151119/1202.html" title="C#类的方法">C#类的方法</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-19 19:15:52</span>
+     </h3>
+     <h2>
+	C#类的方法<img alt="" src="/u/cms/www/201511/191915462bn1.jpg" style="width: 300px; height: 150px;" /></h2>
+<p>方法是类中用于执行计算或其它行为的成员。所有方法都必须定义在类或结构中。</p>
+<h3>
+	1.10.1方法的声明</h3>
+<p>方法的声明格式如下:</p>
+<p>属性&nbsp;方法修饰符&nbsp;返回类型&nbsp;方法名(形参列表){方法体}</p>
+<p>方法修饰符包括new、public、protected、internal、private、static、virtual、sealed、override、abstract和extern。这些修饰符有些已经介绍过，其它修饰符将逐一介绍。返回类型可以是任何合法的C#数据类型，也可以是void，即无返回值。形参列表的格式为：(形参类型&nbsp;形参1,形参类型&nbsp;形参2,...),可以有多个形参。不能使用C语言的形参格式。</p>
+<h3>
+	1.10.2方法参数的种类</h3>
+<p>C#语言的方法可以使用如下四种参数(请注意和参数类型的区别)：</p>
+<ul>
+	<li>
+		值参数，不含任何修饰符。</li>
+	<li>
+		引用参数，以ref修饰符声明。</li>
+	<li>
+		输出参数，以out修饰符声明。</li>
+	<li>
+		数组参数，以params修饰符声明。</li>
+</ul>
+<ol>
+	<li value="NaN">
+		值参数</li>
+</ol>
+<p>当用值参数向方法传递参数时，程序给实参的值做一份拷贝，并且将此拷贝传递给该方法，被调用的方法不会修改实参的值，所以使用值参数时，可以保证实参的值是安全的。如果参数类型是引用类型，例如是类的引用变量，则拷贝中存储的也是对象的引用，所以拷贝和实参引用同一个对象，通过这个拷贝，可以修改实参所引用的对象中的数据成员。</p>
+<ol>
+	<li value="NaN">
+		引用参数</li>
+</ol>
+<p>有时在方法中，需要修改或得到方法外部的变量值，C语言用向方法传递实参指针来达到目的，C#语言用引用参数。当用引用参数向方法传递实参时，程序将把实参的引用，即实参在内存中的地址传递给方法，方法通过实参的引用，修改或得到方法外部的变量值。引用参数以ref修饰符声明。注意在使用前，实参变量要求必须被设置初始值。</p>
+<ol>
+	<li value="NaN">
+		输出参数</li>
+</ol>
+<p>为了把方法的运算结果保存到外部变量，因此需要知道外部变量的引用(地址)。输出参数用于向方法传递外部变量引用(地址)，所以输出参数也是引用参数，与引用参数的差别在于调用方法前无需对变量进行初始化。在方法返回后，传递的变量被认为经过了初始化。值参数、引用参数和输出参数的使用见下例：</p>
+<p>using&nbsp;System;</p>
+<p>class&nbsp;g{public&nbsp;int&nbsp;a=0;}//类定义</p>
+<p>class&nbsp;Class1</p>
+<p>{ public&nbsp;static&nbsp;void&nbsp;F1(ref&nbsp;char&nbsp;i)//引用参数</p>
+<p>{ i=&#39;b&#39;;}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;F2(char&nbsp;i)//值参数，参数类型为值类型</p>
+<p>{ i=&#39;d&#39;;}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;F3(out&nbsp;char&nbsp;i)//输出参数</p>
+<p>{ i=&#39;e&#39;;}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;F4(string&nbsp;s)//值参数，参数类型为字符串</p>
+<p>{ s=&quot;xyz&quot;;}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;F5(g&nbsp;gg)//值参数，参数类型为引用类型</p>
+<p>{ gg.a=20;}</p>
+<p>public&nbsp;static&nbsp;void&nbsp;F6(ref&nbsp;string&nbsp;s)//引用参数，参数类型为字符串</p>
+<p>{ s=&quot;xyz&quot;;}</p>
+<p>static&nbsp;void&nbsp;Main(string[]&nbsp;args)</p>
+<p>{ char&nbsp;a=&#39;c&#39;;</p>
+<p>string&nbsp;s1=&quot;abc&quot;;</p>
+<p>F2(a);//值参数，不能修改外部的a</p>
+<p>Console.WriteLine(a);//因a未被修改，显示c</p>
+<p>F1(ref&nbsp;a);//引用参数,函数修改外部的a的值</p>
+<p>Console.WriteLine(a);//a被修改为b，显示b</p>
+<p>Char&nbsp;j;</p>
+<p>F3(out&nbsp;j);//输出参数，结果输出到外部变量j</p>
+<p>Console.WriteLine(j);//显示e</p>
+<p>F4(s1);//值参数，参数类型是字符串，s1为字符串引用变量</p>
+<p>Console.WriteLine(s1);//显示：abc,字符串s1不被修改</p>
+<p>g&nbsp;g1=new&nbsp;g();</p>
+<p>F5(g1);//值参数，但实参是一个类引用类型变量</p>
+<p>Console.WriteLine(g1.a.ToString());//显示:20，修改对象数据</p>
+<p>F6(ref&nbsp;s1);//引用参数，参数类型是字符串，s1为字符串引用变量</p>
+<p>Console.WriteLine(s1);//显示：xyz，字符串s1被修改</p>
+<p>}</p>
+<p>}</p>
+<ol>
+	<li value="NaN">
+		数组参数</li>
+</ol>
+<p>数组参数使用params说明，如果形参表中包含了数组参数，那么它必须是参数表中最后一个参数，数组参数只允许是一维数组。比如string[]和string[][]类型都可以作为数组型参数。最后，数组型参数不能再有ref和out修饰符。见下例：</p>
+<p>using&nbsp;System;</p>
+<p>class&nbsp;Class1</p>
+<p>{ static&nbsp;void&nbsp;F(params&nbsp;int[]&nbsp;args)//数组参数，有params说明</p>
+<p>{ Console.Write(&quot;Array&nbsp;contains&nbsp;{0}&nbsp;elements:&quot;,args.Length);</p>
+<p>foreach&nbsp;(int&nbsp;i&nbsp;in&nbsp;args)</p>
+<p style="margin-left:42.0000pt;">Console.Write(&quot;&nbsp;{0}&quot;,i);</p>
+<p>Console.WriteLine();</p>
+<p>}</p>
+<p>static&nbsp;void&nbsp;Main(string[]&nbsp;args)</p>
+<p>{ int[]&nbsp;a&nbsp;=&nbsp;{1,2,3};</p>
+<p>F(a);//实参为数组类引用变量a</p>
+<p>F(10,&nbsp;20,&nbsp;30,&nbsp;40);//等价于F(new&nbsp;int[]&nbsp;{60,70,80,90});</p>
+<p>F(new&nbsp;int[]&nbsp;{60,70,80,90});//实参为数组类引用</p>
+<p>F();//等价于F(new&nbsp;int[]&nbsp;{});</p>
+<p>F(new&nbsp;int[]&nbsp;{});//实参为数组类引用，数组无元素</p>
+<p>}</p>
+<p>}</p>
+<p>程序输出</p>
+<p>Array&nbsp;contains&nbsp;3&nbsp;elements:&nbsp;1&nbsp;2&nbsp;3</p>
+<p>Array&nbsp;contains&nbsp;4&nbsp;elements:&nbsp;10&nbsp;20&nbsp;30&nbsp;40</p>
+<p>Array&nbsp;contains&nbsp;4&nbsp;elements:&nbsp;60,70,80,90</p>
+<p>Array&nbsp;contains&nbsp;0&nbsp;elements:</p>
+<p>Array&nbsp;contains&nbsp;0&nbsp;elements:</p>
+<p>方法的参数为数组时也可以不使用params，此种方法可以使用一维或多维数组，见下例：</p>
+<p>using&nbsp;System;</p>
+<p>class&nbsp;Class1</p>
+<p>{ static&nbsp;void&nbsp;F(int[,]&nbsp;args)//值参数，参数类型为数组类引用变量，无params说明</p>
+<p>{ Console.Write(&quot;Array&nbsp;contains&nbsp;{0}&nbsp;elements:&quot;,args.Length);</p>
+<p>foreach&nbsp;(int&nbsp;i&nbsp;in&nbsp;args)</p>
+<p style="margin-left:42.0000pt;">Console.Write(&quot;&nbsp;{0}&quot;,i);</p>
+<p>Console.WriteLine();</p>
+<p>}</p>
+<p>static&nbsp;void&nbsp;Main(string[]&nbsp;args)</p>
+<p>{ int[,]&nbsp;a&nbsp;=&nbsp;{{1,2,3},{4,5,6}};</p>
+<p>F(a);//实参为数组类引用变量a</p>
+<p>//F(10,&nbsp;20,&nbsp;30,&nbsp;40);//此格式不能使用</p>
+<p>F(new&nbsp;int[,]&nbsp;{{60,70},{80,90}});//实参为数组类引用</p>
+<p>//F();//此格式不能使用</p>
+<p>//F(new&nbsp;int[,]&nbsp;{});//此格式不能使用</p>
+<p>}</p>
+<p>}</p>
+<p>程序输出</p>
+<p>Array&nbsp;contains&nbsp;3&nbsp;elements:&nbsp;1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6</p>
+<p>Array&nbsp;contains&nbsp;4&nbsp;elements:&nbsp;60,70,80,90</p>
+<h3>
+	1.10.3静态方法和实例方法</h3>
+<p>用修饰符static声明的方法为静态方法，不用修饰符static声明的方法为实例方法。不管类生成或未生成对象，类的静态方法都可以被使用，使用格式为：类名.静态方法名。静态方法只能使用该静态方法所在类的静态数据成员和静态方法。这是因为使用静态方法时，该静态方法所在类可能还没有对象，即使有对象，由于用类名.静态方法名方式调用静态方法，静态方法没有this指针来存放对象的地址，无法判定应访问哪个对象的数据成员。在类创建对象后，实例方法才能被使用，使用格式为：对象名.实例方法名。实例方法可以使用该方法所在类的所有静态成员和实例成员。例子如下：</p>
+<p>using&nbsp;System;</p>
+<p>public&nbsp;class&nbsp;UseMethod</p>
+<p>{ private&nbsp;static&nbsp;int&nbsp;x=0;//静态字段</p>
+<p>private&nbsp;int&nbsp;y=1;//实例字段</p>
+<p>public&nbsp;static&nbsp;void&nbsp;StaticMethod()//静态方法</p>
+<p>{ x=10;//正确，静态方法访问静态数据成员</p>
+<p style="margin-left:21.0000pt;">//y=20;//错误，静态方法不能访问实例数据成员</p>
+<p>}</p>
+<p>public&nbsp;void&nbsp;NoStaticMethod()//实例方法</p>
+<p>{ x=10;//正确，实例方法访问静态数据成员</p>
+<p style="margin-left:21.0000pt;">y=20;//正确，实例方法访问实例数据成员</p>
+<p>}</p>
+<p>}</p>
+<p>public&nbsp;class&nbsp;Class1</p>
+<p>{ public&nbsp;static&nbsp;void&nbsp;Main()</p>
+<p>{ UseMethod&nbsp;m=new&nbsp;UseMethod();</p>
+<p>UseMethod.StaticMethod();//使用静态方法格式为：类名.静态方法名</p>
+<p>m.NoStaticMethod();//使用实例方法格式为：对象名.实例方法名</p>
+<p>}</p>
+<p>}</p>
+<h3>
+	1.10.4方法的重载</h3>
+<p>在C#语言中，如果在同一个类中定义的函数名相同，而参数类型或参数个数不同，认为是不相同的函数，仅返回值不同，不能看作不同函数，这叫做函数的重载。前边Person类中定义了多个构造函数就是重载的例子。在C语言中，若计算一个数据的绝对值，则需要对不同数据类型求绝对值方法使用不同的方法名，如用abc()求整型数绝对值，labs()求长整型数绝对值，fabs()求浮点数绝对值。而在C#语言中，可以使用函数重载特性，对这三个函数定义同样的函数名，但使用不同的参数类型。下面是实现方法：</p>
+<p>using&nbsp;System;</p>
+<p>public&nbsp;class&nbsp;UseAbs</p>
+<p>{ public&nbsp;int&nbsp;&nbsp;abs(int&nbsp;x)//整型数求绝对值</p>
+<p>{ return(x&lt;0&nbsp;?&nbsp;-x:x);}</p>
+<p>public&nbsp;long&nbsp;abs(long&nbsp;x)//长整型数求绝对值</p>
+<p>{return(x&lt;0&nbsp;?&nbsp;-x:x);}</p>
+<p>public&nbsp;double&nbsp;&nbsp;abs(double&nbsp;&nbsp;x)//浮点数求绝对值</p>
+<p>{return(x&lt;0&nbsp;?&nbsp;-x:x);}</p>
+<p>}</p>
+<p>class&nbsp;Class1</p>
+<p>{ static&nbsp;void&nbsp;Main(string[]&nbsp;args)</p>
+<p>{ UseAbs&nbsp;m=new&nbsp;UseAbs();</p>
+<p>int&nbsp;x=-10;</p>
+<p>long&nbsp;y=-123;</p>
+<p>double&nbsp;z=-23.98d;</p>
+<p>x=m.abs(x);</p>
+<p>y=m.abs(y);</p>
+<p>z=m.abs(z);</p>
+<p>Console.WriteLine(&quot;x={0},y={1},z={2}&quot;,x,y,z);</p>
+<p>}</p>
+<p>}</p>
+<p>类的对象调用这些同名方法，在编译时，根据调用方法的实参类型决定调用那个同名方法，计算不同类型数据的绝对值。这给编程提供了极大方便。</p>
+<h3>
+	1.10.5操作符重载</h3>
+<p>操作符重载是将C#语言中的已有操作符赋予新的功能，但与该操作符的本来含义不冲突，使用时只需根据操作符出现的位置来判别其具体执行哪一种运算。操作符重载，实际是定义了一个操作符函数，操作符函数声明的格式如下：</p>
+<p>static&nbsp;public&nbsp;函数返回类型&nbsp;operator&nbsp;重新定义的操作符(形参表)</p>
+<p>C#语言中有一些操作符是可以重载的，例如：+&nbsp;-&nbsp;!&nbsp;~&nbsp;++&nbsp;--&nbsp;true&nbsp;false&nbsp;*&nbsp;/&nbsp;%&nbsp;&amp;&nbsp;|&nbsp;^&nbsp;&lt;&lt;&nbsp;&gt;&gt;&nbsp;==&nbsp;!=&nbsp;&gt;&nbsp;&lt;&nbsp;&gt;=&nbsp;&lt;=等等。但也有一些操作符是不允许进行重载的，例如：=,&nbsp;&amp;&amp;,&nbsp;||,&nbsp;?:,&nbsp;new,&nbsp;typeof,&nbsp;sizeof,&nbsp;is等。</p>
+<p>下边的例子，定义一个复数类，并且希望复数的加减乘除用符号+,-.*,/来表示。</p>
+<p>using&nbsp;System;</p>
+<p>class&nbsp;Complex//复数类定义</p>
+<p>{ private&nbsp;double&nbsp;Real;//复数实部</p>
+<p>private&nbsp;double&nbsp;Imag;//复数虚部</p>
+<p>public&nbsp;Complex(double&nbsp;x,double&nbsp;y)//构造函数</p>
+<p>{ Real=x;</p>
+<p>Imag=y;</p>
+<p>}</p>
+<p>static&nbsp;public&nbsp;Complex&nbsp;operator&nbsp;-&nbsp;(Complex&nbsp;a)//重载一元操作符负号,注意1个参数</p>
+<p>{ return&nbsp;(new&nbsp;Complex(-a.Real,-a.Imag));}</p>
+<p>static&nbsp;public&nbsp;Complex&nbsp;operator&nbsp;+(Complex&nbsp;a,Complex&nbsp;b)//重载二元操作符加号</p>
+<p>{ return&nbsp;(new&nbsp;Complex(a.Real+b.Real,a.Imag+b.Imag));}</p>
+<p>public&nbsp;void&nbsp;Display()</p>
+<p>{ Console.WriteLine(&quot;{0}+({1})j&quot;,Real,Imag);}</p>
+<p>}</p>
+<p>class&nbsp;Class1</p>
+<p>{ static&nbsp;void&nbsp;Main(string[]&nbsp;args)</p>
+<p>{ Complex&nbsp;x=new&nbsp;Complex(1.0,2.0);</p>
+<p>Complex&nbsp;y=new&nbsp;Complex(3.0,4.0);</p>
+<p>Complex&nbsp;z=new&nbsp;Complex(5.0,7.0);</p>
+<p>x.Display();//显示:1+(2)j</p>
+<p>y.Display();//显示:3+(4)j</p>
+<p>z.Display();//显示:5+(7)j</p>
+<p>z=-x;//等价于z=opeator-(x)</p>
+<p>z.Display();//显示：-1+(-2)j</p>
+<p>z=x+y;//即z=opeator+(x,y)</p>
+<p>z.Display();//显示：4+(6)j</p>
+<p>}</p>
+<p>}</p>
+<h3>
+	1.10.6this关键字</h3>
+<p>每个类都可以有多个对象，例如定义Person类的两个对象：</p>
+<p>Person&nbsp;P1=new&nbsp;Person(&quot;李四&quot;,30);</p>
+<p>Person&nbsp;P2=new&nbsp;Person(&quot;张三&quot;,40);</p>
+<p>因此P1.Display()应显示李四信息，P2.Display()应显示张三信息，但无论创建多少个对象，只有一个方法Display()，该方法是如何知道显示那个对象的信息的呢？C#语言用引用变量this记录调用方法Display()的对象，当某个对象调用方法Display()时，this便引用该对象(记录该对象的地址)。因此，不同的对象调用同一方法时，方法便根据this所引用的不同对象来确定应该引用哪一个对象的数据成员。this是类中隐含的引用变量，它是被自动被赋值的，可以使用但不能被修改。例如：P1.Display()，this引用对象P1，显示李四信息。P2.Display()，this引用对象P2，显示张三信息。</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151122/1224.html">VS.NET控件通用属性</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151119/1201.html">C#类的字段和属性</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

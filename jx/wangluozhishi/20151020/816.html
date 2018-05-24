@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>小型局域网故障诊断必读 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","816","0","attach");
+		Cms.viewCount("","816");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151020/816.html" title="小型局域网故障诊断必读">小型局域网故障诊断必读</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-10-20 14:34:29</span>
+     </h3>
+     <p>1添加网关192.168.0.1　2DNS 202.97.244.68 第二个要看你机器原来的DNS是多少啦 注：DNS有两个<br />
+	<br />
+	添加IP192.168.0.？　 看自己的机器是怎么分配　　　　要看网落通不通　请在开始菜单的运行里打个命令<br />
+	PING（空格）192.168.0.1（空格）-T　　飞雪下面的知识你要掌握一下！！！　　　<br />
+	　　　　　　　　　　　　　　　　　　　　　　　　<br />
+	<br />
+	<br />
+	首先小型局域网故障诊断必读<br />
+	<br />
+	<br />
+	<br />
+	对于小型局域网的管理员来说，在网络的维护过程中，麻烦不断。 怎么尽可能地减少网络的故障，以及出现常见的故障如何排除，是每一个管理员都希望做到的。现将小型局域网经常出现的故障加以解析。<br />
+	<br />
+	<br />
+	目前的网络大多数都围绕着Intranet/Internet体系，或者是单独一个局域网。我主要针对目前流行的小型网吧的计算机网络体系为例，来说一下常见的故障现象及排除方法。<br />
+	<br />
+	<br />
+	1、网络不通。这是最常见的问题，解决问题的基本原则是先软后硬，先从软件方面去考虑，对于目前流行的Windows网络，可以先安装好TCP/IP协议，指定每台计算机的IP地址，使用Ping命令，看其它的计算机是否能够Ping的通，如果不通，则证明网络连接有问题，如果通但是有时候丢失数据包的话，证明网络传输有阻塞，或者说是网络设备接触不大好，需要检查网络设备。<br />
+	<br />
+	<br />
+	2、RJ45接口是否制作好，RJ45是10BASE-T网络标准中接口形式，现在被广泛使用。其内部有8个线槽，线槽含义遵循EIA/TIA568国际标准，在10BASE-T网络中1、2线为发送线，3、6线为接收线。在双机进行连接的时候，其中的1,3,2,6线需要对调。否则也会造成网络的不通。另外，需要检查HUB或者交换机的接头是否有问题，如果某个接口有问题，可以换一个接口来测试。<br />
+	<br />
+	<br />
+	3、网卡的问题，目前大多数网吧使用的都是PCI的自适应网卡，或者使用100M的网卡。网卡的问题不太明显，所以在测试的时候最好是先测试网线，再测试网卡，如果有条件的话，可以使用测线仪或者万用表进行测试。首先要查看网卡是否正常安装了驱动程序，如果没有安装驱动程序，或者驱动程序有问题，硬件有冲突，需要查看与什么硬件冲突，然后修改对应的中断号和I/O地址来避免冲突，有些网卡还需要在CMOS中进行设置。即使网卡在系统属性中的调备管理器中显示工作正常，也不能掉以轻心。<br />
+	<br />
+	我曾经遇见过以下几个现象：ISA Tp-Link网卡，在安装好它的驱动程序以后，如果一连上网线，其它计算机都无法正常连接到网络，把它去掉以后，其它计算机可以正常连网；另一块网卡是安装好它的驱动以后，在系统属性中的设备管理器中也显示正常，但是无论换任何网线都无法正常连网，换一块网卡问题解决，这些问题都是网卡的问题。<br />
+	<br />
+	<br />
+	4、病毒，最近互联网上出现许多比较厉害的新病毒，例如红色代码，蓝色代码，尼姆达等病毒。某些病毒除了使计算机运行变慢，还可以阻塞网络，造成网络塞车。对付这些新病毒，大多数病毒厂商，例如瑞星，Kv3000在其主页上都有对付的办法，在这里一定要注意，不要按照平常的杀毒办法杀毒，必须对杀毒软件进行定时的升级。某些病毒直接查杀无法杀干净。<br />
+	<br />
+	　　<br />
+	　　网络诊断是一门综合性技术，涉及网络技术的方方面面。为方便下面的讨论，首先简单回顾一下网络和路由器的基本概念。<br />
+	　　<br />
+	　　1．计算机网络是由计算机集合加通信设施组成的系统，即利用各种通信手段，把地理上分散的计算机连在一起，达到相互通信而且共享软件、硬件和数据等资源的系统。计算机网络按其计算机分布范围通常被分为局域网和广域网。局域网覆盖地理范围较小，一般在数米到数十公里之间。广域网覆盖地理范围较大，如校园、城市之间、乃至全球。计算机网络的发展，导致网络之间各种形式的连接。采用统一协议实现不同网络的互连，使互联网络很容易得到扩展。因特网就是用这种方式完成网络之间联结的网络。因特网采用TCP/IP协议作为通信协议，将世界范围内计算机网络连接在一起，成为当今世界最大的和最流行的国际性网络。<br />
+	　　<br />
+	　　2.为了完成计算机间的通信，把每部计算机互连的功能划分成定义明确的层次，规定了同层进程通信的协议及相邻层之间的接口和服务，将这些层、同层进程通信的协议及相邻层之间的接口统称为网络体系结构。国际标准化组织（ISO）提出的开放系统互连参考模型（OSI）是当代计算机网络技术体系的核心。该模型将网络功能划分为7个层次：物理层、数据链路层、网络层、传输层、会话层、表示层和应用层。<br />
+	　　<br />
+	　　3.TCP/IP即传输控制协议和网间互联协议是一组网络协议。TCP/IP起源于美国ARPANET网，发展至今已成为因特网使用的标准通信协议。使用TCP/IP能够使采用不同操作系统的计算机以有序的方式交换数据。<br />
+	　　<br />
+	　　4.路由器是一种网络设备，是用于网络连接、执行路由选择任务的专用计算机。路由器工作于网络层，对信包转发，并具有过滤功能。路由器能够将使用不同技术的两个网络互连起来，能够在多种类型的网络之间（局域网或广域网）建立网络连接。它将处在七层模型中的网络层的信息，根据最快、最直接的路由原理从一个网络的网络层传输到另一个网络的网络层，以达到最佳路由选择。同时在内部使用高档微处理器，用高速的内部总线连接适合各种网络协议的接口卡。并具有多种网管功能，能监视与路由器相连接的一些网络设备和它们的配置运行情况。<br />
+	　　<br />
+	　　5.CISCO路由器是目前网络建设中使用最多的一种路由器，有多种档次、多种系列，目前常用的当属2500系列，本文以2500系列为例讨论。2500系列路由器是固定接口的多协议路由器，支持CISCOIOS全部功能。根据特定的协议环境分为以下四种类型：固定配置的路由器（2501）、带HUB口的路由器（2507）、摸块化的路由器（2514）和访问服务器（2511）。它们结构简单、操作方便、易于配置和管理，是一种用于小规模局域网和广域网网络层中继的路由设备。<br />
+	　　<br />
+	　　6．CISCOIOS是CISCO所特有的互连网操作系统，所有的CISCO产品都运行IOS，IOS将它们无缝连接在一起协同工作。给用户提供一个可支持任意硬件界面、任意链路层、网络层协议的可扩展的开放型网络。IOS支持众多的协议，包括各种网络通信协议和路由协议等。CISCOIOS已成为工业界网际网互联的事实标准。<br />
+	　　CISCOIOS提供几种不同的操作模式，每一种模式提供一组相关的命令集、不同的操作权限和操作功能。基于安全目的，CISCO用户界面中有两级访问权限：用户级和特权级。<br />
+	　　第一级访问允许查看路由状态，叫做用户EXEC模式，又称为查看模式；<br />
+	　　第二级访问允许查看路由器配置、修改配置和运行调试命令，叫做特权EXEC模式，又称为配置模式。<br />
+	　　在特权级中，按不同的配置内容，可进入不同的配置模式，如全球配置模式、接口配置模式、线配置模式等。<br />
+	　　<br />
+	　　网络故障诊断概述<br />
+	　　<br />
+	　　网络故障诊断应该实现三方面的目的：<br />
+	　　确定网络的故障点，恢复网络的正常运行；<br />
+	　　发现网络规划和配置中欠佳之处，改善和优化网络的性能；<br />
+	　　观察网络的运行状况，及时预测网络通信质量。<br />
+	　　网络故障诊断以网络原理、网络配置和网络运行的知识为基础。从故障现象出发，以网络诊断工具为手段获取诊断信息，确定网络故障点，查找问题的根源，排除故障，恢复网络正常运行。网络故障通常有以下几种可能：物理层中物理设备相互连接失败或者硬件及线路本身的问题；数据链路层的网络设备的接口配置问题；网络层网络协议配置或操作错误；传输层的设备性能或通信拥塞问题；上三层CISCOIOS或网络应用程序错误。诊断网络故障的过程应该沿着OSI七层模型从物理层开始向上进行。首先检查物理层，然后检查数据链路层，以此类推，设法确定通信失败的故障点，直到系统通信正常为止。<br />
+	　　网络诊断可以使用包括局域网或广域网分析仪在内的多种工具：路由器诊断命令；网络管理工具和其它故障诊断工具。CISCO提供的工具足以胜任排除绝大多数网络故障。查看路由表，是解决网络故障开始的好地方。ICMP的ping、trace命令和Cisco的show命令、debug命令是获取故障诊断有用信息的网络工具。我们通常使用一个或多个命令收集相应的信息，在给定情况下，确定使用什么命令获取所需要的信息。譬如，通过IP协议来测定设备是否可达到的常用方法是使用ping命令。ping从源点向目标发出ICMP信息包，如果成功的话，返回的ping信息包就证实从源点到目标之间所有物理层、数据链路层和网罗层的功能都运行正常。如何在互联网络运行后了解它的信息，了解网络是否正常运行，监视和了解网络在正常条件下运行细节，了解出现故障的情况。监视那些内容呢？利用showinterface命令可以非常容易地获得待检查的每个接口的信息。另外showbuffer命令提供定期显示缓冲区大小、用途及使用状况等。Showproc命令和showprocmem命令可用于跟踪处理器和内存的使用情况，可以定期收集这些数据，在故障出现时，用于诊断参考。网络故障以某种症状表现出来，故障症状包括一般性的（象用户不能接入某个服务器）和较特殊的（如路由器不在路由表中）。对每一个症状使用特定的故障诊断工具和方法都能查找出一个或多个故障原因。<br />
+	　　一般故障排除模式如下：第一步，当分析网络故障时，首先要清楚故障现象。应该详细说明故障的症侯和潜在的原因。为此，要确定故障的具体现象，然后确定造成这种故障现象的原因的类型。例如，主机不响应客户请求服务。可能的故障原因是主机配置问题、接口卡故障或路由器配置命令丢失等。第二步，收集需要的用于帮助隔离可能故障原因的信息。向用户、网络管理员、管理者和其他关键人物提一些和故障有关的问题。广泛的从网络管理系统、协议分析跟踪、路由器诊断命令的输出报告或软件说明书中收集有用的信息。第三步，根据收集到的情况考虑可能的故障原因。可以根据有关情况排除某些故障原因。例如，根据某些资料可以排除硬件故障，把注意力放软件原因上。对于任何机会都应该设法减少可能的故障原因，以至于尽快的策划出有效的故障诊断计划。第四步，根据最后的可能的故障原因，建立一个诊断计划。开始仅用一个最可能的故障原因进行诊断活动，这样可以容易恢复到故障的原始状态。如果一次同时考虑一个以上的故障原因，试图返回故障原始状态就困难的多了。第五步，执行诊断计划，认真做好每一步测试和观察，直到故障症状消失。第六步，每改变一个参数都要确认其结果。分析结果确定问题是否解决，如果没有解决，继续下去，直到解决。<br />
+	　　<br />
+	　　网络故障分层诊断技术<br />
+	　　<br />
+	　　1．物理层及其诊断物理层是OSI分层结构体系中最基础的一层，它建立在通信媒体的基础上，实现系统和通信媒体的物理接口，为数据链路实体之间进行透明传输，为建立、保持和拆除计算机和网络之间的物理连接提供服务。<br />
+	　　物理层的故障主要表现在设备的物理连接方式是否恰当；连接电缆是否正确；MODEM、CSU/DSU等设备的配置及操作是否正确。确定路由器端口物理连接是否完好的最佳方法是使用showinterface命令，检查每个端口的状态，解释屏幕输出信息，查看端口状态、协议建立状态和EIA状态。<br />
+	　　<br />
+	　　2．数据链路层及其诊断数据链路层的主要任务是使网络层无须了解物理层的特征而获得可靠的传输。数据链路层为通过链路层的数据进行打包和解包、差错检测和一定的校正能力，并协调共享介质。在数据链路层交换数据之前，协议关注的是形成帧和同步设备。查找和排除数据链路层的故障，需要查看路由器的配置，检查连接端口的共享同一数据链路层的封装情况。每对接口要和与其通信的其他设备有相同的封装。通过查看路由器的配置检查其封装，或者使用show命令查看相应接口的封装情况。<br />
+	　　<br />
+	　　3．网络层及其诊断网络层提供建立、保持和释放网络层连接的手段，包括路由选择、流量控制、传输确认、中断、差错及故障恢复等。排除网络层故障的基本方法是：沿着从源到目标的路径，查看路由器路由表，同时检查路由器接口的IP地址。如果路由没有在路由表中出现，应该通过检查来确定是否已经输入适当的静态路由、默认路由或者动态路由。然后手工配置一些丢失的路由，或者排除一些动态路由选择过程的故障，包括RIP或者IGRP路由协议出现的故障。例如，对于IGRP路由选择信息只在同一自治系统号（AS）的系统之间交换数据，查看路由器配置的自治系统号的匹配情况。<br />
+	　　<br />
+	　　路由器接口故障排除<br />
+	　　<br />
+	　　1．串口故障排除串口出现连通性问题时，为了排除串口故障，一般是从showinterfaceserial命令开始，分析它的屏幕输出报告内容，找出问题之所在。串口报告的开始提供了该接口状态和线路协议状态。<br />
+	　　接口和线路协议的可能组合有以下几种：<br />
+	　　1）串口运行、线路协议运行，这是完全的工作条件。该串口和线路协议已经初始化，并正在交换协议的存活信息。<br />
+	　　2）串口运行、线路协议关闭，这个显示说明路由器与提供载波检测信号的设备连接，表明载波信号出现在本地和远程的调制解调器之间，但没有正确交换连接两端的协议存活信息。可能的故障发生在路由器配置问题、调制解调器操作问题、租用线路干扰或远程路由器故障，数字式调制解调器的时钟问题，通过链路连接的两个串口不在同一子网上，都会出现这个报告。<br />
+	　　3)串口和线路协议都关闭，可能是电信部门的线路故障、电缆故障或者是调制解调器故障。<br />
+	　　4）串口管理性关闭和线路协议关闭，这种情况是在接口配置中输入了shutdown命令。通过输入noshutdown命令，打开管理性关闭。接口和线路协议都运行的状况下，虽然串口链路的基本通信建立起来了，但仍然可能由于信息包丢失和信息包错误时会出现许多潜在的故障问题。正常通信时接口输入或输出信息包不应该丢失，或者丢失的量非常小，而且不会增加。如果信息包丢失有规律性增加，表明通过该接口传输的通信量超过接口所能处理的通信量。解决的办法是增加线路容量。查找其他原因发生的信息包丢失，查看showinterfaceserial命令的输出报告中的输入输出保持队列的状态。当发现保持队列中信息包数量达到了信息的最大允许值，可以增加保持队列设置的大小。<br />
+	　　<br />
+	　　2．以太接口故障排除<br />
+	　　以太接口的典型故障问题是：带宽的过分利用；碰撞冲突次数频繁；使用不兼容的幀类型。使用showinterfaceethernet命令可以查看该接口的吞吐量、碰橦冲突、信息包丢失、和幀类型的有关内容等。<br />
+	　　1）通过查看接口的吞吐量可以检测网络的利用。如果网络广播信息包的百分比很高，网络性能开始下降。光纤网转换到以太网段的信息包可能会淹没以太口。互联网发生这种情况可以采用优化接口的措施，即在以太接口使用noiproutecache命令，禁用快速转换，并且调整缓冲区和保持队列。<br />
+	　　2）两个接口试图同时传输信息包到以太电缆上时，将发生碰橦。以太网要求冲突次数很少，不同的网络要求是不同的，一般情况发现冲突每秒有3、5次就应该查找冲突的原因了。碰橦冲突产生拥塞，碰橦冲突的原因通常是由于敷设的电缆过长、过分利用、或者&ldquo;聋&rdquo;节点。以太网络在物理设计和敷设电缆系统管理方面应有所考虑，超规范敷设电缆可能引起更多的冲突发生。<br />
+	　　3）如果接口和线路协议报告运行状态，并且节点的物理连接都完好，可是不能通信。引起问题的原因也可能是两个节点使用了不兼容的幀类型。解决问题的办法是重新配置使用相同幀类型。如果要求使用不同幀类型的同一网络的两个设备互相通信，可以在路由器接口使用子接口，并为每个子接口指定不同的封装类型。<br />
+	　　<br />
+	　　3．异步通信口故障排除互连网络的运行中，异步通信口的任务是为用户提供可靠服务，但又是故障多发部位。主要的问题是，在通过异步链路传输基于LAN通信量时，将丢失的信息包的量降止最少。<br />
+	　　异步通信口故障一般的外部因素是：拨号链路性能低劣；电话网交换机的连接质量问题；调制解调器的设置。检查链路两端使用的调制解调器：连接到远程PC机端口调制解调器的问题不太多，因为每次生成新的拨号时通常都初始化调制解调器，利用大多数通信程序都能在发出拨号命令之前发送适当的设置字符串；连接路由器端口的问题较多，这个调制解调器通常等待来自远程调制解调器的连接，连接之前，并不接收设置字符串。如果调制解调器丢失了它的设置，应采用一种方法来初始化远程调制解调器。简单的办法是使用可通过前面板配置的调制解调器，另一种方法是将调制解调器接到路由器的异步接口，建立反向telnet,发送设置命令配置调制解调器。showinterfaceasync命令、showline命令是诊断异步通信口故障使用最多的工具。showinterfaceasync命令输出报告中，接口状态报告关闭的唯一的情况是接口没有设置封装类型。线路协议状态显示与串口线路协议显示相同。showline命令显示接口接收和传输速度设置以及EIA状态显示。<br />
+	　　showline命令可以认为是接口命令（showinterfaceasync）的扩展。showline命令输出的EIA信号及网络状态：noCTSnoDSRDTRRTS：调制解调器未与异步接口连接。CTSnoDSRDTRRTS：调制解调器与异步接口连接正常，但未连接远程调制解调器。CTSDSRDTRRTS：远程调制解调器拨号进入并建立连接。确定异步通信口故障一般可用下列步骤：检查电缆线路质量；检查调制解调器的参数设置；检查调制解调器的连接速度；检查rxspeed和txspeed是否与调制解调器的配置匹配；通过showinterfaceasync命令和showline命令查看端口的通信状况；从showline命令的报告检查EIA状态显示；检查接口封装；检查信息包丢失及缓冲区丢失情况。<br />
+	　　网络发生故障是不可避免的。网络建成运行后，网络故障诊断是网络管理的重要技术工作。搞好网络的运行管理和故障诊断工作，提高故障诊断水平需要注意以下几方面的问题：认真学习有关网络技术理论；清楚网络的结构设计，包括网络拓朴、设备连接、系统参数设置及软件使用；了解网络正常运行状况、注意收集网络正常运行时的各种状态和报告输出参数；熟悉常用的诊断工具，准确的描述故障现象。 <!--/HTMLBUILERPART0--><br />
+	<br />
+	&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151020/817.html">让你的iss更安全</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151020/815.html">网页恶意代码的手工处理</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

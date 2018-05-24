@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1607","0","attach");
+		Cms.viewCount("","1607");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151223/1607.html" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP和ICMP协议相...</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-23 16:29:26</span>
+     </h3>
+     <span></span></span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"> </span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;"> *****************************************************************&nbsp;</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"> </span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;"> #一些原理：也许你有这样的问题：“在机器名后的端口号代表什么？&nbsp;</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;"> 例子：Eagle:2929</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;"> 小于1024的端口通常运行一些网络服务，大于1024的端口用来与远程机器建立连接。 </span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;"> *****************************************************************</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:Verdana;color:#4C33E5;font-size:16px;">&nbsp;</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">继续我们的探讨，使用-n参数。（Netstat&nbsp;-n)&nbsp;</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;"> Netstat&nbsp;-n基本上是-a参数的数字形式：</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:Verdana;color:#4C33E5;font-size:16px;">&nbsp;</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">C:\&gt;netstat&nbsp;-n</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">Active&nbsp;Connections</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Proto&nbsp;&nbsp;Local&nbsp;Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Foreign&nbsp;Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.1:445&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.1:1031&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESTABLISHED</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.1:1031&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.1:445&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESTABLISHED</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180:1213&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;218.85.139.65:9002&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLOSE_WAIT</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180:2416&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219.133.63.142:443&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLOSE_WAIT</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180:2443&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219.133.63.142:443&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLOSE_WAIT</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180:2907&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.101:2774&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLOSE_WAIT</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180:2916&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.101:23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESTABLISHED</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180:2929&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219.137.227.10:4899&nbsp;&nbsp;&nbsp;&nbsp;ESTABLISHED</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180:3048&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.1:8004&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SYN_SENT</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180:3455&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;218.85.139.65:9002&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESTABLISHED</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-indent:20.0000pt;text-align:left;">
+	<span style="font-family:Verdana;color:#4C33E5;font-size:16px;">&nbsp;</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">netstat&nbsp;-an&nbsp;这个命令能看到所有和本地计算机建立连接的IP，它包含四个部分——proto（连接方式）、local&nbsp;address（本地连接地址）、foreign&nbsp;address（和本地建立连接的地址）、state（当前端口状态）。</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-weight:bold;font-size:16px;">-a&nbsp;和&nbsp;－n&nbsp;是最常用的两个，据我不完全测试得出以下结果：</span><span style="font-family:Verdana;color:#FF0000;font-weight:bold;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-weight:bold;font-size:16px;">1.&nbsp;-n&nbsp;显示用数字化主机名，即IP地址，而不是compute_name【eagle】</span><span style="font-family:Verdana;color:#FF0000;font-weight:bold;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">2.&nbsp;-n&nbsp;只显示TCP连接（没有在哪里见过微软的相关文档，有哪个朋友见到的话，记得告诉我喔^_^）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;得到IP等于得到一切，它是最容易使机器受到攻击的东东，所以隐藏自己IP，获得别人的IP对hacker来说非常重要，现在隐藏IP技术很流行，但那些隐藏工具或服务真的让你隐身吗？我看不见得，呵呵，代理，跳板不属于今天讨论，一个获取对方IP的简单例子请参考我前面的文章【</span><span><a href="http://hawkoo.bokee.com/viewdiary.10456844.html"><span style="font-family:宋体;color:#4C33E5;text-decoration:underline;font-size:16px;">用DOS命令查QQ好友IP地址</span></a></span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">】</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">-a&nbsp;和&nbsp;-n&nbsp;是最常用的命令，如果要显示一些协议的更详细信息，就要用-p这个参数了，它其实是-a&nbsp;和&nbsp;-n的一个变种，我们来看一个实例，你就明白了：【netstat&nbsp;-p&nbsp;@@@&nbsp;其中@@@为TCP或者UDP】</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">C:\&gt;netstat&nbsp;-p&nbsp;tcp</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">Active&nbsp;Connections</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Proto&nbsp;&nbsp;Local&nbsp;Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Foreign&nbsp;Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;Eagle:microsoft-ds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localhost:1031&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESTABLISHED</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;Eagle:1031&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;localhost:microsoft-ds&nbsp;&nbsp;ESTABLISHED</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;Eagle:1213&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;218.85.139.65:9002&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLOSE_WAIT</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;Eagle:2416&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219.133.63.142:https&nbsp;&nbsp;&nbsp;CLOSE_WAIT</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;Eagle:2443&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219.133.63.142:https&nbsp;&nbsp;&nbsp;CLOSE_WAIT</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;Eagle:2907&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.101:2774&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLOSE_WAIT</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;Eagle:2916&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.101:telnet&nbsp;&nbsp;&nbsp;ESTABLISHED</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;Eagle:2929&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;219.137.227.10:4899&nbsp;&nbsp;&nbsp;&nbsp;ESTABLISHED</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;TCP&nbsp;&nbsp;&nbsp;&nbsp;Eagle:3455&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;218.85.139.65:9002&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESTABLISHED</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;继续我们的参数讲解&nbsp;-e</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;含义：本选项用于显示关于以太网的统计数据。它列出的项目包括传送的数据报的总字节数、错误数、删除数、数据报的数量和广播的数量。这些统计数据既有发送的数据报数量，也有接收的数据报数量。这个选项可以用来统计一些基本的网络流量。</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">C:\&gt;netstat&nbsp;-e</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">Interface&nbsp;Statistics</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Received&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sent</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">Bytes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;143090206&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;44998789</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">Unicast&nbsp;packets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;691805&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;363603</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">Non-unicast&nbsp;packets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;886526&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2386</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">Discards&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">Errors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">Unknown&nbsp;protocols&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4449</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;若接收错和发送错接近为零或全为零，网络的接口无问题。但当这两个字段有100个以上的出错分组时就可以认为是高出错率了。高的发送错表示本地网络饱和或在主机与网络之间有不良的物理连接;&nbsp;&nbsp;高的接收错表示整体网络饱和、本地主机过载或物理连接有问题，可以用Ping命令统计误码率，进一步确定故障的程度。netstat&nbsp;-e&nbsp;和ping结合使用能解决一大部分网络故障。</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:Verdana;color:#4C33E5;font-size:16px;">&nbsp;</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;接下来我们开始讲解两个比较复杂的参数&nbsp;</span><span style="font-family:宋体;color:#4C33E5;font-weight:bold;font-size:16px;">-r&nbsp;</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">和</span><span style="font-family:宋体;color:#4C33E5;font-weight:bold;font-size:16px;">&nbsp;-s</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;，也正因为如此，笔者把他放到最后讲解，这里面可能会涉及到其他方面的知识，以后在我的博客中将会继续写出来，呵呵，最近比较忙</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">-r是用来显示路由表信息，我们来看例子：</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">C:\&gt;netstat&nbsp;-r</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">Route&nbsp;Table（路由表）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">===========================================================================</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">Interface&nbsp;List（网络接口列表）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">0x1&nbsp;...........................&nbsp;MS&nbsp;TCP&nbsp;Loopback&nbsp;interface</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">0x10003&nbsp;...00&nbsp;0c&nbsp;f1&nbsp;02&nbsp;76&nbsp;81&nbsp;......&nbsp;Intel(R)&nbsp;PRO/Wireless&nbsp;LAN&nbsp;2100&nbsp;3B&nbsp;Mini&nbsp;PCI</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">dapter</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">0x10004&nbsp;...00&nbsp;02&nbsp;3f&nbsp;00&nbsp;05&nbsp;cb&nbsp;......&nbsp;Realtek&nbsp;RTL8139/810x&nbsp;Family&nbsp;Fast&nbsp;Ethernet</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">C</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">===========================================================================</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">===========================================================================</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">Active&nbsp;Routes:（动态路由）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">Network&nbsp;Destination&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Netmask&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gateway&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interface&nbsp;&nbsp;Metric</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.254&nbsp;&nbsp;&nbsp;192.168.1.181&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.254&nbsp;&nbsp;&nbsp;192.168.1.180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;255.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.0&nbsp;&nbsp;&nbsp;&nbsp;255.255.255.0&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180&nbsp;&nbsp;&nbsp;192.168.1.180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.0&nbsp;&nbsp;&nbsp;&nbsp;255.255.255.0&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.181&nbsp;&nbsp;&nbsp;192.168.1.181&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180&nbsp;&nbsp;255.255.255.255&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.181&nbsp;&nbsp;255.255.255.255&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.255&nbsp;&nbsp;255.255.255.255&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180&nbsp;&nbsp;&nbsp;192.168.1.180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.255&nbsp;&nbsp;255.255.255.255&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.181&nbsp;&nbsp;&nbsp;192.168.1.181&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;224.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;240.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180&nbsp;&nbsp;&nbsp;192.168.1.180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;224.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;240.0.0.0&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.181&nbsp;&nbsp;&nbsp;192.168.1.181&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;255.255.255.255&nbsp;&nbsp;255.255.255.255&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.180&nbsp;&nbsp;&nbsp;192.168.1.180&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;255.255.255.255&nbsp;&nbsp;255.255.255.255&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.181&nbsp;&nbsp;&nbsp;192.168.1.181&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">Default&nbsp;Gateway:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;192.168.1.254（默认网关）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">===========================================================================</span><span style="font-family:宋体;color:#FF00FF;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">Persistent&nbsp;Routes:（静态路由）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;None</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">C:\&gt;</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:Verdana;color:#4C33E5;font-size:16px;">&nbsp;</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-weight:bold;font-size:16px;">-s</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;参数的作用前面有详细的说明，来看例子</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">C:\&gt;netstat&nbsp;-s</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">IPv4&nbsp;Statistics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:宋体;color:#4C33E5;font-weight:bold;font-size:16px;">（IP统计结果）</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"></span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	<span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Packets&nbsp;Received&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;369492（接收包数）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Received&nbsp;Header&nbsp;Errors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0（接收头错误数）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Received&nbsp;Address&nbsp;Errors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;2（接收地址错误数）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Datagrams&nbsp;Forwarded&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0（数据报递送数）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Unknown&nbsp;Protocols&nbsp;Received&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0（未知协议接收数）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Received&nbsp;Packets&nbsp;Discarded&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;4203（接收后丢弃的包数）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Received&nbsp;Packets&nbsp;Delivered&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;365287（接收后转交的包数）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Output&nbsp;Requests&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;369066（请求数）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Routing&nbsp;Discards&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0（路由丢弃数&nbsp;）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Discarded&nbsp;Output&nbsp;Packets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;2172（包丢弃数）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Output&nbsp;Packet&nbsp;No&nbsp;Route&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0（不路由的请求包）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Reassembly&nbsp;Required&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0（</span><span style="font-family:ˎ̥;color:#4C33E5;font-size:16px;">重组的请求数</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Reassembly&nbsp;Successful&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0（重组成功数）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Reassembly&nbsp;Failures&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0（重组失败数）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Datagrams&nbsp;Successfully&nbsp;Fragmented&nbsp;&nbsp;=&nbsp;0（</span><span style="font-family:ˎ̥;color:#4C33E5;font-size:16px;">分片成功的数据报数</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Datagrams&nbsp;Failing&nbsp;Fragmentation&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0（</span><span style="font-family:ˎ̥;color:#4C33E5;font-size:16px;">分片失败的数据报数</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">）</span><span style="font-family:Verdana;color:#EDDFBA;font-size:10.0000pt;"><br />
+</span><span style="font-family:宋体;color:#4C33E5;font-size:16px;">&nbsp;&nbsp;Fragments&nbsp;Created&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;0（</span><span style="font-family:ˎ̥;color:#4C33E5;font-size:16px;">分片建立数）</span> 
+</p>
+<p class="MsoNormal" style="text-align:left;">
+	
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151223/1608.html">tracert路由器追踪命令</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151223/1606.html">为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 </a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

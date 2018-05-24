@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>在Linux中共享Windows系统资源 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1174","0","attach");
+		Cms.viewCount("","1174");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/yingjianyuweihu/20151116/1174.html" title="在Linux中共享Windows系统资源">在Linux中共享Windows系统资源</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-16 19:15:14</span>
+     </h3>
+     <p>在一部电脑上装有Linux和Windows的用户，可能需要在Linux中用到包括软盘、光盘以及Windows分区中的文件，如当你在Windows操作系统中上网，却下载了Linux的应用软件的时候。下面我就向大家详细介绍这方面的知识和具体的应用。<br />
+	　　一、装载（mount）<br />
+	　　（一）准备知识<br />
+	　　在Linux系统中想要使用软驱的话，要先把它们装载到系统中，装载指令mount的格式如下：<br />
+	　　mount －t 文件系统类型 设备文件名 装载目录<br />
+	　　1．文件系统类型<br />
+	　　文件系统类型一般来说就是分区格式，依操作系统的不同而不同。下面将Linux系统支持的文件系统类型择要分列如^35020202a^表一：<br />
+	　　2．设备文件名<br />
+	　　在Linux系统中，各个驱动器设备的命名和Windows中的规则（如A：、C：等）有很大的区别。所有的系统硬件设备都可以在/dev目录下找到对应的设备文件名。例如/dev/mouse就用来表示系统中的鼠标。磁盘驱动器的各个不同分区所对应的设备文件名列表如^35020202b^表二：<br />
+	　　假设第一个IDE硬盘驱动器被分成数个分区，通常，第一个分区可以肯定其设备文件名为/dev/hda1，但其它分区的设备文件名就不是可以依次类推得到的（特别是当用户使用了诸如PTM之类的磁盘分区工具的时候）。如果你想要知道硬盘各分区所对应的设备文件名，可以在控制台下执行cfdisk的指令，则各分区对应的设备文件名就可以一目了然了。<br />
+	　　3．装载目录<br />
+	　　通常我们都会在/mnt目录下面为需要装载的磁盘驱动器创建一个目录，不过这并不意味着它们不可以被装载于其它未被使用的目录中。再者，所谓装载目录，并不是将被装载的磁盘驱动器整个复制到本地，而仅仅是在本地提供一个装载点用以联系其它需要装载的磁盘驱动器。<br />
+	　　Linux系统对字符的大小写是敏感的，但是在Windows中就不是这样。而当你装载一个Windows系统中的驱动器后，对其上的文件操作时，字符的大小写就变得不敏感了，这意味着用户不可以在装载的Windows驱动器的同一目录中建立这么两个文件：ABC.TXT和abc.txt，因为在Windows系统中，它们代表同一个文件。<br />
+	　　（二）装载实例<br />
+	　　1．装载软盘<br />
+	　　首先在/mnt目录下为软磁盘创建一个目录floppy（有时Linux系统在安装的时候已经为你做了这一步）：<br />
+	　　mkdir /mnt/floppy<br />
+	　　接着用装载指令将软盘中的内容装载到这一目录中：<br />
+	　　mount －t msdos /dev/fd0 /mnt/floppy<br />
+	　　此后你就可以在/mnt/floppy下完全访问到软磁盘中的内容了。当然你亦可以用vfat这一文件系统类型代替msdos以使你能正确访问到软盘上的长文件名字，或者是用ext2代替它以使你可以访问到Linux文件格式的软盘。<br />
+	　　2．装载FAT 32格式的C盘<br />
+	　　在/mnt目录下为之创建一个目录winc（winc以及其他的装载目录是笔者的假设，你可以用自己喜欢的其他合法字符去命名这些目录）：<br />
+	　　mkdir /mnt/winc<br />
+	　　用装载指令将C盘内容装载入该目录：<br />
+	　　mount －t vfat /dev/hda1 /mnt/winc<br />
+	　　3．装载光盘<br />
+	　　在/mnt目录下为你的光盘驱动器创建一个目录cdrom（有的Linux系统安装时已为你完成了这件事）：<br />
+	　　mkdir /mnt/cdrom<br />
+	　　如果你的光盘驱动器安装在primary slave上，设备文件名就是/dev/hdb；如果安装在secondary master上，设备文件名就是/dev/hdc。假设你的光盘驱动器挂在secondary master，就用下面的装载指令：<br />
+	　　mount －t iso9600 /dev/hdc /mnt/cdrom<br />
+	　　由于Linux版本的不同，你所用的系统或者会使用这样的指令来装载光盘：<br />
+	　　mount /dev/cdrom<br />
+	　　或mount /mnt/cdrom<br />
+	　　二、卸载（umount）<br />
+	　　如果你已经用指令将软盘装载进相应目录，就不要直接将它们从软驱中取出来，否则可能会导致信息丢失；已经装载的光盘驱动器更是会令面板上的弹出键暂时失效以阻止你将光盘直接取出。<br />
+	　　在你取出它们之前，首先要确定已经没有用户对它们进行访问操作，包括没有工作窗口处在该磁盘驱动器被装载的目录。卸载指令的格式如下：<br />
+	　　umount 卸载目录名<br />
+	　　如用户想要卸载软盘，可以用如下指令：<br />
+	　　umount /mnt/floppy<br />
+	　　三、进阶使用<br />
+	　　（一）为装载指令增加简捷的形式<br />
+	　　用户可以在系统的配置文件/etc/fstab中指定一些常用的需要装载的驱动器，以便用更简捷的指令来装载它们，下面给出一个添加Windows系统的C盘进配置文件的例子：用文件编辑工具vi（也可以用其它你熟悉的文件编辑工具）打开/etc/fstab，我们会看到系统已经为根目录&ldquo;/&rdquo;、软磁盘驱动器、光盘驱动器等指定了文件系统类型和设备文件名以及装载目录（可能会因为所用的Linux版本不同，被指定的驱动器会有出入，不过用户可以参照下面的例子做出改动）。你既可以改变它们的预设值，也可以在其中添加新的驱动器。用箭头将光标移到最后一行，将下面一行加入文件：<br />
+	　　/dev/hda1 /mnt/winc vfat defaults 0 0<br />
+	　　如果还想装载硬盘内的其它分区，可以依次加入。完成后保存文件并退出。不要忘记相应的创建目录/mnt/winc。此后你就可以用如下指令装载Windows系统的C盘了：<br />
+	　　mount /mnt/winc<br />
+	　　（二）启动时自动装载磁盘驱动器<br />
+	　　用户可能会希望系统在启动时可以将你惯用的磁盘驱动器（如硬盘中的Windows分区或者是光盘驱动器）自动装载，以减轻每次启动后都要手动装载的麻烦。你可以用以下方法实现自动装载的功能：<br />
+	　　用文件编辑工具打开/etc/fstab，将刚才我们加入的那一行中的defaults改成auto，如：<br />
+	　　/dev/hda1 /mnt/winc vfat auto 0 0<br />
+	　　对于其它想在启动时就装载的磁盘驱动器，都可以将defaults改成auto。需要注意的是，对于硬盘上的Linux分区（包括ext2和swap）并不需要作出这样的改动。<br />
+	　　重新启动系统以后，在/mnt/winc目录下，你就可以看到系统在启动时就装载好的Windows系统的C盘了。<br />
+	　　四、使用Mtools<br />
+	　　在Linux中想要共享Windows系统资源，除了上面介绍的装载（mount）命令之外，还有一组名为Mtools的软件包可以实现这一功能。和大多数实用工具一样，Mtools软件包亦是Linux系统默认的安装套件。你可以在http://mtools.ltnb.lu/下载到它的最新版本mtools－3.9.7.tar.gz。<br />
+	　　（一）Mtools命令<br />
+	　　对于熟悉DOS命令的用户来说，Mtools命令会让他们感觉到像回到了DOS的世界。在下面的^35020202c^表格中我们可以看出它们有多么相似：<br />
+	　　很显然，Mtools命令是简单地在DOS命令前加上了一个m前缀，功能还是和在DOS下一样的。须要注意的是，更改目录路径在DOS命令中可以有cd和chdir两种命令格式，但是在Mtools中只有mcd一种格式。类似的在Mtools中没有对应的命令还有mkdir、rmdir、rename等等。<br />
+	　　（二）mtools.conf文档的配置<br />
+	　　因为Mtools是一个仿真DOS命令的软件包，所以它也保存着DOS系统下的磁盘驱动器概念。Mtools不但可以实现A盘 、B盘、 C盘的概念，对于一些特殊驱动器（如ZIP驱动器）更有专门的命令（mzip）以让用户方便地进行操作。在默认的环境下，A盘和B盘分别对应着两个软盘驱动器（如果有的话），N盘则对应着DOSMU启动盘的镜像文件。<br />
+	　　我们可以通过修改/etc/mtools.conf文档来改变默认的配置，当然在做出修改之前你仍要对Linux下的设备文件名有相当的认识才行（请参考上一期本版有关设备及其文件名的介绍）。假设你的机器有一个1.44MB软驱（A），硬盘挂在第一个IDE接口的主位置上，在第一个分区（C盘）中安装有Windows操作系统，光驱挂在第二个IDE接口的主位置上（D盘），以及SCSI盘等，则可以对mtools.conf文档简单配置如下：<br />
+	　　mtools.conf<br />
+	　　drive a: file=&Prime;/dev/fd0&Prime; exclusive 1.44m<br />
+	　　drive c: file=&Prime;/dev/hda1&Prime;<br />
+	　　drive d: file=&Prime;/dev/hdc&Prime;<br />
+	　　drive X: file=&Prime;/dev/rdsk/c0t5d0s2&Prime; partition=4 scsi=1 nodelay<br />
+	　　（三）Mtools命令的使用<br />
+	　　Mtools的命令系统和DOS有很多相似之处，比如在命令后面可以加不同的参数以实现更为丰富的功能（Mtools命令的参数使用方法是在命令后面加&ldquo;－&lt;参数&gt;&rdquo;，你可以把它想象成用&ldquo;－&rdquo;代替了DOS命令使用的&ldquo;/&rdquo;），可以使用通配符&ldquo;?&rdquo;和&ldquo;＊&rdquo;。更为方便的是，使用Mtools不需要事先装载（mount）和事后卸载（umount）。<br />
+	　　下面我们以目录列表命令mdir为例作说明（想知道其它命令的使用格式和更多的可用参数可以用man 命令查看相关帮助系统）。mdir的功能是对DOS目录和其中的文档进行列表操作。命令格式如下：<br />
+	　　mdir [－/] [－f] [－w] [－a] [－X] msdosfile [msdosfile]<br />
+	　　各命令参数的功能分述如下：<br />
+	　　/：输出当前路径下的所有目录和文档，相当于DOS命令dir中的&ldquo;s&rdquo;参数；<br />
+	　　f：列表时不尝试计算当前分区的自由空间，对于大硬盘来说，这样做可以节省一些读入和扫描分区表（FAT）的时间；<br />
+	　　w：列表时在一行中显示多个目录文档，这种输出格式将不显示文档的大小和创建时间，相当于DOS命令dir中的&ldquo;w&rdquo;参数；<br />
+	　　a：列出隐藏的目录文档；<br />
+	　　X：简要列表，列出路径名而不列出其它附加的信息。<br />
+	　　一些具体的应用实例：<br />
+	　　1．列表A盘下的所有目录文档（不包括隐藏的目录文档）<br />
+	　　mdir －/ a:<br />
+	　　2．列表C盘Windows目录下含有&ldquo;abc&rdquo;的目录文档<br />
+	　　mdir c:/windows/＊abc＊<br />
+	　　或者mdir c:\windows\＊Abc＊<br />
+	　　注：在Mtools命令中，/和\是可以混用的。又因为列表的是DOS系统下的文档，对大小写并不敏感，所以&ldquo;abc&rdquo;和&ldquo;Abc&rdquo;在这里是等价的。而通配符&ldquo;＊&rdquo;的用法和DOS命令亦有所不同。<br />
+	　　五、在Windows系统中共享Linux系统的文档<br />
+	　　无论对于刚接触Linux的新手还是对之已经熟悉的高手，恐怕都免不了想在Windows系统中调阅Linux系统的文档。这可以使用在Windows系统下观看Linux分区的小软件（如fsdext2等）。这里再向各位推荐两种可以实现这种功能的小软件。<br />
+	　　（一）Linuxindos<br />
+	　　Linuxindos是一个不到500KB的小程序，笔者找到的版本是Beta 0.9的DEMO版，用户可以在http://best.163.com/～linux/soft/下载试用。程序不需安装就可以在Windows系统下运行，使用也非常简单。<br />
+	　　在Windows系统下将linuxindos.zip解压到硬盘目录，用户就会看到一个带着企鹅图标的可执行程序LiD95Demo.exe。启动程序后，会出现一个接口非常简单的窗口，当用户挑选一个含有Linux系统文档的磁盘驱动器以后，Linux分区中的所有文档就会显示出来，左边窗口列出的是Linux分区中的目录，而右窗口就列出了目录内的文档，感觉就像在Windows的资源管理器中一样。<br />
+	　　（二）Explore2fs<br />
+	　　这是一个更为小巧的自由软件，大小约308KB，用户也可以在http://best.163.com/～linux/soft/下载使用。正如它的名字一样，这是一个有着类似资源管理器窗口的程序，通过它你可以读取Linux系统下的分区。和Linuxindos一样，Explore2fs的主视窗亦分为左右两个，左边显示的是Linux中的目录，而右边显示的就是目录中的文档了，可以简单地将右边视窗中的文档直接拖到Windows系统分区中。<br />
+	　　在右边视窗中选择好文档后，按下鼠标右键可以选择相应的操作，&ldquo;Export file&rdquo;是直接导出文档，而&ldquo;Export to Text&rdquo;则是除去文档的分隔符后导出和TEXT兼容的文本文档。 &nbsp;<!--/HTMLBUILERPART0--></p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/yingjianyuweihu/20151116/1175.html">构建DNS服务器</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/yingjianyuweihu/20151116/1173.html">Linux环境下Oracle的安装与配置</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

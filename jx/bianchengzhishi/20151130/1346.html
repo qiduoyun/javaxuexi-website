@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>dhtml中的addBehavior方法 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1346","0","attach");
+		Cms.viewCount("","1346");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151130/1346.html" title="dhtml中的addBehavior方法">dhtml中的addBehavior方法</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-11-30 13:26:30</span>
+     </h3>
+     <table class="clsStd">
+	<tbody>
+		<tr>
+			<td>
+				<a href="methods/addBehavior.html">addBehavior</a></td>
+			<td>
+				给<span>元素</span>附加一个<a href="/workshop/author/behaviors/overview.html">行为</a>。</td>
+		</tr>
+	</tbody>
+</table>
+<div class="clsDocBody">
+	<table cellpadding="0" cellspacing="0" width="97%">
+		<tbody>
+			<tr>
+				<td>
+					<h1>
+						addBehavior Method</h1>
+				</td>
+				<td align="right">
+					<a href="../default.html" target="_top" title="This index is only for content formerly found in the Web Workshop.">Internet Development Index</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<hr size="1" />
+	<p>Attaches a <a href="/workshop/author/behaviors/overview.html">behavior</a> to the <span>element</span>.</p>
+	<p class="clsRef">Syntax</p>
+	<blockquote>
+		<pre class="clsSyntax">
+<i>iID</i> = <i><span class="moreinfo" title="an element from the Applies To list below">object</span></i><b>.addBehavior(</b><i>sUrl</i><b>)</b></pre>
+	</blockquote>
+	<p class="clsRef">Parameters</p>
+	<blockquote>
+		<table class="clsStd">
+			<tbody>
+				<tr>
+					<td>
+						<i>sUrl</i></td>
+					<td>
+						Required. <b>String</b>&nbsp;that specifies one of the following values:
+						<table class="clsStd">
+							<tbody>
+								<tr>
+									<td nowrap="nowrap">
+										<span class="clsRange">sValue</span></td>
+									<td>
+										Location of the behavior, in URL format. The URL must be bounded by quotation marks, as illustrated in the code sample below.</td>
+								</tr>
+								<tr>
+									<td nowrap="nowrap">
+										<span class="clsRange">#default#behaviorName</span></td>
+									<td>
+										One of the Microsoft&reg; Internet Explorer?A HREF=&quot;../reference.html&quot;&gt;default behaviors, identified by its behavior name.</td>
+								</tr>
+								<tr>
+									<td nowrap="nowrap">
+										<span class="clsRange">#objID</span></td>
+									<td>
+										The <a href="../properties/id.html">ID</a> attribute specified in an <a href="../objects/object.html">object</a> tag for the binary implementation of a behavior.</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</blockquote>
+	<p class="clsRef">Return Value</p>
+	<blockquote>
+		<p>Returns an identifier that can be used later to detach the behavior from the element.</p>
+	</blockquote>
+	<p class="clsRef">Remarks</p>
+	<blockquote>
+		<p>This method, and the following remarks, apply only to attached behaviors, which are the original Dynamic HTML (DHTML) behaviors introduced in Internet Explorer 5. Element behaviors are a new feature in Internet Explorer 5.5 and cannot be added or removed from an element.</p>
+		<p>This method enables you to attach a behavior without using Cascading Style Sheets (CSS).</p>
+		<p>Unless the behavior specified in the <b>addBehavior</b> call is one of the default behaviors built into Internet Explorer, the <b>addBehavior</b> call causes Internet Explorer to download the behavior asynchronously, before the behavior is attached to the element.</p>
+		<p>Due to the asynchronous nature of the <b>addBehavior</b> method, its return value cannot be relied on to determine whether the behavior was successfully applied to the element. Waiting for the <a href="../events/onreadystatechange.html">onreadystatechange</a> event to fire and verifying that the <a href="../properties/readystate_1.html">readyState</a> property of the element is set to <span class="clsLiteral">complete</span> ensure that the behavior is completely attached to the element, and that all the behavior&#39;s members are available for scripting. Otherwise, attempting to use any behavior-defined member before the behavior is attached to the element results in a scripting error indicating that the object does not support that particular member.</p>
+		<div class="clsNote"><b>Note</b>&nbsp;&nbsp;A behavior attached to an element using the <b>addBehavior</b> method, or by applying the proposed CSS?A HREF=&quot;../properties/behavior_1.html&quot;&gt;behavior attribute inline, is not automatically detached from the element when the element is removed from the document hierarchy. However, a behavior attached using a style rule defined in the document is detached automatically as the element is removed from the document tree.</div>
+	</blockquote>
+	<p class="clsRef">Example</p>
+	<blockquote>
+		<p>This example uses the <b>addBehavior</b> method to dynamically attach a behavior that implements a mouseover highlighting effect to all <a href="../objects/li.html">li</a> elements on a page.</p>
+		<p style="BACKGROUND-COLOR: #e9e9e9; CURSOR: hand; FONT-WEIGHT: bold; TEXT-DECORATION: underline">SHOWExample</p>
+		<pre class="clsCode" style="DISPLAY: none">
+&lt;SCRIPT LANGUAGE=&quot;JScript&quot;&gt;
+var collBehaviorID = new Array();
+var collLI = new Array ();
+var countLI = 0;
+function attachBehavior()
+{
+collLI = document.all.tags (&quot;LI&quot;);
+countLI = collLI.length;
+for (i=0; i &lt; countLI; i++)
+{
+var iID = collLI[i].addBehavior (&quot;hilite.htc&quot;);
+if (iID)
+collBehaviorID[i] = iID;
+}
+}
+&lt;/SCRIPT&gt;
+:
+//Click &lt;A HREF=&quot;javascript:attachBehavior()&quot;&gt;here&lt;/A&gt;
+//to add a highlighting effect as you hover over each item below.
+:</pre>
+		<div style="DISPLAY: none"><button class="clsShowme5" style="CURSOR: hand" title="Click here to see a demonstration of this technology."><span>Show Me</span></button></div>
+	</blockquote>
+	<p class="clsRef">Standards Information</p>
+	<blockquote>
+		<p>There is no public standard that applies to this method.</p>
+	</blockquote>
+	<p class="clsRef">Applies To</p>
+	<blockquote>
+		<table class="TMAT3D" id="oATTable">
+			<tbody>
+				<tr>
+					<td style="BORDER-BOTTOM: 1px outset; BORDER-LEFT: 1px outset; DISPLAY: block; BORDER-TOP: 1px outset; BORDER-RIGHT: 1px outset" valign="top">
+						<table border="0" cellspacing="1" class="TMATPD" id="oPlatData" width="100%">
+							<tbody>
+								<tr style="DISPLAY: block">
+									<th class="atLabel" colspan="2" style="FONT-WEIGHT: normal" title="PRE">
+										PRE</th>
+								</tr>
+								<tr style="DISPLAY: block">
+									<th class="atLabel" title="Platforms that run Internet Explorer.">
+										Platform</th>
+									<th class="atLabel" title="This column lists the first version of Internet Explorer that the selected element supported this member.">
+										Version</th>
+								</tr>
+								<tr style="DISPLAY: block; CURSOR: default" title="Version of Internet Explorer that the selected element supported this member for the 32-bit Windows platform.">
+									<td>
+										Win32:</td>
+									<td style="TEXT-ALIGN: right">
+										5</td>
+								</tr>
+								<tr style="DISPLAY: block; CURSOR: default" title="Version of Internet Explorer that the selected element supported this member for the Unix platform.">
+									<td>
+										Unix:</td>
+									<td style="TEXT-ALIGN: right">
+										5</td>
+								</tr>
+								<tr style="DISPLAY: block; CURSOR: default" title="Version of Internet Explorer that the selected element supported this member for the Windows CE platform.">
+									<td>
+										Windows&nbsp;CE:</td>
+									<td style="TEXT-ALIGN: right">
+										5.5</td>
+								</tr>
+								<tr id="oATHelp" style="DISPLAY: none; FONT-SIZE: 8pt">
+									<td colspan="2">
+										Version data is listed when the mouse hovers over a link, or the link has focus.</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td class="controls" id="oATData" width="85%">
+						<a href="../objects/a.html">A</a>, <a href="../objects/acronym.html">ACRONYM</a>, <a href="../objects/address.html">ADDRESS</a>, <a href="../objects/applet.html">APPLET</a>, <a href="../objects/area.html">AREA</a>, <a href="../objects/b.html">B</a>, <a href="../objects/base.html">BASE</a>, <a href="../objects/basefont.html">BASEFONT</a>, <a href="../objects/bgsound.html">BGSOUND</a>, <a href="../objects/big.html">BIG</a>, <a href="../objects/blockquote.html">BLOCKQUOTE</a>, <a href="../objects/body.html">BODY</a>, <a href="../objects/br.html">BR</a>, <a href="../objects/button.html">BUTTON</a>, <a href="../objects/caption.html">CAPTION</a>, <a href="../objects/center.html">CENTER</a>, <a href="../objects/cite.html">CITE</a>, <a href="../objects/code.html">CODE</a>, <a href="../objects/col.html">COL</a>, <a href="../objects/colgroup.html">COLGROUP</a>, <a href="../objects/comment.html">COMMENT</a>, <a href="../objects/custom.html">CUSTOM</a>, <a href="../objects/dd.html">DD</a>, <a href="../objects/del.html">DEL</a>, <a href="../objects/dfn.html">DFN</a>, <a href="../objects/dir.html">DIR</a>, <a href="../objects/div.html">DIV</a>, <a href="../objects/dl.html">DL</a>, <a href="../objects/dt.html">DT</a>, <a href="../objects/em.html">EM</a>, <a href="../objects/embed.html">EMBED</a>, <a href="../objects/fieldset.html">FIELDSET</a>, <a href="../objects/font.html">FONT</a>, <a href="../objects/form.html">FORM</a>, <a href="../objects/frame.html">FRAME</a>, <a href="../objects/frameset.html">FRAMESET</a>, <a href="../objects/head.html">HEAD</a>, <a href="../objects/hn.html">hn</a>, <a href="../objects/hr.html">HR</a>, <a href="../objects/html.html">HTML</a>, <a href="../objects/i.html">I</a>, <a href="../objects/iframe.html">IFRAME</a>, <a href="../objects/img.html">IMG</a>, <a href="../objects/input_button.html">INPUT type=button</a>, <a href="../objects/input_checkbox.html">INPUT type=checkbox</a>, <a href="../objects/input_file.html">INPUT type=file</a>, <a href="../objects/input_hidden.html">INPUT type=hidden</a>, <a href="../objects/input_image.html">INPUT type=image</a>, <a href="../objects/input_password.html">INPUT type=password</a>, <a href="../objects/input_radio.html">INPUT type=radio</a>, <a href="../objects/input_reset.html">INPUT type=reset</a>, <a href="../objects/input_submit.html">INPUT type=submit</a>, <a href="../objects/input_text.html">INPUT type=text</a>, <a href="../objects/ins.html">INS</a>, <a href="../objects/isindex.html">ISINDEX</a>, <a href="../objects/kbd.html">KBD</a>, <a href="../objects/label.html">LABEL</a>, <a href="../objects/legend.html">LEGEND</a>, <a href="../objects/li.html">LI</a>, <a href="../objects/link.html">LINK</a>, <a href="../objects/listing.html">LISTING</a>, <a href="../objects/map.html">MAP</a>, <a href="../objects/marquee.html">MARQUEE</a>, <a href="../objects/menu.html">MENU</a>, <a href="../objects/nextid.html">nextID</a>, <a href="../objects/nobr.html">NOBR</a>, <a href="../objects/noframes.html">NOFRAMES</a>, <a href="../objects/noscript.html">NOSCRIPT</a>, <a href="../objects/object.html">OBJECT</a>, <a href="../objects/ol.html">OL</a>, <a href="../objects/option.html">OPTION</a>, <a href="../objects/p.html">P</a>, <a href="../objects/plaintext.html">PLAINTEXT</a>, <a href="../objects/pre.html">PRE</a>, <a href="../objects/q.html">Q</a>, <a href="../objects/rt.html">RT</a>, <a href="../objects/ruby.html">RUBY</a>, <a href="../objects/s.html">S</a>, <a href="../objects/samp.html">SAMP</a>, <a href="../objects/script.html">SCRIPT</a>, <a href="../objects/select.html">SELECT</a>, <a href="../objects/small.html">SMALL</a>, <a href="../objects/span.html">SPAN</a>, <a href="../objects/strike.html">STRIKE</a>, <a href="../objects/strong.html">STRONG</a>, <a href="../objects/style.html">STYLE</a>, <a href="../objects/sub.html">SUB</a>, <a href="../objects/sup.html">SUP</a>, <a href="../objects/table.html">TABLE</a>, <a href="../objects/tbody.html">TBODY</a>, <a href="../objects/td.html">TD</a>, <a href="../objects/textarea.html">TEXTAREA</a>, <a href="../objects/tfoot.html">TFOOT</a>, <a href="../objects/th.html">TH</a>, <a href="../objects/thead.html">THEAD</a>, <a href="../objects/title.html">TITLE</a>, <a href="../objects/tr.html">TR</a>, <a href="../objects/tt.html">TT</a>, <a href="../objects/u.html">U</a>, <a href="../objects/ul.html">UL</a>, <a href="../objects/var.html">VAR</a>, <a href="../objects/wbr.html">WBR</a>, <a href="../objects/xml.html">XML</a>, <a href="../objects/xmp.html">XMP</a></td>
+				</tr>
+				<tr>
+					<td class="controls" colspan="2" style="DISPLAY: block">
+						Move the mouse pointer over an element in the Applies To list to display availability information for the listed platforms.</td>
+				</tr>
+			</tbody>
+		</table>
+	</blockquote>
+	<p class="clsRef">See Also</p>
+	<blockquote>
+		<a href="../methods/removebehavior.html">removeBehavior</a>, <a href="/workshop/author/behaviors/overview.html">Introduction to DHTML Behaviors</a>, <a href="/workshop/author/behaviors/howto/using.html">Using DHTML Behaviors</a>, <a href="/workshop/author/behaviors/overview/elementb_ovw.html">About Element Behaviors</a>, <a href="/workshop/author/behaviors/howto/creating.html">Using HTML Components to Implement DHTML Behaviors in Script</a></blockquote>
+</div>
+<p>&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151130/1347.html">dhtml中的AddChannel Method方法</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151130/1345.html">DHTML中的add方法</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

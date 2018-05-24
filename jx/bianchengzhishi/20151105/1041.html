@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>Android访问资源 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1041","0","attach");
+		Cms.viewCount("","1041");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151105/1041.html" title="Android访问资源">Android访问资源</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-11-05 15:08:08</span>
+     </h3>
+     <p><img alt="" src="/u/cms/www/201511/05134115ec4e.jpg" style="width: 189px; height: 220px;" /></p>
+<p><strong>资源的调用</strong></p>
+<p>当你在应用程序中提供了某种资源后（在<a href="http://developer.android.com/guide/topics/resources/providing-resources.html">Providing Resources</a>中有讨论），你就可以通过引用资源ID号来调用相关的资源。所有的资源ID号都在你工程下的R.class文件中定义好，这是由aapt工具自动生成的。</p>
+<p>当你的应用程序被编译时，aapt工具就会自动生成R.class 文件，这个文件中包含有<code>res/</code><code>目录下所有资源的</code><code>ID</code><code>号。对于每一种资源类型都有一个</code><code>R</code><code>的子类对应着（例如：</code><code>R.drawable</code><code>中包含着所有</code>drawable资源<code>），并且对每个特定类型的所有资源都有一个静态的整型数值一一对应（例如：</code><code>R.drawable.icon</code><code>）。这个整型数值就是这个特定资源的</code><code>ID</code><code>号，你可以通过它来获取你的对应资源。</code></p>
+<p>虽然R.class文件中定义着每种资源的ID号，但是你不应该也不需要到该文件下去查看某个资源的ID号。一个资源的ID号一般的组成如下：</p>
+<p style="margin-left:42pt;">l&nbsp; 资源类型: 每种资源都会被分组到一种特定的资源类型，例如<code>string</code>， <code>drawable</code>，和 <code>layout</code> 。要了解更多关于不同的资源类型，见<a href="http://developer.android.com/guide/topics/resources/available-resources.html">Resource Types</a>。</p>
+<p align="left" style="margin-left:42pt;">l&nbsp; 资源名，同时也是：文件名，不包括拓展名；或者是XML 中<code>android:name</code><code>属性的值，</code>条件是这个资源是一个简单的值（例如一个字符串）。</p>
+<p>调用某个资源有两种方法:</p>
+<p align="left" style="margin-left:42pt;">l&nbsp; <strong>在代码中调用：</strong><strong>通过使用</strong><strong>R.class </strong><strong>的相应子类中的静态整形数值，例如</strong>：</p>
+<p align="left" style="margin-left:42pt;">R.string.hello</p>
+<p style="margin-left:42pt;"><code>string</code> 是资源类型，hello是资源名。当你通过这种方式提供资源的ID号时，有很多Android APIs 就可以调用你的相应资源了。详见：<a href="#在代码中调用资源">在代码中调用资源</a>。</p>
+<p style="margin-left:42pt;">l&nbsp; <strong>在</strong><strong>XML</strong><strong>中调用：</strong>通过特殊的XML语法同样可以对应到你的R.class文件中的相关资源ID，例如：</p>
+<p style="margin-left:33.05pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @string/hello</p>
+<p style="margin-left:42pt;"><code>string</code> 是资源类型，hello是资源名。你可以在任何需要使用自己提供的资源的地方，通过这种语法在XML中调用。详见：<a href="#在XML中调用资源">在XML中调用资源</a>。</p>
+<p>&nbsp;</p>
+<p><strong>在代码中调用资源</strong></p>
+<p>你可以把资源ID号作为方法的参数在代码中调用该资源。例如，你可以设置一个ImageView通过调用<code><a href="http://developer.android.com/reference/android/widget/ImageView.html#setImageResource(int)">setImageResource()</a></code><code>方法来使用</code><code>res/drawable/myimage.png</code> 资源：</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:533px;">
+				<p align="left">&nbsp;&nbsp;&nbsp; ImageView imageView = (ImageView) findViewById(R.id.myimageview);</p>
+				<pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; imageView.setImageResource(<strong>R.drawable.myimage</strong>);</pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>你也可以通过调用<code><a href="http://developer.android.com/reference/android/content/res/Resources.html">Resources</a></code><code>类</code>中的方法来获取某一特定的资源，通过<code>getResources()</code><code>方法可以得到</code><code>Resources</code><code>类</code>的一个实例。</p>
+<p>&nbsp;</p>
+<p><strong>语法</strong></p>
+<p>这是在代码中引用资源的语法：</p>
+<pre>
+&nbsp;[<em>&lt;package_name&gt;</em>.]R.<em>&lt;resource_type&gt;</em>.<em>&lt;resource_name&gt;</em></pre>
+<p align="left" style="margin-left:42pt;">l&nbsp;&nbsp; <code><em>&lt;package_name&gt;</em></code> 资源所在的包名 (当你要应用自己包下的资源时，该字段不需要填写).</p>
+<p align="left" style="margin-left:42pt;">l&nbsp;&nbsp; <code><em>&lt;resource_type&gt;</em></code> R类下对应一种特定资源类型的子类.（译者注：如R.String）</p>
+<p align="left" style="margin-left:42pt;">l&nbsp;&nbsp; <code><em>&lt;resource_name&gt;</em></code> 可以是不包含文件拓展名的资源文件名或者XML元素中<code>android:name</code> 属性的值（仅限简单的值，如字符串）</p>
+<p>了解更多关于每种资源类型的信息以及如何引用它们，见<a href="http://developer.android.com/guide/topics/resources/available-resources.html">Resource Types</a> 。</p>
+<p>&nbsp;</p>
+<p><strong>用例</strong></p>
+<p>有很多方法可以接受资源的ID号作为参数，你可以通过Resources中的方法来获取某种对应的资源。你可以通过Context.getResources()方法来获得<a href="http://developer.android.com/reference/android/content/res/Resources.html">Resources</a>类的一个实例。.</p>
+<p>以下是在代码中调用资源的一些例子：</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:533px;">
+				<p align="left">&nbsp;&nbsp;&nbsp; // 注：通过一个drawable类型的资源给当前屏幕加载背景</p>
+				<p align="left">&nbsp;&nbsp;&nbsp; getWindow().setBackgroundDrawableResource(R.drawable.my_background_image) ;</p>
+				<p align="left">&nbsp;</p>
+				<p align="left">&nbsp;&nbsp;&nbsp; // 注：通过从Resources对象获取的字符串给Activity 设置标题，因为该方法需要一个字符序&nbsp;&nbsp;&nbsp; 列而不是一个资源ID号</p>
+				<p align="left">&nbsp;&nbsp;&nbsp; getWindow().setTitle(getResources().getText(R.string.main_title));</p>
+				<p align="left">&nbsp;</p>
+				<p align="left">&nbsp;&nbsp;&nbsp; // 注：给当前屏幕载入自定义布局</p>
+				<p align="left">&nbsp;&nbsp;&nbsp; setContentView(R.layout.main_screen);</p>
+				<p align="left">&nbsp;</p>
+				<p align="left">&nbsp;&nbsp;&nbsp; // 注：通过从Resources 实例获取的动画来设置一个动画幻灯片</p>
+				<p align="left">&nbsp;&nbsp;&nbsp; mFlipper.setInAnimation(AnimationUtils.loadAnimation(<strong>this</strong>,</p>
+				<p align="left">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R.anim.hyperspace_in));</p>
+				<p align="left">&nbsp;</p>
+				<p align="left">&nbsp;&nbsp;&nbsp; // 注：通过资源ID号给TextView 类的对象设置显示文字</p>
+				<p align="left">&nbsp;&nbsp;&nbsp; TextView msgTextView = (TextView) findViewById(R.id.msg);</p>
+				<p>&nbsp;&nbsp;&nbsp; msgTextView.setText(R.string.hello_message);</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<pre>
+<strong>特别提醒</strong><strong>:</strong> 你不能自己手动修改R.java 文件，这个文件是在你的工程被编译时由aapt工具自动生成的。所有程序中的修改都会在工程下一次编译时重写。</pre>
+<pre>
+&nbsp;</pre>
+<pre>
+&nbsp;</pre>
+<pre>
+<strong>在XML中调用资源</strong></pre>
+<p>你可以通过引用一个存在的资源来给一些XML的属性和元素指定具体的值。你经常会在创建布局文件的时候这样做，给你的部件提供字符串和图像。</p>
+<p>例如，如果你添加一个按钮到你的布局中，你应该使用一个字符串资源来指定显示在按钮上的文字：</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:533px;">
+				<p align="left">&lt;Button</p>
+				<p align="left">&nbsp;&nbsp;&nbsp; android:layout_width=<em>&quot;fill_parent&quot;</em></p>
+				<p align="left">&nbsp;&nbsp;&nbsp; android:layout_height=<em>&quot;wrap_content&quot;</em></p>
+				<pre>
+&nbsp;&nbsp;&nbsp; android:text=<em>&quot;@string/submit&quot;</em> /&gt;</pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<pre>
+（译者注：@string/submit即为你定义好的字符串资源）</pre>
+<pre>
+&nbsp;</pre>
+<p><strong>语法</strong></p>
+<p>以下是在XML资源文件中引用资源的语法:</p>
+<pre>
+@[<em>&lt;package_name&gt;</em>:]<em>&lt;resource_type&gt;</em>/<em>&lt;resource_name&gt;</em></pre>
+<p align="left" style="margin-left:42pt;">l&nbsp; <code>&lt;package_name&gt;</code>资源所在的包名 (当你要应用自己包下的资源时，该字段不需要填写)</p>
+<p align="left" style="margin-left:42pt;">l&nbsp; <code>&lt;resource_type&gt;</code> R类下对应一种特定资源类型的子类.（译者注：如R.String）</p>
+<p align="left" style="margin-left:42pt;">l&nbsp; <code>&lt;resource_name&gt;</code>可以是不包含文件拓展名的资源文件名或者XML元素中<code>android:name</code> 属性的值（仅限简单的值，如字符串）</p>
+<p>了解更多关于每种资源类型的信息以及如何引用它们，见<a href="http://developer.android.com/guide/topics/resources/available-resources.html">Resource Types</a> 。</p>
+<p>&nbsp;</p>
+<p><strong>用例</strong></p>
+<p>在某些情况下你必须得在XML中使用资源（例如：给部件应用一个drawable图像），但是你可以在XML中任何可以接受简单值的地方使用资源。例如，如果你有如下包含color（颜色）资源和string（字符串）资源的资源文件：</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:533px;">
+				<p align="left">&lt;?xml version=<em>&quot;1.0&quot;</em> encoding=<em>&quot;utf-8&quot;</em>?&gt;</p>
+				<p align="left">&lt;resources&gt;</p>
+				<p align="left">&nbsp;&nbsp; &lt;color name=<em>&quot;opaque_red&quot;</em>&gt;#f00&lt;/color&gt;</p>
+				<p align="left">&nbsp;&nbsp; &lt;string name=<em>&quot;hello&quot;</em>&gt;Hello!&lt;/string&gt;</p>
+				<p>&lt;/resources&gt;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>你可以使用这些定义好的资源在以下的布局文件中来设置文本的颜色和内容：</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:533px;">
+				<p align="left">&lt;?xml version=<em>&quot;1.0&quot;</em> encoding=<em>&quot;utf-8&quot;</em>?&gt;</p>
+				<p align="left">&lt;EditText xmlns:android=<em>&quot;http://schemas.android.com/apk/res/android&quot;</em></p>
+				<p align="left">&nbsp;&nbsp;&nbsp; android:layout_width=<em>&quot;fill_parent&quot;</em></p>
+				<p align="left">&nbsp;&nbsp;&nbsp; android:layout_height=<em>&quot;fill_parent&quot;</em></p>
+				<p align="left">&nbsp;&nbsp;&nbsp; android:textColor=<em>&quot;<strong>@color/opaque_red</strong>&quot;</em></p>
+				<p>&nbsp;&nbsp;&nbsp; android:text=<em>&quot;<strong>@string/hello</strong>&quot;</em> /&gt;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>在以下情况下在引用资源时你不需要指定包名，因为这些资源在你自己的当前包中。要引用一个系统资源，你需要在引用时声明资源所在包名。例如：</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:533px;">
+				<p align="left">&lt;?xml version=<em>&quot;1.0&quot;</em> encoding=<em>&quot;utf-8&quot;</em>?&gt;</p>
+				<p align="left">&lt;EditText xmlns:android=<em>&quot;http://schemas.android.com/apk/res/android&quot;</em></p>
+				<p align="left">&nbsp;&nbsp;&nbsp; android:layout_width=<em>&quot;fill_parent&quot;</em></p>
+				<p align="left">&nbsp;&nbsp;&nbsp; android:layout_height=<em>&quot;fill_parent&quot;</em></p>
+				<p align="left">&nbsp;&nbsp;&nbsp; android:textColor=<em>&quot;<strong>@android:color/secondary_text_dark</strong>&quot;</em></p>
+				<p>&nbsp;&nbsp;&nbsp; android:text=<em>&quot;@string/hello&quot;</em> /&gt;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p><strong>特别提醒：</strong>在需要用字符串时，你应该坚持使用字符串资源，因此你的应用程序就可以对其他语言进行本地化。关于创建可替代资源（例如本地化字符串），见<a href="http://developer.android.com/guide/topics/resources/providing-resources.html#AlternativeResources">Providing Alternative Resources</a>。</p>
+<p>你甚至可以可以在XML文件中用资源来创建别名。例如，你可以创建一个drawable类型的资源，这个资源是另一个drawable类型资源的别名：</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:533px;">
+				<p align="left">&lt;?xml version=<em>&quot;1.0&quot;</em> encoding=<em>&quot;utf-8&quot;</em>?&gt;</p>
+				<p align="left">&lt;bitmap xmlns:android=<em>&quot;http://schemas.android.com/apk/res/android&quot;</em></p>
+				<p>&nbsp;&nbsp;&nbsp; android:src=<em>&quot;@drawable/other_drawable&quot;</em> /&gt;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>这个听起来像是多余的介绍，但是在使用可替代资源的时候会很有用。了解更多关于<a href="http://developer.android.com/guide/topics/resources/providing-resources.html#AliasResources">Creating alias resources</a>。</p>
+<p>&nbsp;</p>
+<p><strong>引用样式属性</strong></p>
+<p>一个样式属性资源允许你在当前应用的主题中引用一个属性的值。引用一个样式属性允许你通过样式化UI元素以匹配当前主题提供的标准变化来定制UI元素的外观，而不是通过提供一个硬编码的值。引用样式属性从基本上说，&ldquo;使用当前主题中的属性已定义好的样式&rdquo;。</p>
+<p>引用样式属性，其名称的语法与普通的资源格式几乎是等同的，但是取代符号（@），这使用的是问号（？），资源类型部分是可选的。例如：</p>
+<pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ?[<em>&lt;</em><em>package_name</em><em>&gt;</em>:][<em>&lt;</em><em>resource_type</em><em>&gt;</em>/]<em>&lt;</em><em>resource_name</em><em>&gt;</em></pre>
+<p>例如，这个例子将介绍如何引用一个属性来设置文本的颜色以匹配系统主题的&ldquo;主&rdquo;文本的颜色：</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:533px;">
+				<p align="left">&lt;EditText id=<em>&quot;text&quot;</em></p>
+				<p align="left">&nbsp;&nbsp;&nbsp; android:layout_width=<em>&quot;fill_parent&quot;</em></p>
+				<p align="left">&nbsp;&nbsp;&nbsp; android:layout_height=<em>&quot;wrap_content&quot;</em></p>
+				<p align="left">&nbsp;&nbsp;&nbsp; android:textColor=<em>&quot;?android:textColorSecondary&quot;</em></p>
+				<p>&nbsp;&nbsp;&nbsp; android:text=<em>&quot;@string/hello_world&quot;</em> /&gt;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>在这，android:textColor 属性指定了当前主题中一个样式属性的名称。Android 现在使用应用于android:textColorSecondary 样式属性的值作为该部件中android:textColor 的值。因为系统资源工具知道这个属性资源就是环境所期望的，所以你不需要显式地声明是那个类型（这个类型可能是？android:attr/textColorSecondary）&mdash;你可以排除掉attr类型。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center"><strong>调用平台资源</strong></p>
+<p>Android中包含有很多标准的资源，例如styles（样式）、themes（主题）、layouts（布局）等等。要调用这些资源，需要通过android包名来限定你的资源。例如，Android提供了一个布局资源，你可以在<a href="http://developer.android.com/reference/android/widget/ListAdapter.html">ListAdapter</a>中用以罗列表项。（译者注：ListAdapter是指列表适配器）</p>
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:568px;">
+				<pre>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setListAdapter(<strong>new</strong> ArrayAdapter&lt;String&gt;(<strong>this</strong>, android.R.layout.<em>simple_list_item_1</em>, myarray));</pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>在这个例子中，simple_list_item_1是平台为ListView的表项定义的布局资源。你可以使用这个列表布局，而不需要自己创建表项布局。（更多关于ListView，参见<u><a href="http://developer.android.com/resources/tutorials/views/hello-listview.html">List View Tutorial</a></u>）。</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151105/1042.html">Android应用资源</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151105/1040.html">Android支持的媒体格式</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

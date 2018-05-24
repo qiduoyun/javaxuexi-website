@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>认识计算机病毒 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","666","0","attach");
+		Cms.viewCount("","666");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151014/666.html" title="认识计算机病毒">认识计算机病毒</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-10-14 20:51:13</span>
+     </h3>
+     </p>
+<p><br />
+	计算机病毒的防治方法<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	要使<br />
+	电脑<br />
+	少中毒，<br />
+	必须遵循以下两个原则：<br />
+	1<br />
+	、<br />
+	安装一款好的防毒软件。<br />
+	比如<br />
+	360<br />
+	杀毒<br />
+	简单方便，<br />
+	对系统的<br />
+	病毒防护<br />
+	和修复功能都很好。<br />
+	2<br />
+	、<br />
+	养成良好的使用习惯。<br />
+	下载软件<br />
+	到官方网页，<br />
+	或者到自己熟悉的网站下载，<br />
+	不要浏览不良网站，<br />
+	不要随<br />
+	意打开陌生人的邮箱、网址链接等。如何才能防御病毒呢？<br />
+	&nbsp;<br />
+	1.<br />
+	防病毒软件国内市场上主要有国产的瑞星、金山毒霸和<br />
+	KV<br />
+	杀毒软件。国外的<br />
+	诺顿、卡巴斯基和<br />
+	McAfee(<br />
+	俗称卖咖啡<br />
+	)<br />
+	等。国外的杀毒软件，内核强大，杀毒<br />
+	功能更强，<br />
+	界面简洁精干。<br />
+	国内的杀毒软件虽然在内核上无法与国外杀毒软件相<br />
+	媲美，<br />
+	但是在对付国产病毒方面，<br />
+	占用资源方面又远远优于国外的杀毒软件。<br />
+	比<br />
+	如卡巴斯基是国际上著名的老牌杀毒软件，<br />
+	杀毒功能强大，<br />
+	但是它占用的系统资<br />
+	源相对就要多一些，<br />
+	所以硬件配置不高的朋友并不适合使用卡巴斯基，<br />
+	使用占用<br />
+	资源很小的金山毒霸，效果反而会更好。<br />
+	&nbsp;<br />
+	2.<br />
+	查漏补缺<br />
+	&nbsp;<br />
+	病毒能够轻松地进入用户的电脑，<br />
+	很大程度上是因为用户的电脑上没有任何的安<br />
+	全防御措施，<br />
+	并且该更新的补丁没有及时更新。<br />
+	因为病毒的作者必须要等待系统<br />
+	补丁发布以后才能对系统漏洞进行反编译，<br />
+	所以病毒一般是在补丁发布以后的一<br />
+	段时间才会出现。<br />
+	这个时候及时为系统打上补丁，<br />
+	成为了关键中的关键。<br />
+	因为在<br />
+	病毒肆虐之前为系统打上补丁，可以从根本上消除蠕虫病毒所带来的安全隐患。<br />
+	&nbsp;<br />
+	3.Windows Update<br />
+	自动更新<br />
+	&nbsp;<br />
+	4.<br />
+	防止下载病毒<br />
+	&nbsp;<br />
+	面对<br />
+	Internet<br />
+	如此海量的资源，怎能不叫人心动？但没有人敢保证所有可下载<br />
+	的东西是干净的，<br />
+	特别是一些网络游戏的外挂中、<br />
+	小网站里的工具中、<br />
+	一些号称<br />
+	&ldquo;免费&rdquo;的网络资源中，<br />
+	经常隐藏有令人意料不到的东西。<br />
+	如何才能避免下载到<br />
+	病毒呢？<br />
+	&nbsp;<br />
+	养成良好的下载习惯，<br />
+	一般不要去一些小的网站下载东西，<br />
+	对任何下载的文件和<br />
+	程序都不直接打开，而是先使用杀毒软件查毒后再打开。<br />
+	&nbsp;<br />
+	使用<br />
+	FlashGet<br />
+	等下载工具进行下载，并把下载工具和杀毒软件进行捆绑，以达<br />
+	到下载后自动杀毒的目的。<br />
+	&nbsp;<br />
+	病毒的内容就介绍完了，希望大家对病毒已经有了一个深刻的认识。<br />
+	&nbsp;<br />
+	。<br />
+	&nbsp;<br />
+	1.<br />
+	对于计算机病毒首先要有防范意识。<br />
+	&nbsp;<br />
+	2.<br />
+	在内部局域网种简历有效的防火墙，<br />
+	并且装配安全漏洞扫描程序和入侵<br />
+	检测系统，有效组织黑客的入侵。<br />
+	&nbsp;<br />
+	3.<br />
+	在个人计算机桑安装正版杀毒软件及个人防火墙没并且保持同步更新<br />
+	&nbsp;<br />
+	4.<br />
+	外来磁盘都要进行计算机病毒检测，<br />
+	自己的磁盘要尽量采用写保护适用<br />
+	&nbsp;<br />
+	5.<br />
+	在局域网内尽可能不适用共享文件夹，即使要适用，尽量设为只读属性<br />
+	&nbsp;<br />
+	6.<br />
+	经常使用最新版的杀毒软件对所用及其和下载软件或接收邮件进行检<br />
+	测与消除<br />
+	&nbsp;<br />
+	7.<br />
+	网络用户要定期对所用计算机进行病毒检测，对下载的网页、文件，接<br />
+	收到的邮件，进行病毒检测后在打开使用。<br />
+	&nbsp;<br />
+	8.<br />
+	要注意新计算机病毒的发布，<br />
+	对有激发日期的病毒要尽量避开激发日期<br />
+	适用计算机。<br />
+	&nbsp;</p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151015/668.html">路由器桥接(WDS)_无法从副路由上网解决方法(DHCP设置)</a></li>
+            <li><strong>下一篇：</strong>没有了</li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

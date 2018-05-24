@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>C#如何建立线程类 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1356","0","attach");
+		Cms.viewCount("","1356");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/bianchengzhishi/20151202/1356.html" title="C#如何建立线程类">C#如何建立线程类</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-12-02 20:49:56</span>
+     </h3>
+     <h2>
+	<span style="color:#008080;">C#如何建立线程类</span></h2>
+<p><span style="color:#008080;">有时需要建立多个线程，每个线程要实现的功能基本相同，但有个别参数不同，例如，每个线程完成同样的任务，但控制的对象不同。线程构造函数参数指定的方法需要自己定义，在这个方法中完成一些任务，但该方法不能有参数，因此不能通过方法的参数传递不同设置。为解决这个问题，可以定义一个线程类。具体实现方法件下例。</span></p>
+<p><span style="color:#008080;">例子：建立两个线程，分别控制进度条(ProgressBar)控件，每个进度条的速度不一样。首先介绍进度条(ProgressBar)控件。</span></p>
+<h3>
+	<span style="color:#008080;">1.进度条(ProgressBar)控件</span></h3>
+<p><span style="color:#008080;">进度条(ProgressBar)控件经常用来显示一个任务的进度。有时，要在后台完成一个长时间的任务，例如一个软件的安装，如果没有任何提示，使用者可能分不清任务是在进行中，还是死机了，为了让用户知道安装正在进行，可以使用进度条控件显示一个安装进度。进度条控件常用的属性如下：</span></p>
+<ul>
+	<li>
+		<span style="color:#008080;">属性Maximum：进度条所代表的整数最大值，等于此值，任务完成。默认值100。</span></li>
+	<li>
+		<span style="color:#008080;">属性Minimum：进度条所代表的整数最小值，等于此值，任务开始。默认值0。</span></li>
+	<li>
+		<span style="color:#008080;">属性Step：变化的步长，默认值为10。</span></li>
+</ul>
+<p><span style="color:#008080;">属性Value：进度条当前位置代表的值。修改该值，达到一个Step，进度增加一格。</span></p>
+<h3>
+	<span style="color:#008080;">2.用线程控制进度条</span></h3>
+<p><span style="color:#008080;">例子实现的具体实现步骤如下：</span></p>
+<ol>
+	<li>
+		<span style="color:#008080;">新建项目。在Form1.cs头部增加语句：using&nbsp;System.Threading。</span></li>
+	<li>
+		<span style="color:#008080;">在窗体中放置2个进度条(ProgressBar)控件和一个标签控件，属性Name分别为progressBar1、progressBar2和label1。Label1的属性Text=&rdquo;&rdquo;。</span></li>
+	<li>
+		<span style="color:#008080;">在文件Form1.cs的最后建立线程类如下：</span></li>
+</ol>
+<p><span style="color:#008080;">public&nbsp;class&nbsp;myThread</span></p>
+<p><span style="color:#008080;">{</span></p>
+<p><span style="color:#008080;">private&nbsp;int&nbsp;SleepTime;</span></p>
+<p><span style="color:#008080;">private&nbsp;ProgressBar&nbsp;progressBar;</span></p>
+<p><span style="color:#008080;">private&nbsp;Thread&nbsp;thread1;</span></p>
+<p><span style="color:#008080;">public&nbsp;myThread(int&nbsp;Time,ProgressBar&nbsp;p1)</span></p>
+<p><span style="color:#008080;">{</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#008080;">SleepTime=Time;</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#008080;">progressBar=p1;</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#008080;">thread1=new&nbsp;Thread(new&nbsp;ThreadStart(Fun));</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#008080;">Thread1.Start();</span></p>
+<p><span style="color:#008080;">}</span></p>
+<p><span style="color:#008080;">public&nbsp;void&nbsp;fun()</span></p>
+<p><span style="color:#008080;">{</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#008080;">while(progressBar.Value!=100)</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#008080;">{</span></p>
+<p style="margin-left:42.0000pt;"><span style="color:#008080;">progressBar.Value+=1;</span></p>
+<p style="margin-left:42.0000pt;"><span style="color:#008080;">thread1.Sleep(SleepTime);</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#008080;">}</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#008080;">if(label.Text==&rdquo;&rdquo;)</span></p>
+<p style="margin-left:42.0000pt;"><span style="color:#008080;">label1.Text=&rdquo;第一个线程结束&rdquo;;</span></p>
+<p style="margin-left:21.0000pt;"><span style="color:#008080;">else</span></p>
+<p style="margin-left:42.0000pt;"><span style="color:#008080;">label.Text+=&rdquo;,第二个线程结束&rdquo;;</span></p>
+<p><span style="color:#008080;">}</span></p>
+<p><span style="color:#008080;">}</span></p>
+<ol>
+	<li value="4">
+		<span style="color:#008080;">为Form1类增加变量：myThread&nbsp;&nbsp;myThread1,myThread2。</span></li>
+	<li value="5">
+		<span style="color:#008080;">为Form1类构造函数增加语句如下：</span></li>
+</ol>
+<p><span style="color:#008080;">myThread1=new&nbsp;myThread(100,progressBar1);</span></p>
+<p><span style="color:#008080;">myThread2=new&nbsp;myThread(200,progressBar2);</span></p>
+<p><span style="color:#008080;">编译，运行，可以看到两个进度条以不同的速度前进，当进度条被添满，线程停止。</span></p>
+
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/bianchengzhishi/20151202/1357.html">C#线程的优先级</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/bianchengzhishi/20151202/1355.html">C#线程的创建实例</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

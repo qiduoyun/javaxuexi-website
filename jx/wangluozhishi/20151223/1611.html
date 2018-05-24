@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>网络管理中ftp - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","1611","0","attach");
+		Cms.viewCount("","1611");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151223/1611.html" title="网络管理中ftp">网络管理中ftp</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">蘑菇&nbsp;&nbsp;发布于    2015-12-23 17:05:48</span>
+     </h3>
+     <p class="MsoNormal">
+	<span style="font-family:Calibri;font-size:10.5000pt;"> </span>
+</p>
+<p class="MsoNormal">
+	<span style="font-family:Calibri;font-size:10.5000pt;"><span style="font-size:18px;"><strong>网络管理中ftp</strong></span><br />
+</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-family:Calibri;font-size:10.5000pt;">大家对这个命令应该比较熟悉了吧？网络上开放的<span>ftp</span><span>的主机很多，其中很大一部分是匿名的，也就是说任何人都可以登陆上去。现在如果你扫到了一台开放&nbsp;</span><span>ftp</span><span>服务的主机（一般都是开了</span><span>21</span><span>端口的机器），如果你还不会使用</span><span>ftp</span><span>的命令怎么办？下面就给出基本的</span><span>ftp</span><span>命令使用方法。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> 首先在命令行键入<span>ftp</span><span>回车，出现</span><span>ftp</span><span>的提示符，这时候可以键入</span><span>"help"</span><span>来查看帮助（任何</span><span>DOS</span><span>命令都可以使用此方法查看其帮助</span><span>)</span><span>。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> 大家可能看到了，这么多命令该怎么用？其实也用不到那么多，掌握几个基本的就够了。&nbsp;</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> 首先是登陆过程，这就要用到<span>open</span><span>了，直接在</span><span>ftp</span><span>的提示符下输入</span><span>"open&nbsp;</span><span>主机</span><span>IP&nbsp;ftp</span><span>端口</span><span>"</span><span>回车即可，一般端口默认都是</span><span>21</span><span>，可以不写。接着就是输入合法的用户名和密码进行登陆了，这里以匿名</span><span>ftp</span><span>为例介绍。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> 用户名和密码都是<span>ftp</span><span>，密码是不显示的。当提示</span><span>****&nbsp;logged&nbsp;in</span><span>时，就说明登陆成功。这里因为是匿名登陆，所以用户显示为</span><span>Anonymous</span><span>。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> 接下来就要介绍具体命令的使用方法了。&nbsp;</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> <span>dir&nbsp;</span><span>跟</span><span>DOS</span><span>命令一样，用于查看服务器的文件，直接敲上</span><span>dir</span><span>回车，就可以看到此</span><span>ftp</span><span>服务器上的文件。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> <span>cd&nbsp;</span><span>进入某个文件夹。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> <span>get&nbsp;</span><span>下载文件到本地机器。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> <span>put&nbsp;</span><span>上传文件到远程服务器。这就要看远程</span><span>ftp</span><span>服务器是否给了你可写的权限了，如果可以，呵呵，该怎么&nbsp;利用就不多说了，大家就自由发挥去吧。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> <span>delete&nbsp;</span><span>删除远程</span><span>ftp</span><span>服务器上的文件。这也必须保证你有可写的权限。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> <span>bye&nbsp;</span><span>退出当前连接。&nbsp;</span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span><span style="font-family:Calibri;font-size:10.5000pt;"> <span>quit&nbsp;</span><span>同上。 </span></span><span style="font-family:Calibri;font-size:10.5000pt;"><br />
+</span> 
+</p>
+<br />
+<p>
+	<br />
+</p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151224/1616.html">cisco路由帧中继技术</a></li>
+            <li><strong>下一篇：</strong><a href="/jx/wangluozhishi/20151223/1610.html">网络管理中at命令</a></li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+<title>认识计算机病毒 - java学习网</title>
+    <link rel="stylesheet" href="/r/cms/www/default/css/xiangmu.css">
+	<link rel="stylesheet" href="/editor/themes/default/default.css" />
+	<link rel="stylesheet" href="/editor/plugins/code/prettify.css" />
+	<script src="/r/cms/www/default/js/jquery-3.1.0-min.js"></script>
+	<script charset="utf-8" src="/editor/kindeditor.js"></script>
+	<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/editor/plugins/code/prettify.js"></script>
+	<script src="/r/cms/front.js" type="text/javascript"></script>
+	
+</head>
+
+<script type="text/javascript">
+$(function() {
+		Cms.attachment("","666","0","attach");
+		Cms.viewCount("","666");
+		Cms.siteFlow("", location.href, document.referrer);
+	    prettyPrint();
+	});
+</script>
+
+<style>
+pre.prettyprint{
+background-color: #fff;
+border:2px solid #e2e2e2;
+white-space: pre;
+overflow:auto;
+}
+</style>
+<body style="margin:0 0;">
+<div style="width:1100px; margin:0 auto;height:120px; margin-top:20px;">
+    <span style="float:left;">
+	<a href="http://www.javaxuexi.net:80/" style="cursor:point;border:0;">
+	  <img height="100" src="/r/cms/www/default/img/javaxuexi_logo.gif"/>
+	</a>
+	</span>
+	<form action="/search.jspx" target="_blank" id="searchForm">
+		<span style="float:right; margin-top:33px;">
+		   <span style=" border:1px solid #888;height:32px; display:block; float:left; width:350px;">
+		     <input name="q" value="" style="border:none;height:30px; width:346px;" type="text"/>
+		   </span>
+		   <span style="display:block; float:left;height:32px; background-color:#888; border:1px solid #888;">
+		     <input class="xm-s-bt" style="height:32px; border:none;" type="submit" value="搜索一下"/>
+		   </span>
+		</span>
+	</form>
+</div>
+
+<div style="width:100%; background:#20b573;">
+   <div style="width:1100px; margin:0 auto;">
+     <span style="float:left; font-size:18px;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/" style="font-weight:600;">首页</a>
+		   </dt>
+		 </dl>
+	 </span>
+     <ul style="list-style:none; margin:0; padding:0; float:right; font-size:18px;color:#333;">
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/webstudy/index.jhtml" target="_blank" style="font-weight:600;" >Web学习</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/framework/index.jhtml" target="_blank" style="font-weight:600;" >框架专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/download/index.jhtml" target="_blank" style="font-weight:600;" >软件工具下载</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/entertainment/index.jhtml" target="_blank" style="font-weight:600;" >生活娱乐</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/photo/index.jhtml" target="_blank" style="font-weight:600;" >图片专区</a>
+		   </dt>
+		 </dl>
+	   </li>
+       <li style="float:left; width:150px; text-align:center;">
+	     <dl style="margin:20px 0;">
+		   <dt>
+		   <a href="http://www.javaxuexi.net:80/games/index.jhtml" target="_blank" style="font-weight:600;" >知识拓展</a>
+		   </dt>
+		 </dl>
+	   </li>
+	 </ul>
+   </div>
+   <div style="clear:both;"></div>
+</div>
+<div style="width: 1100px;margin: 20px auto;">
+<script type="text/javascript">
+    /*（生活娱乐）960*60 创建于 2015-10-30*/
+    var cpro_id = "u2376992";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width: 1100px;margin: 20px auto;">
+  <div style="width: 780px;float: left;">
+     <h3 style="border-bottom: 1px solid #20b573;color: #333;margin: 0;">
+       <a style="display:inline-block;padding-top: 8px;padding-bottom:7px;background-color: #20b573;" href="/jx/wangluozhishi/20151014/666.html" title="认识计算机病毒">认识计算机病毒</a>
+       <span style="float: right;font-size: 14px;color: #888;margin-top: 10px;">本站原创&nbsp;&nbsp;发布于    2015-10-14 20:51:13</span>
+     </h3>
+     <p>计算机病毒的分类<br />
+	&nbsp;<br />
+	计算机病毒的特点：寄生性、传染性、潜伏性、隐蔽性<br />
+	&nbsp;<br />
+	病毒类型<br />
+	&nbsp;<br />
+	1.<br />
+	在互联网上最为猖獗的几种病毒为蠕虫病毒、<br />
+	IM<br />
+	病毒、网络钓鱼病毒<br />
+	&nbsp;<br />
+	蠕虫病毒主要利用系统漏洞进行自动传播和破坏，其危害之大，自然不言而喻。<br />
+	&nbsp;<br />
+	由于系统的漏洞是无法避免的，<br />
+	所以各种蠕虫病毒像雨后春笋般地涌现出来，<br />
+	令<br />
+	人防不胜防。<br />
+	&nbsp;<br />
+	由于计算机用户对<br />
+	IM(<br />
+	即时通讯<br />
+	)<br />
+	软件的广泛应用，<br />
+	使<br />
+	IM<br />
+	病毒全面爆发。<br />
+	先是<br />
+	qq<br />
+	病毒大泛滥，接着<br />
+	MSN<br />
+	的&ldquo;性感烤鸡&rdquo;病毒也着实让<br />
+	MSN<br />
+	用户吃了很多苦头。<br />
+	&nbsp;<br />
+	网络钓鱼病毒也不甘示弱，首先出现了假冒的各大银行网站。<br />
+	&nbsp;<br />
+	2.<br />
+	所谓的正义的病毒是指那种具备了病毒的特性，<br />
+	但是不破坏系统，<br />
+	反而帮助减<br />
+	少系统漏洞的病毒，让人啼笑皆非。如：<br />
+	&nbsp;<br />
+	&ldquo;anti<br />
+	-<br />
+	Santy&rdquo;病毒，<br />
+	如果用户中了该病毒，<br />
+	该病毒不但不会破坏系统，<br />
+	反而会<br />
+	自动地检查系统缺少的补丁，并自动的帮系统打上缺少的补丁。<br />
+	&nbsp;<br />
+	&ldquo;Noped&rdquo;病毒更加有趣，它会自动地搜索带儿童色情的图片，一旦发现了儿童<br />
+	色情内容，它将会自动地发送举报邮件给政府机关。<br />
+	&nbsp;<br />
+	从计算机病毒的基本类型来分，<br />
+	计算机病毒可以分为系统引导型病毒、<br />
+	可执行文<br />
+	件型病毒、<br />
+	宏病毒、<br />
+	混合型病毒、<br />
+	特洛伊木马型病毒和<br />
+	Internet<br />
+	语言病毒等等。<br />
+	&nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+	系统引导型病毒<br />
+	&nbsp;<br />
+	系统引导型病毒在系统启动时，<br />
+	先于正常系统的引导将病毒程序自身装入到<br />
+	操作系统中，<br />
+	在完成病毒自身程序的安装后，<br />
+	该病毒程序成为系统的一个驻留内<br />
+	存的程序，然后再将系统的控制权转给真正的系统引导程序，完成系统的安装。<br />
+	表面上看起来计算机系统能够启动并正常运行，<br />
+	但此时，<br />
+	由于有计算机病毒程序<br />
+	驻留在内存，<br />
+	计算机系统已在病毒程序的控制之下了。<br />
+	系统引导型病毒主要是感<br />
+	染软盘的引导扇区和硬盘的主引导扇区或<br />
+	DOS<br />
+	引导扇区，<br />
+	其传染方式主要是通过<br />
+	用被病毒感染的软盘启动计算机而传染的。<br />
+	&nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;<br />
+	可执行文件型病毒<br />
+	&nbsp;<br />
+	可执行文件型病毒依附在可执行文件或覆盖文件中，<br />
+	当病毒程序感染一个可执行<br />
+	文件时，<br />
+	病毒修改原文件的一些参数，<br />
+	并将病毒自身程序添加到原文件中。<br />
+	在被<br />
+	感染病毒的文件被执行时，<br />
+	由于病毒修改了原文件的一些参数，<br />
+	所以首先执行病<br />
+	毒程序的一段代码，<br />
+	这段病毒程序的代码主要功能是将病毒程序驻留在内存，<br />
+	以<br />
+	取得系统的控制权，<br />
+	从而可以完成病毒的复制和一些破坏操作，<br />
+	然后再执行原文<br />
+	件的程序代码，<br />
+	实现原来的程序功能，<br />
+	以迷惑用户。<br />
+	可执行文件型病毒主要感染<br />
+	系统可执行文件（如<br />
+	DOS<br />
+	或<br />
+	WINDOWS<br />
+	系统的<br />
+	COM<br />
+	或<br />
+	EXE<br />
+	文件）或覆盖文件（如<br />
+	&nbsp; OVL<br />
+	文件）中，极少感染数据文件。其传染方式是当感染了病毒的可执行文件被<br />
+	执行或者当系统有任何读、写操作时，向外进行传播病毒。此时，病毒程序首先<br />
+	将要被感染的文件读入内存，<br />
+	判断其特定位置上是否有该病毒程序的标记，<br />
+	如果<br />
+	已经感染了就不再重复感染，<br />
+	如果没有感染，<br />
+	则将病毒程序写到该文件中。<br />
+	在完<br />
+	成病毒传染后，才去执行本来系统申请的功能。<br />
+	&nbsp;<br />
+	&nbsp;&nbsp;<br />
+	宏病毒<br />
+	&nbsp;<br />
+	宏病毒是利用宏语言编制的病毒，宏病毒充分利用宏命令的强大系统调用功能，<br />
+	实现某些涉及系统底层操作的破坏。宏病毒仅感染<br />
+	Windows<br />
+	系统下用<br />
+	Word<br />
+	、<br />
+	Excel<br />
+	、<br />
+	Access<br />
+	、<br />
+	PowerPoint<br />
+	等办公自动化程序编制的文档以及<br />
+	Outlook<br />
+	express<br />
+	邮件等，不会感染给可执行文件。<br />
+	&nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+	混合型病毒<br />
+	&nbsp;<br />
+	混合型病毒是以上几种的混合。<br />
+	混合型病毒的目的是为了综合利用以上<br />
+	3<br />
+	种病毒<br />
+	的传染渠道进行破坏。<br />
+	混合型病毒不仅传染可执行文件而且还传染硬盘主引导扇<br />
+	区，被这种病毒传染的病毒用<br />
+	FORMAT<br />
+	命令格式化硬盘都不能消除病毒。混合型<br />
+	病毒的引导方式具有系统引导型病毒和可执行文件型病毒的特点。。<br />
+	&nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+	特洛伊木马型病毒<br />
+	&nbsp;<br />
+	特洛伊木马型病毒也叫&ldquo;黑客程序&rdquo;或后门病毒，<br />
+	属于文件型病毒的一种，<br />
+	但有<br />
+	其自身的特点。<br />
+	此种病毒分成服务器端和客户端两部分，<br />
+	服务器端病毒程序通过<br />
+	文件的复制、<br />
+	网络中文件的下载和电子邮件的附件等途径传送到要破坏的计算机<br />
+	系统中，<br />
+	一旦用户执行了这类病毒程序，<br />
+	病毒就会在每次系统启动时偷偷地在后<br />
+	台运行。当计算机系统联上<br />
+	Internet<br />
+	时，黑客就可以通过客户端病毒在网络上<br />
+	寻找运行了服务器端病毒程序的计算机，<br />
+	当客户端病毒找到这种计算机后，<br />
+	就能<br />
+	在用户不知晓的情况下使用客户端病毒指挥服务器端病毒进行合法用户能进行<br />
+	的各种操作，包括复制、删除、关机等，从而达到控制计算机的目的。这种病毒<br />
+	具有极大的危害性，<br />
+	在互联网日益普及的今天，<br />
+	必须要引起足够的重视，<br />
+	否则网<br />
+	上安全无从谈起。<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	&nbsp;<br />
+	Internet<br />
+	语言病毒<br />
+	&nbsp;<br />
+	Internet<br />
+	语言病毒是利用<br />
+	java<br />
+	、<br />
+	VB<br />
+	和<br />
+	ActiveX<br />
+	的特性来撰写的病毒，<br />
+	这种病毒虽不能破坏硬<br />
+	盘上的资料，<br />
+	但是如果用户使用浏览器来浏览含有这些病毒的网页，<br />
+	使用者就会在不知不觉<br />
+	中，<br />
+	让病毒进入计算机进行复制，<br />
+	并通过网络窃取宝贵的个人秘密信息或使计算机系统资源<br />
+	利用率下降，造成死机等现象。<br />
+	&nbsp;</p>
+<p>
+     
+         <ul>
+            <li><strong>上一篇：</strong><a href="/jx/wangluozhishi/20151015/668.html">路由器桥接(WDS)_无法从副路由上网解决方法(DHCP设置)</a></li>
+            <li><strong>下一篇：</strong>没有了</li>
+         </ul>
+         
+     <div style="clear: both;"></div>    
+  </div>
+  <div style="width: 300px;float: right;border-left: 1px solid #ccc;border-right: 1px solid #ccc;border-top: 1px solid #ccc;">
+     <span style="display: block;padding-top: 10px;padding-bottom: 10px;padding-left: 15px;background-color: #fafbfc;border-bottom: 1px solid #ccc;">相关内容</span>
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20161017/1705.html" target="_blank" title="电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象 ">电脑出现能用QQ能玩玩游戏、但是...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	电脑出现能用QQ能玩玩游戏、但是不能打开网页的现象&nbsp; 
+
+
+	&nbsp;这种情况是DNS解析的问题，建议在路由器和计算机网卡上手动设置DNS服务器地址(ISP局端提供的地址)。另外，在“DHCP服务”设置项，也手动...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1605.html" target="_blank" title=" 宽带路由器线路不通，无法建立连接 "> 宽带路由器线路不通，无法建立...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	&nbsp;宽带路由器线路不通，无法建立连接&nbsp; 
+
+
+	1.&nbsp;用网线将路由器的WAN口与ADSL&nbsp;Modem相连，电话线连ADSL&nbsp;Modem的“Line”口。ADSL&nbsp;Modem与宽带路由器之间的连接应当使用直通线。&...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1606.html" target="_blank" title="为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通 ">为什么上网一段时间后就掉线，关...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	为什么上网一段时间后就掉线，关闭路由器后再开启又可以连通&nbsp; 
+
+
+	1)&nbsp;网络中过多DHCP服务器引起IP地址混乱。您需要将网络中的所有DHCP服务器关闭，使用手动指定IP地址方式或仅保留一个DHCP服务器...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1607.html" target="_blank" title="Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据">Netstat用于显示与IP、TCP、UDP...</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	Netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况。
+&nbsp;&nbsp;&nbsp;&nbsp;如果你的计算机有时候接收到的数据报导致出错数据或故障，你不必感到奇怪，TCP/IP...</dt>
+     </dl>	   		                                
+     <dl>
+       <dt style="color:#333;font-size: 18px;padding: 0 10px;"><a href="/jx/wangluozhishi/20151223/1608.html" target="_blank" title="tracert路由器追踪命令">tracert路由器追踪命令</a></dt>
+       <dt style="color: #888;font-size: 14px;margin-top:10px;padding: 0 10px;">
+	tracert路由器追踪命令
+
+ Tracert（跟踪路由）是路由跟踪实用程序，用于确定&nbsp;IP&nbsp;数据报访问目标所采取的路径。 
+
+
+	该命令用&nbsp;IP&nbsp;生存时间&nbsp;(TTL)&nbsp;字段和&nbsp;ICMP&nbsp;错...</dt>
+     </dl>	   		                                
+<script type="text/javascript">
+    /*300*250矩形*/
+    var cpro_id = "u2790529";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<div style="width:1100px; background-color:#fafbfc; margin:20px auto; border:1px solid #ccc; min-height:120px;">
+   <div style="width:1100px; margin:0 auto; background-color:#20b573;">
+     <span style=" display:block; width:100px; padding-top:10px; padding-bottom:10px; text-align:center; float:left; background-color:#99ff99">友情链接</span>
+     <div style="clear:both;"></div>
+   </div>
+   <div style="width:100%;">
+     <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <a href="#">Java web自学网</a>
+	 <div style="clear:both;"></div>
+   </div>
+  <div style="clear:both;"></div>
+</div>
+
+<div style="width:1100px; margin:20px auto;">
+   <span style="display:block; padding:10px; text-align:center;">
+     2004-2016 www.javaxiangmu.cn All Rights Reserved. java香木瓜网 版权所有
+   </span>
+  <div style="clear:both;"></div>
+</div></body>
+</html>
